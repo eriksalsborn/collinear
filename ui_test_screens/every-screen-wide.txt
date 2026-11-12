@@ -4384,7 +4384,7 @@
                                    ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlog 1  ────────────────────│  Col  a quick tour                                                      esc  │─────────────────────────────────
    3  PLA-5     ▯▯▯         Fifth i│                                                                              │                           3w ago
-                                   │   welcome                                                                    │
+                                   │   welcome, Erik                                                              │
   ◈ Triage 1  ─────────────────────│                                                                              │─────────────────────────────────
    4  PLA-6     ▯▯▯         Sixth n│   This is Collinear: your Linear issues one key away, and everything you     │                           3d ago
                                    │   have in progress.                                                          │
@@ -4982,7 +4982,7 @@
                                    ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlog 1  ────────────────────│  Col  a quick tour                                                      esc  │─────────────────────────────────
    3  PLA-5     ▯▯▯         Fifth i│                                                                              │                           3w ago
-                                   │   welcome                                                                    │
+                                   │   welcome, Erik                                                              │
   ◈ Triage 1  ─────────────────────│                                                                              │─────────────────────────────────
    4  PLA-6     ▯▯▯         Sixth n│   This is Collinear: your Linear issues one key away, and everything you     │                           3d ago
                                    │   have in progress.                                                          │

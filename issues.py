@@ -752,7 +752,9 @@ def show_tour_card(screen, card, footer_text):
 def start_guided_tour(screen):
     """The welcome card; l/enter starts the walk-through (Col takes it from there, in his bubble), esc/h/q declines."""
     col_says("a tour? I love tours", "cheer", 30)
-    if show_tour_card(screen, TOUR_WELCOME_CARD, "l/enter start the tour · esc/h not now") in FORWARD_KEYCODES:
+    title, text_lines = TOUR_WELCOME_CARD
+    welcome_card = (f"welcome, {saved_first_name()}" if saved_first_name() else title, text_lines)  # by the name given in setup
+    if show_tour_card(screen, welcome_card, "l/enter start the tour · esc/h not now") in FORWARD_KEYCODES:
         UiState.guided_tour_step = next_tour_step_from(0)
         UiState.col_is_visible = True  # he is the guide
 

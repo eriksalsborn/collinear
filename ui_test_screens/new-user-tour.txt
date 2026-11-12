@@ -14,7 +14,7 @@
                     ╭──────────────────────────────────────────────────────────────────────────────╮
                     │  Col  a quick tour                                                      esc  │
                     │                                                                              │
-                    │   welcome                                                                    │
+                    │   welcome, Erik                                                              │
                     │                                                                              │
                     │   This is Collinear: your Linear issues one key away, and everything you     │
                     │   have in progress.                                                          │

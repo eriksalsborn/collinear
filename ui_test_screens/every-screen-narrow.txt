@@ -4384,7 +4384,7 @@
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
    3  PLA-│                                                                              │  3w ago
-          │   welcome                                                                    │
+          │   welcome, Erik                                                              │
   ◈ Triage│                                                                              │────────
    4  PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
           │   have in progress.                                                          │
@@ -4982,7 +4982,7 @@
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
    3  PLA-│                                                                              │  3w ago
-          │   welcome                                                                    │
+          │   welcome, Erik                                                              │
   ◈ Triage│                                                                              │────────
    4  PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
           │   have in progress.                                                          │
