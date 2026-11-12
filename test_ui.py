@@ -138,7 +138,7 @@ EVERY_SCREEN = [
     "t", ENTER, "h",                                             # a team's issues, and back
     "b", "j", "l", ESC, ESC,                                     # daily report, a topic's actions
     "K", "K", "Z", "Z", "y", "g",                                # hints off/on, Col off/on, copy link, no PR linked
-    ENTER, ESC, "n", ESC, "a", "h", "i", ESC, "C", ESC,          # start dialog, new issue, chat with Col, comment
+    ENTER, ENTER, ESC, "n", ESC, "a", "h", "i", ESC, "C", ESC,          # start dialog, new issue, chat with Col, comment
     "D", ESC, "R", "T", ESC, "X", ESC, "G", "5", "k",            # setup, review inbox, projects, cancel, last row, a count
     "t", "/", "a", "p", ESC, ESC,                                # the filter inside a dialog (once crashed the popup)
     "S", "j", ENTER, "U",                                        # a real status change and its undo
@@ -197,7 +197,8 @@ def replace_the_outside_world(issues, prs, open_workspaces, temporary_home):
         open_workspaces = []
         ISSUES_ASSIGNED_IN_FAKE_LINEAR.clear()
     cache_dir = temporary_home / "cache"
-    for folder in (cache_dir, temporary_home / "notes", temporary_home / "dev" / "alpha" / ".git", temporary_home / "dev" / "beta" / ".git"):
+    for folder in (cache_dir, temporary_home / "notes", temporary_home / "dev" / "alpha" / ".git", temporary_home / "dev" / "beta" / ".git",
+                   *(temporary_home / "dev" / f"repo-{number:02d}" / ".git" for number in range(40))):  # more repositories than fit: the picker must stay inside its box
         folder.mkdir(parents=True)
     issues.CACHE_DIR = cache_dir
     issues.MY_ISSUES_CACHE_FILE = cache_dir / "herdr-issues.json"

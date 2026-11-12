@@ -2541,7 +2541,7 @@ def choose_from_list(screen, title, items, cursor=0, multi=False, help=(), cards
         card_lines = [textwrap.wrap(text, card_width - 4) for _, text in cards]
         card_height = max((len(card_text_lines) for card_text_lines in card_lines), default=0) + 3
         help_lines = ([[]] * (card_height + 1)) if cards else help_lines  # room for the cards
-        rows_for_items = max(min(len(items), screen.getmaxyx()[0] - 10 - len(help_lines)), 1)
+        rows_for_items = max(min(len(items), screen.getmaxyx()[0] - 10 - 6 - len(help_lines)), 1)  # the box is at most the screen minus 10 rows, and 6 of its rows are not items
         line, box_width = draw_dialog_box(screen, title, rows_for_items + 6 + len(help_lines), box_width, top_left_corner)
         if is_typing_filter or filter_text:
             line(2, f"/ {filter_text}{'▏' if is_typing_filter else ''}", curses.color_pair(ACCENT), 3)
@@ -2573,6 +2573,8 @@ def choose_from_list(screen, title, items, cursor=0, multi=False, help=(), cards
                 line(first_item_row + row_offset, text, curses.color_pair(ACCENT) if item_number in marked_item_numbers else 0, 3)
         if not matching_item_numbers:
             line(first_item_row, "no match", curses.color_pair(MUTED), 3)
+        if (items_below := len(matching_item_numbers) - first_row_shown - rows_for_items) > 0:  # the list is longer than the box: say so
+            line(first_item_row + rows_for_items, f"↓ {items_below} more", curses.color_pair(DIM), 3)
         draw_footer_from_text(screen, ("space mark · l/enter done" if multi else "l/enter pick") + (" · or press its key" if keys else "")
                 + " · j/k move · type to filter · esc/h back")
         screen.refresh()

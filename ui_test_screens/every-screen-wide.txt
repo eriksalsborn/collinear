@@ -1977,7 +1977,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ opened alpha #7                                                                                                                    ╰──╴ Col ╶───╯
 
-########## 044 before 27
+########## 044 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2023,7 +2023,53 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 045 before 'n'
+########## 045 before 27
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
+ ────────────────────────╭──────────────────────────────────────────────────────────────────────────────────────────────────╮────────────────────────
+  ◕ In Review 1  ────────│  PLA-3  repo  ·  space: several                                                             esc  │───────────────────────
+ ▎    PLA-3     ▮▮▯ mediu│  / filter                                                                                        │ ◌ draft         1d ago
+                         │  ╭─ ⎇  in a repo ─────────────────────────────╮ ╭─ ∅  no repo ───────────────────────────────╮   │
+  ◔ In Progress 2  ──────│  │                                            │ │                                            │   │───────────────────────
+      PLA-1     !!! urgen│  │ Where does the change live? Each repo you  │ │ Col with just the issue, in its notes      │   │                 1h ago
+    ▶ PLA-2     ▮▮▮ high │  │ pick gets its own worktree, a separate     │ │ folder: for thinking, writing the issue,   │   │ ● review        2d ago
+                         │  │ checkout next to the repo as               │ │ or research. You can add a repo later from │   │
+  ○ Todo 1  ─────────────│  │ <repo>-wt/<branch>, on the issue's branch  │ │ the phase list.                            │   │───────────────────────
+      PLA-4     ▮▯▯ low  │  │ erik/pla-3-third. Your main checkout is    │ │                                            │   │                 1w ago
+                         │  │ untouched. Col starts in the first one and │ │                                            │   │
+  ◌ Backlog 1  ──────────│  │ can reach the others.                      │ │                                            │   │───────────────────────
+      PLA-5     ▯▯▯      │  ╰────────────────────────────────────────────╯ ╰────────────────────────────────────────────╯   │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+      PLA-6     ▯▯▯      │ ▎○ ∅  no repo · just the issue, no code                                                          │                 3d ago
+                         │  ○ alpha                                                                                         │
+                         │  ○ beta                                                                                          │
+                         │  ○ repo-00                                                                                       │
+                         │  ○ repo-01                                                                                       │
+                         │  ○ repo-02                                                                                       │
+                         │  ○ repo-03                                                                                       │
+                         │  ○ repo-04                                                                                       │
+                         │  ○ repo-05                                                                                       │
+                         │  ○ repo-06                                                                                       │
+                         │  ○ repo-07                                                                                       │
+                         │  ○ repo-08                                                                                       │
+                         │  ○ repo-09                                                                                       │
+                         │  ○ repo-10                                                                                       │
+                         │  ○ repo-11                                                                                       │
+                         │  ○ repo-12                                                                                       │
+                         │  ○ repo-13                                                                                       │
+                         │  ↓ 26 more                                                                                       │
+                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                       “to the PR. be kind in review” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                                                                             │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  space mark   l/enter done   j/k move   type to filter   esc/h back                                                                   ╰──╴ Col ╶───╯
+
+########## 046 before 'n'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2069,7 +2115,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 046 before 27
+########## 047 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2115,7 +2161,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 047 before 'a'
+########## 048 before 'a'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2161,7 +2207,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 048 before 'h'
+########## 049 before 'h'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2207,7 +2253,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                                         ╰──╴ Col ╶───╯
 
-########## 049 before 'i'
+########## 050 before 'i'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2253,7 +2299,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                                         ╰──╴ Col ╶───╯
 
-########## 050 before 27
+########## 051 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2299,7 +2345,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                                         ╰──╴ Col ╶───╯
 
-########## 051 before 'C'
+########## 052 before 'C'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2345,7 +2391,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 052 before 27
+########## 053 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2391,7 +2437,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 053 before 'D'
+########## 054 before 'D'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2437,7 +2483,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 054 before 27
+########## 055 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2483,7 +2529,7 @@
   l/enter fix the first ✗   N your name   L new Linear key   G new GitHub token   F repositories folder   r check again                │   ╰─ω─╯~   │
   esc/h skip for now                                                                                                                   ╰──╴ Col ╶───╯
 
-########## 055 before 'R'
+########## 056 before 'R'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2529,7 +2575,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 056 before 'T'
+########## 057 before 'T'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2575,7 +2621,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ nothing waiting on your review                                                                                                     ╰──╴ Col ╶───╯
 
-########## 057 before 27
+########## 058 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2621,7 +2667,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 058 before 'X'
+########## 059 before 'X'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2667,7 +2713,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 059 before 27
+########## 060 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2713,7 +2759,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 060 before 'G'
+########## 061 before 'G'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2759,7 +2805,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 061 before '5'
+########## 062 before '5'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2805,7 +2851,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 062 before 'k'
+########## 063 before 'k'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2851,7 +2897,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 063 before 't'
+########## 064 before 't'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2897,7 +2943,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 064 before '/'
+########## 065 before '/'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2943,7 +2989,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 065 before 'a'
+########## 066 before 'a'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -2989,7 +3035,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 066 before 'p'
+########## 067 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -3035,7 +3081,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 067 before 27
+########## 068 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -3081,7 +3127,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 068 before 27
+########## 069 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -3127,7 +3173,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 069 before 'S'
+########## 070 before 'S'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -3173,7 +3219,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 070 before 'j'
+########## 071 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -3219,7 +3265,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 071 before 10
+########## 072 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
@@ -3265,7 +3311,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 072 before 'U'
+########## 073 before 'U'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             5 issues  ·  ✓ 1 done today
@@ -3311,7 +3357,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ PLA-3 → Done  ·  1 done today  ·  U undo                                                                                           ╰──╴ Col ╶───╯
 
-########## 073 before ' '
+########## 074 before ' '
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3357,7 +3403,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ undid PLA-3 → Done                                                                                                                 ╰──╴ Col ╶───╯
 
-########## 074 before 'c'
+########## 075 before 'c'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3403,7 +3449,7 @@
   enter start   l to the comments   j/k scroll the description   a ask Col   c write a comment   C Col drafts a comment                │   ╰─ω─╯~   │
   L open in Linear   d/u half page   esc/h close                                                                                       ╰──╴ Col ╶───╯
 
-########## 075 before 'o'
+########## 076 before 'o'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3449,7 +3495,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 076 before 'k'
+########## 077 before 'k'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3495,7 +3541,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 077 before 27
+########## 078 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3541,7 +3587,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 078 before 27
+########## 079 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3587,7 +3633,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 079 before 'B'
+########## 080 before 'B'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3633,7 +3679,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 080 before 'B'
+########## 081 before 'B'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3679,7 +3725,7 @@
                                                                                                                                        │  o═╰ω╯═o   │
   ✓ gave Col a bone  ·  1 today                                                                                                        ╰──╴ Col ╶───╯
 
-########## 081 before 'Z'
+########## 082 before 'Z'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3725,7 +3771,7 @@
                                                                                                                                        │  o═╰ω╯═o   │
   ✓ gave Col a bone  ·  2 today                                                                                                        ╰──╴ Col ╶───╯
 
-########## 082 before 'B'
+########## 083 before 'B'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3771,7 +3817,7 @@
 
   ✓ Col is off duty  ·  Z brings him back
 
-########## 083 before 'Z'
+########## 084 before 'Z'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3817,7 +3863,7 @@
 
   ✓ Col is off duty, the bone waits  ·  Z brings him back
 
-########## 084 before 'm'
+########## 085 before 'm'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3863,7 +3909,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ Col is back                                                                                                                        ╰──╴ Col ╶───╯
 
-########## 085 before 27
+########## 086 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             0 issues  ·  ✓ 1 done today
@@ -3909,7 +3955,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   / m▏ enter keep   esc clear                                                                                                          ╰──╴ Col ╶───╯
 
-########## 086 before ('click row with', 'PLA-4')
+########## 087 before ('click row with', 'PLA-4')
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -3955,7 +4001,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 087 before ('click row with', 'PLA-4')
+########## 088 before ('click row with', 'PLA-4')
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4001,7 +4047,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 088 before ('click hint', 27)
+########## 089 before ('click hint', 27)
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4047,7 +4093,7 @@
   enter start   l to the comments   j/k scroll the description   a ask Col   c write a comment   C Col drafts a comment                │   ╰─ω─╯~   │
   L open in Linear   d/u half page   esc/h close                                                                                       ╰──╴ Col ╶───╯
 
-########## 089 before ('wheel', 'down')
+########## 090 before ('wheel', 'down')
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4093,7 +4139,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 090 before ('wheel', 'up')
+########## 091 before ('wheel', 'up')
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4139,7 +4185,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 091 before ('click hint', '?')
+########## 092 before ('click hint', '?')
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4185,7 +4231,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 092 before 10
+########## 093 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4231,7 +4277,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   any key closes   K hides or shows these footer actions                                                                               ╰──╴ Col ╶───╯
 
-########## 093 before ('click hint', 'S')
+########## 094 before ('click hint', 'S')
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4277,7 +4323,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 094 before ('click row with', 'In Review')
+########## 095 before ('click row with', 'In Review')
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4323,7 +4369,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 095 before ('click row with', 'In Review')
+########## 096 before ('click row with', 'In Review')
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4369,7 +4415,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 096 before 'O'
+########## 097 before 'O'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4415,7 +4461,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ PLA-4 → In Review  ·  U undo                                                                                                       ╰──╴ Col ╶───╯
 
-########## 097 before 10
+########## 098 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4461,7 +4507,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                                                                               ╰──╴ Col ╶───╯
 
-########## 098 before 'b'
+########## 099 before 'b'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4507,7 +4553,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 099 before 10
+########## 100 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4553,7 +4599,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 100 before 'j'
+########## 101 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4599,7 +4645,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 101 before 'k'
+########## 102 before 'k'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4645,7 +4691,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 102 before ' '
+########## 103 before ' '
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4691,7 +4737,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 103 before 'l'
+########## 104 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4737,7 +4783,7 @@
   enter start   l to the comments   j/k scroll the description   a ask Col   c write a comment   C Col drafts a comment                │   ╰─ω─╯~   │
   L open in Linear   d/u half page   esc/h close                                                                                       ╰──╴ Col ╶───╯
 
-########## 104 before 'c'
+########## 105 before 'c'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4783,7 +4829,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 105 before 'x'
+########## 106 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4829,7 +4875,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 106 before 10
+########## 107 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4875,7 +4921,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 107 before 27
+########## 108 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4921,7 +4967,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 108 before 'C'
+########## 109 before 'C'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -4967,7 +5013,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 109 before 'x'
+########## 110 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5013,7 +5059,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter send feedback   empty-enter post it   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close          ╰──╴ Col ╶───╯
 
-########## 110 before 27
+########## 111 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5059,7 +5105,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter send feedback   empty-enter post it   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close          ╰──╴ Col ╶───╯
 
-########## 111 before 'a'
+########## 112 before 'a'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5105,7 +5151,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   h to the description   c write a comment   C Col drafts one   a ask Col   esc close      ╰──╴ Col ╶───╯
 
-########## 112 before 27
+########## 113 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5151,7 +5197,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                                         ╰──╴ Col ╶───╯
 
-########## 113 before 'S'
+########## 114 before 'S'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5197,7 +5243,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 114 before 'j'
+########## 115 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5243,7 +5289,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 115 before 10
+########## 116 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5289,7 +5335,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 116 before 27
+########## 117 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5335,7 +5381,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 117 before 'P'
+########## 118 before 'P'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5381,7 +5427,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 118 before 27
+########## 119 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5427,7 +5473,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 119 before 'A'
+########## 120 before 'A'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5473,7 +5519,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 120 before 27
+########## 121 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5519,7 +5565,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 121 before 'b'
+########## 122 before 'b'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5565,7 +5611,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 122 before 'l'
+########## 123 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5611,7 +5657,7 @@
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list               │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
-########## 123 before 27
+########## 124 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5657,7 +5703,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
 
-########## 124 before 27
+########## 125 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5703,7 +5749,7 @@
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list               │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
-########## 125 before 'p'
+########## 126 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5749,7 +5795,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 126 before 'i'
+########## 127 before 'i'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5795,7 +5841,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 127 before 27
+########## 128 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5841,7 +5887,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 128 before 27
+########## 129 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5887,7 +5933,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 129 before 'j'
+########## 130 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5933,7 +5979,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 130 before 'j'
+########## 131 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -5979,7 +6025,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 131 before 'W'
+########## 132 before 'W'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6025,7 +6071,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 132 before 'h'
+########## 133 before 'h'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   work in progress · w jumps there                                                 3 issues  ·  ✓ 1 done today
@@ -6071,7 +6117,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 133 before 'j'
+########## 134 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6117,7 +6163,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 134 before 'j'
+########## 135 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6163,7 +6209,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 135 before 'j'
+########## 136 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6209,7 +6255,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 136 before 'j'
+########## 137 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6255,7 +6301,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 137 before 10
+########## 138 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6301,7 +6347,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 138 before 27
+########## 139 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6347,7 +6393,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 139 before 10
+########## 140 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6393,7 +6439,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l OK, got it!                                                                                                                        ╰──╴ Col ╶───╯
 
-########## 140 before 27
+########## 141 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6439,7 +6485,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l OK, got it!                                                                                                                        ╰──╴ Col ╶───╯
 
-########## 141 before 'l'
+########## 142 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6485,7 +6531,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l OK, got it!                                                                                                                        ╰──╴ Col ╶───╯
 
-########## 142 before 'O'
+########## 143 before 'O'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6531,7 +6577,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 143 before 10
+########## 144 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6577,7 +6623,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                                                                               ╰──╴ Col ╶───╯
 
-########## 144 before 'q'
+########## 145 before 'q'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6623,7 +6669,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 145 before 'Q'
+########## 146 before 'Q'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6669,7 +6715,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 146 before 'j'
+########## 147 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6715,7 +6761,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 147 before 'O'
+########## 148 before 'O'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6761,7 +6807,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 148 before 27
+########## 149 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6807,7 +6853,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                                                                               ╰──╴ Col ╶───╯
 
-########## 149 before 'b'
+########## 150 before 'b'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6853,7 +6899,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 150 before 's'
+########## 151 before 's'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6899,7 +6945,7 @@
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list               │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
-########## 151 before 'j'
+########## 152 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6945,7 +6991,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 152 before 'j'
+########## 153 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6991,7 +7037,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 153 before 'l'
+########## 154 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7037,7 +7083,7 @@
   l/enter actions for PLA-1   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list                │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
-########## 154 before 'a'
+########## 155 before 'a'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7083,7 +7129,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
 
-########## 155 before 27
+########## 156 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7129,7 +7175,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                                         ╰──╴ Col ╶───╯
 
-########## 156 before 'p'
+########## 157 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7175,7 +7221,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 157 before 'j'
+########## 158 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7221,7 +7267,7 @@
   i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   b daily report               │   ╰─ω─╯~   │
   j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 158 before 'l'
+########## 159 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7267,7 +7313,7 @@
   i add a to-do   l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   b daily report                │   ╰─ω─╯~   │
   j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 159 before 27
+########## 160 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7313,7 +7359,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
 
-########## 160 before 'x'
+########## 161 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7359,7 +7405,7 @@
   i add a to-do   l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   b daily report                │   ╰─ω─╯~   │
   j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 161 before 'b'
+########## 162 before 'b'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7405,7 +7451,7 @@
   i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   b daily report               │   ╰─ω─╯~   │
   j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 162 before 'p'
+########## 163 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7451,7 +7497,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 163 before 27
+########## 164 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7497,7 +7543,7 @@
   i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   b daily report               │   ╰─ω─╯~   │
   j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 164 before 'p'
+########## 165 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7543,7 +7589,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 165 before 'x'
+########## 166 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7589,7 +7635,7 @@
   i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   b daily report               │   ╰─ω─╯~   │
   j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 166 before 'x'
+########## 167 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7635,7 +7681,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 167 before 'i'
+########## 168 before 'i'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7681,7 +7727,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 168 before 10
+########## 169 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7727,7 +7773,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 169 before 'm'
+########## 170 before 'm'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7773,7 +7819,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
-########## 170 before 'e'
+########## 171 before 'e'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7819,7 +7865,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
-########## 171 before 10
+########## 172 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7865,7 +7911,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
-########## 172 before 'i'
+########## 173 before 'i'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7911,7 +7957,7 @@
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
   x discard it   b daily report   j/k topics   d/u page   esc/h close                                                                  ╰──╴ Col ╶───╯
 
-########## 173 before 'j'
+########## 174 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7957,7 +8003,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 174 before 10
+########## 175 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8003,7 +8049,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 175 before 'm'
+########## 176 before 'm'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8049,7 +8095,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter Col writes it   esc cancel                                                                                                     ╰──╴ Col ╶───╯
 
-########## 176 before 10
+########## 177 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8095,7 +8141,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter Col writes it   esc cancel                                                                                                     ╰──╴ Col ╶───╯
 
-########## 177 before 'n'
+########## 178 before 'n'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8141,7 +8187,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add it   type + enter Col writes it again   tab edit it yourself   esc cancel                                                  ╰──╴ Col ╶───╯
 
-########## 178 before 10
+########## 179 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8187,7 +8233,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add it   type + enter Col writes it again   tab edit it yourself   esc cancel                                                  ╰──╴ Col ╶───╯
 
-########## 179 before '\t'
+########## 180 before '\t'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8233,7 +8279,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add it   type + enter Col writes it again   tab edit it yourself   esc cancel                                                  ╰──╴ Col ╶───╯
 
-########## 180 before 260
+########## 181 before 260
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8279,7 +8325,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   ←/→ move   esc back to Col                                                                                               ╰──╴ Col ╶───╯
 
-########## 181 before 'z'
+########## 182 before 'z'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8325,7 +8371,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   ←/→ move   esc back to Col                                                                                               ╰──╴ Col ╶───╯
 
-########## 182 before 10
+########## 183 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8371,7 +8417,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   ←/→ move   esc back to Col                                                                                               ╰──╴ Col ╶───╯
 
-########## 183 before 'x'
+########## 184 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8417,7 +8463,7 @@
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
   x discard it   b daily report   j/k topics   d/u page   esc/h close                                                                  ╰──╴ Col ╶───╯
 
-########## 184 before 27
+########## 185 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8463,7 +8509,7 @@
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
   x discard it   b daily report   j/k topics   d/u page   esc/h close                                                                  ╰──╴ Col ╶───╯
 
-########## 185 before 'p'
+########## 186 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8509,7 +8555,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 186 before 'x'
+########## 187 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8555,7 +8601,7 @@
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
   x discard it   b daily report   j/k topics   d/u page   esc/h close                                                                  ╰──╴ Col ╶───╯
 
-########## 187 before 27
+########## 188 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8601,7 +8647,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 188 before 'b'
+########## 189 before 'b'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8647,7 +8693,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 189 before 'x'
+########## 190 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8693,7 +8739,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 190 before 'r'
+########## 191 before 'r'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8739,7 +8785,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 191 before 27
+########## 192 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8785,7 +8831,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 192 before 27
+########## 193 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8831,7 +8877,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 193 before 'W'
+########## 194 before 'W'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8877,7 +8923,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 194 before 'j'
+########## 195 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   work in progress · w jumps there                                                 3 issues  ·  ✓ 1 done today
@@ -8923,7 +8969,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 195 before 'j'
+########## 196 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   work in progress · w jumps there                                                 3 issues  ·  ✓ 1 done today
@@ -8969,7 +9015,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 196 before 'S'
+########## 197 before 'S'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   work in progress · w jumps there                                                 3 issues  ·  ✓ 1 done today
@@ -9015,7 +9061,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 197 before 'W'
+########## 198 before 'W'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   work in progress · w jumps there                                                 3 issues  ·  ✓ 1 done today
@@ -9061,7 +9107,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ topic-0a1 is a workspace, not a Linear issue here · w jumps to it                                                                  ╰──╴ Col ╶───╯
 
-########## 198 before 'q'
+########## 199 before 'q'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
