@@ -5920,7 +5920,7 @@
           │                                                                              │
           │   The loop:  open, look for green,  w .    l  /  enter  to start             │
           │   something new.    b  in the morning.    O  for this tour again.            │
-          ╰──────────────────────────────────────────────────────────────────────────────╯
+          ╰─────────────────────────────  l   OK, got it! ───────────────────────────────╯
 
 
 
@@ -5931,9 +5931,101 @@
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  l/enter done                                                                       ╰──╴ Col ╶───╯
+  l OK, got it!                                                                      ╰──╴ Col ╶───╯
 
-########## 130 before 'O'
+########## 130 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+   2  PLA-1     !!!  First issue about login                                                1h ago
+   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+ ▎    PLA-│                                                                              │  3w ago
+          │   starting work, and the green markers                                       │
+  ◈ Triage│                                                                              │────────
+   1  PLA-│   When you start an issue with  l  /  enter , four things happen: it is      │  3d ago
+          │   assigned to you and moved to In Progress, it gets a git worktree on its    │
+          │   own branch, a herdr workspace named after it, and Claude Code opens        │
+          │   there with the issue already read.                                         │
+          │                                                                              │
+          │     ▶ ws 3 · my-repo                                                         │
+          │   From then on its row carries this green marker: a workspace is open for    │
+          │   it, work in progress, right now, on this machine. It names the             │
+          │   workspace (its number in herdr's sidebar) and the repository.              │
+          │                                                                              │
+          │   So the green rows answer what am I in the middle of? Put the cursor on     │
+          │   one and press  w  to jump straight into it. Each phase or free session     │
+          │   is a tab there; with several,  w  asks which one.                          │
+          │                                                                              │
+          │   The loop:  open, look for green,  w .    l  /  enter  to start             │
+          │   something new.    b  in the morning.    O  for this tour again.            │
+          ╰─────────────────────────────  l   OK, got it! ───────────────────────────────╯
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                    “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l OK, got it!                                                                      ╰──╴ Col ╶───╯
+
+########## 131 before 'l'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+   2  PLA-1     !!!  First issue about login                                                1h ago
+   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+ ▎    PLA-│                                                                              │  3w ago
+          │   starting work, and the green markers                                       │
+  ◈ Triage│                                                                              │────────
+   1  PLA-│   When you start an issue with  l  /  enter , four things happen: it is      │  3d ago
+          │   assigned to you and moved to In Progress, it gets a git worktree on its    │
+          │   own branch, a herdr workspace named after it, and Claude Code opens        │
+          │   there with the issue already read.                                         │
+          │                                                                              │
+          │     ▶ ws 3 · my-repo                                                         │
+          │   From then on its row carries this green marker: a workspace is open for    │
+          │   it, work in progress, right now, on this machine. It names the             │
+          │   workspace (its number in herdr's sidebar) and the repository.              │
+          │                                                                              │
+          │   So the green rows answer what am I in the middle of? Put the cursor on     │
+          │   one and press  w  to jump straight into it. Each phase or free session     │
+          │   is a tab there; with several,  w  asks which one.                          │
+          │                                                                              │
+          │   The loop:  open, look for green,  w .    l  /  enter  to start             │
+          │   something new.    b  in the morning.    O  for this tour again.            │
+          ╰─────────────────────────────  l   OK, got it! ───────────────────────────────╯
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                    “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l OK, got it!                                                                      ╰──╴ Col ╶───╯
+
+########## 132 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5979,7 +6071,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 131 before 10
+########## 133 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -6025,7 +6117,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
-########## 132 before 'q'
+########## 134 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -6071,7 +6163,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 133 before 'Q'
+########## 135 before 'Q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -6117,7 +6209,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 134 before 'j'
+########## 136 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -6163,7 +6255,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 135 before 'O'
+########## 137 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -6209,7 +6301,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 136 before 27
+########## 138 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -6255,7 +6347,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
-########## 137 before 'q'
+########## 139 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today

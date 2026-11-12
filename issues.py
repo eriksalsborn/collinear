@@ -811,9 +811,10 @@ def text_and_keycaps(text):
     return [(f" {part} " if number % 2 else part, bool(number % 2)) for number, part in enumerate(text.split("`")) if part]
 
 
-def show_tour_card(screen, card, footer_text):
+def show_tour_card(screen, card, footer_text, button_text=""):
     """One card of the tour over the list; returns the key that was pressed on it. A line is Markdown, or
-    "@green …" to show the green marker as it looks on a row."""
+    "@green …" to show the green marker as it looks on a row.
+    button_text: the card gets a button on its bottom edge, " l  OK, got it! ", and only l (or a click on it) closes it."""
     title, text_lines = card
     attribute_by_style = daily_report_text_attributes()
     line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 22, 80)
@@ -835,9 +836,19 @@ def show_tour_card(screen, card, footer_text):
                 column += len(text)
             row += 1
     draw_footer_from_text(screen, footer_text)
+    if button_text:  # a keycap and a filled label, centred on the box's bottom edge; clickable
+        bottom_edge, label = min(22, screen.getmaxyx()[0] - 10) - 1, f" {button_text} "
+        column = (box_width - len(label) - 5) // 2
+        line(bottom_edge, "       ", 0, column - 1)  # a little clear space around the keycap, instead of the border running through
+        line(bottom_edge, " l ", keycap_attribute(), column)
+        line(bottom_edge, label, curses.color_pair(ACCENT) | curses.A_REVERSE | curses.A_BOLD, column + 4)
+        CLICK_ZONES.append((line.first_row_on_screen + bottom_edge, line.first_column_on_screen + column,
+                            line.first_column_on_screen + column + 4 + len(label), [ord("l")]))
     screen.refresh()
     screen.timeout(-1)
     key = screen.getch()
+    while button_text and key != ord("l"):  # nothing else closes a card with a button
+        key = screen.getch()
     screen.timeout(250)
     return key
 
@@ -2605,7 +2616,7 @@ class IssueListScreen:
                 start_guided_tour(self.screen)
             if UiState.tour_closing_card_is_due:
                 UiState.tour_closing_card_is_due = False
-                show_tour_card(self.screen, TOUR_CLOSING_CARD, "l/enter done")
+                show_tour_card(self.screen, TOUR_CLOSING_CARD, "l OK, got it!", button_text="OK, got it!")
                 col_says("off you go. `?` if you forget a key, `O` for the tour", "cheer", 8)
             self.draw()
             col_is_animating = (COL_SPEECH["mood"] == "woof" and time.time() < COL_SPEECH["until"]) or time.time() % 37 < 2.5 \

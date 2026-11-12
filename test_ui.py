@@ -145,7 +145,8 @@ EVERY_SCREEN = [
     # Keys it didn't ask for are ignored: b and enter on the list, typing and enter in the comment box (nothing posts).
     "O", ENTER, "b", ENTER, "j", "k", " ", "l", "C", "x", ENTER, ESC, "c", "x", ESC, "a", ESC,
     "S", "j", ENTER, ESC, "P", ESC, "A", ESC,                    # status, priority, assignee: each opens, nothing can be picked
-    "b", "l", ESC, ESC, "j", "j", "j", ENTER, ESC, ENTER,
+    "b", "l", ESC, ESC, "j", "j", "j", ENTER, ESC,
+    ENTER, ESC, "l",                                             # the closing card: only l (its button) finishes
     "O", ENTER, "q", "Q", "j",                                   # q does nothing in the tour; Q quits it, and every key works again
     "O", ESC,                                                    # the welcome card can be declined
 ]
@@ -158,7 +159,7 @@ SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, th
     "two-workspaces": (150, TWO_WORKSPACES_FOR_ONE_ISSUE, ["j", "j", "w", ESC, " ", ESC, ENTER, ESC, "w", "j", "j", ENTER]),
     # first open after setup: no issues assigned, no report yet. The tour starts by itself, leaves out the steps
     # about issues, says there is nothing to report yet, and still ends on the closing card.
-    "new-user-tour": (120, SOMEONE_BRAND_NEW, [ENTER, "b", ESC, ENTER]),
+    "new-user-tour": (120, SOMEONE_BRAND_NEW, [ENTER, "b", ESC, ENTER, "l"]),
 }
 
 

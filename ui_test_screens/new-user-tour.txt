@@ -170,7 +170,7 @@
                     │                                                                              │
                     │   The loop:  open, look for green,  w .    l  /  enter  to start             │
                     │   something new.    b  in the morning.    O  for this tour again.            │
-                    ╰──────────────────────────────────────────────────────────────────────────────╯
+                    ╰─────────────────────────────  l   OK, got it! ───────────────────────────────╯
 
 
 
@@ -181,9 +181,55 @@
                                                                                  “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                          │  ▜▖ ▼  ▗▛  │
                                                                                                          │   ╰─ω─╯~   │
-  l/enter done                                                                                           ╰──╴ Col ╶───╯
+  l OK, got it!                                                                                          ╰──╴ Col ╶───╯
 
-########## 005 before 'q'
+########## 005 before 'l'
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                  0 issues
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                    ╭──────────────────────────────────────────────────────────────────────────────╮
+                    │  Col  a quick tour                                                      esc  │
+                    │                                                                              │
+                    │   starting work, and the green markers                                       │
+                    │                                                                              │
+                    │   When you start an issue with  l  /  enter , four things happen: it is      │
+                    │   assigned to you and moved to In Progress, it gets a git worktree on its    │
+                    │   own branch, a herdr workspace named after it, and Claude Code opens        │
+                    │   there with the issue already read.                                         │
+                    │                                                                              │
+                    │     ▶ ws 3 · my-repo                                                         │
+                    │   From then on its row carries this green marker: a workspace is open for    │
+                    │   it, work in progress, right now, on this machine. It names the             │
+                    │   workspace (its number in herdr's sidebar) and the repository.              │
+                    │                                                                              │
+                    │   So the green rows answer what am I in the middle of? Put the cursor on     │
+                    │   one and press  w  to jump straight into it. Each phase or free session     │
+                    │   is a tab there; with several,  w  asks which one.                          │
+                    │                                                                              │
+                    │   The loop:  open, look for green,  w .    l  /  enter  to start             │
+                    │   something new.    b  in the morning.    O  for this tour again.            │
+                    ╰─────────────────────────────  l   OK, got it! ───────────────────────────────╯
+
+
+
+
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                 “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                         │  ▜▖ ▼  ▗▛  │
+                                                                                                         │   ╰─ω─╯~   │
+  l OK, got it!                                                                                          ╰──╴ Col ╶───╯
+
+########## 006 before 'q'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                                                                  0 issues
