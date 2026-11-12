@@ -1434,32 +1434,32 @@
  ▎    PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
-      PLA-1     !!! urgen│    ON YOUR PLATE                                                                                 │                 1h ago
+      PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
   ○ Todo 1  ─────────────│ ▎ • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │───────────────────────
-      PLA-4     ▮▯▯ low  │ ▎   ↳ only you                                                                                   │                 1w ago
-                         │                                                                                                  │
-  ◌ Backlog 1  ──────────│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   • PLA-99 someone else's — waiting on Sam.                                                      │
-  ◈ Triage 1  ───────────│     ↳ you and Sam                                                                                │───────────────────────
-      PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
+      PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   • PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
+                         │     ↳ you and Sam                                                                                │
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+      PLA-6     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3d ago
                          │                                                                                                  │
                          │   • a loose topic — nobody filed it yet.                                                         │
                          │                                                                                                  │
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -1480,32 +1480,32 @@
  ▎    PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
-      PLA-1     !!! urgen│    ON YOUR PLATE                                                                                 │                 1h ago
+      PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
   ○ Todo 1  ─────────────│   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │───────────────────────
-      PLA-4     ▮▯▯ low  │     ↳ only you                                                                                   │                 1w ago
-                         │                                                                                                  │
-  ◌ Backlog 1  ──────────│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │
-  ◈ Triage 1  ───────────│ ▎   ↳ you and Sam                                                                                │───────────────────────
-      PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
+      PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
+                         │ ▎   ↳ you and Sam                                                                                │
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+      PLA-6     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3d ago
                          │                                                                                                  │
                          │   • a loose topic — nobody filed it yet.                                                         │
                          │                                                                                                  │
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -1526,32 +1526,32 @@
  ▎    PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
-      PLA-1     !!! urgen│    ON YOUR PLATE                                                                                 │                 1h ago
+      PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
   ○ Todo 1  ─────────────│   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │───────────────────────
-      PLA-4     ▮▯▯ low  │     ↳ only you                                                                                   │                 1w ago
-                         │                                                                                                  │
-  ◌ Backlog 1  ──────────│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │
-  ◈ Triage 1  ───────────│ ▎   ↳ you and Sam                                                                                │───────────────────────
-      PLA-6     ▯▯▯      │     ╭──────────────────────────────────────────────────────────────────────────────╮             │                 3d ago
-                         │   ╌╌│  Col  PLA-99                                                            esc  │╌╌╌╌╌╌       │
+      PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
+                         │ ▎   ↳ you and Sam                                                                                │
+  ◈ Triage 1  ───────────│     ╭──────────────────────────────────────────────────────────────────────────────╮             │───────────────────────
+      PLA-6     ▯▯▯      │   ╌╌│  Col  PLA-99                                                            esc  │╌╌╌╌╌╌       │                 3d ago
                          │     │  / filter                                                                    │             │
                          │   • │                                                                              │             │
                          │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │             │
                          │     │  c   free session on it                                                      │             │
-                         │    F│  a   ask Col about it                                                        │             │
+                         │    L│  a   ask Col about it                                                        │             │
                          │   ──│  s   move it to the to-do list, where it stays                               │──────       │
                          │     │  x   discard it                                                              │             │
                          │   • │                                                                              │             │
                          │     ╰──────────────────────────────────────────────────────────────────────────────╯             │
                          │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -1572,32 +1572,32 @@
  ▎    PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
-      PLA-1     !!! urgen│    ON YOUR PLATE                                                                                 │                 1h ago
+      PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
   ○ Todo 1  ─────────────│   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │───────────────────────
-      PLA-4     ▮▯▯ low  │     ↳ only you                                                                                   │                 1w ago
-                         │                                                                                                  │
-  ◌ Backlog 1  ──────────│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │
-  ◈ Triage 1  ───────────│ ▎   ↳ you and Sam                                                                                │───────────────────────
-      PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
+      PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
+                         │ ▎   ↳ you and Sam                                                                                │
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+      PLA-6     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3d ago
                          │                                                                                                  │
                          │   • a loose topic — nobody filed it yet.                                                         │
                          │                                                                                                  │
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -5514,7 +5514,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                 “17/25   b  opens The Daily Bark: my recap of your last working day” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                      “17/25   b  opens The Daily Bark: your last working day, and the loose threads” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                     Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
@@ -5528,32 +5528,32 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
-      PLA-6     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │ ▎   ↳ you and Sam                                                                                │
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-6     ▯▯▯      │ ▎   ↳ you and Sam                                                                                │                 3d ago
                          │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • a loose topic — nobody filed it yet.                                                         │
                          │                                                                                                  │
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -5574,32 +5574,32 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
-      PLA-6     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │ ▎   ↳ you and Sam                                                                                │
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-6     ▯▯▯      │ ▎   ↳ you and Sam                                                                                │                 3d ago
                          │     ╭──────────────────────────────────────────────────────────────────────────────╮             │
                          │   ╌╌│  Col  PLA-99                                                            esc  │╌╌╌╌╌╌       │
                          │     │  / filter                                                                    │             │
                          │   • │                                                                              │             │
                          │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │             │
                          │     │  c   free session on it                                                      │             │
-                         │    F│  a   ask Col about it                                                        │             │
+                         │    L│  a   ask Col about it                                                        │             │
                          │   ──│  s   move it to the to-do list, where it stays                               │──────       │
                          │     │  x   discard it                                                              │             │
                          │   • │                                                                              │             │
                          │     ╰──────────────────────────────────────────────────────────────────────────────╯             │
                          │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -5620,32 +5620,32 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
-      PLA-6     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │ ▎   ↳ you and Sam                                                                                │
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-6     ▯▯▯      │ ▎   ↳ you and Sam                                                                                │                 3d ago
                          │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • a loose topic — nobody filed it yet.                                                         │
                          │                                                                                                  │
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -6402,32 +6402,32 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │ ▎   ↳ you and Sam                                                                                │
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+ ▎    PLA-6     ▯▯▯      │ ▎   ↳ you and Sam                                                                                │                 3d ago
                          │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • a loose topic — nobody filed it yet.                                                         │
                          │                                                                                                  │
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -6448,27 +6448,27 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3d ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
+  ◈ Triage 1  ───────────│ ▎ • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -6494,27 +6494,27 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
+  ◈ Triage 1  ───────────│   • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │ ▎ • reply to Robin about herdr links.                                                            │
+                         │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -6540,27 +6540,27 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
+  ◈ Triage 1  ───────────│   • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
-                         │                                                                                                  │
-                         │    START HERE                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
                          │ ▎ • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -6586,36 +6586,36 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│   • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
+                         │                                                                                                  │
+                         │    LOOSE THREADS                                                                                 │
+                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │                                                                                                  │
+                         │   • reply to Robin about herdr links.                                                            │
+                         │     ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
+                         │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
+                         │                                                                                                  │
+                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
                          │     ╭──────────────────────────────────────────────────────╮                                     │
                          │     │  Col  PLA-1                                     esc  │                                     │
-                         │    F│  / filter                                            │                                     │
-                         │   ──│                                                      │──────────────────────────────       │
+                         │     │  / filter                                            │                                     │
+                         │     │                                                      │                                     │
                          │     │ ▎l   go to PLA-1 in the list                         │                                     │
-                         │   • │  c   free session on it                              │                                     │
+                         │     │  c   free session on it                              │                                     │
                          │     │  a   ask Col about it                                │                                     │
                          │     │  s   move it to the to-do list, where it stays       │                                     │
-                         │    S│  x   discard it                                      │                                     │
-                         │   ──│                                                      │──────────────────────────────       │
-                         │     ╰──────────────────────────────────────────────────────╯                                     │
-                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
-                         │                                                                                                  │
-                         │                                                                                                  │
-                         │                                                                                                  │
-                         │                                                                                                  │
-                         │                                                                                                  │
-                         │                                                                                                  │
-                         │                                                                                                  │
-                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
-
+                         │     │  x   discard it                                      │                                     │
+                         ╰─────│                                                      │─────────────────────────────────────╯
+                               ╰──────────────────────────────────────────────────────╯
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
@@ -6629,27 +6629,27 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  Col  daily report · topic 4                                                                                                            esc  │─
-   │   ON YOUR PLATE                                                      │    ✦ ask Col about this topic                                         │o
+   │   WEDNESDAY                                                          │    ✦ ask Col about this topic                                         │o
    │  ─────────────────────────────────────────────────────────────────   │    ─────────────────────────────────────────────────────────────────  │o
    │                                                                      │                                                                       │
   ◔│  • PLA-1 login thing — PR #7 is in review since Tuesday.             │     Ask Col about this topic: start with PLA-1, it is closest to      │─
-   │    ↳ only you                                                        │     done.… Col has the report, your issues, and can look things       │o
-   │                                                                      │     up in Linear, Slack and GitHub. The thread is kept for the        │o
-   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │     day, one per topic.                                               │
-  ◌│                                                                      │                                                                       │─
-   │  • a loose topic — nobody filed it yet.                              │                                                                       │o
+   │                                                                      │     done.… Col has the report, your issues, and can look things       │o
+   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │     up in Linear, Slack and GitHub. The thread is kept for the        │o
+   │                                                                      │     day, one per topic.                                               │
+  ◌│  • a loose topic — nobody filed it yet.                              │                                                                       │─
+   │                                                                      │                                                                       │o
    │                                                                      │                                                                       │
-  ◈│                                                                      │                                                                       │─
- ▎ │   FOLLOW UP                                                          │                                                                       │o
-   │  ─────────────────────────────────────────────────────────────────   │                                                                       │
+  ◈│   LOOSE THREADS                                                      │                                                                       │─
+ ▎ │  ─────────────────────────────────────────────────────────────────   │                                                                       │o
    │                                                                      │                                                                       │
    │  • reply to Robin about herdr links.                                 │                                                                       │
+   │    ↳ Robin in #dev, Tuesday · no Linear issue yet                    │                                                                       │
    │                                                                      │                                                                       │
-   │                                                                      │                                                                       │
-   │   START HERE                                                         │                                                                       │
-   │  ─────────────────────────────────────────────────────────────────   │                                                                       │
+   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │                                                                       │
    │                                                                      │                                                                       │
    │  • start with PLA-1, it is closest to done.                          │                                                                       │
+   │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
    │                                                                      │                                                                       │
    │                                                                      │                                                                       │
    │                                                                      │                                                                       │
@@ -6678,21 +6678,21 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
+  ◈ Triage 1  ───────────│   • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │ ▎ • reply to Robin about herdr links.                                                            │
+                         │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -6954,21 +6954,21 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
+  ◈ Triage 1  ───────────│   • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │ ▎ • reply to Robin about herdr links.                                                            │
+                         │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7920,21 +7920,21 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
+  ◈ Triage 1  ───────────│   • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
-                         │    FOLLOW UP                                                                                     │
+                         │    LOOSE THREADS                                                                                 │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
                          │ ▎ • reply to Robin about herdr links.                                                            │
+                         │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7966,15 +7966,15 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3d ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│ ▎ • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -8058,15 +8058,15 @@
       PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
-  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+  ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
                          │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
-  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
-      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3d ago
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+      PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│ ▎ • a loose topic — nobody filed it yet.                                                         │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │

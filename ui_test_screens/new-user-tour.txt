@@ -86,7 +86,7 @@
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
-                                     “1/4   b  opens The Daily Bark: my recap of your last working day” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                          “1/4   b  opens The Daily Bark: your last working day, and the loose threads” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh      │   ╰─ω─╯~   │
   / filter   ? all keys   h close                                                                        ╰──╴ Col ╶───╯

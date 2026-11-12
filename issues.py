@@ -699,7 +699,7 @@ GUIDED_TOUR_STEPS = [
     TourStep("`A` assigns it to someone", (ord("A"),), "assign dialog", True),
     TourStep("`esc` or `h` backs out. and `U` undoes a change you did make", BACK_KEYCODES, "list", True),
     # the daily report
-    TourStep("`b` opens The Daily Bark: my recap of your last working day", (ord("b"),), "report", False),
+    TourStep("`b` opens The Daily Bark: your last working day, and the loose threads", (ord("b"),), "report", False),
     TourStep("`j` / `k` pick a topic. `l` or `enter` shows what you can do with it",
              DOWN_KEYCODES + UP_KEYCODES + FORWARD_KEYCODES + BACK_KEYCODES, "topic menu", False),  # back too: there may be no topic to pick
     TourStep("go to its issue, start it, or ask me. `esc` or `h` backs out", BACK_KEYCODES, "report", False),
@@ -1538,35 +1538,33 @@ def ask_headless_claude(context, history, cwd, progress, running_processes, task
 
 
 WRITE_DAILY_REPORT_TASK = (
-    "You are Col, a border collie who herds this developer's work. Write their morning brief: what happened on their "
-    "last working day and where things stand now, so they can pick the threads back up. Below is what was gathered "
-    "from their machine and from Linear: the day the report covers, what they finished, their in-progress issues with "
-    "the commits, pull requests and agent sessions on each, and the reviews waiting on them. Trust those facts and "
-    "don't look them up again. Spend lookups only on what they can't show: who said what, why something is blocked, "
-    "what was decided. Use Linear comments, gh pr view <url> (there is no repo in the cwd) and Slack (search the "
-    "issue ids and their name, read the threads that matter). At most 6 lookups.\n"
-    "Format, Markdown. Four sections, each a heading line then bullets, at most 5 bullets per section.\n"
-    "Every bullet outside the first section is a to-do: something the developer can do today, and it is moved to "
-    "their to-do list as it stands, so it must make sense on its own, without the rest of the report. Start it with "
-    "the action as an imperative verb (grant, reply to, review, merge, check, ask, decide), say what exactly, and "
-    "then the one fact that makes it needed. Never a bare status: not 'PR #7 is in review' but 'Nudge Sam to review "
-    "PR #7, it has waited since Tuesday'. If there is honestly nothing to do on something, leave it out.\n"
-    "## yesterday  — the only section that is not to-dos: what moved on the day the report covers (issues finished, "
-    "pull requests merged or opened, commits made, decisions taken). At most 3 bullets, the most important first. If "
-    "nothing moved, one bullet saying so. Use the weekday's name in the heading instead of 'yesterday' when the day "
-    "covered is not yesterday.\n"
-    "## on your plate  — one to-do per in-progress issue, its next concrete step: **PLA-123 two-word nickname** then "
-    "an em dash, then the action and the fact behind it (a PR number, a date, a name, a number). Max 25 words per "
-    "bullet. Then, on its own line right under the bullet (not a sub-bullet), who's on it: '↳ only you', or "
-    "'↳ you and Sam' naming the people active on it that day: comment authors, PR reviewers, people in the Slack thread.\n"
-    "Never mention a herdr workspace by number; say 'the agent session on PLA-123'.\n"
-    "## follow up  — one to-do per reply owed, review waiting on them, agent session that finished and waits to be "
-    "checked, and thing that is blocked or has gone quiet (who to ask, and what). Name the issue id, the PR or the "
-    "workspace in each. Group reviews that are the same chore into one to-do. One short sentence each.\n"
-    "## start here  — one bullet: which of the to-dos above to do first, and why, in one sentence.\n"
-    "Playful but concise, no filler, no sub-bullets, no nested emphasis. Address them as you, and by first name once "
-    "or twice (the developer line below has it). Say nothing you couldn't source; if Slack or Linear had nothing, "
-    "say so in a few words.", "Request", "Brief")
+    "You are Col, a border collie who herds this developer's work. Write their morning brief. It has two parts: a "
+    "short update on the work done on their last working day, and the loose threads you can find: things brought "
+    "up in conversations that nobody has followed up on, or that have no Linear issue yet.\n"
+    "Below is what was gathered from their machine and from Linear: the day the report covers, what they finished, "
+    "their in-progress issues with the commits, pull requests and agent sessions on each, and the reviews waiting on "
+    "them. Trust those facts and don't look them up again: the first part is written from them alone.\n"
+    "Spend your lookups on the second part, at most 10. Go back about a week. Search Slack for their name and for "
+    "the issue ids, and read the threads they are in; read the Linear comments on their issues; read the review "
+    "comments on their open pull requests (gh pr view <url> --comments, there is no repo in the cwd). You are "
+    "hunting for: a question put to them that has no answer, something they said they would do or look into, a bug "
+    "or idea someone raised that went nowhere, a decision that was asked for and never made, a request that has no "
+    "Linear issue. Leave out anything that was answered, done or already has an issue that covers it.\n"
+    "Format, Markdown. Two sections, each a heading line then bullets, no sub-bullets, no nested emphasis.\n"
+    "## yesterday  — the update, at most 4 bullets of at most 20 words: issues finished, pull requests merged or "
+    "opened, what the commits were about, decisions taken. The most important first; if nothing moved, one bullet "
+    "saying so. Use the weekday's name in the heading instead of 'yesterday' when the day covered is not yesterday.\n"
+    "## loose threads  — at most 8 bullets, the ones that matter most first. Each is a to-do that makes sense on its "
+    "own, because it is moved to their to-do list as it stands: a short bold headline (start it with the Linear "
+    "issue id when the thread belongs to one), then an em dash, then the action as an imperative verb (reply to, "
+    "ask, decide, file an issue for, check) and what exactly. Max 25 words. Then, on its own line right under the "
+    "bullet (not a sub-bullet), where it comes from: '↳ Sam in #channel, Tuesday' or '↳ Sam's comment on PLA-123, "
+    "Monday', and add ' · no Linear issue yet' when nothing in Linear covers it. An agent session that finished and "
+    "waits to be checked, and reviews waiting on them (the same chore grouped into one bullet), count as loose "
+    "threads too, after the ones from conversations. If you found none, one bullet saying where you looked.\n"
+    "Never mention a herdr workspace by number; say 'the agent session on PLA-123'. Plain and concise, no filler. "
+    "Address them as you, and by first name once (the developer line below has it). Say nothing you couldn't source.",
+    "Request", "Brief")
 DAILY_REPORT = {"procs": []}  # today's brief: date, text (None while being written), steps (lookups so far)
 
 
@@ -3017,8 +3015,8 @@ class IssueListScreen:
             col_says("morning. I'm writing up your last working day", "cheer", 12)
             wants_to_read_it_now = choose_from_list(
                 self.screen, "Col  ·  good morning", ["yes, what have I been up to?", "not now · b opens it later"], help=(
-                    "Col sniffs through your in-progress issues, Slack and the workspaces open here, and writes a "
-                    "short recap of your last working day so you can pick the threads back up.",
+                    "Col writes a short update on your last working day, then sniffs through Slack, Linear comments "
+                    "and your pull requests for loose threads: what nobody followed up on, or has no issue yet.",
                     "It's being written now and takes about a minute. b opens it any time today.")) == 0
             if wants_to_read_it_now:
                 self.identifier_to_put_cursor_on = show_daily_report(self.screen, issues, self.today) or self.identifier_to_put_cursor_on
