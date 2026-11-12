@@ -132,7 +132,7 @@ EVERY_SCREEN = [
     # the tour, for real: welcome card, then the steps in the app (list, an issue's comments and questions, the report,
     # starting work), then the closing card
     # Keys it didn't ask for are ignored: b and enter on the list, typing and enter in the comment box (nothing posts).
-    "O", ENTER, "b", ENTER, "j", "k", " ", "l", "C", "x", ENTER, ESC, "c", "x", ESC, "a", ESC, "b", "l", ESC, ESC, "j", ENTER, ESC, ENTER,
+    "O", ENTER, "b", ENTER, "j", "k", " ", "l", "C", "x", ENTER, ESC, "c", "x", ESC, "a", ESC, "b", "l", ESC, ESC, "j", "j", ENTER, ESC, ENTER,
     "O", ENTER, "q", "j",                                        # q leaves the tour; after that every key works again
     "O", ESC,                                                    # the welcome card can be declined
 ]
