@@ -17,10 +17,20 @@ python3 ~/collinear/install.py
 ```
 
 Then press `prefix + alt + i` in herdr. The first time, Col shows a checklist and fixes most of it with you right
-there (Linear key, repositories folder, and so on). Then he walks you through the app in a short hands-on tour.
+there (Linear key, repositories folder, and so on). Then he takes you on [the tour](#the-tour).
 
 If that key is already yours: `python3 ~/collinear/install.py --issues-key prefix+alt+l`.
 To update: `git -C ~/collinear pull && python3 ~/collinear/install.py`.
+
+## The tour
+
+Right after setup, Col walks you through the app for real: he says each step from his speech bubble and you press
+the key, so the preview, the comments, The Daily Bark and the start dialog actually open in front of you.
+
+- It covers moving around, reading and writing comments, asking Col, changing status / priority / assignee,
+  the daily report, the green markers and `w`, and what starting work does.
+- Only the key he asks for works while it runs, so you can't get lost or post anything by accident.
+- `Q` quits it at any time. `O` starts it again whenever you want.
 
 ## Good to know
 
