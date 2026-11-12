@@ -286,16 +286,32 @@ def attachments_of(issue):
     return (issue.get("attachments") or {}).get("nodes", [])
 
 
-def workspaces_open_for_issue(issue):
-    """The herdr workspaces whose name starts with the issue's id (that is the whole link between the two).
-    Usually none or one; several when the issue was opened more than once."""
-    prefix = issue["identifier"] + " "
-    return [workspace for workspace in open_herdr_workspaces() if workspace["label"].startswith(prefix)]
+def workspace_is_named_after(workspace, issue):
+    return workspace["label"].startswith(issue["identifier"] + " ")
+
+
+def workspaces_of_issue_among(workspaces, issue, folders_of_its_branch):
+    """The workspaces that belong to the issue: named after it (the name starts with its id), or sitting in a folder
+    where its branch is checked out, whatever they are called (one opened from the PR popup, or by hand).
+    The ones named after it come first."""
+    folders = set(folders_of_its_branch)
+    belonging = [workspace for workspace in workspaces
+                 if workspace_is_named_after(workspace, issue) or (workspace.get("worktree") or {}).get("checkout_path") in folders]
+    return sorted(belonging, key=lambda workspace: not workspace_is_named_after(workspace, issue))
+
+
+def workspaces_open_for_issue(issue, folders_of_its_branch=None):
+    """The herdr workspaces open for the issue right now. Usually none or one; several when it was opened more than once.
+    ponytail: without folders_of_its_branch this asks git in every repository (about a third of a second); the list
+    passes what it already knows."""
+    if folders_of_its_branch is None:
+        folders_of_its_branch = worktrees_on_branch(issue["branchName"]).values() if issue.get("branchName") else ()
+    return workspaces_of_issue_among(open_herdr_workspaces(), issue, folders_of_its_branch)
 
 
 def workspace_open_for_issue(issue):
-    """The first herdr workspace open for the issue, or None: where a new tab for the issue goes."""
-    return next(iter(workspaces_open_for_issue(issue)), None)
+    """The herdr workspace a new tab for the issue goes into: the one named after it if there is one, or None."""
+    return next((workspace for workspace in open_herdr_workspaces() if workspace_is_named_after(workspace, issue)), None)
 
 
 def describe_workspace(workspace):
@@ -305,10 +321,10 @@ def describe_workspace(workspace):
     return f"ws {workspace['number']:<3} {repository[:24]:<24}  {workspace.get('agent_status') or '?':<8}  {tabs:<7}  {workspace['label'][:48]}"
 
 
-def jump_to_a_workspace_of_issue(screen, issue):
+def jump_to_a_workspace_of_issue(screen, issue, folders_of_its_branch=None):
     """Focus the issue's herdr workspace and close the popup; with several open, ask which one first.
     Returns a footer message when there is none, "" when the choice was cancelled."""
-    workspaces = workspaces_open_for_issue(issue)
+    workspaces = workspaces_open_for_issue(issue, folders_of_its_branch)
     if not workspaces:
         return f"no workspace open for {issue['identifier']} yet · enter starts one"
     picked = 0 if len(workspaces) == 1 else choose_from_list(
@@ -2547,7 +2563,7 @@ class IssueListScreen:
         self.refreshed_issues_waiting = None     # (view they were fetched for, issues) until the main loop takes them in
         self.refresh_error = ""
         self.states_before_first_refresh = {}    # what the morning digest compares the fresh issues with
-        self.open_workspaces_by_identifier = {}  # issue id -> the herdr workspaces open for it (usually one)
+        self.open_workspaces = []                # every herdr workspace open on this machine
         self.worktree_folders_by_branch = {}     # branch -> {repository name: folder}, for everything under the repositories folder
         self.days_quiet_by_identifier = {}       # issue id -> days since the last commit on its branch
         # the header
@@ -2629,10 +2645,7 @@ class IssueListScreen:
         """Background: which issues have a herdr workspace open, what is checked out where, and for my started
         issues how long their branch has been quiet. Best effort: the list works without any of it."""
         try:
-            workspaces_by_identifier = {}
-            for workspace in open_herdr_workspaces():
-                workspaces_by_identifier.setdefault(workspace["label"].split(" ")[0], []).append(workspace)
-            self.open_workspaces_by_identifier = workspaces_by_identifier
+            self.open_workspaces = open_herdr_workspaces()
             self.worktree_folders_by_branch = scan_worktrees_of_all_repositories()
             days_quiet = {}
             for issue in my_issues:
@@ -2716,10 +2729,17 @@ class IssueListScreen:
     def issue_under_cursor(self):
         return self.visible_rows[self.issue_row_numbers[self.cursor]][1]
 
+    def folders_of_branch_of(self, issue):
+        return self.worktree_folders_by_branch.get(issue.get("branchName"), {}).values()
+
+    def open_workspaces_of(self, issue):
+        """The herdr workspaces open for the issue (usually none or one), from what the background scan found."""
+        return workspaces_of_issue_among(self.open_workspaces, issue, self.folders_of_branch_of(issue))
+
     def workspace_summary(self, issue, with_agent_status_and_branch=False):
         """The green marker's words: which workspace(s) and which repositories, e.g. "ws 4 · my-repo", or
         "ws 3 + 6 · my-repo" when the issue has two; the long form adds what each agent is doing and the branch."""
-        workspaces = self.open_workspaces_by_identifier[issue["identifier"]]
+        workspaces = self.open_workspaces_of(issue)
         repositories = list(self.worktree_folders_by_branch.get(issue.get("branchName"), {}))
         if with_agent_status_and_branch:
             parts = [" + ".join(f"ws {workspace['number']} {workspace.get('agent_status') or '?'}" for workspace in workspaces)]
@@ -2834,7 +2854,8 @@ class IssueListScreen:
         screen, colour = self.screen, self.colour
         screen_width = screen.getmaxyx()[1]
         is_under_cursor = rows_from_cursor == 0
-        has_open_workspace = issue["identifier"] in self.open_workspaces_by_identifier
+        workspaces_of_this_issue = self.open_workspaces_of(issue)
+        has_open_workspace = bool(workspaces_of_this_issue)
         if not self.is_typing_filter:  # click a row: the cursor goes there; click the cursor's row: preview it
             register_clickable_row(y, 0, screen_width, rows_from_cursor, [ord(" ")] * is_under_cursor)
         cursor_row_attribute = colour(SELECTED_ROW) if is_under_cursor else 0
@@ -2862,7 +2883,7 @@ class IssueListScreen:
                 cycle = f" c{issue['cycle']['number']}" if issue.get("cycle") else ""
                 right_columns.append((f"{(project_name + cycle)[:15]:<15}", DIM, False))
         if has_open_workspace:  # a herdr workspace is open for it: say which, and where its code is; w jumps there
-            workspace_numbers = " + ".join(str(workspace["number"]) for workspace in self.open_workspaces_by_identifier[issue["identifier"]])
+            workspace_numbers = " + ".join(str(workspace["number"]) for workspace in workspaces_of_this_issue)
             right_columns.append((f" ▶ ws {workspace_numbers} " if is_narrow_popup else f" ▶ {self.workspace_summary(issue)} ", GREEN, True))
             branch = issue.get("branchName") or ""
             if screen_width >= 170 and branch in self.worktree_folders_by_branch:  # room for the branch too
@@ -2964,8 +2985,7 @@ class IssueListScreen:
             if not binding.footer_keys or (only_those_that_work_on_an_empty_list and binding.needs_issue_under_cursor):
                 continue
             if binding.action == "jump_to_workspace_of_issue":
-                workspace_count = len(self.open_workspaces_by_identifier.get(self.issue_under_cursor()["identifier"], [])) \
-                    if self.issue_row_numbers else 0
+                workspace_count = len(self.open_workspaces_of(self.issue_under_cursor())) if self.issue_row_numbers else 0
                 if workspace_count:
                     jump_hint = [(binding.footer_keys, binding.footer_text if workspace_count == 1 else f"pick one of its {workspace_count} workspaces")]
             elif binding.action == "undo_last_change" and not UNDO_STACK:
@@ -3074,15 +3094,15 @@ class IssueListScreen:
         """The preview can hand off to starting the issue, asking Col, opening it in Linear or jumping to its workspace."""
         issue = self.issue_under_cursor()
         col_says(COL_PREVIEW_LINES[self.issue_row_numbers[self.cursor] % len(COL_PREVIEW_LINES)], "cheer", 4)
-        open_workspace_summary = issue["identifier"] in self.open_workspaces_by_identifier and \
-            self.workspace_summary(issue, with_agent_status_and_branch=True)
+        open_workspace_summary = bool(self.open_workspaces_of(issue)) and self.workspace_summary(issue, with_agent_status_and_branch=True)
         chosen_in_preview = show_issue_preview(self.screen, issue, open_workspace_summary)
         action_for_choice = {"launch": "start_work_on_issue_under_cursor", "a": "ask_col_about_issue",
                              "L": "open_issue_in_linear_app", "w": "jump_to_workspace_of_issue"}
         return getattr(self, action_for_choice[chosen_in_preview])() if chosen_in_preview in action_for_choice else ""
 
     def jump_to_workspace_of_issue(self):
-        return jump_to_a_workspace_of_issue(self.screen, self.issue_under_cursor())
+        issue = self.issue_under_cursor()
+        return jump_to_a_workspace_of_issue(self.screen, issue, self.folders_of_branch_of(issue))
 
     def ask_col_about_issue(self):
         col_reacts_to("ask")
@@ -3354,6 +3374,9 @@ def _test():
     assert shortened_folder(Path.home() / "code", 18) == "~/code" and shortened_folder(Path("/a/very/long/path/to/the/repositories"), 18) == "…/the/repositories"
     assert text_and_keycaps("press `j` to move") == [("press ", False), (" j ", True), (" to move", False)]
     assert text_and_keycaps("`esc` or `h`") == [(" esc ", True), (" or ", False), (" h ", True)] and text_and_keycaps("woof") == [("woof", False)]
+    named, elsewhere, unrelated = {"label": "PLA-9 Fix it"}, {"label": "review", "worktree": {"checkout_path": "/wt/a"}}, {"label": "PLA-90 other"}
+    assert workspaces_of_issue_among([elsewhere, unrelated, named], issue, ["/wt/a"]) == [named, elsewhere], "by name first, then by folder"
+    assert workspaces_of_issue_among([elsewhere, unrelated], issue, []) == []
     assert herdr_version_from("herdr 0.9.5") == (0, 9, 5) and herdr_version_from("herdr 0.10.0-preview") == (0, 10, 0) and herdr_version_from("?") is None
     pr = lambda **m: {"url": "https://github.com/o/r/pull/1", "metadata": m}
     assert pull_request_badge_key({"status": "inReview", "hasConflicts": True}) == "conflict"

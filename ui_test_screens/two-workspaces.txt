@@ -162,7 +162,7 @@
                           │                                                                                               │
                           │                                                                                               │
                           │ ▎ws 3   alpha                     working   3 tabs   PLA-2 Second issue with a workspace      │
-                          │  ws 6   no repository             idle      1 tab    PLA-2 Second issue, the infra half       │
+                          │  ws 6   alpha                     idle      1 tab    Review: second issue                     │
                           │                                                                                               │
                           ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
 
@@ -438,7 +438,7 @@
                           │                                                                                               │
                           │                                                                                               │
                           │ ▎ws 3   alpha                     working   3 tabs   PLA-2 Second issue with a workspace      │
-                          │  ws 6   no repository             idle      1 tab    PLA-2 Second issue, the infra half       │
+                          │  ws 6   alpha                     idle      1 tab    Review: second issue                     │
                           │                                                                                               │
                           ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
 
@@ -484,7 +484,7 @@
                           │                                                                                               │
                           │                                                                                               │
                           │  ws 3   alpha                     working   3 tabs   PLA-2 Second issue with a workspace      │
-                          │ ▎ws 6   no repository             idle      1 tab    PLA-2 Second issue, the infra half       │
+                          │ ▎ws 6   alpha                     idle      1 tab    Review: second issue                     │
                           │                                                                                               │
                           ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
 
