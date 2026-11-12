@@ -2,7 +2,7 @@
 ########## 001 before 10
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+  my issues   active workspaces   daily bark   to-do                                                          0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -48,7 +48,7 @@
 ########## 002 before 'b'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+  my issues   active workspaces   daily bark   to-do                                                          0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -94,53 +94,53 @@
 ########## 003 before 27
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
- ─────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮─────────
-          │  Col  daily report                                                                          esc  │
-          │                                                                                                  │
-          │  from memory                                                                                     │
-          │                                                                                                  │
-          │   fake answer                                                                                    │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+  my issues   active workspaces   daily bark   to-do
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   from memory
+
+    fake answer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                           “2/8  nothing to report yet, it fills up as you work.  esc  or  h  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                          │   ╰─ω─╯~   │
-  p to-do list   r write it again   esc/h close                                                          ╰──╴ Col ╶───╯
+  r write it again   ;/p to-do   h active workspaces   esc back to the issues                            ╰──╴ Col ╶───╯
 
 ########## 004 before 'p'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+  my issues   active workspaces   daily bark   to-do                                                          0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -186,61 +186,61 @@
 ########## 005 before 'i'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
- ─────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮─────────
-          │  Col  to-do list                                                                            esc  │
-          │                                                                                                  │
-          │  these stay when the report is written again                                                     │
-          │                                                                                                  │
-          │    TO DO                                                                                         │
-          │   ────────────────────────────────────────────────────────────────────────────────────────       │
-          │                                                                                                  │
-          │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
-          │   Bark, s moves a topic here. It stays until you discard it.                                     │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+  my issues   active workspaces   daily bark   to-do
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   these stay when the report is written again
+
+     TO DO
+    ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily Bark, s moves a topic
+    here. It stays until you discard it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                                        “6/8   i  adds one: you type it, or I write it from a few words” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                          │   ╰─ω─╯~   │
-  i add a to-do   b daily report   esc/h close                                                           ╰──╴ Col ╶───╯
+  i add a to-do   h/b daily bark   esc back to the issues                                                ╰──╴ Col ╶───╯
 
 ########## 006 before 27
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+  my issues   active workspaces   daily bark   to-do
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   these stay when the report is written again
 
+     TO DO
+    ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-
-
-
-
-
+    nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily Bark, s moves a topic
+    here. It stays until you discard it.
 
 
 
@@ -278,53 +278,53 @@
 ########## 007 before 27
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
- ─────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮─────────
-          │  Col  to-do list                                                                            esc  │
-          │                                                                                                  │
-          │  these stay when the report is written again                                                     │
-          │                                                                                                  │
-          │    TO DO                                                                                         │
-          │   ────────────────────────────────────────────────────────────────────────────────────────       │
-          │                                                                                                  │
-          │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
-          │   Bark, s moves a topic here. It stays until you discard it.                                     │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          │                                                                                                  │
-          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+  my issues   active workspaces   daily bark   to-do
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   these stay when the report is written again
+
+     TO DO
+    ───────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily Bark, s moves a topic
+    here. It stays until you discard it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                                 “8/8  it stays until you  x  it.  esc  or  h  goes back to your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                          │   ╰─ω─╯~   │
-  i add a to-do   b daily report   esc/h close                                                           ╰──╴ Col ╶───╯
+  i add a to-do   h/b daily bark   esc back to the issues                                                ╰──╴ Col ╶───╯
 
 ########## 008 before 10
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+  my issues   active workspaces   daily bark   to-do                                                          0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -370,7 +370,7 @@
 ########## 009 before 'l'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+  my issues   active workspaces   daily bark   to-do                                                          0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -416,7 +416,7 @@
 ########## 010 before 'q'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+  my issues   active workspaces   daily bark   to-do                                                          0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 

@@ -50,7 +50,8 @@ class UiState:
     draw_screen_behind_dialog = None  # the list screen's draw(): dialogs repaint the list behind them, so no stale dialog stays on screen
     grey_out_behind_dialog = False  # grey out everything behind a dialog (setup with something missing)
     title_of_open_dialog = None  # a new title plays the open animation once
-    footer_hints_visible = False  # K toggles the key hints in the main list's footer, hidden until asked for; ? always stays
+    page_in_place_of_the_list = None  # "daily bark" or "to-do" while that tab is open: it fills the screen under the top bar, where the list is otherwise
+    footer_hints_visible = None  # K: True shows the key hints everywhere, False hides them everywhere. None, until K is first pressed: hidden on the main list, shown in dialogs
     col_is_visible = True  # Z toggles Col off and on; remembered in the cache dir
     col_is_working = False  # Col is on a job (report, answer, draft): he looks around, sniffs, and says what he's at
     lookups_col_is_working_on = []  # the lookups of that job so far
@@ -1093,19 +1094,22 @@ COL_CORNER_WIDTH = 17  # Col's outline and name tag, bottom right: the footer st
 
 def draw_footer_from_text(screen, text):
     """The footer, on every screen: everything you can do right here, as "key what" parts separated by " · ",
-    packed onto up to two rows above Col's row. Always shown: K only switches the main list's hints."""
+    packed onto up to two rows above Col's row. This is a dialog's footer: shown unless K turned every hint off."""
     pairs = [tuple(part.strip().split(" ", 1)) if " " in part.strip() else (part.strip(), "") for part in text.split(" · ")]
-    draw_footer_hints(screen, None, 2, pairs, always_shown=True)
+    draw_footer_hints(screen, None, 2, pairs, is_in_dialog=True)
 
 
-def draw_footer_hints(screen, fixed_row, first_column, hints, always_shown=False):
+def draw_footer_hints(screen, fixed_row, first_column, hints, is_in_dialog=False):
     """Footer like opencode's: bright key, muted description. Packs the hints onto rows ending at the bottom row
     (fixed_row=None: as many rows as needed, at most two), stopping short of Col's corner. When they need more than
     two rows the first ones win, since they matter most, and ? (which lists every key) is kept at the end.
-    With the hints off (K, the main list's default), only ? and K survive there. always_shown: a dialog's footer."""
+    With the hints off (K; the main list starts that way), the list keeps only ? and K, the two keys that bring
+    them back, and a dialog (is_in_dialog), where those two keys do nothing, shows none."""
     screen_height, usable_width = screen.getmaxyx()
-    if not UiState.footer_hints_visible and not always_shown:
-        hints = ([(keys_text, description) for keys_text, description in hints if keys_text == "?"] or [("?", "all keys")]) + [("K", "show key hints")]
+    if is_in_dialog and UiState.footer_hints_visible is False:
+        hints = []  # nothing, but the rows are still cleared of the list's footer behind the dialog
+    if not is_in_dialog and not UiState.footer_hints_visible:
+        hints = [("?", "all keys"), ("K", "show key hints")]
     if UiState.col_is_visible:
         usable_width -= COL_CORNER_WIDTH
     hint_rows, hints_in_row, used_width = [], [], first_column
@@ -2074,54 +2078,77 @@ def add_topic_to_todo_list(screen):
         col_says("on the list", "cheer", 4)
 
 
+TABS = ("my issues", "active workspaces", "daily bark", "to-do")  # the top bar, left to right: ; moves right, h moves back
+MOVED_BACK_FROM_THE_DAILY_BARK = "moved back from the daily bark"  # show_daily_report() returns it for h on the daily bark: the tab to its left is a list
+SWITCH_BETWEEN_DAILY_BARK_AND_TODO = "switch between the daily bark and the to-do list"
+
+
 def show_daily_report(screen, issues, today, showing_todo_list=False):
-    """Col's recap of the last working day. Shows the lookups while it's being written; j/k move between topics, l goes
-    to the topic's issue (returns its identifier), esc, h or b close (returns None). The topic is remembered.
-    showing_todo_list: the same screen over the topics saved to the to-do list; there x removes one and p closes."""
+    """The daily bark and the to-do list: the two tabs that are a page of topics, not a list of issues. Shows one
+    until you leave both. Returns the identifier of the issue a topic sent you to, MOVED_BACK_FROM_THE_DAILY_BARK
+    when h went to the tab left of the daily bark, or None (esc: back to the issues you came from)."""
+    draw_top_bar_and_col = UiState.draw_screen_behind_dialog  # the list screen's draw(): with a page open it draws just those two
+    try:
+        while True:
+            result = show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_top_bar_and_col)
+            if result != SWITCH_BETWEEN_DAILY_BARK_AND_TODO:
+                return result
+            showing_todo_list = not showing_todo_list
+    finally:
+        UiState.draw_screen_behind_dialog, UiState.page_in_place_of_the_list, UiState.col_is_working = draw_top_bar_and_col, None, False
+
+
+def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_top_bar_and_col):
+    """Col's recap of the last working day, as a page under the top bar. Shows the lookups while it's being written;
+    j/k move between topics, l goes to the topic's issue (returns its identifier). The topic is remembered.
+    ; and h move to the next and the previous tab, b and p go straight to the daily bark and the to-do list.
+    showing_todo_list: the same page over the topics saved to the to-do list; there x removes one."""
     document = TODO_LIST if showing_todo_list else DAILY_REPORT  # what is on screen: "text", "steps" and "cur", the topic under the cursor
-    dialog_title = "Col  ·  to-do list" if showing_todo_list else "Col  ·  daily report"
     if showing_todo_list:
         TODO_LIST["text"] = todo_list_as_report_text()
     else:
         start_writing_daily_report(issues, today)
     first_line_shown, frame_count = 0, 0
     attribute_by_style = daily_report_text_attributes()
-    draw_list_behind = UiState.draw_screen_behind_dialog
 
     topic_position_on_screen = [0, 0, 0]  # the chosen topic on screen: its first row, the row under it, its x. the actions drop down there
 
     def paint():
-        """The report, without refresh; also the backdrop of the topic's actions."""
+        """The page, without refresh; also what is behind every dialog opened from it."""
         nonlocal first_line_shown, frame_count
         frame_count += 1
+        UiState.page_in_place_of_the_list = "to-do" if showing_todo_list else "daily bark"
+        draw_top_bar_and_col()
         screen_height, screen_width = screen.getmaxyx()
-        box_height = screen_height - 10
-        line, box_width = draw_dialog_box(screen, dialog_title, box_height, min(screen_width - 6, 100))
-        masthead = "^ ▐▌ ^  T O - D O   L I S T" if showing_todo_list else "^ ▐▌ ^  T H E   D A I L Y   B A R K"  # the report's masthead, on the box's top edge: Col's paper, like the app's badge
-        if box_width > len(masthead) + 8:
-            line(0, "  " + masthead + "  ", curses.color_pair(COL_ACCENT) | curses.A_REVERSE | curses.A_BOLD, (box_width - len(masthead)) // 2 - 2)
-            line(0, "^ ▐▌ ^", curses.color_pair(COL_BADGE) | curses.A_BOLD, (box_width - len(masthead)) // 2)
+        first_row_of_page = IssueListScreen.FIRST_LIST_ROW
+        box_height, box_width = max(screen_height - first_row_of_page - 6, 0), screen_width - 1  # the page: from under the top bar down to Col's corner (the bottom 6 rows)
+
+        def line(y, text, attr=0, x=0):
+            if 0 <= y < box_height:  # on a very small popup the end of the page is cut, not spilled
+                screen.addnstr(first_row_of_page + y, x, text, max(box_width - x, 0), attr)
+        line.first_row_on_screen, line.first_column_on_screen = first_row_of_page, 0  # for register_clickable_row and the dropdown: where the page starts on the screen
         report_text, lookup_steps = document["text"], document["steps"]
         UiState.col_is_working = report_text is None
         if report_text is None:  # loading: Col in the corner looks around and says what he's sniffing at; the trail is in the box
             UiState.lookups_col_is_working_on = lookup_steps
-            line(3, f"{SPINNER_FRAMES[frame_count % len(SPINNER_FRAMES)]} writing your daily report…", curses.color_pair(PURPLE) | curses.A_BOLD, 3)
+            line(0, f"{SPINNER_FRAMES[frame_count % len(SPINNER_FRAMES)]} writing your daily report…", curses.color_pair(PURPLE) | curses.A_BOLD, 3)
             steps_so_far = ["reading your issues and open workspaces"] + [col_words_for_lookup(step) for step in lookup_steps]
-            shown_steps = steps_so_far[-(box_height - 8):]
+            shown_steps = steps_so_far[-max(box_height - 3, 1):]
             for row_offset, step in enumerate(shown_steps):
                 is_last_step = row_offset == len(shown_steps) - 1
                 spinner_or_tick = SPINNER_FRAMES[frame_count % len(SPINNER_FRAMES)] if is_last_step else "✓"
-                line(5 + row_offset, spinner_or_tick + "  " + step,
+                line(2 + row_offset, spinner_or_tick + "  " + step,
                      curses.color_pair(PURPLE if is_last_step else DIM) | (curses.A_BOLD if is_last_step else 0), 4)
-            draw_footer_from_text(screen, "r start over · esc/h close, b brings it back when it's done")
+            draw_footer_from_text(screen, "r start over · ; to-do · h active workspaces · esc back to the issues, b brings it back when it's done")
         else:
+            keys_between_the_tabs = " · h/b daily bark · esc back to the issues" if showing_todo_list else " · ;/p to-do · h active workspaces · esc back to the issues"
             if COL_SPEECH["mood"] in ("left", "right") or not COL_SPEECH["say"]:
                 COL_SPEECH.update(mood="cheer", say="what you saved to do" if showing_todo_list else "here's your daily report", until=time.time() + 8)
             if showing_todo_list:
-                line(3, "these stay when the report is written again", curses.color_pair(DIM), 3)
+                line(0, "these stay when the report is written again", curses.color_pair(DIM), 3)
             else:
-                line(3, f"{len(lookup_steps)} lookups in Linear, Slack and GitHub" if lookup_steps else "from memory", curses.color_pair(DIM), 3)
-            styled_lines, rows_for_text = daily_report_as_styled_lines(report_text, min(box_width - 8, 88)), box_height - 8  # the row under the text holds the "go to" marker
+                line(0, f"{len(lookup_steps)} lookups in Linear, Slack and GitHub" if lookup_steps else "from memory", curses.color_pair(DIM), 3)
+            styled_lines, rows_for_text = daily_report_as_styled_lines(report_text, max(box_width - 8, 20)), max(box_height - 3, 1)  # the text and its rules run the whole width of the page; the last row of the page says which topic you are on
             # the topics: each bullet is one; j/k move between them, l jumps to its issue in the list
             bullet_line_numbers = [line_number for line_number, segments in enumerate(styled_lines) if segments and segments[0][0].startswith("•")]
             number_of_topic_under_cursor = max(0, min(document.get("cur", 0), len(bullet_line_numbers) - 1))
@@ -2134,40 +2161,37 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                     first_line_shown = max(0, min(first_line_of_topic - 2, len(styled_lines) - rows_for_text))
             first_line_shown = max(0, min(first_line_shown, len(styled_lines) - rows_for_text))
             if bullet_line_numbers:
-                topic_position_on_screen[:] = line.first_row_on_screen + 5 + first_line_of_topic - first_line_shown, line.first_row_on_screen + 5 + min(line_after_topic - first_line_shown, rows_for_text), line.first_column_on_screen + 6
+                topic_position_on_screen[:] = line.first_row_on_screen + 2 + first_line_of_topic - first_line_shown, line.first_row_on_screen + 2 + min(line_after_topic - first_line_shown, rows_for_text), line.first_column_on_screen + 6
             for row_offset, segments in enumerate(styled_lines[first_line_shown:first_line_shown + rows_for_text]):
                 line_number, column = first_line_shown + row_offset, 4
                 is_in_topic_under_cursor = bullet_line_numbers and bullet_line_numbers[number_of_topic_under_cursor] <= line_number < line_after_topic
                 if segments and bullet_line_numbers and line_number >= bullet_line_numbers[0]:  # click a topic: the cursor goes there; click it again: its actions
                     number_of_topic_on_this_line = sum(bullet_line <= line_number for bullet_line in bullet_line_numbers) - 1
-                    register_clickable_row(line.first_row_on_screen + 5 + row_offset, 0, screen_width,
+                    register_clickable_row(line.first_row_on_screen + 2 + row_offset, 0, screen_width,
                                            number_of_topic_on_this_line - number_of_topic_under_cursor, [10] * bool(is_in_topic_under_cursor))
                 if is_in_topic_under_cursor:  # the marked topic: a solid accent bar down its left; the words keep their own colours, on no fill
-                    line(5 + row_offset, "█", curses.color_pair(ACCENT) | curses.A_BOLD, 2)
+                    line(2 + row_offset, "█", curses.color_pair(ACCENT) | curses.A_BOLD, 2)
                 for segment_number, (segment_text, style) in enumerate(segments):
                     is_bullet_of_marked_topic = is_in_topic_under_cursor and segment_number == 0 and segment_text.startswith("•")
-                    line(5 + row_offset, "▶" + segment_text[1:] if is_bullet_of_marked_topic else segment_text,
+                    line(2 + row_offset, "▶" + segment_text[1:] if is_bullet_of_marked_topic else segment_text,
                          curses.color_pair(ACCENT) | curses.A_BOLD if is_bullet_of_marked_topic else attribute_by_style[style], column)
                     column += len(segment_text)
             if bullet_line_numbers:
                 position_text = f" {number_of_topic_under_cursor + 1}/{len(bullet_line_numbers)} "  # which topic you are on, of how many: bottom right, as in the preview
-                line(box_height - 2, position_text, curses.color_pair(ACCENT), box_width - len(position_text) - 2)
+                line(box_height - 1, position_text, curses.color_pair(ACCENT), box_width - len(position_text) - 2)
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("i add a to-do · " * showing_todo_list + "l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
                         + " · c free session on it · a ask Col about it"
-                        + (" · x discard it · b daily report" if showing_todo_list else " · s move to to-do · x discard it · p to-do list") + " · j/k topics · d/u page"
+                        + (" · x discard it" if showing_todo_list else " · s move to to-do · x discard it") + " · j/k topics · d/u page"
                         + ("" if showing_todo_list else " · r write it again"))
-                draw_footer_from_text(screen, footer_text + " · esc/h close")
+                draw_footer_from_text(screen, footer_text + keys_between_the_tabs)
             else:
-                draw_footer_from_text(screen, "i add a to-do · b daily report · esc/h close" if showing_todo_list else "p to-do list · r write it again · esc/h close")
+                draw_footer_from_text(screen, ("i add a to-do" if showing_todo_list else "r write it again") + keys_between_the_tabs)
 
-    def under_menu():  # draw_dialog_box() paints the backdrop first: hand it the list while the report draws itself, no pop-open
-        UiState.draw_screen_behind_dialog, title_before, UiState.title_of_open_dialog = draw_list_behind, UiState.title_of_open_dialog, dialog_title
-        paint()
-        UiState.draw_screen_behind_dialog, UiState.title_of_open_dialog = under_menu, title_before
-
+    UiState.draw_screen_behind_dialog = paint  # the page stays up, in grey, behind every dialog opened from it
     while True:
         tour_sees("todo list" if showing_todo_list else "report")
+        UiState.title_of_open_dialog = None  # back on the page: the next dialog pops open again
         paint()
         report_text = document["text"]
         screen.refresh()
@@ -2175,12 +2199,14 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
             key = screen.getch()
         except curses.error:
             continue
-        if key in (27, ord("h"), ord("q"), ord("p" if showing_todo_list else "b")):
-            UiState.col_is_working = False
+        if key == ord("h") and UiState.guided_tour_step is not None:  # the tour only ever says "esc or h goes back to your issues"
+            key = 27
+        if key in (27, ord("q")):  # back to the issues you came from
             return None
-        if key == ord("b" if showing_todo_list else "p"):  # b and p switch between the report and the to-do list; closing either goes back to the issues
-            UiState.col_is_working = False
-            return show_daily_report(screen, issues, today, showing_todo_list=not showing_todo_list)  # ponytail: one call deeper per switch, a loop over the two if anyone switches a thousand times
+        if key == ord("h") and not showing_todo_list:  # the tab left of the daily bark
+            return MOVED_BACK_FROM_THE_DAILY_BARK
+        if key in ((ord("h"), ord("b")) if showing_todo_list else (ord(";"), ord("p"))):  # the other one of the two: the next tab, or its own key
+            return SWITCH_BETWEEN_DAILY_BARK_AND_TODO
         if key == ord("i") and showing_todo_list:  # a to-do of your own, typed or written up by Col
             add_topic_to_todo_list(screen)
             TODO_LIST["text"], TODO_LIST["cur"] = todo_list_as_report_text(), len(saved_todo_topics()) - 1
@@ -2198,12 +2224,9 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
             row_for_the_menu = topic_position_on_screen[1] if topic_position_on_screen[1] + rows_the_menu_needs <= screen.getmaxyx()[0] - 6 else topic_position_on_screen[0] - rows_the_menu_needs
             if not showing_todo_list:
                 tour_sees("topic menu")
-            UiState.draw_screen_behind_dialog = under_menu  # the report stays up behind the menu
-            try:  # the menu opens right under the topic, or above it when there's no room
-                picked = choose_from_list(screen, "topic actions  ▸  Col  ·  " + (identifier or "this topic"), [f"{k}   {choice_text}" for k, choice_text in choices],
-                                          keys="".join(k for k, _ in choices), top_left_corner=(row_for_the_menu, topic_position_on_screen[2]))
-            finally:  # and the report doesn't pop open again when the menu closes
-                UiState.draw_screen_behind_dialog, UiState.title_of_open_dialog = draw_list_behind, dialog_title
+            # the menu opens right under the topic, or above it when there's no room
+            picked = choose_from_list(screen, "topic actions  ▸  Col  ·  " + (identifier or "this topic"), [f"{k}   {choice_text}" for k, choice_text in choices],
+                                      keys="".join(k for k, _ in choices), top_left_corner=(row_for_the_menu, topic_position_on_screen[2]))
             if picked is None:
                 continue
             key = ord(choices[picked][0])  # from here on it is as if that short key was pressed
@@ -3048,7 +3071,8 @@ KEY_BINDINGS = [
     KeyBinding("X",     "cancel_issue_under_cursor",         True,   CHANGE_THE_ISSUE,  "X",                 "cancel",                "X", "cancel"),
     KeyBinding("U",     "undo_last_change",                  False,  CHANGE_THE_ISSUE,  "U",                 "undo last change",      "U", "undo"),
     KeyBinding("n",     "create_new_issue",                  False,  CHANGE_THE_ISSUE,  "n",                 "new issue",             "n", "new issue"),
-    KeyBinding("b",     "open_daily_report",                 False,  VIEWS,             "b",                 "daily report",          "b", "daily report"),
+    KeyBinding(";",     "move_to_next_tab",                  False,  VIEWS,             ";  /  h",           "next / previous tab",   ";", "next tab"),
+    KeyBinding("b",     "open_daily_report",                 False,  VIEWS,             "b",                 "daily bark",            "b", "daily bark"),
     KeyBinding("p",     "open_todo_list",                    False,  VIEWS,             "p",                 "to-do list",            "p", "to-do"),
     KeyBinding("W",     "show_active_workspaces",            False,  VIEWS,             "W",                 "active workspaces",     "W", "active ws"),
     KeyBinding("t",     "browse_a_team",                     False,  VIEWS,             "t",                 "team",                  "t/T", "team / project"),
@@ -3196,7 +3220,7 @@ class IssueListScreen:
             threading.Thread(target=lambda: fetch_issues(last_view), daemon=True).start()
         self.identifier_to_put_cursor_on = (read_stored_value("last") or {}).get("sel")  # resume on the issue you last touched
         UiState.col_is_visible = (read_stored_value("col") or {}).get("on", True)
-        UiState.footer_hints_visible = (read_stored_value("hints") or {}).get("on", False)
+        UiState.footer_hints_visible = (read_stored_value("hints") or {}).get("on")
         if (saved_report := read_stored_value("brief") or {}).get("date") == self.today:
             DAILY_REPORT.update(saved_report)
         if setup_was_just_completed:
@@ -3312,7 +3336,7 @@ class IssueListScreen:
                     "and your pull requests for loose threads: what nobody followed up on, or has no issue yet.",
                     "It's being written now and takes about a minute. b opens it any time today.")) == 0
             if wants_to_read_it_now:
-                self.identifier_to_put_cursor_on = show_daily_report(self.screen, issues, self.today) or self.identifier_to_put_cursor_on
+                self.open_daily_report(issues=issues)
 
     def work_out_visible_rows_and_cursor(self):
         self.visible_rows = rows_matching_filter(self.all_rows, self.filter_text)
@@ -3368,6 +3392,9 @@ class IssueListScreen:
         # ponytail: terminals can't blur, so while UiState.grey_out_behind_dialog is on every colour goes dim grey
         self.colour = (lambda pair: curses.color_pair(DIM)) if UiState.grey_out_behind_dialog else curses.color_pair
         self.draw_title_and_view_line()
+        if UiState.page_in_place_of_the_list:  # the daily bark or the to-do list: it draws itself under the top bar
+            self.draw_col_in_his_corner()
+            return
         if self.nothing_is_assigned_to_me():
             self.draw_nothing_assigned()
             self.draw_col_in_his_corner()  # he is there on an empty list too: he is the one giving the tour
@@ -3381,13 +3408,11 @@ class IssueListScreen:
         screen, colour = self.screen, self.colour
         screen_height, screen_width = screen.getmaxyx()
         animation_frame = int(time.time() * 8)
-        # breadcrumbs: the view you're in is the filled tag; the one you came from is plain, with the key back
+        # the view you're in is the filled tag. a team or a project is a breadcrumb: where you came from is plain, with the key back
         view_tag = (colour(DONE_FLASH) if time.time() < self.header_flash_until else colour(COL_ACCENT) | curses.A_REVERSE) | curses.A_BOLD
-        if not self.view:
-            breadcrumbs = [(" my issues ", view_tag), ("  W active workspaces · p to-do · t team · T project · R reviews", colour(DIM))]
-        elif self.view == ACTIVE_WORKSPACES_VIEW:
-            breadcrumbs = [("h ‹ ", colour(DIM)), ("my issues", colour(MUTED)), ("  ›  ", colour(DIM)), (" active workspaces ", view_tag),
-                           ("  work in progress · w jumps there", colour(MUTED))]
+        tab_that_is_open = UiState.page_in_place_of_the_list or ("my issues" if not self.view else "active workspaces" if self.view == ACTIVE_WORKSPACES_VIEW else None)
+        if tab_that_is_open:  # the tabs, side by side: ; moves right and h moves back (also in the footer, K)
+            breadcrumbs = [part for tab in TABS for part in ((f" {tab} ", view_tag if tab == tab_that_is_open else colour(MUTED)), (" ", 0))]
         else:
             team_key = self.view["key"] + " · " if self.view["kind"] == "team" else ""
             what_is_listed = "  everyone's open issues in the team" if self.view["kind"] == "team" else "  open issues in the project"
@@ -3397,7 +3422,7 @@ class IssueListScreen:
         for text, attribute in breadcrumbs:
             screen.addnstr(2, x, text, max(screen_width - x - 1, 0), attribute)
             x += len(text)
-        sync_or_count = f"{len(self.issue_row_numbers)} issues" + (f"  ·  ✓ {self.done_today_count} done today" if self.done_today_count else "")
+        sync_or_count = "" if UiState.page_in_place_of_the_list else f"{len(self.issue_row_numbers)} issues" + (f"  ·  ✓ {self.done_today_count} done today" if self.done_today_count else "")
         screen.addnstr(2, max(screen_width - len(sync_or_count) - 2, 0), sync_or_count, len(sync_or_count), colour(DIM))  # a refresh is Col's to announce, not the header's
         # the app's name with Col's eyes and blaze: a solid blue badge centred on the top row, sparks either side when there's room
         app_name = "^ ▐▌ ^  C O L L I N E A R"
@@ -3828,15 +3853,26 @@ class IssueListScreen:
 
     # -- views --
 
-    def open_daily_report(self):
-        if identifier_picked_in_report := show_daily_report(self.screen, self.issues or [], self.today):
-            self.identifier_to_put_cursor_on, self.filter_text, self.is_typing_filter = identifier_picked_in_report, "", False
+    def open_daily_report(self, showing_todo_list=False, issues=None):
+        """The daily bark tab (or the to-do list tab), until you leave them: back on the list you came from, on the
+        issue a topic sent you to, or on the active workspaces when h moved back past the daily bark."""
+        picked = show_daily_report(self.screen, self.issues or [] if issues is None else issues, self.today, showing_todo_list)
+        if picked == MOVED_BACK_FROM_THE_DAILY_BARK:
+            if self.view != ACTIVE_WORKSPACES_VIEW:
+                self.switch_to_view(ACTIVE_WORKSPACES_VIEW)
+        elif picked:
+            self.identifier_to_put_cursor_on, self.filter_text, self.is_typing_filter = picked, "", False
             col_reacts_to("pick")  # the list lands on that issue
 
     def open_todo_list(self):
-        if identifier_picked_in_todo_list := show_daily_report(self.screen, self.issues or [], self.today, showing_todo_list=True):
-            self.identifier_to_put_cursor_on, self.filter_text, self.is_typing_filter = identifier_picked_in_todo_list, "", False
-            col_reacts_to("pick")
+        self.open_daily_report(showing_todo_list=True)
+
+    def move_to_next_tab(self):
+        """; moves one tab to the right: my issues, active workspaces, daily bark, to-do. h moves back (go_back_or_close)."""
+        if not self.view:
+            self.switch_to_view(ACTIVE_WORKSPACES_VIEW)
+        elif self.view == ACTIVE_WORKSPACES_VIEW:
+            self.open_daily_report()
 
     def show_active_workspaces(self):
         """W switches between everything with a workspace open (what the popup opens on) and my issues; h goes to my issues too."""
@@ -3866,7 +3902,8 @@ class IssueListScreen:
         col_says("that's all of them. you've got this", "cheer")
 
     def go_back_or_close(self):
-        """Back one step at a time: clear the filter, then from a team or project to my issues, then close."""
+        """Back one step at a time: clear the filter, then to my issues (the tab to the left of the active workspaces,
+        and where a team or a project was opened from), then close."""
         if self.filter_text:
             self.filter_text = ""
             col_reacts_to("unfilter")
@@ -3888,9 +3925,9 @@ class IssueListScreen:
         return "Col is back"
 
     def toggle_footer_hints(self):
-        UiState.footer_hints_visible = not UiState.footer_hints_visible
+        UiState.footer_hints_visible = UiState.footer_hints_visible is not True
         write_stored_value("hints", {"on": UiState.footer_hints_visible})
-        return "key hints are on" if UiState.footer_hints_visible else "key hints off  ·  ? still lists every key, K brings them back"
+        return "key hints are on" if UiState.footer_hints_visible else "key hints off, everywhere  ·  ? still lists every key, K brings them back"
 
     def give_col_a_bone(self):
         """B: a bone for Col. He holds it for a few seconds and says thanks; today's bones are counted."""

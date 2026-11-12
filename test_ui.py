@@ -137,7 +137,8 @@ EVERY_SCREEN = [
     "/", "p", "l", "a", "-", "2", ENTER, ESC,                    # filter
     "t", ENTER, "h",                                             # a team's issues, and back
     "b", "j", "l", ESC, ESC,                                     # daily report, a topic's actions
-    "K", "K", "Z", "Z", "y", "g",                                # hints off/on, Col off/on, copy link, no PR linked
+    ";", ";", ";", "h", "h", "h",                                # the tabs: ; moves right through all four, h moves back to my issues
+    "K", "S", ESC, "K", "Z", "Z", "y", "g",                      # hints off (a dialog then has none either) and on, Col off/on, copy link, no PR linked
     ENTER, ENTER, ESC, "n", ESC, "a", "h", "i", ENTER, "\t", "k", "\t", ESC, "C", ESC,          # start dialog, new issue, chat with Col, comment
     "D", ESC, "R", "T", ESC, "X", ESC, "G", "5", "k",            # setup, review inbox, projects, cancel, last row, a count
     "t", "/", "a", "p", ESC, ESC,                                # the filter inside a dialog (once crashed the popup)
