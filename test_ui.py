@@ -54,7 +54,7 @@ FAKE_ISSUES = [
 ]
 FAKE_DAILY_REPORT = ("## on your plate\n- **PLA-1 login thing** — PR #7 is in review since Tuesday.\n↳ only you\n"
                      "- **PLA-99 someone else's** — waiting on Sam.\n↳ you and Sam\n- **a loose topic** — nobody filed it yet.\n"
-                     "## loose ends\n- reply to Robin about herdr links.\n## today\n- start with PLA-1, it is closest to done.")
+                     "## follow up\n- reply to Robin about herdr links.\n## start here\n- start with PLA-1, it is closest to done.")
 ONE_WORKSPACE = [{"label": "PLA-2 Second issue with a workspace", "number": 3, "workspace_id": "w1", "agent_status": "working"},
                  # started from The Daily Bark: a topic with no issue, and an issue that is not mine. Both show under W
                  {"label": "topic-0a1 a loose topic", "number": 5, "workspace_id": "w5", "agent_status": "idle"},

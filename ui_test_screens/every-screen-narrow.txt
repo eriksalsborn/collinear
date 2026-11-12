@@ -9,7 +9,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -55,7 +55,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -101,7 +101,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
- ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+ ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -147,7 +147,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -239,7 +239,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -469,7 +469,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -515,7 +515,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -561,7 +561,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -607,7 +607,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -653,7 +653,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -699,7 +699,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -745,7 +745,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     ▮▮▮  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -791,7 +791,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -837,7 +837,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -883,7 +883,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -929,7 +929,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -975,7 +975,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1021,7 +1021,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1067,7 +1067,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1113,7 +1113,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1155,7 +1155,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews              1 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◔ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
- ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+ ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
 
 
@@ -1201,7 +1201,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews              1 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◔ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
- ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+ ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
 
 
@@ -1251,7 +1251,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1297,7 +1297,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1343,7 +1343,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1389,7 +1389,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1450,13 +1450,13 @@
    │   • a loose topic — nobody filed it yet.                                                   │
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -1496,13 +1496,13 @@
    │   • a loose topic — nobody filed it yet.                                                   │
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -1542,13 +1542,13 @@
    │   • │                                                                              │       │
    │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │       │
    │     │  c   free session on it                                                      │       │
-   │    L│  a   ask Col about it                                                        │       │
+   │    F│  a   ask Col about it                                                        │       │
    │   ──│  s   move it to the to-do list, where it stays                               │────   │
    │     │  x   discard it                                                              │       │
    │   • │                                                                              │       │
    │     ╰──────────────────────────────────────────────────────────────────────────────╯       │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -1588,13 +1588,13 @@
    │   • a loose topic — nobody filed it yet.                                                   │
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -1619,7 +1619,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1665,7 +1665,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1711,7 +1711,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1757,7 +1757,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1803,7 +1803,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1849,7 +1849,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1895,7 +1895,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1941,7 +1941,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -1987,7 +1987,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2033,7 +2033,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2079,7 +2079,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2263,7 +2263,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2309,7 +2309,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2355,7 +2355,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2401,7 +2401,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
   ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
@@ -2447,7 +2447,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2493,7 +2493,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2539,7 +2539,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2585,7 +2585,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2631,7 +2631,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2677,7 +2677,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2723,7 +2723,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2769,7 +2769,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2815,7 +2815,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2861,7 +2861,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2907,7 +2907,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2953,7 +2953,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -2999,7 +2999,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3045,7 +3045,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3091,7 +3091,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3137,7 +3137,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3183,7 +3183,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3226,7 +3226,7 @@
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◐ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3275,7 +3275,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3551,7 +3551,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3597,7 +3597,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3643,7 +3643,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3689,7 +3689,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3735,7 +3735,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3781,7 +3781,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3873,7 +3873,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -3919,7 +3919,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -4011,7 +4011,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -4057,7 +4057,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -4103,7 +4103,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -4195,7 +4195,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -4241,7 +4241,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -4287,7 +4287,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
@@ -4334,7 +4334,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -4380,7 +4380,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
       PLA-│                                                                              │  3w ago
@@ -4426,7 +4426,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -4472,7 +4472,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -4518,7 +4518,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -4564,7 +4564,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -4610,7 +4610,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5116,7 +5116,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5162,7 +5162,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5208,7 +5208,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5254,7 +5254,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5300,7 +5300,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5346,7 +5346,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5392,7 +5392,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5438,7 +5438,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5484,7 +5484,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5544,13 +5544,13 @@
    │   • a loose topic — nobody filed it yet.                                                   │
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -5590,13 +5590,13 @@
    │   • │                                                                              │       │
    │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │       │
    │     │  c   free session on it                                                      │       │
-   │    L│  a   ask Col about it                                                        │       │
+   │    F│  a   ask Col about it                                                        │       │
    │   ──│  s   move it to the to-do list, where it stays                               │────   │
    │     │  x   discard it                                                              │       │
    │   • │                                                                              │       │
    │     ╰──────────────────────────────────────────────────────────────────────────────╯       │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -5636,13 +5636,13 @@
    │   • a loose topic — nobody filed it yet.                                                   │
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -5668,7 +5668,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5714,7 +5714,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5760,7 +5760,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
- ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+ ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5806,7 +5806,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -5852,7 +5852,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎╭──────────────────────────────────────────────────────────────────────────────────────────────╮
@@ -5898,7 +5898,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
  ▎    PLA-│                                                                              │  3w ago
@@ -5909,7 +5909,7 @@
           │   own branch, a herdr workspace named after it, and Claude Code opens        │
           │   there with the issue already read.                                         │
           │                                                                              │
-          │     ▶ ws 3 · my-repo                                                         │
+          │     ▶ my-repo                                                                │
           │   From then on its row carries this green marker: a workspace is open for    │
           │   it, work in progress, right now, on this machine. It names the             │
           │   workspace (its number in herdr's sidebar) and the repository.              │
@@ -5944,7 +5944,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
  ▎    PLA-│                                                                              │  3w ago
@@ -5955,7 +5955,7 @@
           │   own branch, a herdr workspace named after it, and Claude Code opens        │
           │   there with the issue already read.                                         │
           │                                                                              │
-          │     ▶ ws 3 · my-repo                                                         │
+          │     ▶ my-repo                                                                │
           │   From then on its row carries this green marker: a workspace is open for    │
           │   it, work in progress, right now, on this machine. It names the             │
           │   workspace (its number in herdr's sidebar) and the repository.              │
@@ -5990,7 +5990,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
  ▎    PLA-│                                                                              │  3w ago
@@ -6001,7 +6001,7 @@
           │   own branch, a herdr workspace named after it, and Claude Code opens        │
           │   there with the issue already read.                                         │
           │                                                                              │
-          │     ▶ ws 3 · my-repo                                                         │
+          │     ▶ my-repo                                                                │
           │   From then on its row carries this green marker: a workspace is open for    │
           │   it, work in progress, right now, on this machine. It names the             │
           │   workspace (its number in herdr's sidebar) and the repository.              │
@@ -6036,7 +6036,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -6082,7 +6082,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
  ▎    PLA-│                                                                              │  3w ago
@@ -6128,7 +6128,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -6174,7 +6174,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -6220,7 +6220,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -6266,7 +6266,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -6312,7 +6312,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
       PLA-│                                                                              │  3w ago
@@ -6358,7 +6358,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -6418,13 +6418,13 @@
    │   • a loose topic — nobody filed it yet.                                                   │
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -6459,13 +6459,13 @@
  ▎ │ ▎ • a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -6505,13 +6505,13 @@
  ▎ │   • a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │ ▎ • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • start with PLA-1, it is closest to done.                                               │
@@ -6551,13 +6551,13 @@
  ▎ │   • a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │   • reply to Robin about herdr links.                                                      │
    │                                                                                            │
    │                                                                                            │
-   │    TODAY                                                                                   │
+   │    START HERE                                                                              │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │ ▎ • start with PLA-1, it is closest to done.                                               │
@@ -6597,13 +6597,13 @@
  ▎ │   • a loose topic — nobody filed it yet.                                                   │o
    │     ╭──────────────────────────────────────────────────────╮                               │
    │     │  Col  PLA-1                                     esc  │                               │
-   │    L│  / filter                                            │                               │
+   │    F│  / filter                                            │                               │
    │   ──│                                                      │────────────────────────────   │
    │     │ ▎l   go to PLA-1 in the list                         │                               │
    │   • │  c   free session on it                              │                               │
    │     │  a   ask Col about it                                │                               │
    │     │  s   move it to the to-do list, where it stays       │                               │
-   │    T│  x   discard it                                      │                               │
+   │    S│  x   discard it                                      │                               │
    │   ──│                                                      │────────────────────────────   │
    │     ╰──────────────────────────────────────────────────────╯                               │
    │ ▎ • start with PLA-1, it is closest to done.                                               │
@@ -6641,13 +6641,13 @@
    │  • a loose topic — nobody filed it yet.     │                                              │
   ◈│                                             │                                              │─
  ▎ │                                             │                                              │o
-   │   LOOSE ENDS                                │                                              │
+   │   FOLLOW UP                                 │                                              │
    │  ────────────────────────────────────────   │                                              │
    │                                             │                                              │
    │  • reply to Robin about herdr links.        │                                              │
    │                                             │                                              │
    │                                             │                                              │
-   │   TODAY                                     │                                              │
+   │   START HERE                                │                                              │
    │  ────────────────────────────────────────   │                                              │
    │                                             │                                              │
    │  • start with PLA-1, it is closest to       │                                              │
@@ -6689,7 +6689,7 @@
  ▎ │   • a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │ ▎ • reply to Robin about herdr links.                                                      │
@@ -6965,7 +6965,7 @@
  ▎ │   • a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │ ▎ • reply to Robin about herdr links.                                                      │
@@ -7002,7 +7002,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7186,7 +7186,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7232,7 +7232,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7278,7 +7278,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7324,7 +7324,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7416,7 +7416,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7462,7 +7462,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7508,7 +7508,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7554,7 +7554,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7600,7 +7600,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7738,7 +7738,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7876,7 +7876,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -7931,7 +7931,7 @@
  ▎ │   • a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
    │                                                                                            │
-   │    LOOSE ENDS                                                                              │
+   │    FOLLOW UP                                                                               │
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
    │ ▎ • reply to Robin about herdr links.                                                      │
@@ -8014,7 +8014,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -8106,7 +8106,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
       PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
@@ -8147,13 +8147,13 @@
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
- ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+ ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◔ Linear issue 1  ──────────────────────────────────────────────────────────────────────────────
-    ▶ PLA-99    ▯▯▯  someone else's                               ▶ ws 7                  just now
+    ▶ PLA-99    ▯▯▯  someone else's                               ▶ open                  just now
 
   ◔ Topic, not in Linear 1  ──────────────────────────────────────────────────────────────────────
-    ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ ws 5                  just now
+    ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ open                  just now
 
 
 
@@ -8193,13 +8193,13 @@
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◔ Linear issue 1  ──────────────────────────────────────────────────────────────────────────────
- ▎  ▶ PLA-99    ▯▯▯  someone else's                               ▶ ws 7                  just now
+ ▎  ▶ PLA-99    ▯▯▯  someone else's                               ▶ open                  just now
 
   ◔ Topic, not in Linear 1  ──────────────────────────────────────────────────────────────────────
-    ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ ws 5                  just now
+    ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ open                  just now
 
 
 
@@ -8239,13 +8239,13 @@
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◔ Linear issue 1  ──────────────────────────────────────────────────────────────────────────────
-    ▶ PLA-99    ▯▯▯  someone else's                               ▶ ws 7                  just now
+    ▶ PLA-99    ▯▯▯  someone else's                               ▶ open                  just now
 
   ◔ Topic, not in Linear 1  ──────────────────────────────────────────────────────────────────────
- ▎  ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ ws 5                  just now
+ ▎  ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ open                  just now
 
 
 
@@ -8285,13 +8285,13 @@
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ◔ Linear issue 1  ──────────────────────────────────────────────────────────────────────────────
-    ▶ PLA-99    ▯▯▯  someone else's                               ▶ ws 7                  just now
+    ▶ PLA-99    ▯▯▯  someone else's                               ▶ open                  just now
 
   ◔ Topic, not in Linear 1  ──────────────────────────────────────────────────────────────────────
- ▎  ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ ws 5                  just now
+ ▎  ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ open                  just now
 
 
 
@@ -8335,7 +8335,7 @@
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
       PLA-1     !!!  First issue about login                                                1h ago
-    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ open   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
       PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago

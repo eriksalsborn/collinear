@@ -159,7 +159,7 @@
                     │   own branch, a herdr workspace named after it, and Claude Code opens        │
                     │   there with the issue already read.                                         │
                     │                                                                              │
-                    │     ▶ ws 3 · my-repo                                                         │
+                    │     ▶ my-repo                                                                │
                     │   From then on its row carries this green marker: a workspace is open for    │
                     │   it, work in progress, right now, on this machine. It names the             │
                     │   workspace (its number in herdr's sidebar) and the repository.              │
@@ -205,7 +205,7 @@
                     │   own branch, a herdr workspace named after it, and Claude Code opens        │
                     │   there with the issue already read.                                         │
                     │                                                                              │
-                    │     ▶ ws 3 · my-repo                                                         │
+                    │     ▶ my-repo                                                                │
                     │   From then on its row carries this green marker: a workspace is open for    │
                     │   it, work in progress, right now, on this machine. It names the             │
                     │   workspace (its number in herdr's sidebar) and the repository.              │

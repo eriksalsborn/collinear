@@ -340,7 +340,7 @@ def jump_to_a_session_of_issue(screen, issue, folders_of_its_branch=None):
         focus_workspace_and_close_popup(workspaces[0])
     several_workspaces = len(workspaces) > 1
     rows = [f"{tab['label'][:26]:<26}  {tab.get('agent_status') or '?':<8}"
-            + (f"  ws {workspace['number']:<3} {workspace['label'][:40]}" if several_workspaces else "") for workspace, tab in sessions]
+            + (f"  {workspace['label'][:44]}" if several_workspaces else "") for workspace, tab in sessions]
     picked = choose_from_list(
         screen, f"{issue['identifier']}  ·  {len(sessions)} sessions open, jump to which?", rows,
         help=("Every phase or free session you started on this issue is a tab in its herdr workspace. Each row: the tab's "
@@ -786,7 +786,7 @@ TOUR_CLOSING_CARD = ("starting work, and the green markers", [
     "Progress**, it gets a **git worktree** on its own branch, a **herdr workspace** named after it, and **Claude "
     "Code** opens there with the issue already read.",
     "",
-    "@green ▶ ws 3 · my-repo",
+    "@green ▶ my-repo",
     "From then on its row carries this green marker: **a workspace is open for it**, work in progress, right now, on "
     "this machine. It names the workspace (its number in herdr's sidebar) and the repository.",
     "",
@@ -979,12 +979,26 @@ def set_up_colour_pairs():
         (c.COLOR_BLUE, c.COLOR_WHITE, c.COLOR_WHITE, c.COLOR_WHITE, c.COLOR_BLACK, c.COLOR_RED, c.COLOR_WHITE,
          c.COLOR_CYAN, c.COLOR_GREEN, c.COLOR_YELLOW, c.COLOR_RED, c.COLOR_MAGENTA)
     sky = 75 if c.COLORS >= 256 else c.COLOR_CYAN
-    for n, fg, bg in ((ACCENT, acc, -1), (MUTED, mut, -1), (SELECTED_ROW, sel_fg, sel_bg), (RED, red, -1), (BORDER, border, -1),
+    colour_pairs = ((ACCENT, acc, -1), (MUTED, mut, -1), (SELECTED_ROW, sel_fg, sel_bg), (RED, red, -1), (BORDER, border, -1),
                       (CODE, code, -1), (GREEN, green, -1), (YELLOW, yellow, -1), (ORANGE, orange, -1),
                       (PURPLE, purple, -1), (SELECTED_ROW_MARKER, acc, sel_bg), (TITLE_TAG, sel_bg, acc), (DIM, dim, -1), (DEFAULT_TEXT, -1, -1),
                       (DONE_FLASH, sel_bg, green), (COL_FACE, sel_fg, -1), (COL_ACCENT, sky, -1), (COL_BADGE, sel_fg, sky),
-                      (COL_BADGE_QUIET_TEXT, sel_bg, sky)):  # Col: white face, sky blue frame; COL_BADGE: white on sky; quiet text: dark grey on sky
+                      (COL_BADGE_QUIET_TEXT, sel_bg, sky))  # Col: white face, sky blue frame; COL_BADGE: white on sky; quiet text: dark grey on sky
+    for n, fg, bg in colour_pairs:
         curses.init_pair(n, fg, bg)
+        if bg == -1:  # the same colour on the cursor row's background; the two darkest greys would vanish there, so they go one lighter
+            curses.init_pair(n + PAIRS_ON_THE_CURSOR_ROW, sel_fg if fg == -1 else mut if fg in (dim, border) else fg, sel_bg)
+
+
+PAIRS_ON_THE_CURSOR_ROW = 30  # colour pair n + 30: pair n's text colour on the cursor row's background
+
+
+def on_cursor_row(attribute):
+    """The attribute as it looks on the cursor's row: its own text colour, on the row's background."""
+    pair_number = curses.pair_number(attribute)
+    if pair_number in (0, SELECTED_ROW, DEFAULT_TEXT):
+        return (attribute & ~curses.A_COLOR) | curses.color_pair(SELECTED_ROW)
+    return attribute if attribute & curses.A_REVERSE else (attribute & ~curses.A_COLOR) | curses.color_pair(pair_number + PAIRS_ON_THE_CURSOR_ROW)
 
 
 COL_CORNER_WIDTH = 17  # Col's outline and name tag, bottom right: the footer stops short of it
@@ -1531,17 +1545,25 @@ WRITE_DAILY_REPORT_TASK = (
     "don't look them up again. Spend lookups only on what they can't show: who said what, why something is blocked, "
     "what was decided. Use Linear comments, gh pr view <url> (there is no repo in the cwd) and Slack (search the "
     "issue ids and their name, read the threads that matter). At most 6 lookups.\n"
-    "Format, Markdown. Four sections, each a heading line then bullets, at most 5 bullets per section:\n"
-    "## yesterday  — what moved on the day the report covers: issues finished, pull requests merged or opened, commits "
-    "made, decisions taken. One bullet each, the most important first. If nothing moved, one bullet saying so. Use "
-    "the weekday's name in the heading instead of 'yesterday' when the day covered is not yesterday.\n"
-    "## on your plate  — one bullet per in-progress issue: **PLA-123 two-word nickname** then an em dash, then where "
-    "it stands in one plain sentence with one concrete fact (a PR number, a date, a name, a number). Max 25 words "
-    "per bullet. Then, on its own line right under the bullet (not a sub-bullet), who's on it: '↳ only you', or "
+    "Format, Markdown. Four sections, each a heading line then bullets, at most 5 bullets per section.\n"
+    "Every bullet outside the first section is a to-do: something the developer can do today, and it is moved to "
+    "their to-do list as it stands, so it must make sense on its own, without the rest of the report. Start it with "
+    "the action as an imperative verb (grant, reply to, review, merge, check, ask, decide), say what exactly, and "
+    "then the one fact that makes it needed. Never a bare status: not 'PR #7 is in review' but 'Nudge Sam to review "
+    "PR #7, it has waited since Tuesday'. If there is honestly nothing to do on something, leave it out.\n"
+    "## yesterday  — the only section that is not to-dos: what moved on the day the report covers (issues finished, "
+    "pull requests merged or opened, commits made, decisions taken). At most 3 bullets, the most important first. If "
+    "nothing moved, one bullet saying so. Use the weekday's name in the heading instead of 'yesterday' when the day "
+    "covered is not yesterday.\n"
+    "## on your plate  — one to-do per in-progress issue, its next concrete step: **PLA-123 two-word nickname** then "
+    "an em dash, then the action and the fact behind it (a PR number, a date, a name, a number). Max 25 words per "
+    "bullet. Then, on its own line right under the bullet (not a sub-bullet), who's on it: '↳ only you', or "
     "'↳ you and Sam' naming the people active on it that day: comment authors, PR reviewers, people in the Slack thread.\n"
-    "## loose ends  — replies owed, reviews waiting on them, an agent session that finished and waits for them, "
-    "anything blocked or gone quiet. One short sentence each.\n"
-    "## today  — one bullet: where to start, and why, in one sentence.\n"
+    "Never mention a herdr workspace by number; say 'the agent session on PLA-123'.\n"
+    "## follow up  — one to-do per reply owed, review waiting on them, agent session that finished and waits to be "
+    "checked, and thing that is blocked or has gone quiet (who to ask, and what). Name the issue id, the PR or the "
+    "workspace in each. Group reviews that are the same chore into one to-do. One short sentence each.\n"
+    "## start here  — one bullet: which of the to-dos above to do first, and why, in one sentence.\n"
     "Playful but concise, no filler, no sub-bullets, no nested emphasis. Address them as you, and by first name once "
     "or twice (the developer line below has it). Say nothing you couldn't source; if Slack or Linear had nothing, "
     "say so in a few words.", "Request", "Brief")
@@ -1608,7 +1630,7 @@ def daily_report_context(issues):
             if commits:
                 lines.append(f"    {len(commits)} commit{'s' * (len(commits) != 1)} in {repository} since {day_covered:%A}, latest: {commits[0][:80]}")
         for workspace in workspaces_of_issue_among(workspaces, issue, folders.values()):
-            lines.append(f"    agent session in herdr workspace {workspace['number']}: {workspace.get('agent_status') or 'unknown'}")
+            lines.append(f"    agent session open on it in herdr: {workspace.get('agent_status') or 'unknown'}")
     if not in_progress:
         lines.append("- none")
     waiting_on_review = pull_requests_waiting_on_my_review()  # most recently updated first
@@ -1711,14 +1733,9 @@ def report_text_without_topic(report_text, topic_number):
 
 
 def todo_topics_with_one_more(topics, topic_markdown):
-    """The to-do list with the topic on it. A topic about an issue that is already listed takes that one's place
-    (the newer words win), and the same text is never listed twice."""
-    mentioned = ISSUE_IDENTIFIER_PATTERN.search(topic_markdown)
-    for position, listed_topic in enumerate(topics):
-        mentioned_by_listed = ISSUE_IDENTIFIER_PATTERN.search(listed_topic)
-        if listed_topic == topic_markdown or (mentioned and mentioned_by_listed and mentioned.group() == mentioned_by_listed.group()):
-            return topics[:position] + [topic_markdown] + topics[position + 1:]
-    return topics + [topic_markdown]
+    """The to-do list with the topic on it; the same text is never listed twice. Two topics about the same issue
+    are two to-dos: both stay."""
+    return topics if topic_markdown in topics else topics + [topic_markdown]
 
 
 def todo_list_as_report_text():
@@ -1907,7 +1924,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                     line(5 + row_offset, " " * (box_width - 4), curses.color_pair(SELECTED_ROW), 2)
                     line(5 + row_offset, "▎", curses.color_pair(SELECTED_ROW_MARKER), 2)
                 for segment_text, style in segments:
-                    cursor_line_attribute = curses.color_pair(SELECTED_ROW) | (curses.A_BOLD if style in ("b", "head") else 0)
+                    cursor_line_attribute = on_cursor_row(attribute_by_style[style])
                     line(5 + row_offset, segment_text, cursor_line_attribute if is_in_topic_under_cursor else attribute_by_style[style], column)
                     column += len(segment_text)
             if bullet_line_numbers:
@@ -3036,14 +3053,15 @@ class IssueListScreen:
         return workspaces_of_issue_among(self.open_workspaces, issue, self.folders_of_branch_of(issue))
 
     def workspace_summary(self, issue, with_agent_status_and_branch=False):
-        """The green marker's words: which workspace(s) and which repositories, e.g. "ws 4 · my-repo", or
-        "ws 3 + 6 · my-repo" when the issue has two; the long form adds what each agent is doing and the branch."""
+        """The green marker's words: where the issue's code is, e.g. "my-repo" ("open" when no repository is checked
+        out for it, "2 open · my-repo" when it has two workspaces); the long form says what each agent is doing and
+        the branch. No workspace numbers: they mean nothing to the reader."""
         workspaces = self.open_workspaces_of(issue)
         repositories = list(self.worktree_folders_by_branch.get(issue.get("branchName"), {}))
         if with_agent_status_and_branch:
-            parts = [" + ".join(f"ws {workspace['number']} {workspace.get('agent_status') or '?'}" for workspace in workspaces)]
+            parts = ["agent " + " + ".join(workspace.get("agent_status") or "?" for workspace in workspaces)]
         else:
-            parts = ["ws " + " + ".join(str(workspace["number"]) for workspace in workspaces)]
+            parts = [f"{len(workspaces)} open"] if len(workspaces) > 1 else [] if repositories else ["open"]
         if repositories:
             parts.append(", ".join(repositories))
             if with_agent_status_and_branch:
@@ -3162,8 +3180,8 @@ class IssueListScreen:
             register_clickable_row(y, 0, screen_width, rows_from_cursor, [ord(" ")] * is_under_cursor)
         cursor_row_attribute = colour(SELECTED_ROW) if is_under_cursor else 0
 
-        def styled(colour_pair, bold=False):  # on the cursor's row everything wears the cursor row's colours
-            return (cursor_row_attribute if is_under_cursor else colour(colour_pair)) | (curses.A_BOLD if bold else 0)
+        def styled(colour_pair, bold=False):  # on the cursor's row everything keeps its colour, on the row's background
+            return (on_cursor_row(colour(colour_pair)) if is_under_cursor else colour(colour_pair)) | (curses.A_BOLD if bold else 0)
 
         is_narrow_popup = screen_width < 110  # bars only for priority and no assignee, so the title keeps its room
         priority_bars, priority_word, priority_colour = PRIORITY_DISPLAY.get(issue["priority"], ("▯▯▯", "", DIM))
@@ -3185,8 +3203,7 @@ class IssueListScreen:
                 cycle = f" c{issue['cycle']['number']}" if issue.get("cycle") else ""
                 right_columns.append((f"{(project_name + cycle)[:15]:<15}", DIM, False))
         if has_open_workspace:  # a herdr workspace is open for it: say which, and where its code is; w jumps there
-            workspace_numbers = " + ".join(str(workspace["number"]) for workspace in workspaces_of_this_issue)
-            right_columns.append((f" ▶ ws {workspace_numbers} " if is_narrow_popup else f" ▶ {self.workspace_summary(issue)} ", GREEN, True))
+            right_columns.append((f" ▶ {len(workspaces_of_this_issue)} open " if is_narrow_popup and len(workspaces_of_this_issue) > 1 else " ▶ open " if is_narrow_popup else f" ▶ {self.workspace_summary(issue)} ", GREEN, True))
             branch = issue.get("branchName") or ""
             if screen_width >= 170 and branch in self.worktree_folders_by_branch:  # room for the branch too
                 right_columns.append((f"{branch[:27] + '…' if len(branch) > 28 else branch:<28}", GREEN, False))
@@ -3208,8 +3225,7 @@ class IssueListScreen:
         screen.addnstr(y, title_x, title, title_width, cursor_row_attribute | (curses.A_BOLD if is_under_cursor else 0))
         x = max(screen_width - 2 - right_columns_width, title_x)
         for text, colour_pair, is_chip in right_columns:
-            attribute = (colour(colour_pair) | curses.A_REVERSE | curses.A_BOLD) if is_chip and not is_under_cursor else \
-                styled(colour_pair, is_chip or colour_pair in (RED, GREEN))
+            attribute = (colour(colour_pair) | curses.A_REVERSE | curses.A_BOLD) if is_chip else styled(colour_pair, colour_pair in (RED, GREEN))
             screen.addnstr(y, x, text, max(screen_width - 2 - x, 0), attribute)
             x += len(text) + 2
 
@@ -3723,7 +3739,7 @@ def _test():
     assert markdown_of_each_topic("## a\n- one\n↳ only you\n\n- two PLA-1\n## b\n- three") == ["- one\n↳ only you", "- two PLA-1", "- three"]
     assert report_text_without_topic("## a\n- one\n↳ only you\n- two\n## b\n- three", 0) == "## a\n- two\n## b\n- three"
     assert report_text_without_topic("## a\n- one\n\n## b\n- three", 0) == "\n## b\n- three" and report_text_without_topic("## a\n- one", 0) == ""
-    assert todo_topics_with_one_more(["- a", "- old PLA-1"], "- new PLA-1") == ["- a", "- new PLA-1"]
+    assert todo_topics_with_one_more(["- a", "- one thing on PLA-1"], "- another on PLA-1") == ["- a", "- one thing on PLA-1", "- another on PLA-1"]
     assert todo_topics_with_one_more(["- a"], "- a") == ["- a"] and todo_topics_with_one_more(["- a"], "- b") == ["- a", "- b"]
     assert stand_in_issue_for_topic("**x** — y")["identifier"] == stand_in_issue_for_topic("**x** — y")["identifier"]
     mine = {"identifier": "PLA-1", "branchName": "b"}
