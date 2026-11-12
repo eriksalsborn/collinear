@@ -1,13 +1,6 @@
-```
-        ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
-                                  ╭────────────╮
-                                  │  ◢▀▄▁▁▁▄▀◣ │
-                         “woof” ‹ │ ▐ ^ ▐▌ ^ ▌ │
-                                  │  ▜▖ ▼  ▗▛  │
-                                  │   ╰─ω─╯~   │
-                                  ╰──╴ Col ╶───╯
-```
+<p align="center">
+  <img src="assets/banner.svg" alt="COLLINEAR — Linear issues inside herdr, herded by Col the border collie" width="100%">
+</p>
 
 Collinear is a popup for [herdr](https://herdr.dev) that shows your Linear issues and turns one into a running
 coding session in a single key press, so you never lose track of what you are working on, where its code is checked
@@ -18,59 +11,66 @@ issue, and accepts bones.
 
 ## Install
 
-You need macOS, herdr, Python 3 (written and tested on 3.14; 3.9 and later parse it), `git`, the
-[GitHub CLI](https://cli.github.com) and [Claude Code](https://claude.com/claude-code).
+You need macOS, [herdr](https://herdr.dev) 0.9.5 or newer, Python 3 (written and tested on 3.14; 3.9 and later
+parse it), `git`, the [GitHub CLI](https://cli.github.com) and [Claude Code](https://claude.com/claude-code).
+The repo is private, so you need to have been invited to it first.
 
-1. Get the code next to your herdr config. Do not copy this repo's `config.toml` over yours; it is the author's own.
-   The repo is private, so you need to have been invited to it first.
+```sh
+git clone https://github.com/eriksalsborn/collinear ~/collinear
+python3 ~/collinear/install.py
+```
 
-   ```sh
-   git clone https://github.com/eriksalsborn/collinear ~/collinear
-   cp -R ~/collinear/issues.py ~/collinear/prs.py ~/collinear/prompts ~/.config/herdr/
-   cp ~/collinear/local_settings.example.json ~/.config/herdr/local_settings.json
-   ```
+The installer copies the two popups and the prompts next to your herdr config, adds a key for each popup to your
+`config.toml`, and reloads herdr. It only ever adds to your config (a copy is kept as `config.toml.before-collinear`),
+and if `prefix+alt+i` or `prefix+alt+p` is already yours it asks for another key, or takes one up front:
 
-2. Open `~/.config/herdr/local_settings.json` and set:
-   - `repositories_folder`: the folder your git repositories are cloned into (the example says `~/Development`).
-   - `linear_workspace` and `linear_team_keys`: the `acme` of `https://linear.app/acme` and your teams' issue
-     prefixes. Only the PR popup's "open Linear issue" action needs these.
+```sh
+python3 ~/collinear/install.py --issues-key prefix+alt+l --prs-key prefix+alt+g
+```
 
-3. Add the two popups to `~/.config/herdr/config.toml`:
+Then open herdr and press the key. The first time, Col shows a checklist and says how to fix each line, most of
+them right there in the popup:
 
-   ```toml
-   [[keys.command]]
-   key = "prefix+alt+i"
-   type = "popup"
-   command = "python3 ~/.config/herdr/issues.py"
-   description = "start work on a Linear issue"
-   width = "90%"
-   height = "80%"
+| Line | Fixed by |
+|---|---|
+| your name | `N`, type it |
+| Linear API key | `L`, paste it (it goes into the macOS keychain, nowhere else) |
+| `gh` signed in | `G`, paste a token, or run `gh auth login` |
+| `claude` on the PATH | install Claude Code and run it once |
+| your repositories folder | `F`, type the folder your git repositories are cloned into |
+| herdr version | `herdr update` if it is older than the version this was tested with |
+| Linear and Slack connectors | claude.ai → settings → connectors, then `/mcp` in Claude Code |
 
-   [[keys.command]]
-   key = "prefix+alt+p"
-   type = "popup"
-   command = "python3 ~/.config/herdr/prs.py"
-   description = "open PRs"
-   width = "90%"
-   height = "80%"
-   ```
+You can skip the checklist with esc and come back with `D`. The list itself only needs the Linear key; the
+connectors are for Col's answers and the daily report, and are found by name, so yours need not be called exactly
+what the author's are.
 
-4. Reload herdr and open the popup with `prefix + alt + i`:
+To update later: `git -C ~/collinear pull && python3 ~/collinear/install.py`. Your settings and keys are left alone.
 
-   ```sh
-   herdr server reload-config
-   ```
+<details>
+<summary>Installing by hand instead</summary>
 
-   The first time, Col walks you through a short checklist and says how to fix each line: your name, a Linear API
-   key (pasted into the popup, stored in the macOS keychain, nowhere else), `gh` signed in, `claude` on the PATH,
-   your repositories folder, and the Linear and Slack connectors in Claude Code (claude.ai → settings → connectors).
-   You can skip it with esc and come back with `D`; the list itself only needs the Linear key.
+Copy `issues.py`, `prs.py` and `prompts/` into `~/.config/herdr/`, copy `local_settings.example.json` there as
+`local_settings.json`, add this to your `config.toml` (and the same for `prs.py`, on another key), then run
+`herdr server reload-config`:
+
+```toml
+[[keys.command]]
+key = "prefix+alt+i"
+type = "popup"
+command = "python3 ~/.config/herdr/issues.py"
+description = "start work on a Linear issue"
+width = "90%"
+height = "80%"
+```
+
+</details>
 
 ## Good to know
 
 - **`?` lists every key.** The footer shows what you can do on the screen you are on. Everything is also clickable,
   and the wheel scrolls.
-- **Repositories are looked for in your `repositories_folder`.** Starting an issue makes a git worktree next to the repository,
+- **Repositories are looked for in one folder,** the one you gave in setup (`F` there changes it). Starting an issue makes a git worktree next to the repository,
   at `<repo>-wt/<branch>`, on the branch name Linear gives the issue. Your main checkout is never touched.
 - **The link between an issue and a workspace is the workspace's name.** A herdr workspace whose name starts with
   the issue id (`ENG-123 …`) belongs to that issue. Rename it and the link is gone; name one by hand and it is found.
@@ -83,7 +83,10 @@ You need macOS, herdr, Python 3 (written and tested on 3.14; 3.9 and later parse
 - **Changes are instant and undoable.** Status, priority and assignee update on screen at once and are sent to
   Linear in the background. `U` undoes the last one.
 - **Where things are kept:** cached issue lists and small settings in `~/.cache/herdr-issues*.json`, notes and chat
-  threads in `~/.claude/work/`, the Linear key in the keychain as `linear-api-key`.
+  threads in `~/.claude/work/`, the Linear key in the keychain as `linear-api-key`, and this machine's settings in
+  `~/.config/herdr/local_settings.json`.
+- **The PR popup can link a PR to its Linear issue** once `local_settings.json` has your `linear_workspace` (the
+  `acme` of `https://linear.app/acme`) and `linear_team_keys` (your teams' issue prefixes, like `["ENG", "OPS"]`).
 - **Selecting text** in the popup needs your terminal's modifier (usually Option or Shift while dragging), because
   the popup listens to the mouse.
 - **`K`** hides the footer hints, **`Z`** sends Col off duty, **`B`** gives him a bone.

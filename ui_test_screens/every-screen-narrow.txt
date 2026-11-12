@@ -2404,21 +2404,21 @@
    2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
   ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
   │  setup  what Col needs                                                                  esc  │
   │                                                                                              │
   │                hi, I'm Col. a few things before we start.                                    │
-  │                5 of 7 ready                                                                  │
+  │                7 of 8 ready                                                                  │
   │                                                                                              │
   │                                                                                              │
-  │   ✓ your name for Col                 Erik Tester  ·  N: change it                           │
-  │   ✓ Linear API key in the keychain    L: new key                                             │
-  │   ✓ gh signed in to GitHub            G: new token                                           │
+  │   ✓ your name for Col                       Erik Tester  ·  N: change it                     │
+  │   ✓ Linear API key in the keychain          L: new key                                       │
+  │   ✓ gh signed in to GitHub                  G: new token                                     │
   │   ✓ claude on the PATH                                                                       │
-  │   ✓ your repositories in /var/folders/x7/x                                                   │
-  │   ✗ Linear connector in Claude Code   claude.ai → settings → connectors → Linear; then /mcp in
-  │   ✗ Slack connector in Claude Code    claude.ai → settings → connectors → Slack; then /mcp in
+  │   ✓ your repositories in …-ui-test-home/dev F: another folder                                │
+  │   ✓ herdr 0.9.5                                                                              │
+  │   ✓ Linear connector in Claude Code                                                          │
+  │   ✗ Slack connector in Claude Code          "team-slack" needs signing in: /mcp in claude    │
   │                                                                                              │
   │                                                                                              │
   │                                                                                              │
@@ -2435,7 +2435,7 @@
                                                                “a few things first” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter fix the first ✗   N your name   L new Linear key   G new GitHub token      │   ╰─ω─╯~   │
-  r check again   esc/h skip for now                                                 ╰──╴ Col ╶───╯
+  F repositories folder   r check again   esc/h skip for now                         ╰──╴ Col ╶───╯
 
 ########## 054 before 'R'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦

@@ -1,8 +1,5 @@
 {
   "repositories_folder": "~/Development",
-  "linear_workspace": "acme",
-  "linear_team_keys": [
-    "ENG",
-    "OPS"
-  ]
+  "linear_workspace": "",
+  "linear_team_keys": []
 }

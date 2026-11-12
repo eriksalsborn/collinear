@@ -18,6 +18,14 @@ DOTS = {GREEN: "●", YELLOW: "◐", RED: "✗"}  # shape as well as colour, so 
 # file (not in git; see local_settings.example.json). Without it, PRs simply have no Linear link.
 LOCAL_SETTINGS_FILE = Path(__file__).parent / "local_settings.json"
 LOCAL_SETTINGS = json.loads(LOCAL_SETTINGS_FILE.read_text()) if LOCAL_SETTINGS_FILE.exists() else {}
+
+
+def save_local_setting(name, value):
+    """Keep one setting in local_settings.json, leaving the others as they are."""
+    LOCAL_SETTINGS[name] = value
+    LOCAL_SETTINGS_FILE.write_text(json.dumps(LOCAL_SETTINGS, indent=2) + "\n")
+
+
 LINEAR_WORKSPACE = LOCAL_SETTINGS.get("linear_workspace", "")  # the "acme" of https://linear.app/acme
 LINEAR_TEAM_KEYS = LOCAL_SETTINGS.get("linear_team_keys", [])  # ["ENG", "OPS"]: update when a Linear team is added
 # the folder your git repositories are cloned into; both popups look for a PR's or an issue's repository there

@@ -897,6 +897,44 @@ def ask_for_user_name(screen):
     return f"hi {name.split(' ')[0]}. good to meet you"
 
 
+HERDR_VERSION_TESTED_WITH = (0, 9, 5)
+
+
+def herdr_version_from(version_output):
+    """(0, 9, 5) from "herdr 0.9.5"; None if it doesn't look like a version."""
+    found = re.search(r"(\d+)\.(\d+)\.(\d+)", version_output)
+    return tuple(map(int, found.groups())) if found else None
+
+
+def shortened_folder(folder, room):
+    """A folder for a narrow column: ~ for the home folder, and when it is still too long, its end after an ellipsis."""
+    text = str(folder).replace(str(Path.home()), "~", 1)
+    return text if len(text) <= room else "…" + text[-(room - 1):]
+
+
+def set_repositories_folder(folder_text):
+    """Point both popups at another folder of git repositories, now and from the next start on (local_settings.json).
+    Returns a footer message; nothing changes if the folder doesn't exist."""
+    global REPOSITORIES_FOLDER
+    folder = Path(folder_text).expanduser()
+    if not folder.is_dir():
+        return f"no such folder: {folder_text}"
+    import prs
+    prs.save_local_setting("repositories_folder", str(folder).replace(str(Path.home()), "~", 1))
+    REPOSITORIES_FOLDER = prs.REPOSITORIES_FOLDER = folder
+    count = len(local_repository_names())
+    return f"repositories folder saved: {count} git repositor{'y' if count == 1 else 'ies'} in it"
+
+
+def ask_for_repositories_folder(screen):
+    """Ask which folder the git repositories are cloned into. Returns a footer message."""
+    shown_folder = str(REPOSITORIES_FOLDER).replace(str(Path.home()), "~", 1)
+    folder_text = ask_for_one_line(screen, "setup  ·  repositories folder", "enter save · esc back",
+                                   ("the folder your git repositories are cloned into, for example ~/code or ~/src",
+                                    "an issue's worktrees are made next to its repository in there"), text=shown_folder)
+    return set_repositories_folder(folder_text) if folder_text else ""
+
+
 def quick_setup_checks():
     """[(name, ok, how)] for what the popup needs, the quick ones (<1s). how: what the dev does, or "paste" if
     run_setup() can take the secret itself."""
@@ -904,17 +942,68 @@ def quick_setup_checks():
             ("Linear API key in the keychain", bool(linear_api_key_in_keychain()), "paste"),
             ("gh signed in to GitHub", not run_command("gh", "auth", "status").returncode, "paste"),
             ("claude on the PATH", not run_command("which", "claude").returncode, "npm i -g @anthropic-ai/claude-code; run claude once to sign in"),
-            (f"your repositories in {str(REPOSITORIES_FOLDER).replace(str(Path.home()), '~')}"[:38], REPOSITORIES_FOLDER.is_dir(),
-             'elsewhere? set "repositories_folder" in local_settings.json')]
+            (f"your repositories in {shortened_folder(REPOSITORIES_FOLDER, 18)}", REPOSITORIES_FOLDER.is_dir(), "paste"),
+            herdr_version_check()]
+
+
+def herdr_version_check():
+    """The setup line for herdr itself: fine from the version this was tested with."""
+    version = herdr_version_from(run_command("herdr", "--version").stdout)
+    tested_with = ".".join(map(str, HERDR_VERSION_TESTED_WITH))
+    if version is None:
+        return ("herdr on the PATH", False, "herdr isn't answering: is it installed?")
+    return (f"herdr {'.'.join(map(str, version))}", version >= HERDR_VERSION_TESTED_WITH, f"tested with {tested_with} and newer: run  herdr update")
+
+
+SERVICES_COL_LOOKS_THINGS_UP_IN = ("Linear", "Slack")
+DEFAULT_CONNECTOR_NAMES = {service: f"claude.ai {service}" for service in SERVICES_COL_LOOKS_THINGS_UP_IN}
+
+
+def connectors_listed_by_claude(listing):
+    """[(server name, is connected)] from the output of `claude mcp list`: lines like "claude.ai Linear: https://… - ✔ Connected"."""
+    servers = []
+    for line in listing.splitlines():
+        name_and_address, separator, state = line.rpartition(" - ")
+        if separator and ": " in name_and_address:
+            servers.append((name_and_address.partition(": ")[0].strip(), "Connected" in state))
+    return servers
+
+
+def connector_for_service(service, servers):
+    """(server name, is connected) of the MCP server for Linear or Slack, whatever it is called on this machine:
+    any server with the service's name in its own. A connected one wins, then a claude.ai one. (None, False) if none."""
+    candidates = [(name, connected) for name, connected in servers if re.search(rf"\b{service}\b", name, re.I)]
+    candidates.sort(key=lambda server: (not server[1], not server[0].startswith("claude.ai")))
+    return candidates[0] if candidates else (None, False)
+
+
+def connector_names():
+    """{"Linear": server name, "Slack": server name} as setup last found them; the claude.ai names until it has looked."""
+    return {**DEFAULT_CONNECTOR_NAMES, **(read_stored_value("connectors") or {})}
+
+
+def mcp_tool_prefix(server_name):
+    """How Claude Code names a server's tools: "claude.ai Linear" -> "mcp__claude_ai_Linear__"."""
+    return "mcp__" + re.sub(r"[^A-Za-z0-9_-]", "_", server_name) + "__"
 
 
 def connector_setup_checks():
-    """The claude.ai connectors the ask agent needs, same shape as quick_setup_checks(). Slow (~10s: claude pings every server)."""
+    """The Linear and Slack connectors Col's answers need, same shape as quick_setup_checks(). Slow (~10s: claude
+    pings every server). Remembers what each one is called here, so Col asks the right server."""
     if DEMO_SETUP_MODE:  # --demo-setup: pretend the Slack connector is missing, to see the onboarding screen
         return [("Linear connector in Claude Code", True, ""), ("Slack connector in Claude Code", False, "(demo) claude.ai → settings → connectors → Slack; then /mcp in claude")]
-    mcp = run_command("claude", "mcp", "list").stdout if not run_command("which", "claude").returncode else ""
-    return [(f"{name} connector in Claude Code", bool(re.search(rf"claude\.ai {name}:.*Connected", mcp)),
-             f"claude.ai → settings → connectors → {name}; then /mcp in claude") for name in ("Linear", "Slack")]
+    servers = connectors_listed_by_claude(run_command("claude", "mcp", "list").stdout) if not run_command("which", "claude").returncode else []
+    checks, names_found = [], {}
+    for service in SERVICES_COL_LOOKS_THINGS_UP_IN:
+        server_name, is_connected = connector_for_service(service, servers)
+        if server_name:
+            names_found[service] = server_name
+        how_to_fix = f'"{server_name}" needs signing in: /mcp in claude' if server_name else \
+            f"claude.ai → settings → connectors → {service}; then /mcp in claude"
+        checks.append((f"{service} connector in Claude Code", is_connected, how_to_fix))
+    if names_found:
+        write_stored_value("connectors", names_found)
+    return checks
 
 
 def ask_for_linear_api_key(screen):
@@ -999,13 +1088,14 @@ def run_setup_checklist(screen, force=False):
             line(7 + line_number, mark, curses.color_pair(GREEN if is_ok else MUTED if is_ok is None else RED) | curses.A_BOLD, 4)
             line(7 + line_number, name, curses.color_pair(DEFAULT_TEXT if is_ok else MUTED if is_ok is None else RED) | (curses.A_BOLD if is_ok is False else 0), 6)
             if is_ok is None:
-                line(7 + line_number, "checking…", curses.color_pair(DIM), 40)
+                line(7 + line_number, "checking…", curses.color_pair(DIM), 46)
             elif not is_ok:
-                line(7 + line_number, "enter: paste it here" if how_to_fix == "paste" else how_to_fix, curses.color_pair(DIM), 40)
+                line(7 + line_number, ("F: point it at your folder" if name.startswith("your repositories") else "enter: paste it here")
+                     if how_to_fix == "paste" else how_to_fix, curses.color_pair(DIM), 46)
             elif how_to_fix == "paste":
                 line(7 + line_number, f"{saved_user_name()}  ·  N: change it" if name.startswith("your name") else "L: new key" if name.startswith("Linear")
-                     else "G: new token", curses.color_pair(DIM), 40)
-        draw_footer_from_text(screen, ("l/enter fix the first ✗ · " if missing else "") + "N your name · L new Linear key · G new GitHub token · r check again · esc/h "
+                     else "F: another folder" if name.startswith("your repositories") else "G: new token", curses.color_pair(DIM), 46)
+        draw_footer_from_text(screen, ("l/enter fix the first ✗ · " if missing else "") + "N your name · L new Linear key · G new GitHub token · F repositories folder · r check again · esc/h "
                 + ("close" if not missing else "skip for now"))
         screen.refresh()
         try:
@@ -1015,9 +1105,12 @@ def run_setup_checklist(screen, force=False):
         if key in (27, ord("h")):
             return not missing
         if key in (10, 13, curses.KEY_ENTER, ord("l")) and missing and missing[0][1] is False and missing[0][2] == "paste":
-            key = ord("N") if missing[0][0].startswith("your name") else ord("L") if missing[0][0].startswith("Linear") else ord("G")
-        if key in (ord("r"), ord("L"), ord("G"), ord("N")):
-            message = ask_for_user_name(screen) if key == ord("N") else ask_for_linear_api_key(screen) if key == ord("L") else ask_for_github_token(screen) if key == ord("G") else ""
+            first_missing = missing[0][0]
+            key = ord("N") if first_missing.startswith("your name") else ord("L") if first_missing.startswith("Linear") else \
+                ord("F") if first_missing.startswith("your repositories") else ord("G")
+        ask_by_key = {ord("N"): ask_for_user_name, ord("L"): ask_for_linear_api_key, ord("G"): ask_for_github_token, ord("F"): ask_for_repositories_folder}
+        if key == ord("r") or key in ask_by_key:
+            message = ask_by_key[key](screen) if key in ask_by_key else ""
             quick_checks, passed_at = quick_setup_checks(), 0
             if key == ord("r"):
                 look()
@@ -1103,24 +1196,33 @@ def wrap_styled_segments(segments, width, first_line_prefix, later_lines_prefix,
 # Read-only: anything not listed here is denied, since -p can't ask for permission.
 SOURCES_COL_CAN_USE = ("sources: the issue and its comments · Linear (related issues, projects, docs) · Slack (search, channels, "
            "threads · can post when you ask) · GitHub via gh (PRs, reviews, CI) · git history · the web.  Linear is read-only")
-TOOLS_COL_MAY_USE = (
-    [f"mcp__claude_ai_Linear__{t}" for t in "get_issue list_issues list_comments get_project list_projects get_document "
-     "list_documents get_attachment extract_images get_user list_users get_team list_teams get_milestone list_milestones "
-     "list_cycles get_initiative list_initiatives list_issue_statuses list_issue_labels get_status_updates".split()]
-    + [f"mcp__claude_ai_Slack__{t}" for t in "slack_search_public slack_search_public_and_private slack_read_channel "
-       "slack_read_thread slack_search_channels slack_search_users slack_read_user_profile slack_read_canvas "
-       "slack_send_message slack_send_message_draft".split()]
-    + ["WebSearch", "WebFetch"]
-    + [f"Bash({c}:*)" for c in ("git log", "git show", "git diff", "git status", "git branch", "gh pr view", "gh pr list",
-                                "gh pr checks", "gh pr diff", "gh run view", "gh run list", "gh issue view", "gh search prs")])
+LINEAR_TOOLS_COL_MAY_USE = ("get_issue list_issues list_comments get_project list_projects get_document list_documents "
+                            "get_attachment extract_images get_user list_users get_team list_teams get_milestone list_milestones "
+                            "list_cycles get_initiative list_initiatives list_issue_statuses list_issue_labels get_status_updates").split()
+SLACK_TOOLS_COL_MAY_USE = ("slack_search_public slack_search_public_and_private slack_read_channel slack_read_thread "
+                           "slack_search_channels slack_search_users slack_read_user_profile slack_read_canvas "
+                           "slack_send_message slack_send_message_draft").split()
+COMMANDS_COL_MAY_RUN = ("git log", "git show", "git diff", "git status", "git branch", "gh pr view", "gh pr list",
+                        "gh pr checks", "gh pr diff", "gh run view", "gh run list", "gh issue view", "gh search prs")
+
+
+def tools_col_may_use(connectors=None):
+    """The allow-list for Col's headless claude: read tools of the Linear server, the Slack tools, the web, and
+    read-only git and gh commands. The two servers are addressed by the names setup found on this machine."""
+    connectors = connectors or connector_names()
+    return ([mcp_tool_prefix(connectors["Linear"]) + tool for tool in LINEAR_TOOLS_COL_MAY_USE]
+            + [mcp_tool_prefix(connectors["Slack"]) + tool for tool in SLACK_TOOLS_COL_MAY_USE]
+            + ["WebSearch", "WebFetch"] + [f"Bash({command}:*)" for command in COMMANDS_COL_MAY_RUN])
 
 
 def describe_tool_call(tool):
     """Spinner text for a tool call from claude's stream."""
     name, tool_input = tool["name"], tool.get("input") or {}
-    if name.startswith("mcp__claude_ai_"):
-        server, _, action = name[len("mcp__claude_ai_"):].partition("__")
-        return f"{server}: {action.removeprefix('slack_').replace('_', ' ')}"
+    if name.startswith("mcp__"):  # "Linear: get issue", whatever the server is called here
+        server_part, _, action = name[len("mcp__"):].partition("__")
+        service = next((service for service, server_name in connector_names().items() if mcp_tool_prefix(server_name) == f"mcp__{server_part}__"),
+                       server_part.rpartition("_")[2])
+        return f"{service}: {action.removeprefix('slack_').replace('_', ' ')}"
     return {"Bash": tool_input.get("command", ""), "WebSearch": f"searching {tool_input.get('query', '')}",
             "WebFetch": f"fetching {tool_input.get('url', '')}"}.get(name, name)
 
@@ -1148,7 +1250,7 @@ DRAFT_COMMENT_TASK = ("Draft a comment on one Linear issue, to be posted by its 
 
 
 def ask_headless_claude(context, history, cwd, progress, running_processes, task=ASK_ABOUT_ISSUE_TASK):
-    """Headless claude on the issue, with read-only Linear, web and git/gh tools (see TOOLS_COL_MAY_USE).
+    """Headless claude on the issue, with read-only Linear, web and git/gh tools (see tools_col_may_use()).
     User settings are loaded: without them the claude.ai connectors (Linear, Slack) are invisible. progress(text) gets each tool call.
     task: (instructions, label for my turns, label for its turns), see ASK_ABOUT_ISSUE_TASK and DRAFT_COMMENT_TASK."""
     instructions, label_for_my_turns, label_for_its_turns = task
@@ -1157,7 +1259,7 @@ def ask_headless_claude(context, history, cwd, progress, running_processes, task
               + f"{label_for_my_turns}: {history[-1][0]}\n{label_for_its_turns}:")
     # --tools limits the built-ins only; "" would also hide the MCP connectors
     process = subprocess.Popen(["claude", "-p", "--model", "sonnet", "--setting-sources", "user", "--no-session-persistence",
-                             "--tools", "Bash,WebSearch,WebFetch", "--allowedTools", *TOOLS_COL_MAY_USE,
+                             "--tools", "Bash,WebSearch,WebFetch", "--allowedTools", *tools_col_may_use(),
                              "--output-format", "stream-json", "--verbose"],
                             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd)
     running_processes.append(process)  # so esc can kill it
@@ -2927,6 +3029,7 @@ def main(screen):
 
 
 def _test():
+    global REPOSITORIES_FOLDER
     mk = lambda ident, state, typ, pos, prio=0: {"identifier": ident, "title": f"t {ident}", "priority": prio,
                                                   "state": {"name": state, "type": typ, "position": pos}}
     issues = [mk("A-1", "Todo", "unstarted", 1), mk("A-2", "In Progress", "started", 2, 3),
@@ -2977,7 +3080,30 @@ def _test():
     assert markdown_to_styled_lines("**`__dirname`**: x", 30)[0][0] == ("__dirname", "code")
     assert describe_tool_call({"name": "mcp__claude_ai_Slack__slack_read_thread"}) == "Slack: read thread"
     assert describe_tool_call({"name": "Bash", "input": {"command": "gh pr checks 7"}}) == "gh pr checks 7"
-    assert not any("save_" in t or "delete" in t or "Linear__create" in t for t in TOOLS_COL_MAY_USE), "Linear must stay read-only"
+    assert not any("save_" in t or "delete" in t or "Linear__create" in t for t in tools_col_may_use(DEFAULT_CONNECTOR_NAMES)), "Linear must stay read-only"
+    listing = ("Checking MCP server health…\n\nclaude.ai Linear: https://x - ! Needs authentication\nlinear-server: npx linear - ✔ Connected\n"
+               "claude.ai Slack: https://y - ✔ Connected\nplugin:tools:Notion: https://z - ✔ Connected\n")
+    servers = connectors_listed_by_claude(listing)
+    assert ("claude.ai Linear", False) in servers and ("plugin:tools:Notion", True) in servers and len(servers) == 4
+    assert connector_for_service("Linear", servers) == ("linear-server", True), "a connected server wins over a claude.ai one that isn't"
+    assert connector_for_service("Slack", servers) == ("claude.ai Slack", True) and connector_for_service("Jira", servers) == (None, False)
+    assert mcp_tool_prefix("claude.ai Linear") == "mcp__claude_ai_Linear__" and mcp_tool_prefix("linear-server") == "mcp__linear-server__"
+    assert "mcp__linear-server__get_issue" in tools_col_may_use({"Linear": "linear-server", "Slack": "claude.ai Slack"})
+    import prs, tempfile
+    real_settings_file, real_settings, real_folder = prs.LOCAL_SETTINGS_FILE, dict(prs.LOCAL_SETTINGS), REPOSITORIES_FOLDER
+    with tempfile.TemporaryDirectory() as temporary_folder:  # F in setup: switching the repositories folder
+        prs.LOCAL_SETTINGS_FILE = Path(temporary_folder) / "local_settings.json"
+        (Path(temporary_folder) / "one-repository" / ".git").mkdir(parents=True)
+        assert set_repositories_folder(temporary_folder + "/missing").startswith("no such folder") and REPOSITORIES_FOLDER == real_folder
+        assert set_repositories_folder(temporary_folder) == "repositories folder saved: 1 git repository in it"
+        assert REPOSITORIES_FOLDER == prs.REPOSITORIES_FOLDER == Path(temporary_folder) and local_repository_names() == ["one-repository"]
+        saved = json.loads(prs.LOCAL_SETTINGS_FILE.read_text())
+        assert Path(saved["repositories_folder"]).expanduser() == Path(temporary_folder) and saved.get("linear_workspace") == real_settings.get("linear_workspace")
+    prs.LOCAL_SETTINGS_FILE, REPOSITORIES_FOLDER, prs.REPOSITORIES_FOLDER = real_settings_file, real_folder, real_folder
+    prs.LOCAL_SETTINGS.clear()
+    prs.LOCAL_SETTINGS.update(real_settings)
+    assert shortened_folder(Path.home() / "code", 18) == "~/code" and shortened_folder(Path("/a/very/long/path/to/the/repositories"), 18) == "…/the/repositories"
+    assert herdr_version_from("herdr 0.9.5") == (0, 9, 5) and herdr_version_from("herdr 0.10.0-preview") == (0, 10, 0) and herdr_version_from("?") is None
     pr = lambda **m: {"url": "https://github.com/o/r/pull/1", "metadata": m}
     assert pull_request_badge_key({"status": "inReview", "hasConflicts": True}) == "conflict"
     assert pull_request_badge_key({"status": "open", "draft": True}) == "draft" and pull_request_badge_key({"status": "inReview"}) == "review"

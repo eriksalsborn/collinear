@@ -94,6 +94,10 @@ def fake_run_command(*command):
     output = ""
     if command[:1] == ("security",):
         output = "fake-linear-key"
+    elif command[:2] == ("herdr", "--version"):
+        output = "herdr 0.9.5"
+    elif command[:3] == ("claude", "mcp", "list"):
+        output = "claude.ai Linear: https://x - ✔ Connected\nteam-slack: https://y - ! Needs authentication\n"
     elif command[:1] == ("git",) and "worktree" in command and str(command[2]).endswith("alpha"):
         output = "worktree /x/alpha-wt/b\nHEAD abc\nbranch refs/heads/erik/pla-2-second\n\n"
     return types.SimpleNamespace(returncode=0, stdout=output, stderr="")
@@ -154,6 +158,7 @@ def replace_the_outside_world(issues, prs, open_workspaces, temporary_home):
     issues.SETUP_PASSED_FILE = cache_dir / "herdr-issues-setup.json"
     issues.REPOSITORIES_FOLDER = temporary_home / "dev"
     issues.NOTES_DIR = temporary_home / "notes"
+    prs.LOCAL_SETTINGS_FILE = temporary_home / "local_settings.json"  # F in setup saves here, never to the real one
     issues.MY_ISSUES_CACHE_FILE.write_text(json.dumps(FAKE_ISSUES))
     stored_values = {"setup": {"ok": "x"}, "name": {"name": "Erik Tester"}, "digest": f"{FROZEN_NOW:%Y-%m-%d}",
                      "brief": {"date": f"{FROZEN_NOW:%Y-%m-%d}", "text": FAKE_DAILY_REPORT, "steps": ["Linear: get issue"], "cur": 0}}
@@ -247,7 +252,8 @@ def play_scenario_inside_the_terminal(scenario_name, output_file):
     _, open_workspaces, steps = SCENARIOS[scenario_name]
     sys.path.insert(0, str(HERE))
     import issues, prs
-    temporary_home = Path(tempfile.mkdtemp(prefix="collinear-ui-test-"))
+    temporary_home = Path(tempfile.gettempdir()) / "collinear-ui-test-home"  # a fixed name: the setup screen shows the end of it
+    shutil.rmtree(temporary_home, ignore_errors=True)
     recorded_screens, error_text = [], ""
     try:
         replace_the_outside_world(issues, prs, open_workspaces, temporary_home)

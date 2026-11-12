@@ -8,6 +8,9 @@ session-snapshots/
 sessions/
 __pycache__/
 
-# this machine only: the Linear workspace and team keys, and the demo recording script
+# this machine only: the settings, the author's own herdr config and status line, and the demo recording script
 local_settings.json
+config.toml
+config.toml.before-collinear
+status.sh
 demo.tape
