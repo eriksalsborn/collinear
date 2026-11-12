@@ -28,10 +28,12 @@ published; `main` is work in progress. Cloned `main` earlier? `git -C ~/collinea
 ## The tour
 
 Right after setup, Col walks you through the app for real: he says each step from his speech bubble and you press
-the key, so the preview, the comments, The Daily Bark and the start dialog actually open in front of you.
+the key, so the preview, the comments, The Daily Bark, the to-do list and the start dialog actually open in front
+of you.
 
 - It covers moving around, reading and writing comments, asking Col, changing status / priority / assignee,
-  the daily report, the green markers and `w`, and what starting work does.
+  the daily report, the to-do list, the green markers and `w`, the active workspaces, and what starting work does.
+  Free sessions, team and project views, the review inbox, the filter and new issues get a line each.
 - Only the key he asks for works while it runs, so you can't get lost or post anything by accident.
 - `Q` quits it at any time. `O` starts it again whenever you want.
 
@@ -40,10 +42,11 @@ the key, so the preview, the comments, The Daily Bark and the start dialog actua
 - **One key from issue to working session.** `enter` makes a git worktree on the issue's branch and opens Claude
   Code on it in the issue's own herdr workspace.
 - **It knows where your work is.** Issues with a workspace open are marked, with repository and branch, and `w`
-  jumps straight there.
+  jumps straight there. The popup opens on just those, the active workspaces; `W` or `h` shows all your issues.
+  With nothing open it opens on your issues.
 - **Col writes your daily report.** A short update on your last working day, then the loose threads from Slack,
   Linear comments and pull requests: what nobody followed up on, or has no issue yet. `s` moves one to a to-do list
-  that outlives the next report.
+  that outlives the next report, and `i` there adds your own: typed, or drafted by Col from a few words.
 
 ## How it works
 
