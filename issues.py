@@ -53,6 +53,8 @@ class UiState:
     col_is_visible = True  # Z toggles Col off and on; remembered in the cache dir
     col_is_working = False  # Col is on a job (report, answer, draft): he looks around, sniffs, and says what he's at
     lookups_col_is_working_on = []  # the lookups of that job so far
+    guided_tour_step = None  # the step of the tour Col is waiting on (see GUIDED_TOUR_STEPS); None when no tour is running
+    tour_closing_card_is_due = False  # the last step was just done: the list shows the closing card next
 
 
 SPINNER_FRAMES = "⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏"
@@ -187,10 +189,13 @@ class ScreenWithMouse:
         return PENDING_KEYS.pop(0) if PENDING_KEYS else -1
 
     def getch(self):
-        return self._next_key(self.screen.getch)
+        key = self._next_key(self.screen.getch)
+        note_key_for_guided_tour(key)
+        return key
 
     def get_wch(self):
         key = self._next_key(self.screen.get_wch)
+        note_key_for_guided_tour(key)
         if key == -1:
             raise curses.error("no input")
         return chr(key) if isinstance(key, int) and key < 256 else key
@@ -623,115 +628,96 @@ def show_key_reference(screen):
     screen.timeout(250)
 
 
-# The tour for someone new: five cards, a minute or two. (title, what Col says meanwhile, lines, keys to try.)
-# A line is Markdown, or "@green …" to show the green marker as it looks on a row. A key to try is (how it is
-# written, the keycodes that count); the card ticks each one off as it is pressed and moves on after the last.
-# It is a dry run: nothing is started or opened by the keys pressed here.
+# The tour for someone new. A welcome card, then a walk through the real app: Col says each step in his bubble
+# (it stays in view on every screen) and the step is done when its key is pressed, for real: the preview really
+# opens, The Daily Bark really opens, esc really goes back. It ends on a card about the green markers.
+# ponytail: a step only looks at which key was pressed, not where; someone who wanders off mid-tour can tick a step
+# from another screen. Give steps a "which screen" check if that turns out to confuse people.
 ENTER_KEYCODES = (10, 13, curses.KEY_ENTER)
-ONBOARDING_TOUR = [
-    ("my issues", "this is the whole flock",
-     ["This list is **every Linear issue assigned to you**, grouped by status, the furthest along on top.",
-      "",
-      "`j` and `k` move the cursor  ·  just type to filter  ·  `space` previews an issue",
-      "",
-      "`h` goes back one step and `q` closes the popup, from anywhere. Open, glance, close: your to-do list is "
-      "one key away."],
-     [("j", (ord("j"), curses.KEY_DOWN)), ("k", (ord("k"), curses.KEY_UP))]),
-    ("start working", "one key and I fetch everything",
-     ["`l` or `enter` on an issue sets the whole thing up: a git worktree on the issue's branch, a herdr workspace "
-      "named after the issue, and Claude Code in it with the issue already read.",
-      "",
-      "Work goes in phases, **write → plan → build → review**. Each leaves notes, so you can stop today and pick "
-      "it up next week exactly where you were.",
-      "",
-      "`l` / `enter` also picks the highlighted row in every menu, and `h` backs out of one."],
-     [("l or enter", (ord("l"),) + ENTER_KEYCODES)]),
-    ("the green markers", "green means you're already on it",
-     ["@green ▶ ws 3 · my-repo",
-      "",
-      "A green marker on a row means **a herdr workspace is open for that issue**: it is work in progress, right now, "
-      "on this machine. It names the workspace (the number in herdr's sidebar) and the repository.",
-      "",
-      "So the green rows are your answer to *what am I in the middle of?*  Put the cursor on one and press `w` to "
-      "jump straight into it. That is the fastest way to move between the things you have going."],
-     [("w", (ord("w"),))]),
-    ("the daily bark", "I write it while you get coffee",
-     ["`b` opens **The Daily Bark**: my recap of your last two days, from Linear, Slack and GitHub. What is on your "
-      "plate, the loose ends, and where to start today.",
-      "",
-      "`j` `k` move between topics  ·  `l` / `enter` on one: go to its issue, start it, or ask me about it  ·  "
-      "`h` / `q` close it",
-      "",
-      "Use it in the morning, or after a few days away, instead of scrolling back through everything."],
-     [("b", (ord("b"),))]),
-    ("that's it", "you've got this",
-     ["The bottom rows always show what you can do right here, and every hint is clickable.",
-      "",
-      "`?` every key  ·  `a` ask me about an issue  ·  `O` this tour again  ·  `B` a bone for me",
-      "",
-      "The loop: **open, look for green,** `w` to get back into your work.  `l` / `enter` to start something new.  "
-      "`h` / `q` to leave."],
-     []),
+FORWARD_KEYCODES, BACK_KEYCODES = (ord("l"),) + ENTER_KEYCODES, (27, ord("h"))
+GUIDED_TOUR_STEPS = [  # (what Col says, the keys that do it). Kept short: the bubble has about 75 characters on a small popup
+    ("these are your issues, the furthest along on top. press j to move down", (ord("j"), curses.KEY_DOWN)),
+    ("and k to move back up", (ord("k"), curses.KEY_UP)),
+    ("space previews the issue under the cursor", (ord(" "),)),
+    ("esc or h goes back. that works everywhere. try it", BACK_KEYCODES),
+    ("b opens The Daily Bark: my recap of your last two days", (ord("b"),)),
+    ("j / k pick a topic. l or enter shows what you can do with it", FORWARD_KEYCODES),
+    ("go to its issue, start it, or ask me. esc or h backs out", BACK_KEYCODES),
+    ("esc or h once more, and you're back at your issues", BACK_KEYCODES),
+    ("l or enter starts work on an issue. press it and have a look", FORWARD_KEYCODES),
+    ("this is where work begins. esc or h backs out for now", BACK_KEYCODES),
 ]
+TOUR_WELCOME_CARD = ("welcome", [
+    "This is **Collinear**: your Linear issues one key away, and everything you have in progress.",
+    "",
+    "I'll walk you through it for real. **Do what my speech bubble says**, down in the corner, and watch what happens.",
+    "",
+    "Two pairs of keys work everywhere:  `l` / `enter` goes forward or picks,  `esc` / `h` goes back.  `q` closes "
+    "the popup."])
+TOUR_CLOSING_CARD = ("the green markers", [
+    "@green ▶ ws 3 · my-repo",
+    "",
+    "A green marker on a row means **a herdr workspace is open for that issue**: work in progress, right now, on this "
+    "machine. It names the workspace (the number in herdr's sidebar) and the repository.",
+    "",
+    "So the green rows answer *what am I in the middle of?*  Put the cursor on one and press `w` to jump straight "
+    "into it: the fastest way to move between the things you have going.",
+    "",
+    "The loop:  **open, look for green,** `w`.   `l` / `enter` to start something new.   `b` in the morning.   "
+    "`O` for this tour again."])
 
 
-def show_onboarding_tour(screen):
-    """The five cards of ONBOARDING_TOUR, over the list. Each card waits for the keys it teaches and ticks them off;
-    after the last one it moves on by itself. l/enter also goes on without trying, h goes back, q or esc leaves.
-    Shown by itself the first time the list opens; O shows it again."""
+def show_tour_card(screen, card, footer_text):
+    """One card of the tour over the list; returns the key that was pressed on it. A line is Markdown, or
+    "@green …" to show the green marker as it looks on a row."""
+    title, text_lines = card
     attribute_by_style = daily_report_text_attributes()
-    card_number, keys_tried_on_this_card = 0, 0
-    while card_number < len(ONBOARDING_TOUR):
-        title, col_line, text_lines, keys_to_try = ONBOARDING_TOUR[card_number]
-        is_last_card = card_number == len(ONBOARDING_TOUR) - 1
-        all_keys_tried = keys_tried_on_this_card == len(keys_to_try)
-        if not keys_tried_on_this_card:
-            col_says(col_line, "cheer", 60)
-        line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 21, 80)
-        line(3, f"{card_number + 1} of {len(ONBOARDING_TOUR)}", curses.color_pair(DIM), 4)
-        line(3, title, curses.color_pair(ACCENT) | curses.A_BOLD, 12)
-        row = 5
-        for text_line in text_lines:
-            if text_line.startswith("@green "):  # the marker itself, as a row shows it
-                line(row, f" {text_line[len('@green '):]} ", curses.color_pair(GREEN) | curses.A_REVERSE | curses.A_BOLD, 5)
-                row += 1
-                continue
-            for segments in markdown_to_styled_lines(text_line, box_width - 9) or [[]]:  # "" is a blank row
-                column = 4
-                for text, style in segments:
-                    line(row, text, attribute_by_style[style], column)
-                    column += len(text)
-                row += 1
-        if keys_to_try:  # "try it now:  ✓ j   ○ k": ticked as they are pressed
-            line(17, "try it now:", curses.color_pair(ACCENT) | curses.A_BOLD, 4)
-            column = 17
-            for key_number, (written_as, _) in enumerate(keys_to_try):
-                was_tried = key_number < keys_tried_on_this_card
-                text = f"{'✓' if was_tried else '○'} {written_as}"
-                line(17, text, curses.color_pair(GREEN if was_tried else DEFAULT_TEXT) | curses.A_BOLD, column)
-                column += len(text) + 4
-            if all_keys_tried:
-                line(17, "nice.", curses.color_pair(GREEN) | curses.A_BOLD, column)
-        progress_dots = " ".join("●" if number == card_number else "○" for number in range(len(ONBOARDING_TOUR)))
-        line(19, progress_dots, curses.color_pair(ACCENT), (box_width - len(progress_dots)) // 2)
-        draw_footer_from_text(screen, ("l/enter done" if is_last_card else "l/enter next") + (" · h back" if card_number else "")
-                              + " · q/esc leave the tour")
-        screen.refresh()
-        if keys_to_try and all_keys_tried:  # a beat to see the tick, then on to the next card
-            curses.napms(700)
-            card_number, keys_tried_on_this_card = card_number + 1, 0
+    line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 19, 80)
+    line(3, title, curses.color_pair(ACCENT) | curses.A_BOLD, 4)
+    row = 5
+    for text_line in text_lines:
+        if text_line.startswith("@green "):
+            line(row, f" {text_line[len('@green '):]} ", curses.color_pair(GREEN) | curses.A_REVERSE | curses.A_BOLD, 5)
+            row += 1
             continue
-        key = screen.getch()
-        if keys_to_try and key in keys_to_try[keys_tried_on_this_card][1]:
-            keys_tried_on_this_card += 1
-            col_says(("that's the one", "good. again like that", "yes! exactly", "see? easy")[(card_number + keys_tried_on_this_card) % 4], "cheer", 60)
-        elif key in (27, ord("q")):
-            break
-        elif key in (ord("l"),) + ENTER_KEYCODES:
-            card_number, keys_tried_on_this_card = card_number + 1, 0
-        elif key == ord("h") and card_number:
-            card_number, keys_tried_on_this_card = card_number - 1, 0
-    col_says("off you go. ? if you forget a key, O for the tour", "cheer", 8)
+        for segments in markdown_to_styled_lines(text_line, box_width - 9) or [[]]:  # "" is a blank row
+            column = 4
+            for text, style in segments:
+                line(row, text, attribute_by_style[style], column)
+                column += len(text)
+            row += 1
+    draw_footer_from_text(screen, footer_text)
+    screen.refresh()
+    screen.timeout(-1)
+    key = screen.getch()
+    screen.timeout(250)
+    return key
+
+
+def start_guided_tour(screen):
+    """The welcome card; l/enter starts the walk-through (Col takes it from there, in his bubble), esc/h/q declines."""
+    col_says("a tour? I love tours", "cheer", 30)
+    if show_tour_card(screen, TOUR_WELCOME_CARD, "l/enter start the tour · esc/h not now") in FORWARD_KEYCODES:
+        UiState.guided_tour_step = 0
+        UiState.col_is_visible = True  # he is the guide
+
+
+def note_key_for_guided_tour(key):
+    """Every key pressed anywhere passes through here: the tour's current step is done when its key is pressed."""
+    step = UiState.guided_tour_step
+    if step is None:
+        return
+    keycode = ord(key) if isinstance(key, str) and len(key) == 1 else key
+    if keycode in GUIDED_TOUR_STEPS[step][1]:
+        UiState.guided_tour_step = step + 1 if step + 1 < len(GUIDED_TOUR_STEPS) else None
+        UiState.tour_closing_card_is_due = UiState.guided_tour_step is None
+    elif keycode == ord("q"):  # closing the popup ends the tour
+        UiState.guided_tour_step = None
+
+
+def words_of_guided_tour_step():
+    step = UiState.guided_tour_step
+    return f"{step + 1}/{len(GUIDED_TOUR_STEPS)}  {GUIDED_TOUR_STEPS[step][0]}"
 
 
 def show_review_inbox(screen):
@@ -2471,7 +2457,11 @@ class IssueListScreen:
             if self.onboarding_tour_is_due:
                 self.onboarding_tour_is_due = False
                 write_stored_value("tour-seen", True)
-                show_onboarding_tour(self.screen)
+                start_guided_tour(self.screen)
+            if UiState.tour_closing_card_is_due:
+                UiState.tour_closing_card_is_due = False
+                show_tour_card(self.screen, TOUR_CLOSING_CARD, "l/enter done")
+                col_says("off you go. ? if you forget a key, O for the tour", "cheer", 8)
             self.draw()
             col_is_animating = (COL_SPEECH["mood"] == "woof" and time.time() < COL_SPEECH["until"]) or time.time() % 37 < 2.5 \
                 or UiState.col_is_working
@@ -2789,6 +2779,8 @@ class IssueListScreen:
         """(which face, what he says) right now: what he's working on, something he just said, asleep after three
         quiet minutes, a sniff now and then, otherwise a tip or a dog thought."""
         now, animation_frame = time.time(), int(time.time() * 8)
+        if UiState.guided_tour_step is not None:  # the tour: he says the step he is waiting for
+            return "cheer", words_of_guided_tour_step()
         if UiState.col_is_working:  # on a job: eyes left and right, a sniff, and what he's at
             lookups, beat = UiState.lookups_col_is_working_on, int(now * 1.3)  # the clock, not a frame count: another screen's loop is running
             mood = ("left", "cheer", "sniff", "cheer", "right", "cheer")[beat % 6]
@@ -3139,7 +3131,7 @@ class IssueListScreen:
         return f"gave Col a bone  ·  {bones_today} today"
 
     def show_the_tour_again(self):
-        show_onboarding_tour(self.screen)
+        start_guided_tour(self.screen)
 
     def open_setup(self):
         run_setup(self.screen, force=True)

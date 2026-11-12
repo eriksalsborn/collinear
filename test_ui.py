@@ -126,7 +126,8 @@ EVERY_SCREEN = [
     ("click row with", "PLA-4"), ("click row with", "PLA-4"), ("click hint", ESC),   # select by click, preview by second click, close by its corner
     ("wheel", "down"), ("wheel", "up"), ("click hint", "?"), ENTER,                 # scroll, then a footer hint
     ("click hint", "S"), ("click row with", "In Review"), ("click row with", "In Review"),  # a dialog: click a row, click it again to pick
-    "O", "j", "x", "k", ENTER, "h", "l", "w", "b", ENTER,        # the tour: it waits for the keys it teaches (x is ignored); one step back
+    "O", ENTER, "j", "k", " ", ESC, "b", "l", ESC, ESC, ENTER, ESC, ENTER,   # the tour, for real: welcome card, ten steps in the app, closing card
+    "O", ESC,                                                    # the welcome card can be declined
 ]
 SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, the steps)
     "every-screen-wide": (150, ONE_WORKSPACE, EVERY_SCREEN),
