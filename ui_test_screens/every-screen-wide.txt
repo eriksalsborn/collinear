@@ -6758,8 +6758,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                                                                        │  ▜▖ ▼  ▗▛  │
-  i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page        │   ╰─ω─╯~   │
-  esc/h close                                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   b daily report               │   ╰─ω─╯~   │
+  j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
 ########## 148 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6804,8 +6804,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                                                                        │  ▜▖ ▼  ▗▛  │
-  i add a to-do   l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page         │   ╰─ω─╯~   │
-  esc/h close                                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   b daily report                │   ╰─ω─╯~   │
+  j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
 ########## 149 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6896,10 +6896,10 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                                                                        │  ▜▖ ▼  ▗▛  │
-  i add a to-do   l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page         │   ╰─ω─╯~   │
-  esc/h close                                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   b daily report                │   ╰─ω─╯~   │
+  j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 151 before 27
+########## 151 before 'b'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6942,10 +6942,10 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ discarded from your to-do list   ▰▰▰▱▱ 8 today ✦                                                                                  │  ▜▖ ▼  ▗▛  │
-  i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page        │   ╰─ω─╯~   │
-  esc/h close                                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   b daily report               │   ╰─ω─╯~   │
+  j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 152 before 27
+########## 152 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -6991,7 +6991,53 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 153 before 'p'
+########## 153 before 27
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
+ ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
+  ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
+      PLA-4     ▮▯▯ low  │   i  add a to-do: type it yourself, or draft it with Col                                         │                 1w ago
+                         │                                                                                                  │
+  ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
+      PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
+    ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
+                         │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │
+  ◌ Backlog 1  ──────────│ ▎   ↳ you and Sam                                                                                │───────────────────────
+      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
+                         │                                                                                                  │
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                       “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ discarded from your to-do list   ▰▰▰▱▱ 8 today ✦                                                                                  │  ▜▖ ▼  ▗▛  │
+  i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   b daily report               │   ╰─ω─╯~   │
+  j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
+
+########## 154 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7037,7 +7083,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 154 before 'x'
+########## 155 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7080,10 +7126,10 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ discarded from your to-do list   ▰▰▰▱▱ 8 today ✦                                                                                  │  ▜▖ ▼  ▗▛  │
-  i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page        │   ╰─ω─╯~   │
-  esc/h close                                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   b daily report               │   ╰─ω─╯~   │
+  j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
 
-########## 155 before 'x'
+########## 156 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7127,9 +7173,9 @@
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ discarded from your to-do list   ▰▰▰▰▱ 9 today ✦                                                                                  │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
-  i add a to-do   esc/h close                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 156 before 'i'
+########## 157 before 'i'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7173,9 +7219,9 @@
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ discarded from your to-do list   ▰▰▰▰▱ 9 today ✦                                                                                  │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
-  i add a to-do   esc/h close                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 157 before 10
+########## 158 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7221,7 +7267,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 158 before 'm'
+########## 159 before 'm'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7267,7 +7313,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
-########## 159 before 'e'
+########## 160 before 'e'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7313,7 +7359,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
-########## 160 before 10
+########## 161 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7359,7 +7405,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
-########## 161 before 'i'
+########## 162 before 'i'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7403,9 +7449,9 @@
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                                                                       │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
-  x discard it   j/k topics   d/u page   esc/h close                                                                                   ╰──╴ Col ╶───╯
+  x discard it   b daily report   j/k topics   d/u page   esc/h close                                                                  ╰──╴ Col ╶───╯
 
-########## 162 before 'j'
+########## 163 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7451,7 +7497,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 163 before 10
+########## 164 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7497,7 +7543,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 164 before 'm'
+########## 165 before 'm'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7543,7 +7589,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter Col writes it   esc cancel                                                                                                     ╰──╴ Col ╶───╯
 
-########## 165 before 10
+########## 166 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7589,7 +7635,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter Col writes it   esc cancel                                                                                                     ╰──╴ Col ╶───╯
 
-########## 166 before 27
+########## 167 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7635,7 +7681,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
-########## 167 before 'x'
+########## 168 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7679,9 +7725,9 @@
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                                                                       │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
-  x discard it   j/k topics   d/u page   esc/h close                                                                                   ╰──╴ Col ╶───╯
+  x discard it   b daily report   j/k topics   d/u page   esc/h close                                                                  ╰──╴ Col ╶───╯
 
-########## 168 before 27
+########## 169 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7725,9 +7771,9 @@
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                                                                                 │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
-  i add a to-do   esc/h close                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 169 before 'p'
+########## 170 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7773,7 +7819,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 170 before 'x'
+########## 171 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7817,9 +7863,9 @@
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                                                                                 │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
-  i add a to-do   esc/h close                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 171 before 27
+########## 172 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7863,9 +7909,9 @@
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                                                                                 │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
-  i add a to-do   esc/h close                                                                                                          ╰──╴ Col ╶───╯
+  i add a to-do   b daily report   esc/h close                                                                                         ╰──╴ Col ╶───╯
 
-########## 172 before 'b'
+########## 173 before 'b'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7911,7 +7957,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 173 before 'x'
+########## 174 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7957,7 +8003,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 174 before 'r'
+########## 175 before 'r'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8003,7 +8049,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 175 before 27
+########## 176 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8049,7 +8095,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
-########## 176 before 27
+########## 177 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8095,7 +8141,7 @@
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
-########## 177 before 'W'
+########## 178 before 'W'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -8141,7 +8187,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 178 before 'j'
+########## 179 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace open for · w jumps there                         3 issues  ·  ✓ 1 done today
@@ -8187,7 +8233,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 179 before 'j'
+########## 180 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace open for · w jumps there                         3 issues  ·  ✓ 1 done today
@@ -8233,7 +8279,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 180 before 'S'
+########## 181 before 'S'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace open for · w jumps there                         3 issues  ·  ✓ 1 done today
@@ -8279,7 +8325,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 181 before 'W'
+########## 182 before 'W'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace open for · w jumps there                         3 issues  ·  ✓ 1 done today
@@ -8325,7 +8371,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ topic-0a1 is a workspace, not a Linear issue here · w jumps to it                                                                  ╰──╴ Col ╶───╯
 
-########## 182 before 'q'
+########## 183 before 'q'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today

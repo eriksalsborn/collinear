@@ -1981,11 +1981,11 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("i add a to-do · " * showing_todo_list + "l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
                         + " · c free session on it · a ask Col about it"
-                        + (" · x discard it" if showing_todo_list else " · s move to to-do · x discard it · p to-do list") + " · j/k topics · d/u page"
+                        + (" · x discard it · b daily report" if showing_todo_list else " · s move to to-do · x discard it · p to-do list") + " · j/k topics · d/u page"
                         + ("" if showing_todo_list else " · r write it again"))
                 draw_footer_from_text(screen, footer_text + " · esc/h close")
             else:
-                draw_footer_from_text(screen, "i add a to-do · esc/h close" if showing_todo_list else "p to-do list · r write it again · esc/h close")
+                draw_footer_from_text(screen, "i add a to-do · b daily report · esc/h close" if showing_todo_list else "p to-do list · r write it again · esc/h close")
 
     def under_menu():  # draw_dialog_box() paints the backdrop first: hand it the list while the report draws itself, no pop-open
         UiState.draw_screen_behind_dialog, title_before, UiState.title_of_open_dialog = draw_list_behind, UiState.title_of_open_dialog, dialog_title
@@ -2005,11 +2005,9 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
         if key in (27, ord("h"), ord("q"), ord("p" if showing_todo_list else "b")):
             UiState.col_is_working = False
             return None
-        if key == ord("p"):  # from the report to the to-do list; picking an issue there closes both
+        if key == ord("b" if showing_todo_list else "p"):  # b and p switch between the report and the to-do list; closing either goes back to the issues
             UiState.col_is_working = False
-            if identifier_picked_in_todo_list := show_daily_report(screen, issues, today, showing_todo_list=True):
-                return identifier_picked_in_todo_list
-            continue
+            return show_daily_report(screen, issues, today, showing_todo_list=not showing_todo_list)  # ponytail: one call deeper per switch, a loop over the two if anyone switches a thousand times
         if key == ord("i") and showing_todo_list:  # a to-do of your own, typed or written up by Col
             add_topic_to_todo_list(screen)
             TODO_LIST["text"], TODO_LIST["cur"] = todo_list_as_report_text(), len(saved_todo_topics()) - 1
