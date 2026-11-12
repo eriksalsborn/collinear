@@ -1605,6 +1605,11 @@ DRAFT_COMMENT_TASK = ("Draft a comment on one Linear issue, to be posted by its 
               "Markdown is fine. Output only the comment body, nothing before or after it.", "Brief", "Draft")
 
 
+def length_typed_out_next(length_shown, length_received):
+    """How much of Col's text is on screen one frame later: at least 3 characters more, faster when he is far ahead."""
+    return min(length_received, length_shown + max(3, (length_received - length_shown) // 10))
+
+
 def ask_headless_claude(context, history, cwd, progress, running_processes, task=ASK_ABOUT_ISSUE_TASK, answer_so_far=None):
     """Headless claude on the issue, with read-only Linear, web and git/gh tools (see tools_col_may_use()).
     User settings are loaded: without them the claude.ai connectors (Linear, Slack) are invisible. progress(text) gets each tool call.
@@ -2003,14 +2008,22 @@ def draft_todo_with_col(screen):
                 outcome["error"] = f"Col couldn't write it: {failure}"
         threading.Thread(target=work, daemon=True).start()
         spinner_frame, UiState.col_is_working, UiState.lookups_col_is_working_on = 0, True, lookup_steps
-        screen.timeout(100)
-        while not outcome:
-            paint(SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], lookup_steps, written_so_far.get("text", ""))
+        screen.timeout(25)
+        length_shown = 0
+        while True:
+            text_to_type_out = " ".join(outcome.get("drafted", written_so_far.get("text", "")).split()).lstrip("-•* ")
+            if outcome and length_shown >= len(text_to_type_out):
+                break
+            length_shown = length_typed_out_next(length_shown, len(text_to_type_out))
+            paint(SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], lookup_steps, text_to_type_out[:length_shown])
             spinner_frame += 1
             try:
                 key_while_writing = screen.get_wch()
             except curses.error:
                 continue
+            if outcome:  # his line is all here: any key shows the rest at once, and still counts
+                PENDING_KEYS.insert(0, ord(key_while_writing) if isinstance(key_while_writing, str) else key_while_writing)
+                break
             if key_while_writing == "\x1b":
                 for process in running_processes:
                     process.kill()
@@ -2109,18 +2122,13 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                     number_of_topic_on_this_line = sum(bullet_line <= line_number for bullet_line in bullet_line_numbers) - 1
                     register_clickable_row(line.first_row_on_screen + 5 + row_offset, 0, screen_width,
                                            number_of_topic_on_this_line - number_of_topic_under_cursor, [10] * bool(is_in_topic_under_cursor))
-                if is_in_topic_under_cursor:  # cursorline, like the list
-                    line(5 + row_offset, " " * (box_width - 4), curses.color_pair(SELECTED_ROW), 2)
-                    line(5 + row_offset, "▎", curses.color_pair(SELECTED_ROW_MARKER), 2)
-                for segment_text, style in segments:
-                    cursor_line_attribute = on_cursor_row(attribute_by_style[style])
-                    line(5 + row_offset, segment_text, cursor_line_attribute if is_in_topic_under_cursor else attribute_by_style[style], column)
+                if is_in_topic_under_cursor:  # the marked topic: a solid accent bar down its left; the words keep their own colours, on no fill
+                    line(5 + row_offset, "█", curses.color_pair(ACCENT) | curses.A_BOLD, 2)
+                for segment_number, (segment_text, style) in enumerate(segments):
+                    is_bullet_of_marked_topic = is_in_topic_under_cursor and segment_number == 0 and segment_text.startswith("•")
+                    line(5 + row_offset, "▶" + segment_text[1:] if is_bullet_of_marked_topic else segment_text,
+                         curses.color_pair(ACCENT) | curses.A_BOLD if is_bullet_of_marked_topic else attribute_by_style[style], column)
                     column += len(segment_text)
-            if showing_todo_list:  # adding one sits where the new one will land: the row under the last to-do. a click works too
-                row_under_the_list = 5 + min(len(styled_lines) - first_line_shown + 1, rows_for_text)
-                line(row_under_the_list, " i ", keycap_attribute(), 4)
-                line(row_under_the_list, "add a to-do: type it yourself, or draft it with Col", curses.color_pair(MUTED), 8)
-                CLICK_ZONES.append((line.first_row_on_screen + row_under_the_list, line.first_column_on_screen + 4, line.first_column_on_screen + 60, [ord("i")]))
             if bullet_line_numbers:
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("i add a to-do · " * showing_todo_list + "l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
@@ -2448,7 +2456,7 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
         question, text = text.strip(), ""
         message = {"q": question, "a": None, "steps": [], "t": datetime.now().strftime("%H:%M")}
         history.append(message)
-        outcome, running_processes = {}, []
+        outcome, running_processes, received, length_shown = {}, [], {"text": ""}, 0  # received: his answer as it arrives; it is typed out behind it
 
         def work():
             try:
@@ -2464,16 +2472,24 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
                 outcome["a"] = ask_headless_claude(prompt_context["text"], questions_and_answers_so_far, prompt_context["cwd"],
                                                    message["steps"].append, running_processes,
                                                    ASK_ABOUT_REPORT_TASK if report else DRAFT_COMMENT_TASK if draft else ASK_ABOUT_ISSUE_TASK,
-                                                   answer_so_far=lambda text_so_far: message.update({"so far": text_so_far}))
+                                                   answer_so_far=lambda text_so_far: received.update(text=text_so_far))
             except Exception as e:
                 outcome["a"] = f"failed: {e}"
         threading.Thread(target=work, daemon=True).start()
         spinner_frame, UiState.col_is_working, UiState.lookups_col_is_working_on = 0, True, message["steps"]
-        screen.timeout(80)  # his words arrive as he writes them
-        while "a" not in outcome:
+        screen.timeout(25)  # his words are typed out as he writes them
+        while True:
+            text_to_type_out = outcome.get("a", received["text"])
+            if "a" in outcome and length_shown >= len(text_to_type_out):
+                break
+            length_shown = length_typed_out_next(length_shown, len(text_to_type_out))
+            message["so far"] = text_to_type_out[:length_shown]
             draw_chat(screen, title, issue, history, SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], text, None, draft, topic_markdown or report)
             spinner_frame += 1
             key_while_thinking = screen.getch()
+            if "a" in outcome and key_while_thinking != -1:  # the answer is all here: any key shows the rest at once, and still counts
+                PENDING_KEYS.insert(0, key_while_thinking)
+                break
             if key_while_thinking == 27:
                 for process in running_processes:
                     process.kill()
@@ -3962,6 +3978,7 @@ def _test():
     assert text_and_cursor_after_typing("abc", 0, curses.KEY_LEFT) == ("abc", 0) and text_and_cursor_after_typing("abc", 0, 127) == ("abc", 0)
     assert text_and_cursor_after_typing("abc", 1, curses.KEY_END) == ("abc", 3) and text_and_cursor_after_typing("abc", 1, "\n") is None
     assert rows_of_text_with_cursor("abcdef", 2, 4) == ["ab▏c", "def"] and rows_of_text_with_cursor("", 0, 4) == ["▏"]
+    assert length_typed_out_next(0, 2) == 2 and length_typed_out_next(0, 11) == 3 and length_typed_out_next(0, 500) == 50 and length_typed_out_next(5, 5) == 5
     assert text_after_typing("a", 27) is None and text_after_typing("a", "\n") is None and text_after_typing("a", curses.KEY_UP) is None
     DAILY_REPORT["cur"] = 1
     report = "## plate\n- **PLA-1 one** — fine\n- **loose thing** — nobody filed it\n"

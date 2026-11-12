@@ -1483,7 +1483,7 @@
    │    WEDNESDAY                                                                               │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │
-  ○│ ▎ • PLA-1 login thing — PR #7 is in review since Tuesday.                                  │─
+  ○│ █ ▶ PLA-1 login thing — PR #7 is in review since Tuesday.                                  │─
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
@@ -1533,8 +1533,8 @@
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
-   │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │o
-   │ ▎   ↳ you and Sam                                                                          │
+   │ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │o
+   │ █   ↳ you and Sam                                                                          │
   ◈│                                                                                            │─
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │o
    │                                                                                            │
@@ -1579,8 +1579,8 @@
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
-   │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │o
-   │ ▎   ↳ you and Sam                                                                          │
+   │ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │o
+   │ █   ↳ you and Sam                                                                          │
   ◈│     ╭──────────────────────────────────────────────────────────────────────────────╮       │─
    │   ╌╌│  Col  PLA-99                                                            esc  │╌╌╌╌   │o
    │     │  / filter                                                                    │       │
@@ -1625,8 +1625,8 @@
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
-   │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │o
-   │ ▎   ↳ you and Sam                                                                          │
+   │ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │o
+   │ █   ↳ you and Sam                                                                          │
   ◈│                                                                                            │─
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │o
    │                                                                                            │
@@ -5581,8 +5581,8 @@
   ◌│                                                                                            │─
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │o
    │                                                                                            │
-  ◈│ ▎ • PLA-99 someone else's — waiting on Sam.                                                │─
-   │ ▎   ↳ you and Sam                                                                          │o
+  ◈│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │─
+   │ █   ↳ you and Sam                                                                          │o
    │                                                                                            │
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
    │                                                                                            │
@@ -5627,8 +5627,8 @@
   ◌│                                                                                            │─
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │o
    │                                                                                            │
-  ◈│ ▎ • PLA-99 someone else's — waiting on Sam.                                                │─
-   │ ▎   ↳ you and Sam                                                                          │o
+  ◈│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │─
+   │ █   ↳ you and Sam                                                                          │o
    │     ╭──────────────────────────────────────────────────────────────────────────────╮       │
    │   ╌╌│  Col  PLA-99                                                            esc  │╌╌╌╌   │
    │     │  / filter                                                                    │       │
@@ -5673,8 +5673,8 @@
   ◌│                                                                                            │─
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │o
    │                                                                                            │
-  ◈│ ▎ • PLA-99 someone else's — waiting on Sam.                                                │─
-   │ ▎   ↳ you and Sam                                                                          │o
+  ◈│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │─
+   │ █   ↳ you and Sam                                                                          │o
    │                                                                                            │
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
    │                                                                                            │
@@ -5764,7 +5764,7 @@
    │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │
   ◌│   Bark, s moves a topic here. It stays until you discard it.                               │─
    │                                                                                            │o
-   │    i  add a to-do: type it yourself, or draft it with Col                                  │
+   │                                                                                            │
   ◈│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
@@ -5856,7 +5856,7 @@
    │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │
   ◌│   Bark, s moves a topic here. It stays until you discard it.                               │─
    │                                                                                            │o
-   │    i  add a to-do: type it yourself, or draft it with Col                                  │
+   │                                                                                            │
   ◈│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
@@ -6869,8 +6869,8 @@
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
-   │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │o
-   │ ▎   ↳ you and Sam                                                                          │
+   │ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │o
+   │ █   ↳ you and Sam                                                                          │
   ◈│                                                                                            │─
  ▎ │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │o
    │                                                                                            │
@@ -6915,7 +6915,7 @@
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
-   │ ▎ • a loose topic — nobody filed it yet.                                                   │o
+   │ █ ▶ a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
   ◈│                                                                                            │─
  ▎ │    LOOSE THREADS                                                                           │o
@@ -6967,8 +6967,8 @@
  ▎ │    LOOSE THREADS                                                                           │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
-   │ ▎ • reply to Robin about herdr links.                                                      │
-   │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                         │
+   │ █ ▶ reply to Robin about herdr links.                                                      │
+   │ █   ↳ Robin in #dev, Tuesday · no Linear issue yet                                         │
    │                                                                                            │
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
    │                                                                                            │
@@ -7018,7 +7018,7 @@
    │                                                                                            │
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
    │                                                                                            │
-   │ ▎ • start with PLA-1, it is closest to done.                                               │
+   │ █ ▶ start with PLA-1, it is closest to done.                                               │
    │                                                                                            │
    │                                                                                            │
    │                                                                                            │
@@ -7064,7 +7064,7 @@
    │                                                                                            │
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
    │                                                                                            │
-   │ ▎ • start with PLA-1, it is closest to done.                                               │
+   │ █ ▶ start with PLA-1, it is closest to done.                                               │
    │     ╭──────────────────────────────────────────────────────╮                               │
    │     │  Col  PLA-1                                     esc  │                               │
    │     │  / filter                                            │                               │
@@ -7151,8 +7151,8 @@
  ▎ │    LOOSE THREADS                                                                           │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
-   │ ▎ • reply to Robin about herdr links.                                                      │
-   │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                         │
+   │ █ ▶ reply to Robin about herdr links.                                                      │
+   │ █   ↳ Robin in #dev, Tuesday · no Linear issue yet                                         │
    │                                                                                            │
    │                                                                                            │
    │                                                                                            │
@@ -7187,14 +7187,14 @@
    │    TO DO                                                                                   │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │
-  ○│ ▎ • PLA-99 someone else's — waiting on Sam.                                                │─
-   │ ▎   ↳ you and Sam                                                                          │o
+  ○│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │─
+   │ █   ↳ you and Sam                                                                          │o
    │                                                                                            │
   ◌│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │─
    │                                                                                            │o
    │   • start with PLA-1, it is closest to done.                                               │
   ◈│                                                                                            │─
- ▎ │    i  add a to-do: type it yourself, or draft it with Col                                  │o
+ ▎ │                                                                                            │o
    │                                                                                            │
    │                                                                                            │
    │                                                                                            │
@@ -7238,9 +7238,9 @@
    │                                                                                            │
   ◌│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │─
    │                                                                                            │o
-   │ ▎ • start with PLA-1, it is closest to done.                                               │
+   │ █ ▶ start with PLA-1, it is closest to done.                                               │
   ◈│                                                                                            │─
- ▎ │    i  add a to-do: type it yourself, or draft it with Col                                  │o
+ ▎ │                                                                                            │o
    │                                                                                            │
    │                                                                                            │
    │                                                                                            │
@@ -7284,9 +7284,9 @@
    │                                                                                            │
   ◌│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │─
    │                                                                                            │o
-   │ ▎ • start with PLA-1, it is closest to done.                                               │
+   │ █ ▶ start with PLA-1, it is closest to done.                                               │
   ◈│     ╭──────────────────────────────────────────────────────╮                               │─
- ▎ │    i│  Col  PLA-1                                     esc  │                               │o
+ ▎ │     │  Col  PLA-1                                     esc  │                               │o
    │     │  / filter                                            │                               │
    │     │                                                      │                               │
    │     │ ▎l   go to PLA-1 in the list                         │                               │
@@ -7330,9 +7330,9 @@
    │                                                                                            │
   ◌│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │─
    │                                                                                            │o
-   │ ▎ • start with PLA-1, it is closest to done.                                               │
+   │ █ ▶ start with PLA-1, it is closest to done.                                               │
   ◈│                                                                                            │─
- ▎ │    i  add a to-do: type it yourself, or draft it with Col                                  │o
+ ▎ │                                                                                            │o
    │                                                                                            │
    │                                                                                            │
    │                                                                                            │
@@ -7371,10 +7371,10 @@
    │    TO DO                                                                                   │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │
-  ○│ ▎ • PLA-99 someone else's — waiting on Sam.                                                │─
-   │ ▎   ↳ you and Sam                                                                          │o
+  ○│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │─
+   │ █   ↳ you and Sam                                                                          │o
    │                                                                                            │
-  ◌│    i  add a to-do: type it yourself, or draft it with Col                                  │─
+  ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7427,8 +7427,8 @@
  ▎ │    LOOSE THREADS                                                                           │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
-   │ ▎ • reply to Robin about herdr links.                                                      │
-   │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                         │
+   │ █ ▶ reply to Robin about herdr links.                                                      │
+   │ █   ↳ Robin in #dev, Tuesday · no Linear issue yet                                         │
    │                                                                                            │
    │                                                                                            │
    │                                                                                            │
@@ -7463,10 +7463,10 @@
    │    TO DO                                                                                   │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │
-  ○│ ▎ • PLA-99 someone else's — waiting on Sam.                                                │─
-   │ ▎   ↳ you and Sam                                                                          │o
+  ○│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │─
+   │ █   ↳ you and Sam                                                                          │o
    │                                                                                            │
-  ◌│    i  add a to-do: type it yourself, or draft it with Col                                  │─
+  ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7555,10 +7555,10 @@
    │    TO DO                                                                                   │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │
-  ○│ ▎ • PLA-99 someone else's — waiting on Sam.                                                │─
-   │ ▎   ↳ you and Sam                                                                          │o
+  ○│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                │─
+   │ █   ↳ you and Sam                                                                          │o
    │                                                                                            │
-  ◌│    i  add a to-do: type it yourself, or draft it with Col                                  │─
+  ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7604,7 +7604,7 @@
   ○│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │─
    │   Bark, s moves a topic here. It stays until you discard it.                               │o
    │                                                                                            │
-  ◌│    i  add a to-do: type it yourself, or draft it with Col                                  │─
+  ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7650,7 +7650,7 @@
   ○│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │─
    │   Bark, s moves a topic here. It stays until you discard it.                               │o
    │                                                                                            │
-  ◌│    i  add a to-do: type it yourself, or draft it with Col                                  │─
+  ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7877,9 +7877,9 @@
    │    TO DO                                                                                   │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │
-  ○│ ▎ • me                                                                                     │─
+  ○│ █ ▶ me                                                                                     │─
    │                                                                                            │o
-   │    i  add a to-do: type it yourself, or draft it with Col                                  │
+   │                                                                                            │
   ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
@@ -8387,9 +8387,9 @@
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
-   │ ▎ • fake answezr                                                                           │o
+   │ █ ▶ fake answezr                                                                           │o
    │                                                                                            │
-  ◈│    i  add a to-do: type it yourself, or draft it with Col                                  │─
+  ◈│                                                                                            │─
  ▎ │                                                                                            │o
    │                                                                                            │
    │                                                                                            │
@@ -8429,9 +8429,9 @@
    │    TO DO                                                                                   │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │
-  ○│ ▎ • me                                                                                     │─
+  ○│ █ ▶ me                                                                                     │─
    │                                                                                            │o
-   │    i  add a to-do: type it yourself, or draft it with Col                                  │
+   │                                                                                            │
   ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
@@ -8521,9 +8521,9 @@
    │    TO DO                                                                                   │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │
-  ○│ ▎ • me                                                                                     │─
+  ○│ █ ▶ me                                                                                     │─
    │                                                                                            │o
-   │    i  add a to-do: type it yourself, or draft it with Col                                  │
+   │                                                                                            │
   ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
@@ -8570,7 +8570,7 @@
   ○│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │─
    │   Bark, s moves a topic here. It stays until you discard it.                               │o
    │                                                                                            │
-  ◌│    i  add a to-do: type it yourself, or draft it with Col                                  │─
+  ◌│                                                                                            │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -8669,8 +8669,8 @@
  ▎ │    LOOSE THREADS                                                                           │o
    │   ──────────────────────────────────────────────────────────────────────────────────────   │
    │                                                                                            │
-   │ ▎ • reply to Robin about herdr links.                                                      │
-   │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                         │
+   │ █ ▶ reply to Robin about herdr links.                                                      │
+   │ █   ↳ Robin in #dev, Tuesday · no Linear issue yet                                         │
    │                                                                                            │
    │                                                                                            │
    │                                                                                            │
@@ -8709,7 +8709,7 @@
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
-   │ ▎ • a loose topic — nobody filed it yet.                                                   │o
+   │ █ ▶ a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
   ◈│                                                                                            │─
  ▎ │                                                                                            │o
@@ -8801,7 +8801,7 @@
    │                                                                                            │o
    │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
   ◌│                                                                                            │─
-   │ ▎ • a loose topic — nobody filed it yet.                                                   │o
+   │ █ ▶ a loose topic — nobody filed it yet.                                                   │o
    │                                                                                            │
   ◈│                                                                                            │─
  ▎ │                                                                                            │o

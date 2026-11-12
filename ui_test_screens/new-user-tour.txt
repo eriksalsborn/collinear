@@ -198,7 +198,7 @@
           │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
           │   Bark, s moves a topic here. It stays until you discard it.                                     │
           │                                                                                                  │
-          │    i  add a to-do: type it yourself, or draft it with Col                                        │
+          │                                                                                                  │
           │                                                                                                  │
           │                                                                                                  │
           │                                                                                                  │
@@ -290,7 +290,7 @@
           │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
           │   Bark, s moves a topic here. It stays until you discard it.                                     │
           │                                                                                                  │
-          │    i  add a to-do: type it yourself, or draft it with Col                                        │
+          │                                                                                                  │
           │                                                                                                  │
           │                                                                                                  │
           │                                                                                                  │

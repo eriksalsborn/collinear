@@ -1483,7 +1483,7 @@
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
-  ○ Todo 1  ─────────────│ ▎ • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │───────────────────────
+  ○ Todo 1  ─────────────│ █ ▶ PLA-1 login thing — PR #7 is in review since Tuesday.                                        │───────────────────────
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
@@ -1533,8 +1533,8 @@
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
-      PLA-5     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
-                         │ ▎   ↳ you and Sam                                                                                │
+      PLA-5     ▯▯▯      │ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
+                         │ █   ↳ you and Sam                                                                                │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
       PLA-6     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3d ago
                          │                                                                                                  │
@@ -1579,8 +1579,8 @@
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
-      PLA-5     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
-                         │ ▎   ↳ you and Sam                                                                                │
+      PLA-5     ▯▯▯      │ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
+                         │ █   ↳ you and Sam                                                                                │
   ◈ Triage 1  ───────────│     ╭──────────────────────────────────────────────────────────────────────────────╮             │───────────────────────
       PLA-6     ▯▯▯      │   ╌╌│  Col  PLA-99                                                            esc  │╌╌╌╌╌╌       │                 3d ago
                          │     │  / filter                                                                    │             │
@@ -1625,8 +1625,8 @@
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
-      PLA-5     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
-                         │ ▎   ↳ you and Sam                                                                                │
+      PLA-5     ▯▯▯      │ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
+                         │ █   ↳ you and Sam                                                                                │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
       PLA-6     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3d ago
                          │                                                                                                  │
@@ -5581,8 +5581,8 @@
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
-  ◈ Triage 1  ───────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
-      PLA-6     ▯▯▯      │ ▎   ↳ you and Sam                                                                                │                 3d ago
+  ◈ Triage 1  ───────────│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-6     ▯▯▯      │ █   ↳ you and Sam                                                                                │                 3d ago
                          │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
@@ -5627,8 +5627,8 @@
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
-  ◈ Triage 1  ───────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
-      PLA-6     ▯▯▯      │ ▎   ↳ you and Sam                                                                                │                 3d ago
+  ◈ Triage 1  ───────────│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-6     ▯▯▯      │ █   ↳ you and Sam                                                                                │                 3d ago
                          │     ╭──────────────────────────────────────────────────────────────────────────────╮             │
                          │   ╌╌│  Col  PLA-99                                                            esc  │╌╌╌╌╌╌       │
                          │     │  / filter                                                                    │             │
@@ -5673,8 +5673,8 @@
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3w ago
                          │                                                                                                  │
-  ◈ Triage 1  ───────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
-      PLA-6     ▯▯▯      │ ▎   ↳ you and Sam                                                                                │                 3d ago
+  ◈ Triage 1  ───────────│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-6     ▯▯▯      │ █   ↳ you and Sam                                                                                │                 3d ago
                          │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
@@ -5764,7 +5764,7 @@
                          │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
   ◌ Backlog 1  ──────────│   Bark, s moves a topic here. It stays until you discard it.                                     │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
+                         │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
       PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
@@ -5856,7 +5856,7 @@
                          │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
   ◌ Backlog 1  ──────────│   Bark, s moves a topic here. It stays until you discard it.                                     │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
+                         │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
       PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
@@ -6869,8 +6869,8 @@
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
-      PLA-5     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
-                         │ ▎   ↳ you and Sam                                                                                │
+      PLA-5     ▯▯▯      │ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │                 3w ago
+                         │ █   ↳ you and Sam                                                                                │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
  ▎    PLA-6     ▯▯▯      │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │                 3d ago
                          │                                                                                                  │
@@ -6915,7 +6915,7 @@
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
-      PLA-5     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3w ago
+      PLA-5     ▯▯▯      │ █ ▶ a loose topic — nobody filed it yet.                                                         │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
  ▎    PLA-6     ▯▯▯      │    LOOSE THREADS                                                                                 │                 3d ago
@@ -6967,8 +6967,8 @@
  ▎    PLA-6     ▯▯▯      │    LOOSE THREADS                                                                                 │                 3d ago
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │ ▎ • reply to Robin about herdr links.                                                            │
-                         │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
+                         │ █ ▶ reply to Robin about herdr links.                                                            │
+                         │ █   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
@@ -7018,7 +7018,7 @@
                          │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
-                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
+                         │ █ ▶ start with PLA-1, it is closest to done.                                                     │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7064,7 +7064,7 @@
                          │                                                                                                  │
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
                          │                                                                                                  │
-                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
+                         │ █ ▶ start with PLA-1, it is closest to done.                                                     │
                          │     ╭──────────────────────────────────────────────────────╮                                     │
                          │     │  Col  PLA-1                                     esc  │                                     │
                          │     │  / filter                                            │                                     │
@@ -7151,8 +7151,8 @@
  ▎    PLA-6     ▯▯▯      │    LOOSE THREADS                                                                                 │                 3d ago
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │ ▎ • reply to Robin about herdr links.                                                            │
-                         │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
+                         │ █ ▶ reply to Robin about herdr links.                                                            │
+                         │ █   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7187,14 +7187,14 @@
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
-  ○ Todo 1  ─────────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
-      PLA-4     ▮▯▯ low  │ ▎   ↳ you and Sam                                                                                │                 1w ago
+  ○ Todo 1  ─────────────│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-4     ▮▯▯ low  │ █   ↳ you and Sam                                                                                │                 1w ago
                          │                                                                                                  │
   ◌ Backlog 1  ──────────│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   • start with PLA-1, it is closest to done.                                                     │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │    i  add a to-do: type it yourself, or draft it with Col                                        │                 3d ago
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7238,9 +7238,9 @@
                          │                                                                                                  │
   ◌ Backlog 1  ──────────│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
+                         │ █ ▶ start with PLA-1, it is closest to done.                                                     │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │    i  add a to-do: type it yourself, or draft it with Col                                        │                 3d ago
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7284,9 +7284,9 @@
                          │                                                                                                  │
   ◌ Backlog 1  ──────────│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
+                         │ █ ▶ start with PLA-1, it is closest to done.                                                     │
   ◈ Triage 1  ───────────│     ╭──────────────────────────────────────────────────────╮                                     │───────────────────────
- ▎    PLA-6     ▯▯▯      │    i│  Col  PLA-1                                     esc  │                                     │                 3d ago
+ ▎    PLA-6     ▯▯▯      │     │  Col  PLA-1                                     esc  │                                     │                 3d ago
                          │     │  / filter                                            │                                     │
                          │     │                                                      │                                     │
                          │     │ ▎l   go to PLA-1 in the list                         │                                     │
@@ -7330,9 +7330,9 @@
                          │                                                                                                  │
   ◌ Backlog 1  ──────────│   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
+                         │ █ ▶ start with PLA-1, it is closest to done.                                                     │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │    i  add a to-do: type it yourself, or draft it with Col                                        │                 3d ago
+ ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7371,10 +7371,10 @@
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
-  ○ Todo 1  ─────────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
-      PLA-4     ▮▯▯ low  │ ▎   ↳ you and Sam                                                                                │                 1w ago
+  ○ Todo 1  ─────────────│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-4     ▮▯▯ low  │ █   ↳ you and Sam                                                                                │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7427,8 +7427,8 @@
  ▎    PLA-6     ▯▯▯      │    LOOSE THREADS                                                                                 │                 3d ago
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │ ▎ • reply to Robin about herdr links.                                                            │
-                         │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
+                         │ █ ▶ reply to Robin about herdr links.                                                            │
+                         │ █   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7463,10 +7463,10 @@
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
-  ○ Todo 1  ─────────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
-      PLA-4     ▮▯▯ low  │ ▎   ↳ you and Sam                                                                                │                 1w ago
+  ○ Todo 1  ─────────────│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-4     ▮▯▯ low  │ █   ↳ you and Sam                                                                                │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7555,10 +7555,10 @@
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
-  ○ Todo 1  ─────────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
-      PLA-4     ▮▯▯ low  │ ▎   ↳ you and Sam                                                                                │                 1w ago
+  ○ Todo 1  ─────────────│ █ ▶ PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
+      PLA-4     ▮▯▯ low  │ █   ↳ you and Sam                                                                                │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7604,7 +7604,7 @@
   ○ Todo 1  ─────────────│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │───────────────────────
       PLA-4     ▮▯▯ low  │   Bark, s moves a topic here. It stays until you discard it.                                     │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7650,7 +7650,7 @@
   ○ Todo 1  ─────────────│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │───────────────────────
       PLA-4     ▮▯▯ low  │   Bark, s moves a topic here. It stays until you discard it.                                     │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7877,9 +7877,9 @@
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
-  ○ Todo 1  ─────────────│ ▎ • me                                                                                           │───────────────────────
+  ○ Todo 1  ─────────────│ █ ▶ me                                                                                           │───────────────────────
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
-                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
+                         │                                                                                                  │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
@@ -8387,9 +8387,9 @@
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
-      PLA-5     ▯▯▯      │ ▎ • fake answezr                                                                                 │                 3w ago
+      PLA-5     ▯▯▯      │ █ ▶ fake answezr                                                                                 │                 3w ago
                          │                                                                                                  │
-  ◈ Triage 1  ───────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
  ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
@@ -8429,9 +8429,9 @@
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
-  ○ Todo 1  ─────────────│ ▎ • me                                                                                           │───────────────────────
+  ○ Todo 1  ─────────────│ █ ▶ me                                                                                           │───────────────────────
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
-                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
+                         │                                                                                                  │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
@@ -8521,9 +8521,9 @@
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
-  ○ Todo 1  ─────────────│ ▎ • me                                                                                           │───────────────────────
+  ○ Todo 1  ─────────────│ █ ▶ me                                                                                           │───────────────────────
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
-                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
+                         │                                                                                                  │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
@@ -8570,7 +8570,7 @@
   ○ Todo 1  ─────────────│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │───────────────────────
       PLA-4     ▮▯▯ low  │   Bark, s moves a topic here. It stays until you discard it.                                     │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
+  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -8669,8 +8669,8 @@
  ▎    PLA-6     ▯▯▯      │    LOOSE THREADS                                                                                 │                 3d ago
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │ ▎ • reply to Robin about herdr links.                                                            │
-                         │ ▎   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
+                         │ █ ▶ reply to Robin about herdr links.                                                            │
+                         │ █   ↳ Robin in #dev, Tuesday · no Linear issue yet                                               │
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -8709,7 +8709,7 @@
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
-      PLA-5     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3w ago
+      PLA-5     ▯▯▯      │ █ ▶ a loose topic — nobody filed it yet.                                                         │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
  ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
@@ -8801,7 +8801,7 @@
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
-      PLA-5     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3w ago
+      PLA-5     ▯▯▯      │ █ ▶ a loose topic — nobody filed it yet.                                                         │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
  ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
