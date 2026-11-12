@@ -53,6 +53,8 @@ class UiState:
     col_is_visible = True  # Z toggles Col off and on; remembered in the cache dir
     col_is_working = False  # Col is on a job (report, answer, draft): he looks around, sniffs, and says what he's at
     lookups_col_is_working_on = []  # the lookups of that job so far
+    what_col_is_loading = ""  # something is being fetched or set up: Col says this, with a spinner, and is purple meanwhile
+    draw_col = None  # the list screen's draw_col_in_his_corner, so a wait in front of any screen can let him say it
     guided_tour_step = None  # the step of the tour Col is waiting on (see GUIDED_TOUR_STEPS); None when no tour is running
     tour_closing_card_is_due = False  # the last step was just done: the list shows the closing card next
     list_has_issues = False  # the list screen keeps this current; the tour leaves out its steps about issues on an empty list
@@ -598,8 +600,10 @@ def show_col_send_off(screen, what):
 
 
 def run_with_spinner(screen, text, function_to_run):
-    """Run fn in a thread with a spinner in the footer, so git/network don't freeze the popup. Re-raises fn's error."""
+    """Run fn in a thread while Col says text with a spinner (and is purple), so git/network don't freeze the popup.
+    Re-raises fn's error. Before the list screen exists (setup) there is no Col yet: the footer says it."""
     outcome, spinner_frame = {}, 0
+    was_working, was_loading = UiState.col_is_working, UiState.what_col_is_loading
 
     def work():
         try:
@@ -608,12 +612,20 @@ def run_with_spinner(screen, text, function_to_run):
             outcome["err"] = error
     threading.Thread(target=work, daemon=True).start()
     while not outcome:
-        show_status_message(screen, f"{SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)]} {text}")
+        if UiState.draw_col and UiState.col_is_visible:
+            UiState.col_is_working, UiState.what_col_is_loading = True, text.rstrip("…")
+            screen.move(screen.getmaxyx()[0] - 4, 0)  # his bubble's row: what he said before goes
+            screen.clrtoeol()
+            UiState.draw_col()
+            screen.refresh()
+        else:
+            show_status_message(screen, f"{SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)]} {text}")
         spinner_frame += 1
         curses.napms(60)
         screen.timeout(0)
         screen.getch()
         screen.timeout(250)
+    UiState.col_is_working, UiState.what_col_is_loading = was_working, was_loading
     if "err" in outcome:
         raise outcome["err"]
     return outcome["ok"]
@@ -1952,15 +1964,15 @@ def draft_todo_with_col(screen):
             rows.append((" you ", curses.color_pair(TITLE_TAG) | curses.A_BOLD, 3))
             rows += [(wrapped, curses.color_pair(MUTED), 5) for wrapped in textwrap.wrap(said_and_drafted[-1][0], text_width)] + [("", 0, 0)]
         if spinner:
-            rows.append((" ✦ col ", curses.color_pair(ACCENT) | curses.A_BOLD | curses.A_REVERSE, 3))
+            rows.append((" ✦ col ", curses.color_pair(PURPLE) | curses.A_BOLD | curses.A_REVERSE, 3))
             rows += [(f"✓ {step}"[:text_width], curses.color_pair(DIM), 5) for step in lookup_steps[:-1][-4:]]
-            rows.append((f"{spinner} {lookup_steps[-1] if lookup_steps else 'writing it up…'}"[:text_width], curses.color_pair(ACCENT) | curses.A_BOLD, 5))
-            rows += [(wrapped, curses.A_BOLD, 5) for wrapped in textwrap.wrap(" ".join(line_so_far.split()), text_width)]  # his line, as he writes it
+            rows.append((f"{spinner} {lookup_steps[-1] if lookup_steps else 'writing it up…'}"[:text_width], curses.color_pair(PURPLE) | curses.A_BOLD, 5))
+            rows += [(wrapped, curses.color_pair(PURPLE) | curses.A_BOLD, 5) for wrapped in textwrap.wrap(" ".join(line_so_far.split()), text_width)]  # his line, as he writes it
             rows.append(("", 0, 0))
         elif error:
             rows += [(wrapped, curses.color_pair(RED), 5) for wrapped in textwrap.wrap(error, text_width)] + [("", 0, 0)]
         if draft and not spinner:
-            rows.append((" ✦ col ", curses.color_pair(ACCENT) | curses.A_BOLD | curses.A_REVERSE, 3))
+            rows.append((" ✦ col ", curses.color_pair(PURPLE) | curses.A_BOLD | curses.A_REVERSE, 3))
             rows += [(wrapped, curses.A_BOLD, 5) for wrapped in textwrap.wrap(draft, text_width)] + [("", 0, 0)]
         text_rows = rows_of_text_with_cursor(text, cursor, text_width)
         line, box_width = draw_dialog_box(screen, title, 5 + len(rows) + len(text_rows) + (not text), box_width)
@@ -2085,14 +2097,14 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
         UiState.col_is_working = report_text is None
         if report_text is None:  # loading: Col in the corner looks around and says what he's sniffing at; the trail is in the box
             UiState.lookups_col_is_working_on = lookup_steps
-            line(3, f"{SPINNER_FRAMES[frame_count % len(SPINNER_FRAMES)]} writing your daily report…", curses.color_pair(ACCENT) | curses.A_BOLD, 3)
+            line(3, f"{SPINNER_FRAMES[frame_count % len(SPINNER_FRAMES)]} writing your daily report…", curses.color_pair(PURPLE) | curses.A_BOLD, 3)
             steps_so_far = ["reading your issues and open workspaces"] + [col_words_for_lookup(step) for step in lookup_steps]
             shown_steps = steps_so_far[-(box_height - 8):]
             for row_offset, step in enumerate(shown_steps):
                 is_last_step = row_offset == len(shown_steps) - 1
                 spinner_or_tick = SPINNER_FRAMES[frame_count % len(SPINNER_FRAMES)] if is_last_step else "✓"
                 line(5 + row_offset, spinner_or_tick + "  " + step,
-                     curses.color_pair(ACCENT if is_last_step else DIM) | (curses.A_BOLD if is_last_step else 0), 4)
+                     curses.color_pair(PURPLE if is_last_step else DIM) | (curses.A_BOLD if is_last_step else 0), 4)
             draw_footer_from_text(screen, "r start over · esc/h close, b brings it back when it's done")
         else:
             if COL_SPEECH["mood"] in ("left", "right") or not COL_SPEECH["say"]:
@@ -2295,7 +2307,8 @@ def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, r
                 thread_lines.append([("  ✓ ", "dim"), (lookup_step, "dim")])
             thread_lines.append([("  " + thinking.split(" ", 1)[0] + " ", "think"), (message["steps"][-1] if message["steps"] else "thinking…", "mut")])
             if message.get("so far"):  # his answer, as he writes it
-                thread_lines += [[("▎ ", "gut")] + segments for segments in markdown_to_styled_lines(message["so far"], thread_text_width - 2)]
+                thread_lines += [[("▎ ", "gut")] + [(segment_text, "purple") for segment_text, _ in segments]
+                                 for segments in markdown_to_styled_lines(message["so far"], thread_text_width - 2)]
         else:
             thread_lines += [[("▎ ", "gut")] + segments for segments in markdown_to_styled_lines(message["a"], thread_text_width - 2)]
             if segment_text := lookup_trail_line(message["steps"]):
@@ -2344,9 +2357,9 @@ def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, r
          f"✦ Col drafts a comment on {issue['identifier']}" if draft else f"✦ ask Col about {issue['identifier']}", curses.color_pair(ACCENT) | curses.A_BOLD, 3)
     line(3, "─" * (thread_width - 6), curses.color_pair(BORDER), 3)
     attribute_by_style = dict(TEXT_ATTRIBUTE_BY_STYLE, code=curses.color_pair(CODE), head=curses.color_pair(ACCENT) | curses.A_BOLD,
-                 mut=curses.color_pair(MUTED), dim=curses.color_pair(DIM), think=curses.color_pair(ACCENT) | curses.A_BOLD,
-                 tag=curses.color_pair(TITLE_TAG) | curses.A_BOLD, gut=curses.color_pair(DIM),
-                 ctag=curses.color_pair(ACCENT) | curses.A_BOLD | curses.A_REVERSE)
+                 mut=curses.color_pair(MUTED), dim=curses.color_pair(DIM), think=curses.color_pair(PURPLE) | curses.A_BOLD,
+                 tag=curses.color_pair(TITLE_TAG) | curses.A_BOLD, gut=curses.color_pair(PURPLE), purple=curses.color_pair(PURPLE),
+                 ctag=curses.color_pair(PURPLE) | curses.A_BOLD | curses.A_REVERSE)
     if not history:
         intro_text = ((f"Ask Col about this topic: {CHAT_SIDE_PANE['topic'][:90]}… Col has the report, your issues, and can look things up "
                   "in Linear, Slack and GitHub. The thread is kept with the topic." if CHAT_SIDE_PANE.get("topic") else
@@ -2641,6 +2654,13 @@ def fetch_comments(issue):
 
 
 def show_issue_preview(screen, issue, open_workspace_summary=False):
+    try:
+        return show_issue_preview_until_closed(screen, issue, open_workspace_summary)
+    finally:  # closed while the comments were still loading: Col is done saying so
+        UiState.col_is_working, UiState.what_col_is_loading = False, ""
+
+
+def show_issue_preview_until_closed(screen, issue, open_workspace_summary):
     """The issue inline: a quiet header (its state, and who has it as an initials chip), then the description
     rendered from Markdown with room around it. The comments sit in a pane on the right; l focuses it, and j/k scroll the focused pane (the one with the heavy rule),
     h goes back to the description and then closes. enter starts the issue (returns "launch"), esc/space close."""
@@ -2659,6 +2679,7 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
         tour_sees("preview")
         if comments == "loading" and "done" in fetched:
             comments = fetched["done"]
+        UiState.col_is_working, UiState.what_col_is_loading = (True, "loading the comments") if comments == "loading" else (False, "")
         if refreshed_comments_waiting:
             comments, first_line_shown_by_pane[1] = refreshed_comments_waiting.pop(), 10 ** 6
         frame_count += 1
@@ -2676,7 +2697,6 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
             comments_x, comments_width = 3 + description_width + 3, inner_width - description_width - 3
             comment_lines = []
             if comments == "loading":  # the pane opens at once; a spinner and a shimmering skeleton while comments arrive
-                comment_lines.append([(f"{SPINNER_FRAMES[frame_count % len(SPINNER_FRAMES)]} loading comments…", "head")])
                 for placeholder_number in range(4):
                     comment_lines += [[], [("▆" * (comments_width * (3 + (placeholder_number + frame_count // 2) % 3) // 6), "dim")],
                                       [("▆" * (comments_width * (2 + (placeholder_number + frame_count // 2) % 4) // 6), "dim")]]
@@ -3062,6 +3082,7 @@ class IssueListScreen:
 
     def __init__(self, screen):
         self.screen = screen
+        UiState.draw_col = self.draw_col_in_his_corner
         self.today = datetime.now().strftime("%Y-%m-%d")
         # what is listed
         self.view = None                         # None: my issues, else the team/project being browsed ({"kind", "id", "name", …})
@@ -3346,12 +3367,8 @@ class IssueListScreen:
         for text, attribute in breadcrumbs:
             screen.addnstr(2, x, text, max(screen_width - x - 1, 0), attribute)
             x += len(text)
-        if self.refresh_is_running:
-            sync_or_count = f"{SPINNER_FRAMES[animation_frame % len(SPINNER_FRAMES)]} syncing"
-        else:
-            sync_or_count = f"{len(self.issue_row_numbers)} issues" + (f"  ·  ✓ {self.done_today_count} done today" if self.done_today_count else "")
-        screen.addnstr(2, max(screen_width - len(sync_or_count) - 2, 0), sync_or_count, len(sync_or_count),
-                    colour(ACCENT if self.refresh_is_running else DIM))
+        sync_or_count = f"{len(self.issue_row_numbers)} issues" + (f"  ·  ✓ {self.done_today_count} done today" if self.done_today_count else "")
+        screen.addnstr(2, max(screen_width - len(sync_or_count) - 2, 0), sync_or_count, len(sync_or_count), colour(DIM))  # a refresh is Col's to announce, not the header's
         # the app's name with Col's eyes and blaze: a solid blue badge centred on the top row, sparks either side when there's room
         app_name = "^ ▐▌ ^  C O L L I N E A R"
         name_x = max((screen_width - len(app_name)) // 2, 2)
@@ -3474,6 +3491,8 @@ class IssueListScreen:
         """(which face, what he says) right now: what he's working on, something he just said, asleep after three
         quiet minutes, a sniff now and then, otherwise a tip or a dog thought."""
         now, animation_frame = time.time(), int(time.time() * 8)
+        if what_is_loading := UiState.what_col_is_loading or ("fetching your issues" if self.refresh_is_running else ""):  # every wait is his to announce
+            return ("left", "cheer", "right", "cheer")[int(now * 1.3) % 4], f"{SPINNER_FRAMES[animation_frame % len(SPINNER_FRAMES)]} {what_is_loading}…"
         if UiState.guided_tour_step is not None:  # the tour: he says the step he is waiting for
             return "cheer", words_of_guided_tour_step()
         if UiState.col_is_working:  # on a job: eyes left and right, a sniff, and what he's at
@@ -3504,22 +3523,24 @@ class IssueListScreen:
         screen, colour = self.screen, curses.color_pair  # not self.colour: Col is never greyed, whatever is in front of the list
         screen_height, screen_width = screen.getmaxyx()
         mood, words = self.col_mood_and_words()
+        is_busy = UiState.col_is_working or self.refresh_is_running  # loading, fetching or writing an answer: all of him is purple
+        frame_colour, face_colour = (PURPLE, PURPLE) if is_busy else (COL_ACCENT, COL_FACE)
         face = COL_FACES[mood]
         face_x = screen_width - len(face[2]) - 2
         outline_width = screen_width - face_x
         # while he's on a job the outline pulses thin / heavy
         is_heavy_beat = UiState.col_is_working and not int(time.time() * 3) % 2
         top_left, horizontal, top_right, vertical, bottom_left, bottom_right, tag_left, tag_right = "┏━┓┃┗┛╸╺" if is_heavy_beat else "╭─╮│╰╯╴╶"
-        screen.addnstr(screen_height - 6, face_x - 1, top_left + horizontal * (outline_width - 2) + top_right, outline_width, colour(COL_ACCENT))
+        screen.addnstr(screen_height - 6, face_x - 1, top_left + horizontal * (outline_width - 2) + top_right, outline_width, colour(frame_colour))
         for line_number, face_line in enumerate(face):
             y = screen_height - 5 + line_number
-            screen.addnstr(y, face_x - 1, vertical, 1, colour(COL_ACCENT))
-            screen.addnstr(y, face_x, face_line, len(face_line), colour(COL_FACE) | curses.A_BOLD)
-            screen.addnstr(y, screen_width - 2, vertical, 1, colour(COL_ACCENT))
-        screen.addnstr(screen_height - 1, face_x - 1, bottom_left + horizontal * (outline_width - 2) + bottom_right, outline_width, colour(COL_ACCENT))
+            screen.addnstr(y, face_x - 1, vertical, 1, colour(frame_colour))
+            screen.addnstr(y, face_x, face_line, len(face_line), colour(face_colour) | curses.A_BOLD)
+            screen.addnstr(y, screen_width - 2, vertical, 1, colour(frame_colour))
+        screen.addnstr(screen_height - 1, face_x - 1, bottom_left + horizontal * (outline_width - 2) + bottom_right, outline_width, colour(frame_colour))
         name_tag_x = face_x - 1 + (outline_width - 7) // 2
-        screen.addnstr(screen_height - 1, name_tag_x, f"{tag_left} Col {tag_right}", 7, colour(COL_ACCENT))  # his collar tag
-        screen.addnstr(screen_height - 1, name_tag_x + 2, "Col", 3, colour(COL_ACCENT) | curses.A_BOLD)
+        screen.addnstr(screen_height - 1, name_tag_x, f"{tag_left} Col {tag_right}", 7, colour(frame_colour))  # his collar tag
+        screen.addnstr(screen_height - 1, name_tag_x + 2, "Col", 3, colour(frame_colour) | curses.A_BOLD)
         if UiState.guided_tour_step is not None:  # the way out is always in view, under what he says
             way_out_parts = text_and_keycaps("`Q` quits the tour")
             column = max(face_x - sum(len(text) for text, _ in way_out_parts) - 3, 0)
@@ -3531,7 +3552,7 @@ class IssueListScreen:
         for text, is_key in bubble_parts:
             if column < face_x - 1:
                 screen.addnstr(screen_height - 4, column, text, face_x - 1 - column,
-                               keycap_attribute() if is_key else colour(COL_ACCENT) | curses.A_BOLD)
+                               keycap_attribute() if is_key else colour(frame_colour) | curses.A_BOLD)
             column += len(text)
 
     def footer_hints(self, only_those_that_work_on_an_empty_list=False):
