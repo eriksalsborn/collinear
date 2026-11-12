@@ -11,7 +11,7 @@
 
 
 
-                    ╭──────────────────────────────────────────────────────────────────────────────╮
+                    ╭────────────────────────────╴ mode: guided tour ╶─────────────────────────────╮
                     │  Col  a quick tour                                                      esc  │
                     │                                                                              │
                     │   welcome, Erik                                                              │
@@ -88,8 +88,8 @@
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                           “1/8   b  opens The Daily Bark: your last working day, and the loose threads” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh      │   ╰─ω─╯~   │
-  / filter   ? all keys   h close                                                                        ╰──╴ Col ╶───╯
+                                                                                                         │   ╰─ω─╯~   │
+  ? all keys   K show key hints                                                                          ╰──╴ Col ╶───╯
 
 ########## 003 before 27
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -180,8 +180,8 @@
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                                   “5/8   p  is your to-do list: topics you kept with  s , and your own” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh      │   ╰─ω─╯~   │
-  / filter   ? all keys   h close                                                                        ╰──╴ Col ╶───╯
+                                                                                                         │   ╰─ω─╯~   │
+  ? all keys   K show key hints                                                                          ╰──╴ Col ╶───╯
 
 ########## 005 before 'i'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -246,7 +246,7 @@
 
 
 
-                    ╭──────────────────────────────────────────────────────────────────────────────╮
+                    ╭─────────────────────────────╴ mode: new to-do ╶──────────────────────────────╮
                     │  to-do  add one                                                         esc  │
                     │  / filter                                                                    │
                     │  Col looks up what is behind your words (an issue, a PR, a thread) and       │
@@ -333,7 +333,7 @@
 
 
 
-                    ╭──────────────────────────────────────────────────────────────────────────────╮
+                    ╭────────────────────────────╴ mode: guided tour ╶─────────────────────────────╮
                     │  Col  a quick tour                                                      esc  │
                     │                                                                              │
                     │   starting work, and the green markers                                       │
@@ -349,7 +349,7 @@
                     │   workspace (its number in herdr's sidebar) and the repository.              │
                     │                                                                              │
                     │   From now on I open on just those rows;  W  switches to all your issues.    │
-                    │    w  on one jumps straight into it: each phase or free session is a tab     │
+                    │    w  on one jumps straight into it: each session you start is a tab         │
                     │   there, and with several  w  asks which one.                                │
                     │                                                                              │
                     │   The loop:  open,  w  into what's in progress.  l  /  enter  starts         │
@@ -379,7 +379,7 @@
 
 
 
-                    ╭──────────────────────────────────────────────────────────────────────────────╮
+                    ╭────────────────────────────╴ mode: guided tour ╶─────────────────────────────╮
                     │  Col  a quick tour                                                      esc  │
                     │                                                                              │
                     │   starting work, and the green markers                                       │
@@ -395,7 +395,7 @@
                     │   workspace (its number in herdr's sidebar) and the repository.              │
                     │                                                                              │
                     │   From now on I open on just those rows;  W  switches to all your issues.    │
-                    │    w  on one jumps straight into it: each phase or free session is a tab     │
+                    │    w  on one jumps straight into it: each session you start is a tab         │
                     │   there, and with several  w  asks which one.                                │
                     │                                                                              │
                     │   The loop:  open,  w  into what's in progress.  l  /  enter  starts         │
@@ -456,7 +456,7 @@
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                                                 “off you go.  ?  if you forget a key,  O  for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                          │  ▜▖ ▼  ▗▛  │
-  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh      │   ╰─ω─╯~   │
-  / filter   ? all keys   h close                                                                        ╰──╴ Col ╶───╯
+                                                                                                         │   ╰─ω─╯~   │
+  ? all keys   K show key hints                                                                          ╰──╴ Col ╶───╯
 
 finished cleanly

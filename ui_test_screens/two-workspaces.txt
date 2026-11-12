@@ -199,12 +199,11 @@
       PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
 
   ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-      PLA-5     ▯▯▯         Fifth╭─────────────────────────────────────────────────────────────────────────────────╮                          3w ago
+      PLA-5     ▯▯▯         Fifth╭─────────────────────────────╴ mode: open sessions ╶─────────────────────────────╮                          3w ago
                                  │  PLA-2  4 sessions open, jump to which?                                    esc  │
   ◈ Triage 1  ───────────────────│  / filter                                                                       │────────────────────────────────
-      PLA-6     ▯▯▯         Sixth│  Every phase or free session you started on this issue is a tab in its herdr    │                          3d ago
-                                 │  workspace. Each row: the tab's name and what its agent is doing, and the       │
-                                 │  workspace it is in.                                                            │
+      PLA-6     ▯▯▯         Sixth│  Every session you started on this issue is a tab in its herdr workspace. Each  │                          3d ago
+                                 │  row: the tab's name and what its agent is doing, and the workspace it is in.   │
                                  │                                                                                 │
                                  │                                                                                 │
                                  │ ▎issue                       idle      PLA-2 Second issue with a workspace      │
@@ -213,6 +212,7 @@
                                  │  review                      idle      Review: second issue                     │
                                  │                                                                                 │
                                  ╰─────────────────────────────────────────────────────────────────────────────────╯
+
 
 
 
@@ -279,7 +279,7 @@
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
- ──╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮──
+ ──╭───────────────────────────────────────────────────────────╴ mode: issue preview ╶────────────────────────────────────────────────────────────╮──
   ◕│  PLA-2  Second issue with a workspace                                                                                                   esc  │─
    │   ◔ In Progress    ET                                               ▲▼ j/k│ comments  2                                                      │o
    │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━│ ───────────────────────────────────────────────────────────────  │
@@ -380,26 +380,26 @@
  ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                  ▶ 2 open · alpha   ● review        2d ago
 
   ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-      PLA-4     ▮▯▯ low  ╭──────────────────────────────────────────────────────────────────────────────────────────────────╮                 1w ago
-                         │  PLA-2  start                                                                               esc  │
-  ◌ Backlog 1  ──────────│  / filter                                                                                        │───────────────────────
-      PLA-5     ▯▯▯      │  ╭─ →  phases ────────────────────────────────╮ ╭─ ⎇  free session ──────────────────────────╮   │                 3w ago
-                         │  │                                            │ │                                            │   │
-  ◈ Triage 1  ───────────│  │ Col walks you through the issue step by    │ │ Col with just the issue, no steps. In a    │   │───────────────────────
-      PLA-6     ▯▯▯      │  │ step: write → plan → build → review. Runs  │ │ repo (a worktree on the issue's branch),   │   │                 3d ago
-                         │  │ in a worktree on the issue's own branch.   │ │ without one (just the notes folder), or on │   │
-                         │  │ Notes are kept between sessions, so you    │ │ a linked PR's branch. For a quick look, a  │   │
-                         │  │ can stop and pick up later.                │ │ review, or a small fix.                    │   │
-                         │  ╰────────────────────────────────────────────╯ ╰────────────────────────────────────────────╯   │
-                         │                                                                                                  │
-                         │                                                                                                  │
-                         │ ▎▶  jump to one of its 4 open sessions  ·  you're already working on it                          │
-                         │  →  phases on the issue branch                                                                   │
-                         │  ⎇  free session in a repo  ·  pick one, a worktree on the issue branch                          │
-                         │  ○  free session without a repo  ·  just the issue, for thinking and writing                     │
-                         │  ⎇  free session on PR #7  ·  alpha  erik/pla-2-second                                           │
-                         │                                                                                                  │
-                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+      PLA-4     ▮▯▯ low     Fourth ╭─────────────────────────────╴ mode: start work ╶─────────────────────────────╮                           1w ago
+                                   │  PLA-2  Second issue with a workspac                                    esc  │
+  ◌ Backlog 1  ────────────────────│  / filter                                                                    │─────────────────────────────────
+      PLA-5     ▯▯▯         Fifth i│  enter sets this up, so you don't have to:                                   │                           3w ago
+                                   │  ✓ a new tab in the herdr workspace that is already open for it              │
+  ◈ Triage 1  ─────────────────────│  ✓ a worktree in the repo you pick next, on  erik/pla-2-second               │─────────────────────────────────
+      PLA-6     ▯▯▯         Sixth n│  ✓ Claude Code opened there, pointed at the issue, comments and your notes   │                           3d ago
+                                   │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started      │
+                                   │                                                                              │
+                                   │                                                                              │
+                                   │ ▎▶  jump to one of its 4 open sessions  ·  you're already working on it      │
+                                   │  ·  write it   write the issue: what, why, acceptance criteria               │
+                                   │  ·  plan it    think (Col grills you) → discover → spec                      │
+                                   │  ·  build it   build it from the spec                                        │
+                                   │  ·  review it  fresh eyes on the diff vs the spec                            │
+                                   │  ○  no prompt  just the issue, you steer  ·  in a repo or without one        │
+                                   │  ⎇  no prompt, on PR #7  ·  alpha  erik/pla-2-second                         │
+                                   │  +  add a repo to the issue                                                  │
+                                   │                                                                              │
+                                   ╰──────────────────────────────────────────────────────────────────────────────╯
 
 
 
@@ -475,12 +475,11 @@
       PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
 
   ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-      PLA-5     ▯▯▯         Fifth╭─────────────────────────────────────────────────────────────────────────────────╮                          3w ago
+      PLA-5     ▯▯▯         Fifth╭─────────────────────────────╴ mode: open sessions ╶─────────────────────────────╮                          3w ago
                                  │  PLA-2  4 sessions open, jump to which?                                    esc  │
   ◈ Triage 1  ───────────────────│  / filter                                                                       │────────────────────────────────
-      PLA-6     ▯▯▯         Sixth│  Every phase or free session you started on this issue is a tab in its herdr    │                          3d ago
-                                 │  workspace. Each row: the tab's name and what its agent is doing, and the       │
-                                 │  workspace it is in.                                                            │
+      PLA-6     ▯▯▯         Sixth│  Every session you started on this issue is a tab in its herdr workspace. Each  │                          3d ago
+                                 │  row: the tab's name and what its agent is doing, and the workspace it is in.   │
                                  │                                                                                 │
                                  │                                                                                 │
                                  │ ▎issue                       idle      PLA-2 Second issue with a workspace      │
@@ -489,6 +488,7 @@
                                  │  review                      idle      Review: second issue                     │
                                  │                                                                                 │
                                  ╰─────────────────────────────────────────────────────────────────────────────────╯
+
 
 
 
@@ -521,12 +521,11 @@
       PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
 
   ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-      PLA-5     ▯▯▯         Fifth╭─────────────────────────────────────────────────────────────────────────────────╮                          3w ago
+      PLA-5     ▯▯▯         Fifth╭─────────────────────────────╴ mode: open sessions ╶─────────────────────────────╮                          3w ago
                                  │  PLA-2  4 sessions open, jump to which?                                    esc  │
   ◈ Triage 1  ───────────────────│  / filter                                                                       │────────────────────────────────
-      PLA-6     ▯▯▯         Sixth│  Every phase or free session you started on this issue is a tab in its herdr    │                          3d ago
-                                 │  workspace. Each row: the tab's name and what its agent is doing, and the       │
-                                 │  workspace it is in.                                                            │
+      PLA-6     ▯▯▯         Sixth│  Every session you started on this issue is a tab in its herdr workspace. Each  │                          3d ago
+                                 │  row: the tab's name and what its agent is doing, and the workspace it is in.   │
                                  │                                                                                 │
                                  │                                                                                 │
                                  │  issue                       idle      PLA-2 Second issue with a workspace      │
@@ -535,6 +534,7 @@
                                  │  review                      idle      Review: second issue                     │
                                  │                                                                                 │
                                  ╰─────────────────────────────────────────────────────────────────────────────────╯
+
 
 
 
@@ -567,12 +567,11 @@
       PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
 
   ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-      PLA-5     ▯▯▯         Fifth╭─────────────────────────────────────────────────────────────────────────────────╮                          3w ago
+      PLA-5     ▯▯▯         Fifth╭─────────────────────────────╴ mode: open sessions ╶─────────────────────────────╮                          3w ago
                                  │  PLA-2  4 sessions open, jump to which?                                    esc  │
   ◈ Triage 1  ───────────────────│  / filter                                                                       │────────────────────────────────
-      PLA-6     ▯▯▯         Sixth│  Every phase or free session you started on this issue is a tab in its herdr    │                          3d ago
-                                 │  workspace. Each row: the tab's name and what its agent is doing, and the       │
-                                 │  workspace it is in.                                                            │
+      PLA-6     ▯▯▯         Sixth│  Every session you started on this issue is a tab in its herdr workspace. Each  │                          3d ago
+                                 │  row: the tab's name and what its agent is doing, and the workspace it is in.   │
                                  │                                                                                 │
                                  │                                                                                 │
                                  │  issue                       idle      PLA-2 Second issue with a workspace      │
@@ -581,6 +580,7 @@
                                  │  review                      idle      Review: second issue                     │
                                  │                                                                                 │
                                  ╰─────────────────────────────────────────────────────────────────────────────────╯
+
 
 
 

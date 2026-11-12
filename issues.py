@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """My open Linear issues for a herdr popup, opencode-styled.
-enter: repo -> worktree on Linear's branch -> phase -> claude in a fresh tab of the issue's workspace. ? lists every key.
+enter: repo -> the starting prompt -> worktree on Linear's branch -> claude in a fresh tab of the issue's workspace. ? lists every key.
 Phases hand off through notes files in ~/.claude/work/<ID>/; prompts live in prompts/*.md."""
 import curses, json, locale, re, shlex, subprocess, sys, textwrap, threading, time, urllib.request, zlib
 from pathlib import Path
@@ -19,6 +19,7 @@ MY_ISSUES_CACHE_FILE = CACHE_DIR / "herdr-issues.json"
 NOTES_DIR = Path.home() / ".claude" / "work"  # outside the worktree, so removing the worktree keeps the notes
 PROMPTS_DIR = Path(__file__).parent / "prompts"
 NO_REPOSITORY_CHOICE = "∅  no repo · just the issue, no code"
+STARTING_PROMPT_LABELS = {"issue": "write it", "plan": "plan it", "build": "build it", "review": "review it"}  # what the dialog calls each of PHASES
 PHASES = [("issue", "write the issue: what, why, acceptance criteria"),
           ("plan", "think (Col grills you) → discover → spec"),
           ("build", "build it from the spec"), ("review", "fresh eyes on the diff vs the spec")]
@@ -49,7 +50,7 @@ class UiState:
     draw_screen_behind_dialog = None  # the list screen's draw(): dialogs repaint the list behind them, so no stale dialog stays on screen
     grey_out_behind_dialog = False  # grey out everything behind a dialog (setup with something missing)
     title_of_open_dialog = None  # a new title plays the open animation once
-    footer_hints_visible = True  # K toggles the key hints in the footer; ? always stays
+    footer_hints_visible = False  # K toggles the key hints in the main list's footer, hidden until asked for; ? always stays
     col_is_visible = True  # Z toggles Col off and on; remembered in the cache dir
     col_is_working = False  # Col is on a job (report, answer, draft): he looks around, sniffs, and says what he's at
     lookups_col_is_working_on = []  # the lookups of that job so far
@@ -118,12 +119,12 @@ COL_TIPS = ["type a few letters to filter, no / needed", "3j jumps three rows do
         "G jumps to the bottom", "the chat with Claude is remembered per issue, in ~/.claude/work",
         "esc closes any window; one more esc closes the popup",
         "· quiet 3d means no commit on that branch for three days", "in a team view, chips show who's on what",
-        "c opens Col with just the issue, no phases, no worktree", "the phase list remembers where you got to: ✓ ◐ ·",
+        "c opens Col with just the issue, no starting prompt, no worktree", "the start dialog remembers where you got to: ✓ ◐ ·",
         "first open of the day shows what moved overnight", "P sets priority; urgent ones sort to the top of their stage",
         "y copies the Linear link, L opens the app", "g opens the PR on GitHub; several PRs give you a list",
         "the popup reopens on the issue you last had selected", "status, priority and cancel apply at once; Linear catches up",
         "an issue with no repo still gets notes in ~/.claude/work/<ID>", "n creates an issue and Claude helps you write it properly",
-        "the plan phase makes Col grill you before it touches code", "the review phase reads the diff with fresh eyes against the spec",
+        "start with plan it: Col grills you before he touches code", "start with review it: the diff, read with fresh eyes against the spec",
         "the team or project you used last is prefetched, so switching is instant", "PR badges come from Linear's GitHub link: conflict, draft, review, merged",
         "d and u in a preview scroll half a page", "in the chat, ↑↓ scroll and you can keep typing while Col thinks",
         "a comment drafted by Col is never posted until you say yes", "h in a team view goes home; h at home closes",
@@ -223,22 +224,13 @@ def col_reacts_to(kind, mood="cheer"):
         col_says(lines[int(time.time()) % len(lines)], mood)
 
 
-CHANGE_RECEIPT = {"text": "", "count": 0, "shown_at": 0}  # the last change the user made, shown for a few seconds
-COL_LINES_FOR_EVERY_FIFTH_CHANGE = ["{n} changes today. you're on a roll", "that's {n} today. who's a good dev?", "{n}! the herd is moving",
-                                    "{n} today. I can barely keep up"]
+CHANGE_RECEIPT = {"text": "", "shown_at": 0}  # the last change the user made, shown for a few seconds
 
 
 def celebrate_change(what_happened):
-    """The receipt every change gets, so you know it took: what happened, in a green chip under the title that
-    arrives with a few sparkles, and how many changes that makes today, as pips filling up to the next five.
-    Every fifth one Col has something to say."""
-    today = f"{datetime.now():%Y-%m-%d}"
-    changes_today = read_stored_value("changes") or {}
-    count = changes_today.get("n", 0) + 1 if changes_today.get("date") == today else 1
-    write_stored_value("changes", {"date": today, "n": count})
-    CHANGE_RECEIPT.update(text=what_happened, count=count, shown_at=time.time())
-    if count % 5 == 0:
-        col_says(COL_LINES_FOR_EVERY_FIFTH_CHANGE[count // 5 % len(COL_LINES_FOR_EVERY_FIFTH_CHANGE)].format(n=count), "woof", 6)
+    """The receipt every change gets, so you know it took: what happened, in a green chip at the bottom left that
+    arrives with a few sparkles."""
+    CHANGE_RECEIPT.update(text=what_happened, shown_at=time.time())
 
 
 def draw_change_receipt(screen):
@@ -250,14 +242,10 @@ def draw_change_receipt(screen):
         return
     screen_height, screen_width = screen.getmaxyx()
     row, room = screen_height - 3, screen_width - (COL_CORNER_WIDTH if UiState.col_is_visible else 0) - 4
-    pips_filled = CHANGE_RECEIPT["count"] % 5 or 5
-    tally = f"{'▰' * pips_filled}{'▱' * (5 - pips_filled)} {CHANGE_RECEIPT['count']} today"
-    chip = f" ✓ {CHANGE_RECEIPT['text']} "[:max(room - len(tally) - 12, 10)]
+    chip = f" ✓ {CHANGE_RECEIPT['text']} "[:max(room - 8, 10)]
     sparkles = ("✦", "· ✦", "  · ✦")[int(age / 0.2)] if age < 0.6 else ""  # they drift off to the right and fade
-    green = curses.color_pair(GREEN) | curses.A_BOLD
-    screen.addnstr(row, 2, chip, max(room, 0), green | curses.A_REVERSE)
-    screen.addnstr(row, 2 + len(chip) + 2, tally, max(room - len(chip) - 2, 0), green if pips_filled == 5 else curses.color_pair(MUTED))
-    screen.addnstr(row, 2 + len(chip) + 2 + len(tally) + 1, sparkles, max(room - len(chip) - len(tally) - 3, 0), curses.color_pair(YELLOW) | curses.A_BOLD)
+    screen.addnstr(row, 2, chip, max(room, 0), curses.color_pair(GREEN) | curses.A_BOLD | curses.A_REVERSE)
+    screen.addnstr(row, 2 + len(chip) + 2, sparkles, max(room - len(chip) - 2, 0), curses.color_pair(YELLOW) | curses.A_BOLD)
 
 
 def read_stored_value(name, default=None):
@@ -392,8 +380,8 @@ def jump_to_a_session_of_issue(screen, issue, folders_of_its_branch=None):
     rows = [f"{tab['label'][:26]:<26}  {tab.get('agent_status') or '?':<8}"
             + (f"  {workspace['label'][:44]}" if several_workspaces else "") for workspace, tab in sessions]
     picked = choose_from_list(
-        screen, f"{issue['identifier']}  ·  {len(sessions)} sessions open, jump to which?", rows,
-        help=("Every phase or free session you started on this issue is a tab in its herdr workspace. Each row: the tab's "
+        screen, f"open sessions  ▸  {issue['identifier']}  ·  {len(sessions)} sessions open, jump to which?", rows,
+        help=("Every session you started on this issue is a tab in its herdr workspace. Each row: the tab's "
               "name and what its agent is doing" + (", and the workspace it is in." if several_workspaces else "."),))
     if picked is None:
         return ""
@@ -489,7 +477,7 @@ def choose_project(screen):
     projects = {f"{project['name'][:60]}  ·  {project['status']['name']} · {','.join(team['key'] for team in project['teams']['nodes'])}":
                 dict(project, kind="project") for project in open_projects}
     project_labels = most_recently_used_first("projects", sorted(projects, key=str.lower))
-    picked = choose_from_list(screen, "browse project", project_labels)
+    picked = choose_from_list(screen, "projects  ▸  browse project", project_labels)
     if picked is None:
         return None
     remember_as_most_recently_used("projects", project_labels[picked], project_labels)
@@ -516,7 +504,7 @@ def choose_new_status(screen, issue):
         {"t": issue["team"]["id"]})["team"]["states"]["nodes"],
         key=lambda state: (order.index(state["type"]) if state["type"] in order else 9, state["position"]))
     state_names = [state["name"] for state in states]
-    picked = choose_from_list(screen, f"{issue['identifier']}  ·  move to", state_names, state_names.index(issue["state"]["name"]))
+    picked = choose_from_list(screen, "change status  ▸  " + issue_as_dialog_title(issue), state_names, state_names.index(issue["state"]["name"]))
     if picked is None or state_names[picked] == issue["state"]["name"]:
         return ""
     change_issue_optimistically(issue, {"stateId": states[picked]["id"]}, {"state": states[picked]}, f"{issue['identifier']} → {state_names[picked]}")
@@ -525,7 +513,7 @@ def choose_new_status(screen, issue):
 
 def confirm_and_cancel_issue(screen, issue):
     """Are-you-sure dialog -> the team's canceled state. Returns a footer message."""
-    if choose_from_list(screen, f"cancel {issue['identifier']}?  {issue['title'][:24]}…", ["no, keep it", "yes, cancel it"]) != 1:
+    if choose_from_list(screen, f"cancel issue  ▸  cancel {issue['identifier']}?  {issue['title'][:24]}…", ["no, keep it", "yes, cancel it"]) != 1:
         return ""
     canceled_states = linear_graphql_with_spinner(
         screen, "looking up the team's canceled state…",
@@ -543,7 +531,7 @@ def choose_new_priority(screen, issue):
     tour_sees("priority dialog")
     levels = [(0, "▯▯▯ no priority")] + [(n, f"{bars} {word}") for n, (bars, word, _) in PRIORITY_DISPLAY.items()]
     level_labels = [label_text for _, label_text in levels]
-    n = choose_from_list(screen, f"{issue['identifier']}  ·  priority", level_labels, [priority for priority, _ in levels].index(issue["priority"] or 0))
+    n = choose_from_list(screen, "change priority  ▸  " + issue_as_dialog_title(issue), level_labels, [priority for priority, _ in levels].index(issue["priority"] or 0))
     if n is None or levels[n][0] == (issue["priority"] or 0):
         return ""
     label = f"{issue['identifier']} → {level_labels[n].split(' ', 1)[1]}"
@@ -563,7 +551,7 @@ def choose_new_assignee(screen, issue):
                            key=lambda member: member["displayName"].lower())
     current_assignee_name = (issue.get("assignee") or {}).get("displayName")
     names = [f"{'●' if member['displayName'] == current_assignee_name else '○'}  {member['displayName']}{'  (me)' if member is my_user else ''}" for member in members_me_first]
-    picked = choose_from_list(screen, f"{issue['identifier']}  ·  assign to", names + ["○  nobody"], 0, help=("Who should own it. ● is the current assignee.",))
+    picked = choose_from_list(screen, "change assignee  ▸  " + issue_as_dialog_title(issue), names + ["○  nobody"], 0, help=("Who should own it. ● is the current assignee.",))
     if picked is None:
         return ""
     new_assignee = members_me_first[picked] if picked < len(members_me_first) else None
@@ -581,11 +569,19 @@ COL_SEND_OFF_LINES = {"issue": "go write it so anyone could pick it up", "plan":
             "pr": "onto the PR's branch. make it mergeable"}
 
 
-def show_col_send_off(screen, what):
-    """Col cheers as you leave to work on an issue: a short beat before the popup closes."""
+def show_col_send_off(screen, what, set_up_for_you=()):
+    """Col cheers as you leave to work on an issue: a short beat before the popup closes.
+    set_up_for_you: what starting just did (the workspace, the worktree, the prompt), listed long enough to be read."""
+    if set_up_for_you:
+        line, _ = draw_dialog_box(screen, "started  ▸  Col  ·  set up for you", len(set_up_for_you) + 5, max(map(len, set_up_for_you)) + 12)
+        for row_number, what_was_set_up in enumerate(set_up_for_you):
+            line(3 + row_number, "✓", curses.color_pair(GREEN) | curses.A_BOLD, 3)
+            line(3 + row_number, what_was_set_up, curses.color_pair(DEFAULT_TEXT), 6)
+        screen.refresh()
+        curses.napms(1300)  # ponytail: a fixed pause, a "press any key" if people say it goes by too fast
     if not UiState.col_is_visible:
         return
-    if UiState.draw_screen_behind_dialog:
+    if UiState.draw_screen_behind_dialog and not set_up_for_you:
         UiState.draw_screen_behind_dialog()
     screen_height, screen_width = screen.getmaxyx()
     face = COL_FACES["cheer"]
@@ -724,7 +720,7 @@ def show_key_reference(screen):
     screen_height, screen_width = screen.getmaxyx()
     column_width = min(44, (screen_width - 10) // 2)
     box_height = min(max(map(len, columns)) + 3, screen_height - 10)
-    line, box_width = draw_dialog_box(screen, "keys  ·  every key", box_height, 2 * column_width + 6)
+    line, box_width = draw_dialog_box(screen, "key reference  ▸  keys  ·  every key", box_height, 2 * column_width + 6)
     for column_number, rows_of_column in enumerate(columns):
         column_x = 3 + column_number * (column_width + 2)
         for row_in_box, (keys_text, description) in enumerate(rows_of_column[:box_height - 3]):
@@ -797,12 +793,12 @@ GUIDED_TOUR_STEPS = [
     TourStep("everything in progress, on one screen. `W` or `h` brings all issues back", (ord("W"),) + BACK_KEYCODES, "my issues", True),
     # elsewhere: said, not pressed, so no browser pops up mid-tour
     TourStep("`L` opens the issue in Linear, `g` its PR on GitHub. `j` to go on", DOWN_KEYCODES, "moved down", True),
-    TourStep("`c` starts a free session on the issue, without a phase. `j` to go on", DOWN_KEYCODES, "moved down", True),
+    TourStep("`c` opens me on the issue right away, no starting prompt. `j` to go on", DOWN_KEYCODES, "moved down", True),
     TourStep("`t` / `T` browse a team or a project, `R` your review inbox. `j` to go on", DOWN_KEYCODES, "moved down", True),
     TourStep("type to filter the list, `n` writes a new issue with me. `j` to go on", DOWN_KEYCODES, "moved down", True),
     # starting work
     TourStep("`l` or `enter` starts work on an issue. press it and have a look", FORWARD_KEYCODES, "start dialog", True),
-    TourStep("this is where work begins. `esc` or `h` backs out for now", BACK_KEYCODES, "list", True),
+    TourStep("one key: a named workspace, the repo on its branch, me briefed. `esc` backs out", BACK_KEYCODES, "list", True),
 ]
 STEP_THAT_ASKS_FOR_A_TOPIC = next(number for number, step in enumerate(GUIDED_TOUR_STEPS) if step.done_when == "topic menu")
 STEP_BACK_AT_THE_LIST_AFTER_THE_REPORT = STEP_THAT_ASKS_FOR_A_TOPIC + 2  # both steps in between are skipped when there is no topic
@@ -882,7 +878,7 @@ TOUR_CLOSING_CARD = ("starting work, and the green markers", [
     "this machine. It names the workspace (its number in herdr's sidebar) and the repository.",
     "",
     "From now on I open on just those rows; `W` switches to all your issues. `w` on one jumps straight into it: "
-    "each phase or free session is a tab there, and with several `w` asks which one.",
+    "each session you start is a tab there, and with several `w` asks which one.",
     "",
     "The loop:  **open,** `w` **into what's in progress.**   `l` / `enter` starts something new.   `b` in the "
     "morning, `p` for to-dos.   `O`: this tour."])
@@ -908,7 +904,7 @@ def show_tour_card(screen, card, footer_text, button_text=""):
     button_text: the card gets a button on its bottom edge, " l  OK, got it! ", and only l (or a click on it) closes it."""
     title, text_lines = card
     attribute_by_style = daily_report_text_attributes()
-    line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 22, 80)
+    line, box_width = draw_dialog_box(screen, "guided tour  ▸  Col  ·  a quick tour", 22, 80)
     last_row_inside_the_box = min(22, screen.getmaxyx()[0] - 10) - 2  # on a very small popup the end of the text is cut, not spilled
     line(3, title, curses.color_pair(ACCENT) | curses.A_BOLD, 4)
     row = 5
@@ -962,7 +958,7 @@ def show_review_inbox(screen):
         return "nothing waiting on your review"
     pull_request_labels = [f"{pull_request['repository']['nameWithOwner'].split('/')[-1][:20]:<20}  #{pull_request['number']:<5} {pull_request['title'][:48]:<48}  {prs.state(pull_request)[1]}"
              for pull_request in pull_requests]
-    picked = choose_from_list(screen, f"review inbox  ·  {len(pull_requests)} waiting on you", pull_request_labels,
+    picked = choose_from_list(screen, f"review inbox  ▸  review inbox  ·  {len(pull_requests)} waiting on you", pull_request_labels,
                help=("Open PRs where your review was requested, from GitHub. enter opens one in the browser.",))
     if picked is None:
         return ""
@@ -975,7 +971,7 @@ def show_morning_digest(screen, changes):
     change_lines = [f"{identifier:<9} {title[:50]:<50}  {what_changed}" for identifier, title, what_changed in changes[:12]]
     if len(changes) > 12:
         change_lines.append(f"… and {len(changes) - 12} more")
-    line, box_width = draw_dialog_box(screen, "good morning  ·  since you last looked", len(change_lines) + 5, max(len(line_text) for line_text in change_lines) + 8)
+    line, box_width = draw_dialog_box(screen, "what changed  ▸  good morning  ·  since you last looked", len(change_lines) + 5, max(len(line_text) for line_text in change_lines) + 8)
     for row_in_box, (text, (_, _, what_changed)) in enumerate(zip(change_lines, changes)):
         line(2 + row_in_box, text, curses.color_pair(GREEN if "merged" in what_changed or "Done" in what_changed else 0), 3)
     line(len(change_lines) + 3, "any key", curses.color_pair(DIM), 3)
@@ -1097,19 +1093,19 @@ COL_CORNER_WIDTH = 17  # Col's outline and name tag, bottom right: the footer st
 
 def draw_footer_from_text(screen, text):
     """The footer, on every screen: everything you can do right here, as "key what" parts separated by " · ",
-    packed onto up to two rows above Col's row. K hides it (? stays)."""
+    packed onto up to two rows above Col's row. Always shown: K only switches the main list's hints."""
     pairs = [tuple(part.strip().split(" ", 1)) if " " in part.strip() else (part.strip(), "") for part in text.split(" · ")]
-    draw_footer_hints(screen, None, 2, pairs)
+    draw_footer_hints(screen, None, 2, pairs, always_shown=True)
 
 
-def draw_footer_hints(screen, fixed_row, first_column, hints):
+def draw_footer_hints(screen, fixed_row, first_column, hints, always_shown=False):
     """Footer like opencode's: bright key, muted description. Packs the hints onto rows ending at the bottom row
     (fixed_row=None: as many rows as needed, at most two), stopping short of Col's corner. When they need more than
     two rows the first ones win, since they matter most, and ? (which lists every key) is kept at the end.
-    With the hints off (K), only ? survives."""
+    With the hints off (K, the main list's default), only ? and K survive there. always_shown: a dialog's footer."""
     screen_height, usable_width = screen.getmaxyx()
-    if not UiState.footer_hints_visible:
-        hints = [(keys_text, description) for keys_text, description in hints if keys_text == "?"] or [("?", "all keys")]
+    if not UiState.footer_hints_visible and not always_shown:
+        hints = ([(keys_text, description) for keys_text, description in hints if keys_text == "?"] or [("?", "all keys")]) + [("K", "show key hints")]
     if UiState.col_is_visible:
         usable_width -= COL_CORNER_WIDTH
     hint_rows, hints_in_row, used_width = [], [], first_column
@@ -1168,10 +1164,17 @@ def draw_what_is_behind_in_grey(screen):
     screen.chgat(screen_height - 6, 0, max(screen_width - COL_CORNER_WIDTH, 0), curses.color_pair(DIM))  # the row of his outline's top edge: up to his corner
 
 
+def issue_as_dialog_title(issue):
+    """ "PLA-1  ·  its title": the title row of a dialog about one issue. What the dialog is for is in its mode tag."""
+    return f"{issue['identifier']}  ·  {issue['title'][:28]}"
+
+
 def draw_dialog_box(screen, title, box_height, box_width, top_left_corner=None):
     """Draw a centred rounded box over the list with a headline tag; returns line(y, text, attr, x) relative to it.
     title "where  ·  what": "where" becomes the accent tag, "what" sits next to it. The first draw of a new title
-    glides the box open (5 frames, ~60ms). Everything behind the box goes grey."""
+    glides the box open (5 frames, ~60ms). Everything behind the box goes grey.
+    title "window name  ▸  where  ·  what": the window's name is set into the middle of the frame's top edge: "╴ mode: window name ╶"."""
+    window_name, _, title = title.rpartition("  ▸  ")
     if UiState.draw_screen_behind_dialog:
         draw_what_is_behind_in_grey(screen)
     screen_height, screen_width = screen.getmaxyx()
@@ -1203,6 +1206,11 @@ def draw_dialog_box(screen, title, box_height, box_width, top_left_corner=None):
     CLICK_ZONES[:] = [(box_y + 1, box_x + box_width - 7, box_x + box_width - 2, [27])]  # nothing behind a dialog is clickable; its "esc" corner is
     line = lambda y, text, attr=0, x=0: screen.addnstr(box_y + y, box_x + x, text, max(box_width - x, 0), attr)
     line.first_row_on_screen, line.first_column_on_screen = box_y, box_x  # for register_clickable_row and dropdowns: where the box starts on the screen
+    if window_name:  # what you are in right now, on the top edge by the corner
+        tag_x = max((box_width - len(window_name) - 10) // 2, 1)  # set into the middle of the top edge, like Col's collar tag
+        line(0, "╴ mode: ", curses.color_pair(DIM), tag_x)
+        line(0, window_name, border_colour | curses.A_BOLD, tag_x + 8)
+        line(0, " ╶", curses.color_pair(DIM), tag_x + 8 + len(window_name))
     tag_text, _, headline = title.partition("  ·  ")
     line(1, f" {tag_text} ", curses.color_pair(TITLE_TAG) | curses.A_BOLD, 2)
     line(1, headline, curses.color_pair(ACCENT) | curses.A_BOLD, len(tag_text) + 5)
@@ -1256,7 +1264,7 @@ def greeting_for_this_hour():
 
 def ask_for_user_name(screen):
     """Ask what Col should call you. Returns a footer message."""
-    name = ask_for_one_line(screen, "setup  ·  your name", "enter save · esc back",
+    name = ask_for_one_line(screen, "setup  ▸  setup  ·  your name", "enter save · esc back",
                ("what Col should call you. first name is fine, it's for greetings and your daily report",
                 f"now: {saved_user_name()}" if saved_user_name() else "kept in the cache folder, nowhere else"))
     if not name:
@@ -1297,7 +1305,7 @@ def set_repositories_folder(folder_text):
 def ask_for_repositories_folder(screen):
     """Ask which folder the git repositories are cloned into. Returns a footer message."""
     shown_folder = str(REPOSITORIES_FOLDER).replace(str(Path.home()), "~", 1)
-    folder_text = ask_for_one_line(screen, "setup  ·  repositories folder", "enter save · esc back",
+    folder_text = ask_for_one_line(screen, "setup  ▸  setup  ·  repositories folder", "enter save · esc back",
                                    ("the folder your git repositories are cloned into, for example ~/code or ~/src",
                                     "an issue's worktrees are made next to its repository in there"), text=shown_folder)
     return set_repositories_folder(folder_text) if folder_text else ""
@@ -1376,7 +1384,7 @@ def connector_setup_checks():
 
 def ask_for_linear_api_key(screen):
     """Ask for a Linear API key, keep it in the keychain if Linear accepts it. Returns a footer message."""
-    token = ask_for_one_line(screen, "setup  ·  Linear API key", "enter save · esc back",
+    token = ask_for_one_line(screen, "setup  ▸  setup  ·  Linear API key", "enter save · esc back",
                 ("linear.app → settings → security & access → personal API keys → new key",
                  "it is stored in the macOS keychain as linear-api-key, nowhere else. replaces the old one."))
     if not token:
@@ -1398,7 +1406,7 @@ def ask_for_linear_api_key(screen):
 
 def ask_for_github_token(screen):
     """Ask for a GitHub token and sign gh in with it. Returns a footer message."""
-    token = ask_for_one_line(screen, "setup  ·  GitHub token", "enter save · esc back",
+    token = ask_for_one_line(screen, "setup  ▸  setup  ·  GitHub token", "enter save · esc back",
                 ("github.com → settings → developer settings → personal access tokens, scopes: repo, read:org",
                  "or run  gh auth login  in a terminal instead. replaces the current login."))
     if not token:
@@ -1439,7 +1447,7 @@ def run_setup_checklist(screen, force=False):
                 return True
         face = COL_FACES[("woof" if frame_count // 2 % 2 else "cheer") if barking else "cheer"]
         UiState.grey_out_behind_dialog = bool(missing)
-        line, box_width = draw_dialog_box(screen, "setup  ·  what Col needs", 11 + len(all_checks), 104)
+        line, box_width = draw_dialog_box(screen, "setup  ▸  setup  ·  what Col needs", 11 + len(all_checks), 104)
         if UiState.draw_screen_behind_dialog is None:
             for line_number, face_line in enumerate(face):
                 line(2 + line_number, face_line, curses.color_pair(DEFAULT_TEXT) | curses.A_BOLD, 3)
@@ -1953,7 +1961,7 @@ def draft_todo_with_col(screen):
     """Col writes a to-do from a few words, all in one dialog: what he looks up shows where you are looking, his whole
     line is shown, and what you type next tells him what to change. Returns the line to add, None when cancelled."""
     said_and_drafted, text, cursor, error = [], "", 0, ""  # [what you said, the line Col wrote from it], oldest first
-    title = "to-do  ·  draft it with Col"
+    title = "drafting to-do  ▸  to-do  ·  draft it with Col"
 
     def paint(spinner=None, lookup_steps=(), line_so_far=""):
         box_width = min(96, screen.getmaxyx()[1] - 4)
@@ -1998,7 +2006,7 @@ def draft_todo_with_col(screen):
         if key == "\x1b":
             return None
         if key == "\t" and draft:  # your own hands on his line; what you leave is what is added
-            if edited := ask_for_one_line(screen, "to-do  ·  edit Col's line", "enter add · ←/→ move · esc back to Col", text=draft):
+            if edited := ask_for_one_line(screen, "editing to-do  ▸  to-do  ·  edit Col's line", "enter add · ←/→ move · esc back to Col", text=draft):
                 return edited
             continue
         if key not in ("\n", "\r", curses.KEY_ENTER):
@@ -2055,11 +2063,11 @@ def draft_todo_with_col(screen):
 def add_topic_to_todo_list(screen):
     """A to-do of your own: type it, or give Col a few words and he writes it up (you can change his line before it is added)."""
     tour_sees("todo add dialog")
-    picked = choose_from_list(screen, "to-do  ·  add one", ["✎  write it myself", "✦  draft it with Col, from a few words"], help=(
+    picked = choose_from_list(screen, "new to-do  ▸  to-do  ·  add one", ["✎  write it myself", "✦  draft it with Col, from a few words"], help=(
         "Col looks up what is behind your words (an issue, a PR, a thread) and writes one line. You can change it before it is added.",))
     if picked is None:
         return
-    text = draft_todo_with_col(screen) if picked else ask_for_one_line(screen, "to-do  ·  add one", "enter add · esc cancel", ("one line, Markdown works",))
+    text = draft_todo_with_col(screen) if picked else ask_for_one_line(screen, "writing to-do  ▸  to-do  ·  add one", "enter add · esc cancel", ("one line, Markdown works",))
     if text:
         save_todo_topics(saved_todo_topics() + ["- " + text])
         celebrate_change("added to your to-do list")
@@ -2142,6 +2150,8 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                          curses.color_pair(ACCENT) | curses.A_BOLD if is_bullet_of_marked_topic else attribute_by_style[style], column)
                     column += len(segment_text)
             if bullet_line_numbers:
+                position_text = f" {number_of_topic_under_cursor + 1}/{len(bullet_line_numbers)} "  # which topic you are on, of how many: bottom right, as in the preview
+                line(box_height - 2, position_text, curses.color_pair(ACCENT), box_width - len(position_text) - 2)
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("i add a to-do · " * showing_todo_list + "l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
                         + " · c free session on it · a ask Col about it"
@@ -2190,7 +2200,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                 tour_sees("topic menu")
             UiState.draw_screen_behind_dialog = under_menu  # the report stays up behind the menu
             try:  # the menu opens right under the topic, or above it when there's no room
-                picked = choose_from_list(screen, "Col  ·  " + (identifier or "this topic"), [f"{k}   {choice_text}" for k, choice_text in choices],
+                picked = choose_from_list(screen, "topic actions  ▸  Col  ·  " + (identifier or "this topic"), [f"{k}   {choice_text}" for k, choice_text in choices],
                                           keys="".join(k for k, _ in choices), top_left_corner=(row_for_the_menu, topic_position_on_screen[2]))
             finally:  # and the report doesn't pop open again when the menu closes
                 UiState.draw_screen_behind_dialog, UiState.title_of_open_dialog = draw_list_behind, dialog_title
@@ -2232,7 +2242,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
             if error := start_free_session(screen, stand_in_issue_for_topic(topic.text), topic=topic.text):
                 show_message_for_a_moment(screen, error)
         if key == ord("r") and not showing_todo_list and report_text and UiState.guided_tour_step is None and choose_from_list(
-                screen, "Col  ·  write it again?", ["yes, write a new report", "no, keep this one"], cursor=1, help=(
+                screen, "new report  ▸  Col  ·  write it again?", ["yes, write a new report", "no, keep this one"], cursor=1, help=(
                     "A new report replaces this one: every topic here is gone, also the ones still worth doing.",
                     "To keep a topic, move it to the to-do list first (s). What is on the to-do list stays.")) != 0:
             continue
@@ -2426,12 +2436,12 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
     tour_sees("report chat" if report else "draft chat" if draft else "ask chat")
     if report:
         topic_number, CHAT_SIDE_PANE["topic"] = (topic[0], topic[1]) if topic else (None, None)
-        title = "Col  ·  to-do" if is_todo else "Col  ·  daily report" + (f" · topic {topic_number + 1}" if topic else "")
+        title = "asking Col  ▸  " + ("Col  ·  to-do" if is_todo else "Col  ·  daily report") + (f" · topic {topic_number + 1}" if topic else "")
         thread_file = NOTES_DIR / "daily" / ((f"todo-{zlib.crc32(topic[1].encode()):08x}" if is_todo else
                                               f"{datetime.now():%Y-%m-%d}" + (f"-topic{topic_number + 1}" if topic else "")) + ".json")
         CHAT_SIDE_PANE["top"] = None  # the side pane opens at the topic
     else:
-        title = f"{issue['identifier']}  ·  " + ("comment · Col drafts" if draft else "ask Col")
+        title = ("drafting comment" if draft else "asking Col") + "  ▸  " + issue_as_dialog_title(issue)
         thread_file = NOTES_DIR / issue["identifier"] / ("draft.json" if draft else "ask.json")  # the thread, kept with the issue's notes
     try:
         history = [message for message in json.loads(thread_file.read_text()) if message.get("a")]
@@ -2477,7 +2487,7 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
             continue
         if not text.strip():
             if draft and history and history[-1]["a"] and choose_from_list(
-                    screen, f"{issue['identifier']}  ·  post this comment?", ["yes, post it", "no, back to the draft"]) == 0:
+                    screen, f"post comment  ▸  {issue['identifier']}  ·  post this comment?", ["yes, post it", "no, back to the draft"]) == 0:
                 run_with_spinner(screen, "posting your comment…", lambda: post_comment_to_linear(issue, history[-1]["a"]))
                 return f"commented on {issue['identifier']}"
             continue
@@ -2535,14 +2545,14 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
 
 def write_or_draft_comment(screen, issue):
     """m: write a comment yourself, or brief Claude and post its draft. Returns a footer message."""
-    picked = choose_from_list(screen, f"{issue['identifier']}  ·  comment", ["✎  write it myself", "✦  Col drafts it from a brief"], help=(
+    picked = choose_from_list(screen, "new comment  ▸  " + issue_as_dialog_title(issue), ["✎  write it myself", "✦  Col drafts it from a brief"], help=(
         "The comment is posted to the Linear issue as you. Col's draft can take feedback until it's right; "
         "nothing is posted until you confirm.",))
     if picked is None:
         return ""
     if picked:
         return chat_with_col(screen, issue, draft=True)
-    comment_text = ask_for_one_line(screen, f"{issue['identifier']}  ·  comment", "enter post · esc cancel", ("one line, Markdown works",))
+    comment_text = ask_for_one_line(screen, "writing comment  ▸  " + issue_as_dialog_title(issue), "enter post · esc cancel", ("one line, Markdown works",))
     if not comment_text:
         return ""
     run_with_spinner(screen, "posting your comment…", lambda: post_comment_to_linear(issue, comment_text))
@@ -2644,12 +2654,12 @@ def choose_repositories_and_make_worktrees(screen, issue, repositories_already_s
     """Repo picker (several allowed) -> a worktree on the issue's branch in each.
     Returns {repo: path}, {} on cancel, None for "no repo" (only offered before the issue has any repo)."""
     choices = ([] if repositories_already_set_up else [NO_REPOSITORY_CHOICE]) + [repository for repository in local_repository_names() if repository not in repositories_already_set_up]
-    picked = choose_from_list(screen, f"{issue['identifier']}  ·  repo", choices, multi=True, cards=(
+    picked = choose_from_list(screen, "pick repository  ▸  " + issue_as_dialog_title(issue), choices, multi=True, cards=(
         ("⎇  in a repo", "Where does the change live? Each repo you pick gets its own worktree, a separate checkout next to "
                          f"the repo as <repo>-wt/<branch>, on the issue's branch {issue['branchName']}. Your main checkout is "
                          "untouched. Col starts in the first one and can reach the others."),
         ("∅  no repo", "Col with just the issue, in its notes folder: for thinking, writing the issue, or research. "
-                       "You can add a repo later from the phase list.")))
+                       "You can add a repo later from the start dialog.")))
     if not picked:
         return {}
     if not repositories_already_set_up and 0 in picked:
@@ -2703,7 +2713,7 @@ def show_issue_preview_until_closed(screen, issue, open_workspace_summary):
         inner_width = box_width - 6
         icon, icon_colour = progress_icon_for_state(issue["state"]["name"], issue["state"]["type"])
         assignee_initials, assignee_chip_colour = initials_and_chip_colour((issue.get("assignee") or {}).get("displayName", ""))
-        line, box_width = draw_dialog_box(screen, f"{issue['identifier']}  ·  {issue['title'][:box_width - 24]}", box_height, box_width)
+        line, box_width = draw_dialog_box(screen, ("writing comment" if comment_being_written is not None else "issue preview") + f"  ▸  {issue['identifier']}  ·  {issue['title'][:box_width - 24]}", box_height, box_width)
         # panes: [(x, width, lines)]; the comments pane takes the right 45% once open
         # a line of text is easiest to read at about 90 characters, however wide the popup is
         description_width = inner_width * 55 // 100 - 3
@@ -2838,71 +2848,66 @@ def show_issue_preview_until_closed(screen, issue, open_workspace_summary):
 
 
 def start_work_on_issue(screen, issue, phase=None):
-    """Repos (unless the issue already has worktrees) -> phase (unless given) -> claude in a new tab, started in
-    the first worktree with access to the others. Exits the popup, or returns an error."""
+    """One dialog says what starting sets up and asks which prompt the session starts with (unless given as `phase`)
+    -> repos (unless the issue already has worktrees) -> claude in a new tab, started in the first worktree with
+    access to the others. Exits the popup, or returns an error."""
     identifier = issue["identifier"]
     workspace = workspace_open_for_issue(issue)
-    pull_request_branches = linked_pull_request_branches(issue) if phase is None else []
+    notes_folder = NOTES_DIR / identifier
+    worktree_by_repository = None  # {repo: worktree folder}; looked up once it is needed
     if phase is None:
         tour_sees("start dialog")
-    if phase is None:  # how to start: phases, or a free session in a repo / without one / on a linked PR's branch
+        pull_request_branches = linked_pull_request_branches(issue)
         open_session_count = session_count(workspaces_open_for_issue(issue))
-        jump_row = "▶  jump to its open workspace  ·  you're already working on it" if open_session_count < 2 else \
-            f"▶  jump to one of its {open_session_count} open sessions  ·  you're already working on it"
-        ways_to_start = ([jump_row] if workspace else []) + \
-                ["→  phases on the issue branch", "⎇  free session in a repo  ·  pick one, a worktree on the issue branch",
-                 "○  free session without a repo  ·  just the issue, for thinking and writing"] + \
-                [f"⎇  free session on PR #{n}  ·  {repo}  {branch}" for repo, branch, n in pull_request_branches]
-        n = choose_from_list(screen, f"{identifier}  ·  start", ways_to_start, cards=(
-            ("→  phases", "Col walks you through the issue step by step: write → plan → build → review. "
-                          "Runs in a worktree on the issue's own branch. Notes are kept between sessions, so you can stop and pick up later."),
-            ("⎇  free session", "Col with just the issue, no steps. In a repo (a worktree on the issue's branch), without one "
-                               "(just the notes folder), or on a linked PR's branch. For a quick look, a review, or a small fix.")))
+        jump_rows = [] if not workspace else ["▶  jump to its open workspace  ·  you're already working on it" if open_session_count < 2 else
+                                              f"▶  jump to one of its {open_session_count} open sessions  ·  you're already working on it"]
+        # an issue someone already wrote a description for counts as written
+        prompt_is_done = [(notes_folder / f"{prompt_name}.md").exists() or (prompt_name == "issue" and bool((issue.get("description") or "").strip()))
+                          for prompt_name, _ in PHASES]
+        # ✓ notes written, ◐ started (launching writes prompt-<name>.md), · not started
+        prompt_marks = ["✓" if is_done else "◐" if (notes_folder / f"prompt-{prompt_name}.md").exists() else "·" for (prompt_name, _), is_done in zip(PHASES, prompt_is_done)]
+        prompt_rows = [f"{mark}  {STARTING_PROMPT_LABELS[prompt_name]:<11}{description}" for (prompt_name, description), mark in zip(PHASES, prompt_marks)]
+        pull_request_rows = [f"⎇  no prompt, on PR #{number}  ·  {repo}  {branch}" for repo, branch, number in pull_request_branches]
+        cursor = 0 if workspace else next((prompt_number for prompt_number, is_done in enumerate(prompt_is_done) if not is_done), len(PHASES) - 1)
+    while phase is None:
+        add_repository_row = "+  add a repo" + (f"    (now: {', '.join(worktree_by_repository)})" if worktree_by_repository else " to the issue")
+        n = choose_from_list(
+            screen, "start work  ▸  " + issue_as_dialog_title(issue), jump_rows + prompt_rows + ["○  no prompt  just the issue, you steer  ·  in a repo or without one"]
+            + pull_request_rows + [add_repository_row], cursor, help=(
+                "enter sets this up, so you don't have to:",
+                "✓ a new tab in the herdr workspace that is already open for it" if workspace else f"✓ a herdr workspace named  {identifier} {issue['title']}"[:74],
+                f"✓ a worktree in the repo you pick next, on  {issue['branchName']}"[:74],
+                "✓ Claude Code opened there, pointed at the issue, comments and your notes",
+                "✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started"))
         if n is None:
             return ""
         if workspace and n == 0:
             return jump_to_a_session_of_issue(screen, issue)
-        n -= bool(workspace)
-        if n == 1:  # free session in a repo
-            worktree_by_repository = choose_repositories_and_make_worktrees(screen, issue, [])
-            if not worktree_by_repository:
-                return "" if worktree_by_repository is not None else start_free_session(screen, issue)
-            return start_free_session(screen, issue, cwd=list(worktree_by_repository.values())[0], extra=list(worktree_by_repository.values())[1:])
-        if n == 2:
-            return start_free_session(screen, issue)
-        if n > 2:
-            return start_free_session_on_pull_request(screen, issue, *pull_request_branches[n - 3])
-    worktree_by_repository = run_with_spinner(screen, "looking for the issue's worktrees…", lambda: worktrees_on_branch(issue["branchName"]))
+        cursor, n = n, n - len(jump_rows)
+        if n < len(PHASES):
+            phase = PHASES[n][0]
+        elif n == len(PHASES):  # no prompt: in a repo (a worktree on the issue's branch) or without one
+            picked_worktrees = choose_repositories_and_make_worktrees(screen, issue, [])
+            if picked_worktrees is None:
+                return start_free_session(screen, issue)
+            if picked_worktrees:
+                return start_free_session(screen, issue, cwd=list(picked_worktrees.values())[0], extra=list(picked_worktrees.values())[1:])
+        elif n <= len(PHASES) + len(pull_request_rows):
+            return start_free_session_on_pull_request(screen, issue, *pull_request_branches[n - len(PHASES) - 1])
+        else:  # one more repo for the issue, then back to the dialog
+            if worktree_by_repository is None:
+                worktree_by_repository = run_with_spinner(screen, "looking for the issue's worktrees…", lambda: worktrees_on_branch(issue["branchName"]))
+            worktree_by_repository |= choose_repositories_and_make_worktrees(screen, issue, list(worktree_by_repository)) or {}
+    if worktree_by_repository is None:
+        worktree_by_repository = run_with_spinner(screen, "looking for the issue's worktrees…", lambda: worktrees_on_branch(issue["branchName"]))
     if not worktree_by_repository:
         worktree_by_repository = choose_repositories_and_make_worktrees(screen, issue, [])
-        if worktree_by_repository is None:  # no repo: a new issue still gets written, anything else is a free session
+        if worktree_by_repository is None:  # no repo: a new issue still gets written, anything else is a session without a prompt
             if phase != "issue":
                 return start_free_session(screen, issue)
             worktree_by_repository = {}
         elif not worktree_by_repository:
             return ""
-    notes_folder = NOTES_DIR / identifier
-    # an issue someone already wrote a description for counts as written
-    phase_is_done = [(notes_folder / f"{phase_name}.md").exists() or (phase_name == "issue" and bool((issue.get("description") or "").strip()))
-            for phase_name, _ in PHASES]
-    # ✓ notes written, ◐ started (launching writes prompt-<phase>.md), · not started
-    phase_marks = ["✓" if is_done else "◐" if (notes_folder / f"prompt-{phase_name}.md").exists() else "·" for (phase_name, _), is_done in zip(PHASES, phase_is_done)]
-    phase_labels = [f"{mark}  {phase_name:<11}{description}" for (phase_name, description), mark in zip(PHASES, phase_marks)]
-    while not phase:
-        add_repository_line = f"+  add a repo    (now: {', '.join(worktree_by_repository)})"
-        n = choose_from_list(screen, f"{identifier}  ·  phase", phase_labels + [add_repository_line],
-                   next((phase_number for phase_number, is_done in enumerate(phase_is_done) if not is_done), len(PHASES) - 1), cards=(
-                       ("→  a phase", "One step of the work, with Col in a new tab of this issue's workspace: write the issue, "
-                                      "plan it, build it, review it. Each step leaves notes in ~/.claude/work/" + identifier + "/ so the "
-                                      "next one, maybe days later, picks up where you stopped. Pick the step you're at."),
-                       ("✓ ◐ ·  the marks", "✓ its notes are written, that step is done.  ◐ started, there's a prompt but no notes yet.  "
-                                            "· not started.  The cursor lands on the first step that isn't done.")))
-        if n is None:
-            return ""
-        if n == len(PHASES):
-            worktree_by_repository |= choose_repositories_and_make_worktrees(screen, issue, list(worktree_by_repository))
-        else:
-            phase = PHASES[n][0]
     worktree_folders = list(worktree_by_repository.values())
     first_folder = worktree_folders[0] if worktree_folders else notes_folder  # no repo: work from the notes folder
     notes_folder.mkdir(parents=True, exist_ok=True)
@@ -2919,7 +2924,12 @@ def start_work_on_issue(screen, issue, phase=None):
         if phase != "issue":  # writing the issue isn't starting the work
             move_issue_to_started(issue)
     run_with_spinner(screen, "telling Linear you're on it…", tell_linear_the_work_has_started)
-    show_col_send_off(screen, phase)
+    show_col_send_off(screen, phase, [
+        "a new tab in its open workspace" if workspace else f"workspace  {identifier} {issue['title']}"[:70],
+        *(f"worktree  {repository}  on  {issue['branchName']}"[:70] for repository in worktree_by_repository),
+        "Claude Code, pointed at the issue, its comments and your notes",
+        f"starting prompt:  {STARTING_PROMPT_LABELS[phase]}",
+        "Linear knows you're on it" + ("" if phase == "issue" else ", the issue is in progress")])
     sys.exit()
 
 
@@ -2960,7 +2970,9 @@ def start_free_session_on_pull_request(screen, issue, repo, branch, number):
     workspace = workspace_open_for_issue(issue)
     if error := open_claude_in_workspace(issue, workspace, worktree_folder, f"#{number}", prompt_file, [notes_folder]):
         return error
-    show_col_send_off(screen, "pr")
+    show_col_send_off(screen, "pr", [
+        "a new tab in its open workspace" if workspace else f"workspace  {issue['identifier']} {issue['title']}"[:70],
+        f"worktree  {repo}  on  {branch}"[:70], f"Claude Code, pointed at the issue and PR #{number}", "no starting prompt: you steer"])
     sys.exit()
 
 
@@ -2981,17 +2993,20 @@ def start_free_session(screen, issue, topic=None, cwd=None, extra=()):
     if error := open_claude_in_workspace(issue, workspace, cwd or notes_folder, "free", prompt_file, [notes_folder] + list(extra)):
         return error
     run_with_spinner(screen, "telling Linear you're on it…", lambda: assign_to_me_if_unassigned(issue))
-    show_col_send_off(screen, "free")
+    show_col_send_off(screen, "free", [
+        "a new tab in its open workspace" if workspace else f"workspace  {issue['identifier']} {issue['title']}"[:70],
+        *([f"in the worktree  {Path(cwd).name}"[:70]] if cwd else []),
+        "Claude Code, pointed at " + ("the topic" if topic else "the issue and its comments"), "no starting prompt: you steer"])
     sys.exit()
 
 
 def create_issue_and_write_it(screen, title="", body=""):
     """Team -> title -> issue assigned to me, then straight into the "issue" phase, where claude helps write it.
     title / body: a starting title and description (a topic from the daily report, say)."""
-    my_user_id, team = choose_team(screen, "new issue  ·  team")
+    my_user_id, team = choose_team(screen, "new issue  ▸  new issue  ·  team")
     if not team:
         return ""
-    title = ask_for_one_line(screen, f"new {team['key']} issue  ·  title", text=title)
+    title = ask_for_one_line(screen, f"new issue  ▸  new {team['key']} issue  ·  title", text=title)
     if not title:
         return ""
     issue = linear_graphql_with_spinner(
@@ -3181,7 +3196,7 @@ class IssueListScreen:
             threading.Thread(target=lambda: fetch_issues(last_view), daemon=True).start()
         self.identifier_to_put_cursor_on = (read_stored_value("last") or {}).get("sel")  # resume on the issue you last touched
         UiState.col_is_visible = (read_stored_value("col") or {}).get("on", True)
-        UiState.footer_hints_visible = (read_stored_value("hints") or {}).get("on", True)
+        UiState.footer_hints_visible = (read_stored_value("hints") or {}).get("on", False)
         if (saved_report := read_stored_value("brief") or {}).get("date") == self.today:
             DAILY_REPORT.update(saved_report)
         if setup_was_just_completed:
@@ -3292,7 +3307,7 @@ class IssueListScreen:
             start_writing_daily_report(issues, self.today)
             col_says("morning. I'm writing up your last working day", "cheer", 12)
             wants_to_read_it_now = choose_from_list(
-                self.screen, "Col  ·  good morning", ["yes, what have I been up to?", "not now · b opens it later"], help=(
+                self.screen, "good morning  ▸  Col  ·  good morning", ["yes, what have I been up to?", "not now · b opens it later"], help=(
                     "Col writes a short update on your last working day, then sniffs through Slack, Linear comments "
                     "and your pull requests for loose threads: what nobody followed up on, or has no issue yet.",
                     "It's being written now and takes about a minute. b opens it any time today.")) == 0
@@ -3538,8 +3553,8 @@ class IssueListScreen:
         screen, colour = self.screen, curses.color_pair  # not self.colour: Col is never greyed, whatever is in front of the list
         screen_height, screen_width = screen.getmaxyx()
         mood, words = self.col_mood_and_words()
-        is_busy = UiState.col_is_working or self.refresh_is_running  # loading, fetching or writing an answer: all of him is purple
-        frame_colour, face_colour = (PURPLE, PURPLE) if is_busy else (COL_ACCENT, COL_FACE)
+        is_busy = UiState.col_is_working or self.refresh_is_running  # loading, fetching or writing an answer: his eyes, his frame and what he says are purple
+        frame_colour, face_colour = PURPLE if is_busy else COL_ACCENT, COL_FACE
         face = COL_FACES[mood]
         face_x = screen_width - len(face[2]) - 2
         outline_width = screen_width - face_x
@@ -3551,6 +3566,8 @@ class IssueListScreen:
             y = screen_height - 5 + line_number
             screen.addnstr(y, face_x - 1, vertical, 1, colour(frame_colour))
             screen.addnstr(y, face_x, face_line, len(face_line), colour(face_colour) | curses.A_BOLD)
+            for eye_x in [x for x, character in enumerate(face_line) if is_busy and line_number == 1 and character in "◉^‒"]:
+                screen.addnstr(y, face_x + eye_x, face_line[eye_x], 1, colour(PURPLE) | curses.A_BOLD)
             screen.addnstr(y, screen_width - 2, vertical, 1, colour(frame_colour))
         screen.addnstr(screen_height - 1, face_x - 1, bottom_left + horizontal * (outline_width - 2) + bottom_right, outline_width, colour(frame_colour))
         name_tag_x = face_x - 1 + (outline_width - 7) // 2
@@ -3789,7 +3806,7 @@ class IssueListScreen:
         if not links:
             return "no PR linked to this issue"
         name_of = lambda url: f"{url.split('/')[-3]} #{url.split('/')[-1]}"
-        picked = 0 if len(links) == 1 else choose_from_list(self.screen, "open PR", [f"{name_of(url)}  {title}" for url, title in links])
+        picked = 0 if len(links) == 1 else choose_from_list(self.screen, "pull requests  ▸  open PR", [f"{name_of(url)}  {title}" for url, title in links])
         if picked is None:
             return ""
         subprocess.run(["open", links[picked][0]])
@@ -3826,7 +3843,7 @@ class IssueListScreen:
         self.switch_to_view(None if self.view == ACTIVE_WORKSPACES_VIEW else ACTIVE_WORKSPACES_VIEW)
 
     def browse_a_team(self):
-        _, team = choose_team(self.screen, "browse team")
+        _, team = choose_team(self.screen, "teams  ▸  browse team")
         if team:
             self.switch_to_view(team)
             col_reacts_to("team")
@@ -3873,7 +3890,7 @@ class IssueListScreen:
     def toggle_footer_hints(self):
         UiState.footer_hints_visible = not UiState.footer_hints_visible
         write_stored_value("hints", {"on": UiState.footer_hints_visible})
-        return "key hints are back" if UiState.footer_hints_visible else "key hints off  ·  ? still lists every key, K brings them back"
+        return "key hints are on" if UiState.footer_hints_visible else "key hints off  ·  ? still lists every key, K brings them back"
 
     def give_col_a_bone(self):
         """B: a bone for Col. He holds it for a few seconds and says thanks; today's bones are counted."""

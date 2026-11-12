@@ -208,7 +208,8 @@ def replace_the_outside_world(issues, prs, open_workspaces, temporary_home):
     prs.LOCAL_SETTINGS_FILE = temporary_home / "local_settings.json"  # F in setup saves here, never to the real one
     if not is_brand_new:
         issues.MY_ISSUES_CACHE_FILE.write_text(json.dumps(FAKE_ISSUES))
-    stored_values = {"setup": {"ok": "x"}, "tour-seen": True, "name": {"name": "Erik Tester"}, "digest": f"{FROZEN_NOW:%Y-%m-%d}",
+    stored_values = {"setup": {"ok": "x"}, "tour-seen": True, "hints": {"on": True},  # someone who turned the key hints on; a brand new user has the default, off
+                      "name": {"name": "Erik Tester"}, "digest": f"{FROZEN_NOW:%Y-%m-%d}",
                      "brief": {"date": f"{FROZEN_NOW:%Y-%m-%d}", "text": FAKE_DAILY_REPORT, "steps": ["Linear: get issue"], "cur": 0}}
     if is_brand_new:  # only what setup itself leaves behind
         stored_values = {"setup": {"ok": "x"}, "name": {"name": "Erik Tester"}}

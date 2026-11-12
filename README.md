@@ -39,8 +39,13 @@ of you.
 
 ## Good to know
 
-- **One key from issue to working session.** `enter` makes a git worktree on the issue's branch and opens Claude
-  Code on it in the issue's own herdr workspace.
+- **One key from issue to working session.** `enter` on an issue sets up what you would otherwise do by hand:
+  - a herdr workspace named after the issue (or a new tab in the one already open for it),
+  - a git worktree on the issue's branch, in the repo you pick, with your main checkout left alone,
+  - Claude Code opened there, pointed at the issue, its comments and your notes from earlier sessions,
+  - a starting prompt: write it, plan it, build it or review it. Or no prompt, and you steer.
+
+  Topics in the daily report and the to-do list start a session the same way, with the topic as the context.
 - **It knows where your work is.** Issues with a workspace open are marked, with repository and branch, and `w`
   jumps straight there. The popup opens on just those, the active workspaces; `W` or `h` shows all your issues.
   With nothing open it opens on your issues.
@@ -62,12 +67,12 @@ flowchart TD
     list <-- "issues, status, comments<br/>(GraphQL, key from keychain)" --> linear[(Linear)]
     list -- "which workspaces are open,<br/>create, focus" --> herdr["herdr workspaces and tabs"]
     list -- "worktree on the issue's branch" --> git["git repositories<br/>in your repositories folder"]
-    list -- "enter: pick a phase" --> prompt["prompt for the phase<br/>prompts/*.md + the issue"]
+    list -- "enter: pick a starting prompt" --> prompt["starting prompt<br/>prompts/*.md + the issue"]
 
     prompt --> session["Claude Code in a new tab<br/>of the issue's workspace"]
     herdr --> session
     git --> session
-    session <-- "handed from phase to phase" --> notes["notes<br/>~/.claude/work/&lt;issue id&gt;/"]
+    session <-- "handed from session to session" --> notes["notes<br/>~/.claude/work/&lt;issue id&gt;/"]
 
     col -- "headless Claude, read-only" --> sources["Linear · Slack · GitHub · web"]
     col --> notes
