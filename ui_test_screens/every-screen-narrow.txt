@@ -2409,20 +2409,20 @@
   │  setup  what Col needs                                                                  esc  │
   │                                                                                              │
   │                hi, I'm Col. a few things before we start.                                    │
-  │                4 of 6 ready                                                                  │
+  │                5 of 7 ready                                                                  │
   │                                                                                              │
   │                                                                                              │
   │   ✓ your name for Col                 Erik Tester  ·  N: change it                           │
   │   ✓ Linear API key in the keychain    L: new key                                             │
   │   ✓ gh signed in to GitHub            G: new token                                           │
   │   ✓ claude on the PATH                                                                       │
+  │   ✓ your repositories in /var/folders/x7/x                                                   │
   │   ✗ Linear connector in Claude Code   claude.ai → settings → connectors → Linear; then /mcp in
   │   ✗ Slack connector in Claude Code    claude.ai → settings → connectors → Slack; then /mcp in
   │                                                                                              │
   │                                                                                              │
   │                                                                                              │
   ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
-
 
 
 

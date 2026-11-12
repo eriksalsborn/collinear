@@ -152,7 +152,7 @@ def replace_the_outside_world(issues, prs, open_workspaces, temporary_home):
     issues.CACHE_DIR = cache_dir
     issues.MY_ISSUES_CACHE_FILE = cache_dir / "herdr-issues.json"
     issues.SETUP_PASSED_FILE = cache_dir / "herdr-issues-setup.json"
-    issues.DEVELOPMENT_DIR = temporary_home / "dev"
+    issues.REPOSITORIES_FOLDER = temporary_home / "dev"
     issues.NOTES_DIR = temporary_home / "notes"
     issues.MY_ISSUES_CACHE_FILE.write_text(json.dumps(FAKE_ISSUES))
     stored_values = {"setup": {"ok": "x"}, "name": {"name": "Erik Tester"}, "digest": f"{FROZEN_NOW:%Y-%m-%d}",

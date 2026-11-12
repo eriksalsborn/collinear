@@ -22,13 +22,20 @@ You need macOS, herdr, Python 3 (written and tested on 3.14; 3.9 and later parse
 [GitHub CLI](https://cli.github.com) and [Claude Code](https://claude.com/claude-code).
 
 1. Get the code next to your herdr config. Do not copy this repo's `config.toml` over yours; it is the author's own.
+   The repo is private, so you need to have been invited to it first.
 
    ```sh
    git clone https://github.com/eriksalsborn/collinear ~/collinear
    cp -R ~/collinear/issues.py ~/collinear/prs.py ~/collinear/prompts ~/.config/herdr/
+   cp ~/collinear/local_settings.example.json ~/.config/herdr/local_settings.json
    ```
 
-2. Add the two popups to `~/.config/herdr/config.toml`:
+2. Open `~/.config/herdr/local_settings.json` and set:
+   - `repositories_folder`: the folder your git repositories are cloned into (the example says `~/Development`).
+   - `linear_workspace` and `linear_team_keys`: the `acme` of `https://linear.app/acme` and your teams' issue
+     prefixes. Only the PR popup's "open Linear issue" action needs these.
+
+3. Add the two popups to `~/.config/herdr/config.toml`:
 
    ```toml
    [[keys.command]]
@@ -48,23 +55,22 @@ You need macOS, herdr, Python 3 (written and tested on 3.14; 3.9 and later parse
    height = "80%"
    ```
 
-3. Reload herdr and open the popup:
+4. Reload herdr and open the popup with `prefix + alt + i`:
 
    ```sh
    herdr server reload-config
    ```
 
-   The first time, Col walks you through a short checklist: your name, a Linear API key (stored in the macOS
-   keychain, nowhere else), `gh` signed in, `claude` on the PATH, and the Linear and Slack connectors in Claude Code.
-
-4. Optional, for the PR popup's "open Linear issue" action: copy `local_settings.example.json` to
-   `~/.config/herdr/local_settings.json` and fill in your Linear workspace and team keys.
+   The first time, Col walks you through a short checklist and says how to fix each line: your name, a Linear API
+   key (pasted into the popup, stored in the macOS keychain, nowhere else), `gh` signed in, `claude` on the PATH,
+   your repositories folder, and the Linear and Slack connectors in Claude Code (claude.ai → settings → connectors).
+   You can skip it with esc and come back with `D`; the list itself only needs the Linear key.
 
 ## Good to know
 
 - **`?` lists every key.** The footer shows what you can do on the screen you are on. Everything is also clickable,
   and the wheel scrolls.
-- **Repositories are looked for in `~/Development`.** Starting an issue makes a git worktree next to the repository,
+- **Repositories are looked for in your `repositories_folder`.** Starting an issue makes a git worktree next to the repository,
   at `<repo>-wt/<branch>`, on the branch name Linear gives the issue. Your main checkout is never touched.
 - **The link between an issue and a workspace is the workspace's name.** A herdr workspace whose name starts with
   the issue id (`ENG-123 …`) belongs to that issue. Rename it and the link is gone; name one by hand and it is found.
@@ -106,7 +112,7 @@ flowchart TD
 
     list <-- "issues, status, comments<br/>(GraphQL, key from keychain)" --> linear[(Linear)]
     list -- "which workspaces are open,<br/>create, focus" --> herdr["herdr workspaces and tabs"]
-    list -- "worktree on the issue's branch" --> git["git repositories<br/>in ~/Development"]
+    list -- "worktree on the issue's branch" --> git["git repositories<br/>in your repositories folder"]
     list -- "enter: pick a phase" --> prompt["prompt for the phase<br/>prompts/*.md + the issue"]
 
     prompt --> session["Claude Code in a new tab<br/>of the issue's workspace"]

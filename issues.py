@@ -6,7 +6,7 @@ import curses, json, locale, re, shlex, subprocess, sys, textwrap, threading, ti
 from pathlib import Path
 from datetime import datetime, timezone
 from typing import NamedTuple
-from prs import run_command, worktree_path_for_branch, open_herdr_workspaces, time_since_text  # same folder, python puts it on sys.path
+from prs import run_command, worktree_path_for_branch, open_herdr_workspaces, time_since_text, REPOSITORIES_FOLDER  # same folder, python puts it on sys.path
 
 OPEN_STATE_TYPES = ["started", "unstarted", "backlog", "triage"]  # shown, in this order
 ISSUE_FIELDS = """id identifier title description url branchName priority updatedAt state { id name type position }
@@ -16,7 +16,6 @@ MY_ISSUES_QUERY = ("{ viewer { assignedIssues(first: 100, filter: {state: {type:
          % (json.dumps(OPEN_STATE_TYPES), ISSUE_FIELDS))
 CACHE_DIR = Path.home() / ".cache"
 MY_ISSUES_CACHE_FILE = CACHE_DIR / "herdr-issues.json"
-DEVELOPMENT_DIR = Path.home() / "Development"
 NOTES_DIR = Path.home() / ".claude" / "work"  # outside the worktree, so removing the worktree keeps the notes
 PROMPTS_DIR = Path(__file__).parent / "prompts"
 NO_REPOSITORY_CHOICE = "∅  no repo · just the issue, no code"
@@ -319,10 +318,10 @@ def jump_to_a_workspace_of_issue(screen, issue):
 
 
 def worktrees_on_branch(branch):
-    """{repository name: folder} for every repository in ~/Development that has branch checked out.
+    """{repository name: folder} for every repository in the repositories folder that has branch checked out.
     Asks git, not herdr: herdr's worktree field goes missing for some workspaces. One git call per repository."""
     return {repository: folder for repository in local_repository_names()
-            if (folder := worktree_path_for_branch(DEVELOPMENT_DIR / repository, branch))}
+            if (folder := worktree_path_for_branch(REPOSITORIES_FOLDER / repository, branch))}
 
 
 BACKSPACE_KEYS = (curses.KEY_BACKSPACE, "\x7f", "\b", 127, 8)  # as get_wch gives them (str) and as getch does (int)
@@ -538,14 +537,14 @@ def linked_pull_requests(issue):
 
 
 def linked_pull_request_branches(issue):
-    """[(repo, branch, PR number)] for linked PRs whose repo is in ~/Development, from Linear's GitHub metadata."""
+    """[(repo, branch, PR number)] for linked PRs whose repo is in the repositories folder, from Linear's GitHub metadata."""
     branches = []
     for attachment in attachments_of(issue):
         github_metadata = attachment.get("metadata") or {}
         repository = github_metadata.get("repoName") or attachment["url"].split("/")[-3]
         is_pull_request_with_a_branch = "/pull/" in attachment["url"] and github_metadata.get("branch")
         is_already_listed = (repository, github_metadata.get("branch")) in [already_listed[:2] for already_listed in branches]
-        if is_pull_request_with_a_branch and (DEVELOPMENT_DIR / repository / ".git").is_dir() and not is_already_listed:
+        if is_pull_request_with_a_branch and (REPOSITORIES_FOLDER / repository / ".git").is_dir() and not is_already_listed:
             branches.append((repository, github_metadata["branch"], github_metadata.get("number")))
     return branches
 
@@ -699,8 +698,11 @@ def remember_as_most_recently_used(kind, item, items):
 
 
 def local_repository_names():
-    """Git repos in ~/Development, most recently used first."""
-    return most_recently_used_first("repos", sorted(p.name for p in DEVELOPMENT_DIR.iterdir() if (p / ".git").is_dir()))
+    """The git repositories in REPOSITORIES_FOLDER (~/Development unless local_settings.json says otherwise), most
+    recently used first. [] when that folder doesn't exist: setup says how to point it at the right one."""
+    if not REPOSITORIES_FOLDER.is_dir():
+        return []
+    return most_recently_used_first("repos", sorted(p.name for p in REPOSITORIES_FOLDER.iterdir() if (p / ".git").is_dir()))
 
 
 def ensure_worktree_for_branch(repo, branch):
@@ -901,7 +903,9 @@ def quick_setup_checks():
     return [("your name for Col", bool(saved_user_name()), "paste"),
             ("Linear API key in the keychain", bool(linear_api_key_in_keychain()), "paste"),
             ("gh signed in to GitHub", not run_command("gh", "auth", "status").returncode, "paste"),
-            ("claude on the PATH", not run_command("which", "claude").returncode, "npm i -g @anthropic-ai/claude-code; run claude once to sign in")]
+            ("claude on the PATH", not run_command("which", "claude").returncode, "npm i -g @anthropic-ai/claude-code; run claude once to sign in"),
+            (f"your repositories in {str(REPOSITORIES_FOLDER).replace(str(Path.home()), '~')}"[:38], REPOSITORIES_FOLDER.is_dir(),
+             'elsewhere? set "repositories_folder" in local_settings.json')]
 
 
 def connector_setup_checks():
@@ -1782,7 +1786,7 @@ def choose_repositories_and_make_worktrees(screen, issue, repositories_already_s
     for item_number in reversed(picked):  # first picked ends up most recent
         remember_as_most_recently_used("repos", choices[item_number], local_repository_names())
     return run_with_spinner(screen, f"setting up {issue['branchName']} in {', '.join(choices[item_number] for item_number in picked)}",
-                lambda: {choices[item_number]: ensure_worktree_for_branch(DEVELOPMENT_DIR / choices[item_number], issue["branchName"]) for item_number in picked})
+                lambda: {choices[item_number]: ensure_worktree_for_branch(REPOSITORIES_FOLDER / choices[item_number], issue["branchName"]) for item_number in picked})
 
 
 def fetch_comments(issue):
@@ -2065,7 +2069,7 @@ def open_claude_in_workspace(issue, workspace, cwd, tab_label, prompt_file, extr
 
 def start_clean_slate_on_pull_request(screen, issue, repo, branch, number):
     """Clean slate in a worktree of a linked PR's branch: Claude with the issue (and the PR), no phases."""
-    worktree_folder = run_with_spinner(screen, f"setting up {repo} on {branch}", lambda: ensure_worktree_for_branch(DEVELOPMENT_DIR / repo, branch))
+    worktree_folder = run_with_spinner(screen, f"setting up {repo} on {branch}", lambda: ensure_worktree_for_branch(REPOSITORIES_FOLDER / repo, branch))
     notes_folder = NOTES_DIR / issue["identifier"]
     notes_folder.mkdir(parents=True, exist_ok=True)
     prompt_file = notes_folder / f"prompt-pr-{number}.md"
@@ -2180,11 +2184,11 @@ KEYCODE_ALIASES = {13: 10, curses.KEY_ENTER: 10, curses.KEY_DOWN: ord("j"), curs
 
 
 def scan_worktrees_of_all_repositories():
-    """{branch: {repository name: folder}} for everything checked out under ~/Development (worktrees and main
+    """{branch: {repository name: folder}} for everything checked out under the repositories folder (worktrees and main
     checkouts), most recently used repository first. One git call per repository, so run it off the main thread."""
     folder_by_branch_and_repository = {}
     for repository in local_repository_names():
-        listing = run_command("git", "-C", str(DEVELOPMENT_DIR / repository), "worktree", "list", "--porcelain").stdout
+        listing = run_command("git", "-C", str(REPOSITORIES_FOLDER / repository), "worktree", "list", "--porcelain").stdout
         for block in listing.split("\n\n"):
             folder = re.search(r"^worktree (.+)$", block, re.M)
             branch = re.search(r"^branch refs/heads/(.+)$", block, re.M)
@@ -2233,7 +2237,7 @@ class IssueListScreen:
         self.refresh_error = ""
         self.states_before_first_refresh = {}    # what the morning digest compares the fresh issues with
         self.open_workspaces_by_identifier = {}  # issue id -> the herdr workspaces open for it (usually one)
-        self.worktree_folders_by_branch = {}     # branch -> {repository name: folder}, for everything under ~/Development
+        self.worktree_folders_by_branch = {}     # branch -> {repository name: folder}, for everything under the repositories folder
         self.days_quiet_by_identifier = {}       # issue id -> days since the last commit on its branch
         # the header
         self.done_today_count = 0
@@ -2957,7 +2961,7 @@ def _test():
     att = {"attachments": {"nodes": [{"url": "https://github.com/o/r/pull/7", "title": "x"},
                                      {"url": "https://example.slack.com/archives/C1/p1", "title": "slack"}]}}
     assert linked_pull_requests(att) == [("https://github.com/o/r/pull/7", "x")] and linked_pull_requests({}) == []
-    real = next(p.name for p in DEVELOPMENT_DIR.iterdir() if (p / ".git").is_dir())
+    real = next(p.name for p in REPOSITORIES_FOLDER.iterdir() if (p / ".git").is_dir())
     pr_att = {"attachments": {"nodes": [{"url": f"https://github.com/o/{real}/pull/9", "metadata": {"branch": "fix/x", "number": 9, "repoName": real}},
                                         {"url": f"https://github.com/o/{real}/pull/9", "metadata": {"branch": "fix/x", "number": 9}},
                                         {"url": "https://github.com/o/nope-not-a-repo/pull/1", "metadata": {"branch": "b"}}]}}

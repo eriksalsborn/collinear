@@ -20,6 +20,8 @@ LOCAL_SETTINGS_FILE = Path(__file__).parent / "local_settings.json"
 LOCAL_SETTINGS = json.loads(LOCAL_SETTINGS_FILE.read_text()) if LOCAL_SETTINGS_FILE.exists() else {}
 LINEAR_WORKSPACE = LOCAL_SETTINGS.get("linear_workspace", "")  # the "acme" of https://linear.app/acme
 LINEAR_TEAM_KEYS = LOCAL_SETTINGS.get("linear_team_keys", [])  # ["ENG", "OPS"]: update when a Linear team is added
+# the folder your git repositories are cloned into; both popups look for a PR's or an issue's repository there
+REPOSITORIES_FOLDER = Path(LOCAL_SETTINGS.get("repositories_folder", "~/Development")).expanduser()
 
 
 def linear_id_pattern(team_keys):
@@ -209,7 +211,7 @@ def main(scr):
         """Actions menu for one PR. Returns a message for the footer."""
         name = f"{pr['repository']['nameWithOwner'].split('/')[-1]} #{pr['number']}"
         linear = linear_url(pr)
-        repo = Path.home() / "Development" / pr["repository"]["nameWithOwner"].split("/")[-1]
+        repo = REPOSITORIES_FOLDER / pr["repository"]["nameWithOwner"].split("/")[-1]
         options = []  # (key, label)
         if linear:
             options += [("l", "open Linear issue"), ("o", "copy Linear link")]
