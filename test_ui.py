@@ -130,6 +130,7 @@ def fake_run_command(*command):
 #   ("wheel", "down" | "up")
 
 EVERY_SCREEN = [
+    "h",                                                         # the popup opens on the active workspaces; h goes to my issues
     "j", "j", "k", "?", ENTER,                                   # move, the key reference
     " ", "l", "j", "h", ESC,                                     # preview, its comments pane
     "S", "j", ESC, "P", "j", ENTER, "U", "A", ESC,               # status, priority and its undo, assignee
@@ -151,12 +152,13 @@ EVERY_SCREEN = [
     # Keys it didn't ask for are ignored: b and enter on the list, typing and enter in the comment box (nothing posts).
     "O", ENTER, "b", ENTER, "j", "k", " ", "l", "C", "x", ENTER, ESC, "c", "x", ESC, "a", ESC,
     "S", "j", ENTER, ESC, "P", ESC, "A", ESC,                    # status, priority, assignee: each opens, nothing can be picked
-    "b", "l", ESC, ESC, "j", "j", "j", ENTER, ESC,
+    "b", "l", ESC, ESC, "p", "i", ESC, ESC,                      # the report and a topic's actions; the to-do list and how to add one
+    "j", "j", "W", "h", "j", "j", "j", "j", ENTER, ESC,          # green rows, the active workspaces and back, what is only said, the start dialog
     ENTER, ESC, "l",                                             # the closing card: only l (its button) finishes
     "O", ENTER, "q", "Q", "j",                                   # q does nothing in the tour; Q quits it, and every key works again
     "O", ESC,                                                    # the welcome card can be declined
     "b", "s", "j", "j", "l", "a", ESC, "p", "j", "l", ESC, "x", "b", "p", ESC,   # save a topic to the to-do list, by s and by acting on one; open it, remove one; b and p switch between the two
-    "p", "x", "x", "i", ENTER, "m", "e", ENTER, "i", "j", ENTER, "m", ENTER, ESC, "x", ESC,   # the to-do list from the issue list; emptied; one typed, one by Col (not kept)
+    "p", "x", "x", "i", ENTER, "m", "e", ENTER, "i", "j", ENTER, "m", ENTER, "n", ENTER, "\t", curses.KEY_LEFT, "z", ENTER, "x", ESC,   # the to-do list from the issue list; emptied; one typed, one by Col (not kept)
     "p", "x", ESC,                                          # the to-do list from the issue list; emptied
     "b", "x", "r", ESC, ESC,                                     # discard a topic of the report; writing it again asks first
     "W", "j", "j", "S", "W",                                     # active workspaces: mine, someone else's, a topic (S can't change that one)
@@ -167,10 +169,10 @@ SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, th
     "every-screen-narrow": (100, ONE_WORKSPACE, EVERY_SCREEN),
     # one issue with four sessions: three tabs in the workspace named after it, one in a workspace found by its folder.
     # w lists the sessions; picking one focuses that workspace and that tab.
-    "two-workspaces": (150, TWO_WORKSPACES_FOR_ONE_ISSUE, ["j", "j", "w", ESC, " ", ESC, ENTER, ESC, "w", "j", "j", ENTER]),
+    "two-workspaces": (150, TWO_WORKSPACES_FOR_ONE_ISSUE, ["h", "j", "j", "w", ESC, " ", ESC, ENTER, ESC, "w", "j", "j", ENTER]),
     # first open after setup: no issues assigned, no report yet. The tour starts by itself, leaves out the steps
-    # about issues, says there is nothing to report yet, and still ends on the closing card.
-    "new-user-tour": (120, SOMEONE_BRAND_NEW, [ENTER, "b", ESC, ENTER, "l"]),
+    # about issues, says there is nothing to report yet, shows the to-do list, and still ends on the closing card.
+    "new-user-tour": (120, SOMEONE_BRAND_NEW, [ENTER, "b", ESC, "p", "i", ESC, ESC, ENTER, "l"]),
 }
 
 

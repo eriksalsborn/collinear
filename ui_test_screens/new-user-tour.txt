@@ -86,7 +86,7 @@
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
-                          “1/4   b  opens The Daily Bark: your last working day, and the loose threads” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                          “1/8   b  opens The Daily Bark: your last working day, and the loose threads” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh      │   ╰─ω─╯~   │
   / filter   ? all keys   h close                                                                        ╰──╴ Col ╶───╯
@@ -132,12 +132,196 @@
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
-                          “2/4  nothing to report yet, it fills up as you work.  esc  or  h  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                          “2/8  nothing to report yet, it fills up as you work.  esc  or  h  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                          │   ╰─ω─╯~   │
   p to-do list   r write it again   esc/h close                                                          ╰──╴ Col ╶───╯
 
-########## 004 before 10
+########## 004 before 'p'
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           ◌
+
+                                                nothing assigned to you
+
+                           n  create an issue      t  browse a team      T  browse a project
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                  “5/8   p  is your to-do list: topics you kept with  s , and your own” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                      Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh      │   ╰─ω─╯~   │
+  / filter   ? all keys   h close                                                                        ╰──╴ Col ╶───╯
+
+########## 005 before 'i'
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+ ─────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮─────────
+          │  Col  to-do list                                                                            esc  │
+          │  what you moved here from The Daily Bark. it stays when the report is written again.             │
+          │   i  add a to-do: type it yourself, or draft it with Col                                         │
+          │                                                                                                  │
+          │    TO DO                                                                                         │
+          │   ────────────────────────────────────────────────────────────────────────────────────────       │
+          │                                                                                                  │
+          │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
+          │   Bark, s moves a topic here. It stays until you discard it.                                     │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                       “6/8   i  adds one: you type it, or I write it from a few words” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                      Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+                                                                                                         │   ╰─ω─╯~   │
+  i add a to-do   b daily report   esc/h close                                                           ╰──╴ Col ╶───╯
+
+########## 006 before 27
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+
+
+
+
+
+                    ╭──────────────────────────────────────────────────────────────────────────────╮
+                    │  to-do  add one                                                         esc  │
+                    │  / filter                                                                    │
+                    │  Col looks up what is behind your words (an issue, a PR, a thread) and       │
+                    │  writes one line. You can change it before it is added.                      │
+                    │                                                                              │
+                    │                                                                              │
+                    │ ▎✎  write it myself                                                          │
+                    │  ✦  draft it with Col, from a few words                                      │
+                    │                                                                              │
+                    ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                                  “7/8  you'd pick how.  esc  or  h  backs out for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                      Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+                                                                                                         │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                  ╰──╴ Col ╶───╯
+
+########## 007 before 27
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
+ ─────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮─────────
+          │  Col  to-do list                                                                            esc  │
+          │  what you moved here from The Daily Bark. it stays when the report is written again.             │
+          │   i  add a to-do: type it yourself, or draft it with Col                                         │
+          │                                                                                                  │
+          │    TO DO                                                                                         │
+          │   ────────────────────────────────────────────────────────────────────────────────────────       │
+          │                                                                                                  │
+          │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
+          │   Bark, s moves a topic here. It stays until you discard it.                                     │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                “8/8  it stays until you  x  it.  esc  or  h  goes back to your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                      Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+                                                                                                         │   ╰─ω─╯~   │
+  i add a to-do   b daily report   esc/h close                                                           ╰──╴ Col ╶───╯
+
+########## 008 before 10
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
@@ -164,12 +348,12 @@
                     │   it, work in progress, right now, on this machine. It names the             │
                     │   workspace (its number in herdr's sidebar) and the repository.              │
                     │                                                                              │
-                    │   So the green rows answer what am I in the middle of? Put the cursor on     │
-                    │   one and press  w  to jump straight into it. Each phase or free session     │
-                    │   is a tab there; with several,  w  asks which one.                          │
+                    │   From now on I open on just those rows;  W  switches to all your issues.    │
+                    │    w  on one jumps straight into it: each phase or free session is a tab     │
+                    │   there, and with several  w  asks which one.                                │
                     │                                                                              │
-                    │   The loop:  open, look for green,  w .    l  /  enter  to start             │
-                    │   something new.    b  in the morning.    O  for this tour again.            │
+                    │   The loop:  open,  w  into what's in progress.  l  /  enter  starts         │
+                    │   something new.    b  in the morning,  p  for to-dos.    O : this tour.     │
                     ╰─────────────────────────────  l   OK, got it! ───────────────────────────────╯
 
 
@@ -183,7 +367,7 @@
                                                                                                          │   ╰─ω─╯~   │
   l OK, got it!                                                                                          ╰──╴ Col ╶───╯
 
-########## 005 before 'l'
+########## 009 before 'l'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
@@ -210,12 +394,12 @@
                     │   it, work in progress, right now, on this machine. It names the             │
                     │   workspace (its number in herdr's sidebar) and the repository.              │
                     │                                                                              │
-                    │   So the green rows answer what am I in the middle of? Put the cursor on     │
-                    │   one and press  w  to jump straight into it. Each phase or free session     │
-                    │   is a tab there; with several,  w  asks which one.                          │
+                    │   From now on I open on just those rows;  W  switches to all your issues.    │
+                    │    w  on one jumps straight into it: each phase or free session is a tab     │
+                    │   there, and with several  w  asks which one.                                │
                     │                                                                              │
-                    │   The loop:  open, look for green,  w .    l  /  enter  to start             │
-                    │   something new.    b  in the morning.    O  for this tour again.            │
+                    │   The loop:  open,  w  into what's in progress.  l  /  enter  starts         │
+                    │   something new.    b  in the morning,  p  for to-dos.    O : this tour.     │
                     ╰─────────────────────────────  l   OK, got it! ───────────────────────────────╯
 
 
@@ -229,7 +413,7 @@
                                                                                                          │   ╰─ω─╯~   │
   l OK, got it!                                                                                          ╰──╴ Col ╶───╯
 
-########## 006 before 'q'
+########## 010 before 'q'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues

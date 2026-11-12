@@ -422,6 +422,26 @@ def text_after_typing(text, key):
     return None
 
 
+def text_and_cursor_after_typing(text, cursor, key):
+    """(text, cursor) with key applied, when key edits text or moves in it: ←/→, home/end (ctrl-a/ctrl-e), backspace
+    before the cursor, a printable character at it. None for any other key."""
+    if key in (curses.KEY_LEFT, curses.KEY_RIGHT):
+        return text, min(max(cursor + (1 if key == curses.KEY_RIGHT else -1), 0), len(text))
+    if key in (curses.KEY_HOME, "\x01", curses.KEY_END, "\x05"):
+        return text, 0 if key in (curses.KEY_HOME, "\x01") else len(text)
+    if key in BACKSPACE_KEYS:
+        return text[:max(cursor - 1, 0)] + text[cursor:], max(cursor - 1, 0)
+    if (typed := text_after_typing("", key)) is not None:
+        return text[:cursor] + typed + text[cursor:], cursor + len(typed)
+    return None
+
+
+def rows_of_text_with_cursor(text, cursor, width):
+    """text cut into rows of width, with the cursor mark in it: a long line is shown whole, not just its end."""
+    text_with_cursor = text[:cursor] + "▏" + text[cursor:]
+    return [text_with_cursor[start:start + width] for start in range(0, len(text_with_cursor), width)]
+
+
 def show_message_for_a_moment(screen, message):
     """An error in the footer of a screen that has no message line of its own: shown, then a 1.5s pause to read it."""
     show_status_message(screen, message)
@@ -750,13 +770,24 @@ GUIDED_TOUR_STEPS = [
     TourStep("`b` opens The Daily Bark: your last working day, and the loose threads", (ord("b"),), "report", False),
     TourStep("`j` / `k` pick a topic. `l` or `enter` shows what you can do with it",
              DOWN_KEYCODES + UP_KEYCODES + FORWARD_KEYCODES + BACK_KEYCODES, "topic menu", False),  # back too: there may be no topic to pick
-    TourStep("go to its issue, start it, or ask me. `esc` or `h` backs out", BACK_KEYCODES, "report", False),
+    TourStep("start it, ask me, or `s` keeps it as a to-do. `esc` or `h` backs out", BACK_KEYCODES, "report", False),
     TourStep("`esc` or `h` once more, and you're back at your issues", BACK_KEYCODES, "list", False),
+    # the to-do list: opened for real, and so is the way to add one; nothing is added
+    TourStep("`p` is your to-do list: topics you kept with `s`, and your own", (ord("p"),), "todo list", False),
+    TourStep("`i` adds one: you type it, or I write it from a few words", (ord("i"),), "todo add dialog", False),
+    TourStep("you'd pick how. `esc` or `h` backs out for now", BACK_KEYCODES, "todo list", False),
+    TourStep("it stays until you `x` it. `esc` or `h` goes back to your issues", BACK_KEYCODES, "list", False),
     # the green markers and w: said here, shown in full on the closing card. Not pressed: w leaves the popup
     TourStep("green ▶ rows have a workspace open: `w` on one jumps into it. `j` to go on", DOWN_KEYCODES, "moved down", True),
     TourStep("several sessions on one issue? `w` lets you pick which. `j` to go on", DOWN_KEYCODES, "moved down", True),
+    # the active workspaces: the view the popup opens on once something is in progress
+    TourStep("`W` is the view I open on: only what has a workspace open", (ord("W"),), "active workspaces", True),
+    TourStep("everything in progress, on one screen. `W` or `h` brings all issues back", (ord("W"),) + BACK_KEYCODES, "my issues", True),
     # elsewhere: said, not pressed, so no browser pops up mid-tour
     TourStep("`L` opens the issue in Linear, `g` its PR on GitHub. `j` to go on", DOWN_KEYCODES, "moved down", True),
+    TourStep("`c` starts a free session on the issue, without a phase. `j` to go on", DOWN_KEYCODES, "moved down", True),
+    TourStep("`t` / `T` browse a team or a project, `R` your review inbox. `j` to go on", DOWN_KEYCODES, "moved down", True),
+    TourStep("type to filter the list, `n` writes a new issue with me. `j` to go on", DOWN_KEYCODES, "moved down", True),
     # starting work
     TourStep("`l` or `enter` starts work on an issue. press it and have a look", FORWARD_KEYCODES, "start dialog", True),
     TourStep("this is where work begins. `esc` or `h` backs out for now", BACK_KEYCODES, "list", True),
@@ -838,11 +869,11 @@ TOUR_CLOSING_CARD = ("starting work, and the green markers", [
     "From then on its row carries this green marker: **a workspace is open for it**, work in progress, right now, on "
     "this machine. It names the workspace (its number in herdr's sidebar) and the repository.",
     "",
-    "So the green rows answer *what am I in the middle of?*  Put the cursor on one and press `w` to jump straight "
-    "into it. Each phase or free session is a tab there; with several, `w` asks which one.",
+    "From now on I open on just those rows; `W` switches to all your issues. `w` on one jumps straight into it: "
+    "each phase or free session is a tab there, and with several `w` asks which one.",
     "",
-    "The loop:  **open, look for green,** `w`.   `l` / `enter` to start something new.   `b` in the morning.   "
-    "`O` for this tour again."])
+    "The loop:  **open,** `w` **into what's in progress.**   `l` / `enter` starts something new.   `b` in the "
+    "morning, `p` for to-dos.   `O`: this tour."])
 
 
 KEYCAP_PADDING = "⠀"  # a blank that is not a space (braille blank): keeps a keycap's padding through the word wrap
@@ -1112,18 +1143,31 @@ def show_status_message(screen, text):
     screen.refresh()
 
 
+def draw_what_is_behind_in_grey(screen):
+    """Whatever is behind the dialog about to be drawn (the list, or a dialog under this one), all in dim grey, so
+    the eye goes to the dialog. Col is never greyed: his corner and the rows of his bubble keep their colours."""
+    if not UiState.draw_screen_behind_dialog:
+        return screen.erase()
+    UiState.draw_screen_behind_dialog()
+    # ponytail: terminals can't blur, so every cell drawn so far is recoloured; what the dialog draws after this keeps its colours
+    screen_height, screen_width = screen.getmaxyx()
+    for row in range(screen_height - 6):
+        screen.chgat(row, 0, -1, curses.color_pair(DIM))
+    screen.chgat(screen_height - 6, 0, max(screen_width - COL_CORNER_WIDTH, 0), curses.color_pair(DIM))  # the row of his outline's top edge: up to his corner
+
+
 def draw_dialog_box(screen, title, box_height, box_width, top_left_corner=None):
     """Draw a centred rounded box over the list with a headline tag; returns line(y, text, attr, x) relative to it.
     title "where  ·  what": "where" becomes the accent tag, "what" sits next to it. The first draw of a new title
-    pops the box open (3 frames, ~40ms)."""
+    glides the box open (5 frames, ~60ms). Everything behind the box goes grey."""
     if UiState.draw_screen_behind_dialog:
-        UiState.draw_screen_behind_dialog()
+        draw_what_is_behind_in_grey(screen)
     screen_height, screen_width = screen.getmaxyx()
     box_width, box_height = min(box_width, screen_width - 4), min(box_height, screen_height - 10)  # Col's corner (the bottom 6 rows) stays clear, so he's seen on every screen
     box_y, box_x = max(min((screen_height - box_height) // 2, screen_height - 7 - box_height), 0), max((screen_width - box_width) // 2, 0)
     if top_left_corner:  # a dropdown: the box goes where it's told, kept on screen
         box_y, box_x = max(min(top_left_corner[0], screen_height - box_height), 0), max(min(top_left_corner[1], screen_width - box_width - 1), 0)
-    border_colour = curses.color_pair(BORDER)
+    border_colour = curses.color_pair(COL_FACE)  # white (the pair of Col's face): the frame of the window in front stands out from the grey behind it
 
     def box(box_y, box_x, box_height, box_width):
         screen.addnstr(box_y, box_x, "╭" + "─" * (box_width - 2) + "╮", box_width, border_colour)
@@ -1132,12 +1176,17 @@ def draw_dialog_box(screen, title, box_height, box_width, top_left_corner=None):
         screen.addnstr(box_y + box_height - 1, box_x, "╰" + "─" * (box_width - 2) + "╯", box_width, border_colour)
     if UiState.title_of_open_dialog != title:
         UiState.title_of_open_dialog = title
-        for fraction_of_full_size in (0.35, 0.6, 0.85):
-            growing_height, growing_width = max(int(box_height * fraction_of_full_size), 3), max(int(box_width * fraction_of_full_size), 8)
-            box(box_y + (box_height - growing_height) // 2, box_x + (box_width - growing_width) // 2, growing_height, growing_width)
+        for frame in range(1, 6):  # five frames of 12ms, fast at first and settling (ease-out), so it glides open instead of stepping
+            left_to_grow = (1 - frame / 6) ** 3
+            # the same inset on both sides, so the box stays centred while it grows; a dropdown rolls down from its top edge
+            inset_y, inset_x = int(left_to_grow * (box_height - 3) / 2), 0 if top_left_corner else int(left_to_grow * (box_width - 8) / 2)
+            if top_left_corner:
+                box(box_y, box_x, box_height - 2 * inset_y, box_width)
+            else:
+                box(box_y + inset_y, box_x + inset_x, box_height - 2 * inset_y, box_width - 2 * inset_x)
             screen.refresh()
-            curses.napms(14)
-            UiState.draw_screen_behind_dialog() if UiState.draw_screen_behind_dialog else screen.erase()
+            curses.napms(12)
+            draw_what_is_behind_in_grey(screen)
     box(box_y, box_x, box_height, box_width)
     CLICK_ZONES[:] = [(box_y + 1, box_x + box_width - 7, box_x + box_width - 2, [27])]  # nothing behind a dialog is clickable; its "esc" corner is
     line = lambda y, text, attr=0, x=0: screen.addnstr(box_y + y, box_x + x, text, max(box_width - x, 0), attr)
@@ -1150,15 +1199,18 @@ def draw_dialog_box(screen, title, box_height, box_width, top_left_corner=None):
 
 
 def ask_for_one_line(screen, title, hint="enter create · esc cancel", examples=(), text=""):
-    """Centred one-line text input. enter returns the text, esc returns None.
+    """Centred one-line text input. enter returns the text, esc returns None. ←/→ move in it; a long line wraps.
     examples: lines shown under the input while it is empty (what to type). text: what it starts with."""
+    cursor = len(text)
     while True:
         example_lines = [wrapped_line for example in examples for wrapped_line in (textwrap.wrap(example, 72 - 12, subsequent_indent="  ") or [""])]
-        line, box_width = draw_dialog_box(screen, title, 6 + len(example_lines), 72)
+        text_rows = rows_of_text_with_cursor(text, cursor, 72 - 8)
+        line, box_width = draw_dialog_box(screen, title, 5 + len(text_rows) + len(example_lines), 72)
         line(2, "›", curses.color_pair(ACCENT) | curses.A_BOLD, 3)
-        line(2, f"{text}▏"[-(box_width - 8):], curses.A_BOLD, 5)
+        for row_number, text_row in enumerate(text_rows):
+            line(2 + row_number, text_row[:box_width - 8], curses.A_BOLD, 5)
         for line_number, example in enumerate(example_lines):
-            line(3 + line_number, example, curses.color_pair(DIM if text else MUTED), 5)
+            line(2 + len(text_rows) + line_number, example, curses.color_pair(DIM if text else MUTED), 5)
         draw_footer_from_text(screen, hint)
         screen.refresh()
         try:
@@ -1169,7 +1221,7 @@ def ask_for_one_line(screen, title, hint="enter create · esc cancel", examples=
             return None
         if key in ("\n", "\r", curses.KEY_ENTER):
             return text.strip() or None
-        text = text if (typed := text_after_typing(text, key)) is None else typed
+        text, cursor = text_and_cursor_after_typing(text, cursor, key) or (text, cursor)
 
 
 SETUP_PASSED_FILE = CACHE_DIR / "herdr-issues-setup.json"  # written once every check passes; delete it to re-run
@@ -1865,32 +1917,114 @@ def col_words_for_lookup(step):
     return "chewing on it"
 
 
-DRAFT_TODO_TASK = ("Write one to-do item for the developer's personal to-do list, from the few words they give you. Look up what is "
+DRAFT_TODO_TASK = ("Write one to-do item for the developer's personal to-do list, from the few words they give you; later "
+                   "messages from them are feedback on your previous line: write the line again with it. Look up what is "
                    "behind it (the Linear issue, the pull request, the Slack thread) only as far as needed to make it concrete. "
                    "Answer with the item alone, on one line, no bullet: a short bold headline (start it with the Linear issue id "
                    "when it is about one), then \" — \" and what there is to do, in at most 25 words.", "About", "To-do item")
 
 
+def draft_todo_with_col(screen):
+    """Col writes a to-do from a few words, all in one dialog: what he looks up shows where you are looking, his whole
+    line is shown, and what you type next tells him what to change. Returns the line to add, None when cancelled."""
+    said_and_drafted, text, cursor, error = [], "", 0, ""  # [what you said, the line Col wrote from it], oldest first
+    title = "to-do  ·  draft it with Col"
+
+    def paint(spinner=None, lookup_steps=()):
+        box_width = min(96, screen.getmaxyx()[1] - 4)
+        text_width = box_width - 10
+        draft = next((drafted for _, drafted in reversed(said_and_drafted) if drafted), "")
+        rows = []  # (text, attribute, x)
+        if said_and_drafted:
+            rows.append((" you ", curses.color_pair(TITLE_TAG) | curses.A_BOLD, 3))
+            rows += [(wrapped, curses.color_pair(MUTED), 5) for wrapped in textwrap.wrap(said_and_drafted[-1][0], text_width)] + [("", 0, 0)]
+        if spinner:
+            rows.append((" ✦ col ", curses.color_pair(ACCENT) | curses.A_BOLD | curses.A_REVERSE, 3))
+            rows += [(f"✓ {step}"[:text_width], curses.color_pair(DIM), 5) for step in lookup_steps[:-1][-4:]]
+            rows.append((f"{spinner} {lookup_steps[-1] if lookup_steps else 'writing it up…'}"[:text_width], curses.color_pair(ACCENT) | curses.A_BOLD, 5))
+            rows.append(("", 0, 0))
+        elif error:
+            rows += [(wrapped, curses.color_pair(RED), 5) for wrapped in textwrap.wrap(error, text_width)] + [("", 0, 0)]
+        if draft and not spinner:
+            rows.append((" ✦ col ", curses.color_pair(ACCENT) | curses.A_BOLD | curses.A_REVERSE, 3))
+            rows += [(wrapped, curses.A_BOLD, 5) for wrapped in textwrap.wrap(draft, text_width)] + [("", 0, 0)]
+        text_rows = rows_of_text_with_cursor(text, cursor, text_width)
+        line, box_width = draw_dialog_box(screen, title, 5 + len(rows) + len(text_rows) + (not text), box_width)
+        for row_number, (row_text, attribute, x) in enumerate(rows):
+            line(2 + row_number, row_text, attribute, x)
+        line(2 + len(rows), "›", curses.color_pair(ACCENT) | curses.A_BOLD, 3)
+        for row_number, text_row in enumerate(text_rows):
+            line(2 + len(rows) + row_number, text_row, curses.A_BOLD, 5)
+        if not text:
+            line(3 + len(rows), "tell Col what to change, or press enter to add it as it is" if draft else
+                 "a few words: an issue id, a PR, a person, something you must not forget", curses.color_pair(MUTED), 5)
+        draw_footer_from_text(screen, "esc stop Col · keep typing meanwhile" if spinner else
+                              "enter add it · type + enter Col writes it again · tab edit it yourself · esc cancel" if draft else "enter Col writes it · esc cancel")
+        screen.refresh()
+
+    while True:
+        paint()
+        try:
+            key = screen.get_wch()
+        except curses.error:
+            continue
+        draft = next((drafted for _, drafted in reversed(said_and_drafted) if drafted), "")
+        if key == "\x1b":
+            return None
+        if key == "\t" and draft:  # your own hands on his line; what you leave is what is added
+            if edited := ask_for_one_line(screen, "to-do  ·  edit Col's line", "enter add · ←/→ move · esc back to Col", text=draft):
+                return edited
+            continue
+        if key not in ("\n", "\r", curses.KEY_ENTER):
+            text, cursor = text_and_cursor_after_typing(text, cursor, key) or (text, cursor)
+            continue
+        if not text.strip():
+            if draft:
+                return draft
+            continue
+        said_and_drafted.append([text.strip(), ""])
+        text, cursor, error, outcome, lookup_steps, running_processes = "", 0, "", {}, [], []
+
+        def work():
+            try:
+                outcome["drafted"] = ask_headless_claude("", [tuple(pair) for pair in said_and_drafted], NOTES_DIR, lookup_steps.append,
+                                                         running_processes, task=DRAFT_TODO_TASK)
+            except Exception as failure:
+                outcome["error"] = f"Col couldn't write it: {failure}"
+        threading.Thread(target=work, daemon=True).start()
+        spinner_frame, UiState.col_is_working, UiState.lookups_col_is_working_on = 0, True, lookup_steps
+        screen.timeout(100)
+        while not outcome:
+            paint(SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], lookup_steps)
+            spinner_frame += 1
+            try:
+                key_while_writing = screen.get_wch()
+            except curses.error:
+                continue
+            if key_while_writing == "\x1b":
+                for process in running_processes:
+                    process.kill()
+                outcome["error"] = "stopped"
+            else:  # keep typing while he writes
+                text, cursor = text_and_cursor_after_typing(text, cursor, key_while_writing) or (text, cursor)
+        screen.timeout(250)
+        UiState.col_is_working = False
+        error = outcome.get("error", "")
+        said_and_drafted[-1][1] = " ".join((outcome.get("drafted") or "").split()).lstrip("-•* ")
+        if not error and not said_and_drafted[-1][1]:
+            error = "Col came back with nothing. Say it another way?"
+        if not said_and_drafted[-1][1]:
+            said_and_drafted.pop()
+
+
 def add_topic_to_todo_list(screen):
-    """A to-do of your own: type it, or give Col a few words and he writes it up (you can edit his line before it is added)."""
+    """A to-do of your own: type it, or give Col a few words and he writes it up (you can change his line before it is added)."""
+    tour_sees("todo add dialog")
     picked = choose_from_list(screen, "to-do  ·  add one", ["✎  write it myself", "✦  draft it with Col, from a few words"], help=(
         "Col looks up what is behind your words (an issue, a PR, a thread) and writes one line. You can change it before it is added.",))
     if picked is None:
         return
-    if picked:
-        brief = ask_for_one_line(screen, "to-do  ·  what is it about?", "enter Col writes it · esc cancel",
-                                 ("a few words: an issue id, a PR, a person, something you must not forget",))
-        if not brief:
-            return
-        try:
-            draft = run_with_spinner(screen, "Col is writing it up…", lambda: ask_headless_claude(
-                "", [(brief, "")], NOTES_DIR, lambda step: None, [], task=DRAFT_TODO_TASK))
-        except Exception as error:
-            return show_message_for_a_moment(screen, f"Col couldn't write it: {error}"[:120])
-        text = ask_for_one_line(screen, "to-do  ·  Col's line, change it if you like", "enter add · esc cancel",
-                                text=" ".join((draft or brief).split()).lstrip("-•* "))
-    else:
-        text = ask_for_one_line(screen, "to-do  ·  add one", "enter add · esc cancel", ("one line, Markdown works",))
+    text = draft_todo_with_col(screen) if picked else ask_for_one_line(screen, "to-do  ·  add one", "enter add · esc cancel", ("one line, Markdown works",))
     if text:
         save_todo_topics(saved_todo_topics() + ["- " + text])
         celebrate_change("added to your to-do list")
@@ -1993,8 +2127,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
         UiState.draw_screen_behind_dialog, UiState.title_of_open_dialog = under_menu, title_before
 
     while True:
-        if not showing_todo_list:
-            tour_sees("report")
+        tour_sees("todo list" if showing_todo_list else "report")
         paint()
         report_text = document["text"]
         screen.refresh()
@@ -2933,7 +3066,8 @@ class IssueListScreen:
         while not self.popup_should_close:
             self.take_in_what_the_background_fetched()
             self.work_out_visible_rows_and_cursor()
-            UiState.list_has_issues = bool(self.issue_row_numbers)
+            if not self.view:  # the tour's steps about issues go by my issues, whatever view it passes through
+                UiState.list_has_issues = bool(self.issue_row_numbers)
             tour_sees("list")
             if self.onboarding_tour_is_due and self.issues is not None:  # not before the first issues are in
                 self.onboarding_tour_is_due = False
@@ -2958,8 +3092,18 @@ class IssueListScreen:
             and run_setup(self.screen)
         self.issues = self.issues_from_cache(None)
         self.states_before_first_refresh = snapshot_of_states_and_badges(self.issues or [])
-        self.all_rows = self.rows_for(self.issues)
-        self.refresh_issues_in_background()
+        self.onboarding_tour_is_due = not read_stored_value("tour-seen")
+        try:
+            self.open_workspaces = open_herdr_workspaces()
+        except Exception:  # herdr can't say: my issues it is
+            pass
+        # The popup opens on what is in progress. With nothing open that would be an empty screen, and the tour
+        # walks through my issues, so those two open on my issues.
+        if not self.onboarding_tour_is_due and issues_with_an_open_workspace(self.issues or [], self.open_workspaces, {}):
+            self.switch_to_view(ACTIVE_WORKSPACES_VIEW)
+        else:
+            self.all_rows = self.rows_for(self.issues)
+            self.refresh_issues_in_background()
         if last_view := read_stored_value("last-view"):  # the team/project you used last: warm its cache so switching is instant
             threading.Thread(target=lambda: fetch_issues(last_view), daemon=True).start()
         self.identifier_to_put_cursor_on = (read_stored_value("last") or {}).get("sel")  # resume on the issue you last touched
@@ -2972,7 +3116,6 @@ class IssueListScreen:
         done = read_stored_value("done") or {}
         self.done_today_count = done.get("n", 0) if done.get("date") == self.today else 0
         UiState.draw_screen_behind_dialog = self.draw
-        self.onboarding_tour_is_due = not read_stored_value("tour-seen")
         threading.Thread(target=self.scan_workspaces_and_worktrees, args=(self.issues or [],), daemon=True).start()
 
     def issues_from_cache(self, view):
@@ -3018,6 +3161,8 @@ class IssueListScreen:
         if view != ACTIVE_WORKSPACES_VIEW:
             return fetch_issues(view)
         self.open_workspaces = open_herdr_workspaces()
+        if not self.worktree_folders_by_branch:  # the view the popup opens on: the start-up scan may not be in yet
+            self.worktree_folders_by_branch = scan_worktrees_of_all_repositories()
         return issues_with_an_open_workspace(fetch_issues(None), self.open_workspaces, self.worktree_folders_by_branch, fetch_issue_by_identifier)
 
     def rows_for(self, issues):
@@ -3029,6 +3174,7 @@ class IssueListScreen:
 
     def switch_to_view(self, view):
         self.view, self.filter_text, self.cursor, self.show_bark_for_a_new_list = view, "", 0, True
+        tour_sees("active workspaces" if view == ACTIVE_WORKSPACES_VIEW else "my issues" if view is None else "team or project")
         if view == ACTIVE_WORKSPACES_VIEW:  # shown at once from what is already known; the refresh fills in the rest
             self.issues = issues_with_an_open_workspace(self.issues_from_cache(None) or [], self.open_workspaces, self.worktree_folders_by_branch)
         else:
@@ -3047,9 +3193,10 @@ class IssueListScreen:
                 self.refresh_issues_in_background()
             else:
                 self.issues, self.all_rows = issues, self.rows_for(issues)
-                if fetched_for_view is None:
-                    threading.Thread(target=self.scan_workspaces_and_worktrees, args=(issues,), daemon=True).start()
-                    self.greet_on_first_open_of_the_day(issues)
+                if fetched_for_view in (None, ACTIVE_WORKSPACES_VIEW):  # both fetched my issues: the scan and the greeting go by those
+                    my_issues = issues if fetched_for_view is None else self.issues_from_cache(None) or []
+                    threading.Thread(target=self.scan_workspaces_and_worktrees, args=(my_issues,), daemon=True).start()
+                    self.greet_on_first_open_of_the_day(my_issues)
         if self.refresh_error:
             self.footer_message, self.refresh_error = self.refresh_error, ""
         if FAILED_CHANGE_MESSAGES:
@@ -3152,7 +3299,7 @@ class IssueListScreen:
             breadcrumbs = [(" my issues ", view_tag), ("  W active workspaces · p to-do · t team · T project · R reviews", colour(DIM))]
         elif self.view == ACTIVE_WORKSPACES_VIEW:
             breadcrumbs = [("h ‹ ", colour(DIM)), ("my issues", colour(MUTED)), ("  ›  ", colour(DIM)), (" active workspaces ", view_tag),
-                           ("  everything you have a workspace open for · w jumps there", colour(MUTED))]
+                           ("  work in progress · w jumps there", colour(MUTED))]
         else:
             team_key = self.view["key"] + " · " if self.view["kind"] == "team" else ""
             what_is_listed = "  everyone's open issues in the team" if self.view["kind"] == "team" else "  open issues in the project"
@@ -3317,7 +3464,7 @@ class IssueListScreen:
         """Col bottom right in a thin rounded outline with his name tag, and what he says in a bubble to his left."""
         if not UiState.col_is_visible:
             return
-        screen, colour = self.screen, self.colour
+        screen, colour = self.screen, curses.color_pair  # not self.colour: Col is never greyed, whatever is in front of the list
         screen_height, screen_width = screen.getmaxyx()
         mood, words = self.col_mood_and_words()
         face = COL_FACES[mood]
@@ -3347,7 +3494,7 @@ class IssueListScreen:
         for text, is_key in bubble_parts:
             if column < face_x - 1:
                 screen.addnstr(screen_height - 4, column, text, face_x - 1 - column,
-                               keycap_attribute() if is_key and not UiState.grey_out_behind_dialog else colour(COL_ACCENT) | curses.A_BOLD)
+                               keycap_attribute() if is_key else colour(COL_ACCENT) | curses.A_BOLD)
             column += len(text)
 
     def footer_hints(self, only_those_that_work_on_an_empty_list=False):
@@ -3602,7 +3749,7 @@ class IssueListScreen:
             col_reacts_to("pick")
 
     def show_active_workspaces(self):
-        """W switches to everything with a workspace open, and W again (or h) switches back."""
+        """W switches between everything with a workspace open (what the popup opens on) and my issues; h goes to my issues too."""
         self.switch_to_view(None if self.view == ACTIVE_WORKSPACES_VIEW else ACTIVE_WORKSPACES_VIEW)
 
     def browse_a_team(self):
@@ -3668,6 +3815,10 @@ class IssueListScreen:
         return f"gave Col a bone  ·  {bones_today} today"
 
     def show_the_tour_again(self):
+        if self.view:  # the tour walks through my issues
+            self.switch_to_view(None)
+            self.work_out_visible_rows_and_cursor()
+            UiState.list_has_issues = bool(self.issue_row_numbers)
         start_guided_tour(self.screen)
 
     def open_setup(self):
@@ -3788,6 +3939,10 @@ def _test():
     assert "B" in CHARACTERS_BOUND_ON_THE_LIST and "m" not in CHARACTERS_BOUND_ON_THE_LIST and "5" in CHARACTERS_BOUND_ON_THE_LIST
     assert [keys for group, rows in KEY_REFERENCE_GROUPS if group == "Open elsewhere" for keys, _ in rows] == ["g", "L", "y"]
     assert text_after_typing("ab", 127) == "a" and text_after_typing("a", "ö") == "aö" and text_after_typing("a", ord("b")) == "ab"
+    assert text_and_cursor_after_typing("ac", 1, "b") == ("abc", 2) and text_and_cursor_after_typing("abc", 2, 127) == ("ac", 1)
+    assert text_and_cursor_after_typing("abc", 0, curses.KEY_LEFT) == ("abc", 0) and text_and_cursor_after_typing("abc", 0, 127) == ("abc", 0)
+    assert text_and_cursor_after_typing("abc", 1, curses.KEY_END) == ("abc", 3) and text_and_cursor_after_typing("abc", 1, "\n") is None
+    assert rows_of_text_with_cursor("abcdef", 2, 4) == ["ab▏c", "def"] and rows_of_text_with_cursor("", 0, 4) == ["▏"]
     assert text_after_typing("a", 27) is None and text_after_typing("a", "\n") is None and text_after_typing("a", curses.KEY_UP) is None
     DAILY_REPORT["cur"] = 1
     report = "## plate\n- **PLA-1 one** — fine\n- **loose thing** — nobody filed it\n"
