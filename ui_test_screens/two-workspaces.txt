@@ -42,7 +42,7 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel                  │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
 
 ########## 002 before 'j'
@@ -88,7 +88,7 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel                  │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
 
 ########## 003 before 'w'
@@ -134,7 +134,7 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority       │   ╰─ω─╯~   │
+  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority      │   ╰─ω─╯~   │
   A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
 
 ########## 004 before 27
@@ -226,7 +226,7 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority       │   ╰─ω─╯~   │
+  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority      │   ╰─ω─╯~   │
   A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
 
 ########## 006 before 27
@@ -318,7 +318,7 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                           “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority       │   ╰─ω─╯~   │
+  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority      │   ╰─ω─╯~   │
   A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
 
 ########## 008 before 27
@@ -337,7 +337,7 @@
    1  PLA-4     ▮▯▯ low  ╭──────────────────────────────────────────────────────────────────────────────────────────────────╮                 1w ago
                          │  PLA-2  start                                                                               esc  │
   ◌ Backlog 1  ──────────│  / filter                                                                                        │───────────────────────
-   2  PLA-5     ▯▯▯      │  ╭─ →  phases ────────────────────────────────╮ ╭─ ⎇  clean slate ───────────────────────────╮   │                 3w ago
+   2  PLA-5     ▯▯▯      │  ╭─ →  phases ────────────────────────────────╮ ╭─ ⎇  free session ──────────────────────────╮   │                 3w ago
                          │  │                                            │ │                                            │   │
   ◈ Triage 1  ───────────│  │ Col walks you through the issue step by    │ │ Col with just the issue, no steps. In a    │   │───────────────────────
    3  PLA-6     ▯▯▯      │  │ step: write → plan → build → review. Runs  │ │ repo (a worktree on the issue's branch),   │   │                 3d ago
@@ -349,9 +349,9 @@
                          │                                                                                                  │
                          │ ▎▶  jump to one of its 2 open workspaces  ·  you're already working on it                        │
                          │  →  phases on the issue branch                                                                   │
-                         │  ⎇  clean slate in a repo  ·  pick one, a worktree on the issue branch                           │
-                         │  ○  clean slate without a repo  ·  just the issue, for thinking and writing                      │
-                         │  ⎇  clean slate on PR #7  ·  alpha  erik/pla-2-second                                            │
+                         │  ⎇  free session in a repo  ·  pick one, a worktree on the issue branch                          │
+                         │  ○  free session without a repo  ·  just the issue, for thinking and writing                     │
+                         │  ⎇  free session on PR #7  ·  alpha  erik/pla-2-second                                           │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
 
@@ -410,7 +410,7 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                           “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority       │   ╰─ω─╯~   │
+  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority      │   ╰─ω─╯~   │
   A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
 
 ########## 010 before 'j'

@@ -71,7 +71,7 @@ Everything is also clickable, and `?` shows this list in the app.
 
 | | |
 |---|---|
-| **Work on an issue** | `enter` start · `space` preview · `w` jump to its workspace · `a` ask Col · `C` comment · `c` clean slate |
+| **Work on an issue** | `enter` start · `space` preview · `w` jump to its workspace · `a` ask Col · `C` comment · `c` free session |
 | **Change it** | `S` status · `P` priority · `A` assign · `X` cancel · `U` undo · `n` new issue |
 | **Open elsewhere** | `g` pull request · `L` Linear · `y` copy link |
 | **Views** | `b` daily report · `t` team · `T` project · `R` review inbox · `r` refresh |

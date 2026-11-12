@@ -492,7 +492,7 @@ def choose_new_assignee(screen, issue):
 
 
 COL_SEND_OFF_LINES = {"issue": "go write it so anyone could pick it up", "plan": "think first, code later. go",
-            "build": "fetch! bring back green tests", "review": "fresh eyes. be picky. sniff every line", "clean": "off you go, have a look around",
+            "build": "fetch! bring back green tests", "review": "fresh eyes. be picky. sniff every line", "free": "off you go, have a look around",
             "pr": "onto the PR's branch. make it mergeable"}
 
 
@@ -933,8 +933,8 @@ def ensure_worktree_for_branch(repo, branch):
 
 
 def render_phase_prompt(phase, issue, paths, notes):
-    # clean slate is deliberately without common.md: no worktrees, phases or notes conventions
-    text = ("" if phase == "clean" else (PROMPTS_DIR / "common.md").read_text() + "\n") + (PROMPTS_DIR / f"{phase}.md").read_text()
+    # free session is deliberately without common.md: no worktrees, phases or notes conventions
+    text = ("" if phase == "free" else (PROMPTS_DIR / "common.md").read_text() + "\n") + (PROMPTS_DIR / f"{phase}.md").read_text()
     for placeholder, replacement in {"id": issue["identifier"], "title": issue["title"], "url": issue["url"], "branch": issue["branchName"],
                  "worktrees": "\n".join(f"- {folder}" for folder in paths) or "- none: this issue isn't tied to a repo, you start in the notes folder",
                  "notes": str(notes)}.items():
@@ -1671,7 +1671,7 @@ def show_daily_report(screen, issues, today):
             if bullet_line_numbers:
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
-                        + " · c clean slate on it · a ask Col about it · j/k topics · d/u page · r write it again")
+                        + " · c free session on it · a ask Col about it · j/k topics · d/u page · r write it again")
                 draw_footer_from_text(screen, footer_text + " · esc/h close")
 
     def under_menu():  # draw_dialog_box() paints the backdrop first: hand it the list while the report draws itself, no pop-open
@@ -1698,7 +1698,7 @@ def show_daily_report(screen, issues, today):
             choices = [("l", f"go to {identifier} in the list") if identifier in my_issue_identifiers else
                        ("l", f"start working on {identifier}  ·  not yours yet, it gets assigned to you") if identifier else
                        ("n", "create a Linear issue from this topic"),
-                       ("c", "clean slate on it"), ("a", "ask Col about it")]
+                       ("c", "free session on it"), ("a", "ask Col about it")]
             rows_the_menu_needs = len(choices) + 6
             row_for_the_menu = topic_position_on_screen[1] if topic_position_on_screen[1] + rows_the_menu_needs <= screen.getmaxyx()[0] - 6 else topic_position_on_screen[0] - rows_the_menu_needs
             tour_sees("topic menu")
@@ -1713,21 +1713,21 @@ def show_daily_report(screen, issues, today):
             key = ord(choices[picked][0])  # from here on it is as if that short key was pressed
         if topic and key == ord("a"):
             chat_with_col(screen, None, report=report_text, issues=issues, topic=(topic.number, topic.text))
-        elif topic and key == ord("c") and topic.issue_identifier:  # clean slate on the issue, yours or not
+        elif topic and key == ord("c") and topic.issue_identifier:  # free session on the issue, yours or not
             try:
                 issue = next((listed_issue for listed_issue in issues if listed_issue["identifier"] == topic.issue_identifier), None) or run_with_spinner(
                     screen, f"fetching {topic.issue_identifier}…", lambda: fetch_issue_by_identifier(topic.issue_identifier))
                 UiState.col_is_working = False
-                if error := start_clean_slate(screen, issue):
+                if error := start_free_session(screen, issue):
                     show_message_for_a_moment(screen, error)
             except Exception as error:
                 show_message_for_a_moment(screen, f"couldn't fetch {topic.issue_identifier}: {error}"[:120])
-        elif topic and key == ord("c"):  # no issue: a clean slate on the topic itself, in a notes folder of its own
+        elif topic and key == ord("c"):  # no issue: a free session on the topic itself, in a notes folder of its own
             headline = topic.text.split(" — ")[0].strip("* ")[:60]
             stand_in_issue = {"identifier": f"topic-{datetime.now():%Y%m%d}-{topic.number + 1}", "title": headline, "url": "",
                               "branchName": "", "assignee": {"displayName": saved_user_name() or "you"}}
             UiState.col_is_working = False
-            if error := start_clean_slate(screen, stand_in_issue, topic=topic.text):
+            if error := start_free_session(screen, stand_in_issue, topic=topic.text):
                 show_message_for_a_moment(screen, error)
         if key == ord("r"):  # start over: stop a running one, forget today's
             for process in DAILY_REPORT["procs"]:
@@ -2291,39 +2291,39 @@ def start_work_on_issue(screen, issue, phase=None):
     pull_request_branches = linked_pull_request_branches(issue) if phase is None else []
     if phase is None:
         tour_sees("start dialog")
-    if phase is None:  # how to start: phases, or a clean slate in a repo / without one / on a linked PR's branch
+    if phase is None:  # how to start: phases, or a free session in a repo / without one / on a linked PR's branch
         open_workspace_count = len(workspaces_open_for_issue(issue))
         jump_row = "▶  jump to its open workspace  ·  you're already working on it" if open_workspace_count == 1 else \
             f"▶  jump to one of its {open_workspace_count} open workspaces  ·  you're already working on it"
         ways_to_start = ([jump_row] if workspace else []) + \
-                ["→  phases on the issue branch", "⎇  clean slate in a repo  ·  pick one, a worktree on the issue branch",
-                 "○  clean slate without a repo  ·  just the issue, for thinking and writing"] + \
-                [f"⎇  clean slate on PR #{n}  ·  {repo}  {branch}" for repo, branch, n in pull_request_branches]
+                ["→  phases on the issue branch", "⎇  free session in a repo  ·  pick one, a worktree on the issue branch",
+                 "○  free session without a repo  ·  just the issue, for thinking and writing"] + \
+                [f"⎇  free session on PR #{n}  ·  {repo}  {branch}" for repo, branch, n in pull_request_branches]
         n = choose_from_list(screen, f"{identifier}  ·  start", ways_to_start, cards=(
             ("→  phases", "Col walks you through the issue step by step: write → plan → build → review. "
                           "Runs in a worktree on the issue's own branch. Notes are kept between sessions, so you can stop and pick up later."),
-            ("⎇  clean slate", "Col with just the issue, no steps. In a repo (a worktree on the issue's branch), without one "
+            ("⎇  free session", "Col with just the issue, no steps. In a repo (a worktree on the issue's branch), without one "
                                "(just the notes folder), or on a linked PR's branch. For a quick look, a review, or a small fix.")))
         if n is None:
             return ""
         if workspace and n == 0:
             return jump_to_a_workspace_of_issue(screen, issue)
         n -= bool(workspace)
-        if n == 1:  # clean slate in a repo
+        if n == 1:  # free session in a repo
             worktree_by_repository = choose_repositories_and_make_worktrees(screen, issue, [])
             if not worktree_by_repository:
-                return "" if worktree_by_repository is not None else start_clean_slate(screen, issue)
-            return start_clean_slate(screen, issue, cwd=list(worktree_by_repository.values())[0], extra=list(worktree_by_repository.values())[1:])
+                return "" if worktree_by_repository is not None else start_free_session(screen, issue)
+            return start_free_session(screen, issue, cwd=list(worktree_by_repository.values())[0], extra=list(worktree_by_repository.values())[1:])
         if n == 2:
-            return start_clean_slate(screen, issue)
+            return start_free_session(screen, issue)
         if n > 2:
-            return start_clean_slate_on_pull_request(screen, issue, *pull_request_branches[n - 3])
+            return start_free_session_on_pull_request(screen, issue, *pull_request_branches[n - 3])
     worktree_by_repository = run_with_spinner(screen, "looking for the issue's worktrees…", lambda: worktrees_on_branch(issue["branchName"]))
     if not worktree_by_repository:
         worktree_by_repository = choose_repositories_and_make_worktrees(screen, issue, [])
-        if worktree_by_repository is None:  # no repo: a new issue still gets written, anything else is a clean slate
+        if worktree_by_repository is None:  # no repo: a new issue still gets written, anything else is a free session
             if phase != "issue":
-                return start_clean_slate(screen, issue)
+                return start_free_session(screen, issue)
             worktree_by_repository = {}
         elif not worktree_by_repository:
             return ""
@@ -2392,13 +2392,13 @@ def open_claude_in_workspace(issue, workspace, cwd, tab_label, prompt_file, extr
     run_command("herdr", "pane", "run", created_ids["root_pane"]["pane_id"], f'claude "$(cat {shlex.quote(str(prompt_file))})" --add-dir {quoted_folders}')
 
 
-def start_clean_slate_on_pull_request(screen, issue, repo, branch, number):
-    """Clean slate in a worktree of a linked PR's branch: Claude with the issue (and the PR), no phases."""
+def start_free_session_on_pull_request(screen, issue, repo, branch, number):
+    """Free session in a worktree of a linked PR's branch: Claude with the issue (and the PR), no phases."""
     worktree_folder = run_with_spinner(screen, f"setting up {repo} on {branch}", lambda: ensure_worktree_for_branch(REPOSITORIES_FOLDER / repo, branch))
     notes_folder = NOTES_DIR / issue["identifier"]
     notes_folder.mkdir(parents=True, exist_ok=True)
     prompt_file = notes_folder / f"prompt-pr-{number}.md"
-    prompt_file.write_text(render_phase_prompt("clean", issue, [], notes_folder) + f"\nYou're in {worktree_folder}, a worktree of {repo} on {branch}, "
+    prompt_file.write_text(render_phase_prompt("free", issue, [], notes_folder) + f"\nYou're in {worktree_folder}, a worktree of {repo} on {branch}, "
                       f"the branch of PR #{number} linked to the issue. Read the PR too (gh pr view {number}).\n")
     show_status_message(screen, f"starting #{number}…")
     workspace = workspace_open_for_issue(issue)
@@ -2408,24 +2408,24 @@ def start_clean_slate_on_pull_request(screen, issue, repo, branch, number):
     sys.exit()
 
 
-def start_clean_slate(screen, issue, topic=None, cwd=None, extra=()):
+def start_free_session(screen, issue, topic=None, cwd=None, extra=()):
     """Claude with just the issue: no phases. Runs in the issue's notes folder, or in cwd (a worktree) with the
     notes and any extra worktrees reachable. topic: a report topic with no issue; Col starts from that text instead."""
     notes_folder = NOTES_DIR / issue["identifier"]
     notes_folder.mkdir(parents=True, exist_ok=True)
-    prompt_file = notes_folder / "prompt-clean.md"
-    prompt_file.write_text((render_phase_prompt("clean", issue, [], notes_folder) + (f"\nYou're in a worktree of the repo at {cwd}, on the issue's branch."
+    prompt_file = notes_folder / "prompt-free.md"
+    prompt_file.write_text((render_phase_prompt("free", issue, [], notes_folder) + (f"\nYou're in a worktree of the repo at {cwd}, on the issue's branch."
                                                             + (" Also checked out: " + ", ".join(map(str, extra)) if extra else "") if cwd else ""))
                       if not topic else
                       f"From Col's daily report ({datetime.now():%Y-%m-%d}), a topic with no Linear issue yet:\n\n{topic}\n\n"
                       f"Look up what's behind it (Linear, Slack, GitHub via gh) and tell me in a few lines where it stands, "
                       f"then wait for me. If you want to keep notes, put them in {notes_folder}/.")
-    show_status_message(screen, "starting clean slate…")
+    show_status_message(screen, "starting free session…")
     workspace = workspace_open_for_issue(issue)
-    if error := open_claude_in_workspace(issue, workspace, cwd or notes_folder, "clean", prompt_file, [notes_folder] + list(extra)):
+    if error := open_claude_in_workspace(issue, workspace, cwd or notes_folder, "free", prompt_file, [notes_folder] + list(extra)):
         return error
     run_with_spinner(screen, "telling Linear you're on it…", lambda: assign_to_me_if_unassigned(issue))
-    show_col_send_off(screen, "clean")
+    show_col_send_off(screen, "free")
     sys.exit()
 
 
@@ -2469,7 +2469,7 @@ KEY_BINDINGS = [
     KeyBinding("w",     "jump_to_workspace_of_issue",        True,   WORK_ON_THE_ISSUE, "w",                 "jump to its workspace", "w", "jump to its workspace"),
     KeyBinding("a",     "ask_col_about_issue",               True,   WORK_ON_THE_ISSUE, "a",                 "ask Col",               "a", "ask Col"),
     KeyBinding("C",     "comment_on_issue",                  True,   WORK_ON_THE_ISSUE, "C",                 "comment",               "C", "comment"),
-    KeyBinding("c",     "start_clean_slate_on_issue",        True,   WORK_ON_THE_ISSUE, "c",                 "clean slate with Col",  "c", "clean slate"),
+    KeyBinding("c",     "start_free_session_on_issue",        True,   WORK_ON_THE_ISSUE, "c",                 "free session with Col",  "c", "free session"),
     KeyBinding("S",     "change_status_of_issue",            True,   CHANGE_THE_ISSUE,  "S",                 "status",                "S", "status"),
     KeyBinding("P",     "change_priority_of_issue",          True,   CHANGE_THE_ISSUE,  "P",                 "priority",              "P", "priority"),
     KeyBinding("A",     "change_assignee_of_issue",          True,   CHANGE_THE_ISSUE,  "A",                 "assign",                "A", "assign"),
@@ -3114,8 +3114,8 @@ class IssueListScreen:
             col_reacts_to("comment", "cheer")
         return footer_message
 
-    def start_clean_slate_on_issue(self):
-        return start_clean_slate(self.screen, self.issue_under_cursor())
+    def start_free_session_on_issue(self):
+        return start_free_session(self.screen, self.issue_under_cursor())
 
     # -- change the issue --
 
@@ -3328,8 +3328,8 @@ def _test():
         assert "- /wt/a\n- /wt/b" in text
         assert "PLA-9" in text and "erik/pla-9" in text and "{" not in text, phase
     assert "- none:" in render_phase_prompt("issue", issue, [], "/notes/PLA-9")
-    clean = render_phase_prompt("clean", issue, [], "/notes/PLA-9")
-    assert "PLA-9" in clean and "/notes/PLA-9" in clean and "worktree" not in clean and "{" not in clean
+    free_session_prompt = render_phase_prompt("free", issue, [], "/notes/PLA-9")
+    assert "PLA-9" in free_session_prompt and "/notes/PLA-9" in free_session_prompt and "worktree" not in free_session_prompt and "{" not in free_session_prompt
     att = {"attachments": {"nodes": [{"url": "https://github.com/o/r/pull/7", "title": "x"},
                                      {"url": "https://example.slack.com/archives/C1/p1", "title": "slack"}]}}
     assert linked_pull_requests(att) == [("https://github.com/o/r/pull/7", "x")] and linked_pull_requests({}) == []

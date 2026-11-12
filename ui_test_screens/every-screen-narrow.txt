@@ -42,7 +42,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 002 before 'j'
@@ -88,7 +88,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 003 before 'k'
@@ -135,7 +135,7 @@
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
-  C comment   c clean slate   S status   P priority   A assign   ? all keys          ╰──╴ Col ╶───╯
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 004 before '?'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -180,7 +180,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 005 before 10
@@ -208,7 +208,7 @@
    │   w                 jump to its workspace       t                 team                     │
    │   a                 ask Col                     T                 project                  │
    │   C                 comment                     R                 review inbox             │
-   │   c                 clean slate with Col        r                 refresh                  │
+   │   c                 free session with Col       r                 refresh                  │
    │                                                 h  or  esc        back, then close         │
    │  OPEN ELSEWHERE                                 q                 close                    │
    │   g                 pull request                Z                 Col on / off             │
@@ -272,7 +272,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                               “that's all of them. you've got this” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 007 before 'l'
@@ -502,7 +502,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 012 before 'j'
@@ -640,7 +640,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 015 before 'j'
@@ -916,7 +916,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “undone, no harm done” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 021 before 'p'
@@ -1284,7 +1284,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 029 before 10
@@ -1376,7 +1376,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 031 before 'b'
@@ -1422,7 +1422,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 032 before 'j'
@@ -1468,7 +1468,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-1   c clean slate on it   a ask Col about it               │   ╰─ω─╯~   │
+  l/enter actions for PLA-1   c free session on it   a ask Col about it              │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
 ########## 033 before 'l'
@@ -1514,7 +1514,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c clean slate on it   a ask Col about it              │   ╰─ω─╯~   │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
 ########## 034 before 27
@@ -1541,7 +1541,7 @@
    │     │  / filter                                                                    │       │
    │   • │                                                                              │       │
    │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │       │
-   │     │  c   clean slate on it                                                       │       │
+   │     │  c   free session on it                                                      │       │
    │    L│  a   ask Col about it                                                        │       │
    │   ──│                                                                              │────   │
    │     ╰──────────────────────────────────────────────────────────────────────────────╯       │
@@ -1606,7 +1606,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c clean slate on it   a ask Col about it              │   ╰─ω─╯~   │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
 ########## 036 before 'K'
@@ -1652,7 +1652,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 037 before 'K'
@@ -1948,7 +1948,7 @@
   ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
   │  PLA-3  start                                                                           esc  │
   │  / filter                                                                                    │
-  │  ╭─ →  phases ──────────────────────────────╮ ╭─ ⎇  clean slate ─────────────────────────╮   │
+  │  ╭─ →  phases ──────────────────────────────╮ ╭─ ⎇  free session ────────────────────────╮   │
   │  │                                          │ │                                          │   │
   │  │ Col walks you through the issue step by  │ │ Col with just the issue, no steps. In a  │   │
   │  │ step: write → plan → build → review.     │ │ repo (a worktree on the issue's branch), │   │
@@ -1959,8 +1959,8 @@
   │                                                                                              │
   │                                                                                              │
   │ ▎→  phases on the issue branch                                                               │
-  │  ⎇  clean slate in a repo  ·  pick one, a worktree on the issue branch                       │
-  │  ○  clean slate without a repo  ·  just the issue, for thinking and writing                  │
+  │  ⎇  free session in a repo  ·  pick one, a worktree on the issue branch                      │
+  │  ○  free session without a repo  ·  just the issue, for thinking and writing                 │
   │                                                                                              │
   ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
 
@@ -2020,7 +2020,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                      “to the PR. be kind in review” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 045 before 27
@@ -2112,7 +2112,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                              “fresh issue. write it so a teammate could pick it up” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 047 before 'h'
@@ -2296,7 +2296,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 051 before 27
@@ -2388,7 +2388,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 053 before 27
@@ -2480,7 +2480,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “a few things first” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 055 before 'T'
@@ -2618,7 +2618,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                         “reviews waiting. be the reviewer you want” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 058 before 27
@@ -2710,7 +2710,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 060 before '5'
@@ -2756,7 +2756,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 061 before 'k'
@@ -2802,7 +2802,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 062 before 't'
@@ -2848,7 +2848,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 063 before '/'
@@ -3124,7 +3124,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 069 before 'j'
@@ -3584,7 +3584,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 079 before 'B'
@@ -3906,7 +3906,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 086 before ('click row with', 'PLA-4')
@@ -3952,7 +3952,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 087 before ('click hint', 27)
@@ -4044,7 +4044,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 089 before ('wheel', 'up')
@@ -4090,7 +4090,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 090 before ('click hint', '?')
@@ -4136,7 +4136,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 091 before 10
@@ -4164,7 +4164,7 @@
    │   w                 jump to its workspace       t                 team                     │
    │   a                 ask Col                     T                 project                  │
    │   C                 comment                     R                 review inbox             │
-   │   c                 clean slate with Col        r                 refresh                  │
+   │   c                 free session with Col       r                 refresh                  │
    │                                                 h  or  esc        back, then close         │
    │  OPEN ELSEWHERE                                 q                 close                    │
    │   g                 pull request                Z                 Col on / off             │
@@ -4228,7 +4228,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                               “that's all of them. you've got this” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 093 before ('click row with', 'In Review')
@@ -4458,7 +4458,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
    “1/24  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 098 before 10
@@ -4504,7 +4504,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
    “1/24  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 099 before 'j'
@@ -4550,7 +4550,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
    “1/24  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 100 before 'k'
@@ -4596,7 +4596,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                     “2/24  and  k  to move back up” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 101 before ' '
@@ -4642,7 +4642,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                 “3/24   space  previews the issue under the cursor” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 102 before 'l'
@@ -5148,7 +5148,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                   “11/24   S  changes the issue's status. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 113 before 'j'
@@ -5332,7 +5332,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                        “13/24   P  sets its priority, the same way” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 117 before 27
@@ -5424,7 +5424,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                  “15/24   A  assigns it to someone” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 119 before 27
@@ -5516,7 +5516,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                   “17/24   b  opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 121 before 'l'
@@ -5562,7 +5562,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “18/24   j  /  k  pick a topic.  l  or  enter  shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c clean slate on it   a ask Col about it              │   ╰─ω─╯~   │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
 ########## 122 before 27
@@ -5589,7 +5589,7 @@
    │     │  / filter                                                                    │       │
    │   • │                                                                              │       │
    │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │       │
-   │     │  c   clean slate on it                                                       │       │
+   │     │  c   free session on it                                                      │       │
    │    L│  a   ask Col about it                                                        │       │
    │   ──│                                                                              │────   │
    │     ╰──────────────────────────────────────────────────────────────────────────────╯       │
@@ -5654,7 +5654,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                     “20/24   esc  or  h  once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c clean slate on it   a ask Col about it              │   ╰─ω─╯~   │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
 ########## 124 before 'j'
@@ -5700,7 +5700,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
 “21/24  green ▶ rows have a workspace open:  w  on one jumps into it.  j  to go on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 125 before 'j'
@@ -5746,7 +5746,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
          “22/24   L  opens the issue in Linear,  g  its PR on GitHub.  j  to go on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 126 before 10
@@ -5793,7 +5793,7 @@
           “23/24   l  or  enter  starts work on an issue. press it and have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
-  C comment   c clean slate   S status   P priority   A assign   ? all keys          ╰──╴ Col ╶───╯
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 127 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -5811,7 +5811,7 @@
   ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
   │  PLA-2  start                                                                           esc  │
   │  / filter                                                                                    │
-  │  ╭─ →  phases ──────────────────────────────╮ ╭─ ⎇  clean slate ─────────────────────────╮   │
+  │  ╭─ →  phases ──────────────────────────────╮ ╭─ ⎇  free session ────────────────────────╮   │
   │  │                                          │ │                                          │   │
   │  │ Col walks you through the issue step by  │ │ Col with just the issue, no steps. In a  │   │
   │  │ step: write → plan → build → review.     │ │ repo (a worktree on the issue's branch), │   │
@@ -5823,9 +5823,9 @@
   │                                                                                              │
   │ ▎▶  jump to its open workspace  ·  you're already working on it                              │
   │  →  phases on the issue branch                                                               │
-  │  ⎇  clean slate in a repo  ·  pick one, a worktree on the issue branch                       │
-  │  ○  clean slate without a repo  ·  just the issue, for thinking and writing                  │
-  │  ⎇  clean slate on PR #7  ·  alpha  erik/pla-2-second                                        │
+  │  ⎇  free session in a repo  ·  pick one, a worktree on the issue branch                      │
+  │  ○  free session without a repo  ·  just the issue, for thinking and writing                 │
+  │  ⎇  free session on PR #7  ·  alpha  erik/pla-2-second                                       │
   │                                                                                              │
   ╰──────────────────────────────────────────────────────────────────────────────────────────────╯
 
@@ -5931,7 +5931,7 @@
                             “off you go.  ?  if you forget a key,  O  for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
-  C comment   c clean slate   S status   P priority   A assign   ? all keys          ╰──╴ Col ╶───╯
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 130 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6023,7 +6023,7 @@
    “1/24  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
-  C comment   c clean slate   S status   P priority   A assign   ? all keys          ╰──╴ Col ╶───╯
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 132 before 'Q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6069,7 +6069,7 @@
    “1/24  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
-  C comment   c clean slate   S status   P priority   A assign   ? all keys          ╰──╴ Col ╶───╯
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 133 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6115,7 +6115,7 @@
                          “tour's off, every key is yours again.  O  starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
-  C comment   c clean slate   S status   P priority   A assign   ? all keys          ╰──╴ Col ╶───╯
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 134 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6160,7 +6160,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                          “tour's off, every key is yours again.  O  starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 135 before 27
@@ -6252,7 +6252,7 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 finished cleanly
