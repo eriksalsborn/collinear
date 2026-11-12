@@ -240,22 +240,22 @@ def celebrate_change(what_happened):
 
 
 def draw_change_receipt(screen):
-    """The receipt of the last change, centred on the row under the title, for four seconds. It is drawn with the
-    list, and the list is behind every dialog, so it shows wherever the change was made."""
+    """The receipt of the last change, for four seconds, at the bottom left: on the row just above the footer's
+    hints, which no dialog covers. It is drawn with the list, and the list is behind every dialog, so it shows
+    wherever the change was made."""
     age = time.time() - CHANGE_RECEIPT["shown_at"]
     if not CHANGE_RECEIPT["text"] or not 0 <= age < 4:
         return
-    screen_width = screen.getmaxyx()[1]
-    chip = f" ✓ {CHANGE_RECEIPT['text']} "[:max(screen_width - 30, 10)]
+    screen_height, screen_width = screen.getmaxyx()
+    row, room = screen_height - 3, screen_width - (COL_CORNER_WIDTH if UiState.col_is_visible else 0) - 4
     pips_filled = CHANGE_RECEIPT["count"] % 5 or 5
     tally = f"{'▰' * pips_filled}{'▱' * (5 - pips_filled)} {CHANGE_RECEIPT['count']} today"
-    sparkles_left, sparkles_right = (("✦ ", " ✦"), ("✦ · ", " · ✦"), ("·   ", "   ·"))[int(age / 0.2)] if age < 0.6 else ("", "")
-    x = max((screen_width - len(chip) - len(tally) - 3) // 2, 1)
+    chip = f" ✓ {CHANGE_RECEIPT['text']} "[:max(room - len(tally) - 12, 10)]
+    sparkles = ("✦", "· ✦", "  · ✦")[int(age / 0.2)] if age < 0.6 else ""  # they drift off to the right and fade
     green = curses.color_pair(GREEN) | curses.A_BOLD
-    screen.addnstr(1, max(x - len(sparkles_left), 0), sparkles_left, len(sparkles_left), curses.color_pair(YELLOW) | curses.A_BOLD)
-    screen.addnstr(1, x, chip, len(chip), green | curses.A_REVERSE)
-    screen.addnstr(1, x + len(chip), sparkles_right, len(sparkles_right), curses.color_pair(YELLOW) | curses.A_BOLD)
-    screen.addnstr(1, x + len(chip) + 3, tally, max(screen_width - x - len(chip) - 4, 0), green if pips_filled == 5 else curses.color_pair(MUTED))
+    screen.addnstr(row, 2, chip, max(room, 0), green | curses.A_REVERSE)
+    screen.addnstr(row, 2 + len(chip) + 2, tally, max(room - len(chip) - 2, 0), green if pips_filled == 5 else curses.color_pair(MUTED))
+    screen.addnstr(row, 2 + len(chip) + 2 + len(tally) + 1, sparkles, max(room - len(chip) - len(tally) - 3, 0), curses.color_pair(YELLOW) | curses.A_BOLD)
 
 
 def read_stored_value(name, default=None):

@@ -737,7 +737,7 @@
 
 ########## 017 before 'U'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                                ✦  ✓ PLA-1 → high  ✦ ▰▱▱▱▱ 1 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -777,13 +777,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                              “sorted. the urgent ones bark loudest” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-1 → high   ▰▱▱▱▱ 1 today ✦                                                  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ PLA-1 → high  ·  U undo                                                          ╰──╴ Col ╶───╯
 
 ########## 018 before 'A'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -823,13 +823,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “undone, no harm done” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ undid PLA-1 → high                                                               ╰──╴ Col ╶───╯
 
 ########## 019 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -869,13 +869,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “undone, no harm done” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 020 before '/'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -915,13 +915,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “undone, no harm done” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 021 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -961,13 +961,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   / ▏ enter keep   esc clear                                                         ╰──╴ Col ╶───╯
 
 ########## 022 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1007,13 +1007,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   / p▏ enter keep   esc clear                                                        ╰──╴ Col ╶───╯
 
 ########## 023 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1053,13 +1053,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   / pl▏ enter keep   esc clear                                                       ╰──╴ Col ╶───╯
 
 ########## 024 before '-'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1099,13 +1099,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   / pla▏ enter keep   esc clear                                                      ╰──╴ Col ╶───╯
 
 ########## 025 before '2'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1145,13 +1145,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   / pla-▏ enter keep   esc clear                                                     ╰──╴ Col ╶───╯
 
 ########## 026 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              1 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◔ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -1191,13 +1191,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   / pla-2▏ enter keep   esc clear                                                    ╰──╴ Col ╶───╯
 
 ########## 027 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              1 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◔ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -1237,13 +1237,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   / pla-2  esc clear   ? all keys                                                    ╰──╴ Col ╶───╯
 
 ########## 028 before 't'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1283,13 +1283,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 029 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1329,13 +1329,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 030 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
  h ‹ my issues  ›   APP · App   everyone's open issues in the team                        4 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1375,13 +1375,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 031 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1421,13 +1421,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 032 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -1467,13 +1467,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-1   c free session on it   a ask Col about it              │   ╰─ω─╯~   │
   s move to to-do   x discard it   p to-do list   j/k topics   d/u page              ╰──╴ Col ╶───╯
 
 ########## 033 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -1513,13 +1513,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   s move to to-do   x discard it   p to-do list   j/k topics   d/u page              ╰──╴ Col ╶───╯
 
 ########## 034 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -1559,13 +1559,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back           ╰──╴ Col ╶───╯
 
 ########## 035 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -1605,13 +1605,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   s move to to-do   x discard it   p to-do list   j/k topics   d/u page              ╰──╴ Col ╶───╯
 
 ########## 036 before 'K'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1651,13 +1651,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 037 before 'K'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1697,13 +1697,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ key hints off  ·  ? still lists every key, K brings them back                    ╰──╴ Col ╶───╯
 
 ########## 038 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1743,13 +1743,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ key hints are back                                                               ╰──╴ Col ╶───╯
 
 ########## 039 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1789,13 +1789,13 @@
 
 
 
-
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦
 
   ✓ Col is off duty  ·  Z brings him back
 
 ########## 040 before 'y'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1835,13 +1835,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                    “missed you too” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ Col is back                                                                      ╰──╴ Col ╶───╯
 
 ########## 041 before 'g'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1881,13 +1881,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                               “copied. go paste it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ copied PLA-3 link                                                                ╰──╴ Col ╶───╯
 
 ########## 042 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1927,13 +1927,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                      “to the PR. be kind in review” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ opened alpha #7                                                                  ╰──╴ Col ╶───╯
 
 ########## 043 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1973,13 +1973,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                      “to the PR. be kind in review” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 044 before 'n'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2019,13 +2019,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                      “to the PR. be kind in review” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 045 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2065,13 +2065,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                      “to the PR. be kind in review” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 046 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2111,13 +2111,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                              “fresh issue. write it so a teammate could pick it up” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 047 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
@@ -2157,13 +2157,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster                              │   ╰─ω─╯~   │
   ctrl-d/u scroll the side   esc close                                               ╰──╴ Col ╶───╯
 
 ########## 048 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
@@ -2203,13 +2203,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster                              │   ╰─ω─╯~   │
   ctrl-d/u scroll the side   esc close                                               ╰──╴ Col ╶───╯
 
 ########## 049 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
@@ -2249,13 +2249,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster                              │   ╰─ω─╯~   │
   ctrl-d/u scroll the side   esc close                                               ╰──╴ Col ╶───╯
 
 ########## 050 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2295,13 +2295,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 051 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2341,13 +2341,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 052 before 'D'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2387,13 +2387,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 053 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2433,13 +2433,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “a few things first” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter fix the first ✗   N your name   L new Linear key   G new GitHub token      │   ╰─ω─╯~   │
   F repositories folder   r check again   esc/h skip for now                         ╰──╴ Col ╶───╯
 
 ########## 054 before 'R'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2479,13 +2479,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “a few things first” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 055 before 'T'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2525,13 +2525,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                         “reviews waiting. be the reviewer you want” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ nothing waiting on your review                                                   ╰──╴ Col ╶───╯
 
 ########## 056 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2571,13 +2571,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                         “reviews waiting. be the reviewer you want” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 057 before 'X'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2617,13 +2617,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                         “reviews waiting. be the reviewer you want” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 058 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2663,13 +2663,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                         “reviews waiting. be the reviewer you want” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 059 before 'G'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2709,13 +2709,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 060 before '5'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2755,13 +2755,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 061 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2801,13 +2801,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 062 before 't'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2847,13 +2847,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 063 before '/'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2893,13 +2893,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                 “kept it. second thoughts are fine” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 064 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2939,13 +2939,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 065 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2985,13 +2985,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 066 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3031,13 +3031,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 067 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3077,13 +3077,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 068 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3123,13 +3123,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 069 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3169,13 +3169,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 070 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
+
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3215,13 +3215,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ▰▰▱▱▱ 2 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 071 before 'U'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                                ✦  ✓ PLA-3 → Done  ✦ ▰▰▰▱▱ 3 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re5 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◐ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
@@ -3261,13 +3261,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                  “that's 1 today, you're on a roll” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-3 → Done   ▰▰▰▱▱ 3 today ✦                                                  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ PLA-3 → Done  ·  1 done today  ·  U undo                                         ╰──╴ Col ╶───╯
 
 ########## 072 before ' '
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3307,13 +3307,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “undone, no harm done” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ undid PLA-3 → Done                                                               ╰──╴ Col ╶───╯
 
 ########## 073 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3353,13 +3353,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
   C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
 
 ########## 074 before 'o'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3399,13 +3399,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 075 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3445,13 +3445,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 076 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3491,13 +3491,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 077 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3537,13 +3537,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 078 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3583,13 +3583,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 079 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3629,13 +3629,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                   “a bone! for me? best. day. ever” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │  o═╰ω╯═o   │
   ✓ gave Col a bone  ·  1 today                                                      ╰──╴ Col ╶───╯
 
 ########## 080 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3675,13 +3675,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                        “*crunch crunch* …thank you” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │  o═╰ω╯═o   │
   ✓ gave Col a bone  ·  2 today                                                      ╰──╴ Col ╶───╯
 
 ########## 081 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3721,13 +3721,13 @@
 
 
 
-
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦
 
   ✓ Col is off duty  ·  Z brings him back
 
 ########## 082 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3767,13 +3767,13 @@
 
 
 
-
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦
 
   ✓ Col is off duty, the bone waits  ·  Z brings him back
 
 ########## 083 before 'm'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3813,13 +3813,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                    “missed you too” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ Col is back                                                                      ╰──╴ Col ╶───╯
 
 ########## 084 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re0 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -3859,13 +3859,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “on the scent” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   / m▏ enter keep   esc clear                                                        ╰──╴ Col ╶───╯
 
 ########## 085 before ('click row with', 'PLA-4')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3905,13 +3905,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 086 before ('click row with', 'PLA-4')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3951,13 +3951,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “back to the whole pile” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 087 before ('click hint', 27)
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -3997,13 +3997,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
   C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
 
 ########## 088 before ('wheel', 'down')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4043,13 +4043,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 089 before ('wheel', 'up')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4089,13 +4089,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 090 before ('click hint', '?')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4135,13 +4135,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 091 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4181,13 +4181,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   any key closes   K hides or shows these footer actions                             ╰──╴ Col ╶───╯
 
 ########## 092 before ('click hint', 'S')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4227,13 +4227,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                               “that's all of them. you've got this” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   n new issue   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 093 before ('click row with', 'In Review')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4273,13 +4273,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                               “that's all of them. you've got this” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 094 before ('click row with', 'In Review')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4319,13 +4319,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                               “that's all of them. you've got this” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 095 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4365,13 +4365,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                            “moving. keep it moving” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ PLA-4 → In Review  ·  U undo                                                     ╰──╴ Col ╶───╯
 
 ########## 096 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4411,13 +4411,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
 ########## 097 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4457,13 +4457,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
    “1/25  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 098 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4503,13 +4503,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
    “1/25  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 099 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4549,13 +4549,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
    “1/25  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 100 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4595,13 +4595,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                     “2/25  and  k  to move back up” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 101 before ' '
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4641,13 +4641,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                 “3/25   space  previews the issue under the cursor” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 102 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4687,13 +4687,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                             “4/25   l  opens the comments on the issue, next to it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
   C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
 
 ########## 103 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4733,13 +4733,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                     “5/25   C  writes a comment yourself. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 104 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4779,13 +4779,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “6/25  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 105 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4825,13 +4825,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “6/25  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 106 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4871,13 +4871,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “6/25  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 107 before 'c'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4917,13 +4917,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
            “7/25   c  lets me draft the comment for you. nothing is posted unasked” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 108 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  comment · Col drafts                                                          esc  │─
@@ -4963,13 +4963,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
              “8/25  you say what it should get across, I write it.  esc  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   enter send feedback   empty-enter post it   ↑/↓ scroll the thread                  │   ╰─ω─╯~   │
   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                            ╰──╴ Col ╶───╯
 
 ########## 109 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  comment · Col drafts                                                          esc  │─
@@ -5009,13 +5009,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
              “8/25  you say what it should get across, I write it.  esc  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   enter send feedback   empty-enter post it   ↑/↓ scroll the thread                  │   ╰─ω─╯~   │
   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                            ╰──╴ Col ╶───╯
 
 ########## 110 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -5055,13 +5055,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                  “9/25   a  asks me anything about the issue: I look it up for you” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
 ########## 111 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  ask Col                                                                       esc  │─
@@ -5101,13 +5101,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
          “10/25  you'd type a question and  enter .  esc  goes back to your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster                              │   ╰─ω─╯~   │
   ctrl-d/u scroll the side   esc close                                               ╰──╴ Col ╶───╯
 
 ########## 112 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5147,13 +5147,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                   “11/25   S  changes the issue's status. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 113 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5193,13 +5193,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
         “12/25  you'd pick one with  l  /  enter .  esc  or  h  leaves it as it is” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 114 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5239,13 +5239,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
         “12/25  you'd pick one with  l  /  enter .  esc  or  h  leaves it as it is” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 115 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5285,13 +5285,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
         “12/25  you'd pick one with  l  /  enter .  esc  or  h  leaves it as it is” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 116 before 'P'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5331,13 +5331,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                        “13/25   P  sets its priority, the same way” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 117 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5377,13 +5377,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                     “14/25   esc  or  h  backs out” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 118 before 'A'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5423,13 +5423,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                  “15/25   A  assigns it to someone” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 119 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5469,13 +5469,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
               “16/25   esc  or  h  backs out. and  U  undoes a change you did make” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 120 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5515,13 +5515,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
     “17/25   b  opens The Daily Bark: your last working day, and the loose threads” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 121 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -5561,13 +5561,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “18/25   j  /  k  pick a topic.  l  or  enter  shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   s move to to-do   x discard it   p to-do list   j/k topics   d/u page              ╰──╴ Col ╶───╯
 
 ########## 122 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -5607,13 +5607,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
               “19/25  go to its issue, start it, or ask me.  esc  or  h  backs out” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back           ╰──╴ Col ╶───╯
 
 ########## 123 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -5653,13 +5653,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                     “20/25   esc  or  h  once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   s move to to-do   x discard it   p to-do list   j/k topics   d/u page              ╰──╴ Col ╶───╯
 
 ########## 124 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5699,13 +5699,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
 “21/25  green ▶ rows have a workspace open:  w  on one jumps into it.  j  to go on” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 125 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5745,13 +5745,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “22/25  several sessions on one issue?  w  lets you pick which.  j  to go on” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 126 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5791,13 +5791,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
          “23/25   L  opens the issue in Linear,  g  its PR on GitHub.  j  to go on” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
   C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 127 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5837,13 +5837,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
           “24/25   l  or  enter  starts work on an issue. press it and have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 128 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5883,13 +5883,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                  “25/25  this is where work begins.  esc  or  h  backs out for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 129 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5929,13 +5929,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l OK, got it!                                                                      ╰──╴ Col ╶───╯
 
 ########## 130 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5975,13 +5975,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l OK, got it!                                                                      ╰──╴ Col ╶───╯
 
 ########## 131 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6021,13 +6021,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l OK, got it!                                                                      ╰──╴ Col ╶───╯
 
 ########## 132 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6067,13 +6067,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                             “off you go.  ?  if you forget a key,  O  for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 133 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6113,13 +6113,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
 ########## 134 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6159,13 +6159,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
    “1/25  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 135 before 'Q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6205,13 +6205,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
    “1/25  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                  Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 136 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6251,13 +6251,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                          “tour's off, every key is yours again.  O  starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 137 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6297,13 +6297,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                          “tour's off, every key is yours again.  O  starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 138 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6343,13 +6343,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
 ########## 139 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6389,13 +6389,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 140 before 's'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6435,13 +6435,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                                             │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
   s move to to-do   x discard it   p to-do list   j/k topics   d/u page              ╰──╴ Col ╶───╯
 
 ########## 141 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▱▱▱▱ 6 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6481,13 +6481,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▱▱▱▱ 6 today ✦                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
 ########## 142 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▱▱▱▱ 6 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6527,13 +6527,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▱▱▱▱ 6 today ✦                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
 ########## 143 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▱▱▱▱ 6 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6573,13 +6573,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▱▱▱▱ 6 today ✦                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-1   c free session on it   a ask Col about it              │   ╰─ω─╯~   │
   s move to to-do   x discard it   p to-do list   j/k topics   d/u page              ╰──╴ Col ╶───╯
 
 ########## 144 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▱▱▱▱ 6 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6619,13 +6619,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▱▱▱▱ 6 today ✦                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back           ╰──╴ Col ╶───╯
 
 ########## 145 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  Col  daily report · topic 4                                                          esc  │─
@@ -6665,13 +6665,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                      │  ▜▖ ▼  ▗▛  │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster                              │   ╰─ω─╯~   │
   ctrl-d/u scroll the side   esc close                                               ╰──╴ Col ╶───╯
 
 ########## 146 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6711,13 +6711,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
 ########## 147 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6757,13 +6757,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                      │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-99   c free session on it                  │   ╰─ω─╯~   │
   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 148 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6803,13 +6803,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                      │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-1   c free session on it                   │   ╰─ω─╯~   │
   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 149 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6849,13 +6849,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back           ╰──╴ Col ╶───╯
 
 ########## 150 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6895,13 +6895,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ▰▰▱▱▱ 7 today ✦                                      │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-1   c free session on it                   │   ╰─ω─╯~   │
   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 151 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▱▱ 8 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6941,13 +6941,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▱▱ 8 today ✦                                │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-99   c free session on it                  │   ╰─ω─╯~   │
   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 152 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▱▱ 8 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6987,13 +6987,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▱▱ 8 today ✦                                │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
 ########## 153 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▱▱ 8 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7033,13 +7033,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▱▱ 8 today ✦                                │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 154 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▱▱ 8 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7079,13 +7079,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▱▱ 8 today ✦                                │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-99   c free session on it                  │   ╰─ω─╯~   │
   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 155 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7125,13 +7125,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▰▱ 9 today ✦                                │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 156 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7171,13 +7171,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▰▱ 9 today ✦                                │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 157 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7217,13 +7217,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▰▱ 9 today ✦                                │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 158 before 'm'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7263,13 +7263,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▰▱ 9 today ✦                                │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   enter add   esc cancel                                                             ╰──╴ Col ╶───╯
 
 ########## 159 before 'e'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7309,13 +7309,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▰▱ 9 today ✦                                │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   enter add   esc cancel                                                             ╰──╴ Col ╶───╯
 
 ########## 160 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7355,13 +7355,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▰▰▰▱ 9 today ✦                                │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   enter add   esc cancel                                                             ╰──╴ Col ╶───╯
 
 ########## 161 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7401,13 +7401,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                     │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions   n create a Linear issue from this topic          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   x discard it   j/k topics              ╰──╴ Col ╶───╯
 
 ########## 162 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7447,13 +7447,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                     │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 163 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7493,13 +7493,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                     │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 164 before 'm'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7539,13 +7539,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                     │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   enter Col writes it   esc cancel                                                   ╰──╴ Col ╶───╯
 
 ########## 165 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7585,13 +7585,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                     │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   enter Col writes it   esc cancel                                                   ╰──╴ Col ╶───╯
 
 ########## 166 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7631,13 +7631,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                     │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   enter add   esc cancel                                                             ╰──╴ Col ╶───╯
 
 ########## 167 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7677,13 +7677,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ▰▰▰▰▰ 10 today ✦                                     │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions   n create a Linear issue from this topic          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   x discard it   j/k topics              ╰──╴ Col ╶───╯
 
 ########## 168 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7723,13 +7723,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                               │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 169 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7769,13 +7769,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                               │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 170 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7815,13 +7815,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                               │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 171 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7861,13 +7861,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                               │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 172 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7907,13 +7907,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                               │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 173 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -7953,13 +7953,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ▰▱▱▱▱ 11 today ✦                               │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
 ########## 174 before 'r'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -7999,13 +7999,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                        “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
 ########## 175 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -8045,13 +8045,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                        “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
 ########## 176 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -8091,13 +8091,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                        “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
 ########## 177 before 'W'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -8137,13 +8137,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                        “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
 ########## 178 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -8183,13 +8183,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
   C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 179 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -8229,13 +8229,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
   C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 180 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -8275,13 +8275,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
   C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
 ########## 181 before 'W'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -8321,13 +8321,13 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   ✓ topic-0a1 is a workspace, not a Linear issue here · w jumps to it                ╰──╴ Col ╶───╯
 
 ########## 182 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
+
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -8367,7 +8367,7 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                     │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ▰▰▱▱▱ 12 today ✦                                    │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
