@@ -365,7 +365,7 @@
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
-  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 009 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -411,7 +411,7 @@
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 010 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -457,7 +457,7 @@
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 011 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -503,7 +503,7 @@
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
-  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 012 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3357,7 +3357,7 @@
                                                                                      │   ╰─ω─╯~   │
   ✓ undid PLA-3 → Done                                                               ╰──╴ Col ╶───╯
 
-########## 074 before 'C'
+########## 074 before 'c'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -3401,7 +3401,7 @@
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
-  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 075 before 'o'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3447,7 +3447,7 @@
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 076 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3493,7 +3493,7 @@
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 077 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3539,7 +3539,7 @@
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 078 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3585,7 +3585,7 @@
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 079 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4045,7 +4045,7 @@
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
   enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
-  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 089 before ('wheel', 'down')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4735,9 +4735,9 @@
                            “4/34   l  moves you to the comments, next to the issue” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
-  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
-########## 104 before 'C'
+########## 104 before 'c'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -4778,10 +4778,10 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                                    “5/34   C  writes a comment yourself. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                    “5/34   c  writes a comment yourself. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 105 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4827,7 +4827,7 @@
       “6/34  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 106 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4873,7 +4873,7 @@
       “6/34  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 107 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4919,9 +4919,9 @@
       “6/34  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
-########## 108 before 'c'
+########## 108 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -4962,10 +4962,10 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-           “7/34   c  lets me draft the comment for you. nothing is posted unasked” ‹│ ▐ ^ ▐▌ ^ ▌ │
+           “7/34   C  lets me draft the comment for you. nothing is posted unasked” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 109 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -5103,7 +5103,7 @@
                  “9/34   a  asks me anything about the issue: I look it up for you” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
-  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
+  c write a comment   C Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 112 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦

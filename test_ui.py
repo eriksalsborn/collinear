@@ -142,7 +142,7 @@ EVERY_SCREEN = [
     "D", ESC, "R", "T", ESC, "X", ESC, "G", "5", "k",            # setup, review inbox, projects, cancel, last row, a count
     "t", "/", "a", "p", ESC, ESC,                                # the filter inside a dialog (once crashed the popup)
     "S", "j", ENTER, "U",                                        # a real status change and its undo
-    " ", "C", "o", "k", ESC, ESC,                                # the comment composer in the preview
+    " ", "c", "o", "k", ESC, ESC,                                # the comment composer in the preview
     "B", "B", "Z", "B", "Z", "m", ESC,                           # a bone, twice; with Col off duty; an unbound letter filters
     ("click row with", "PLA-4"), ("click row with", "PLA-4"), ("click hint", ESC),   # select by click, preview by second click, close by its corner
     ("wheel", "down"), ("wheel", "up"), ("click hint", "?"), ENTER,                 # scroll, then a footer hint
@@ -150,7 +150,7 @@ EVERY_SCREEN = [
     # the tour, for real: welcome card, then the steps in the app (list, an issue's comments and questions, the report,
     # starting work), then the closing card
     # Keys it didn't ask for are ignored: b and enter on the list, typing and enter in the comment box (nothing posts).
-    "O", ENTER, "b", ENTER, "j", "k", " ", "l", "C", "x", ENTER, ESC, "c", "x", ESC, "a", ESC,
+    "O", ENTER, "b", ENTER, "j", "k", " ", "l", "c", "x", ENTER, ESC, "C", "x", ESC, "a", ESC,
     "S", "j", ENTER, ESC, "P", ESC, "A", ESC,                    # status, priority, assignee: each opens, nothing can be picked
     "b", "l", ESC, ESC, "p", "i", ESC, ESC,                      # the report and a topic's actions; the to-do list and how to add one
     "j", "j", "W", "h", "j", "j", "j", "j", ENTER, ESC,          # green rows, the active workspaces and back, what is only said, the start dialog

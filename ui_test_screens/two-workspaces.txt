@@ -318,7 +318,7 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                           “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  w jump to workspace   l to the comments   j/k scroll the description   a ask Col   c Col drafts a comment   C write a comment        │   ╰─ω─╯~   │
+  w jump to workspace   l to the comments   j/k scroll the description   a ask Col   c write a comment   C Col drafts a comment        │   ╰─ω─╯~   │
   L open in Linear   d/u half page   esc/h close                                                                                       ╰──╴ Col ╶───╯
 
 ########## 008 before 10

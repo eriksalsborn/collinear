@@ -105,7 +105,7 @@ COL_REACTIONS = {"prio": ["priorities, priorities", "sorted. the urgent ones bar
 COL_PREVIEW_LINES = ["ooh, this one", "let's have a look", "good pick", "what's the story here", "reading glasses on", "this one smells promising",
          "*tilts head*", "ooh, a bone!"]
 COL_TIPS = ["type a few letters to filter, no / needed", "3j jumps three rows down, like in vim",
-        "space previews an issue; l inside shows its comments, j/k hop between them, C adds one", "a asks Col anything about the issue: Linear, Slack, GitHub, the web",
+        "space previews an issue; l inside shows its comments, j/k hop between them, c adds one", "a asks Col anything about the issue: Linear, Slack, GitHub, the web",
         "m lets you comment, or Col drafts it from a brief", "U undoes a status, priority, assignee or cancel",
         "R shows the PRs waiting on your review", "enter on an issue with PRs can start on the PR's branch",
         "? lists every key with what it does", "t and T browse a team or a project; h brings you back",
@@ -753,9 +753,9 @@ GUIDED_TOUR_STEPS = [
     # one issue: read it, its comments, comment on it, ask about it
     TourStep("`space` previews the issue under the cursor", (ord(" "),), "preview", True),
     TourStep("`l` moves you to the comments, next to the issue", (ord("l"),), "comments pane", True),
-    TourStep("`C` writes a comment yourself. press it", (ord("C"),), "composer", True),
+    TourStep("`c` writes a comment yourself. press it", (ord("c"),), "composer", True),
     TourStep("you'd type it here and `enter` would post it. `esc` closes it for now", (27,), "composer closed", True),
-    TourStep("`c` lets me draft the comment for you. nothing is posted unasked", (ord("c"),), "draft chat", True),
+    TourStep("`C` lets me draft the comment for you. nothing is posted unasked", (ord("C"),), "draft chat", True),
     TourStep("you say what it should get across, I write it. `esc` goes back", (27,), "preview", True),
     TourStep("`a` asks me anything about the issue: I look it up for you", (ord("a"),), "ask chat", True),
     TourStep("you'd type a question and `enter`. `esc` goes back to your issues", (27,), "list", True),
@@ -1605,10 +1605,11 @@ DRAFT_COMMENT_TASK = ("Draft a comment on one Linear issue, to be posted by its 
               "Markdown is fine. Output only the comment body, nothing before or after it.", "Brief", "Draft")
 
 
-def ask_headless_claude(context, history, cwd, progress, running_processes, task=ASK_ABOUT_ISSUE_TASK):
+def ask_headless_claude(context, history, cwd, progress, running_processes, task=ASK_ABOUT_ISSUE_TASK, answer_so_far=None):
     """Headless claude on the issue, with read-only Linear, web and git/gh tools (see tools_col_may_use()).
     User settings are loaded: without them the claude.ai connectors (Linear, Slack) are invisible. progress(text) gets each tool call.
-    task: (instructions, label for my turns, label for its turns), see ASK_ABOUT_ISSUE_TASK and DRAFT_COMMENT_TASK."""
+    task: (instructions, label for my turns, label for its turns), see ASK_ABOUT_ISSUE_TASK and DRAFT_COMMENT_TASK.
+    answer_so_far(text): called as the answer is being written, with all of it so far, so it can be shown while it grows."""
     instructions, label_for_my_turns, label_for_its_turns = task
     prompt = (f"{instructions}\nYou're in {cwd}.\n\n" + context + "\n\n"
               + "".join(f"{label_for_my_turns}: {earlier_question}\n{label_for_its_turns}: {earlier_answer}\n\n" for earlier_question, earlier_answer in history[:-1])
@@ -1616,18 +1617,25 @@ def ask_headless_claude(context, history, cwd, progress, running_processes, task
     # --tools limits the built-ins only; "" would also hide the MCP connectors
     process = subprocess.Popen(["claude", "-p", "--model", "sonnet", "--setting-sources", "user", "--no-session-persistence",
                              "--tools", "Bash,WebSearch,WebFetch", "--allowedTools", *tools_col_may_use(),
-                             "--output-format", "stream-json", "--verbose"],
+                             "--output-format", "stream-json", "--verbose", "--include-partial-messages"],
                             stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, cwd=cwd)
     running_processes.append(process)  # so esc can kill it
     process.stdin.write(prompt)
     process.stdin.close()
-    result = ""
+    result, text_of_this_turn = "", ""
     for raw_line in process.stdout:
         try:
             event = json.loads(raw_line)
         except ValueError:
             continue
-        if event.get("type") == "assistant":
+        if event.get("type") == "stream_event" and answer_so_far:  # the words as they are written; each turn starts over, so "let me look…" gives way to the answer
+            stream_event = event.get("event") or {}
+            if stream_event.get("type") == "message_start":
+                text_of_this_turn = ""
+            elif (stream_event.get("delta") or {}).get("type") == "text_delta":
+                text_of_this_turn += stream_event["delta"].get("text", "")
+                answer_so_far(text_of_this_turn)
+        elif event.get("type") == "assistant":
             for content_part in event["message"]["content"]:
                 if content_part["type"] == "tool_use":
                     progress(describe_tool_call(content_part))
@@ -1930,7 +1938,7 @@ def draft_todo_with_col(screen):
     said_and_drafted, text, cursor, error = [], "", 0, ""  # [what you said, the line Col wrote from it], oldest first
     title = "to-do  ·  draft it with Col"
 
-    def paint(spinner=None, lookup_steps=()):
+    def paint(spinner=None, lookup_steps=(), line_so_far=""):
         box_width = min(96, screen.getmaxyx()[1] - 4)
         text_width = box_width - 10
         draft = next((drafted for _, drafted in reversed(said_and_drafted) if drafted), "")
@@ -1942,6 +1950,7 @@ def draft_todo_with_col(screen):
             rows.append((" ✦ col ", curses.color_pair(ACCENT) | curses.A_BOLD | curses.A_REVERSE, 3))
             rows += [(f"✓ {step}"[:text_width], curses.color_pair(DIM), 5) for step in lookup_steps[:-1][-4:]]
             rows.append((f"{spinner} {lookup_steps[-1] if lookup_steps else 'writing it up…'}"[:text_width], curses.color_pair(ACCENT) | curses.A_BOLD, 5))
+            rows += [(wrapped, curses.A_BOLD, 5) for wrapped in textwrap.wrap(" ".join(line_so_far.split()), text_width)]  # his line, as he writes it
             rows.append(("", 0, 0))
         elif error:
             rows += [(wrapped, curses.color_pair(RED), 5) for wrapped in textwrap.wrap(error, text_width)] + [("", 0, 0)]
@@ -1983,19 +1992,20 @@ def draft_todo_with_col(screen):
                 return draft
             continue
         said_and_drafted.append([text.strip(), ""])
-        text, cursor, error, outcome, lookup_steps, running_processes = "", 0, "", {}, [], []
+        text, cursor, error, outcome, lookup_steps, running_processes, written_so_far = "", 0, "", {}, [], [], {}
 
         def work():
             try:
                 outcome["drafted"] = ask_headless_claude("", [tuple(pair) for pair in said_and_drafted], NOTES_DIR, lookup_steps.append,
-                                                         running_processes, task=DRAFT_TODO_TASK)
+                                                         running_processes, task=DRAFT_TODO_TASK,
+                                                         answer_so_far=lambda text_so_far: written_so_far.update(text=text_so_far))
             except Exception as failure:
                 outcome["error"] = f"Col couldn't write it: {failure}"
         threading.Thread(target=work, daemon=True).start()
         spinner_frame, UiState.col_is_working, UiState.lookups_col_is_working_on = 0, True, lookup_steps
         screen.timeout(100)
         while not outcome:
-            paint(SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], lookup_steps)
+            paint(SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], lookup_steps, written_so_far.get("text", ""))
             spinner_frame += 1
             try:
                 key_while_writing = screen.get_wch()
@@ -2276,6 +2286,8 @@ def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, r
             for lookup_step in message["steps"][:-1]:
                 thread_lines.append([("  ✓ ", "dim"), (lookup_step, "dim")])
             thread_lines.append([("  " + thinking.split(" ", 1)[0] + " ", "think"), (message["steps"][-1] if message["steps"] else "thinking…", "mut")])
+            if message.get("so far"):  # his answer, as he writes it
+                thread_lines += [[("▎ ", "gut")] + segments for segments in markdown_to_styled_lines(message["so far"], thread_text_width - 2)]
         else:
             thread_lines += [[("▎ ", "gut")] + segments for segments in markdown_to_styled_lines(message["a"], thread_text_width - 2)]
             if segment_text := lookup_trail_line(message["steps"]):
@@ -2451,11 +2463,13 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
                 questions_and_answers_so_far = [(earlier_message["q"], earlier_message["a"]) for earlier_message in history]
                 outcome["a"] = ask_headless_claude(prompt_context["text"], questions_and_answers_so_far, prompt_context["cwd"],
                                                    message["steps"].append, running_processes,
-                                                   ASK_ABOUT_REPORT_TASK if report else DRAFT_COMMENT_TASK if draft else ASK_ABOUT_ISSUE_TASK)
+                                                   ASK_ABOUT_REPORT_TASK if report else DRAFT_COMMENT_TASK if draft else ASK_ABOUT_ISSUE_TASK,
+                                                   answer_so_far=lambda text_so_far: message.update({"so far": text_so_far}))
             except Exception as e:
                 outcome["a"] = f"failed: {e}"
         threading.Thread(target=work, daemon=True).start()
         spinner_frame, UiState.col_is_working, UiState.lookups_col_is_working_on = 0, True, message["steps"]
+        screen.timeout(80)  # his words arrive as he writes them
         while "a" not in outcome:
             draw_chat(screen, title, issue, history, SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], text, None, draft, topic_markdown or report)
             spinner_frame += 1
@@ -2468,6 +2482,8 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
                 CHAT_SIDE_PANE["top"] += 10 if key_while_thinking == 4 else -10
             elif (typed := text_after_typing(text, key_while_thinking)) is not None:  # keep typing while it thinks
                 text = typed
+        screen.timeout(250)
+        message.pop("so far", None)
         message["a"], message["t2"], top, UiState.col_is_working = outcome["a"], datetime.now().strftime("%H:%M"), None, False
         thread_file.parent.mkdir(parents=True, exist_ok=True)
         thread_file.write_text(json.dumps(history))
@@ -2693,9 +2709,9 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
                 line(box_height - 5, f"{comment_being_written}▏"[-(pane_width - 6):] if comment_being_written else "", curses.A_BOLD, pane_x + 4)
                 if not comment_being_written:
                     line(box_height - 5, "write a comment…", curses.color_pair(DIM), pane_x + 5)
-        footer_text = ("j/k next/previous comment · d/u half page · h to the description · C write a comment · c Col drafts one · a ask Col · esc close" if focused_pane else
+        footer_text = ("j/k next/previous comment · d/u half page · h to the description · c write a comment · C Col drafts one · a ask Col · esc close" if focused_pane else
                 ("w jump to workspace · " if open_workspace_summary else "enter start · ") +
-                "l to the comments · j/k scroll the description · a ask Col · c Col drafts a comment · C write a comment · L open in Linear · d/u half page · esc/h close")
+                "l to the comments · j/k scroll the description · a ask Col · c write a comment · C Col drafts a comment · L open in Linear · d/u half page · esc/h close")
         draw_footer_from_text(screen, footer_text)
         screen.refresh()
         if comments == "loading":
@@ -2732,11 +2748,11 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
             continue
         if key in (27, ord(" "), ord("q")):
             return None
-        if key == ord("C"):  # write a comment here, with the thread in view
+        if key == ord("c"):  # write a comment here, with the thread in view
             tour_sees("composer")
             focused_pane, comment_being_written = 1, ""
             continue
-        if key == ord("c"):  # Col drafts a comment from a brief, the thread beside it; the pane reloads once it's posted
+        if key == ord("C"):  # Col drafts a comment from a brief, the thread beside it; the pane reloads once it's posted
             CHAT_SIDE_PANE["comments"], CHAT_SIDE_PANE["top"] = (comments if isinstance(comments, list) else None), None  # None: open at the comments
             if chat_with_col(screen, issue, draft=True).startswith("commented"):
                 COL_SPEECH.update(mood="cheer", say=COL_REACTIONS["comment"][int(time.time()) % len(COL_REACTIONS["comment"])], until=time.time() + 10)
