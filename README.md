@@ -42,7 +42,7 @@ the key, so the preview, the comments, The Daily Bark and the start dialog actua
 - **It knows where your work is.** Issues with a workspace open are marked, with repository and branch, and `w`
   jumps straight there.
 - **Col writes your daily report.** A recap of your last working day from Linear, Slack, GitHub and your own commits, so you can pick
-  the threads back up.
+  the threads back up. `s` saves a topic to a to-do list that outlives the next report.
 
 ## How it works
 
@@ -87,7 +87,7 @@ Everything is also clickable, and `?` shows this list in the app.
 | **Work on an issue** | `enter` start · `space` preview · `w` jump to its workspace · `a` ask Col · `C` comment · `c` free session |
 | **Change it** | `S` status · `P` priority · `A` assign · `X` cancel · `U` undo · `n` new issue |
 | **Open elsewhere** | `g` pull request · `L` Linear · `y` copy link |
-| **Views** | `b` daily report · `t` team · `T` project · `R` review inbox · `r` refresh |
+| **Views** | `b` daily report · `p` to-do list · `W` active workspaces · `t` team · `T` project · `R` review inbox · `r` refresh |
 | **Move** | `j` / `k` · `5j` · `G` last · `/` or just type to filter |
 | **The rest** | `O` the tour · `D` setup · `K` hints on/off · `Z` Col on/off · `B` give Col a bone · `h` back · `q` close |
 

@@ -2,7 +2,7 @@
 ########## 001 before 10
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                  0 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -48,7 +48,7 @@
 ########## 002 before 'b'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                  0 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -88,13 +88,13 @@
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                                      “1/4   b  opens The Daily Bark: my recap of your last working day” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
-  h close                                                                                                ╰──╴ Col ╶───╯
+  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh      │   ╰─ω─╯~   │
+  / filter   ? all keys   h close                                                                        ╰──╴ Col ╶───╯
 
 ########## 003 before 27
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                  0 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ─────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮─────────
           │  Col  daily report                                                                          esc  │
           │  morning, Erik. here's what you've been up to.                                                   │
@@ -134,13 +134,13 @@
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                           “2/4  nothing to report yet, it fills up as you work.  esc  or  h  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
-  h close                                                                                                ╰──╴ Col ╶───╯
+                                                                                                         │   ╰─ω─╯~   │
+  p to-do list   r write it again   esc/h close                                                          ╰──╴ Col ╶───╯
 
 ########## 004 before 10
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                  0 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -186,7 +186,7 @@
 ########## 005 before 'l'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                  0 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -232,7 +232,7 @@
 ########## 006 before 'q'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                  0 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -272,7 +272,7 @@
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                                                 “off you go.  ?  if you forget a key,  O  for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                          │  ▜▖ ▼  ▗▛  │
-  n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
-  h close                                                                                                ╰──╴ Col ╶───╯
+  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh      │   ╰─ω─╯~   │
+  / filter   ? all keys   h close                                                                        ╰──╴ Col ╶───╯
 
 finished cleanly

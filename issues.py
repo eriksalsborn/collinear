@@ -2,7 +2,7 @@
 """My open Linear issues for a herdr popup, opencode-styled.
 enter: repo -> worktree on Linear's branch -> phase -> claude in a fresh tab of the issue's workspace. ? lists every key.
 Phases hand off through notes files in ~/.claude/work/<ID>/; prompts live in prompts/*.md."""
-import curses, json, locale, re, shlex, subprocess, sys, textwrap, threading, time, urllib.request
+import curses, json, locale, re, shlex, subprocess, sys, textwrap, threading, time, urllib.request, zlib
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from typing import NamedTuple
@@ -894,14 +894,15 @@ def show_morning_digest(screen, changes):
     screen.timeout(250)
 
 
-def build_issue_rows(issues):
+def build_issue_rows(issues, include_closed_issues=False):
     """("head", (state name, state type)) / ("issue", issue) rows: started -> todo -> backlog -> triage, furthest
-    along on top, urgent first within a state."""
-    sort_order = lambda issue_to_sort: (OPEN_STATE_TYPES.index(issue_to_sort["state"]["type"]), -issue_to_sort["state"]["position"], issue_to_sort["priority"] or 9, issue_to_sort["identifier"])
+    along on top, urgent first within a state. Closed issues drop out, unless include_closed_issues (they go last)."""
+    state_types_in_order = OPEN_STATE_TYPES + ["completed", "canceled"] if include_closed_issues else OPEN_STATE_TYPES
+    sort_order = lambda issue_to_sort: (state_types_in_order.index(issue_to_sort["state"]["type"]), -issue_to_sort["state"]["position"], issue_to_sort["priority"] or 9, issue_to_sort["identifier"])
     STATE_POSITION_BY_NAME.update((issue_to_sort["state"]["name"], issue_to_sort["state"]["position"]) for issue_to_sort in issues)
     STARTED_STATE_POSITIONS[:] = sorted({issue_to_sort["state"]["position"] for issue_to_sort in issues if issue_to_sort["state"]["type"] == "started"})
     rows, previous_header = [], None
-    for issue in sorted((issue_to_sort for issue_to_sort in issues if issue_to_sort["state"]["type"] in OPEN_STATE_TYPES), key=sort_order):
+    for issue in sorted((issue_to_sort for issue_to_sort in issues if issue_to_sort["state"]["type"] in state_types_in_order), key=sort_order):
         header = (issue["state"]["name"], issue["state"]["type"])
         if header != previous_header:
             previous_header = header
@@ -1659,6 +1660,95 @@ def daily_report_as_styled_lines(text, width):
     return lines
 
 
+TODO_LIST = {"cur": 0, "steps": []}  # the to-do list is shown like a report: its text is built from the saved topics
+
+
+def saved_todo_topics():
+    """The topics saved to the to-do list, each as the markdown Col wrote it. They live with the notes, not in the
+    cache: they are yours to keep."""
+    try:
+        return json.loads((NOTES_DIR / "todo.json").read_text())
+    except (OSError, ValueError):
+        return []
+
+
+def save_todo_topics(topics):
+    NOTES_DIR.mkdir(parents=True, exist_ok=True)
+    (NOTES_DIR / "todo.json").write_text(json.dumps(topics, indent=1))
+
+
+def markdown_of_each_topic(report_text):
+    """The report's topics as Col wrote them: each top-level bullet with the lines under it (↳ who's on it)."""
+    topics, is_inside_topic = [], False
+    for raw_line in report_text.splitlines():
+        if re.match(r"\s?[-*+]\s+", raw_line):
+            topics.append(raw_line.strip())
+            is_inside_topic = True
+        elif not raw_line.strip() or raw_line.startswith("#"):
+            is_inside_topic = False
+        elif is_inside_topic:
+            topics[-1] += "\n" + raw_line
+    return topics
+
+
+def todo_topics_with_one_more(topics, topic_markdown):
+    """The to-do list with the topic on it. A topic about an issue that is already listed takes that one's place
+    (the newer words win), and the same text is never listed twice."""
+    mentioned = ISSUE_IDENTIFIER_PATTERN.search(topic_markdown)
+    for position, listed_topic in enumerate(topics):
+        mentioned_by_listed = ISSUE_IDENTIFIER_PATTERN.search(listed_topic)
+        if listed_topic == topic_markdown or (mentioned and mentioned_by_listed and mentioned.group() == mentioned_by_listed.group()):
+            return topics[:position] + [topic_markdown] + topics[position + 1:]
+    return topics + [topic_markdown]
+
+
+def todo_list_as_report_text():
+    return "## to do\n" + ("\n".join(saved_todo_topics()) or "nothing here yet. In The Daily Bark, `s` saves a topic here, and so does "
+                                                             "doing something with it. It stays until you remove it.")
+
+
+def stand_in_issue_for_topic(topic_text):
+    """A topic that has no Linear issue, dressed as one so a session can start on it. Its id comes from its words,
+    so the same topic always lands in the same workspace and notes folder."""
+    return {"identifier": f"topic-{zlib.crc32(topic_text.encode()) % 4096:03x}", "title": topic_text.split(" — ")[0].strip("* ")[:60],
+            "url": "", "branchName": "", "assignee": {"displayName": saved_user_name() or "you"}}
+
+
+ACTIVE_WORKSPACES_VIEW = {"kind": "active workspaces", "id": "active-workspaces", "name": "active workspaces"}
+
+
+def issues_with_an_open_workspace(my_issues, open_workspaces, worktree_folders_by_branch, fetch_issue=None):
+    """Everything being worked on: my issues that have a herdr workspace open, then what the other workspaces named
+    after an issue or a topic are about (someone else's issue, one that is finished, a topic from The Daily Bark).
+    fetch_issue(identifier) gets those issues from Linear; without it, or when it fails, the workspace's name stands in."""
+    listed_issues, workspace_ids_accounted_for, identifiers_listed = [], set(), set()
+    for issue in my_issues:
+        its_workspaces = workspaces_of_issue_among(open_workspaces, issue, worktree_folders_by_branch.get(issue.get("branchName"), {}).values())
+        if its_workspaces:
+            listed_issues.append(issue)
+            identifiers_listed.add(issue["identifier"])
+            workspace_ids_accounted_for |= {workspace["workspace_id"] for workspace in its_workspaces}
+    for workspace in open_workspaces:
+        identifier, _, title = workspace["label"].partition(" ")
+        is_named_after_an_issue = bool(ISSUE_IDENTIFIER_PATTERN.fullmatch(identifier))
+        if workspace["workspace_id"] in workspace_ids_accounted_for or identifier in identifiers_listed \
+                or not (is_named_after_an_issue or identifier.startswith("topic-")):
+            continue
+        issue = None
+        if fetch_issue and is_named_after_an_issue:
+            try:
+                issue = fetch_issue(identifier)
+            except Exception:  # offline, or the issue is gone: the workspace is still worth listing
+                pass
+        # ponytail: a row without "id" is not in Linear (or not fetched yet): only w, the jump, works on it
+        listed_issues.append(issue or {"identifier": identifier, "title": title, "url": "", "branchName": "", "priority": 0,
+                                       "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
+                                       "state": {"name": "Linear issue" if is_named_after_an_issue else "Topic, not in Linear",
+                                                 "type": "started", "position": -1}})
+        identifiers_listed.add(identifier)
+    return listed_issues
+
+
 class ReportTopic(NamedTuple):
     """One bullet of the daily report."""
     number: int             # its place among the report's topics, from 0
@@ -1666,13 +1756,13 @@ class ReportTopic(NamedTuple):
     issue_identifier: str   # the first issue id it mentions (PLA-123), "" when it mentions none
 
 
-def report_topic_under_cursor(report_text):
-    """The topic the cursor is on in the daily report, or None when the report has no bullets."""
+def report_topic_under_cursor(report_text, cursor=None):
+    """The topic the cursor is on in the daily report (or at `cursor`, for the to-do list), or None when there are no bullets."""
     lines = daily_report_as_styled_lines(report_text, 80)
     bullet_lines = [n for n, segments in enumerate(lines) if segments and segments[0][0].startswith("•")]
     if not bullet_lines:
         return None
-    number = max(0, min(DAILY_REPORT.get("cur", 0), len(bullet_lines) - 1))
+    number = max(0, min(DAILY_REPORT.get("cur", 0) if cursor is None else cursor, len(bullet_lines) - 1))
     text = "".join(part for part, _ in lines[bullet_lines[number]]).lstrip("• ").strip()
     mentioned = ISSUE_IDENTIFIER_PATTERN.search(text)
     return ReportTopic(number, text, mentioned.group() if mentioned else "")
@@ -1693,10 +1783,16 @@ def col_words_for_lookup(step):
     return "chewing on it"
 
 
-def show_daily_report(screen, issues, today):
+def show_daily_report(screen, issues, today, showing_todo_list=False):
     """Col's recap of the last working day. Shows the lookups while it's being written; j/k move between topics, l goes
-    to the topic's issue (returns its identifier), esc, h or b close (returns None). The topic is remembered."""
-    start_writing_daily_report(issues, today)
+    to the topic's issue (returns its identifier), esc, h or b close (returns None). The topic is remembered.
+    showing_todo_list: the same screen over the topics saved to the to-do list; there x removes one and p closes."""
+    document = TODO_LIST if showing_todo_list else DAILY_REPORT  # what is on screen: "text", "steps" and "cur", the topic under the cursor
+    dialog_title = "Col  ·  to-do list" if showing_todo_list else "Col  ·  daily report"
+    if showing_todo_list:
+        TODO_LIST["text"] = todo_list_as_report_text()
+    else:
+        start_writing_daily_report(issues, today)
     first_line_shown, frame_count = 0, 0
     attribute_by_style = daily_report_text_attributes()
     draw_list_behind = UiState.draw_screen_behind_dialog
@@ -1709,12 +1805,12 @@ def show_daily_report(screen, issues, today):
         frame_count += 1
         screen_height, screen_width = screen.getmaxyx()
         box_height = screen_height - 10
-        line, box_width = draw_dialog_box(screen, "Col  ·  daily report", box_height, min(screen_width - 6, 100))
-        masthead = "^ ▐▌ ^  T H E   D A I L Y   B A R K"  # the report's masthead, on the box's top edge: Col's paper, like the app's badge
+        line, box_width = draw_dialog_box(screen, dialog_title, box_height, min(screen_width - 6, 100))
+        masthead = "^ ▐▌ ^  T O - D O   L I S T" if showing_todo_list else "^ ▐▌ ^  T H E   D A I L Y   B A R K"  # the report's masthead, on the box's top edge: Col's paper, like the app's badge
         if box_width > len(masthead) + 8:
             line(0, "  " + masthead + "  ", curses.color_pair(COL_ACCENT) | curses.A_REVERSE | curses.A_BOLD, (box_width - len(masthead)) // 2 - 2)
             line(0, "^ ▐▌ ^", curses.color_pair(COL_BADGE) | curses.A_BOLD, (box_width - len(masthead)) // 2)
-        report_text, lookup_steps = DAILY_REPORT["text"], DAILY_REPORT["steps"]
+        report_text, lookup_steps = document["text"], document["steps"]
         UiState.col_is_working = report_text is None
         if report_text is None:  # loading: Col in the corner looks around and says what he's sniffing at; the trail is in the box
             UiState.lookups_col_is_working_on = lookup_steps
@@ -1729,14 +1825,18 @@ def show_daily_report(screen, issues, today):
             draw_footer_from_text(screen, "r start over · esc/h close, b brings it back when it's done")
         else:
             if COL_SPEECH["mood"] in ("left", "right") or not COL_SPEECH["say"]:
-                COL_SPEECH.update(mood="cheer", say="here's your daily report", until=time.time() + 8)
-            line(2, f"{greeting_for_this_hour()}, {saved_first_name() or 'you'}. here's what you've been up to.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
-            line(3, f"{len(lookup_steps)} lookups in Linear, Slack and GitHub" if lookup_steps else "from memory", curses.color_pair(DIM), 3)
+                COL_SPEECH.update(mood="cheer", say="what you saved to do" if showing_todo_list else "here's your daily report", until=time.time() + 8)
+            if showing_todo_list:
+                line(2, "what you saved from The Daily Bark. it stays here when the report is written again.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
+                line(3, f"{len(saved_todo_topics())} saved  ·  the ones you start working on show under W, active workspaces", curses.color_pair(DIM), 3)
+            else:
+                line(2, f"{greeting_for_this_hour()}, {saved_first_name() or 'you'}. here's what you've been up to.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
+                line(3, f"{len(lookup_steps)} lookups in Linear, Slack and GitHub" if lookup_steps else "from memory", curses.color_pair(DIM), 3)
             styled_lines, rows_for_text = daily_report_as_styled_lines(report_text, min(box_width - 8, 88)), box_height - 8  # the row under the text holds the "go to" marker
             # the topics: each bullet is one; j/k move between them, l jumps to its issue in the list
             bullet_line_numbers = [line_number for line_number, segments in enumerate(styled_lines) if segments and segments[0][0].startswith("•")]
-            number_of_topic_under_cursor = max(0, min(DAILY_REPORT.get("cur", 0), len(bullet_line_numbers) - 1))
-            DAILY_REPORT["cur"] = number_of_topic_under_cursor
+            number_of_topic_under_cursor = max(0, min(document.get("cur", 0), len(bullet_line_numbers) - 1))
+            document["cur"] = number_of_topic_under_cursor
             if bullet_line_numbers:
                 first_line_of_topic = bullet_line_numbers[number_of_topic_under_cursor]
                 line_after_topic = next((line_number for line_number in range(first_line_of_topic + 1, len(styled_lines))
@@ -1763,46 +1863,69 @@ def show_daily_report(screen, issues, today):
             if bullet_line_numbers:
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
-                        + " · c free session on it · a ask Col about it · j/k topics · d/u page · r write it again")
+                        + " · c free session on it · a ask Col about it"
+                        + (" · x remove it" if showing_todo_list else " · s save to to-do · p to-do list") + " · j/k topics · d/u page"
+                        + ("" if showing_todo_list else " · r write it again"))
                 draw_footer_from_text(screen, footer_text + " · esc/h close")
+            else:
+                draw_footer_from_text(screen, "esc/h close" if showing_todo_list else "p to-do list · r write it again · esc/h close")
 
     def under_menu():  # draw_dialog_box() paints the backdrop first: hand it the list while the report draws itself, no pop-open
-        UiState.draw_screen_behind_dialog, title_before, UiState.title_of_open_dialog = draw_list_behind, UiState.title_of_open_dialog, "Col  ·  daily report"
+        UiState.draw_screen_behind_dialog, title_before, UiState.title_of_open_dialog = draw_list_behind, UiState.title_of_open_dialog, dialog_title
         paint()
         UiState.draw_screen_behind_dialog, UiState.title_of_open_dialog = under_menu, title_before
 
     while True:
-        tour_sees("report")
+        if not showing_todo_list:
+            tour_sees("report")
         paint()
-        report_text = DAILY_REPORT["text"]
+        report_text = document["text"]
         screen.refresh()
         try:
             key = screen.getch()
         except curses.error:
             continue
-        if key in (27, ord("h"), ord("q"), ord("b")):
+        if key in (27, ord("h"), ord("q"), ord("p" if showing_todo_list else "b")):
             UiState.col_is_working = False
             return None
-        topic = report_topic_under_cursor(report_text) if report_text else None
+        if key == ord("p"):  # from the report to the to-do list; picking an issue there closes both
+            UiState.col_is_working = False
+            if identifier_picked_in_todo_list := show_daily_report(screen, issues, today, showing_todo_list=True):
+                return identifier_picked_in_todo_list
+            continue
+        topic = report_topic_under_cursor(report_text, document.get("cur", 0)) if report_text else None
         my_issue_identifiers = {listed_issue["identifier"] for listed_issue in issues}
         if topic and key in (ord("l"), 10, 13, curses.KEY_ENTER):  # the topic's actions: pick one, or press its key
             identifier = topic.issue_identifier
             choices = [("l", f"go to {identifier} in the list") if identifier in my_issue_identifiers else
                        ("l", f"start working on {identifier}  ·  not yours yet, it gets assigned to you") if identifier else
                        ("n", "create a Linear issue from this topic"),
-                       ("c", "free session on it"), ("a", "ask Col about it")]
+                       ("c", "free session on it"), ("a", "ask Col about it"),
+                       ("x", "remove it from the to-do list") if showing_todo_list else ("s", "save it to the to-do list")]
             rows_the_menu_needs = len(choices) + 6
             row_for_the_menu = topic_position_on_screen[1] if topic_position_on_screen[1] + rows_the_menu_needs <= screen.getmaxyx()[0] - 6 else topic_position_on_screen[0] - rows_the_menu_needs
-            tour_sees("topic menu")
+            if not showing_todo_list:
+                tour_sees("topic menu")
             UiState.draw_screen_behind_dialog = under_menu  # the report stays up behind the menu
             try:  # the menu opens right under the topic, or above it when there's no room
                 picked = choose_from_list(screen, "Col  ·  " + (identifier or "this topic"), [f"{k}   {choice_text}" for k, choice_text in choices],
                                           keys="".join(k for k, _ in choices), top_left_corner=(row_for_the_menu, topic_position_on_screen[2]))
             finally:  # and the report doesn't pop open again when the menu closes
-                UiState.draw_screen_behind_dialog, UiState.title_of_open_dialog = draw_list_behind, "Col  ·  daily report"
+                UiState.draw_screen_behind_dialog, UiState.title_of_open_dialog = draw_list_behind, dialog_title
             if picked is None:
                 continue
             key = ord(choices[picked][0])  # from here on it is as if that short key was pressed
+        if topic and showing_todo_list and key == ord("x"):
+            save_todo_topics([saved_topic for position, saved_topic in enumerate(saved_todo_topics()) if position != topic.number])
+            TODO_LIST["text"] = todo_list_as_report_text()
+            col_says("off the list", "cheer", 4)
+            continue
+        does_something_with_the_topic = topic and (key in (ord("s"), ord("c"), ord("a")) or key == ord("l" if topic.issue_identifier else "n"))
+        if does_something_with_the_topic and not showing_todo_list and UiState.guided_tour_step is None:
+            # saved by hand (s), or because you did something with it: it now outlives the next report
+            save_todo_topics(todo_topics_with_one_more(saved_todo_topics(), markdown_of_each_topic(report_text)[topic.number]))
+            if key == ord("s"):
+                col_says("saved to your to-do list. `p` opens it", "cheer", 6)
         if topic and key == ord("a"):
             chat_with_col(screen, None, report=report_text, issues=issues, topic=(topic.number, topic.text))
         elif topic and key == ord("c") and topic.issue_identifier:  # free session on the issue, yours or not
@@ -1815,21 +1938,19 @@ def show_daily_report(screen, issues, today):
             except Exception as error:
                 show_message_for_a_moment(screen, f"couldn't fetch {topic.issue_identifier}: {error}"[:120])
         elif topic and key == ord("c"):  # no issue: a free session on the topic itself, in a notes folder of its own
-            headline = topic.text.split(" — ")[0].strip("* ")[:60]
-            stand_in_issue = {"identifier": f"topic-{datetime.now():%Y%m%d}-{topic.number + 1}", "title": headline, "url": "",
-                              "branchName": "", "assignee": {"displayName": saved_user_name() or "you"}}
             UiState.col_is_working = False
-            if error := start_free_session(screen, stand_in_issue, topic=topic.text):
+            if error := start_free_session(screen, stand_in_issue_for_topic(topic.text), topic=topic.text):
                 show_message_for_a_moment(screen, error)
-        if key == ord("r"):  # start over: stop a running one, forget today's
+        if key == ord("r") and not showing_todo_list:  # start over: stop a running one, forget today's
             for process in DAILY_REPORT["procs"]:
                 process.kill()
             DAILY_REPORT["procs"].clear()
             DAILY_REPORT["date"], first_line_shown, DAILY_REPORT["cur"] = None, 0, 0
             start_writing_daily_report(issues, today)
         if report_text and key in (ord("j"), curses.KEY_DOWN, ord("k"), curses.KEY_UP):  # next / previous topic
-            DAILY_REPORT["cur"] = DAILY_REPORT.get("cur", 0) + (1 if key in (ord("j"), curses.KEY_DOWN) else -1)
-            write_stored_value("brief", {k: DAILY_REPORT[k] for k in ("date", "text", "steps", "cur")})  # so b reopens where you left off
+            document["cur"] = document.get("cur", 0) + (1 if key in (ord("j"), curses.KEY_DOWN) else -1)
+            if not showing_todo_list:
+                write_stored_value("brief", {k: DAILY_REPORT[k] for k in ("date", "text", "steps", "cur")})  # so b reopens where you left off
         elif topic and key in (ord("l"), ord("n")):  # go to / start / create, for the topic
             UiState.col_is_working = False
             if topic.issue_identifier in my_issue_identifiers:
@@ -2571,6 +2692,8 @@ KEY_BINDINGS = [
     KeyBinding("U",     "undo_last_change",                  False,  CHANGE_THE_ISSUE,  "U",                 "undo last change",      "U", "undo"),
     KeyBinding("n",     "create_new_issue",                  False,  CHANGE_THE_ISSUE,  "n",                 "new issue",             "n", "new issue"),
     KeyBinding("b",     "open_daily_report",                 False,  VIEWS,             "b",                 "daily report",          "b", "daily report"),
+    KeyBinding("p",     "open_todo_list",                    False,  VIEWS,             "p",                 "to-do list",            "p", "to-do"),
+    KeyBinding("W",     "show_active_workspaces",            False,  VIEWS,             "W",                 "active workspaces",     "W", "active ws"),
     KeyBinding("t",     "browse_a_team",                     False,  VIEWS,             "t",                 "team",                  "t/T", "team / project"),
     KeyBinding("T",     "browse_a_project",                  False,  VIEWS,             "T",                 "project"),
     KeyBinding("R",     "open_review_inbox",                 False,  VIEWS,             "R",                 "review inbox",          "R", "reviews"),
@@ -2698,7 +2821,7 @@ class IssueListScreen:
             and run_setup(self.screen)
         self.issues = self.issues_from_cache(None)
         self.states_before_first_refresh = snapshot_of_states_and_badges(self.issues or [])
-        self.all_rows = build_issue_rows(self.issues) if self.issues is not None else [("note", "loading issues…")]
+        self.all_rows = self.rows_for(self.issues)
         self.refresh_issues_in_background()
         if last_view := read_stored_value("last-view"):  # the team/project you used last: warm its cache so switching is instant
             threading.Thread(target=lambda: fetch_issues(last_view), daemon=True).start()
@@ -2729,7 +2852,7 @@ class IssueListScreen:
 
         def fetch_and_hand_over():
             try:
-                self.refreshed_issues_waiting = (view_being_fetched, fetch_issues(view_being_fetched))
+                self.refreshed_issues_waiting = (view_being_fetched, self.fetch_issues_of_view(view_being_fetched))
             except Exception as error:  # no key, offline…
                 self.refresh_error = f"refresh failed: {error}"[:160]
             self.refresh_is_running = False
@@ -2752,11 +2875,29 @@ class IssueListScreen:
         except Exception:
             pass
 
+    def fetch_issues_of_view(self, view):
+        """Background: the view's issues from Linear. The active workspaces are my issues and whatever else has a
+        workspace named after it, so that view asks herdr again too."""
+        if view != ACTIVE_WORKSPACES_VIEW:
+            return fetch_issues(view)
+        self.open_workspaces = open_herdr_workspaces()
+        return issues_with_an_open_workspace(fetch_issues(None), self.open_workspaces, self.worktree_folders_by_branch, fetch_issue_by_identifier)
+
+    def rows_for(self, issues):
+        if issues is None:
+            return [("note", "loading issues…")]
+        if self.view == ACTIVE_WORKSPACES_VIEW:  # a finished issue whose workspace is still open belongs here too
+            return build_issue_rows(issues, include_closed_issues=True) if issues else [("note", "no workspace open · enter on an issue starts one")]
+        return build_issue_rows(issues)
+
     def switch_to_view(self, view):
         self.view, self.filter_text, self.cursor, self.show_bark_for_a_new_list = view, "", 0, True
-        self.issues = self.issues_from_cache(view)
-        self.all_rows = build_issue_rows(self.issues) if self.issues is not None else [("note", "loading issues…")]
-        if view:
+        if view == ACTIVE_WORKSPACES_VIEW:  # shown at once from what is already known; the refresh fills in the rest
+            self.issues = issues_with_an_open_workspace(self.issues_from_cache(None) or [], self.open_workspaces, self.worktree_folders_by_branch)
+        else:
+            self.issues = self.issues_from_cache(view)
+        self.all_rows = self.rows_for(self.issues)
+        if view and view != ACTIVE_WORKSPACES_VIEW:
             write_stored_value("last-view", view)
         self.refresh_issues_in_background()
 
@@ -2768,7 +2909,7 @@ class IssueListScreen:
             if fetched_for_view != self.view:  # the view was switched while that fetch ran
                 self.refresh_issues_in_background()
             else:
-                self.issues, self.all_rows = issues, build_issue_rows(issues)
+                self.issues, self.all_rows = issues, self.rows_for(issues)
                 if fetched_for_view is None:
                     threading.Thread(target=self.scan_workspaces_and_worktrees, args=(issues,), daemon=True).start()
                     self.greet_on_first_open_of_the_day(issues)
@@ -2869,7 +3010,10 @@ class IssueListScreen:
         # breadcrumbs: the view you're in is the filled tag; the one you came from is plain, with the key back
         view_tag = (colour(DONE_FLASH) if time.time() < self.header_flash_until else colour(COL_ACCENT) | curses.A_REVERSE) | curses.A_BOLD
         if not self.view:
-            breadcrumbs = [(" my issues ", view_tag), ("  t team · T project · R reviews", colour(DIM))]
+            breadcrumbs = [(" my issues ", view_tag), ("  W active workspaces · p to-do · t team · T project · R reviews", colour(DIM))]
+        elif self.view == ACTIVE_WORKSPACES_VIEW:
+            breadcrumbs = [("h ‹ ", colour(DIM)), ("my issues", colour(MUTED)), ("  ›  ", colour(DIM)), (" active workspaces ", view_tag),
+                           ("  everything you have a workspace open for · w jumps there", colour(MUTED))]
         else:
             team_key = self.view["key"] + " · " if self.view["kind"] == "team" else ""
             what_is_listed = "  everyone's open issues in the team" if self.view["kind"] == "team" else "  open issues in the project"
@@ -2992,7 +3136,7 @@ class IssueListScreen:
         if has_open_workspace:
             screen.addnstr(y, 4, "▶", 1, styled(GREEN, True))
         state_colour = progress_icon_for_state(issue["state"]["name"], issue["state"]["type"])[1]
-        screen.addnstr(y, 6, f"{issue['identifier']:<9}", screen_width - 7, styled(state_colour, is_under_cursor))
+        screen.addnstr(y, 6, f"{issue['identifier']:<9.9}", screen_width - 7, styled(state_colour, is_under_cursor))
         screen.addnstr(y, 16, priority_text, priority_width, styled(priority_colour, issue["priority"] in (1, 2)))
         title_x = 16 + priority_width + 1
         title_width = max(screen_width - 4 - right_columns_width - title_x, 0)
@@ -3127,7 +3271,11 @@ class IssueListScreen:
         key = KEYCODE_ALIASES.get(key, key)
         binding = KEY_BINDING_BY_CHARACTER.get(chr(key)) if 0 < key < 256 else None
         if binding:
-            if self.issue_row_numbers or not binding.needs_issue_under_cursor:
+            actions_that_need_no_linear_issue = ("jump_to_workspace_of_issue", "move_cursor_down", "move_cursor_up", "move_cursor_to_last_issue")
+            if binding.needs_issue_under_cursor and self.issue_row_numbers and "id" not in self.issue_under_cursor() \
+                    and binding.action not in actions_that_need_no_linear_issue:
+                self.footer_message = f"{self.issue_under_cursor()['identifier']} is a workspace, not a Linear issue here · w jumps to it"
+            elif self.issue_row_numbers or not binding.needs_issue_under_cursor:
                 self.run_action(binding.action)
         elif 32 <= key < 127 and chr(key) not in CHARACTERS_BOUND_ON_THE_LIST:  # type to filter, no / needed
             self.is_typing_filter, self.filter_text, self.cursor = True, chr(key), 0
@@ -3155,7 +3303,7 @@ class IssueListScreen:
             self.filter_text = typed
 
     def rebuild_rows_keeping_cursor_on(self, issue):
-        self.all_rows, self.identifier_to_put_cursor_on = build_issue_rows(self.issues), issue["identifier"]
+        self.all_rows, self.identifier_to_put_cursor_on = self.rows_for(self.issues), issue["identifier"]
 
     @staticmethod
     def linear_took_the_change(footer_message):
@@ -3310,6 +3458,15 @@ class IssueListScreen:
         if identifier_picked_in_report := show_daily_report(self.screen, self.issues or [], self.today):
             self.identifier_to_put_cursor_on, self.filter_text, self.is_typing_filter = identifier_picked_in_report, "", False
             col_reacts_to("pick")  # the list lands on that issue
+
+    def open_todo_list(self):
+        if identifier_picked_in_todo_list := show_daily_report(self.screen, self.issues or [], self.today, showing_todo_list=True):
+            self.identifier_to_put_cursor_on, self.filter_text, self.is_typing_filter = identifier_picked_in_todo_list, "", False
+            col_reacts_to("pick")
+
+    def show_active_workspaces(self):
+        """W switches to everything with a workspace open, and W again (or h) switches back."""
+        self.switch_to_view(None if self.view == ACTIVE_WORKSPACES_VIEW else ACTIVE_WORKSPACES_VIEW)
 
     def browse_a_team(self):
         _, team = choose_team(self.screen, "browse team")
@@ -3498,6 +3655,17 @@ def _test():
     DAILY_REPORT["cur"] = 1
     report = "## plate\n- **PLA-1 one** — fine\n- **loose thing** — nobody filed it\n"
     assert report_topic_under_cursor(report) == ReportTopic(1, "loose thing — nobody filed it", "")
+    # the to-do list: topics are saved as Col wrote them, one per issue, and the active workspaces come from workspace names
+    assert markdown_of_each_topic("## a\n- one\n↳ only you\n\n- two PLA-1\n## b\n- three") == ["- one\n↳ only you", "- two PLA-1", "- three"]
+    assert todo_topics_with_one_more(["- a", "- old PLA-1"], "- new PLA-1") == ["- a", "- new PLA-1"]
+    assert todo_topics_with_one_more(["- a"], "- a") == ["- a"] and todo_topics_with_one_more(["- a"], "- b") == ["- a", "- b"]
+    assert stand_in_issue_for_topic("**x** — y")["identifier"] == stand_in_issue_for_topic("**x** — y")["identifier"]
+    mine = {"identifier": "PLA-1", "branchName": "b"}
+    workspace = lambda number, label: {"workspace_id": f"w{number}", "label": label}
+    active = issues_with_an_open_workspace([mine, {"identifier": "PLA-2"}], [workspace(1, "PLA-1 mine"), workspace(2, "PLA-9 theirs"),
+                                                                             workspace(3, "topic-0a1 loose"), workspace(4, "scratch")], {})
+    assert [issue["identifier"] for issue in active] == ["PLA-1", "PLA-9", "topic-0a1"] and "id" not in active[1]
+    assert len(build_issue_rows(active[1:], include_closed_issues=True)) == 4  # two headers, two rows
     DAILY_REPORT["cur"] = 0
     assert report_topic_under_cursor(report).issue_identifier == "PLA-1" and report_topic_under_cursor("no bullets") is None
     print("ok")

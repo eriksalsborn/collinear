@@ -2,7 +2,7 @@
 ########## 001 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -43,12 +43,12 @@
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
-  n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
+  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
 ########## 002 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -89,12 +89,12 @@
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel                 │   ╰─ω─╯~   │
-  n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
+  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
 ########## 003 before 'w'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -135,12 +135,12 @@
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   w pick one of its 4 sessions   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority        │   ╰─ω─╯~   │
-  A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
+  A assign   X cancel   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 004 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -186,7 +186,7 @@
 ########## 005 before ' '
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -227,12 +227,12 @@
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   w pick one of its 4 sessions   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority        │   ╰─ω─╯~   │
-  A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
+  A assign   X cancel   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 006 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ───────────────────╭────────────────────────────────────────────────────────────────────────────────────────────────────────────╮───────────────────
   ◕ In Review 1  ───│  PLA-2  Second issue with a workspace                                                                 esc  │──────────────────
       PLA-3     ▮▮▯ │   ◔ In Progress    ET                                                                                      │aft         1d ago
@@ -278,7 +278,7 @@
 ########## 007 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -319,12 +319,12 @@
                                                                                                           “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   w pick one of its 4 sessions   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority        │   ╰─ω─╯~   │
-  A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
+  A assign   X cancel   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 008 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -370,7 +370,7 @@
 ########## 009 before 'w'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -411,12 +411,12 @@
                                                                                                           “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   w pick one of its 4 sessions   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority        │   ╰─ω─╯~   │
-  A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
+  A assign   X cancel   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   ? all keys             ╰──╴ Col ╶───╯
 
 ########## 010 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -462,7 +462,7 @@
 ########## 011 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
@@ -508,7 +508,7 @@
 ########## 012 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                                                                                6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago

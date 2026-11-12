@@ -55,7 +55,10 @@ FAKE_ISSUES = [
 FAKE_DAILY_REPORT = ("## on your plate\n- **PLA-1 login thing** — PR #7 is in review since Tuesday.\n↳ only you\n"
                      "- **PLA-99 someone else's** — waiting on Sam.\n↳ you and Sam\n- **a loose topic** — nobody filed it yet.\n"
                      "## loose ends\n- reply to Robin about herdr links.\n## today\n- start with PLA-1, it is closest to done.")
-ONE_WORKSPACE = [{"label": "PLA-2 Second issue with a workspace", "number": 3, "workspace_id": "w1", "agent_status": "working"}]
+ONE_WORKSPACE = [{"label": "PLA-2 Second issue with a workspace", "number": 3, "workspace_id": "w1", "agent_status": "working"},
+                 # started from The Daily Bark: a topic with no issue, and an issue that is not mine. Both show under W
+                 {"label": "topic-0a1 a loose topic", "number": 5, "workspace_id": "w5", "agent_status": "idle"},
+                 {"label": "PLA-99 someone else's", "number": 7, "workspace_id": "w7", "agent_status": "done"}]
 TWO_WORKSPACES_FOR_ONE_ISSUE = [
     {"label": "PLA-2 Second issue with a workspace", "number": 3, "workspace_id": "w1", "agent_status": "working", "tab_count": 3,
      "worktree": {"repo_name": "alpha"}},
@@ -151,6 +154,9 @@ EVERY_SCREEN = [
     ENTER, ESC, "l",                                             # the closing card: only l (its button) finishes
     "O", ENTER, "q", "Q", "j",                                   # q does nothing in the tour; Q quits it, and every key works again
     "O", ESC,                                                    # the welcome card can be declined
+    "b", "s", "j", "j", "l", "a", ESC, "p", "j", "l", ESC, "x", ESC, ESC,   # save a topic to the to-do list, by s and by acting on one; open it, remove one
+    "p", "x", "x", ESC,                                          # the to-do list from the issue list; emptied
+    "W", "j", "j", "S", "W",                                     # active workspaces: mine, someone else's, a topic (S can't change that one)
 ]
 SOMEONE_BRAND_NEW = "someone brand new"  # in place of the workspaces: setup is done, nothing else exists yet
 SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, the steps)

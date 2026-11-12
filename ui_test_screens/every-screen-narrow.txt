@@ -2,7 +2,7 @@
 ########## 001 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -48,7 +48,7 @@
 ########## 002 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -94,7 +94,7 @@
 ########## 003 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -140,7 +140,7 @@
 ########## 004 before '?'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -186,39 +186,39 @@
 ########## 005 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
- ▎    PLA-1     !!!  First issue about login                                                1h ago
-   ╭────────────────────────────────────────────────────────────────────────────────────────────╮o
-   │  keys  every key                                                                      esc  │
-  ○│  MOVE AROUND                                   CHANGE THE ISSUE                            │─
-   │   j / k  or  ↓ / ↑  next / previous             S                 status                   │o
-   │   5j  /  5k         jump 5 rows                 P                 priority                 │
-  ◌│   G                 last issue                  A                 assign                   │─
-   │   type, or /        filter · esc clears         X                 cancel                   │o
-   │   click / wheel     rows, hints · scroll        U                 undo last change         │
-  ◈│                                                 n                 new issue                │─
-   │  WORK ON THE ISSUE                                                                         │o
-   │   enter  or  l      start working on it        VIEWS                                       │
+ ▎ ╭────────────────────────────────────────────────────────────────────────────────────────────╮o
+   │  keys  every key                                                                      esc  │o
+   │  MOVE AROUND                                   CHANGE THE ISSUE                            │
+  ○│   j / k  or  ↓ / ↑  next / previous             S                 status                   │─
+   │   5j  /  5k         jump 5 rows                 P                 priority                 │o
+   │   G                 last issue                  A                 assign                   │
+  ◌│   type, or /        filter · esc clears         X                 cancel                   │─
+   │   click / wheel     rows, hints · scroll        U                 undo last change         │o
+   │                                                 n                 new issue                │
+  ◈│  WORK ON THE ISSUE                                                                         │─
+   │   enter  or  l      start working on it        VIEWS                                       │o
    │   space             preview                     b                 daily report             │
-   │   w                 jump to its workspace       t                 team                     │
-   │   a                 ask Col                     T                 project                  │
-   │   C                 comment                     R                 review inbox             │
-   │   c                 free session with Col       r                 refresh                  │
-   │                                                 h  or  esc        back, then close         │
-   │  OPEN ELSEWHERE                                 q                 close                    │
-   │   g                 pull request                Z                 Col on / off             │
-   │   L                 Linear app                  K                 footer hints on / off    │
-   │   y                 copy link                   D                 setup                    │
+   │   w                 jump to its workspace       p                 to-do list               │
+   │   a                 ask Col                     W                 active workspaces        │
+   │   C                 comment                     t                 team                     │
+   │   c                 free session with Col       T                 project                  │
+   │                                                 R                 review inbox             │
+   │  OPEN ELSEWHERE                                 r                 refresh                  │
+   │   g                 pull request                h  or  esc        back, then close         │
+   │   L                 Linear app                  q                 close                    │
+   │   y                 copy link                   Z                 Col on / off             │
+   │                                                 K                 footer hints on / off    │
+   │                                                 D                 setup                    │
    │                                                 B                 give Col a bone          │
    │                                                 O                 the quick tour           │
    │                                                                                            │
    ╰────────────────────────────────────────────────────────────────────────────────────────────╯
-
 
 
 
@@ -232,7 +232,7 @@
 ########## 006 before ' '
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -278,7 +278,7 @@
 ########## 007 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-1  First issue about login                                                       esc  │─
    │   ◔ In Progress    ET                                                                      │o
@@ -324,7 +324,7 @@
 ########## 008 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-1  First issue about login                                                       esc  │─
    │   ◔ In Progress    ET                          │ comments  2                               │o
@@ -370,7 +370,7 @@
 ########## 009 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-1  First issue about login                                                       esc  │─
    │   ◔ In Progress    ET                          │ comments  2                               │o
@@ -416,7 +416,7 @@
 ########## 010 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-1  First issue about login                                                       esc  │─
    │   ◔ In Progress    ET                          │ comments  2                               │o
@@ -462,7 +462,7 @@
 ########## 011 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -508,7 +508,7 @@
 ########## 012 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -554,7 +554,7 @@
 ########## 013 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -600,7 +600,7 @@
 ########## 014 before 'P'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -646,7 +646,7 @@
 ########## 015 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -692,7 +692,7 @@
 ########## 016 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -738,7 +738,7 @@
 ########## 017 before 'U'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -784,7 +784,7 @@
 ########## 018 before 'A'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -830,7 +830,7 @@
 ########## 019 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -876,7 +876,7 @@
 ########## 020 before '/'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -922,7 +922,7 @@
 ########## 021 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -968,7 +968,7 @@
 ########## 022 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1014,7 +1014,7 @@
 ########## 023 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1060,7 +1060,7 @@
 ########## 024 before '-'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1106,7 +1106,7 @@
 ########## 025 before '2'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1152,7 +1152,7 @@
 ########## 026 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              1 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              1 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◔ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
  ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
@@ -1198,7 +1198,7 @@
 ########## 027 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              1 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              1 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◔ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
  ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
@@ -1244,7 +1244,7 @@
 ########## 028 before 't'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1290,7 +1290,7 @@
 ########## 029 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1382,7 +1382,7 @@
 ########## 031 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1428,7 +1428,7 @@
 ########## 032 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
  ▎ │  morning, Erik. here's what you've been up to.                                             │o
@@ -1469,12 +1469,12 @@
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-1   c free session on it   a ask Col about it              │   ╰─ω─╯~   │
-  j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
+  s save to to-do   p to-do list   j/k topics   d/u page   r write it again          ╰──╴ Col ╶───╯
 
 ########## 033 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
  ▎ │  morning, Erik. here's what you've been up to.                                             │o
@@ -1515,12 +1515,12 @@
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
+  s save to to-do   p to-do list   j/k topics   d/u page   r write it again          ╰──╴ Col ╶───╯
 
 ########## 034 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
  ▎ │  morning, Erik. here's what you've been up to.                                             │o
@@ -1543,9 +1543,9 @@
    │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │       │
    │     │  c   free session on it                                                      │       │
    │    L│  a   ask Col about it                                                        │       │
-   │   ──│                                                                              │────   │
-   │     ╰──────────────────────────────────────────────────────────────────────────────╯       │
-   │   • reply to Robin about herdr links.                                                      │
+   │   ──│  s   save it to the to-do list                                               │────   │
+   │     │                                                                              │       │
+   │   • ╰──────────────────────────────────────────────────────────────────────────────╯       │
    │                                                                                            │
    │                                                                                            │
    │    TODAY                                                                                   │
@@ -1566,7 +1566,7 @@
 ########## 035 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
  ▎ │  morning, Erik. here's what you've been up to.                                             │o
@@ -1607,12 +1607,12 @@
                                                                              “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
+  s save to to-do   p to-do list   j/k topics   d/u page   r write it again          ╰──╴ Col ╶───╯
 
 ########## 036 before 'K'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1658,7 +1658,7 @@
 ########## 037 before 'K'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1704,7 +1704,7 @@
 ########## 038 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1750,7 +1750,7 @@
 ########## 039 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1796,7 +1796,7 @@
 ########## 040 before 'y'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1842,7 +1842,7 @@
 ########## 041 before 'g'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1888,7 +1888,7 @@
 ########## 042 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1934,7 +1934,7 @@
 ########## 043 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -1980,7 +1980,7 @@
 ########## 044 before 'n'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2026,7 +2026,7 @@
 ########## 045 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2072,7 +2072,7 @@
 ########## 046 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2118,7 +2118,7 @@
 ########## 047 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
  ▎ │  Third one in review                        │    ✦ ask Col about PLA-3                     │o
@@ -2164,7 +2164,7 @@
 ########## 048 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
  ▎ │  Third one in review                        │    ✦ ask Col about PLA-3                     │o
@@ -2210,7 +2210,7 @@
 ########## 049 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
  ▎ │  Third one in review                        │    ✦ ask Col about PLA-3                     │o
@@ -2256,7 +2256,7 @@
 ########## 050 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2302,7 +2302,7 @@
 ########## 051 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2348,7 +2348,7 @@
 ########## 052 before 'D'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2394,7 +2394,7 @@
 ########## 053 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2440,7 +2440,7 @@
 ########## 054 before 'R'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2486,7 +2486,7 @@
 ########## 055 before 'T'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2532,7 +2532,7 @@
 ########## 056 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2578,7 +2578,7 @@
 ########## 057 before 'X'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2624,7 +2624,7 @@
 ########## 058 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2670,7 +2670,7 @@
 ########## 059 before 'G'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2716,7 +2716,7 @@
 ########## 060 before '5'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2762,7 +2762,7 @@
 ########## 061 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2808,7 +2808,7 @@
 ########## 062 before 't'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2854,7 +2854,7 @@
 ########## 063 before '/'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2900,7 +2900,7 @@
 ########## 064 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2946,7 +2946,7 @@
 ########## 065 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -2992,7 +2992,7 @@
 ########## 066 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3038,7 +3038,7 @@
 ########## 067 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3084,7 +3084,7 @@
 ########## 068 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3130,7 +3130,7 @@
 ########## 069 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3176,7 +3176,7 @@
 ########## 070 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                                              6 issues
+  my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3222,7 +3222,7 @@
 ########## 071 before 'U'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           5 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re5 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◐ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
@@ -3268,7 +3268,7 @@
 ########## 072 before ' '
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3314,7 +3314,7 @@
 ########## 073 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
  ▎ │   ◕ In Review    ET                                                                        │o
@@ -3360,7 +3360,7 @@
 ########## 074 before 'o'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
  ▎ │   ◕ In Review    ET                            │ comments  2                               │o
@@ -3406,7 +3406,7 @@
 ########## 075 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
  ▎ │   ◕ In Review    ET                            │ comments  2                               │o
@@ -3452,7 +3452,7 @@
 ########## 076 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
  ▎ │   ◕ In Review    ET                            │ comments  2                               │o
@@ -3498,7 +3498,7 @@
 ########## 077 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
  ▎ │   ◕ In Review    ET                            │ comments  2                               │o
@@ -3544,7 +3544,7 @@
 ########## 078 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3590,7 +3590,7 @@
 ########## 079 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3636,7 +3636,7 @@
 ########## 080 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3682,7 +3682,7 @@
 ########## 081 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3728,7 +3728,7 @@
 ########## 082 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3774,7 +3774,7 @@
 ########## 083 before 'm'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3820,7 +3820,7 @@
 ########## 084 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           0 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re0 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -3866,7 +3866,7 @@
 ########## 085 before ('click row with', 'PLA-4')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3912,7 +3912,7 @@
 ########## 086 before ('click row with', 'PLA-4')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -3958,7 +3958,7 @@
 ########## 087 before ('click hint', 27)
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
    │   ○ Todo    ET                                                                             │o
@@ -4004,7 +4004,7 @@
 ########## 088 before ('wheel', 'down')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4050,7 +4050,7 @@
 ########## 089 before ('wheel', 'up')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4096,7 +4096,7 @@
 ########## 090 before ('click hint', '?')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4142,39 +4142,39 @@
 ########## 091 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-      PLA-1     !!!  First issue about login                                                1h ago
    ╭────────────────────────────────────────────────────────────────────────────────────────────╮o
-   │  keys  every key                                                                      esc  │
-  ○│  MOVE AROUND                                   CHANGE THE ISSUE                            │─
- ▎ │   j / k  or  ↓ / ↑  next / previous             S                 status                   │o
-   │   5j  /  5k         jump 5 rows                 P                 priority                 │
-  ◌│   G                 last issue                  A                 assign                   │─
-   │   type, or /        filter · esc clears         X                 cancel                   │o
-   │   click / wheel     rows, hints · scroll        U                 undo last change         │
-  ◈│                                                 n                 new issue                │─
-   │  WORK ON THE ISSUE                                                                         │o
-   │   enter  or  l      start working on it        VIEWS                                       │
+   │  keys  every key                                                                      esc  │o
+   │  MOVE AROUND                                   CHANGE THE ISSUE                            │
+  ○│   j / k  or  ↓ / ↑  next / previous             S                 status                   │─
+ ▎ │   5j  /  5k         jump 5 rows                 P                 priority                 │o
+   │   G                 last issue                  A                 assign                   │
+  ◌│   type, or /        filter · esc clears         X                 cancel                   │─
+   │   click / wheel     rows, hints · scroll        U                 undo last change         │o
+   │                                                 n                 new issue                │
+  ◈│  WORK ON THE ISSUE                                                                         │─
+   │   enter  or  l      start working on it        VIEWS                                       │o
    │   space             preview                     b                 daily report             │
-   │   w                 jump to its workspace       t                 team                     │
-   │   a                 ask Col                     T                 project                  │
-   │   C                 comment                     R                 review inbox             │
-   │   c                 free session with Col       r                 refresh                  │
-   │                                                 h  or  esc        back, then close         │
-   │  OPEN ELSEWHERE                                 q                 close                    │
-   │   g                 pull request                Z                 Col on / off             │
-   │   L                 Linear app                  K                 footer hints on / off    │
-   │   y                 copy link                   D                 setup                    │
+   │   w                 jump to its workspace       p                 to-do list               │
+   │   a                 ask Col                     W                 active workspaces        │
+   │   C                 comment                     t                 team                     │
+   │   c                 free session with Col       T                 project                  │
+   │                                                 R                 review inbox             │
+   │  OPEN ELSEWHERE                                 r                 refresh                  │
+   │   g                 pull request                h  or  esc        back, then close         │
+   │   L                 Linear app                  q                 close                    │
+   │   y                 copy link                   Z                 Col on / off             │
+   │                                                 K                 footer hints on / off    │
+   │                                                 D                 setup                    │
    │                                                 B                 give Col a bone          │
    │                                                 O                 the quick tour           │
    │                                                                                            │
    ╰────────────────────────────────────────────────────────────────────────────────────────────╯
-
 
 
 
@@ -4188,7 +4188,7 @@
 ########## 092 before ('click hint', 'S')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4234,7 +4234,7 @@
 ########## 093 before ('click row with', 'In Review')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4280,7 +4280,7 @@
 ########## 094 before ('click row with', 'In Review')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4326,7 +4326,7 @@
 ########## 095 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4372,7 +4372,7 @@
 ########## 096 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4418,7 +4418,7 @@
 ########## 097 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4464,7 +4464,7 @@
 ########## 098 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4510,7 +4510,7 @@
 ########## 099 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4556,7 +4556,7 @@
 ########## 100 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4602,7 +4602,7 @@
 ########## 101 before ' '
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -4648,7 +4648,7 @@
 ########## 102 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
    │   ◕ In Review    ET                                                                        │o
@@ -4694,7 +4694,7 @@
 ########## 103 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
    │   ◕ In Review    ET                            │ comments  2                               │o
@@ -4740,7 +4740,7 @@
 ########## 104 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
    │   ◕ In Review    ET                            │ comments  2                               │o
@@ -4786,7 +4786,7 @@
 ########## 105 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
    │   ◕ In Review    ET                            │ comments  2                               │o
@@ -4832,7 +4832,7 @@
 ########## 106 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
    │   ◕ In Review    ET                            │ comments  2                               │o
@@ -4878,7 +4878,7 @@
 ########## 107 before 'c'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
    │   ◕ In Review    ET                            │ comments  2                               │o
@@ -4924,7 +4924,7 @@
 ########## 108 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  comment · Col drafts                                                          esc  │─
    │  Fourth sits in todo                        │    ✦ Col drafts a comment on PLA-4           │o
@@ -4970,7 +4970,7 @@
 ########## 109 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  comment · Col drafts                                                          esc  │─
    │  Fourth sits in todo                        │    ✦ Col drafts a comment on PLA-4           │o
@@ -5016,7 +5016,7 @@
 ########## 110 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
    │   ◕ In Review    ET                            │ comments  2                               │o
@@ -5062,7 +5062,7 @@
 ########## 111 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  ask Col                                                                       esc  │─
    │  Fourth sits in todo                        │    ✦ ask Col about PLA-4                     │o
@@ -5108,7 +5108,7 @@
 ########## 112 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5154,7 +5154,7 @@
 ########## 113 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5200,7 +5200,7 @@
 ########## 114 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5246,7 +5246,7 @@
 ########## 115 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5292,7 +5292,7 @@
 ########## 116 before 'P'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5338,7 +5338,7 @@
 ########## 117 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5384,7 +5384,7 @@
 ########## 118 before 'A'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5430,7 +5430,7 @@
 ########## 119 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5476,7 +5476,7 @@
 ########## 120 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5522,7 +5522,7 @@
 ########## 121 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
    │  morning, Erik. here's what you've been up to.                                             │o
@@ -5563,12 +5563,12 @@
       “18/25   j  /  k  pick a topic.  l  or  enter  shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
+  s save to to-do   p to-do list   j/k topics   d/u page   r write it again          ╰──╴ Col ╶───╯
 
 ########## 122 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
    │  morning, Erik. here's what you've been up to.                                             │o
@@ -5591,9 +5591,9 @@
    │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │       │
    │     │  c   free session on it                                                      │       │
    │    L│  a   ask Col about it                                                        │       │
-   │   ──│                                                                              │────   │
-   │     ╰──────────────────────────────────────────────────────────────────────────────╯       │
-   │   • reply to Robin about herdr links.                                                      │
+   │   ──│  s   save it to the to-do list                                               │────   │
+   │     │                                                                              │       │
+   │   • ╰──────────────────────────────────────────────────────────────────────────────╯       │
    │                                                                                            │
    │                                                                                            │
    │    TODAY                                                                                   │
@@ -5614,7 +5614,7 @@
 ########## 123 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
    │  morning, Erik. here's what you've been up to.                                             │o
@@ -5655,12 +5655,12 @@
                     “20/25   esc  or  h  once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                   Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
+  s save to to-do   p to-do list   j/k topics   d/u page   r write it again          ╰──╴ Col ╶───╯
 
 ########## 124 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5706,7 +5706,7 @@
 ########## 125 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5752,7 +5752,7 @@
 ########## 126 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5798,7 +5798,7 @@
 ########## 127 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5844,7 +5844,7 @@
 ########## 128 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5890,7 +5890,7 @@
 ########## 129 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5936,7 +5936,7 @@
 ########## 130 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -5982,7 +5982,7 @@
 ########## 131 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6028,7 +6028,7 @@
 ########## 132 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6074,7 +6074,7 @@
 ########## 133 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6120,7 +6120,7 @@
 ########## 134 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6166,7 +6166,7 @@
 ########## 135 before 'Q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6212,7 +6212,7 @@
 ########## 136 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6258,7 +6258,7 @@
 ########## 137 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6304,7 +6304,7 @@
 ########## 138 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6347,10 +6347,10 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
-########## 139 before 'q'
+########## 139 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
       PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
@@ -6389,6 +6389,1064 @@
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                              “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 140 before 's'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
+  ◕│  Col  daily report                                                                    esc  │─
+   │  morning, Erik. here's what you've been up to.                                             │o
+   │  1 lookups in Linear, Slack and GitHub                                                     │o
+   │                                                                                            │
+  ◔│    ON YOUR PLATE                                                                           │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                  │
+  ◌│     ↳ only you                                                                             │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │o
+   │ ▎   ↳ you and Sam                                                                          │
+   │                                                                                            │
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+   │                                                                                            │
+   │   • a loose topic — nobody filed it yet.                                                   │
+   │                                                                                            │
+   │                                                                                            │
+   │    LOOSE ENDS                                                                              │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • reply to Robin about herdr links.                                                      │
+   │                                                                                            │
+   │                                                                                            │
+   │    TODAY                                                                                   │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • start with PLA-1, it is closest to done.                                               │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                             “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
+  s save to to-do   p to-do list   j/k topics   d/u page   r write it again          ╰──╴ Col ╶───╯
+
+########## 141 before 'j'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
+  ◕│  Col  daily report                                                                    esc  │─
+   │  morning, Erik. here's what you've been up to.                                             │o
+   │  1 lookups in Linear, Slack and GitHub                                                     │o
+   │                                                                                            │
+  ◔│    ON YOUR PLATE                                                                           │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                  │
+  ◌│     ↳ only you                                                                             │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │o
+   │ ▎   ↳ you and Sam                                                                          │
+   │                                                                                            │
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+   │                                                                                            │
+   │   • a loose topic — nobody filed it yet.                                                   │
+   │                                                                                            │
+   │                                                                                            │
+   │    LOOSE ENDS                                                                              │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • reply to Robin about herdr links.                                                      │
+   │                                                                                            │
+   │                                                                                            │
+   │    TODAY                                                                                   │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • start with PLA-1, it is closest to done.                                               │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
+  s save to to-do   p to-do list   j/k topics   d/u page   r write it again          ╰──╴ Col ╶───╯
+
+########## 142 before 'j'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
+  ◕│  Col  daily report                                                                    esc  │─
+   │  morning, Erik. here's what you've been up to.                                             │o
+   │  1 lookups in Linear, Slack and GitHub                                                     │o
+   │                                                                                            │
+  ◔│    ON YOUR PLATE                                                                           │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                  │
+  ◌│     ↳ only you                                                                             │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │   • PLA-99 someone else's — waiting on Sam.                                                │o
+   │     ↳ you and Sam                                                                          │
+   │                                                                                            │
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+   │                                                                                            │
+   │ ▎ • a loose topic — nobody filed it yet.                                                   │
+   │                                                                                            │
+   │                                                                                            │
+   │    LOOSE ENDS                                                                              │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • reply to Robin about herdr links.                                                      │
+   │                                                                                            │
+   │                                                                                            │
+   │    TODAY                                                                                   │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • start with PLA-1, it is closest to done.                                               │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   s save to to-do   p to-do list         ╰──╴ Col ╶───╯
+
+########## 143 before 'l'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
+  ◕│  Col  daily report                                                                    esc  │─
+   │  morning, Erik. here's what you've been up to.                                             │o
+   │  1 lookups in Linear, Slack and GitHub                                                     │o
+   │                                                                                            │
+  ◔│    ON YOUR PLATE                                                                           │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                  │
+  ◌│     ↳ only you                                                                             │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │   • PLA-99 someone else's — waiting on Sam.                                                │o
+   │     ↳ you and Sam                                                                          │
+   │                                                                                            │
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+   │                                                                                            │
+   │   • a loose topic — nobody filed it yet.                                                   │
+   │                                                                                            │
+   │                                                                                            │
+   │    LOOSE ENDS                                                                              │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │ ▎ • reply to Robin about herdr links.                                                      │
+   │                                                                                            │
+   │                                                                                            │
+   │    TODAY                                                                                   │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • start with PLA-1, it is closest to done.                                               │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   s save to to-do   p to-do list         ╰──╴ Col ╶───╯
+
+########## 144 before 'a'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
+  ◕│  Col  daily report                                                                    esc  │─
+   │  morning, Erik. here's what you've been up to.                                             │o
+   │  1 lookups in Linear, Slack and GitHub                                                     │o
+   │                                                                                            │
+  ◔│    ON YOUR PLATE                                                                           │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                  │
+  ◌│     ↳ only you                                                                             │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │   • PLA-99 someone else's — waiting on Sam.                                                │o
+   │     ↳ you and Sam                                                                          │
+   │                                                                                            │
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+   │                                                                                            │
+   │   • a loose topic — nobody filed it yet.                                                   │
+   │                                                                                            │
+   │                                                                                            │
+   │    LOOSE ENDS                                                                              │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │ ▎ • reply to Robin about herdr links.                                                      │
+   │     ╭──────────────────────────────────────────────────────╮                               │
+   │     │  Col  this topic                                esc  │                               │
+   │    T│  / filter                                            │                               │
+   │   ──│                                                      │────────────────────────────   │
+   │     │ ▎n   create a Linear issue from this topic           │                               │
+   │   • │  c   free session on it                              │                               │
+   │     │  a   ask Col about it                                │                               │
+   │     │  s   save it to the to-do list                       │                               │
+   ╰─────│                                                      │───────────────────────────────╯
+         ╰──────────────────────────────────────────────────────╯
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l/enter pick   or press its key   j/k move   type to filter   esc/h back           ╰──╴ Col ╶───╯
+
+########## 145 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  Col  daily report · topic 4                                                          esc  │─
+   │   ON YOUR PLATE                             │    ✦ ask Col about this topic                │o
+   │  ────────────────────────────────────────   │    ────────────────────────────────────────  │o
+   │                                             │                                              │
+  ◔│  • PLA-1 login thing — PR #7 is in review   │     Ask Col about this topic: reply to       │─
+   │    since Tuesday.                           │     Robin about herdr links.… Col has        │o
+   │    ↳ only you                               │     the report, your issues, and can         │o
+   │                                             │     look things up in Linear, Slack and      │
+  ◌│  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │     GitHub. The thread is kept for the       │─
+   │                                             │     day, one per topic.                      │o
+   │  • PLA-99 someone else's — waiting on       │                                              │
+  ◈│    Sam.                                     │                                              │─
+ ▎ │    ↳ you and Sam                            │                                              │o
+   │                                             │                                              │
+   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │                                              │
+   │                                             │                                              │
+   │  • a loose topic — nobody filed it yet.     │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │   LOOSE ENDS                                │                                              │
+   │  ────────────────────────────────────────   │                                              │
+   │                                             │                                              │
+   │  • reply to Robin about herdr links.        │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │   TODAY                                     │                                              │
+   │  ────────────────────────────────────────   │                                              │
+   │                                             │                                              │
+   │  • start with PLA-1, it is closest to       │   ╭────────────────────────────────────────╮ │
+   │    done.                                    │   │ › ▏ask a question…                     │ │
+   │                                             │   ╰────────────────────────────────────────╯ │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  enter send   ↑/↓ scroll the thread   pgup/pgdn faster                              │   ╰─ω─╯~   │
+  ctrl-d/u scroll the side   esc close                                               ╰──╴ Col ╶───╯
+
+########## 146 before 'p'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
+  ◕│  Col  daily report                                                                    esc  │─
+   │  morning, Erik. here's what you've been up to.                                             │o
+   │  1 lookups in Linear, Slack and GitHub                                                     │o
+   │                                                                                            │
+  ◔│    ON YOUR PLATE                                                                           │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                  │
+  ◌│     ↳ only you                                                                             │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │   • PLA-99 someone else's — waiting on Sam.                                                │o
+   │     ↳ you and Sam                                                                          │
+   │                                                                                            │
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+   │                                                                                            │
+   │   • a loose topic — nobody filed it yet.                                                   │
+   │                                                                                            │
+   │                                                                                            │
+   │    LOOSE ENDS                                                                              │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │ ▎ • reply to Robin about herdr links.                                                      │
+   │                                                                                            │
+   │                                                                                            │
+   │    TODAY                                                                                   │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • start with PLA-1, it is closest to done.                                               │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   s save to to-do   p to-do list         ╰──╴ Col ╶───╯
+
+########## 147 before 'j'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you saved from The Daily Bark. it stays here when the report is written again.       │o
+   │  2 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │
+  ◌│ ▎   ↳ you and Sam                                                                          │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │   • reply to Robin about herdr links.                                                      │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
+  x remove it   j/k topics   d/u page   esc/h close                                  ╰──╴ Col ╶───╯
+
+########## 148 before 'l'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you saved from The Daily Bark. it stays here when the report is written again.       │o
+   │  2 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-99 someone else's — waiting on Sam.                                                │
+  ◌│     ↳ you and Sam                                                                          │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │ ▎ • reply to Robin about herdr links.                                                      │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   x remove it   j/k topics               ╰──╴ Col ╶───╯
+
+########## 149 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you saved from The Daily Bark. it stays here when the report is written again.       │o
+   │  2 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-99 someone else's — waiting on Sam.                                                │
+  ◌│     ↳ you and Sam                                                                          │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │ ▎ • reply to Robin about herdr links.                                                      │o
+   │     ╭──────────────────────────────────────────────────────╮                               │
+   │     │  Col  this topic                                esc  │                               │
+   │     │  / filter                                            │                               │
+   │     │                                                      │                               │
+   │     │ ▎n   create a Linear issue from this topic           │                               │
+   │     │  c   free session on it                              │                               │
+   │     │  a   ask Col about it                                │                               │
+   │     │  x   remove it from the to-do list                   │                               │
+   │     │                                                      │                               │
+   │     ╰──────────────────────────────────────────────────────╯                               │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l/enter pick   or press its key   j/k move   type to filter   esc/h back           ╰──╴ Col ╶───╯
+
+########## 150 before 'x'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you saved from The Daily Bark. it stays here when the report is written again.       │o
+   │  2 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-99 someone else's — waiting on Sam.                                                │
+  ◌│     ↳ you and Sam                                                                          │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │ ▎ • reply to Robin about herdr links.                                                      │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                           “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   x remove it   j/k topics               ╰──╴ Col ╶───╯
+
+########## 151 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you saved from The Daily Bark. it stays here when the report is written again.       │o
+   │  1 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │
+  ◌│ ▎   ↳ you and Sam                                                                          │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
+  x remove it   j/k topics   d/u page   esc/h close                                  ╰──╴ Col ╶───╯
+
+########## 152 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
+  ◕│  Col  daily report                                                                    esc  │─
+   │  morning, Erik. here's what you've been up to.                                             │o
+   │  1 lookups in Linear, Slack and GitHub                                                     │o
+   │                                                                                            │
+  ◔│    ON YOUR PLATE                                                                           │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                  │
+  ◌│     ↳ only you                                                                             │─
+   │                                                                                            │o
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+  ◈│                                                                                            │─
+ ▎ │   • PLA-99 someone else's — waiting on Sam.                                                │o
+   │     ↳ you and Sam                                                                          │
+   │                                                                                            │
+   │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │
+   │                                                                                            │
+   │   • a loose topic — nobody filed it yet.                                                   │
+   │                                                                                            │
+   │                                                                                            │
+   │    LOOSE ENDS                                                                              │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │ ▎ • reply to Robin about herdr links.                                                      │
+   │                                                                                            │
+   │                                                                                            │
+   │    TODAY                                                                                   │
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │
+   │                                                                                            │
+   │   • start with PLA-1, it is closest to done.                                               │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   s save to to-do   p to-do list         ╰──╴ Col ╶───╯
+
+########## 153 before 'p'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 154 before 'x'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you saved from The Daily Bark. it stays here when the report is written again.       │o
+   │  1 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │ ▎ • PLA-99 someone else's — waiting on Sam.                                                │
+  ◌│ ▎   ↳ you and Sam                                                                          │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
+  x remove it   j/k topics   d/u page   esc/h close                                  ╰──╴ Col ╶───╯
+
+########## 155 before 'x'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you saved from The Daily Bark. it stays here when the report is written again.       │o
+   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   nothing here yet. In The Daily Bark, s saves a topic here, and so does doing something   │
+  ◌│   with it. It stays until you remove it.                                                   │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  esc/h close                                                                        ╰──╴ Col ╶───╯
+
+########## 156 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you saved from The Daily Bark. it stays here when the report is written again.       │o
+   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   nothing here yet. In The Daily Bark, s saves a topic here, and so does doing something   │
+  ◌│   with it. It stays until you remove it.                                                   │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  esc/h close                                                                        ╰──╴ Col ╶───╯
+
+########## 157 before 'W'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 158 before 'j'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+ h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◔ Linear issue 1  ──────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯  someone else's                               ▶ ws 7                  just now
+
+  ◔ Topic, not in Linear 1  ──────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ ws 5                  just now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                             “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
+
+########## 159 before 'j'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+ h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◔ Linear issue 1  ──────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-99    ▯▯▯  someone else's                               ▶ ws 7                  just now
+
+  ◔ Topic, not in Linear 1  ──────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ ws 5                  just now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                             “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
+
+########## 160 before 'S'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+ h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◔ Linear issue 1  ──────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯  someone else's                               ▶ ws 7                  just now
+
+  ◔ Topic, not in Linear 1  ──────────────────────────────────────────────────────────────────────
+ ▎  ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ ws 5                  just now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                             “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
+  C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
+
+########## 161 before 'W'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+ h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◔ Linear issue 1  ──────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯  someone else's                               ▶ ws 7                  just now
+
+  ◔ Topic, not in Linear 1  ──────────────────────────────────────────────────────────────────────
+ ▎  ▶ topic-0a1 ▯▯▯  a loose topic                                ▶ ws 5                  just now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                             “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  ✓ topic-0a1 is a workspace, not a Linear issue here · w jumps to it                ╰──╴ Col ╶───╯
+
+########## 162 before 'q'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                             “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
