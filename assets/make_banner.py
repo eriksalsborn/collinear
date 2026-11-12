@@ -3,6 +3,7 @@ COLLINEAR in big block letters in the app's blue, and Col in his outline exactly
 from pathlib import Path
 
 BLUE, BLUE_SHADOW, WHITE, MUTED, BACKGROUND = "#5fafff", "#2a5f9e", "#ffffff", "#8a8fa3", "#16161e"  # 256-colour 75 is #5fafff
+GREY, GREY_SHADOW = "#a3a8ba", "#4d5163"  # LINEAR is a quieter grey, so COL is what you read first
 LETTERS = {
     "C": [".###.", "#...#", "#....", "#....", "#....", "#...#", ".###."],
     "O": [".###.", "#...#", "#...#", "#...#", "#...#", "#...#", ".###."],
@@ -31,9 +32,10 @@ def stroke(path, colour, width=2.4):
 
 def draw_title(text, left, top, pixel):
     x = left
-    for letter in text:
+    for letter_number, letter in enumerate(text):
         rows = LETTERS[letter]
-        for colour, offset in ((BLUE_SHADOW, pixel * 0.28), (BLUE, 0)):  # a short shadow down-right, then the letter
+        letter_colour, shadow_colour = (BLUE, BLUE_SHADOW) if letter_number < len("COL") else (GREY, GREY_SHADOW)
+        for colour, offset in ((shadow_colour, pixel * 0.28), (letter_colour, 0)):  # a short shadow down-right, then the letter
             for row_number, row in enumerate(rows):
                 for column_number, cell in enumerate(row):
                     if cell == "#":

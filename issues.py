@@ -2669,6 +2669,10 @@ class IssueListScreen:
         screen.addnstr(0, name_x - 2, "  " + app_name + "  ", max(min(len(app_name) + 4, screen_width - name_x + 1), 0),
                     colour(COL_ACCENT) | curses.A_REVERSE | curses.A_BOLD)
         screen.addnstr(0, name_x, "^ ▐▌ ^", max(min(6, screen_width - name_x - 1), 0), colour(COL_BADGE) | curses.A_BOLD)  # the eyes and the blaze in white
+        # COL stays blue, the rest of the name is a quieter grey, so the dog's name is what you read first
+        linear_x = name_x + len("^ ▐▌ ^  C O L")
+        screen.addnstr(0, linear_x, app_name[len("^ ▐▌ ^  C O L"):] + "  ", max(min(len(" L I N E A R") + 2, screen_width - linear_x - 1), 0),
+                       colour(MUTED) | curses.A_REVERSE | curses.A_BOLD)
         if name_x >= 5 and name_x + len(app_name) + 5 < screen_width:
             screen.addnstr(0, name_x - 5, "✦ ", 2, colour(COL_FACE) | curses.A_BOLD)
             screen.addnstr(0, name_x + len(app_name) + 3, " ✦", 2, colour(COL_FACE) | curses.A_BOLD)
