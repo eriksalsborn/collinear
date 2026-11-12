@@ -22,7 +22,7 @@ NO_REPOSITORY_CHOICE = "∅  no repo · just the issue, no code"
 PHASES = [("issue", "write the issue: what, why, acceptance criteria"),
           ("plan", "think (Col grills you) → discover → spec"),
           ("build", "build it from the spec"), ("review", "fresh eyes on the diff vs the spec")]
-ACCENT, MUTED, SELECTED_ROW, RED, BORDER, CODE, GREEN, YELLOW, ORANGE, PURPLE, SELECTED_ROW_MARKER, TITLE_TAG, DIM, DEFAULT_TEXT, DONE_FLASH, COL_FACE, COL_ACCENT, COL_BADGE = range(1, 19)
+ACCENT, MUTED, SELECTED_ROW, RED, BORDER, CODE, GREEN, YELLOW, ORANGE, PURPLE, SELECTED_ROW_MARKER, TITLE_TAG, DIM, DEFAULT_TEXT, DONE_FLASH, COL_FACE, COL_ACCENT, COL_BADGE, COL_BADGE_QUIET_TEXT = range(1, 20)
 # Linear-style priority bars + word + colour: the bars still read on the selected row, where everything is one colour.
 # Only single-width symbols: "‼" renders 2 columns wide in some terminals and shifts the rest of the row.
 PRIORITY_DISPLAY = {1: ("!!!", "urgent", RED), 2: ("▮▮▮", "high", ORANGE), 3: ("▮▮▯", "medium", YELLOW), 4: ("▮▯▯", "low", MUTED)}
@@ -852,7 +852,8 @@ def set_up_colour_pairs():
     for n, fg, bg in ((ACCENT, acc, -1), (MUTED, mut, -1), (SELECTED_ROW, sel_fg, sel_bg), (RED, red, -1), (BORDER, border, -1),
                       (CODE, code, -1), (GREEN, green, -1), (YELLOW, yellow, -1), (ORANGE, orange, -1),
                       (PURPLE, purple, -1), (SELECTED_ROW_MARKER, acc, sel_bg), (TITLE_TAG, sel_bg, acc), (DIM, dim, -1), (DEFAULT_TEXT, -1, -1),
-                      (DONE_FLASH, sel_bg, green), (COL_FACE, sel_fg, -1), (COL_ACCENT, sky, -1), (COL_BADGE, sel_fg, sky)):  # Col: white face, sky blue frame; COL_BADGE: white on sky
+                      (DONE_FLASH, sel_bg, green), (COL_FACE, sel_fg, -1), (COL_ACCENT, sky, -1), (COL_BADGE, sel_fg, sky),
+                      (COL_BADGE_QUIET_TEXT, sel_bg, sky)):  # Col: white face, sky blue frame; COL_BADGE: white on sky; quiet text: dark grey on sky
         curses.init_pair(n, fg, bg)
 
 
@@ -2669,10 +2670,11 @@ class IssueListScreen:
         screen.addnstr(0, name_x - 2, "  " + app_name + "  ", max(min(len(app_name) + 4, screen_width - name_x + 1), 0),
                     colour(COL_ACCENT) | curses.A_REVERSE | curses.A_BOLD)
         screen.addnstr(0, name_x, "^ ▐▌ ^", max(min(6, screen_width - name_x - 1), 0), colour(COL_BADGE) | curses.A_BOLD)  # the eyes and the blaze in white
-        # COL stays blue, the rest of the name is a quieter grey, so the dog's name is what you read first
+        # the whole badge is blue; C O L is written in the darkest tone and L I N E A R in a slightly greyer one,
+        # so the dog's name is what you read first
         linear_x = name_x + len("^ ▐▌ ^  C O L")
-        screen.addnstr(0, linear_x, app_name[len("^ ▐▌ ^  C O L"):] + "  ", max(min(len(" L I N E A R") + 2, screen_width - linear_x - 1), 0),
-                       colour(MUTED) | curses.A_REVERSE | curses.A_BOLD)
+        screen.addnstr(0, linear_x, app_name[len("^ ▐▌ ^  C O L"):], max(min(len(" L I N E A R"), screen_width - linear_x - 1), 0),
+                       colour(COL_BADGE_QUIET_TEXT) | curses.A_BOLD)
         if name_x >= 5 and name_x + len(app_name) + 5 < screen_width:
             screen.addnstr(0, name_x - 5, "✦ ", 2, colour(COL_FACE) | curses.A_BOLD)
             screen.addnstr(0, name_x + len(app_name) + 3, " ✦", 2, colour(COL_FACE) | curses.A_BOLD)

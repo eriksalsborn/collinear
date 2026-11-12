@@ -3,7 +3,7 @@ COLLINEAR in big block letters in the app's blue, and Col in his outline exactly
 from pathlib import Path
 
 BLUE, BLUE_SHADOW, WHITE, MUTED, BACKGROUND = "#5fafff", "#2a5f9e", "#ffffff", "#8a8fa3", "#16161e"  # 256-colour 75 is #5fafff
-GREY, GREY_SHADOW = "#a3a8ba", "#4d5163"  # LINEAR is a quieter grey, so COL is what you read first
+COL_INK, LINEAR_INK = "#11131a", "#4a5166"  # on the blue badge: COL near black, LINEAR slightly greyer, so COL is read first
 LETTERS = {
     "C": [".###.", "#...#", "#....", "#....", "#....", "#...#", ".###."],
     "O": [".###.", "#...#", "#...#", "#...#", "#...#", "#...#", ".###."],
@@ -34,8 +34,8 @@ def draw_title(text, left, top, pixel):
     x = left
     for letter_number, letter in enumerate(text):
         rows = LETTERS[letter]
-        letter_colour, shadow_colour = (BLUE, BLUE_SHADOW) if letter_number < len("COL") else (GREY, GREY_SHADOW)
-        for colour, offset in ((shadow_colour, pixel * 0.28), (letter_colour, 0)):  # a short shadow down-right, then the letter
+        letter_colour = COL_INK if letter_number < len("COL") else LINEAR_INK
+        for colour, offset in ((letter_colour, 0),):
             for row_number, row in enumerate(rows):
                 for column_number, cell in enumerate(row):
                     if cell == "#":
@@ -91,14 +91,18 @@ def draw_col(left, top, cell_width, cell_height):
     return box_left, box_top, box_width, box_height
 
 
-WIDTH, HEIGHT = 1100, 280
+WIDTH, HEIGHT = 1140, 280
 pixel = 12
-title_right = draw_title("COLLINEAR", 52, 84, pixel)
-box_left, box_top, box_width, box_height = draw_col(title_right + 152, 84, 14, 28)
+TITLE_LEFT, TITLE_TOP = 80, 84
+title_width = sum((len(LETTERS[letter][0]) + 1.4) * pixel for letter in "COLLINEAR")
+# the badge behind the name: solid blue, like the title bar in the app
+rect(TITLE_LEFT - 26, TITLE_TOP - 22, title_width + 36, 7 * pixel + 42, BLUE, 14)
+title_right = draw_title("COLLINEAR", TITLE_LEFT, TITLE_TOP, pixel)
+box_left, box_top, box_width, box_height = draw_col(title_right + 176, 84, 14, 28)
 mono = 'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"'
 parts.append(f'<text x="{box_left - 14:.1f}" y="{box_top + box_height * 0.45:.1f}" text-anchor="end" {mono} font-size="19" font-weight="700" fill="{BLUE}">“woof” ‹</text>')
-parts.append(f'<text x="50" y="{84 + 7 * pixel + 46}" {mono} font-size="20" fill="{MUTED}">Linear issues inside herdr · herded by Col the border collie</text>')
-for spark_x, spark_y, size in ((30, 60, 9), (title_right + 6, 60, 9)):  # the two sparks either side of the title, as in the app
+parts.append(f'<text x="{TITLE_LEFT - 24}" y="{TITLE_TOP + 7 * pixel + 62}" {mono} font-size="20" fill="{MUTED}">Linear issues inside herdr · herded by Col the border collie</text>')
+for spark_x, spark_y, size in ((TITLE_LEFT - 50, 60, 9), (title_right + 34, 60, 9)):  # the two sparks either side of the title, as in the app
     polygon([(spark_x, spark_y - size), (spark_x + size * 0.28, spark_y - size * 0.28), (spark_x + size, spark_y), (spark_x + size * 0.28, spark_y + size * 0.28),
              (spark_x, spark_y + size), (spark_x - size * 0.28, spark_y + size * 0.28), (spark_x - size, spark_y), (spark_x - size * 0.28, spark_y - size * 0.28)], WHITE)
 svg = (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}" role="img" aria-label="Collinear">\n'
