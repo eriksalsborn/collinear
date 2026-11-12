@@ -235,10 +235,10 @@
   my issues   t team · T project · R reviews                                                                                                6 issues
  ───────────────────╭────────────────────────────────────────────────────────────────────────────────────────────────────────────╮───────────────────
   ◕ In Review 1  ───│  PLA-2  Second issue with a workspace                                                                 esc  │──────────────────
-   2  PLA-3     ▮▮▯ │  ◔ In Progress   ▮▮▮ high   @ Erik Tester   ● review   ▶ ws 3 working + ws 6 idle · alpha · erik/pla-2-seconaft         1d ago
-                    │  ────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-  ◔ In Progress 2  ─│  no description yet                                                                                        │──────────────────
-   1  PLA-1     !!! │                                                                                                            │            1h ago
+   2  PLA-3     ▮▮▯ │   ◔ In Progress    ET                                                                                      │aft         1d ago
+                    │   ────────────────────────────────────────────────────────────────────────────────────────────             │
+  ◔ In Progress 2  ─│                                                                                                            │──────────────────
+   1  PLA-1     !!! │   no description yet                                                                                       │            1h ago
  ▎  ▶ PLA-2     ▮▮▮ │                                                                                                            │view        2d ago
                     │                                                                                                            │
   ○ Todo 1  ────────│                                                                                                            │──────────────────

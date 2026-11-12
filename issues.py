@@ -663,6 +663,8 @@ GUIDED_TOUR_STEPS = [
              DOWN_KEYCODES + UP_KEYCODES + FORWARD_KEYCODES + BACK_KEYCODES, "topic menu", False),  # back too: there may be no topic to pick
     TourStep("go to its issue, start it, or ask me. `esc` or `h` backs out", BACK_KEYCODES, "report", False),
     TourStep("`esc` or `h` once more, and you're back at your issues", BACK_KEYCODES, "list", False),
+    # elsewhere: said, not pressed, so no browser pops up mid-tour
+    TourStep("`L` opens the issue in Linear, `g` its PR on GitHub. `j` to go on", DOWN_KEYCODES, "moved down", True),
     # starting work
     TourStep("`l` or `enter` starts work on an issue. press it and have a look", FORWARD_KEYCODES, "start dialog", True),
     TourStep("this is where work begins. `esc` or `h` backs out for now", BACK_KEYCODES, "list", True),
@@ -2088,8 +2090,8 @@ def fetch_comments(issue):
 
 
 def show_issue_preview(screen, issue, open_workspace_summary=False):
-    """The issue inline: a Linear-ish header line (state, priority, assignee, PRs) then the description rendered
-    from Markdown. l opens the comments in a pane on the right and focuses it; j/k scroll the focused pane,
+    """The issue inline: a quiet header (its state, and who has it as an initials chip), then the description
+    rendered from Markdown with room around it. l opens the comments in a pane on the right and focuses it; j/k scroll the focused pane,
     h goes back to the description and then closes. enter starts the issue (returns "launch"), esc/space close."""
     first_line_shown_by_pane, focused_pane, comments = [0, 0], 0, None  # notes: None until l; "loading" while the fetch runs; then the list
     fetched, frame_count, first_line_of_each_comment = {}, 0, []
@@ -2112,18 +2114,12 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
         box_height, box_width = screen_height - 10, min(screen_width - 6, 110 if comments is None else 150)
         inner_width = box_width - 6
         icon, icon_colour = progress_icon_for_state(issue["state"]["name"], issue["state"]["type"])
-        bars, word, priority_colour = PRIORITY_DISPLAY.get(issue["priority"], ("▯▯▯", "no priority", DIM))
-        header_parts = [(f"{icon} {issue['state']['name']}", icon_colour), (f"{bars} {word}", priority_colour),
-                (f"@ {(issue.get('assignee') or {}).get('displayName', 'unassigned')}", MUTED)]
-        badge = pull_request_badge(issue)
-        if badge[0]:
-            header_parts.append(badge)
-        if open_workspace_summary:
-            header_parts.append((f"▶ {open_workspace_summary} · w jumps there", GREEN))  # here: "ws 4 · working · repo · branch"
+        assignee_initials, assignee_chip_colour = initials_and_chip_colour((issue.get("assignee") or {}).get("displayName", ""))
         line, box_width = draw_dialog_box(screen, f"{issue['identifier']}  ·  {issue['title'][:box_width - 24]}", box_height, box_width)
         # panes: [(x, width, lines)]; the comments pane takes the right 45% once open
-        description_width = inner_width if comments is None else inner_width * 55 // 100 - 2
-        panes = [(3, description_width, markdown_to_styled_lines(issue.get("description") or "_no description yet_", description_width))]
+        # a line of text is easiest to read at about 90 characters, however wide the popup is
+        description_width = min(inner_width - 1, 92) if comments is None else inner_width * 55 // 100 - 3
+        panes = [(4, description_width, markdown_to_styled_lines(issue.get("description") or "_no description yet_", description_width))]
         if comments is not None:
             comments_x, comments_width = 3 + description_width + 3, inner_width - description_width - 3
             comment_lines = []
@@ -2134,20 +2130,24 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
                                       [("▆" * (comments_width * (2 + (placeholder_number + frame_count // 2) % 4) // 6), "dim")]]
             else:
                 first_line_of_each_comment = []  # first line of each comment: j/k in the pane jump between them
-                for author, text in comments:
+                for author_and_date, text in comments:  # each comment: who (initials chip and name) and when, then what, then air
+                    author, _, date = author_and_date.partition("  ·  ")
+                    initials, chip_colour = initials_and_chip_colour(author)
                     first_line_of_each_comment.append(len(comment_lines))
-                    comment_lines += [[(author, "head")]] + markdown_to_styled_lines(text, comments_width) + [[]]
+                    comment_lines += [[(f" {initials} ", f"chip{chip_colour}"), (f" {author}", "b"), (f"   {date}", "dim")], []] \
+                        + markdown_to_styled_lines(text, comments_width) + [[], []]
             panes.append((comments_x, comments_width, comment_lines or [[("no comments yet", "mut")]]))
             for row_offset in range(2, box_height - 2):
                 line(row_offset, "│", curses.color_pair(BORDER), comments_x - 2)
-        column = 3
-        for text, colour in header_parts:
-            line(2, text, curses.color_pair(colour) | curses.A_BOLD, column)
-            column += len(text) + 3
-        line(3, "─" * description_width, curses.color_pair(BORDER), 3)
-        body = box_height - 6
+        state_text = f"{icon} {issue['state']['name']}"  # the header: what state it is in, and who has it. nothing else
+        line(2, state_text, curses.color_pair(icon_colour) | curses.A_BOLD, 4)
+        line(2, f" {assignee_initials} ", curses.color_pair(assignee_chip_colour if issue.get("assignee") else DIM) | curses.A_REVERSE | curses.A_BOLD,
+             4 + len(state_text) + 3)
+        line(3, "─" * description_width, curses.color_pair(BORDER), 4)
+        body = box_height - 7  # a blank row under the rule, then the text
         attribute_by_style = dict(TEXT_ATTRIBUTE_BY_STYLE, code=curses.color_pair(CODE), head=curses.color_pair(ACCENT) | curses.A_BOLD,
-                     mut=curses.color_pair(MUTED), dim=curses.color_pair(DIM))
+                                  mut=curses.color_pair(MUTED), dim=curses.color_pair(DIM),
+                                  **{f"chip{colour}": curses.color_pair(colour) | curses.A_REVERSE | curses.A_BOLD for colour in ASSIGNEE_CHIP_COLOURS})
         for pane_number, (pane_x, pane_width, pane_lines) in enumerate(panes):
             if pane_number == 1:
                 line(2, "comments" + (f"  {len(comments)}" if comments != "loading" else ""), curses.color_pair(ACCENT if focused_pane else MUTED) | curses.A_BOLD, pane_x)
@@ -2158,7 +2158,7 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
                 column = pane_x
                 for text, style in segments:
                     if column < pane_x + pane_width:
-                        line(4 + row_offset, text[:pane_x + pane_width - column], attribute_by_style[style], column)
+                        line(5 + row_offset, text[:pane_x + pane_width - column], attribute_by_style[style], column)
                     column += len(text)
             if len(pane_lines) > rows_for_pane:
                 position_text = f" {first_line_shown_by_pane[pane_number] + rows_for_pane}/{len(pane_lines)} "
