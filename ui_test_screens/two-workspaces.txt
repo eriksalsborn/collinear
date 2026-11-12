@@ -279,47 +279,47 @@
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
- ───────────────────╭────────────────────────────────────────────────────────────────────────────────────────────────────────────╮───────────────────
-  ◕ In Review 1  ───│  PLA-2  Second issue with a workspace                                                                 esc  │──────────────────
-      PLA-3     ▮▮▯ │   ◔ In Progress    ET                                                                                      │aft         1d ago
-                    │   ────────────────────────────────────────────────────────────────────────────────────────────             │
-  ◔ In Progress 2  ─│                                                                                                            │──────────────────
-      PLA-1     !!! │   no description yet                                                                                       │            1h ago
- ▎  ▶ PLA-2     ▮▮▮ │                                                                                                            │view        2d ago
-                    │                                                                                                            │
-  ○ Todo 1  ────────│                                                                                                            │──────────────────
-      PLA-4     ▮▯▯ │                                                                                                            │            1w ago
-                    │                                                                                                            │
-  ◌ Backlog 1  ─────│                                                                                                            │──────────────────
-      PLA-5     ▯▯▯ │                                                                                                            │            3w ago
-                    │                                                                                                            │
-  ◈ Triage 1  ──────│                                                                                                            │──────────────────
-      PLA-6     ▯▯▯ │                                                                                                            │            3d ago
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    │                                                                                                            │
-                    ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+ ──╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-2  Second issue with a workspace                                                                                                   esc  │─
+   │   ◔ In Progress    ET                                               ▲▼ j/k│ comments  2                                                      │o
+   │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━│ ───────────────────────────────────────────────────────────────  │
+  ◔│                                                                           │                                                                  │─
+   │   no description yet                                                      │  S  Sam   2026-11-10                                             │o
+ ▎ │                                                                           │                                                                  │o
+   │                                                                           │ first comment                                                    │
+  ○│                                                                           │                                                                  │─
+   │                                                                           │                                                                  │o
+   │                                                                           │  ?  ?   2026-11-11                                               │
+  ◌│                                                                           │                                                                  │─
+   │                                                                           │ second comment                                                   │o
+   │                                                                           │                                                                  │
+  ◈│                                                                           │ • with a list                                                    │─
+   │                                                                           │                                                                  │o
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                           │                                                                  │
+   │                                                                                                                                              │
+   ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                           “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  w jump to workspace   l comments   a ask Col   c Col drafts a comment   C write a comment   L open in Linear   j/k scroll            │   ╰─ω─╯~   │
-  d/u half page   esc/h close                                                                                                          ╰──╴ Col ╶───╯
+  w jump to workspace   l to the comments   j/k scroll the description   a ask Col   c Col drafts a comment   C write a comment        │   ╰─ω─╯~   │
+  L open in Linear   d/u half page   esc/h close                                                                                       ╰──╴ Col ╶───╯
 
 ########## 008 before 10
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦

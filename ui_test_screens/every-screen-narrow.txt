@@ -327,36 +327,36 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-1  First issue about login                                                       esc  │─
-   │   ◔ In Progress    ET                                                                      │o
-   │   ───────────────────────────────────────────────────────────────────────────────────────  │
-  ◔│                                                                                            │─
- ▎ │   Why                                                                                      │o
-   │                                                                                            │o
-   │   Login breaks on redirect.                                                                │
-  ○│                                                                                            │─
-   │   • step one                                                                               │o
-   │   • step two                                                                               │
-  ◌│                                                                                            │─
-   │   │ quoted                                                                                 │o
-   │                                                                                            │
-  ◈│                                                                                            │─
-   │                                                                                            │o
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
+   │   ◔ In Progress    ET                    ▲▼ j/k│ comments  2                               │o
+   │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━│ ────────────────────────────────────────  │
+  ◔│                                                │                                           │─
+ ▎ │   Why                                          │  S  Sam   2026-11-10                      │o
+   │                                                │                                           │o
+   │   Login breaks on redirect.                    │ first comment                             │
+  ○│                                                │                                           │─
+   │   • step one                                   │                                           │o
+   │   • step two                                   │  ?  ?   2026-11-11                        │
+  ◌│                                                │                                           │─
+   │   │ quoted                                     │ second comment                            │o
+   │                                                │                                           │
+  ◈│                                                │ • with a list                             │─
+   │                                                │                                           │o
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
    │                                                                                            │
    ╰────────────────────────────────────────────────────────────────────────────────────────────╯
 
@@ -364,8 +364,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
-  C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
+  enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
+  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 009 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -373,8 +373,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-1  First issue about login                                                       esc  │─
-   │   ◔ In Progress    ET                          │ comments  2                               │o
-   │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │
+   │   ◔ In Progress    ET                          │ comments  2                       ▲▼ j/k  │o
+   │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
   ◔│                                                │                                           │─
  ▎ │   Why                                          │  S  Sam   2026-11-10                      │o
    │                                                │                                           │o
@@ -410,8 +410,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 010 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -419,8 +419,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-1  First issue about login                                                       esc  │─
-   │   ◔ In Progress    ET                          │ comments  2                               │o
-   │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │
+   │   ◔ In Progress    ET                          │ comments  2                       ▲▼ j/k  │o
+   │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
   ◔│                                                │                                           │─
  ▎ │   Why                                          │  S  Sam   2026-11-10                      │o
    │                                                │                                           │o
@@ -456,8 +456,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 011 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -465,8 +465,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-1  First issue about login                                                       esc  │─
-   │   ◔ In Progress    ET                          │ comments  2                               │o
-   │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │
+   │   ◔ In Progress    ET                    ▲▼ j/k│ comments  2                               │o
+   │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━│ ────────────────────────────────────────  │
   ◔│                                                │                                           │─
  ▎ │   Why                                          │  S  Sam   2026-11-10                      │o
    │                                                │                                           │o
@@ -502,8 +502,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                “reading glasses on” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
-  C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
+  enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
+  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 012 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -2168,7 +2168,7 @@
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
  ▎ │  Third one in review                        │    ✦ ask Col about PLA-3                     │o
-   │  ◕ In Review   ▮▮▯ medium   @ Erik Tester   │    ────────────────────────────────────────  │
+   │  ◕ In Review    ET                          │    ────────────────────────────────────────  │
   ◔│  ────────────────────────────────────────   │                                              │─
    │  no description yet                         │     Ask anything about the issue. Col        │o
    │                                             │     reads it, its comments and linked        │o
@@ -2214,7 +2214,7 @@
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
  ▎ │  Third one in review                        │    ✦ ask Col about PLA-3                     │o
-   │  ◕ In Review   ▮▮▯ medium   @ Erik Tester   │    ────────────────────────────────────────  │
+   │  ◕ In Review    ET                          │    ────────────────────────────────────────  │
   ◔│  ────────────────────────────────────────   │                                              │─
    │  no description yet                         │     Ask anything about the issue. Col        │o
    │                                             │     reads it, its comments and linked        │o
@@ -2260,7 +2260,7 @@
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
  ▎ │  Third one in review                        │    ✦ ask Col about PLA-3                     │o
-   │  ◕ In Review   ▮▮▯ medium   @ Erik Tester   │    ────────────────────────────────────────  │
+   │  ◕ In Review    ET                          │    ────────────────────────────────────────  │
   ◔│  ────────────────────────────────────────   │                                              │─
    │  no description yet                         │     Ask anything about the issue. Col        │o
    │                                             │     reads it, its comments and linked        │o
@@ -3363,36 +3363,36 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
- ▎ │   ◕ In Review    ET                                                                        │o
-   │   ───────────────────────────────────────────────────────────────────────────────────────  │
-  ◔│                                                                                            │─
-   │   no description yet                                                                       │o
-   │                                                                                            │o
-   │                                                                                            │
-  ○│                                                                                            │─
-   │                                                                                            │o
-   │                                                                                            │
-  ◌│                                                                                            │─
-   │                                                                                            │o
-   │                                                                                            │
-  ◈│                                                                                            │─
-   │                                                                                            │o
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
+ ▎ │   ◕ In Review    ET                      ▲▼ j/k│ comments  2                               │o
+   │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━│ ────────────────────────────────────────  │
+  ◔│                                                │                                           │─
+   │   no description yet                           │  S  Sam   2026-11-10                      │o
+   │                                                │                                           │o
+   │                                                │ first comment                             │
+  ○│                                                │                                           │─
+   │                                                │                                           │o
+   │                                                │  ?  ?   2026-11-11                        │
+  ◌│                                                │                                           │─
+   │                                                │ second comment                            │o
+   │                                                │                                           │
+  ◈│                                                │ • with a list                             │─
+   │                                                │                                           │o
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
    │                                                                                            │
    ╰────────────────────────────────────────────────────────────────────────────────────────────╯
 
@@ -3400,8 +3400,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
-  enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
-  C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
+  enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
+  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 075 before 'o'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3409,8 +3409,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
- ▎ │   ◕ In Review    ET                            │ comments  2                               │o
-   │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │
+ ▎ │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+   │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
   ◔│                                                │                                           │─
    │   no description yet                           │  S  Sam   2026-11-10                      │o
    │                                                │                                           │o
@@ -3446,8 +3446,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 076 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3455,8 +3455,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
- ▎ │   ◕ In Review    ET                            │ comments  2                               │o
-   │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │
+ ▎ │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+   │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
   ◔│                                                │                                           │─
    │   no description yet                           │  S  Sam   2026-11-10                      │o
    │                                                │                                           │o
@@ -3492,8 +3492,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 077 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3501,8 +3501,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
- ▎ │   ◕ In Review    ET                            │ comments  2                               │o
-   │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │
+ ▎ │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+   │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
   ◔│                                                │                                           │─
    │   no description yet                           │  S  Sam   2026-11-10                      │o
    │                                                │                                           │o
@@ -3538,8 +3538,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 078 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -3547,8 +3547,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
- ▎ │   ◕ In Review    ET                            │ comments  2                               │o
-   │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │
+ ▎ │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+   │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
   ◔│                                                │                                           │─
    │   no description yet                           │  S  Sam   2026-11-10                      │o
    │                                                │                                           │o
@@ -3584,8 +3584,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                 “let's have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 079 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4007,36 +4007,36 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
-   │   ○ Todo    ET                                                                             │o
-   │   ───────────────────────────────────────────────────────────────────────────────────────  │
-  ◔│                                                                                            │─
-   │   no description yet                                                                       │o
-   │                                                                                            │o
-   │                                                                                            │
-  ○│                                                                                            │─
- ▎ │                                                                                            │o
-   │                                                                                            │
-  ◌│                                                                                            │─
-   │                                                                                            │o
-   │                                                                                            │
-  ◈│                                                                                            │─
-   │                                                                                            │o
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
+   │   ○ Todo    ET                           ▲▼ j/k│ comments  2                               │o
+   │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━│ ────────────────────────────────────────  │
+  ◔│                                                │                                           │─
+   │   no description yet                           │  S  Sam   2026-11-10                      │o
+   │                                                │                                           │o
+   │                                                │ first comment                             │
+  ○│                                                │                                           │─
+ ▎ │                                                │                                           │o
+   │                                                │  ?  ?   2026-11-11                        │
+  ◌│                                                │                                           │─
+   │                                                │ second comment                            │o
+   │                                                │                                           │
+  ◈│                                                │ • with a list                             │─
+   │                                                │                                           │o
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
    │                                                                                            │
    ╰────────────────────────────────────────────────────────────────────────────────────────────╯
 
@@ -4044,8 +4044,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                     “ooh, this one” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ undid: PLA-3 → Done   ▰▰▰▰▱ 4 today ✦                                           │  ▜▖ ▼  ▗▛  │
-  enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
-  C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
+  enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
+  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 089 before ('wheel', 'down')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4697,45 +4697,45 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
-   │   ◕ In Review    ET                                                                        │o
- ▎ │   ───────────────────────────────────────────────────────────────────────────────────────  │o
-   │                                                                                            │
-  ◔│   no description yet                                                                       │─
-   │                                                                                            │o
-   │                                                                                            │o
-   │                                                                                            │
-  ◌│                                                                                            │─
-   │                                                                                            │o
-   │                                                                                            │
-  ◈│                                                                                            │─
-   │                                                                                            │o
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
-   │                                                                                            │
+   │   ◕ In Review    ET                      ▲▼ j/k│ comments  2                               │o
+ ▎ │   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━│ ────────────────────────────────────────  │o
+   │                                                │                                           │
+  ◔│   no description yet                           │  S  Sam   2026-11-10                      │─
+   │                                                │                                           │o
+   │                                                │ first comment                             │o
+   │                                                │                                           │
+  ◌│                                                │                                           │─
+   │                                                │  ?  ?   2026-11-11                        │o
+   │                                                │                                           │
+  ◈│                                                │ second comment                            │─
+   │                                                │                                           │o
+   │                                                │ • with a list                             │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
+   │                                                │                                           │
    │                                                                                            │
    ╰────────────────────────────────────────────────────────────────────────────────────────────╯
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                            “4/34   l  opens the comments on the issue, next to it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                           “4/34   l  moves you to the comments, next to the issue” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
-  C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
+  enter start   l to the comments   j/k scroll the description   a ask Col           │   ╰─ω─╯~   │
+  c Col drafts a comment   C write a comment   L open in Linear   d/u half page      ╰──╴ Col ╶───╯
 
 ########## 104 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4743,8 +4743,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
-   │   ◕ In Review    ET                            │ comments  2                               │o
- ▎ │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │o
+   │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+ ▎ │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │o
    │                                                │                                           │
   ◔│   no description yet                           │  S  Sam   2026-11-10                      │─
    │                                                │                                           │o
@@ -4780,8 +4780,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                     “5/34   C  writes a comment yourself. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 105 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4789,8 +4789,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
-   │   ◕ In Review    ET                            │ comments  2                               │o
- ▎ │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │o
+   │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+ ▎ │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │o
    │                                                │                                           │
   ◔│   no description yet                           │  S  Sam   2026-11-10                      │─
    │                                                │                                           │o
@@ -4826,8 +4826,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “6/34  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 106 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4835,8 +4835,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
-   │   ◕ In Review    ET                            │ comments  2                               │o
- ▎ │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │o
+   │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+ ▎ │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │o
    │                                                │                                           │
   ◔│   no description yet                           │  S  Sam   2026-11-10                      │─
    │                                                │                                           │o
@@ -4872,8 +4872,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “6/34  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 107 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4881,8 +4881,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
-   │   ◕ In Review    ET                            │ comments  2                               │o
- ▎ │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │o
+   │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+ ▎ │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │o
    │                                                │                                           │
   ◔│   no description yet                           │  S  Sam   2026-11-10                      │─
    │                                                │                                           │o
@@ -4918,8 +4918,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
       “6/34  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 108 before 'c'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4927,8 +4927,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
-   │   ◕ In Review    ET                            │ comments  2                               │o
- ▎ │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │o
+   │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+ ▎ │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │o
    │                                                │                                           │
   ◔│   no description yet                           │  S  Sam   2026-11-10                      │─
    │                                                │                                           │o
@@ -4964,8 +4964,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
            “7/34   c  lets me draft the comment for you. nothing is posted unasked” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 109 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4974,22 +4974,22 @@
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  comment · Col drafts                                                          esc  │─
    │  Fourth sits in todo                        │    ✦ Col drafts a comment on PLA-4           │o
- ▎ │  ◕ In Review   ▮▯▯ low   @ Erik Tester      │    ────────────────────────────────────────  │o
+ ▎ │  ◕ In Review    ET                          │    ────────────────────────────────────────  │o
    │  ────────────────────────────────────────   │                                              │
   ◔│                                             │     Say what the comment should get          │─
-   │   COMMENTS  2                               │     across. Col drafts it in your voice      │o
-   │                                             │     from the issue; send feedback until      │o
-   │  Sam  ·  2026-11-10                         │     it's right, then post it. Nothing is     │
-  ◌│  first comment                              │     posted until you confirm.                │─
+   │  comments  2                                │     across. Col drafts it in your voice      │o
+   │  ────────────────────────────────────────   │     from the issue; send feedback until      │o
+   │                                             │     it's right, then post it. Nothing is     │
+  ◌│   S  Sam   2026-11-10                       │     posted until you confirm.                │─
    │                                             │                                              │o
-   │  ?  ·  2026-11-11                           │                                              │
-  ◈│  second comment                             │                                              │─
+   │  first comment                              │                                              │
+  ◈│                                             │                                              │─
    │                                             │                                              │o
+   │   ?  ?   2026-11-11                         │                                              │
+   │                                             │                                              │
+   │  second comment                             │                                              │
+   │                                             │                                              │
    │  • with a list                              │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
    │                                             │                                              │
    │                                             │                                              │
    │                                             │                                              │
@@ -5020,22 +5020,22 @@
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  comment · Col drafts                                                          esc  │─
    │  Fourth sits in todo                        │    ✦ Col drafts a comment on PLA-4           │o
- ▎ │  ◕ In Review   ▮▯▯ low   @ Erik Tester      │    ────────────────────────────────────────  │o
+ ▎ │  ◕ In Review    ET                          │    ────────────────────────────────────────  │o
    │  ────────────────────────────────────────   │                                              │
   ◔│                                             │     Say what the comment should get          │─
-   │   COMMENTS  2                               │     across. Col drafts it in your voice      │o
-   │                                             │     from the issue; send feedback until      │o
-   │  Sam  ·  2026-11-10                         │     it's right, then post it. Nothing is     │
-  ◌│  first comment                              │     posted until you confirm.                │─
+   │  comments  2                                │     across. Col drafts it in your voice      │o
+   │  ────────────────────────────────────────   │     from the issue; send feedback until      │o
+   │                                             │     it's right, then post it. Nothing is     │
+  ◌│   S  Sam   2026-11-10                       │     posted until you confirm.                │─
    │                                             │                                              │o
-   │  ?  ·  2026-11-11                           │                                              │
-  ◈│  second comment                             │                                              │─
+   │  first comment                              │                                              │
+  ◈│                                             │                                              │─
    │                                             │                                              │o
+   │   ?  ?   2026-11-11                         │                                              │
+   │                                             │                                              │
+   │  second comment                             │                                              │
+   │                                             │                                              │
    │  • with a list                              │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
    │                                             │                                              │
    │                                             │                                              │
    │                                             │                                              │
@@ -5065,8 +5065,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
-   │   ◕ In Review    ET                            │ comments  2                               │o
- ▎ │   ─────────────────────────────────────────────│ ────────────────────────────────────────  │o
+   │   ◕ In Review    ET                            │ comments  2                       ▲▼ j/k  │o
+ ▎ │   ─────────────────────────────────────────────│ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │o
    │                                                │                                           │
   ◔│   no description yet                           │  S  Sam   2026-11-10                      │─
    │                                                │                                           │o
@@ -5102,8 +5102,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                  “9/34   a  asks me anything about the issue: I look it up for you” ‹│ ▐ ^ ▐▌ ^ ▌ │
    ✓ PLA-4 → In Review   ▰▰▰▰▰ 5 today ✦                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
-  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+  j/k next/previous comment   d/u half page   h to the description                   │   ╰─ω─╯~   │
+  C write a comment   c Col drafts one   a ask Col   esc close                       ╰──╴ Col ╶───╯
 
 ########## 112 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -5112,23 +5112,23 @@
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  ask Col                                                                       esc  │─
    │  Fourth sits in todo                        │    ✦ ask Col about PLA-4                     │o
- ▎ │  ◕ In Review   ▮▯▯ low   @ Erik Tester      │    ────────────────────────────────────────  │o
+ ▎ │  ◕ In Review    ET                          │    ────────────────────────────────────────  │o
    │  ────────────────────────────────────────   │                                              │
   ◔│  no description yet                         │     Ask anything about the issue. Col        │─
    │                                             │     reads it, its comments and linked        │o
-   │   COMMENTS  2                               │     PRs, and can look things up in           │o
-   │                                             │     Linear, Slack, GitHub, git and the       │
-  ◌│  Sam  ·  2026-11-10                         │     web. It can also post to Slack when      │─
-   │  first comment                              │     you ask it to. Linear and code stay      │o
+   │  comments  2                                │     PRs, and can look things up in           │o
+   │  ────────────────────────────────────────   │     Linear, Slack, GitHub, git and the       │
+  ◌│                                             │     web. It can also post to Slack when      │─
+   │   S  Sam   2026-11-10                       │     you ask it to. Linear and code stay      │o
    │                                             │     read-only. The thread is kept with       │
-  ◈│  ?  ·  2026-11-11                           │     the issue.                               │─
-   │  second comment                             │                                              │o
+  ◈│  first comment                              │     the issue.                               │─
+   │                                             │                                              │o
+   │                                             │                                              │
+   │   ?  ?   2026-11-11                         │                                              │
+   │                                             │                                              │
+   │  second comment                             │                                              │
    │                                             │                                              │
    │  • with a list                              │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
-   │                                             │                                              │
    │                                             │                                              │
    │                                             │                                              │
    │                                             │                                              │
