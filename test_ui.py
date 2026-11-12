@@ -52,7 +52,7 @@ FAKE_ISSUES = [
     fake_issue(5, "Fifth in the backlog", 1, 0, 25, assignee=None),
     fake_issue(6, "Sixth needs triage", 0, 0, 3),
 ]
-FAKE_DAILY_REPORT = ("## wednesday\n- **PLA-1 login thing** — PR #7 is in review since Tuesday.\n"
+FAKE_DAILY_REPORT = ("## wednesday\n- **PLA-1 login thing** — PR #7 is in review *since Tuesday*.\n"
                      "- **PLA-99 someone else's** — waiting on Sam.\n↳ you and Sam\n- **a loose topic** — nobody filed it yet.\n"
                      "## loose threads\n- reply to Robin about herdr links.\n↳ Robin in #dev, Tuesday · no Linear issue yet\n"
                      "- start with PLA-1, it is closest to done.")

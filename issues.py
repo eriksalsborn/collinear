@@ -995,7 +995,7 @@ PAIRS_ON_THE_CURSOR_ROW = 30  # colour pair n + 30: pair n's text colour on the 
 
 def on_cursor_row(attribute):
     """The attribute as it looks on the cursor's row: its own text colour, on the row's background."""
-    pair_number = curses.pair_number(attribute)
+    pair_number = curses.pair_number(attribute & curses.A_COLOR)  # only the colour bits: italic alone is too big a number for pair_number()
     if pair_number in (0, SELECTED_ROW, DEFAULT_TEXT):
         return (attribute & ~curses.A_COLOR) | curses.color_pair(SELECTED_ROW)
     return attribute if attribute & curses.A_REVERSE else (attribute & ~curses.A_COLOR) | curses.color_pair(pair_number + PAIRS_ON_THE_CURSOR_ROW)
