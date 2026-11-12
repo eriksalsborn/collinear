@@ -408,6 +408,7 @@ def assign_to_me_if_unassigned(issue):
 
 def choose_new_status(screen, issue):
     """Menu of the team's statuses (current one pre-selected) -> move the issue. Returns a footer message."""
+    tour_sees("status dialog")
     order = ["triage", "backlog", "unstarted", "started", "completed", "canceled"]
     states = sorted(linear_graphql_with_spinner(
         screen, "loading statuses…", "query($t: String!) { team(id: $t) { states { nodes { id name type position } } } }",
@@ -438,6 +439,7 @@ def confirm_and_cancel_issue(screen, issue):
 
 def choose_new_priority(screen, issue):
     """Menu of priorities (current one pre-selected) -> update the issue. Returns a footer message."""
+    tour_sees("priority dialog")
     levels = [(0, "▯▯▯ no priority")] + [(n, f"{bars} {word}") for n, (bars, word, _) in PRIORITY_DISPLAY.items()]
     level_labels = [label_text for _, label_text in levels]
     n = choose_from_list(screen, f"{issue['identifier']}  ·  priority", level_labels, [priority for priority, _ in levels].index(issue["priority"] or 0))
@@ -450,6 +452,7 @@ def choose_new_priority(screen, issue):
 
 def choose_new_assignee(screen, issue):
     """Menu of the team's members (me first, current assignee marked) -> assign the issue. Returns a footer message."""
+    tour_sees("assign dialog")
     data = linear_graphql_with_spinner(
         screen, "loading the team's members…",
         "query($team: String!) { viewer { id displayName } team(id: $team) { members { nodes { id displayName active } } } }",
@@ -657,6 +660,13 @@ GUIDED_TOUR_STEPS = [
     TourStep("you say what it should get across, I write it. `esc` goes back", (27,), "preview", True),
     TourStep("`a` asks me anything about the issue: I look it up for you", (ord("a"),), "ask chat", True),
     TourStep("you'd type a question and `enter`. `esc` goes back to your issues", (27,), "list", True),
+    # change it: each opens for real, and esc leaves the issue as it was
+    TourStep("`S` changes the issue's status. press it", (ord("S"),), "status dialog", True),
+    TourStep("you'd pick one with `l` / `enter`. `esc` or `h` leaves it as it is", BACK_KEYCODES, "list", True),
+    TourStep("`P` sets its priority, the same way", (ord("P"),), "priority dialog", True),
+    TourStep("`esc` or `h` backs out", BACK_KEYCODES, "list", True),
+    TourStep("`A` assigns it to someone", (ord("A"),), "assign dialog", True),
+    TourStep("`esc` or `h` backs out. and `U` undoes a change you did make", BACK_KEYCODES, "list", True),
     # the daily report
     TourStep("`b` opens The Daily Bark: my recap of your last two days", (ord("b"),), "report", False),
     TourStep("`j` / `k` pick a topic. `l` or `enter` shows what you can do with it",
@@ -706,14 +716,14 @@ def tour_sees(event):
 def key_the_tour_lets_through(key):
     """While the tour runs only the keys of the step Col is waiting on reach the app (a click or the wheel that
     stands for one of them counts). Everything else is dropped, so nobody wanders off or posts something by
-    accident. q leaves the tour and gives all the keys back."""
+    accident. Q (capital, so it is never pressed by accident) quits the tour and gives all the keys back."""
     step_number = UiState.guided_tour_step
     if step_number is None or key == -1 or key == curses.KEY_RESIZE:
         return key
     keycode = ord(key) if isinstance(key, str) and len(key) == 1 else key
     if keycode in GUIDED_TOUR_STEPS[step_number].keys:
         return key
-    if keycode == ord("q"):
+    if keycode == ord("Q"):
         UiState.guided_tour_step = None
         col_says("tour's off, every key is yours again. `O` starts it over", "cheer", 12)
     return -1
@@ -737,7 +747,8 @@ TOUR_WELCOME_CARD = ("welcome", [
     "Two pairs of keys work everywhere:  `l` / `enter` goes forward or picks,  `esc` / `h` goes back (only `esc` "
     "where you could type).",
     "",
-    "During the tour only the key I ask for works, so you can't get lost or post anything.  `q` leaves the tour."])
+    "During the tour only the key I ask for works, so you can't get lost or post anything.  `Q` quits the tour "
+    "at any time."])
 TOUR_CLOSING_CARD = ("starting work, and the green markers", [
     "When you start an issue with `l` / `enter`, four things happen: it is **assigned to you and moved to In "
     "Progress**, it gets a **git worktree** on its own branch, a **herdr workspace** named after it, and **Claude "
@@ -2931,6 +2942,12 @@ class IssueListScreen:
         name_tag_x = face_x - 1 + (outline_width - 7) // 2
         screen.addnstr(screen_height - 1, name_tag_x, f"{tag_left} Col {tag_right}", 7, colour(COL_ACCENT))  # his collar tag
         screen.addnstr(screen_height - 1, name_tag_x + 2, "Col", 3, colour(COL_ACCENT) | curses.A_BOLD)
+        if UiState.guided_tour_step is not None:  # the way out is always in view, under what he says
+            way_out_parts = text_and_keycaps("`Q` quits the tour")
+            column = max(face_x - sum(len(text) for text, _ in way_out_parts) - 3, 0)
+            for text, is_key in way_out_parts:
+                screen.addnstr(screen_height - 3, column, text, max(face_x - 1 - column, 0), keycap_attribute() if is_key else colour(MUTED))
+                column += len(text)
         bubble_parts = text_and_keycaps(f"“{words}” ‹") if words else []  # everything he says is in quotes; `keys` are keycaps
         column = max(face_x - sum(len(text) for text, _ in bubble_parts) - 1, 0)
         for text, is_key in bubble_parts:

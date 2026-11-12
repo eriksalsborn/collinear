@@ -26,7 +26,7 @@
                     │   picks,   esc  /  h  goes back (only  esc  where you could type).           │
                     │                                                                              │
                     │   During the tour only the key I ask for works, so you can't get lost or     │
-                    │   post anything.   q  leaves the tour.                                       │
+                    │   post anything.   Q  quits the tour at any time.                            │
                     │                                                                              │
                     │                                                                              │
                     │                                                                              │
@@ -87,7 +87,7 @@
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                                         “1/4   b  opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                         │  ▜▖ ▼  ▗▛  │
+                                                                                      Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
   h close                                                                                                ╰──╴ Col ╶───╯
 
@@ -133,7 +133,7 @@
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
                           “2/4  nothing to report yet, it fills up as you work.  esc  or  h  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                         │  ▜▖ ▼  ▗▛  │
+                                                                                      Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
   h close                                                                                                ╰──╴ Col ╶───╯
 

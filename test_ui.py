@@ -132,8 +132,10 @@ EVERY_SCREEN = [
     # the tour, for real: welcome card, then the steps in the app (list, an issue's comments and questions, the report,
     # starting work), then the closing card
     # Keys it didn't ask for are ignored: b and enter on the list, typing and enter in the comment box (nothing posts).
-    "O", ENTER, "b", ENTER, "j", "k", " ", "l", "C", "x", ENTER, ESC, "c", "x", ESC, "a", ESC, "b", "l", ESC, ESC, "j", "j", ENTER, ESC, ENTER,
-    "O", ENTER, "q", "j",                                        # q leaves the tour; after that every key works again
+    "O", ENTER, "b", ENTER, "j", "k", " ", "l", "C", "x", ENTER, ESC, "c", "x", ESC, "a", ESC,
+    "S", "j", ENTER, ESC, "P", ESC, "A", ESC,                    # status, priority, assignee: each opens, nothing can be picked
+    "b", "l", ESC, ESC, "j", "j", ENTER, ESC, ENTER,
+    "O", ENTER, "q", "Q", "j",                                   # q does nothing in the tour; Q quits it, and every key works again
     "O", ESC,                                                    # the welcome card can be declined
 ]
 SOMEONE_BRAND_NEW = "someone brand new"  # in place of the workspaces: setup is done, nothing else exists yet
