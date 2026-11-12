@@ -62,6 +62,9 @@ TWO_WORKSPACES_FOR_ONE_ISSUE = [
     {"label": "PLA-2 Second issue, the infra half", "number": 6, "workspace_id": "w2", "agent_status": "idle", "tab_count": 1}]
 
 
+ISSUES_ASSIGNED_IN_FAKE_LINEAR = list(FAKE_ISSUES)  # emptied for the scenario of someone brand new
+
+
 def fake_linear_graphql(query, variables=None):
     copy_of = lambda value: json.loads(json.dumps(value))
     if "teams {" in query:
@@ -81,7 +84,7 @@ def fake_linear_graphql(query, variables=None):
     if "issueUpdate" in query or "commentCreate" in query:
         return {"issueUpdate": {"success": True}, "commentCreate": {"success": True}}
     if "assignedIssues" in query:
-        return {"viewer": {"assignedIssues": {"nodes": copy_of(FAKE_ISSUES)}}}
+        return {"viewer": {"assignedIssues": {"nodes": copy_of(ISSUES_ASSIGNED_IN_FAKE_LINEAR)}}}
     if "issues(first" in query:
         issues_of_view = {"issues": {"nodes": copy_of(FAKE_ISSUES[:4])}}
         return {"team": issues_of_view, "project": issues_of_view}
@@ -129,10 +132,14 @@ EVERY_SCREEN = [
     "O", ENTER, "j", "k", " ", ESC, "b", "l", ESC, ESC, ENTER, ESC, ENTER,   # the tour, for real: welcome card, ten steps in the app, closing card
     "O", ESC,                                                    # the welcome card can be declined
 ]
+SOMEONE_BRAND_NEW = "someone brand new"  # in place of the workspaces: setup is done, nothing else exists yet
 SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, the steps)
     "every-screen-wide": (150, ONE_WORKSPACE, EVERY_SCREEN),
     "every-screen-narrow": (100, ONE_WORKSPACE, EVERY_SCREEN),
     "two-workspaces": (150, TWO_WORKSPACES_FOR_ONE_ISSUE, ["j", "j", "w", ESC, " ", ESC, ENTER, ESC, "w", "j", ENTER]),
+    # first open after setup: no issues assigned, no report yet. The tour starts by itself, leaves out the steps
+    # about issues, says there is nothing to report yet, and still ends on the closing card.
+    "new-user-tour": (120, SOMEONE_BRAND_NEW, [ENTER, "b", ESC, ENTER]),
 }
 
 
@@ -152,6 +159,10 @@ class FrozenTime:
 
 
 def replace_the_outside_world(issues, prs, open_workspaces, temporary_home):
+    is_brand_new = open_workspaces == SOMEONE_BRAND_NEW
+    if is_brand_new:
+        open_workspaces = []
+        ISSUES_ASSIGNED_IN_FAKE_LINEAR.clear()
     cache_dir = temporary_home / "cache"
     for folder in (cache_dir, temporary_home / "notes", temporary_home / "dev" / "alpha" / ".git", temporary_home / "dev" / "beta" / ".git"):
         folder.mkdir(parents=True)
@@ -161,9 +172,12 @@ def replace_the_outside_world(issues, prs, open_workspaces, temporary_home):
     issues.REPOSITORIES_FOLDER = temporary_home / "dev"
     issues.NOTES_DIR = temporary_home / "notes"
     prs.LOCAL_SETTINGS_FILE = temporary_home / "local_settings.json"  # F in setup saves here, never to the real one
-    issues.MY_ISSUES_CACHE_FILE.write_text(json.dumps(FAKE_ISSUES))
+    if not is_brand_new:
+        issues.MY_ISSUES_CACHE_FILE.write_text(json.dumps(FAKE_ISSUES))
     stored_values = {"setup": {"ok": "x"}, "tour-seen": True, "name": {"name": "Erik Tester"}, "digest": f"{FROZEN_NOW:%Y-%m-%d}",
                      "brief": {"date": f"{FROZEN_NOW:%Y-%m-%d}", "text": FAKE_DAILY_REPORT, "steps": ["Linear: get issue"], "cur": 0}}
+    if is_brand_new:  # only what setup itself leaves behind
+        stored_values = {"setup": {"ok": "x"}, "name": {"name": "Erik Tester"}}
     for name, value in stored_values.items():
         (cache_dir / f"herdr-issues-{name}.json").write_text(json.dumps(value))
     issues.time = FrozenTime()

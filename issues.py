@@ -55,6 +55,7 @@ class UiState:
     lookups_col_is_working_on = []  # the lookups of that job so far
     guided_tour_step = None  # the step of the tour Col is waiting on (see GUIDED_TOUR_STEPS); None when no tour is running
     tour_closing_card_is_due = False  # the last step was just done: the list shows the closing card next
+    list_has_issues = False  # the list screen keeps this current; the tour leaves out its steps about issues on an empty list
 
 
 SPINNER_FRAMES = "⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏"
@@ -189,13 +190,10 @@ class ScreenWithMouse:
         return PENDING_KEYS.pop(0) if PENDING_KEYS else -1
 
     def getch(self):
-        key = self._next_key(self.screen.getch)
-        note_key_for_guided_tour(key)
-        return key
+        return self._next_key(self.screen.getch)
 
     def get_wch(self):
         key = self._next_key(self.screen.get_wch)
-        note_key_for_guided_tour(key)
         if key == -1:
             raise curses.error("no input")
         return chr(key) if isinstance(key, int) and key < 256 else key
@@ -629,24 +627,75 @@ def show_key_reference(screen):
 
 
 # The tour for someone new. A welcome card, then a walk through the real app: Col says each step in his bubble
-# (it stays in view on every screen) and the step is done when its key is pressed, for real: the preview really
-# opens, The Daily Bark really opens, esc really goes back. It ends on a card about the green markers.
-# ponytail: a step only looks at which key was pressed, not where; someone who wanders off mid-tour can tick a step
-# from another screen. Give steps a "which screen" check if that turns out to confuse people.
+# (it stays in view on every screen) and a step is done when the thing really happened: the preview really opened,
+# The Daily Bark really opened, you really got back to the list. Screens report what happens with tour_sees().
+# It ends on a card about starting work and the green markers.
+# It has to work for someone brand new: with no issues assigned the steps about issues are left out, and while the
+# first daily report is still being written (or has nothing in it yet) Col says so instead of asking for a topic.
 ENTER_KEYCODES = (10, 13, curses.KEY_ENTER)
 FORWARD_KEYCODES, BACK_KEYCODES = (ord("l"),) + ENTER_KEYCODES, (27, ord("h"))
-GUIDED_TOUR_STEPS = [  # (what Col says, the keys that do it). Kept short: the bubble has about 75 characters on a small popup
-    ("these are your issues, the furthest along on top. press j to move down", (ord("j"), curses.KEY_DOWN)),
-    ("and k to move back up", (ord("k"), curses.KEY_UP)),
-    ("space previews the issue under the cursor", (ord(" "),)),
-    ("esc or h goes back. that works everywhere. try it", BACK_KEYCODES),
-    ("b opens The Daily Bark: my recap of your last two days", (ord("b"),)),
-    ("j / k pick a topic. l or enter shows what you can do with it", FORWARD_KEYCODES),
-    ("go to its issue, start it, or ask me. esc or h backs out", BACK_KEYCODES),
-    ("esc or h once more, and you're back at your issues", BACK_KEYCODES),
-    ("l or enter starts work on an issue. press it and have a look", FORWARD_KEYCODES),
-    ("this is where work begins. esc or h backs out for now", BACK_KEYCODES),
+
+
+class TourStep(NamedTuple):
+    words: str                 # what Col says. Kept short: the bubble has about 75 characters on a small popup
+    done_when: str             # the event that completes it, as the screens report it to tour_sees()
+    needs_an_issue: bool       # left out when the list is empty
+
+
+GUIDED_TOUR_STEPS = [
+    TourStep("these are your issues, the furthest along on top. press j to move down", "moved down", True),
+    TourStep("and k to move back up", "moved up", True),
+    TourStep("space previews the issue under the cursor", "preview", True),
+    TourStep("esc or h goes back. that works everywhere. try it", "list", True),
+    TourStep("b opens The Daily Bark: my recap of your last two days", "report", False),
+    TourStep("j / k pick a topic. l or enter shows what you can do with it", "topic menu", False),
+    TourStep("go to its issue, start it, or ask me. esc or h backs out", "report", False),
+    TourStep("esc or h once more, and you're back at your issues", "list", False),
+    TourStep("l or enter starts work on an issue. press it and have a look", "start dialog", True),
+    TourStep("this is where work begins. esc or h backs out for now", "list", True),
 ]
+STEP_THAT_ASKS_FOR_A_TOPIC = 5  # and the step after it closes the topic's menu: both are skipped when there is no topic
+STEP_BACK_AT_THE_LIST_AFTER_THE_REPORT = 7
+
+
+def next_tour_step_from(step_number):
+    """The first step from step_number on that applies (the ones about issues are left out on an empty list);
+    None when the walk-through is over."""
+    while step_number < len(GUIDED_TOUR_STEPS) and GUIDED_TOUR_STEPS[step_number].needs_an_issue and not UiState.list_has_issues:
+        step_number += 1
+    return step_number if step_number < len(GUIDED_TOUR_STEPS) else None
+
+
+def daily_report_has_no_topic_yet():
+    return not DAILY_REPORT.get("text") or report_topic_under_cursor(DAILY_REPORT["text"]) is None
+
+
+def tour_sees(event):
+    """A screen tells the tour what just happened ("preview", "report", "list", "moved down", …). The step Col is
+    waiting on is done when its own event comes."""
+    step_number = UiState.guided_tour_step
+    if step_number is None:
+        return
+    next_step_number = None
+    if event == GUIDED_TOUR_STEPS[step_number].done_when:
+        next_step_number = step_number + 1
+    elif step_number == STEP_THAT_ASKS_FOR_A_TOPIC and event == "list":  # left the report without a topic: there was none to pick
+        next_step_number = STEP_BACK_AT_THE_LIST_AFTER_THE_REPORT + 1
+    if next_step_number is not None:
+        UiState.guided_tour_step = next_tour_step_from(next_step_number)
+        UiState.tour_closing_card_is_due = UiState.guided_tour_step is None
+
+
+def words_of_guided_tour_step():
+    step_number = UiState.guided_tour_step
+    words = GUIDED_TOUR_STEPS[step_number].words
+    if step_number == STEP_THAT_ASKS_FOR_A_TOPIC and daily_report_has_no_topic_yet():
+        words = ("I'm still writing today's report, it takes a minute. esc or h goes back" if not DAILY_REPORT.get("text") else
+                 "nothing to report yet, it fills up as you work. esc or h goes back")
+    steps_that_apply = [number for number, step in enumerate(GUIDED_TOUR_STEPS) if UiState.list_has_issues or not step.needs_an_issue]
+    return f"{steps_that_apply.index(step_number) + 1}/{len(steps_that_apply)}  {words}"
+
+
 TOUR_WELCOME_CARD = ("welcome", [
     "This is **Collinear**: your Linear issues one key away, and everything you have in progress.",
     "",
@@ -654,11 +703,14 @@ TOUR_WELCOME_CARD = ("welcome", [
     "",
     "Two pairs of keys work everywhere:  `l` / `enter` goes forward or picks,  `esc` / `h` goes back.  `q` closes "
     "the popup."])
-TOUR_CLOSING_CARD = ("the green markers", [
-    "@green ▶ ws 3 · my-repo",
+TOUR_CLOSING_CARD = ("starting work, and the green markers", [
+    "When you start an issue with `l` / `enter`, four things happen: it is **assigned to you and moved to In "
+    "Progress**, it gets a **git worktree** on its own branch, a **herdr workspace** named after it, and **Claude "
+    "Code** opens there with the issue already read.",
     "",
-    "A green marker on a row means **a herdr workspace is open for that issue**: work in progress, right now, on this "
-    "machine. It names the workspace (the number in herdr's sidebar) and the repository.",
+    "@green ▶ ws 3 · my-repo",
+    "From then on its row carries this green marker: **a workspace is open for it**, work in progress, right now, on "
+    "this machine. It names the workspace (its number in herdr's sidebar) and the repository.",
     "",
     "So the green rows answer *what am I in the middle of?*  Put the cursor on one and press `w` to jump straight "
     "into it: the fastest way to move between the things you have going.",
@@ -672,15 +724,18 @@ def show_tour_card(screen, card, footer_text):
     "@green …" to show the green marker as it looks on a row."""
     title, text_lines = card
     attribute_by_style = daily_report_text_attributes()
-    line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 19, 80)
+    line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 22, 80)
+    last_row_inside_the_box = min(22, screen.getmaxyx()[0] - 10) - 2  # on a very small popup the end of the text is cut, not spilled
     line(3, title, curses.color_pair(ACCENT) | curses.A_BOLD, 4)
     row = 5
     for text_line in text_lines:
+        if row > last_row_inside_the_box:
+            break
         if text_line.startswith("@green "):
             line(row, f" {text_line[len('@green '):]} ", curses.color_pair(GREEN) | curses.A_REVERSE | curses.A_BOLD, 5)
             row += 1
             continue
-        for segments in markdown_to_styled_lines(text_line, box_width - 9) or [[]]:  # "" is a blank row
+        for segments in (markdown_to_styled_lines(text_line, box_width - 9) or [[]])[:last_row_inside_the_box - row + 1]:  # "" is a blank row
             column = 4
             for text, style in segments:
                 line(row, text, attribute_by_style[style], column)
@@ -698,26 +753,8 @@ def start_guided_tour(screen):
     """The welcome card; l/enter starts the walk-through (Col takes it from there, in his bubble), esc/h/q declines."""
     col_says("a tour? I love tours", "cheer", 30)
     if show_tour_card(screen, TOUR_WELCOME_CARD, "l/enter start the tour · esc/h not now") in FORWARD_KEYCODES:
-        UiState.guided_tour_step = 0
+        UiState.guided_tour_step = next_tour_step_from(0)
         UiState.col_is_visible = True  # he is the guide
-
-
-def note_key_for_guided_tour(key):
-    """Every key pressed anywhere passes through here: the tour's current step is done when its key is pressed."""
-    step = UiState.guided_tour_step
-    if step is None:
-        return
-    keycode = ord(key) if isinstance(key, str) and len(key) == 1 else key
-    if keycode in GUIDED_TOUR_STEPS[step][1]:
-        UiState.guided_tour_step = step + 1 if step + 1 < len(GUIDED_TOUR_STEPS) else None
-        UiState.tour_closing_card_is_due = UiState.guided_tour_step is None
-    elif keycode == ord("q"):  # closing the popup ends the tour
-        UiState.guided_tour_step = None
-
-
-def words_of_guided_tour_step():
-    step = UiState.guided_tour_step
-    return f"{step + 1}/{len(GUIDED_TOUR_STEPS)}  {GUIDED_TOUR_STEPS[step][0]}"
 
 
 def show_review_inbox(screen):
@@ -1564,6 +1601,7 @@ def show_daily_report(screen, issues, today):
         UiState.draw_screen_behind_dialog, UiState.title_of_open_dialog = under_menu, title_before
 
     while True:
+        tour_sees("report")
         paint()
         report_text = DAILY_REPORT["text"]
         screen.refresh()
@@ -1584,6 +1622,7 @@ def show_daily_report(screen, issues, today):
                        ("c", "clean slate on it"), ("a", "ask Col about it")]
             rows_the_menu_needs = len(choices) + 6
             row_for_the_menu = topic_position_on_screen[1] if topic_position_on_screen[1] + rows_the_menu_needs <= screen.getmaxyx()[0] - 6 else topic_position_on_screen[0] - rows_the_menu_needs
+            tour_sees("topic menu")
             UiState.draw_screen_behind_dialog = under_menu  # the report stays up behind the menu
             try:  # the menu opens right under the topic, or above it when there's no room
                 picked = choose_from_list(screen, "Col  ·  " + (identifier or "this topic"), [f"{k}   {choice_text}" for k, choice_text in choices],
@@ -2012,6 +2051,7 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
             fetched["done"] = [("couldn't load comments", str(error))]
     refreshed_comments_waiting = []  # a refreshed thread arriving after a post
     while True:
+        tour_sees("preview")
         if comments == "loading" and "done" in fetched:
             comments = fetched["done"]
         if refreshed_comments_waiting:
@@ -2166,6 +2206,8 @@ def start_work_on_issue(screen, issue, phase=None):
     identifier = issue["identifier"]
     workspace = workspace_open_for_issue(issue)
     pull_request_branches = linked_pull_request_branches(issue) if phase is None else []
+    if phase is None:
+        tour_sees("start dialog")
     if phase is None:  # how to start: phases, or a clean slate in a repo / without one / on a linked PR's branch
         open_workspace_count = len(workspaces_open_for_issue(issue))
         jump_row = "▶  jump to its open workspace  ·  you're already working on it" if open_workspace_count == 1 else \
@@ -2454,7 +2496,9 @@ class IssueListScreen:
         while not self.popup_should_close:
             self.take_in_what_the_background_fetched()
             self.work_out_visible_rows_and_cursor()
-            if self.onboarding_tour_is_due:
+            UiState.list_has_issues = bool(self.issue_row_numbers)
+            tour_sees("list")
+            if self.onboarding_tour_is_due and self.issues is not None:  # not before the first issues are in
                 self.onboarding_tour_is_due = False
                 write_stored_value("tour-seen", True)
                 start_guided_tour(self.screen)
@@ -2560,7 +2604,12 @@ class IssueListScreen:
             self.footer_message = FAILED_CHANGE_MESSAGES.pop(0)
 
     def greet_on_first_open_of_the_day(self, issues):
-        """Once a day: what moved since yesterday, and Col starts on the daily report and offers to show it."""
+        """Once a day: what moved since yesterday, and Col starts on the daily report and offers to show it.
+        While the tour is due or running it only starts the report: the tour is the greeting, and shows the report."""
+        if self.onboarding_tour_is_due or UiState.guided_tour_step is not None:
+            write_stored_value("digest", self.today)
+            start_writing_daily_report(issues, self.today)
+            return
         if read_stored_value("digest") != self.today:
             write_stored_value("digest", self.today)
             changes = changes_since_snapshot(self.states_before_first_refresh, issues)
@@ -2626,6 +2675,7 @@ class IssueListScreen:
         self.draw_title_and_view_line()
         if self.nothing_is_assigned_to_me():
             self.draw_nothing_assigned()
+            self.draw_col_in_his_corner()  # he is there on an empty list too: he is the one giving the tour
             return
         self.draw_rows()
         self.draw_col_in_his_corner()
@@ -2924,9 +2974,11 @@ class IssueListScreen:
 
     def move_cursor_down(self):
         self.cursor = min(self.cursor + self.repeat_count, len(self.issue_row_numbers) - 1)
+        tour_sees("moved down")
 
     def move_cursor_up(self):
         self.cursor = max(self.cursor - self.repeat_count, 0)
+        tour_sees("moved up")
 
     def move_cursor_to_last_issue(self):
         self.cursor = len(self.issue_row_numbers) - 1

@@ -1,0 +1,232 @@
+
+########## 001 before 10
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                  0 issues
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                    ╭──────────────────────────────────────────────────────────────────────────────╮
+                    │  Col  a quick tour                                                      esc  │
+                    │                                                                              │
+                    │   welcome                                                                    │
+                    │                                                                              │
+                    │   This is Collinear: your Linear issues one key away, and everything you     │
+                    │   have in progress.                                                          │
+                    │                                                                              │
+                    │   I'll walk you through it for real. Do what my speech bubble says, down     │
+                    │   in the corner, and watch what happens.                                     │
+                    │                                                                              │
+                    │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
+                    │   esc / h goes back.  q closes the popup.                                    │
+                    │                                                                              │
+                    │                                                                              │
+                    │                                                                              │
+                    │                                                                              │
+                    │                                                                              │
+                    │                                                                              │
+                    │                                                                              │
+                    │                                                                              │
+                    ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                 “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                         │  ▜▖ ▼  ▗▛  │
+                                                                                                         │   ╰─ω─╯~   │
+  l/enter start the tour   esc/h not now                                                                 ╰──╴ Col ╶───╯
+
+########## 002 before 'b'
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                  0 issues
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           ◌
+
+                                                nothing assigned to you
+
+                           n  create an issue      t  browse a team      T  browse a project
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                          “1/4  b opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                         │  ▜▖ ▼  ▗▛  │
+  n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
+  h close                                                                                                ╰──╴ Col ╶───╯
+
+########## 003 before 27
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                  0 issues
+ ─────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮─────────
+          │  Col  daily report                                                                          esc  │
+          │  morning, Erik. here's what you've been up to.                                                   │
+          │  from memory                                                                                     │
+          │                                                                                                  │
+          │   fake answer                                                                                    │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          │                                                                                                  │
+          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                              “2/4  nothing to report yet, it fills up as you work. esc or h goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                         │  ▜▖ ▼  ▗▛  │
+  n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
+  h close                                                                                                ╰──╴ Col ╶───╯
+
+########## 004 before 10
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                  0 issues
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+                    ╭──────────────────────────────────────────────────────────────────────────────╮
+                    │  Col  a quick tour                                                      esc  │
+                    │                                                                              │
+                    │   starting work, and the green markers                                       │
+                    │                                                                              │
+                    │   When you start an issue with l / enter, four things happen: it is          │
+                    │   assigned to you and moved to In Progress, it gets a git worktree on its    │
+                    │   own branch, a herdr workspace named after it, and Claude Code opens        │
+                    │   there with the issue already read.                                         │
+                    │                                                                              │
+                    │     ▶ ws 3 · my-repo                                                         │
+                    │   From then on its row carries this green marker: a workspace is open for    │
+                    │   it, work in progress, right now, on this machine. It names the             │
+                    │   workspace (its number in herdr's sidebar) and the repository.              │
+                    │                                                                              │
+                    │   So the green rows answer what am I in the middle of? Put the cursor on     │
+                    │   one and press w to jump straight into it: the fastest way to move          │
+                    │   between the things you have going.                                         │
+                    │                                                                              │
+                    │   The loop:  open, look for green, w.   l / enter to start something new.    │
+                    │   b in the morning.   O for this tour again.                                 │
+                    ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                 “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                         │  ▜▖ ▼  ▗▛  │
+                                                                                                         │   ╰─ω─╯~   │
+  l/enter done                                                                                           ╰──╴ Col ╶───╯
+
+########## 005 before 'q'
+                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                  0 issues
+ ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                           ◌
+
+                                                nothing assigned to you
+
+                           n  create an issue      t  browse a team      T  browse a project
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                         ╭────────────╮
+                                                                                                         │  ◢▀▄▁▁▁▄▀◣ │
+                                                    “off you go. ? if you forget a key, O for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                         │  ▜▖ ▼  ▗▛  │
+  n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
+  h close                                                                                                ╰──╴ Col ╶───╯
+
+finished cleanly
