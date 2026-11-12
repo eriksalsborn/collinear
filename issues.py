@@ -1722,8 +1722,8 @@ def todo_topics_with_one_more(topics, topic_markdown):
 
 
 def todo_list_as_report_text():
-    return "## to do\n" + ("\n".join(saved_todo_topics()) or "nothing here yet. In The Daily Bark, `s` moves a topic here, and so does "
-                                                             "doing something with it. It stays until you discard it.")
+    return "## to do\n" + ("\n".join(saved_todo_topics()) or "nothing here yet. `i` adds one of your own. In The Daily Bark, `s` moves a topic "
+                                                             "here, and so does doing something with it. It stays until you discard it.")
 
 
 def stand_in_issue_for_topic(topic_text):
@@ -1800,6 +1800,37 @@ def col_words_for_lookup(step):
     if step.startswith("Web"):
         return "sniffing the web"
     return "chewing on it"
+
+
+DRAFT_TODO_TASK = ("Write one to-do item for the developer's personal to-do list, from the few words they give you. Look up what is "
+                   "behind it (the Linear issue, the pull request, the Slack thread) only as far as needed to make it concrete. "
+                   "Answer with the item alone, on one line, no bullet: a short bold headline (start it with the Linear issue id "
+                   "when it is about one), then \" — \" and what there is to do, in at most 25 words.", "About", "To-do item")
+
+
+def add_topic_to_todo_list(screen):
+    """A to-do of your own: type it, or give Col a few words and he writes it up (you can edit his line before it is added)."""
+    picked = choose_from_list(screen, "to-do  ·  add one", ["✎  write it myself", "✦  Col writes it from a few words"], help=(
+        "Col looks up what is behind your words (an issue, a PR, a thread) and writes one line. You can change it before it is added.",))
+    if picked is None:
+        return
+    if picked:
+        brief = ask_for_one_line(screen, "to-do  ·  what is it about?", "enter Col writes it · esc cancel",
+                                 ("a few words: an issue id, a PR, a person, something you must not forget",))
+        if not brief:
+            return
+        try:
+            draft = run_with_spinner(screen, "Col is writing it up…", lambda: ask_headless_claude(
+                "", [(brief, "")], NOTES_DIR, lambda step: None, [], task=DRAFT_TODO_TASK))
+        except Exception as error:
+            return show_message_for_a_moment(screen, f"Col couldn't write it: {error}"[:120])
+        text = ask_for_one_line(screen, "to-do  ·  Col's line, change it if you like", "enter add · esc cancel",
+                                text=" ".join((draft or brief).split()).lstrip("-•* "))
+    else:
+        text = ask_for_one_line(screen, "to-do  ·  add one", "enter add · esc cancel", ("one line, Markdown works",))
+    if text:
+        save_todo_topics(saved_todo_topics() + ["- " + text])
+        col_says("on the list", "cheer", 4)
 
 
 def show_daily_report(screen, issues, today, showing_todo_list=False):
@@ -1883,11 +1914,11 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
                         + " · c free session on it · a ask Col about it"
-                        + (" · x discard it" if showing_todo_list else " · s move to to-do · x discard it · p to-do list") + " · j/k topics · d/u page"
+                        + (" · x discard it · i add one" if showing_todo_list else " · s move to to-do · x discard it · p to-do list") + " · j/k topics · d/u page"
                         + ("" if showing_todo_list else " · r write it again"))
                 draw_footer_from_text(screen, footer_text + " · esc/h close")
             else:
-                draw_footer_from_text(screen, "esc/h close" if showing_todo_list else "p to-do list · r write it again · esc/h close")
+                draw_footer_from_text(screen, "i add one · esc/h close" if showing_todo_list else "p to-do list · r write it again · esc/h close")
 
     def under_menu():  # draw_dialog_box() paints the backdrop first: hand it the list while the report draws itself, no pop-open
         UiState.draw_screen_behind_dialog, title_before, UiState.title_of_open_dialog = draw_list_behind, UiState.title_of_open_dialog, dialog_title
@@ -1911,6 +1942,10 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
             UiState.col_is_working = False
             if identifier_picked_in_todo_list := show_daily_report(screen, issues, today, showing_todo_list=True):
                 return identifier_picked_in_todo_list
+            continue
+        if key == ord("i") and showing_todo_list:  # a to-do of your own, typed or written up by Col
+            add_topic_to_todo_list(screen)
+            TODO_LIST["text"], TODO_LIST["cur"] = todo_list_as_report_text(), len(saved_todo_topics()) - 1
             continue
         topic = report_topic_under_cursor(report_text, document.get("cur", 0)) if report_text else None
         my_issue_identifiers = {listed_issue["identifier"] for listed_issue in issues}

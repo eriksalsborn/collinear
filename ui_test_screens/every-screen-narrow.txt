@@ -6759,7 +6759,7 @@
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  x discard it   j/k topics   d/u page   esc/h close                                 ╰──╴ Col ╶───╯
+  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
 
 ########## 148 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6805,7 +6805,7 @@
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-1   c free session on it   a ask Col about it              │   ╰─ω─╯~   │
-  x discard it   j/k topics   d/u page   esc/h close                                 ╰──╴ Col ╶───╯
+  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
 
 ########## 149 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6897,7 +6897,7 @@
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-1   c free session on it   a ask Col about it              │   ╰─ω─╯~   │
-  x discard it   j/k topics   d/u page   esc/h close                                 ╰──╴ Col ╶───╯
+  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
 
 ########## 151 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6943,7 +6943,7 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  x discard it   j/k topics   d/u page   esc/h close                                 ╰──╴ Col ╶───╯
+  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
 
 ########## 152 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7081,7 +7081,7 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  x discard it   j/k topics   d/u page   esc/h close                                 ╰──╴ Col ╶───╯
+  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
 
 ########## 155 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7095,8 +7095,8 @@
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │o
-   │   nothing here yet. In The Daily Bark, s moves a topic here, and so does doing something   │
-  ◌│   with it. It stays until you discard it.                                                  │─
+   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
+  ◌│   so does doing something with it. It stays until you discard it.                          │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7127,9 +7127,9 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  esc/h close                                                                        ╰──╴ Col ╶───╯
+  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
 
-########## 156 before 27
+########## 156 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -7141,8 +7141,8 @@
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │o
-   │   nothing here yet. In The Daily Bark, s moves a topic here, and so does doing something   │
-  ◌│   with it. It stays until you discard it.                                                  │─
+   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
+  ◌│   so does doing something with it. It stays until you discard it.                          │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7173,9 +7173,561 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  esc/h close                                                                        ╰──╴ Col ╶───╯
+  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
 
-########## 157 before 'b'
+########## 157 before 10
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-╭──────────────────────────────────────────────────────────────────────────────╮  3d ago
+          │  to-do  add one                                                         esc  │
+          │  / filter                                                                    │
+          │  Col looks up what is behind your words (an issue, a PR, a thread) and       │
+          │  writes one line. You can change it before it is added.                      │
+          │                                                                              │
+          │                                                                              │
+          │ ▎✎  write it myself                                                          │
+          │  ✦  Col writes it from a few words                                           │
+          │                                                                              │
+          ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
+
+########## 158 before 'm'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+              ╭──────────────────────────────────────────────────────────────────────╮
+              │  to-do  add one                                                 esc  │
+              │  › ▏                                                                 │
+              │    one line, Markdown works                                          │
+              │                                                                      │
+              │                                                                      │
+              ╰──────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  enter add   esc cancel                                                             ╰──╴ Col ╶───╯
+
+########## 159 before 'e'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+              ╭──────────────────────────────────────────────────────────────────────╮
+              │  to-do  add one                                                 esc  │
+              │  › m▏                                                                │
+              │    one line, Markdown works                                          │
+              │                                                                      │
+              │                                                                      │
+              ╰──────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  enter add   esc cancel                                                             ╰──╴ Col ╶───╯
+
+########## 160 before 10
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+              ╭──────────────────────────────────────────────────────────────────────╮
+              │  to-do  add one                                                 esc  │
+              │  › me▏                                                               │
+              │    one line, Markdown works                                          │
+              │                                                                      │
+              │                                                                      │
+              ╰──────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  enter add   esc cancel                                                             ╰──╴ Col ╶───╯
+
+########## 161 before 'i'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
+   │  1 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │ ▎ • me                                                                                     │
+  ◌│                                                                                            │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                      “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   x discard it   i add one               ╰──╴ Col ╶───╯
+
+########## 162 before 'j'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-╭──────────────────────────────────────────────────────────────────────────────╮  3d ago
+          │  to-do  add one                                                         esc  │
+          │  / filter                                                                    │
+          │  Col looks up what is behind your words (an issue, a PR, a thread) and       │
+          │  writes one line. You can change it before it is added.                      │
+          │                                                                              │
+          │                                                                              │
+          │ ▎✎  write it myself                                                          │
+          │  ✦  Col writes it from a few words                                           │
+          │                                                                              │
+          ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                      “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
+
+########## 163 before 10
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-╭──────────────────────────────────────────────────────────────────────────────╮  3d ago
+          │  to-do  add one                                                         esc  │
+          │  / filter                                                                    │
+          │  Col looks up what is behind your words (an issue, a PR, a thread) and       │
+          │  writes one line. You can change it before it is added.                      │
+          │                                                                              │
+          │                                                                              │
+          │  ✎  write it myself                                                          │
+          │ ▎✦  Col writes it from a few words                                           │
+          │                                                                              │
+          ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                      “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
+
+########## 164 before 'm'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+              ╭──────────────────────────────────────────────────────────────────────╮
+              │  to-do  what is it about?                                       esc  │
+              │  › ▏                                                                 │
+              │    a few words: an issue id, a PR, a person, something you must      │
+              │      not forget                                                      │
+              │                                                                      │
+              │                                                                      │
+              ╰──────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                      “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  enter Col writes it   esc cancel                                                   ╰──╴ Col ╶───╯
+
+########## 165 before 10
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+              ╭──────────────────────────────────────────────────────────────────────╮
+              │  to-do  what is it about?                                       esc  │
+              │  › m▏                                                                │
+              │    a few words: an issue id, a PR, a person, something you must      │
+              │      not forget                                                      │
+              │                                                                      │
+              │                                                                      │
+              ╰──────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                      “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  enter Col writes it   esc cancel                                                   ╰──╴ Col ╶───╯
+
+########## 166 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+              ╭──────────────────────────────────────────────────────────────────────╮
+              │  to-do  Col's line, change it if you like                       esc  │
+              │  › fake answer▏                                                      │
+              │                                                                      │
+              │                                                                      │
+              ╰──────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                      “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  enter add   esc cancel                                                             ╰──╴ Col ╶───╯
+
+########## 167 before 'x'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
+   │  1 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │ ▎ • me                                                                                     │
+  ◌│                                                                                            │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                      “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   x discard it   i add one               ╰──╴ Col ╶───╯
+
+########## 168 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
+   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
+  ◌│   so does doing something with it. It stays until you discard it.                          │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
+
+########## 169 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -7221,7 +7773,145 @@
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 158 before 'x'
+########## 170 before 'x'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
+   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
+  ◌│   so does doing something with it. It stays until you discard it.                          │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
+
+########## 171 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
+  ◕│  Col  to-do list                                                                      esc  │─
+   │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
+   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │                                                                                            │
+  ◔│    TO DO                                                                                   │─
+   │   ──────────────────────────────────────────────────────────────────────────────────────   │o
+   │                                                                                            │o
+   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
+  ◌│   so does doing something with it. It stays until you discard it.                          │─
+   │                                                                                            │o
+   │                                                                                            │
+  ◈│                                                                                            │─
+ ▎ │                                                                                            │o
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
+
+########## 172 before 'b'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                                     “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 173 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -7267,7 +7957,7 @@
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
-########## 159 before 'r'
+########## 174 before 'r'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -7313,7 +8003,7 @@
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
-########## 160 before 27
+########## 175 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -7359,7 +8049,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
-########## 161 before 27
+########## 176 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -7405,7 +8095,7 @@
   l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
   c free session on it   a ask Col about it   s move to to-do   x discard it         ╰──╴ Col ╶───╯
 
-########## 162 before 'W'
+########## 177 before 'W'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
@@ -7451,7 +8141,7 @@
   l/enter start   space preview   a ask Col   C comment   c free session             │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 163 before 'j'
+########## 178 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
@@ -7497,7 +8187,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
   C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
-########## 164 before 'j'
+########## 179 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
@@ -7543,7 +8233,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
   C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
-########## 165 before 'S'
+########## 180 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
@@ -7589,7 +8279,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col                │   ╰─ω─╯~   │
   C comment   c free session   S status   P priority   A assign   ? all keys         ╰──╴ Col ╶───╯
 
-########## 166 before 'W'
+########## 181 before 'W'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
@@ -7635,7 +8325,7 @@
                                                                                      │   ╰─ω─╯~   │
   ✓ topic-0a1 is a workspace, not a Linear issue here · w jumps to it                ╰──╴ Col ╶───╯
 
-########## 167 before 'q'
+########## 182 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today

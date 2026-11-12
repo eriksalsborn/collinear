@@ -155,7 +155,8 @@ EVERY_SCREEN = [
     "O", ENTER, "q", "Q", "j",                                   # q does nothing in the tour; Q quits it, and every key works again
     "O", ESC,                                                    # the welcome card can be declined
     "b", "s", "j", "j", "l", "a", ESC, "p", "j", "l", ESC, "x", ESC, ESC,   # save a topic to the to-do list, by s and by acting on one; open it, remove one
-    "p", "x", "x", ESC,                                          # the to-do list from the issue list; emptied
+    "p", "x", "x", "i", ENTER, "m", "e", ENTER, "i", "j", ENTER, "m", ENTER, ESC, "x", ESC,   # the to-do list from the issue list; emptied; one typed, one by Col (not kept)
+    "p", "x", ESC,                                          # the to-do list from the issue list; emptied
     "b", "x", "r", ESC, ESC,                                     # discard a topic of the report; writing it again asks first
     "W", "j", "j", "S", "W",                                     # active workspaces: mine, someone else's, a topic (S can't change that one)
 ]
