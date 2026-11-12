@@ -12,7 +12,7 @@ Needs macOS, herdr 0.9.5+, Python 3, `git`, the [GitHub CLI](https://cli.github.
 [Claude Code](https://claude.com/claude-code).
 
 ```sh
-git clone https://github.com/eriksalsborn/collinear ~/collinear
+git clone --branch stable https://github.com/eriksalsborn/collinear ~/collinear
 python3 ~/collinear/install.py
 ```
 
@@ -21,6 +21,9 @@ there (Linear key, repositories folder, and so on). Then he takes you on [the to
 
 If that key is already yours: `python3 ~/collinear/install.py --issues-key prefix+alt+l`.
 To update: `git -C ~/collinear pull && python3 ~/collinear/install.py`.
+
+`stable` is the latest [release](https://github.com/eriksalsborn/collinear/releases) and only moves when a new one is
+published; `main` is work in progress. Cloned `main` earlier? `git -C ~/collinear switch stable`.
 
 ## The tour
 
