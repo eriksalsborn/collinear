@@ -24,11 +24,12 @@ To update: `git -C ~/collinear pull && python3 ~/collinear/install.py`.
 
 ## Good to know
 
-- `?` lists every key. Everything is also clickable.
-- Starting an issue makes a git worktree at `<repo>-wt/<branch>`; your main checkout is never touched.
-- A herdr workspace belongs to an issue when its name starts with the issue id (`ENG-123 …`).
-- Col only reads (Linear, Slack, GitHub, the web). Nothing is posted until you confirm.
-- `D` reopens setup, `U` undoes the last change, `B` gives Col a bone.
+- **One key from issue to working session.** `enter` makes a git worktree on the issue's branch and opens Claude
+  Code on it in the issue's own herdr workspace.
+- **It knows where your work is.** Issues with a workspace open are marked, with repository and branch, and `w`
+  jumps straight there.
+- **Col writes your daily report.** A recap of your last two days from Linear, Slack and GitHub, so you can pick
+  the threads back up.
 
 ## How it works
 
@@ -63,6 +64,19 @@ flowchart TD
 ```sh
 python3 issues.py --test && python3 test_ui.py
 ```
+
+## Keys
+
+Everything is also clickable, and `?` shows this list in the app.
+
+| | |
+|---|---|
+| **Work on an issue** | `enter` start · `space` preview · `w` jump to its workspace · `a` ask Col · `C` comment · `c` clean slate |
+| **Change it** | `S` status · `P` priority · `A` assign · `X` cancel · `U` undo · `n` new issue |
+| **Open elsewhere** | `g` pull request · `L` Linear · `y` copy link |
+| **Views** | `b` daily report · `t` team · `T` project · `R` review inbox · `r` refresh |
+| **Move** | `j` / `k` · `5j` · `G` last · `/` or just type to filter |
+| **The rest** | `D` setup · `K` hints on/off · `Z` Col on/off · `B` give Col a bone · `h` back · `q` close |
 
 ## License
 
