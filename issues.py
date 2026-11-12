@@ -123,7 +123,7 @@ COL_TIPS = ["type a few letters to filter, no / needed", "3j jumps three rows do
         "d and u in a preview scroll half a page", "in the chat, ↑↓ scroll and you can keep typing while Col thinks",
         "a comment drafted by Col is never posted until you say yes", "h in a team view goes home; h at home closes",
         "the count in the corner is how many you finished today", "edit Col's lines at the top of issues.py if you want a different voice", "Z sends Col off duty if you need the quiet",
-        "B gives me a bone. just saying"]
+        "B gives me a bone. just saying", "O walks you through the tour again"]
 COL_CHEERS_FOR_DONE = ["nice one. {n} done today", "that's {n} today, you're on a roll", "✓ shipped. {n} down", "{n} done. keep going",
           "and that's {n}. the backlog fears you", "{n} done. tail going like mad", "{n} down. who's a good dev"]
 # Mouse: what's on screen says what a click means. Every footer hint, list row and the esc in a dialog's corner
@@ -621,6 +621,84 @@ def show_key_reference(screen):
     screen.timeout(-1)
     screen.getch()
     screen.timeout(250)
+
+
+# The tour for someone new: five cards, a minute to read. (title, what Col says meanwhile, lines.) A line is Markdown,
+# or "@green …" to show the green marker as it looks on a row.
+ONBOARDING_TOUR = [
+    ("my issues", "this is the whole flock",
+     ["This list is **every Linear issue assigned to you**, grouped by status, the furthest along on top.",
+      "",
+      "`j` `k` move  ·  just type to filter  ·  `space` previews an issue with its comments",
+      "",
+      "Open it from anywhere in herdr, glance, close with `q`. It is your to-do list, one key away."]),
+    ("start working", "one key and I fetch everything",
+     ["`enter` on an issue sets the whole thing up: a git worktree on the issue's branch, a herdr workspace named "
+      "after the issue, and Claude Code in it with the issue already read.",
+      "",
+      "Work goes in phases, **write → plan → build → review**. Each leaves notes, so you can stop today and pick "
+      "it up next week exactly where you were."]),
+    ("the green markers", "green means you're already on it",
+     ["@green ▶ ws 3 · my-repo",
+      "",
+      "A green marker on a row means **a herdr workspace is open for that issue**: it is work in progress, right now, "
+      "on this machine. It names the workspace (the number in herdr's sidebar) and the repository.",
+      "",
+      "So the green rows are your answer to *what am I in the middle of?*  Put the cursor on one and press `w` to "
+      "jump straight into it. That is the fastest way to move between the things you have going."]),
+    ("the daily bark", "I write it while you get coffee",
+     ["`b` opens **The Daily Bark**: my recap of your last two days, from Linear, Slack and GitHub. What is on your "
+      "plate, the loose ends, and where to start today.",
+      "",
+      "`j` `k` move between topics  ·  `enter` on one: go to its issue, start it, or ask me about it",
+      "",
+      "Use it in the morning, or after a few days away, instead of scrolling back through everything."]),
+    ("that's it", "you've got this",
+     ["The bottom rows always show what you can do right here, and every hint is clickable.",
+      "",
+      "`?` every key  ·  `a` ask me about an issue  ·  `O` this tour again  ·  `B` a bone for me",
+      "",
+      "The loop: **open, look for green,** `w` to get back into your work.  `enter` to start something new."]),
+]
+
+
+def show_onboarding_tour(screen):
+    """The five cards of ONBOARDING_TOUR, over the list. enter goes on, h goes back, esc skips the rest.
+    Shown by itself the first time the list opens; O shows it again."""
+    attribute_by_style = daily_report_text_attributes()
+    card_number = 0
+    while card_number < len(ONBOARDING_TOUR):
+        title, col_line, text_lines = ONBOARDING_TOUR[card_number]
+        is_last_card = card_number == len(ONBOARDING_TOUR) - 1
+        col_says(col_line, "cheer", 60)
+        line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 19, 80)
+        line(3, f"{card_number + 1} of {len(ONBOARDING_TOUR)}", curses.color_pair(DIM), 4)
+        line(3, title, curses.color_pair(ACCENT) | curses.A_BOLD, 12)
+        row = 5
+        for text_line in text_lines:
+            if text_line.startswith("@green "):  # the marker itself, as a row shows it
+                line(row, f" {text_line[len('@green '):]} ", curses.color_pair(GREEN) | curses.A_REVERSE | curses.A_BOLD, 5)
+                row += 1
+                continue
+            for segments in markdown_to_styled_lines(text_line, box_width - 9) or [[]]:  # "" is a blank row
+                column = 4
+                for text, style in segments:
+                    line(row, text, attribute_by_style[style], column)
+                    column += len(text)
+                row += 1
+        progress_dots = " ".join("●" if number == card_number else "○" for number in range(len(ONBOARDING_TOUR)))
+        line(17, progress_dots, curses.color_pair(ACCENT), (box_width - len(progress_dots)) // 2)
+        draw_footer_from_text(screen, ("l/enter done" if is_last_card else "l/enter next") + (" · h back" if card_number else "")
+                              + ("" if is_last_card else " · esc skip the tour"))
+        screen.refresh()
+        key = screen.getch()
+        if key in (27, ord("q")):
+            break
+        if key in (10, 13, curses.KEY_ENTER, ord("l"), ord("j"), curses.KEY_DOWN, curses.KEY_RIGHT):
+            card_number += 1
+        elif key in (ord("h"), ord("k"), curses.KEY_UP, curses.KEY_LEFT):
+            card_number = max(card_number - 1, 0)
+    col_says("off you go. ? if you forget a key, O for the tour", "cheer", 8)
 
 
 def show_review_inbox(screen):
@@ -2274,6 +2352,7 @@ KEY_BINDINGS = [
     KeyBinding("K",     "toggle_footer_hints",               False,  VIEWS,             "K",                 "footer hints on / off"),
     KeyBinding("D",     "open_setup",                        False,  VIEWS,             "D",                 "setup"),
     KeyBinding("B",     "give_col_a_bone",                   False,  VIEWS,             "B",                 "give Col a bone"),
+    KeyBinding("O",     "show_the_tour_again",               False,  VIEWS,             "O",                 "the quick tour"),
 ]
 KEY_BINDING_BY_CHARACTER = {character: binding for binding in KEY_BINDINGS for character in binding.keys}
 # ? : a word or two per key. What a key does inside a preview, chat or report is in that screen's own footer.
@@ -2333,6 +2412,7 @@ class IssueListScreen:
         self.repeat_count = 1                    # that count as a number, for the key being handled
         self.footer_message = ""
         self.popup_should_close = False
+        self.onboarding_tour_is_due = False      # the first time the list opens, the tour shows by itself
         # fetched in the background
         self.refresh_is_running = False
         self.refreshed_issues_waiting = None     # (view they were fetched for, issues) until the main loop takes them in
@@ -2354,6 +2434,10 @@ class IssueListScreen:
         while not self.popup_should_close:
             self.take_in_what_the_background_fetched()
             self.work_out_visible_rows_and_cursor()
+            if self.onboarding_tour_is_due:
+                self.onboarding_tour_is_due = False
+                write_stored_value("tour-seen", True)
+                show_onboarding_tour(self.screen)
             self.draw()
             col_is_animating = (COL_SPEECH["mood"] == "woof" and time.time() < COL_SPEECH["until"]) or time.time() % 37 < 2.5 \
                 or UiState.col_is_working
@@ -2383,6 +2467,7 @@ class IssueListScreen:
         done = read_stored_value("done") or {}
         self.done_today_count = done.get("n", 0) if done.get("date") == self.today else 0
         UiState.draw_screen_behind_dialog = self.draw
+        self.onboarding_tour_is_due = not read_stored_value("tour-seen")
         threading.Thread(target=self.scan_workspaces_and_worktrees, args=(self.issues or [],), daemon=True).start()
 
     def issues_from_cache(self, view):
@@ -3013,6 +3098,9 @@ class IssueListScreen:
             f"bone number {bones_today}. I'm going to need a bigger hole"
         col_says(thanks, "bone", 6)
         return f"gave Col a bone  ·  {bones_today} today"
+
+    def show_the_tour_again(self):
+        show_onboarding_tour(self.screen)
 
     def open_setup(self):
         run_setup(self.screen, force=True)

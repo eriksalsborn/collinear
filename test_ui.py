@@ -126,6 +126,7 @@ EVERY_SCREEN = [
     ("click row with", "PLA-4"), ("click row with", "PLA-4"), ("click hint", ESC),   # select by click, preview by second click, close by its corner
     ("wheel", "down"), ("wheel", "up"), ("click hint", "?"), ENTER,                 # scroll, then a footer hint
     ("click hint", "S"), ("click row with", "In Review"), ("click row with", "In Review"),  # a dialog: click a row, click it again to pick
+    "O", ENTER, ENTER, "h", ENTER, ENTER, ENTER, ENTER,          # the tour: forward, one back, to the end
 ]
 SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, the steps)
     "every-screen-wide": (150, ONE_WORKSPACE, EVERY_SCREEN),
@@ -160,7 +161,7 @@ def replace_the_outside_world(issues, prs, open_workspaces, temporary_home):
     issues.NOTES_DIR = temporary_home / "notes"
     prs.LOCAL_SETTINGS_FILE = temporary_home / "local_settings.json"  # F in setup saves here, never to the real one
     issues.MY_ISSUES_CACHE_FILE.write_text(json.dumps(FAKE_ISSUES))
-    stored_values = {"setup": {"ok": "x"}, "name": {"name": "Erik Tester"}, "digest": f"{FROZEN_NOW:%Y-%m-%d}",
+    stored_values = {"setup": {"ok": "x"}, "tour-seen": True, "name": {"name": "Erik Tester"}, "digest": f"{FROZEN_NOW:%Y-%m-%d}",
                      "brief": {"date": f"{FROZEN_NOW:%Y-%m-%d}", "text": FAKE_DAILY_REPORT, "steps": ["Linear: get issue"], "cur": 0}}
     for name, value in stored_values.items():
         (cache_dir / f"herdr-issues-{name}.json").write_text(json.dumps(value))

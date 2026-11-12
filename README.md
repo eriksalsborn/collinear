@@ -17,7 +17,7 @@ python3 ~/collinear/install.py
 ```
 
 Then press `prefix + alt + i` in herdr. The first time, Col shows a checklist and fixes most of it with you right
-there (Linear key, repositories folder, and so on).
+there (Linear key, repositories folder, and so on). Then he gives you a one-minute tour.
 
 If that key is already yours: `python3 ~/collinear/install.py --issues-key prefix+alt+l`.
 To update: `git -C ~/collinear pull && python3 ~/collinear/install.py`.
@@ -76,7 +76,7 @@ Everything is also clickable, and `?` shows this list in the app.
 | **Open elsewhere** | `g` pull request · `L` Linear · `y` copy link |
 | **Views** | `b` daily report · `t` team · `T` project · `R` review inbox · `r` refresh |
 | **Move** | `j` / `k` · `5j` · `G` last · `/` or just type to filter |
-| **The rest** | `D` setup · `K` hints on/off · `Z` Col on/off · `B` give Col a bone · `h` back · `q` close |
+| **The rest** | `O` the tour · `D` setup · `K` hints on/off · `Z` Col on/off · `B` give Col a bone · `h` back · `q` close |
 
 ## License
 
