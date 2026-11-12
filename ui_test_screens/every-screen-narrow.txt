@@ -6629,28 +6629,28 @@
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  Col  daily report · topic 4                                                          esc  │─
-   │   WEDNESDAY                                 │    ✦ ask Col about this topic                │o
-   │  ────────────────────────────────────────   │    ────────────────────────────────────────  │o
-   │                                             │                                              │
-  ◔│  • PLA-1 login thing — PR #7 is in review   │     Ask Col about this topic: start with     │─
-   │    since Tuesday.                           │     PLA-1, it is closest to done.… Col       │o
+   │                                             │    ✦ ask Col about this topic                │o
+   │  • start with PLA-1, it is closest to       │    ────────────────────────────────────────  │o
+   │    done.                                    │                                              │
+  ◔│                                             │     Ask Col about this topic: start with     │─
+   │                                             │     PLA-1, it is closest to done.… Col       │o
    │                                             │     has the report, your issues, and can     │o
-   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │     look things up in Linear, Slack and      │
-  ◌│                                             │     GitHub. The thread is kept for the       │─
-   │  • a loose topic — nobody filed it yet.     │     day, one per topic.                      │o
+   │                                             │     look things up in Linear, Slack and      │
+  ◌│                                             │     GitHub. The thread is kept with the      │─
+   │                                             │     topic.                                   │o
    │                                             │                                              │
   ◈│                                             │                                              │─
- ▎ │   LOOSE THREADS                             │                                              │o
-   │  ────────────────────────────────────────   │                                              │
+ ▎ │                                             │                                              │o
    │                                             │                                              │
-   │  • reply to Robin about herdr links.        │                                              │
-   │    ↳ Robin in #dev, Tuesday · no Linear     │                                              │
-   │  issue yet                                  │                                              │
    │                                             │                                              │
-   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │                                              │
    │                                             │                                              │
-   │  • start with PLA-1, it is closest to       │                                              │
-   │    done.                                    │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
    │                                             │                                              │
    │                                             │                                              │
    │                                             │                                              │

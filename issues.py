@@ -2004,7 +2004,8 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                 col_says("moved to your to-do list. `p` opens it" if key == ord("s") else "dropped it", "cheer", 6)
                 continue
         if topic and key == ord("a"):
-            chat_with_col(screen, None, report=report_text, issues=issues, topic=(topic.number, topic.text))
+            chat_with_col(screen, None, report=report_text, issues=issues, topic=(topic.number, topic.text),
+                          topic_markdown=markdown_of_each_topic(report_text)[topic.number], is_todo=showing_todo_list)
         elif topic and key == ord("c") and topic.issue_identifier:  # free session on the issue, yours or not
             try:
                 issue = next((listed_issue for listed_issue in issues if listed_issue["identifier"] == topic.issue_identifier), None) or run_with_spinner(
@@ -2140,7 +2141,7 @@ def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, r
                  ctag=curses.color_pair(ACCENT) | curses.A_BOLD | curses.A_REVERSE)
     if not history:
         intro_text = ((f"Ask Col about this topic: {CHAT_SIDE_PANE['topic'][:90]}… Col has the report, your issues, and can look things up "
-                  "in Linear, Slack and GitHub. The thread is kept for the day, one per topic." if CHAT_SIDE_PANE.get("topic") else
+                  "in Linear, Slack and GitHub. The thread is kept with the topic." if CHAT_SIDE_PANE.get("topic") else
                   "Ask Col anything about the report: what a line means, what happened in a thread, what to do first. "
                   "Col has the report, your issues, and can look things up in Linear, Slack and GitHub. The thread is "
                   "kept for the day.") if report else
@@ -2185,16 +2186,19 @@ def post_comment_to_linear(issue, body):
         {"id": issue["id"], "b": body})
 
 
-def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None):
+def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None, topic_markdown=None, is_todo=False):
     """Thread with Claude about the issue, typed straight into the pinned input: enter sends, ↑↓/PgUp/PgDn
     scroll, esc stops a running answer or closes. draft: Claude writes a comment from the brief, feedback makes
     a new draft, enter on an empty input posts the latest draft (after a confirm).
-    report: a thread with Col about the daily report instead (issue is None), shown beside it, kept per day."""
+    report: a thread with Col about the daily report instead (issue is None), shown beside it, kept per day.
+    topic_markdown: the one topic being asked about; it alone is shown beside the thread (Col still gets the report).
+    is_todo: the topic is on the to-do list, so its thread is kept by its words, not by the day."""
     tour_sees("report chat" if report else "draft chat" if draft else "ask chat")
     if report:
         topic_number, CHAT_SIDE_PANE["topic"] = (topic[0], topic[1]) if topic else (None, None)
-        title = "Col  ·  daily report" + (f" · topic {topic_number + 1}" if topic else "")
-        thread_file = NOTES_DIR / "daily" / (f"{datetime.now():%Y-%m-%d}" + (f"-topic{topic_number + 1}" if topic else "") + ".json")
+        title = "Col  ·  to-do" if is_todo else "Col  ·  daily report" + (f" · topic {topic_number + 1}" if topic else "")
+        thread_file = NOTES_DIR / "daily" / ((f"todo-{zlib.crc32(topic[1].encode()):08x}" if is_todo else
+                                              f"{datetime.now():%Y-%m-%d}" + (f"-topic{topic_number + 1}" if topic else "")) + ".json")
         CHAT_SIDE_PANE["top"] = None  # the side pane opens at the topic
     else:
         title = f"{issue['identifier']}  ·  " + ("comment · Col drafts" if draft else "ask Col")
@@ -2211,7 +2215,7 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
     else:
         CHAT_SIDE_PANE["topic"] = None
     while True:
-        top = draw_chat(screen, title, issue, history, None, text, top, draft, report)
+        top = draw_chat(screen, title, issue, history, None, text, top, draft, topic_markdown or report)
         try:
             key = screen.get_wch()  # wide chars, so å/ä/ö work
         except curses.error:  # the 250ms timeout main() sets
@@ -2264,7 +2268,7 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
         threading.Thread(target=work, daemon=True).start()
         spinner_frame, UiState.col_is_working, UiState.lookups_col_is_working_on = 0, True, message["steps"]
         while "a" not in outcome:
-            draw_chat(screen, title, issue, history, SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], text, None, draft, report)
+            draw_chat(screen, title, issue, history, SPINNER_FRAMES[spinner_frame % len(SPINNER_FRAMES)], text, None, draft, topic_markdown or report)
             spinner_frame += 1
             key_while_thinking = screen.getch()
             if key_while_thinking == 27:

@@ -6629,25 +6629,25 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  Col  daily report · topic 4                                                                                                            esc  │─
-   │   WEDNESDAY                                                          │    ✦ ask Col about this topic                                         │o
-   │  ─────────────────────────────────────────────────────────────────   │    ─────────────────────────────────────────────────────────────────  │o
+   │                                                                      │    ✦ ask Col about this topic                                         │o
+   │  • start with PLA-1, it is closest to done.                          │    ─────────────────────────────────────────────────────────────────  │o
    │                                                                      │                                                                       │
-  ◔│  • PLA-1 login thing — PR #7 is in review since Tuesday.             │     Ask Col about this topic: start with PLA-1, it is closest to      │─
+  ◔│                                                                      │     Ask Col about this topic: start with PLA-1, it is closest to      │─
    │                                                                      │     done.… Col has the report, your issues, and can look things       │o
-   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │     up in Linear, Slack and GitHub. The thread is kept for the        │o
-   │                                                                      │     day, one per topic.                                               │
-  ◌│  • a loose topic — nobody filed it yet.                              │                                                                       │─
+   │                                                                      │     up in Linear, Slack and GitHub. The thread is kept with the       │o
+   │                                                                      │     topic.                                                            │
+  ◌│                                                                      │                                                                       │─
    │                                                                      │                                                                       │o
    │                                                                      │                                                                       │
-  ◈│   LOOSE THREADS                                                      │                                                                       │─
- ▎ │  ─────────────────────────────────────────────────────────────────   │                                                                       │o
+  ◈│                                                                      │                                                                       │─
+ ▎ │                                                                      │                                                                       │o
    │                                                                      │                                                                       │
-   │  • reply to Robin about herdr links.                                 │                                                                       │
-   │    ↳ Robin in #dev, Tuesday · no Linear issue yet                    │                                                                       │
    │                                                                      │                                                                       │
-   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │                                                                       │
    │                                                                      │                                                                       │
-   │  • start with PLA-1, it is closest to done.                          │                                                                       │
+   │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
    │                                                                      │                                                                       │
    │                                                                      │                                                                       │
    │                                                                      │                                                                       │
