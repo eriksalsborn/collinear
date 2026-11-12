@@ -2075,13 +2075,8 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
             if COL_SPEECH["mood"] in ("left", "right") or not COL_SPEECH["say"]:
                 COL_SPEECH.update(mood="cheer", say="what you saved to do" if showing_todo_list else "here's your daily report", until=time.time() + 8)
             if showing_todo_list:
-                line(2, "what you moved here from The Daily Bark. it stays when the report is written again.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
-                # how to add one of your own, where nobody can miss it: a key cap and what it does; a click works too
-                line(3, " i ", keycap_attribute(), 3)
-                line(3, "add a to-do: type it yourself, or draft it with Col", curses.color_pair(ACCENT) | curses.A_BOLD, 7)
-                CLICK_ZONES.append((line.first_row_on_screen + 3, line.first_column_on_screen + 3, line.first_column_on_screen + 60, [ord("i")]))
+                line(3, "these stay when the report is written again", curses.color_pair(DIM), 3)
             else:
-                line(2, f"{greeting_for_this_hour()}, {saved_first_name() or 'you'}. here's what you've been up to.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
                 line(3, f"{len(lookup_steps)} lookups in Linear, Slack and GitHub" if lookup_steps else "from memory", curses.color_pair(DIM), 3)
             styled_lines, rows_for_text = daily_report_as_styled_lines(report_text, min(box_width - 8, 88)), box_height - 8  # the row under the text holds the "go to" marker
             # the topics: each bullet is one; j/k move between them, l jumps to its issue in the list
@@ -2111,6 +2106,11 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                     cursor_line_attribute = on_cursor_row(attribute_by_style[style])
                     line(5 + row_offset, segment_text, cursor_line_attribute if is_in_topic_under_cursor else attribute_by_style[style], column)
                     column += len(segment_text)
+            if showing_todo_list:  # adding one sits where the new one will land: the row under the last to-do. a click works too
+                row_under_the_list = 5 + min(len(styled_lines) - first_line_shown + 1, rows_for_text)
+                line(row_under_the_list, " i ", keycap_attribute(), 4)
+                line(row_under_the_list, "add a to-do: type it yourself, or draft it with Col", curses.color_pair(MUTED), 8)
+                CLICK_ZONES.append((line.first_row_on_screen + row_under_the_list, line.first_column_on_screen + 4, line.first_column_on_screen + 60, [ord("i")]))
             if bullet_line_numbers:
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("i add a to-do · " * showing_todo_list + "l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")

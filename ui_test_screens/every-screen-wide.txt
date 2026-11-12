@@ -1477,7 +1477,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
- ▎    PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+ ▎    PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -1523,7 +1523,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
- ▎    PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+ ▎    PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -1569,7 +1569,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
- ▎    PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+ ▎    PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -1615,7 +1615,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                                                6 issues
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
- ▎    PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+ ▎    PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -5571,7 +5571,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
@@ -5617,7 +5617,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
@@ -5663,7 +5663,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    WEDNESDAY                                                                                     │───────────────────────
@@ -5755,8 +5755,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
- ▎    PLA-4     ▮▯▯ low  │   i  add a to-do: type it yourself, or draft it with Col                                         │                 1w ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+ ▎    PLA-4     ▮▯▯ low  │  these stay when the report is written again                                                     │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
@@ -5764,7 +5764,7 @@
                          │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
   ◌ Backlog 1  ──────────│   Bark, s moves a topic here. It stays until you discard it.                                     │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │                                                                                                  │
+                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
       PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
@@ -5847,8 +5847,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
- ▎    PLA-4     ▮▯▯ low  │   i  add a to-do: type it yourself, or draft it with Col                                         │                 1w ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+ ▎    PLA-4     ▮▯▯ low  │  these stay when the report is written again                                                     │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
@@ -5856,7 +5856,7 @@
                          │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
   ◌ Backlog 1  ──────────│   Bark, s moves a topic here. It stays until you discard it.                                     │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
-                         │                                                                                                  │
+                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
       PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
@@ -6859,7 +6859,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -6905,7 +6905,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -6951,7 +6951,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -6997,7 +6997,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -7043,7 +7043,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -7135,7 +7135,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -7181,8 +7181,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7194,7 +7194,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   • start with PLA-1, it is closest to done.                                                     │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
+ ▎    PLA-6     ▯▯▯      │    i  add a to-do: type it yourself, or draft it with Col                                        │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7227,8 +7227,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7240,7 +7240,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │ ▎ • start with PLA-1, it is closest to done.                                                     │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
+ ▎    PLA-6     ▯▯▯      │    i  add a to-do: type it yourself, or draft it with Col                                        │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7273,8 +7273,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7286,7 +7286,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │ ▎ • start with PLA-1, it is closest to done.                                                     │
   ◈ Triage 1  ───────────│     ╭──────────────────────────────────────────────────────╮                                     │───────────────────────
- ▎    PLA-6     ▯▯▯      │     │  Col  PLA-1                                     esc  │                                     │                 3d ago
+ ▎    PLA-6     ▯▯▯      │    i│  Col  PLA-1                                     esc  │                                     │                 3d ago
                          │     │  / filter                                            │                                     │
                          │     │                                                      │                                     │
                          │     │ ▎l   go to PLA-1 in the list                         │                                     │
@@ -7319,8 +7319,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7332,7 +7332,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │ ▎ • start with PLA-1, it is closest to done.                                                     │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
+ ▎    PLA-6     ▯▯▯      │    i  add a to-do: type it yourself, or draft it with Col                                        │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -7365,8 +7365,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7374,7 +7374,7 @@
   ○ Todo 1  ─────────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
       PLA-4     ▮▯▯ low  │ ▎   ↳ you and Sam                                                                                │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7411,7 +7411,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -7457,8 +7457,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7466,7 +7466,7 @@
   ○ Todo 1  ─────────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
       PLA-4     ▮▯▯ low  │ ▎   ↳ you and Sam                                                                                │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7549,8 +7549,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7558,7 +7558,7 @@
   ○ Todo 1  ─────────────│ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │───────────────────────
       PLA-4     ▮▯▯ low  │ ▎   ↳ you and Sam                                                                                │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7595,8 +7595,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7604,7 +7604,7 @@
   ○ Todo 1  ─────────────│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │───────────────────────
       PLA-4     ▮▯▯ low  │   Bark, s moves a topic here. It stays until you discard it.                                     │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7641,8 +7641,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -7650,7 +7650,7 @@
   ○ Todo 1  ─────────────│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │───────────────────────
       PLA-4     ▮▯▯ low  │   Bark, s moves a topic here. It stays until you discard it.                                     │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7871,15 +7871,15 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
   ○ Todo 1  ─────────────│ ▎ • me                                                                                           │───────────────────────
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
-                         │                                                                                                  │
+                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
@@ -8377,8 +8377,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -8389,7 +8389,7 @@
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │ ▎ • fake answezr                                                                                 │                 3w ago
                          │                                                                                                  │
-  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+  ◈ Triage 1  ───────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
  ▎    PLA-6     ▯▯▯      │                                                                                                  │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
@@ -8423,15 +8423,15 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
   ○ Todo 1  ─────────────│ ▎ • me                                                                                           │───────────────────────
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
-                         │                                                                                                  │
+                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
@@ -8515,15 +8515,15 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
                          │                                                                                                  │
   ○ Todo 1  ─────────────│ ▎ • me                                                                                           │───────────────────────
       PLA-4     ▮▯▯ low  │                                                                                                  │                 1w ago
-                         │                                                                                                  │
+                         │    i  add a to-do: type it yourself, or draft it with Col                                        │
   ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
@@ -8561,8 +8561,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
-                         │   i  add a to-do: type it yourself, or draft it with Col                                         │
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
+                         │  these stay when the report is written again                                                     │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    TO DO                                                                                         │                 1h ago
     ▶ PLA-2     ▮▮▮ high │   ────────────────────────────────────────────────────────────────────────────────────────       │ ● review        2d ago
@@ -8570,7 +8570,7 @@
   ○ Todo 1  ─────────────│   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │───────────────────────
       PLA-4     ▮▯▯ low  │   Bark, s moves a topic here. It stays until you discard it.                                     │                 1w ago
                          │                                                                                                  │
-  ◌ Backlog 1  ──────────│                                                                                                  │───────────────────────
+  ◌ Backlog 1  ──────────│    i  add a to-do: type it yourself, or draft it with Col                                        │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -8653,7 +8653,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -8699,7 +8699,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago
@@ -8791,7 +8791,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
   ◕ In Review 1  ────────│  Col  daily report                                                                          esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│                                                                                                  │ ◌ draft         1d ago
                          │  1 lookups in Linear, Slack and GitHub                                                           │
   ◔ In Progress 2  ──────│                                                                                                  │───────────────────────
       PLA-1     !!! urgen│    WEDNESDAY                                                                                     │                 1h ago

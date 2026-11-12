@@ -97,7 +97,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ─────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮─────────
           │  Col  daily report                                                                          esc  │
-          │  morning, Erik. here's what you've been up to.                                                   │
+          │                                                                                                  │
           │  from memory                                                                                     │
           │                                                                                                  │
           │   fake answer                                                                                    │
@@ -189,8 +189,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ─────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮─────────
           │  Col  to-do list                                                                            esc  │
-          │  what you moved here from The Daily Bark. it stays when the report is written again.             │
-          │   i  add a to-do: type it yourself, or draft it with Col                                         │
+          │                                                                                                  │
+          │  these stay when the report is written again                                                     │
           │                                                                                                  │
           │    TO DO                                                                                         │
           │   ────────────────────────────────────────────────────────────────────────────────────────       │
@@ -198,7 +198,7 @@
           │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
           │   Bark, s moves a topic here. It stays until you discard it.                                     │
           │                                                                                                  │
-          │                                                                                                  │
+          │    i  add a to-do: type it yourself, or draft it with Col                                        │
           │                                                                                                  │
           │                                                                                                  │
           │                                                                                                  │
@@ -281,8 +281,8 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                  0 issues
  ─────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮─────────
           │  Col  to-do list                                                                            esc  │
-          │  what you moved here from The Daily Bark. it stays when the report is written again.             │
-          │   i  add a to-do: type it yourself, or draft it with Col                                         │
+          │                                                                                                  │
+          │  these stay when the report is written again                                                     │
           │                                                                                                  │
           │    TO DO                                                                                         │
           │   ────────────────────────────────────────────────────────────────────────────────────────       │
@@ -290,7 +290,7 @@
           │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily          │
           │   Bark, s moves a topic here. It stays until you discard it.                                     │
           │                                                                                                  │
-          │                                                                                                  │
+          │    i  add a to-do: type it yourself, or draft it with Col                                        │
           │                                                                                                  │
           │                                                                                                  │
           │                                                                                                  │
