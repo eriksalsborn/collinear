@@ -314,26 +314,41 @@ def workspace_open_for_issue(issue):
     return next((workspace for workspace in open_herdr_workspaces() if workspace_is_named_after(workspace, issue)), None)
 
 
-def describe_workspace(workspace):
-    """One workspace as a row to pick from: its number, where its code is, what its agent is doing, how big it is."""
-    repository = (workspace.get("worktree") or {}).get("repo_name") or "no repository"
-    tabs = f"{workspace.get('tab_count', 1)} tab{'s' * (workspace.get('tab_count', 1) != 1)}"
-    return f"ws {workspace['number']:<3} {repository[:24]:<24}  {workspace.get('agent_status') or '?':<8}  {tabs:<7}  {workspace['label'][:48]}"
+def tabs_of_workspace(workspace):
+    """The tabs of one herdr workspace. Every phase or free session started on an issue is a tab in its workspace,
+    so these are the issue's sessions. [] if herdr can't say."""
+    try:
+        return json.loads(run_command("herdr", "tab", "list", "--workspace", workspace["workspace_id"]).stdout)["result"]["tabs"]
+    except (ValueError, KeyError):
+        return []
 
 
-def jump_to_a_workspace_of_issue(screen, issue, folders_of_its_branch=None):
-    """Focus the issue's herdr workspace and close the popup; with several open, ask which one first.
+def session_count(workspaces):
+    """How many sessions (tabs) these workspaces hold together, from what the workspace list already says."""
+    return sum(workspace.get("tab_count", 1) for workspace in workspaces)
+
+
+def jump_to_a_session_of_issue(screen, issue, folders_of_its_branch=None):
+    """Focus the issue's herdr workspace and close the popup. With several sessions open for the issue (tabs: a plan,
+    a build, a free session…, in one workspace or in several) it asks which one first, and lands on that tab.
     Returns a footer message when there is none, "" when the choice was cancelled."""
     workspaces = workspaces_open_for_issue(issue, folders_of_its_branch)
     if not workspaces:
         return f"no workspace open for {issue['identifier']} yet · enter starts one"
-    picked = 0 if len(workspaces) == 1 else choose_from_list(
-        screen, f"{issue['identifier']}  ·  {len(workspaces)} workspaces open, jump to which?", [describe_workspace(workspace) for workspace in workspaces],
-        help=("This issue has more than one herdr workspace. Each row: its number in the sidebar, the repository it is in, "
-              "what its agent is doing, and its name.",))
+    sessions = [(workspace, tab) for workspace in workspaces for tab in tabs_of_workspace(workspace)]
+    if len(sessions) < 2:  # one session, or herdr didn't list the tabs: just go to the workspace
+        focus_workspace_and_close_popup(workspaces[0])
+    several_workspaces = len(workspaces) > 1
+    rows = [f"{tab['label'][:26]:<26}  {tab.get('agent_status') or '?':<8}"
+            + (f"  ws {workspace['number']:<3} {workspace['label'][:40]}" if several_workspaces else "") for workspace, tab in sessions]
+    picked = choose_from_list(
+        screen, f"{issue['identifier']}  ·  {len(sessions)} sessions open, jump to which?", rows,
+        help=("Every phase or free session you started on this issue is a tab in its herdr workspace. Each row: the tab's "
+              "name and what its agent is doing" + (", and the workspace it is in." if several_workspaces else "."),))
     if picked is None:
         return ""
-    focus_workspace_and_close_popup(workspaces[picked])
+    workspace, tab = sessions[picked]
+    focus_workspace_and_close_popup(workspace, tab)
 
 
 def worktrees_on_branch(branch):
@@ -2292,9 +2307,9 @@ def start_work_on_issue(screen, issue, phase=None):
     if phase is None:
         tour_sees("start dialog")
     if phase is None:  # how to start: phases, or a free session in a repo / without one / on a linked PR's branch
-        open_workspace_count = len(workspaces_open_for_issue(issue))
-        jump_row = "▶  jump to its open workspace  ·  you're already working on it" if open_workspace_count == 1 else \
-            f"▶  jump to one of its {open_workspace_count} open workspaces  ·  you're already working on it"
+        open_session_count = session_count(workspaces_open_for_issue(issue))
+        jump_row = "▶  jump to its open workspace  ·  you're already working on it" if open_session_count < 2 else \
+            f"▶  jump to one of its {open_session_count} open sessions  ·  you're already working on it"
         ways_to_start = ([jump_row] if workspace else []) + \
                 ["→  phases on the issue branch", "⎇  free session in a repo  ·  pick one, a worktree on the issue branch",
                  "○  free session without a repo  ·  just the issue, for thinking and writing"] + \
@@ -2307,7 +2322,7 @@ def start_work_on_issue(screen, issue, phase=None):
         if n is None:
             return ""
         if workspace and n == 0:
-            return jump_to_a_workspace_of_issue(screen, issue)
+            return jump_to_a_session_of_issue(screen, issue)
         n -= bool(workspace)
         if n == 1:  # free session in a repo
             worktree_by_repository = choose_repositories_and_make_worktrees(screen, issue, [])
@@ -2369,9 +2384,11 @@ def start_work_on_issue(screen, issue, phase=None):
     sys.exit()
 
 
-def focus_workspace_and_close_popup(workspace):
-    """Focus the issue's herdr workspace and close the popup."""
+def focus_workspace_and_close_popup(workspace, tab=None):
+    """Focus the issue's herdr workspace (and one of its tabs, when given) and close the popup."""
     run_command("herdr", "workspace", "focus", workspace["workspace_id"])
+    if tab:
+        run_command("herdr", "tab", "focus", tab["tab_id"])
     sys.exit()
 
 
@@ -2985,9 +3002,10 @@ class IssueListScreen:
             if not binding.footer_keys or (only_those_that_work_on_an_empty_list and binding.needs_issue_under_cursor):
                 continue
             if binding.action == "jump_to_workspace_of_issue":
-                workspace_count = len(self.open_workspaces_of(self.issue_under_cursor())) if self.issue_row_numbers else 0
-                if workspace_count:
-                    jump_hint = [(binding.footer_keys, binding.footer_text if workspace_count == 1 else f"pick one of its {workspace_count} workspaces")]
+                workspaces = self.open_workspaces_of(self.issue_under_cursor()) if self.issue_row_numbers else []
+                if workspaces:
+                    sessions = session_count(workspaces)
+                    jump_hint = [(binding.footer_keys, binding.footer_text if sessions < 2 else f"pick one of its {sessions} sessions")]
             elif binding.action == "undo_last_change" and not UNDO_STACK:
                 continue
             elif binding.action == "go_back_or_close" and self.view:
@@ -3102,7 +3120,7 @@ class IssueListScreen:
 
     def jump_to_workspace_of_issue(self):
         issue = self.issue_under_cursor()
-        return jump_to_a_workspace_of_issue(self.screen, issue, self.folders_of_branch_of(issue))
+        return jump_to_a_session_of_issue(self.screen, issue, self.folders_of_branch_of(issue))
 
     def ask_col_about_issue(self):
         col_reacts_to("ask")

@@ -95,10 +95,19 @@ def fake_linear_graphql(query, variables=None):
     raise RuntimeError(f"the fake Linear has no answer for: {query[:60]}")
 
 
+COMMANDS_THE_APP_RAN = []  # every command, in order: the scenario's last lines say where a jump went
+
+
 def fake_run_command(*command):
+    COMMANDS_THE_APP_RAN.append(command)
     output = ""
     if command[:1] == ("security",):
         output = "fake-linear-key"
+    elif command[:3] == ("herdr", "tab", "list"):  # the sessions of a workspace: w1 has three, any other has one
+        labels = ["issue", "plan", "build"] if command[-1] == "w1" else ["review"]
+        output = json.dumps({"result": {"tabs": [{"tab_id": f"{command[-1]}:t{number}", "label": label, "number": number,
+                                                  "agent_status": "working" if label == "build" else "idle"}
+                                                 for number, label in enumerate(labels, start=1)]}})
     elif command[:2] == ("herdr", "--version"):
         output = "herdr 0.9.5"
     elif command[:3] == ("claude", "mcp", "list"):
@@ -144,7 +153,9 @@ SOMEONE_BRAND_NEW = "someone brand new"  # in place of the workspaces: setup is 
 SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, the steps)
     "every-screen-wide": (150, ONE_WORKSPACE, EVERY_SCREEN),
     "every-screen-narrow": (100, ONE_WORKSPACE, EVERY_SCREEN),
-    "two-workspaces": (150, TWO_WORKSPACES_FOR_ONE_ISSUE, ["j", "j", "w", ESC, " ", ESC, ENTER, ESC, "w", "j", ENTER]),
+    # one issue with four sessions: three tabs in the workspace named after it, one in a workspace found by its folder.
+    # w lists the sessions; picking one focuses that workspace and that tab.
+    "two-workspaces": (150, TWO_WORKSPACES_FOR_ONE_ISSUE, ["j", "j", "w", ESC, " ", ESC, ENTER, ESC, "w", "j", "j", ENTER]),
     # first open after setup: no issues assigned, no report yet. The tour starts by itself, leaves out the steps
     # about issues, says there is nothing to report yet, and still ends on the closing card.
     "new-user-tour": (120, SOMEONE_BRAND_NEW, [ENTER, "b", ESC, ENTER]),
@@ -288,7 +299,9 @@ def play_scenario_inside_the_terminal(scenario_name, output_file):
         error_text = traceback.format_exc()
     finally:
         shutil.rmtree(temporary_home, ignore_errors=True)
+    focused = [" ".join(command[1:]) for command in COMMANDS_THE_APP_RAN if command[:1] == ("herdr",) and "focus" in command]
     ending = f"\nCRASHED\n{error_text}" if error_text else "\nfinished cleanly\n"
+    ending = ("\nherdr was told to: " + " · ".join(focused) if focused else "") + ending
     Path(output_file).write_text("".join(f"\n########## {label}\n{text}\n" for label, text in recorded_screens) + ending)
 
 
