@@ -165,8 +165,8 @@
                     │   workspace (its number in herdr's sidebar) and the repository.              │
                     │                                                                              │
                     │   So the green rows answer what am I in the middle of? Put the cursor on     │
-                    │   one and press  w  to jump straight into it: the fastest way to move        │
-                    │   between the things you have going.                                         │
+                    │   one and press  w  to jump straight into it. Each phase or free session     │
+                    │   is a tab there; with several,  w  asks which one.                          │
                     │                                                                              │
                     │   The loop:  open, look for green,  w .    l  /  enter  to start             │
                     │   something new.    b  in the morning.    O  for this tour again.            │

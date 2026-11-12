@@ -145,7 +145,7 @@ EVERY_SCREEN = [
     # Keys it didn't ask for are ignored: b and enter on the list, typing and enter in the comment box (nothing posts).
     "O", ENTER, "b", ENTER, "j", "k", " ", "l", "C", "x", ENTER, ESC, "c", "x", ESC, "a", ESC,
     "S", "j", ENTER, ESC, "P", ESC, "A", ESC,                    # status, priority, assignee: each opens, nothing can be picked
-    "b", "l", ESC, ESC, "j", "j", ENTER, ESC, ENTER,
+    "b", "l", ESC, ESC, "j", "j", "j", ENTER, ESC, ENTER,
     "O", ENTER, "q", "Q", "j",                                   # q does nothing in the tour; Q quits it, and every key works again
     "O", ESC,                                                    # the welcome card can be declined
 ]

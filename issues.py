@@ -706,6 +706,7 @@ GUIDED_TOUR_STEPS = [
     TourStep("`esc` or `h` once more, and you're back at your issues", BACK_KEYCODES, "list", False),
     # the green markers and w: said here, shown in full on the closing card. Not pressed: w leaves the popup
     TourStep("green ▶ rows have a workspace open: `w` on one jumps into it. `j` to go on", DOWN_KEYCODES, "moved down", True),
+    TourStep("several sessions on one issue? `w` lets you pick which. `j` to go on", DOWN_KEYCODES, "moved down", True),
     # elsewhere: said, not pressed, so no browser pops up mid-tour
     TourStep("`L` opens the issue in Linear, `g` its PR on GitHub. `j` to go on", DOWN_KEYCODES, "moved down", True),
     # starting work
@@ -790,7 +791,7 @@ TOUR_CLOSING_CARD = ("starting work, and the green markers", [
     "this machine. It names the workspace (its number in herdr's sidebar) and the repository.",
     "",
     "So the green rows answer *what am I in the middle of?*  Put the cursor on one and press `w` to jump straight "
-    "into it: the fastest way to move between the things you have going.",
+    "into it. Each phase or free session is a tab there; with several, `w` asks which one.",
     "",
     "The loop:  **open, look for green,** `w`.   `l` / `enter` to start something new.   `b` in the morning.   "
     "`O` for this tour again."])
