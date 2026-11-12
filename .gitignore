@@ -1,0 +1,13 @@
+# herdr's own runtime state: logs, sockets, sessions
+*.log
+*.sock
+*.sock.agent
+.plugins.lock
+session.json
+session-snapshots/
+sessions/
+__pycache__/
+
+# this machine only: the Linear workspace and team keys, and the demo recording script
+local_settings.json
+demo.tape

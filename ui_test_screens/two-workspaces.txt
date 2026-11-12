@@ -1,0 +1,508 @@
+
+########## 001 before 'j'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+   2▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   3  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   4  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+
+  ◈ Triage 1  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   5  PLA-6     ▯▯▯         Sixth needs triage                                                                                                3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel                  │   ╰─ω─╯~   │
+  n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
+
+########## 002 before 'j'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+   1▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   3  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+
+  ◈ Triage 1  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   4  PLA-6     ▯▯▯         Sixth needs triage                                                                                                3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel                  │   ╰─ω─╯~   │
+  n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
+
+########## 003 before 'w'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+
+  ◈ Triage 1  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   3  PLA-6     ▯▯▯         Sixth needs triage                                                                                                3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority       │   ╰─ω─╯~   │
+  A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
+
+########## 004 before 27
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+                          ╭───────────────────────────────────────────────────────────────────────────────────────────────╮
+  ◈ Triage 1  ────────────│  PLA-2  2 workspaces open, jump to which?                                                esc  │─────────────────────────
+   3  PLA-6     ▯▯▯       │  / filter                                                                                     │                   3d ago
+                          │  This issue has more than one herdr workspace. Each row: its number in the sidebar, the       │
+                          │  repository it is in, what its agent is doing, and its name.                                  │
+                          │                                                                                               │
+                          │                                                                                               │
+                          │ ▎ws 3   alpha                     working   3 tabs   PLA-2 Second issue with a workspace      │
+                          │  ws 6   no repository             idle      1 tab    PLA-2 Second issue, the infra half       │
+                          │                                                                                               │
+                          ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+########## 005 before ' '
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+
+  ◈ Triage 1  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   3  PLA-6     ▯▯▯         Sixth needs triage                                                                                                3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority       │   ╰─ω─╯~   │
+  A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
+
+########## 006 before 27
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ───────────────────╭────────────────────────────────────────────────────────────────────────────────────────────────────────────╮───────────────────
+  ◕ In Review 1  ───│  PLA-2  Second issue with a workspace                                                                 esc  │──────────────────
+   2  PLA-3     ▮▮▯ │  ◔ In Progress   ▮▮▮ high   @ Erik Tester   ● review   ▶ ws 3 working + ws 6 idle · alpha · erik/pla-2-seconaft         1d ago
+                    │  ────────────────────────────────────────────────────────────────────────────────────────────────────────  │
+  ◔ In Progress 2  ─│  no description yet                                                                                        │──────────────────
+   1  PLA-1     !!! │                                                                                                            │            1h ago
+ ▎  ▶ PLA-2     ▮▮▮ │                                                                                                            │view        2d ago
+                    │                                                                                                            │
+  ○ Todo 1  ────────│                                                                                                            │──────────────────
+   1  PLA-4     ▮▯▯ │                                                                                                            │            1w ago
+                    │                                                                                                            │
+  ◌ Backlog 1  ─────│                                                                                                            │──────────────────
+   2  PLA-5     ▯▯▯ │                                                                                                            │            3w ago
+                    │                                                                                                            │
+  ◈ Triage 1  ──────│                                                                                                            │──────────────────
+   3  PLA-6     ▯▯▯ │                                                                                                            │            3d ago
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    │                                                                                                            │
+                    ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                          “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  w jump to workspace   l comments   a ask Col   c Col drafts a comment   C write a comment   L open in Linear   j/k scroll            │   ╰─ω─╯~   │
+  d/u half page   esc/h close                                                                                                          ╰──╴ Col ╶───╯
+
+########## 007 before 10
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+
+  ◈ Triage 1  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   3  PLA-6     ▯▯▯         Sixth needs triage                                                                                                3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                          “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority       │   ╰─ω─╯~   │
+  A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
+
+########## 008 before 27
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-4     ▮▯▯ low  ╭──────────────────────────────────────────────────────────────────────────────────────────────────╮                 1w ago
+                         │  PLA-2  start                                                                               esc  │
+  ◌ Backlog 1  ──────────│  / filter                                                                                        │───────────────────────
+   2  PLA-5     ▯▯▯      │  ╭─ →  phases ────────────────────────────────╮ ╭─ ⎇  clean slate ───────────────────────────╮   │                 3w ago
+                         │  │                                            │ │                                            │   │
+  ◈ Triage 1  ───────────│  │ Col walks you through the issue step by    │ │ Col with just the issue, no steps. In a    │   │───────────────────────
+   3  PLA-6     ▯▯▯      │  │ step: write → plan → build → review. Runs  │ │ repo (a worktree on the issue's branch),   │   │                 3d ago
+                         │  │ in a worktree on the issue's own branch.   │ │ without one (just the notes folder), or on │   │
+                         │  │ Notes are kept between sessions, so you    │ │ a linked PR's branch. For a quick look, a  │   │
+                         │  │ can stop and pick up later.                │ │ review, or a small fix.                    │   │
+                         │  ╰────────────────────────────────────────────╯ ╰────────────────────────────────────────────╯   │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │ ▎▶  jump to one of its 2 open workspaces  ·  you're already working on it                        │
+                         │  →  phases on the issue branch                                                                   │
+                         │  ⎇  clean slate in a repo  ·  pick one, a worktree on the issue branch                           │
+                         │  ○  clean slate without a repo  ·  just the issue, for thinking and writing                      │
+                         │  ⎇  clean slate on PR #7  ·  alpha  erik/pla-2-second                                            │
+                         │                                                                                                  │
+                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                          “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+########## 009 before 'w'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+
+  ◈ Triage 1  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   3  PLA-6     ▯▯▯         Sixth needs triage                                                                                                3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                          “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  w pick one of its 2 workspaces   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority       │   ╰─ω─╯~   │
+  A assign   X cancel   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   ? all keys       ╰──╴ Col ╶───╯
+
+########## 010 before 'j'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+                          ╭───────────────────────────────────────────────────────────────────────────────────────────────╮
+  ◈ Triage 1  ────────────│  PLA-2  2 workspaces open, jump to which?                                                esc  │─────────────────────────
+   3  PLA-6     ▯▯▯       │  / filter                                                                                     │                   3d ago
+                          │  This issue has more than one herdr workspace. Each row: its number in the sidebar, the       │
+                          │  repository it is in, what its agent is doing, and its name.                                  │
+                          │                                                                                               │
+                          │                                                                                               │
+                          │ ▎ws 3   alpha                     working   3 tabs   PLA-2 Second issue with a workspace      │
+                          │  ws 6   no repository             idle      1 tab    PLA-2 Second issue, the infra half       │
+                          │                                                                                               │
+                          ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                          “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+########## 011 before 10
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                                                                                                6 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                ▶ ws 3 + 6 · alpha   ● review        2d ago
+
+  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1  PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+                          ╭───────────────────────────────────────────────────────────────────────────────────────────────╮
+  ◈ Triage 1  ────────────│  PLA-2  2 workspaces open, jump to which?                                                esc  │─────────────────────────
+   3  PLA-6     ▯▯▯       │  / filter                                                                                     │                   3d ago
+                          │  This issue has more than one herdr workspace. Each row: its number in the sidebar, the       │
+                          │  repository it is in, what its agent is doing, and its name.                                  │
+                          │                                                                                               │
+                          │                                                                                               │
+                          │  ws 3   alpha                     working   3 tabs   PLA-2 Second issue with a workspace      │
+                          │ ▎ws 6   no repository             idle      1 tab    PLA-2 Second issue, the infra half       │
+                          │                                                                                               │
+                          ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                          “this one smells promising” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+finished cleanly
