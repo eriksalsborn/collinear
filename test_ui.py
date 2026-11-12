@@ -85,6 +85,8 @@ def fake_linear_graphql(query, variables=None):
             {"body": "second comment\n\n- with a list", "createdAt": "2026-11-11T08:00:00Z", "user": None}]}}}
     if "issueUpdate" in query or "commentCreate" in query:
         return {"issueUpdate": {"success": True}, "commentCreate": {"success": True}}
+    if "completedAt" in query:  # what the daily report asks: issues finished since the day it covers
+        return {"viewer": {"assignedIssues": {"nodes": []}}}
     if "assignedIssues" in query:
         return {"viewer": {"assignedIssues": {"nodes": copy_of(ISSUES_ASSIGNED_IN_FAKE_LINEAR)}}}
     if "issues(first" in query:

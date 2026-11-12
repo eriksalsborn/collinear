@@ -4,7 +4,7 @@ enter: repo -> worktree on Linear's branch -> phase -> claude in a fresh tab of 
 Phases hand off through notes files in ~/.claude/work/<ID>/; prompts live in prompts/*.md."""
 import curses, json, locale, re, shlex, subprocess, sys, textwrap, threading, time, urllib.request
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from typing import NamedTuple
 from prs import run_command, worktree_path_for_branch, open_herdr_workspaces, time_since_text, REPOSITORIES_FOLDER  # same folder, python puts it on sys.path
 
@@ -111,7 +111,7 @@ COL_TIPS = ["type a few letters to filter, no / needed", "3j jumps three rows do
         "? lists every key with what it does", "t and T browse a team or a project; h brings you back",
         "the age column goes red when something sits for 3 weeks",
         "▶ on a row means you're already working on it in herdr: w jumps to that workspace",
-        "b is my brief: what you did the last two days, so you don't have to remember",
+        "b is my brief: what happened on your last working day, so you don't have to remember",
         "ctrl-n in a chat starts a fresh thread", "X cancels an issue, after asking",
         "G jumps to the bottom", "the chat with Claude is remembered per issue, in ~/.claude/work",
         "esc closes any window; one more esc closes the popup",
@@ -699,7 +699,7 @@ GUIDED_TOUR_STEPS = [
     TourStep("`A` assigns it to someone", (ord("A"),), "assign dialog", True),
     TourStep("`esc` or `h` backs out. and `U` undoes a change you did make", BACK_KEYCODES, "list", True),
     # the daily report
-    TourStep("`b` opens The Daily Bark: my recap of your last two days", (ord("b"),), "report", False),
+    TourStep("`b` opens The Daily Bark: my recap of your last working day", (ord("b"),), "report", False),
     TourStep("`j` / `k` pick a topic. `l` or `enter` shows what you can do with it",
              DOWN_KEYCODES + UP_KEYCODES + FORWARD_KEYCODES + BACK_KEYCODES, "topic menu", False),  # back too: there may be no topic to pick
     TourStep("go to its issue, start it, or ask me. `esc` or `h` backs out", BACK_KEYCODES, "report", False),
@@ -1523,32 +1523,97 @@ def ask_headless_claude(context, history, cwd, progress, running_processes, task
 
 
 WRITE_DAILY_REPORT_TASK = (
-    "You are Col, a border collie who herds this developer's work. Write their morning brief: what they've been on for "
-    "the last two days and how it's going, so they can pick the threads back up. Below: today's date, their in-progress "
-    "Linear issues, and the herdr workspaces open on their machine. Look up what actually happened, briefly: Linear "
-    "comments and status on those issues; the linked PRs with gh pr view <url> (there is no repo in the cwd); Slack for discussions "
-    "and decisions (search the issue ids and their name, read the threads that matter). At most 8 lookups.\n"
-    "Format, Markdown. Three sections, each a heading line then bullets, at most 5 bullets per section:\n"
-    "## on your plate  — one bullet per issue: **PLA-123 two-word nickname** then an em dash, then where it stands in "
-    "one plain sentence with one concrete fact (a PR number, a date, a name, a number). Max 25 words per bullet. "
-    "Then, on its own line right under the bullet (not a sub-bullet), who's on it: '↳ only you', or '↳ you and Sam' "
-    "naming the people active on it in the last two days: comment authors, PR reviewers, people in the Slack thread.\n"
-    "## loose ends  — replies owed, reviews waiting, blocked or gone quiet. One short sentence each.\n"
+    "You are Col, a border collie who herds this developer's work. Write their morning brief: what happened on their "
+    "last working day and where things stand now, so they can pick the threads back up. Below is what was gathered "
+    "from their machine and from Linear: the day the report covers, what they finished, their in-progress issues with "
+    "the commits, pull requests and agent sessions on each, and the reviews waiting on them. Trust those facts and "
+    "don't look them up again. Spend lookups only on what they can't show: who said what, why something is blocked, "
+    "what was decided. Use Linear comments, gh pr view <url> (there is no repo in the cwd) and Slack (search the "
+    "issue ids and their name, read the threads that matter). At most 6 lookups.\n"
+    "Format, Markdown. Four sections, each a heading line then bullets, at most 5 bullets per section:\n"
+    "## yesterday  — what moved on the day the report covers: issues finished, pull requests merged or opened, commits "
+    "made, decisions taken. One bullet each, the most important first. If nothing moved, one bullet saying so. Use "
+    "the weekday's name in the heading instead of 'yesterday' when the day covered is not yesterday.\n"
+    "## on your plate  — one bullet per in-progress issue: **PLA-123 two-word nickname** then an em dash, then where "
+    "it stands in one plain sentence with one concrete fact (a PR number, a date, a name, a number). Max 25 words "
+    "per bullet. Then, on its own line right under the bullet (not a sub-bullet), who's on it: '↳ only you', or "
+    "'↳ you and Sam' naming the people active on it that day: comment authors, PR reviewers, people in the Slack thread.\n"
+    "## loose ends  — replies owed, reviews waiting on them, an agent session that finished and waits for them, "
+    "anything blocked or gone quiet. One short sentence each.\n"
     "## today  — one bullet: where to start, and why, in one sentence.\n"
     "Playful but concise, no filler, no sub-bullets, no nested emphasis. Address them as you, and by first name once "
-    "or twice (the developer line below has it). Say nothing you couldn't "
-"source; if Slack or Linear had nothing, say so in a few words.", "Request", "Brief")
+    "or twice (the developer line below has it). Say nothing you couldn't source; if Slack or Linear had nothing, "
+    "say so in a few words.", "Request", "Brief")
 DAILY_REPORT = {"procs": []}  # today's brief: date, text (None while being written), steps (lookups so far)
 
 
+def last_working_day(today):
+    """The day the daily report looks back on: yesterday, or Friday when today is Monday or the weekend."""
+    days_back = {0: 3, 6: 2}.get(today.weekday(), 1)  # Monday -> Friday, Sunday -> Friday, otherwise the day before
+    return today - timedelta(days=days_back)
+
+
+def issues_finished_since(day):
+    """[(identifier, title, state name)] of my issues completed on or after day. [] if Linear can't be asked."""
+    try:
+        nodes = linear_graphql('query($since: DateTimeOrDuration!) { viewer { assignedIssues(first: 20, filter: {completedAt: {gte: $since}}) '
+                               "{ nodes { identifier title state { name } } } } }", {"since": f"{day:%Y-%m-%d}T00:00:00.000Z"})["viewer"]["assignedIssues"]["nodes"]
+        return [(node["identifier"], node["title"], node["state"]["name"]) for node in nodes]
+    except Exception:
+        return []
+
+
+def my_commits_since(folder, day):
+    """The subjects of my commits in folder's checkout since the morning of day, newest first. [] if git can't say."""
+    my_email = run_command("git", "-C", folder, "config", "user.email").stdout.strip()
+    log = run_command("git", "-C", folder, "log", f"--since={day:%Y-%m-%d} 00:00", "--no-merges", f"--author={my_email}", "--format=%s").stdout
+    return [subject for subject in log.splitlines() if subject.strip()]
+
+
+def pull_requests_waiting_on_my_review():
+    """["repo #12 title"] for the open pull requests where my review is requested. [] if GitHub can't be asked."""
+    try:
+        import prs
+        return [f"{pull_request['repository']['nameWithOwner'].split('/')[-1]} #{pull_request['number']} {pull_request['title']}"
+                for pull_request in prs.fetch()["review"]["nodes"] if pull_request.get("number")]
+    except Exception:
+        return []
+
+
 def daily_report_context(issues):
-    mine = [i for i in issues if i["state"]["type"] == "started"]
-    who = saved_user_name() or next(((i.get("assignee") or {}).get("displayName") for i in issues if i.get("assignee")), "me")
+    """What Col is handed before he writes the report: everything that can be known from this machine and from one
+    Linear query, so his few lookups go to the things only people's words can tell."""
+    in_progress = [issue for issue in issues if issue["state"]["type"] == "started"]
+    developer = saved_user_name() or next(((issue.get("assignee") or {}).get("displayName") for issue in issues if issue.get("assignee")), "me")
+    today = datetime.now()
+    day_covered = last_working_day(today)
     now = datetime.now(timezone.utc)
-    lines = [f"today: {datetime.now():%A %Y-%m-%d}", f"developer: {who}", "", "issues in progress or review:"]
-    lines += [f"- {i['identifier']}  {i['title']}  ({i['state']['name']}, updated {time_since_text(i['updatedAt'], now)})"
-              + "".join(f"\n    PR: {url}" for url, _ in linked_pull_requests(i)) for i in mine] or ["- none"]
-    lines += ["", "herdr workspaces open on this machine:"] + ([f"- {workspace['label']}" for workspace in open_herdr_workspaces()] or ["- none"])
+    workspaces, folders_by_branch = open_herdr_workspaces(), scan_worktrees_of_all_repositories()
+    lines = [f"today: {today:%A %Y-%m-%d}", f"the report covers: {day_covered:%A %Y-%m-%d} (their last working day) up to now",
+             f"developer: {developer}", "", f"finished since {day_covered:%A}:"]
+    lines += [f"- {identifier}  {title}  ({state_name})" for identifier, title, state_name in issues_finished_since(day_covered)] or ["- nothing"]
+    lines += ["", "issues in progress or review:"]
+    for issue in in_progress:
+        lines.append(f"- {issue['identifier']}  {issue['title']}  ({issue['state']['name']}, updated {time_since_text(issue['updatedAt'], now)})")
+        pull_requests = [(pull_request_badge_key(attachment.get("metadata")), attachment["url"])
+                         for attachment in attachments_of(issue) if "/pull/" in attachment["url"]]
+        lines += [f"    PR ({state}): {url}" for state, url in pull_requests if state not in ("merged", "closed")]  # the open ones matter
+        merged_count = sum(state == "merged" for state, _ in pull_requests)
+        if merged_count:
+            lines.append(f"    {merged_count} pull request{'s' * (merged_count != 1)} already merged")
+        folders = folders_by_branch.get(issue.get("branchName"), {})
+        for repository, folder in folders.items():
+            commits = my_commits_since(folder, day_covered)
+            if commits:
+                lines.append(f"    {len(commits)} commit{'s' * (len(commits) != 1)} in {repository} since {day_covered:%A}, latest: {commits[0][:80]}")
+        for workspace in workspaces_of_issue_among(workspaces, issue, folders.values()):
+            lines.append(f"    agent session in herdr workspace {workspace['number']}: {workspace.get('agent_status') or 'unknown'}")
+    if not in_progress:
+        lines.append("- none")
+    waiting_on_review = pull_requests_waiting_on_my_review()  # most recently updated first
+    lines += ["", f"pull requests waiting on their review ({len(waiting_on_review)}), the most recent:"] \
+        + ([f"- {waiting}" for waiting in waiting_on_review[:6]] or ["- none"])
+    lines += ["", "herdr workspaces open on this machine:"] + ([f"- {workspace['label']}" for workspace in workspaces] or ["- none"])
     return "\n".join(lines)
 
 
@@ -1629,7 +1694,7 @@ def col_words_for_lookup(step):
 
 
 def show_daily_report(screen, issues, today):
-    """Col's recap of the last two days. Shows the lookups while it's being written; j/k move between topics, l goes
+    """Col's recap of the last working day. Shows the lookups while it's being written; j/k move between topics, l goes
     to the topic's issue (returns its identifier), esc, h or b close (returns None). The topic is remembered."""
     start_writing_daily_report(issues, today)
     first_line_shown, frame_count = 0, 0
@@ -2727,11 +2792,11 @@ class IssueListScreen:
                 show_morning_digest(self.screen, changes)
         if DAILY_REPORT.get("date") != self.today:  # first open today: Col starts writing, and asks before showing
             start_writing_daily_report(issues, self.today)
-            col_says("morning. I'm writing up your last two days", "cheer", 12)
+            col_says("morning. I'm writing up your last working day", "cheer", 12)
             wants_to_read_it_now = choose_from_list(
                 self.screen, "Col  ·  good morning", ["yes, what have I been up to?", "not now · b opens it later"], help=(
                     "Col sniffs through your in-progress issues, Slack and the workspaces open here, and writes a "
-                    "short recap of the last two days so you can pick the threads back up.",
+                    "short recap of your last working day so you can pick the threads back up.",
                     "It's being written now and takes about a minute. b opens it any time today.")) == 0
             if wants_to_read_it_now:
                 self.identifier_to_put_cursor_on = show_daily_report(self.screen, issues, self.today) or self.identifier_to_put_cursor_on
@@ -3405,6 +3470,10 @@ def _test():
     named, elsewhere, unrelated = {"label": "PLA-9 Fix it"}, {"label": "review", "worktree": {"checkout_path": "/wt/a"}}, {"label": "PLA-90 other"}
     assert workspaces_of_issue_among([elsewhere, unrelated, named], issue, ["/wt/a"]) == [named, elsewhere], "by name first, then by folder"
     assert workspaces_of_issue_among([elsewhere, unrelated], issue, []) == []
+    day = lambda text: datetime.strptime(text, "%Y-%m-%d")
+    assert last_working_day(day("2026-11-12")) == day("2026-11-11"), "a Thursday looks back on Wednesday"
+    assert last_working_day(day("2026-11-16")) == day("2026-11-13"), "a Monday looks back on Friday"
+    assert last_working_day(day("2026-11-15")) == day("2026-11-13") and last_working_day(day("2026-11-14")) == day("2026-11-13"), "so does the weekend"
     assert herdr_version_from("herdr 0.9.5") == (0, 9, 5) and herdr_version_from("herdr 0.10.0-preview") == (0, 10, 0) and herdr_version_from("?") is None
     pr = lambda **m: {"url": "https://github.com/o/r/pull/1", "metadata": m}
     assert pull_request_badge_key({"status": "inReview", "hasConflicts": True}) == "conflict"

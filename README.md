@@ -41,7 +41,7 @@ the key, so the preview, the comments, The Daily Bark and the start dialog actua
   Code on it in the issue's own herdr workspace.
 - **It knows where your work is.** Issues with a workspace open are marked, with repository and branch, and `w`
   jumps straight there.
-- **Col writes your daily report.** A recap of your last two days from Linear, Slack and GitHub, so you can pick
+- **Col writes your daily report.** A recap of your last working day from Linear, Slack, GitHub and your own commits, so you can pick
   the threads back up.
 
 ## How it works

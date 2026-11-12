@@ -5514,7 +5514,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                    “17/25   b  opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                 “17/25   b  opens The Daily Bark: my recap of your last working day” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                     Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
