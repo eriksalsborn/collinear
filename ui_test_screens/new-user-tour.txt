@@ -23,10 +23,10 @@
                     │   in the corner, and watch what happens.                                     │
                     │                                                                              │
                     │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-                    │   esc / h goes back (only esc while you are typing).  q closes the popup.    │
+                    │   esc / h goes back (only esc where you could type).                         │
                     │                                                                              │
-                    │                                                                              │
-                    │                                                                              │
+                    │   During the tour only the key I ask for works, so you can't get lost or     │
+                    │   post anything.  q leaves the tour.                                         │
                     │                                                                              │
                     │                                                                              │
                     │                                                                              │

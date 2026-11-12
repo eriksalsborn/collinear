@@ -4393,10 +4393,10 @@
           │   in the corner, and watch what happens.                                     │
           │                                                                              │
           │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-          │   esc / h goes back (only esc while you are typing).  q closes the popup.    │
+          │   esc / h goes back (only esc where you could type).                         │
           │                                                                              │
-          │                                                                              │
-          │                                                                              │
+          │   During the tour only the key I ask for works, so you can't get lost or     │
+          │   post anything.  q leaves the tour.                                         │
           │                                                                              │
           │                                                                              │
           │                                                                              │
@@ -4415,7 +4415,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
-########## 097 before 'j'
+########## 097 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4461,7 +4461,99 @@
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 098 before 'k'
+########## 098 before 10
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+ ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!!  First issue about login                                                1h ago
+   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+     “1/16  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 099 before 'j'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+ ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!!  First issue about login                                                1h ago
+   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+     “1/16  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 100 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4507,7 +4599,7 @@
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 099 before ' '
+########## 101 before ' '
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4553,7 +4645,7 @@
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 100 before 'l'
+########## 102 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4599,7 +4691,7 @@
   enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
   C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
 
-########## 101 before 'C'
+########## 103 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4645,7 +4737,7 @@
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
-########## 102 before 27
+########## 104 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4686,12 +4778,104 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-       “6/16  you'd type it here, and enter posts it for real. esc cancels for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+          “6/16  you'd type it here and enter would post it. esc closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
-########## 103 before 'c'
+########## 105 before 10
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
+   │  ◕ In Review   ▮▯▯ low   @ Erik Tester          │ comments  2                              │o
+ ▎ │  ────────────────────────────────────────────── │ ───────────────────────────────────────  │o
+   │  no description yet                             │ Sam  ·  2026-11-10                       │
+  ◔│                                                 │ first comment                            │─
+   │                                                 │                                          │o
+   │                                                 │ ?  ·  2026-11-11                         │o
+   │                                                 │ second comment                           │
+  ◌│                                                 │                                          │─
+   │                                                 │ • with a list                            │o
+   │                                                 │                                          │
+  ◈│                                                 │                                          │─
+   │                                                 │                                          │o
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │ ╭─────────────────────────────────────╮  │
+   │                                                 │ │ ›  write a comment…                 │  │
+   │                                                 │ ╰─────────── enter post · esc cancel ─╯  │
+   │                                                 │                                          │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+          “6/16  you'd type it here and enter would post it. esc closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
+  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+
+########## 106 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
+   │  ◕ In Review   ▮▯▯ low   @ Erik Tester          │ comments  2                              │o
+ ▎ │  ────────────────────────────────────────────── │ ───────────────────────────────────────  │o
+   │  no description yet                             │ Sam  ·  2026-11-10                       │
+  ◔│                                                 │ first comment                            │─
+   │                                                 │                                          │o
+   │                                                 │ ?  ·  2026-11-11                         │o
+   │                                                 │ second comment                           │
+  ◌│                                                 │                                          │─
+   │                                                 │ • with a list                            │o
+   │                                                 │                                          │
+  ◈│                                                 │                                          │─
+   │                                                 │                                          │o
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │ ╭─────────────────────────────────────╮  │
+   │                                                 │ │ ›  write a comment…                 │  │
+   │                                                 │ ╰─────────── enter post · esc cancel ─╯  │
+   │                                                 │                                          │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+          “6/16  you'd type it here and enter would post it. esc closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
+  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+
+########## 107 before 'c'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4737,7 +4921,7 @@
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
-########## 104 before 27
+########## 108 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4783,7 +4967,53 @@
   enter send feedback   empty-enter post it   ↑/↓ scroll the thread                  │   ╰─ω─╯~   │
   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                            ╰──╴ Col ╶───╯
 
-########## 105 before 'a'
+########## 109 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  comment · Col drafts                                                          esc  │─
+   │  Fourth sits in todo                        │    ✦ Col drafts a comment on PLA-4           │o
+ ▎ │  ◕ In Review   ▮▯▯ low   @ Erik Tester      │    ────────────────────────────────────────  │o
+   │  ────────────────────────────────────────   │                                              │
+  ◔│                                             │     Say what the comment should get          │─
+   │   COMMENTS  2                               │     across. Col drafts it in your voice      │o
+   │                                             │     from the issue; send feedback until      │o
+   │  Sam  ·  2026-11-10                         │     it's right, then post it. Nothing is     │
+  ◌│  first comment                              │     posted until you confirm.                │─
+   │                                             │                                              │o
+   │  ?  ·  2026-11-11                           │                                              │
+  ◈│  second comment                             │                                              │─
+   │                                             │                                              │o
+   │  • with a list                              │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │   ╭────────────────────────────────────────╮ │
+   │                                             │   │ › ▏write a brief…                      │ │
+   │                                             │   ╰────────────────────────────────────────╯ │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+               “8/16  you say what it should get across, I write it. esc goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  enter send feedback   empty-enter post it   ↑/↓ scroll the thread                  │   ╰─ω─╯~   │
+  pgup/pgdn faster   ctrl-d/u scroll the side   esc close                            ╰──╴ Col ╶───╯
+
+########## 110 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4829,7 +5059,7 @@
   j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
   c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
 
-########## 106 before 27
+########## 111 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4875,7 +5105,7 @@
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster                              │   ╰─ω─╯~   │
   ctrl-d/u scroll the side   esc close                                               ╰──╴ Col ╶───╯
 
-########## 107 before 'b'
+########## 112 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4921,7 +5151,7 @@
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 108 before 'l'
+########## 113 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4967,7 +5197,7 @@
   l/enter actions for PLA-99   c clean slate on it   a ask Col about it              │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
-########## 109 before 27
+########## 114 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5013,7 +5243,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back           ╰──╴ Col ╶───╯
 
-########## 110 before 27
+########## 115 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5059,7 +5289,7 @@
   l/enter actions for PLA-99   c clean slate on it   a ask Col about it              │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
-########## 111 before 10
+########## 116 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5105,7 +5335,7 @@
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 112 before 27
+########## 117 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5151,7 +5381,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
-########## 113 before 10
+########## 118 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5197,7 +5427,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter done                                                                       ╰──╴ Col ╶───╯
 
-########## 114 before 'O'
+########## 119 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5243,7 +5473,7 @@
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 115 before 27
+########## 120 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5267,10 +5497,10 @@
           │   in the corner, and watch what happens.                                     │
           │                                                                              │
           │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-          │   esc / h goes back (only esc while you are typing).  q closes the popup.    │
+          │   esc / h goes back (only esc where you could type).                         │
           │                                                                              │
-          │                                                                              │
-          │                                                                              │
+          │   During the tour only the key I ask for works, so you can't get lost or     │
+          │   post anything.  q leaves the tour.                                         │
           │                                                                              │
           │                                                                              │
           │                                                                              │
@@ -5289,7 +5519,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
-########## 116 before 'q'
+########## 121 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -5307,6 +5537,190 @@
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
    4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+     “1/16  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 122 before 'j'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+ ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!!  First issue about login                                                1h ago
+   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                           “tour's off, every key is yours again. O starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 123 before 'O'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+   1  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-1     !!!  First issue about login                                                1h ago
+   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+   3  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                           “tour's off, every key is yours again. O starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
+  S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
+
+########## 124 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+   1  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-1     !!!  First issue about login                                                1h ago
+   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   2  PLA-│                                                                              │  3w ago
+          │   welcome, Erik                                                              │
+  ◈ Triage│                                                                              │────────
+   3  PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
+          │   have in progress.                                                          │
+          │                                                                              │
+          │   I'll walk you through it for real. Do what my speech bubble says, down     │
+          │   in the corner, and watch what happens.                                     │
+          │                                                                              │
+          │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
+          │   esc / h goes back (only esc where you could type).                         │
+          │                                                                              │
+          │   During the tour only the key I ask for works, so you can't get lost or     │
+          │   post anything.  q leaves the tour.                                         │
+          │                                                                              │
+          │                                                                              │
+          │                                                                              │
+          │                                                                              │
+          │                                                                              │
+          ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                             “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
+
+########## 125 before 'q'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   2  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+   1  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-1     !!!  First issue about login                                                1h ago
+   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+
+  ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
+   2  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+
+  ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
+   3  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 

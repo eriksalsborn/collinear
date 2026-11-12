@@ -190,10 +190,10 @@ class ScreenWithMouse:
         return PENDING_KEYS.pop(0) if PENDING_KEYS else -1
 
     def getch(self):
-        return self._next_key(self.screen.getch)
+        return key_the_tour_lets_through(self._next_key(self.screen.getch))
 
     def get_wch(self):
-        key = self._next_key(self.screen.get_wch)
+        key = key_the_tour_lets_through(self._next_key(self.screen.get_wch))
         if key == -1:
             raise curses.error("no input")
         return chr(key) if isinstance(key, int) and key < 256 else key
@@ -638,31 +638,34 @@ FORWARD_KEYCODES, BACK_KEYCODES = (ord("l"),) + ENTER_KEYCODES, (27, ord("h"))
 
 class TourStep(NamedTuple):
     words: str                 # what Col says. Kept short: the bubble has about 75 characters on a small popup
+    keys: tuple                # the only keys that work during this step: everything else is ignored, to keep you on track
     done_when: str             # the event that completes it, as the screens report it to tour_sees()
     needs_an_issue: bool       # left out when the list is empty
 
 
+DOWN_KEYCODES, UP_KEYCODES = (ord("j"), curses.KEY_DOWN), (ord("k"), curses.KEY_UP)
 GUIDED_TOUR_STEPS = [
     # the list
-    TourStep("these are your issues, the furthest along on top. press j to move down", "moved down", True),
-    TourStep("and k to move back up", "moved up", True),
+    TourStep("these are your issues, the furthest along on top. press j to move down", DOWN_KEYCODES, "moved down", True),
+    TourStep("and k to move back up", UP_KEYCODES, "moved up", True),
     # one issue: read it, its comments, comment on it, ask about it
-    TourStep("space previews the issue under the cursor", "preview", True),
-    TourStep("l opens the comments on the issue, next to it", "comments pane", True),
-    TourStep("C writes a comment yourself. press it", "composer", True),
-    TourStep("you'd type it here, and enter posts it for real. esc cancels for now", "composer closed", True),
-    TourStep("c lets me draft the comment for you. nothing is posted unasked", "draft chat", True),
-    TourStep("you say what it should get across, I write it. esc goes back", "preview", True),
-    TourStep("a asks me anything about the issue: I look it up for you", "ask chat", True),
-    TourStep("you'd type a question and enter. esc goes back to your issues", "list", True),
+    TourStep("space previews the issue under the cursor", (ord(" "),), "preview", True),
+    TourStep("l opens the comments on the issue, next to it", (ord("l"),), "comments pane", True),
+    TourStep("C writes a comment yourself. press it", (ord("C"),), "composer", True),
+    TourStep("you'd type it here and enter would post it. esc closes it for now", (27,), "composer closed", True),
+    TourStep("c lets me draft the comment for you. nothing is posted unasked", (ord("c"),), "draft chat", True),
+    TourStep("you say what it should get across, I write it. esc goes back", (27,), "preview", True),
+    TourStep("a asks me anything about the issue: I look it up for you", (ord("a"),), "ask chat", True),
+    TourStep("you'd type a question and enter. esc goes back to your issues", (27,), "list", True),
     # the daily report
-    TourStep("b opens The Daily Bark: my recap of your last two days", "report", False),
-    TourStep("j / k pick a topic. l or enter shows what you can do with it", "topic menu", False),
-    TourStep("go to its issue, start it, or ask me. esc or h backs out", "report", False),
-    TourStep("esc or h once more, and you're back at your issues", "list", False),
+    TourStep("b opens The Daily Bark: my recap of your last two days", (ord("b"),), "report", False),
+    TourStep("j / k pick a topic. l or enter shows what you can do with it",
+             DOWN_KEYCODES + UP_KEYCODES + FORWARD_KEYCODES + BACK_KEYCODES, "topic menu", False),  # back too: there may be no topic to pick
+    TourStep("go to its issue, start it, or ask me. esc or h backs out", BACK_KEYCODES, "report", False),
+    TourStep("esc or h once more, and you're back at your issues", BACK_KEYCODES, "list", False),
     # starting work
-    TourStep("l or enter starts work on an issue. press it and have a look", "start dialog", True),
-    TourStep("this is where work begins. esc or h backs out for now", "list", True),
+    TourStep("l or enter starts work on an issue. press it and have a look", FORWARD_KEYCODES, "start dialog", True),
+    TourStep("this is where work begins. esc or h backs out for now", BACK_KEYCODES, "list", True),
 ]
 STEP_THAT_ASKS_FOR_A_TOPIC = next(number for number, step in enumerate(GUIDED_TOUR_STEPS) if step.done_when == "topic menu")
 STEP_BACK_AT_THE_LIST_AFTER_THE_REPORT = STEP_THAT_ASKS_FOR_A_TOPIC + 2  # both steps in between are skipped when there is no topic
@@ -696,6 +699,22 @@ def tour_sees(event):
         UiState.tour_closing_card_is_due = UiState.guided_tour_step is None
 
 
+def key_the_tour_lets_through(key):
+    """While the tour runs only the keys of the step Col is waiting on reach the app (a click or the wheel that
+    stands for one of them counts). Everything else is dropped, so nobody wanders off or posts something by
+    accident. q leaves the tour and gives all the keys back."""
+    step_number = UiState.guided_tour_step
+    if step_number is None or key == -1 or key == curses.KEY_RESIZE:
+        return key
+    keycode = ord(key) if isinstance(key, str) and len(key) == 1 else key
+    if keycode in GUIDED_TOUR_STEPS[step_number].keys:
+        return key
+    if keycode == ord("q"):
+        UiState.guided_tour_step = None
+        col_says("tour's off, every key is yours again. O starts it over", "cheer", 12)
+    return -1
+
+
 def words_of_guided_tour_step():
     step_number = UiState.guided_tour_step
     words = GUIDED_TOUR_STEPS[step_number].words
@@ -712,7 +731,9 @@ TOUR_WELCOME_CARD = ("welcome", [
     "I'll walk you through it for real. **Do what my speech bubble says**, down in the corner, and watch what happens.",
     "",
     "Two pairs of keys work everywhere:  `l` / `enter` goes forward or picks,  `esc` / `h` goes back (only `esc` "
-    "while you are typing).  `q` closes the popup."])
+    "where you could type).",
+    "",
+    "During the tour only the key I ask for works, so you can't get lost or post anything.  `q` leaves the tour."])
 TOUR_CLOSING_CARD = ("starting work, and the green markers", [
     "When you start an issue with `l` / `enter`, four things happen: it is **assigned to you and moved to In "
     "Progress**, it gets a **git worktree** on its own branch, a **herdr workspace** named after it, and **Claude "
@@ -1817,6 +1838,8 @@ def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, r
 
 
 def post_comment_to_linear(issue, body):
+    if UiState.guided_tour_step is not None:  # belt and braces: the tour already lets no enter through where one would post
+        raise RuntimeError("nothing is posted during the tour")
     linear_graphql("mutation($id: String!, $b: String!) { commentCreate(input: {issueId: $id, body: $b}) { success } }",
         {"id": issue["id"], "b": body})
 
