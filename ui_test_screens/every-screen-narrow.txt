@@ -6722,7 +6722,7 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  2 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
@@ -6758,8 +6758,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-99   c free session on it                  │   ╰─ω─╯~   │
+  a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 148 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6768,7 +6768,7 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  2 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
@@ -6804,8 +6804,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-1   c free session on it   a ask Col about it              │   ╰─ω─╯~   │
-  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-1   c free session on it                   │   ╰─ω─╯~   │
+  a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 149 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6814,7 +6814,7 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  2 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
@@ -6860,7 +6860,7 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  2 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
@@ -6896,8 +6896,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                            “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-1   c free session on it   a ask Col about it              │   ╰─ω─╯~   │
-  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-1   c free session on it                   │   ╰─ω─╯~   │
+  a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 151 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6906,7 +6906,7 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  1 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
@@ -6942,8 +6942,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-99   c free session on it                  │   ╰─ω─╯~   │
+  a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 152 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7044,7 +7044,7 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  1 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
@@ -7080,8 +7080,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it             │   ╰─ω─╯~   │
-  x discard it   i add one   j/k topics   d/u page   esc/h close                     ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions for PLA-99   c free session on it                  │   ╰─ω─╯~   │
+  a ask Col about it   x discard it   j/k topics   d/u page   esc/h close            ╰──╴ Col ╶───╯
 
 ########## 155 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7090,13 +7090,13 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │o
-   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
-  ◌│   so does doing something with it. It stays until you discard it.                          │─
+   │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │
+  ◌│   Bark, s moves a topic here. It stays until you discard it.                               │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7127,7 +7127,7 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
+  i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 156 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7136,13 +7136,13 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │o
-   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
-  ◌│   so does doing something with it. It stays until you discard it.                          │─
+   │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │
+  ◌│   Bark, s moves a topic here. It stays until you discard it.                               │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7173,7 +7173,7 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
+  i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 157 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7200,7 +7200,7 @@
           │                                                                              │
           │                                                                              │
           │ ▎✎  write it myself                                                          │
-          │  ✦  Col writes it from a few words                                           │
+          │  ✦  draft it with Col, from a few words                                      │
           │                                                                              │
           ╰──────────────────────────────────────────────────────────────────────────────╯
 
@@ -7366,7 +7366,7 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  1 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
@@ -7402,8 +7402,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
-  c free session on it   a ask Col about it   x discard it   i add one               ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions   n create a Linear issue from this topic          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   x discard it   j/k topics              ╰──╴ Col ╶───╯
 
 ########## 162 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7430,7 +7430,7 @@
           │                                                                              │
           │                                                                              │
           │ ▎✎  write it myself                                                          │
-          │  ✦  Col writes it from a few words                                           │
+          │  ✦  draft it with Col, from a few words                                      │
           │                                                                              │
           ╰──────────────────────────────────────────────────────────────────────────────╯
 
@@ -7476,7 +7476,7 @@
           │                                                                              │
           │                                                                              │
           │  ✎  write it myself                                                          │
-          │ ▎✦  Col writes it from a few words                                           │
+          │ ▎✦  draft it with Col, from a few words                                      │
           │                                                                              │
           ╰──────────────────────────────────────────────────────────────────────────────╯
 
@@ -7642,7 +7642,7 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  1 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
@@ -7678,8 +7678,8 @@
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
-  l/enter actions   n create a Linear issue from this topic                          │   ╰─ω─╯~   │
-  c free session on it   a ask Col about it   x discard it   i add one               ╰──╴ Col ╶───╯
+  i add a to-do   l/enter actions   n create a Linear issue from this topic          │   ╰─ω─╯~   │
+  c free session on it   a ask Col about it   x discard it   j/k topics              ╰──╴ Col ╶───╯
 
 ########## 168 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7688,13 +7688,13 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │o
-   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
-  ◌│   so does doing something with it. It stays until you discard it.                          │─
+   │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │
+  ◌│   Bark, s moves a topic here. It stays until you discard it.                               │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7725,7 +7725,7 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
+  i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 169 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7780,13 +7780,13 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │o
-   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
-  ◌│   so does doing something with it. It stays until you discard it.                          │─
+   │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │
+  ◌│   Bark, s moves a topic here. It stays until you discard it.                               │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7817,7 +7817,7 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
+  i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 171 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7826,13 +7826,13 @@
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
    │  what you moved here from The Daily Bark. it stays when the report is written again.       │o
-   │  0 saved  ·  the ones you start working on show under W, active workspaces                 │o
+   │   i  add a to-do: type it yourself, or draft it with Col                                   │o
    │                                                                                            │
   ◔│    TO DO                                                                                   │─
    │   ──────────────────────────────────────────────────────────────────────────────────────   │o
    │                                                                                            │o
-   │   nothing here yet. i adds one of your own. In The Daily Bark, s moves a topic here, and   │
-  ◌│   so does doing something with it. It stays until you discard it.                          │─
+   │   nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily    │
+  ◌│   Bark, s moves a topic here. It stays until you discard it.                               │─
    │                                                                                            │o
    │                                                                                            │
   ◈│                                                                                            │─
@@ -7863,7 +7863,7 @@
                                                                      “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  i add one   esc/h close                                                            ╰──╴ Col ╶───╯
+  i add a to-do   esc/h close                                                        ╰──╴ Col ╶───╯
 
 ########## 172 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦

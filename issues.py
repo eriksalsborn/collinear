@@ -1737,8 +1737,8 @@ def todo_topics_with_one_more(topics, topic_markdown):
 
 
 def todo_list_as_report_text():
-    return "## to do\n" + ("\n".join(saved_todo_topics()) or "nothing here yet. `i` adds one of your own. In The Daily Bark, `s` moves a topic "
-                                                             "here, and so does doing something with it. It stays until you discard it.")
+    return "## to do\n" + ("\n".join(saved_todo_topics()) or "nothing here yet. Press `i` to add a to-do: type it, or draft it with Col. In The "
+                                                             "Daily Bark, `s` moves a topic here. It stays until you discard it.")
 
 
 def stand_in_issue_for_topic(topic_text):
@@ -1825,7 +1825,7 @@ DRAFT_TODO_TASK = ("Write one to-do item for the developer's personal to-do list
 
 def add_topic_to_todo_list(screen):
     """A to-do of your own: type it, or give Col a few words and he writes it up (you can edit his line before it is added)."""
-    picked = choose_from_list(screen, "to-do  ·  add one", ["✎  write it myself", "✦  Col writes it from a few words"], help=(
+    picked = choose_from_list(screen, "to-do  ·  add one", ["✎  write it myself", "✦  draft it with Col, from a few words"], help=(
         "Col looks up what is behind your words (an issue, a PR, a thread) and writes one line. You can change it before it is added.",))
     if picked is None:
         return
@@ -1893,7 +1893,10 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                 COL_SPEECH.update(mood="cheer", say="what you saved to do" if showing_todo_list else "here's your daily report", until=time.time() + 8)
             if showing_todo_list:
                 line(2, "what you moved here from The Daily Bark. it stays when the report is written again.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
-                line(3, f"{len(saved_todo_topics())} saved  ·  the ones you start working on show under W, active workspaces", curses.color_pair(DIM), 3)
+                # how to add one of your own, where nobody can miss it: a key cap and what it does; a click works too
+                line(3, " i ", keycap_attribute(), 3)
+                line(3, "add a to-do: type it yourself, or draft it with Col", curses.color_pair(ACCENT) | curses.A_BOLD, 7)
+                CLICK_ZONES.append((line.first_row_on_screen + 3, line.first_column_on_screen + 3, line.first_column_on_screen + 60, [ord("i")]))
             else:
                 line(2, f"{greeting_for_this_hour()}, {saved_first_name() or 'you'}. here's what you've been up to.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
                 line(3, f"{len(lookup_steps)} lookups in Linear, Slack and GitHub" if lookup_steps else "from memory", curses.color_pair(DIM), 3)
@@ -1927,13 +1930,13 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                     column += len(segment_text)
             if bullet_line_numbers:
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
-                footer_text = ("l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
+                footer_text = ("i add a to-do · " * showing_todo_list + "l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
                         + " · c free session on it · a ask Col about it"
-                        + (" · x discard it · i add one" if showing_todo_list else " · s move to to-do · x discard it · p to-do list") + " · j/k topics · d/u page"
+                        + (" · x discard it" if showing_todo_list else " · s move to to-do · x discard it · p to-do list") + " · j/k topics · d/u page"
                         + ("" if showing_todo_list else " · r write it again"))
                 draw_footer_from_text(screen, footer_text + " · esc/h close")
             else:
-                draw_footer_from_text(screen, "i add one · esc/h close" if showing_todo_list else "p to-do list · r write it again · esc/h close")
+                draw_footer_from_text(screen, "i add a to-do · esc/h close" if showing_todo_list else "p to-do list · r write it again · esc/h close")
 
     def under_menu():  # draw_dialog_box() paints the backdrop first: hand it the list while the report draws itself, no pop-open
         UiState.draw_screen_behind_dialog, title_before, UiState.title_of_open_dialog = draw_list_behind, UiState.title_of_open_dialog, dialog_title
