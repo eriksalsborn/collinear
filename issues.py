@@ -176,8 +176,18 @@ class ScreenWithMouse:
         CLICK_ZONES.clear()
         self.screen.erase()
 
+    def refresh(self):
+        """One frame reaches the terminal as a whole: without this a redraw can show half-painted (an animation frame
+        with the dialog's box but not yet its text). Terminals that don't know synchronized output ignore the codes."""
+        sys.stdout.write("\x1b[?2026h")
+        sys.stdout.flush()
+        self.screen.refresh()
+        sys.stdout.write("\x1b[?2026l")
+        sys.stdout.flush()
+
     def _next_key(self, read):
         if not PENDING_KEYS:
+            self.refresh()  # reading a key paints what is pending: do it here, as one whole frame
             key = read()
             if key != curses.KEY_MOUSE:
                 return key
