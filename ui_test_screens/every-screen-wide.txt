@@ -1468,8 +1468,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-1   c free session on it   a ask Col about it   s save to to-do   p to-do list   j/k topics   d/u page       │   ╰─ω─╯~   │
-  r write it again   esc/h close                                                                                                       ╰──╴ Col ╶───╯
+  l/enter actions for PLA-1   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list                │   ╰─ω─╯~   │
+  j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
 ########## 033 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -1514,8 +1514,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   s save to to-do   p to-do list   j/k topics   d/u page      │   ╰─ω─╯~   │
-  r write it again   esc/h close                                                                                                       ╰──╴ Col ╶───╯
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list               │   ╰─ω─╯~   │
+  j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
 ########## 034 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -1543,10 +1543,10 @@
                          │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │             │
                          │     │  c   free session on it                                                      │             │
                          │    L│  a   ask Col about it                                                        │             │
-                         │   ──│  s   save it to the to-do list                                               │──────       │
-                         │     │                                                                              │             │
-                         │   • ╰──────────────────────────────────────────────────────────────────────────────╯             │
-                         │                                                                                                  │
+                         │   ──│  s   move it to the to-do list, where it stays                               │──────       │
+                         │     │  x   discard it                                                              │             │
+                         │   • │                                                                              │             │
+                         │     ╰──────────────────────────────────────────────────────────────────────────────╯             │
                          │                                                                                                  │
                          │    TODAY                                                                                         │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
@@ -1606,8 +1606,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   s save to to-do   p to-do list   j/k topics   d/u page      │   ╰─ω─╯~   │
-  r write it again   esc/h close                                                                                                       ╰──╴ Col ╶───╯
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list               │   ╰─ω─╯~   │
+  j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
 ########## 036 before 'K'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -5562,8 +5562,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                         “18/25   j  /  k  pick a topic.  l  or  enter  shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                     Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   s save to to-do   p to-do list   j/k topics   d/u page      │   ╰─ω─╯~   │
-  r write it again   esc/h close                                                                                                       ╰──╴ Col ╶───╯
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list               │   ╰─ω─╯~   │
+  j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
 ########## 122 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -5591,10 +5591,10 @@
                          │     │ ▎l   start working on PLA-99  ·  not yours yet, it gets assigned to you      │             │
                          │     │  c   free session on it                                                      │             │
                          │    L│  a   ask Col about it                                                        │             │
-                         │   ──│  s   save it to the to-do list                                               │──────       │
-                         │     │                                                                              │             │
-                         │   • ╰──────────────────────────────────────────────────────────────────────────────╯             │
-                         │                                                                                                  │
+                         │   ──│  s   move it to the to-do list, where it stays                               │──────       │
+                         │     │  x   discard it                                                              │             │
+                         │   • │                                                                              │             │
+                         │     ╰──────────────────────────────────────────────────────────────────────────────╯             │
                          │                                                                                                  │
                          │    TODAY                                                                                         │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
@@ -5654,8 +5654,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “20/25   esc  or  h  once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                     Q  quits the tour  │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   s save to to-do   p to-do list   j/k topics   d/u page      │   ╰─ω─╯~   │
-  r write it again   esc/h close                                                                                                       ╰──╴ Col ╶───╯
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list               │   ╰─ω─╯~   │
+  j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
 ########## 124 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6436,8 +6436,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   s save to to-do   p to-do list   j/k topics   d/u page      │   ╰─ω─╯~   │
-  r write it again   esc/h close                                                                                                       ╰──╴ Col ╶───╯
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list               │   ╰─ω─╯~   │
+  j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
 ########## 141 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6456,12 +6456,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │ ▎ • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │ ▎   ↳ you and Sam                                                                                │
-                         │                                                                                                  │
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-                         │                                                                                                  │
-                         │   • a loose topic — nobody filed it yet.                                                         │
+ ▎    PLA-6     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │    LOOSE ENDS                                                                                    │
@@ -6476,14 +6471,19 @@
                          │   • start with PLA-1, it is closest to done.                                                     │
                          │                                                                                                  │
                          │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   s save to to-do   p to-do list   j/k topics   d/u page      │   ╰─ω─╯~   │
-  r write it again   esc/h close                                                                                                       ╰──╴ Col ╶───╯
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
 ########## 142 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6502,18 +6502,13 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │     ↳ you and Sam                                                                                │
-                         │                                                                                                  │
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-                         │                                                                                                  │
-                         │ ▎ • a loose topic — nobody filed it yet.                                                         │
+ ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │    LOOSE ENDS                                                                                    │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │   • reply to Robin about herdr links.                                                            │
+                         │ ▎ • reply to Robin about herdr links.                                                            │
                          │                                                                                                  │
                          │                                                                                                  │
                          │    TODAY                                                                                         │
@@ -6522,14 +6517,19 @@
                          │   • start with PLA-1, it is closest to done.                                                     │
                          │                                                                                                  │
                          │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s save to to-do              │   ╰─ω─╯~   │
-  p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                                ╰──╴ Col ╶───╯
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
 ########## 143 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6548,34 +6548,34 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │     ↳ you and Sam                                                                                │
-                         │                                                                                                  │
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-                         │                                                                                                  │
-                         │   • a loose topic — nobody filed it yet.                                                         │
+ ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │    LOOSE ENDS                                                                                    │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │ ▎ • reply to Robin about herdr links.                                                            │
+                         │   • reply to Robin about herdr links.                                                            │
                          │                                                                                                  │
                          │                                                                                                  │
                          │    TODAY                                                                                         │
                          │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │   • start with PLA-1, it is closest to done.                                                     │
+                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s save to to-do              │   ╰─ω─╯~   │
-  p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                                ╰──╴ Col ╶───╯
+  l/enter actions for PLA-1   c free session on it   a ask Col about it   s move to to-do   x discard it   p to-do list                │   ╰─ω─╯~   │
+  j/k topics   d/u page   r write it again   esc/h close                                                                               ╰──╴ Col ╶───╯
 
 ########## 144 before 'a'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6594,31 +6594,31 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │     ↳ you and Sam                                                                                │
-                         │                                                                                                  │
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-                         │                                                                                                  │
-                         │   • a loose topic — nobody filed it yet.                                                         │
-                         │                                                                                                  │
-                         │                                                                                                  │
-                         │    LOOSE ENDS                                                                                    │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
-                         │                                                                                                  │
-                         │ ▎ • reply to Robin about herdr links.                                                            │
+ ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
                          │     ╭──────────────────────────────────────────────────────╮                                     │
-                         │     │  Col  this topic                                esc  │                                     │
-                         │    T│  / filter                                            │                                     │
+                         │     │  Col  PLA-1                                     esc  │                                     │
+                         │    L│  / filter                                            │                                     │
                          │   ──│                                                      │──────────────────────────────       │
-                         │     │ ▎n   create a Linear issue from this topic           │                                     │
+                         │     │ ▎l   go to PLA-1 in the list                         │                                     │
                          │   • │  c   free session on it                              │                                     │
                          │     │  a   ask Col about it                                │                                     │
-                         │     │  s   save it to the to-do list                       │                                     │
-                         ╰─────│                                                      │─────────────────────────────────────╯
-                               ╰──────────────────────────────────────────────────────╯
+                         │     │  s   move it to the to-do list, where it stays       │                                     │
+                         │    T│  x   discard it                                      │                                     │
+                         │   ──│                                                      │──────────────────────────────       │
+                         │     ╰──────────────────────────────────────────────────────╯                                     │
+                         │ ▎ • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
@@ -6632,20 +6632,15 @@
    │   ON YOUR PLATE                                                      │    ✦ ask Col about this topic                                         │o
    │  ─────────────────────────────────────────────────────────────────   │    ─────────────────────────────────────────────────────────────────  │o
    │                                                                      │                                                                       │
-  ◔│  • PLA-1 login thing — PR #7 is in review since Tuesday.             │     Ask Col about this topic: reply to Robin about herdr links.…      │─
-   │    ↳ only you                                                        │     Col has the report, your issues, and can look things up in        │o
-   │                                                                      │     Linear, Slack and GitHub. The thread is kept for the day, one     │o
-   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │     per topic.                                                        │
+  ◔│  • PLA-1 login thing — PR #7 is in review since Tuesday.             │     Ask Col about this topic: start with PLA-1, it is closest to      │─
+   │    ↳ only you                                                        │     done.… Col has the report, your issues, and can look things       │o
+   │                                                                      │     up in Linear, Slack and GitHub. The thread is kept for the        │o
+   │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │     day, one per topic.                                               │
   ◌│                                                                      │                                                                       │─
-   │  • PLA-99 someone else's — waiting on Sam.                           │                                                                       │o
-   │    ↳ you and Sam                                                     │                                                                       │
+   │  • a loose topic — nobody filed it yet.                              │                                                                       │o
+   │                                                                      │                                                                       │
   ◈│                                                                      │                                                                       │─
- ▎ │  ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌   │                                                                       │o
-   │                                                                      │                                                                       │
-   │  • a loose topic — nobody filed it yet.                              │                                                                       │
-   │                                                                      │                                                                       │
-   │                                                                      │                                                                       │
-   │   LOOSE ENDS                                                         │                                                                       │
+ ▎ │   LOOSE ENDS                                                         │                                                                       │o
    │  ─────────────────────────────────────────────────────────────────   │                                                                       │
    │                                                                      │                                                                       │
    │  • reply to Robin about herdr links.                                 │                                                                       │
@@ -6656,6 +6651,11 @@
    │                                                                      │                                                                       │
    │  • start with PLA-1, it is closest to done.                          │                                                                       │
    │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
+   │                                                                      │                                                                       │
    │                                                                      │   ╭─────────────────────────────────────────────────────────────────╮ │
    │                                                                      │   │ › ▏ask a question…                                              │ │
    │                                                                      │   ╰─────────────────────────────────────────────────────────────────╯ │
@@ -6664,7 +6664,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                                         ╰──╴ Col ╶───╯
@@ -6686,12 +6686,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │     ↳ you and Sam                                                                                │
-                         │                                                                                                  │
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-                         │                                                                                                  │
-                         │   • a loose topic — nobody filed it yet.                                                         │
+ ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │    LOOSE ENDS                                                                                    │
@@ -6700,20 +6695,25 @@
                          │ ▎ • reply to Robin about herdr links.                                                            │
                          │                                                                                                  │
                          │                                                                                                  │
-                         │    TODAY                                                                                         │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s save to to-do              │   ╰─ω─╯~   │
-  p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                                ╰──╴ Col ╶───╯
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
 ########## 147 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6721,7 +6721,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you saved from The Daily Bark. it stays here when the report is written again.             │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  2 saved  ·  the ones you start working on show under W, active workspaces                       │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
@@ -6732,7 +6732,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • reply to Robin about herdr links.                                                            │                 3d ago
+ ▎    PLA-6     ▯▯▯      │   • start with PLA-1, it is closest to done.                                                     │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -6756,10 +6756,10 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   x remove it   j/k topics   d/u page   esc/h close           ╰──╴ Col ╶───╯
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close          ╰──╴ Col ╶───╯
 
 ########## 148 before 'l'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6767,7 +6767,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you saved from The Daily Bark. it stays here when the report is written again.             │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  2 saved  ·  the ones you start working on show under W, active workspaces                       │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
@@ -6778,7 +6778,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │ ▎ • reply to Robin about herdr links.                                                            │                 3d ago
+ ▎    PLA-6     ▯▯▯      │ ▎ • start with PLA-1, it is closest to done.                                                     │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -6802,10 +6802,10 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   x remove it                  │   ╰─ω─╯~   │
-  j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close           ╰──╴ Col ╶───╯
 
 ########## 149 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6813,7 +6813,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you saved from The Daily Bark. it stays here when the report is written again.             │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  2 saved  ·  the ones you start working on show under W, active workspaces                       │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
@@ -6824,15 +6824,15 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │ ▎ • reply to Robin about herdr links.                                                            │                 3d ago
+ ▎    PLA-6     ▯▯▯      │ ▎ • start with PLA-1, it is closest to done.                                                     │                 3d ago
                          │     ╭──────────────────────────────────────────────────────╮                                     │
-                         │     │  Col  this topic                                esc  │                                     │
+                         │     │  Col  PLA-1                                     esc  │                                     │
                          │     │  / filter                                            │                                     │
                          │     │                                                      │                                     │
-                         │     │ ▎n   create a Linear issue from this topic           │                                     │
+                         │     │ ▎l   go to PLA-1 in the list                         │                                     │
                          │     │  c   free session on it                              │                                     │
                          │     │  a   ask Col about it                                │                                     │
-                         │     │  x   remove it from the to-do list                   │                                     │
+                         │     │  x   discard it                                      │                                     │
                          │     │                                                      │                                     │
                          │     ╰──────────────────────────────────────────────────────╯                                     │
                          │                                                                                                  │
@@ -6848,7 +6848,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
@@ -6859,7 +6859,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you saved from The Daily Bark. it stays here when the report is written again.             │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  2 saved  ·  the ones you start working on show under W, active workspaces                       │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
@@ -6870,7 +6870,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │ ▎ • reply to Robin about herdr links.                                                            │                 3d ago
+ ▎    PLA-6     ▯▯▯      │ ▎ • start with PLA-1, it is closest to done.                                                     │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
@@ -6894,10 +6894,10 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                             “saved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                             “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   x remove it                  │   ╰─ω─╯~   │
-  j/k topics   d/u page   esc/h close                                                                                                  ╰──╴ Col ╶───╯
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close           ╰──╴ Col ╶───╯
 
 ########## 151 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6905,7 +6905,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you saved from The Daily Bark. it stays here when the report is written again.             │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 saved  ·  the ones you start working on show under W, active workspaces                       │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
@@ -6943,7 +6943,7 @@
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   x remove it   j/k topics   d/u page   esc/h close           ╰──╴ Col ╶───╯
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close          ╰──╴ Col ╶───╯
 
 ########## 152 before 27
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -6962,12 +6962,7 @@
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
- ▎    PLA-6     ▯▯▯      │   • PLA-99 someone else's — waiting on Sam.                                                      │                 3d ago
-                         │     ↳ you and Sam                                                                                │
-                         │                                                                                                  │
-                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
-                         │                                                                                                  │
-                         │   • a loose topic — nobody filed it yet.                                                         │
+ ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
                          │                                                                                                  │
                          │                                                                                                  │
                          │    LOOSE ENDS                                                                                    │
@@ -6976,10 +6971,15 @@
                          │ ▎ • reply to Robin about herdr links.                                                            │
                          │                                                                                                  │
                          │                                                                                                  │
-                         │    TODAY                                                                                         │
-                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
                          │                                                                                                  │
-                         │   • start with PLA-1, it is closest to done.                                                     │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
                          │                                                                                                  │
                          │                                                                                                  │
                          ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -6988,8 +6988,8 @@
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
-  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s save to to-do              │   ╰─ω─╯~   │
-  p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                                ╰──╴ Col ╶───╯
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
 
 ########## 153 before 'p'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7043,7 +7043,7 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you saved from The Daily Bark. it stays here when the report is written again.             │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  1 saved  ·  the ones you start working on show under W, active workspaces                       │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
@@ -7081,7 +7081,7 @@
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
-  l/enter actions for PLA-99   c free session on it   a ask Col about it   x remove it   j/k topics   d/u page   esc/h close           ╰──╴ Col ╶───╯
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page   esc/h close          ╰──╴ Col ╶───╯
 
 ########## 155 before 'x'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -7089,14 +7089,14 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you saved from The Daily Bark. it stays here when the report is written again.             │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  0 saved  ·  the ones you start working on show under W, active workspaces                       │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
-                         │   nothing here yet. In The Daily Bark, s saves a topic here, and so does doing something         │
-  ◌ Backlog 1  ──────────│   with it. It stays until you remove it.                                                         │───────────────────────
+                         │   nothing here yet. In The Daily Bark, s moves a topic here, and so does doing something         │
+  ◌ Backlog 1  ──────────│   with it. It stays until you discard it.                                                        │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7135,14 +7135,14 @@
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
  ────────────────────────╭─────────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ──────────────────────────────────╮────────────────────────
   ◕ In Review 2  ────────│  Col  to-do list                                                                            esc  │───────────────────────
-      PLA-3     ▮▮▯ mediu│  what you saved from The Daily Bark. it stays here when the report is written again.             │ ◌ draft         1d ago
+      PLA-3     ▮▮▯ mediu│  what you moved here from The Daily Bark. it stays when the report is written again.             │ ◌ draft         1d ago
       PLA-4     ▮▯▯ low  │  0 saved  ·  the ones you start working on show under W, active workspaces                       │                 1w ago
                          │                                                                                                  │
   ◔ In Progress 2  ──────│    TO DO                                                                                         │───────────────────────
       PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
     ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
-                         │   nothing here yet. In The Daily Bark, s saves a topic here, and so does doing something         │
-  ◌ Backlog 1  ──────────│   with it. It stays until you remove it.                                                         │───────────────────────
+                         │   nothing here yet. In The Daily Bark, s moves a topic here, and so does doing something         │
+  ◌ Backlog 1  ──────────│   with it. It stays until you discard it.                                                        │───────────────────────
       PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
                          │                                                                                                  │
   ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
@@ -7175,7 +7175,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   esc/h close                                                                                                                          ╰──╴ Col ╶───╯
 
-########## 157 before 'W'
+########## 157 before 'b'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
@@ -7221,7 +7221,237 @@
   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
   n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
 
-########## 158 before 'j'
+########## 158 before 'x'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
+ ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
+  ◕ In Review 2  ────────│  Col  daily report                                                                          esc  │───────────────────────
+      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
+                         │                                                                                                  │
+  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+      PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
+    ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
+                         │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
+  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
+      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+ ▎    PLA-6     ▯▯▯      │   • a loose topic — nobody filed it yet.                                                         │                 3d ago
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │    LOOSE ENDS                                                                                    │
+                         │   ────────────────────────────────────────────────────────────────────────────────────────       │
+                         │                                                                                                  │
+                         │ ▎ • reply to Robin about herdr links.                                                            │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                       “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
+
+########## 159 before 'r'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
+ ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
+  ◕ In Review 2  ────────│  Col  daily report                                                                          esc  │───────────────────────
+      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
+                         │                                                                                                  │
+  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+      PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
+    ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
+                         │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
+  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
+      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+ ▎    PLA-6     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3d ago
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
+
+########## 160 before 27
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+      PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+    ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                    ▶ ws 3 · alpha   ● review        2d ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+
+  ◈ Triage 1  ─────────────────────╭──────────────────────────────────────────────────────────────────────────────╮─────────────────────────────────
+ ▎    PLA-6     ▯▯▯         Sixth n│  Col  write it again?                                                   esc  │                           3d ago
+                                   │  / filter                                                                    │
+                                   │  A new report replaces this one: every topic here is gone, also the ones     │
+                                   │  still worth doing.                                                          │
+                                   │  To keep a topic, move it to the to-do list first (s). What is on the to-do  │
+                                   │  list stays.                                                                 │
+                                   │                                                                              │
+                                   │                                                                              │
+                                   │  yes, write a new report                                                     │
+                                   │ ▎no, keep this one                                                           │
+                                   │                                                                              │
+                                   ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+########## 161 before 27
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
+ ────────────────────────╭─────────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ──────────────────────────────╮────────────────────────
+  ◕ In Review 2  ────────│  Col  daily report                                                                          esc  │───────────────────────
+      PLA-3     ▮▮▯ mediu│  morning, Erik. here's what you've been up to.                                                   │ ◌ draft         1d ago
+      PLA-4     ▮▯▯ low  │  1 lookups in Linear, Slack and GitHub                                                           │                 1w ago
+                         │                                                                                                  │
+  ◔ In Progress 2  ──────│    ON YOUR PLATE                                                                                 │───────────────────────
+      PLA-1     !!! urgen│   ────────────────────────────────────────────────────────────────────────────────────────       │                 1h ago
+    ▶ PLA-2     ▮▮▮ high │                                                                                                  │ ● review        2d ago
+                         │   • PLA-1 login thing — PR #7 is in review since Tuesday.                                        │
+  ◌ Backlog 1  ──────────│     ↳ only you                                                                                   │───────────────────────
+      PLA-5     ▯▯▯      │                                                                                                  │                 3w ago
+                         │   ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌       │
+  ◈ Triage 1  ───────────│                                                                                                  │───────────────────────
+ ▎    PLA-6     ▯▯▯      │ ▎ • a loose topic — nobody filed it yet.                                                         │                 3d ago
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         │                                                                                                  │
+                         ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   p to-do list   j/k topics   d/u page   r write it again   esc/h close                                                 ╰──╴ Col ╶───╯
+
+########## 162 before 'W'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      PLA-3     ▮▮▯ medium  Third one in review                                                                               ◌ draft         1d ago
+      PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
+
+  ◔ In Progress 2  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      PLA-1     !!! urgent  First issue about login                                                                                           1h ago
+    ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                    ▶ ws 3 · alpha   ● review        2d ago
+
+  ◌ Backlog 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      PLA-5     ▯▯▯         Fifth in the backlog                                                                                              3w ago
+
+  ◈ Triage 1  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎    PLA-6     ▯▯▯         Sixth needs triage                                                                                                3d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority   A assign   X cancel   U undo        │   ╰─ω─╯~   │
+  n new issue   b daily report   p to-do   W active ws   t/T team / project   R reviews   r refresh   g PR   ? all keys                ╰──╴ Col ╶───╯
+
+########## 163 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace open for · w jumps there                         3 issues  ·  ✓ 1 done today
@@ -7267,7 +7497,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 159 before 'j'
+########## 164 before 'j'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace open for · w jumps there                         3 issues  ·  ✓ 1 done today
@@ -7313,7 +7543,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 160 before 'S'
+########## 165 before 'S'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace open for · w jumps there                         3 issues  ·  ✓ 1 done today
@@ -7359,7 +7589,7 @@
   w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
   A assign   X cancel   U undo   n new issue   b daily report   p to-do   W active ws   t/T team / project   ? all keys                ╰──╴ Col ╶───╯
 
-########## 161 before 'W'
+########## 166 before 'W'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
  h ‹ my issues  ›   active workspaces   everything you have a workspace open for · w jumps there                         3 issues  ·  ✓ 1 done today
@@ -7405,7 +7635,7 @@
                                                                                                                                        │   ╰─ω─╯~   │
   ✓ topic-0a1 is a workspace, not a Linear issue here · w jumps to it                                                                  ╰──╴ Col ╶───╯
 
-########## 162 before 'q'
+########## 167 before 'q'
                                                          ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   W active workspaces · p to-do · t team · T project · R reviews                                             6 issues  ·  ✓ 1 done today

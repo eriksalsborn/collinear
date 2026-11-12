@@ -156,6 +156,7 @@ EVERY_SCREEN = [
     "O", ESC,                                                    # the welcome card can be declined
     "b", "s", "j", "j", "l", "a", ESC, "p", "j", "l", ESC, "x", ESC, ESC,   # save a topic to the to-do list, by s and by acting on one; open it, remove one
     "p", "x", "x", ESC,                                          # the to-do list from the issue list; emptied
+    "b", "x", "r", ESC, ESC,                                     # discard a topic of the report; writing it again asks first
     "W", "j", "j", "S", "W",                                     # active workspaces: mine, someone else's, a topic (S can't change that one)
 ]
 SOMEONE_BRAND_NEW = "someone brand new"  # in place of the workspaces: setup is done, nothing else exists yet

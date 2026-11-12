@@ -1677,18 +1677,37 @@ def save_todo_topics(topics):
     (NOTES_DIR / "todo.json").write_text(json.dumps(topics, indent=1))
 
 
-def markdown_of_each_topic(report_text):
-    """The report's topics as Col wrote them: each top-level bullet with the lines under it (↳ who's on it)."""
+def lines_of_each_topic(report_text):
+    """[(first line, line after)] of each topic in the report's markdown: a top-level bullet with the lines under it (↳ who's on it)."""
     topics, is_inside_topic = [], False
-    for raw_line in report_text.splitlines():
+    for line_number, raw_line in enumerate(report_text.splitlines()):
         if re.match(r"\s?[-*+]\s+", raw_line):
-            topics.append(raw_line.strip())
+            topics.append((line_number, line_number + 1))
             is_inside_topic = True
         elif not raw_line.strip() or raw_line.startswith("#"):
             is_inside_topic = False
         elif is_inside_topic:
-            topics[-1] += "\n" + raw_line
+            topics[-1] = (topics[-1][0], line_number + 1)
     return topics
+
+
+def markdown_of_each_topic(report_text):
+    """The report's topics as Col wrote them."""
+    lines = report_text.splitlines()
+    return ["\n".join(lines[first_line:line_after]).strip() for first_line, line_after in lines_of_each_topic(report_text)]
+
+
+def report_text_without_topic(report_text, topic_number):
+    """The report with one topic taken out, and its section's heading too when that was the section's last topic."""
+    lines = report_text.splitlines()
+    first_line, line_after = lines_of_each_topic(report_text)[topic_number]
+    del lines[first_line:line_after]
+    lines_with_text = [line_number for line_number, line in enumerate(lines) if line.strip()]
+    heading_above = max((line_number for line_number in lines_with_text if line_number < first_line), default=None)
+    next_line_with_text = min((line_number for line_number in lines_with_text if line_number >= first_line), default=None)
+    if heading_above is not None and lines[heading_above].startswith("#") and (next_line_with_text is None or lines[next_line_with_text].startswith("#")):
+        del lines[heading_above]
+    return "\n".join(lines)
 
 
 def todo_topics_with_one_more(topics, topic_markdown):
@@ -1703,8 +1722,8 @@ def todo_topics_with_one_more(topics, topic_markdown):
 
 
 def todo_list_as_report_text():
-    return "## to do\n" + ("\n".join(saved_todo_topics()) or "nothing here yet. In The Daily Bark, `s` saves a topic here, and so does "
-                                                             "doing something with it. It stays until you remove it.")
+    return "## to do\n" + ("\n".join(saved_todo_topics()) or "nothing here yet. In The Daily Bark, `s` moves a topic here, and so does "
+                                                             "doing something with it. It stays until you discard it.")
 
 
 def stand_in_issue_for_topic(topic_text):
@@ -1827,7 +1846,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
             if COL_SPEECH["mood"] in ("left", "right") or not COL_SPEECH["say"]:
                 COL_SPEECH.update(mood="cheer", say="what you saved to do" if showing_todo_list else "here's your daily report", until=time.time() + 8)
             if showing_todo_list:
-                line(2, "what you saved from The Daily Bark. it stays here when the report is written again.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
+                line(2, "what you moved here from The Daily Bark. it stays when the report is written again.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
                 line(3, f"{len(saved_todo_topics())} saved  ·  the ones you start working on show under W, active workspaces", curses.color_pair(DIM), 3)
             else:
                 line(2, f"{greeting_for_this_hour()}, {saved_first_name() or 'you'}. here's what you've been up to.", curses.color_pair(COL_ACCENT) | curses.A_BOLD, 3)
@@ -1864,7 +1883,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                 mentioned_identifier = ISSUE_IDENTIFIER_PATTERN.search("".join(segment_text for segment_text, _ in styled_lines[bullet_line_numbers[number_of_topic_under_cursor]]))
                 footer_text = ("l/enter actions" + (f" for {mentioned_identifier.group()}" if mentioned_identifier else " · n create a Linear issue from this topic")
                         + " · c free session on it · a ask Col about it"
-                        + (" · x remove it" if showing_todo_list else " · s save to to-do · p to-do list") + " · j/k topics · d/u page"
+                        + (" · x discard it" if showing_todo_list else " · s move to to-do · x discard it · p to-do list") + " · j/k topics · d/u page"
                         + ("" if showing_todo_list else " · r write it again"))
                 draw_footer_from_text(screen, footer_text + " · esc/h close")
             else:
@@ -1901,7 +1920,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                        ("l", f"start working on {identifier}  ·  not yours yet, it gets assigned to you") if identifier else
                        ("n", "create a Linear issue from this topic"),
                        ("c", "free session on it"), ("a", "ask Col about it"),
-                       ("x", "remove it from the to-do list") if showing_todo_list else ("s", "save it to the to-do list")]
+                       *([] if showing_todo_list else [("s", "move it to the to-do list, where it stays")]), ("x", "discard it")]
             rows_the_menu_needs = len(choices) + 6
             row_for_the_menu = topic_position_on_screen[1] if topic_position_on_screen[1] + rows_the_menu_needs <= screen.getmaxyx()[0] - 6 else topic_position_on_screen[0] - rows_the_menu_needs
             if not showing_todo_list:
@@ -1915,17 +1934,22 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
             if picked is None:
                 continue
             key = ord(choices[picked][0])  # from here on it is as if that short key was pressed
+        does_something_with_the_topic = topic and (key in (ord("s"), ord("c"), ord("a")) or key == ord("l" if topic.issue_identifier else "n"))
         if topic and showing_todo_list and key == ord("x"):
             save_todo_topics([saved_topic for position, saved_topic in enumerate(saved_todo_topics()) if position != topic.number])
             TODO_LIST["text"] = todo_list_as_report_text()
             col_says("off the list", "cheer", 4)
             continue
-        does_something_with_the_topic = topic and (key in (ord("s"), ord("c"), ord("a")) or key == ord("l" if topic.issue_identifier else "n"))
-        if does_something_with_the_topic and not showing_todo_list and UiState.guided_tour_step is None:
-            # saved by hand (s), or because you did something with it: it now outlives the next report
-            save_todo_topics(todo_topics_with_one_more(saved_todo_topics(), markdown_of_each_topic(report_text)[topic.number]))
-            if key == ord("s"):
-                col_says("saved to your to-do list. `p` opens it", "cheer", 6)
+        if topic and not showing_todo_list and UiState.guided_tour_step is None and (key == ord("x") or does_something_with_the_topic):
+            # moved by hand (s), or because you did something with it: the topic leaves the report for the to-do list,
+            # where it outlives the next report. x just drops it. (report_text, a line up, still has it for the action.)
+            if key != ord("x"):
+                save_todo_topics(todo_topics_with_one_more(saved_todo_topics(), markdown_of_each_topic(report_text)[topic.number]))
+            DAILY_REPORT["text"] = report_text_without_topic(report_text, topic.number)
+            write_stored_value("brief", {k: DAILY_REPORT[k] for k in ("date", "text", "steps", "cur")})
+            if key in (ord("s"), ord("x")):
+                col_says("moved to your to-do list. `p` opens it" if key == ord("s") else "dropped it", "cheer", 6)
+                continue
         if topic and key == ord("a"):
             chat_with_col(screen, None, report=report_text, issues=issues, topic=(topic.number, topic.text))
         elif topic and key == ord("c") and topic.issue_identifier:  # free session on the issue, yours or not
@@ -1941,6 +1965,11 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
             UiState.col_is_working = False
             if error := start_free_session(screen, stand_in_issue_for_topic(topic.text), topic=topic.text):
                 show_message_for_a_moment(screen, error)
+        if key == ord("r") and not showing_todo_list and report_text and UiState.guided_tour_step is None and choose_from_list(
+                screen, "Col  ·  write it again?", ["yes, write a new report", "no, keep this one"], cursor=1, help=(
+                    "A new report replaces this one: every topic here is gone, also the ones still worth doing.",
+                    "To keep a topic, move it to the to-do list first (s). What is on the to-do list stays.")) != 0:
+            continue
         if key == ord("r") and not showing_todo_list:  # start over: stop a running one, forget today's
             for process in DAILY_REPORT["procs"]:
                 process.kill()
@@ -3657,6 +3686,8 @@ def _test():
     assert report_topic_under_cursor(report) == ReportTopic(1, "loose thing — nobody filed it", "")
     # the to-do list: topics are saved as Col wrote them, one per issue, and the active workspaces come from workspace names
     assert markdown_of_each_topic("## a\n- one\n↳ only you\n\n- two PLA-1\n## b\n- three") == ["- one\n↳ only you", "- two PLA-1", "- three"]
+    assert report_text_without_topic("## a\n- one\n↳ only you\n- two\n## b\n- three", 0) == "## a\n- two\n## b\n- three"
+    assert report_text_without_topic("## a\n- one\n\n## b\n- three", 0) == "\n## b\n- three" and report_text_without_topic("## a\n- one", 0) == ""
     assert todo_topics_with_one_more(["- a", "- old PLA-1"], "- new PLA-1") == ["- a", "- new PLA-1"]
     assert todo_topics_with_one_more(["- a"], "- a") == ["- a"] and todo_topics_with_one_more(["- a"], "- b") == ["- a", "- b"]
     assert stand_in_issue_for_topic("**x** — y")["identifier"] == stand_in_issue_for_topic("**x** — y")["identifier"]

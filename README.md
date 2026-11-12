@@ -42,7 +42,7 @@ the key, so the preview, the comments, The Daily Bark and the start dialog actua
 - **It knows where your work is.** Issues with a workspace open are marked, with repository and branch, and `w`
   jumps straight there.
 - **Col writes your daily report.** A recap of your last working day from Linear, Slack, GitHub and your own commits, so you can pick
-  the threads back up. `s` saves a topic to a to-do list that outlives the next report.
+  the threads back up. `s` moves a topic to a to-do list that outlives the next report.
 
 ## How it works
 
