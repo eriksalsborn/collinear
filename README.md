@@ -13,7 +13,6 @@ issue, and accepts bones.
 
 You need macOS, [herdr](https://herdr.dev) 0.9.5 or newer, Python 3 (written and tested on 3.14; 3.9 and later
 parse it), `git`, the [GitHub CLI](https://cli.github.com) and [Claude Code](https://claude.com/claude-code).
-The repo is private, so you need to have been invited to it first.
 
 ```sh
 git clone https://github.com/eriksalsborn/collinear ~/collinear
@@ -91,6 +90,11 @@ height = "80%"
   the popup listens to the mouse.
 - **`K`** hides the footer hints, **`Z`** sends Col off duty, **`B`** gives him a bone.
 - **macOS only for now:** it uses the keychain, `open` and `pbcopy`.
+
+## Status
+
+A personal tool, shared as it is. It is used every day on one machine (macOS, herdr 0.9.5) and has not been tried
+widely, so expect rough edges on a setup that differs from the author's. Issues and pull requests are welcome.
 
 ## Tests
 
