@@ -2281,12 +2281,13 @@ def comment_as_styled_lines(author_and_date, body, width):
     return [[(f" {initials} ", f"chip{chip_colour}"), (f" {author}", "b"), (f"   {date}", "dim")], []] + markdown_to_styled_lines(body, width) + [[], []]
 
 
-def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, report=None):
+def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, report=None, is_reading=False):
     """Linear-style thread: context line, then messages with author tags and times, Claude's with a gutter bar
     and a trail of what it looked at, and an input box pinned at the bottom. Returns the scroll offset used:
     top=None starts at the latest message; while thinking it sticks to the bottom.
     report: the daily report's text, shown in a pane on the left; otherwise the issue is shown there. The thread
-    takes the right half, so what you're asking about stays in view."""
+    takes the right half, so what you're asking about stays in view.
+    is_reading: tab was pressed: the keys scroll the thread instead of typing, and the input box says so."""
     screen_height, screen_width = screen.getmaxyx()
     box_height, thread_width = screen_height - 10, min(screen_width - 6, 110)
     thread_x_offset = 0  # the thread's x offset inside the frame (the right pane)
@@ -2384,12 +2385,19 @@ def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, r
     if top < last_scroll_position:
         line(3 + rows_for_messages, " ↓ ", curses.color_pair(DIM), thread_width - 7)
     # input box, pinned
-    input_box_width, input_box_border_colour = thread_width - 4, curses.color_pair(ACCENT if not thinking else BORDER)
+    input_box_width, input_box_border_colour = thread_width - 4, curses.color_pair(ACCENT if not thinking and not is_reading else BORDER)
     line(box_height - 5, "╭" + "─" * (input_box_width - 2) + "╮", input_box_border_colour, 2)
     line(box_height - 4, "│" + " " * (input_box_width - 2) + "│", input_box_border_colour, 2)
     line(box_height - 3, "╰" + "─" * (input_box_width - 2) + "╯", input_box_border_colour, 2)
-    draw_footer_from_text(screen, "esc stop · keep typing meanwhile" if thinking else ("enter send feedback · empty-enter post it" if draft else "enter send")
-            + " · ↑/↓ scroll the thread · pgup/pgdn faster" + (" · ctrl-n new thread" if history else "") + " · ctrl-d/u scroll the side · esc close")
+    draw_footer_from_text(screen, "esc stop · keep typing meanwhile" if thinking else
+            "j/k scroll · d/u half page · g/G first/last · tab or i type again · esc close" if is_reading else
+            ("enter send feedback · empty-enter post it" if draft else "enter send")
+            + " · tab read with j/k · ↑/↓ scroll the thread" + (" · ctrl-n new thread" if history else "") + " · ctrl-d/u scroll the side · esc close")
+    if is_reading:  # reading: the keys scroll, nothing is typed
+        line(box_height - 4, " j/k ", keycap_attribute(), 4)
+        line(box_height - 4, "scroll the thread · tab to type again", curses.color_pair(MUTED), 10)
+        screen.refresh()
+        return top
     line(box_height - 4, "›", curses.color_pair(ACCENT) | curses.A_BOLD, 4)
     if text or not thinking:
         line(box_height - 4, f"{text}▏"[-(input_box_width - 8):] if text or not thinking else "", curses.A_BOLD, 6)
@@ -2429,7 +2437,7 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
         history = [message for message in json.loads(thread_file.read_text()) if message.get("a")]
     except (OSError, ValueError):
         history = []
-    prompt_context, text, top = {}, "", None
+    prompt_context, text, top, is_reading = {}, "", None, False  # is_reading: tab switches the keys from typing to scrolling the thread
     if CHAT_SIDE_PANE["top"] is not None:
         CHAT_SIDE_PANE["top"] = 0
     if report:
@@ -2437,7 +2445,7 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
     else:
         CHAT_SIDE_PANE["topic"] = None
     while True:
-        top = draw_chat(screen, title, issue, history, None, text, top, draft, topic_markdown or report)
+        top = draw_chat(screen, title, issue, history, None, text, top, draft, topic_markdown or report, is_reading)
         try:
             key = screen.get_wch()  # wide chars, so å/ä/ö work
         except curses.error:  # the 250ms timeout main() sets
@@ -2445,6 +2453,13 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
         if key == "\x1b":
             CHAT_SIDE_PANE["comments"] = None
             return ""
+        if key == "\t" or (is_reading and key in ("i", "\n", "\r", curses.KEY_ENTER)):
+            is_reading = key == "\t" and not is_reading
+            continue
+        if is_reading:  # j/k and friends scroll the thread; draw_chat keeps the position inside it
+            top = 0 if key == "g" else 10 ** 6 if key == "G" else top + {"j": 1, "k": -1, "d": 10, "u": -10, curses.KEY_DOWN: 1, curses.KEY_UP: -1,
+                                                                       curses.KEY_NPAGE: 10, curses.KEY_PPAGE: -10}.get(key, 0)
+            continue
         if key in ("\x04", "\x15"):  # ctrl-d / ctrl-u: scroll the issue or report beside the thread
             CHAT_SIDE_PANE["top"] += 10 if key == "\x04" else -10
             continue
