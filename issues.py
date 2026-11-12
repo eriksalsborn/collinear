@@ -2878,7 +2878,7 @@ class IssueListScreen:
         screen.addnstr(y, rule_x, "─" * max(screen_width - 2 - rule_x, 0), max(screen_width - 2 - rule_x, 0), colour(BORDER))
 
     def draw_issue_row(self, y, issue, rows_from_cursor, now):
-        """One issue. Columns: ▎ distance ▶ id · priority · title … assignee chip (team/project view) · project ·
+        """One issue. Columns: ▎ ▶ id · priority · title … assignee chip (team/project view) · project ·
         workspace · PR badge · age."""
         screen, colour = self.screen, self.colour
         screen_width = screen.getmaxyx()[1]
@@ -2924,8 +2924,6 @@ class IssueListScreen:
         if is_under_cursor:
             screen.addnstr(y, 1, " " * (screen_width - 2), screen_width - 2, cursor_row_attribute)
             screen.addnstr(y, 1, "▎", 1, colour(SELECTED_ROW_MARKER))
-        else:  # relative numbers, like nvim: 3j lands on the row marked 3
-            screen.addnstr(y, 2, f"{abs(rows_from_cursor):>2}"[-2:], 2, styled(DIM))
         if has_open_workspace:
             screen.addnstr(y, 4, "▶", 1, styled(GREEN, True))
         state_colour = progress_icon_for_state(issue["state"]["name"], issue["state"]["type"])[1]

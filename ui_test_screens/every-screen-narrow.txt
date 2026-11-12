@@ -8,17 +8,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -51,20 +51,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -97,20 +97,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   2  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
+      PLA-1     !!!  First issue about login                                                1h ago
  ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   1  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   2  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -143,20 +143,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -189,7 +189,7 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
@@ -235,20 +235,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -465,20 +465,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -511,20 +511,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
+      PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
                       │  PLA-1  move to                                 esc  │
   ◈ Triage 1  ────────│  / filter                                            │────────────────────
-   4  PLA-6     ▯▯▯  S│                                                      │              3d ago
+      PLA-6     ▯▯▯  S│                                                      │              3d ago
                       │  Triage                                              │
                       │  Backlog                                             │
                       │  Todo                                                │
@@ -557,20 +557,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
+      PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
                       │  PLA-1  move to                                 esc  │
   ◈ Triage 1  ────────│  / filter                                            │────────────────────
-   4  PLA-6     ▯▯▯  S│                                                      │              3d ago
+      PLA-6     ▯▯▯  S│                                                      │              3d ago
                       │  Triage                                              │
                       │  Backlog                                             │
                       │  Todo                                                │
@@ -603,20 +603,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -649,20 +649,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
                       ╭──────────────────────────────────────────────────────╮
   ◈ Triage 1  ────────│  PLA-1  priority                                esc  │────────────────────
-   4  PLA-6     ▯▯▯  S│  / filter                                            │              3d ago
+      PLA-6     ▯▯▯  S│  / filter                                            │              3d ago
                       │                                                      │
                       │  ▯▯▯ no priority                                     │
                       │ ▎!!! urgent                                          │
@@ -695,20 +695,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
                       ╭──────────────────────────────────────────────────────╮
   ◈ Triage 1  ────────│  PLA-1  priority                                esc  │────────────────────
-   4  PLA-6     ▯▯▯  S│  / filter                                            │              3d ago
+      PLA-6     ▯▯▯  S│  / filter                                            │              3d ago
                       │                                                      │
                       │  ▯▯▯ no priority                                     │
                       │  !!! urgent                                          │
@@ -741,20 +741,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     ▮▮▮  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -787,20 +787,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -833,20 +833,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◈ Triage│  PLA-1  assign to                                                       esc  │────────
-   4  PLA-│  / filter                                                                    │  3d ago
+      PLA-│  / filter                                                                    │  3d ago
           │  Who should own it. ● is the current assignee.                               │
           │                                                                              │
           │                                                                              │
@@ -879,20 +879,20 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -928,17 +928,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -974,17 +974,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1020,17 +1020,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1066,17 +1066,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1112,17 +1112,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1250,17 +1250,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1296,17 +1296,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  browse team                                    esc  │
                       │  / filter                                            │
                       │                                                      │
@@ -1342,11 +1342,11 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
 
 
@@ -1388,17 +1388,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1618,17 +1618,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1664,17 +1664,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1710,17 +1710,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1756,17 +1756,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1802,17 +1802,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1848,17 +1848,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1894,17 +1894,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -1940,11 +1940,11 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
   ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
   │  PLA-3  start                                                                           esc  │
   │  / filter                                                                                    │
@@ -1986,17 +1986,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2032,17 +2032,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  new issue  team                                esc  │
                       │  / filter                                            │
                       │                                                      │
@@ -2078,17 +2078,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2262,17 +2262,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2308,17 +2308,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◈ Triage│  PLA-3  comment                                                         esc  │────────
-   5  PLA-│  / filter                                                                    │  3d ago
+      PLA-│  / filter                                                                    │  3d ago
           │  The comment is posted to the Linear issue as you. Col's draft can take      │
           │  feedback until it's right; nothing is posted until you confirm.             │
           │                                                                              │
@@ -2354,17 +2354,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2400,8 +2400,8 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
   ╭──────────────────────────────────────────────────────────────────────────────────────────────╮
@@ -2446,17 +2446,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2492,17 +2492,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2538,17 +2538,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  browse project                                 esc  │
                       │  / filter                                            │
                       │                                                      │
@@ -2584,17 +2584,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2630,17 +2630,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  cancel PLA-3?  Third one in review…            esc  │
                       │  / filter                                            │
                       │                                                      │
@@ -2676,17 +2676,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2719,17 +2719,17 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   5  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   4  PLA-1     !!!  First issue about login                                                1h ago
-   3▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
@@ -2765,17 +2765,17 @@
   my issues   t team · T project · R reviews                                              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   5  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   4  PLA-1     !!!  First issue about login                                                1h ago
-   3▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
@@ -2814,17 +2814,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -2860,17 +2860,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  browse team                                    esc  │
                       │  / filter                                            │
                       │                                                      │
@@ -2906,17 +2906,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  browse team                                    esc  │
                       │  / ▏                                                 │
                       │                                                      │
@@ -2952,17 +2952,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  browse team                                    esc  │
                       │  / a▏                                                │
                       │                                                      │
@@ -2998,17 +2998,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  browse team                                    esc  │
                       │  / ap▏                                               │
                       │                                                      │
@@ -3044,17 +3044,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  browse team                                    esc  │
                       │  / filter                                            │
                       │                                                      │
@@ -3090,17 +3090,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3136,17 +3136,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
+      PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
                       │  PLA-3  move to                                 esc  │
   ◈ Triage 1  ────────│  / filter                                            │────────────────────
-   5  PLA-6     ▯▯▯  S│                                                      │              3d ago
+      PLA-6     ▯▯▯  S│                                                      │              3d ago
                       │  Triage                                              │
                       │  Backlog                                             │
                       │  Todo                                                │
@@ -3182,17 +3182,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
+      PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
                       │  PLA-3  move to                                 esc  │
   ◈ Triage 1  ────────│  / filter                                            │────────────────────
-   5  PLA-6     ▯▯▯  S│                                                      │              3d ago
+      PLA-6     ▯▯▯  S│                                                      │              3d ago
                       │  Triage                                              │
                       │  Backlog                                             │
                       │  Todo                                                │
@@ -3226,16 +3226,16 @@
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◐ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3274,17 +3274,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3550,17 +3550,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3596,17 +3596,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3642,17 +3642,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3688,17 +3688,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3734,17 +3734,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3780,17 +3780,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3872,17 +3872,17 @@
  ▎    PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   4  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   5  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -3915,20 +3915,20 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   3  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4007,20 +4007,20 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   3  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4053,20 +4053,20 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   3  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
-   1  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   1  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4099,20 +4099,20 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   3  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4145,10 +4145,10 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   3  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
+      PLA-1     !!!  First issue about login                                                1h ago
    ╭────────────────────────────────────────────────────────────────────────────────────────────╮o
    │  keys  every key                                                                      esc  │
   ○│  MOVE AROUND                                   CHANGE THE ISSUE                            │─
@@ -4191,20 +4191,20 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   3  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4237,20 +4237,20 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   3  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
+      PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
                       │  PLA-4  move to                                 esc  │
   ◈ Triage 1  ────────│  / filter                                            │────────────────────
-   2  PLA-6     ▯▯▯  S│                                                      │              3d ago
+      PLA-6     ▯▯▯  S│                                                      │              3d ago
                       │  Triage                                              │
                       │  Backlog                                             │
                       │ ▎Todo                                                │
@@ -4283,20 +4283,20 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
-   3  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ○ Todo 1  ──────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
+      PLA-5     ▯▯▯  F╭──────────────────────────────────────────────────────╮              3w ago
                       │  PLA-4  move to                                 esc  │
   ◈ Triage 1  ────────│  / filter                                            │────────────────────
-   2  PLA-6     ▯▯▯  S│                                                      │              3d ago
+      PLA-6     ▯▯▯  S│                                                      │              3d ago
                       │  Triage                                              │
                       │  Backlog                                             │
                       │  Todo                                                │
@@ -4329,18 +4329,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4375,18 +4375,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
-   3  PLA-│                                                                              │  3w ago
+      PLA-│                                                                              │  3w ago
           │   welcome, Erik                                                              │
   ◈ Triage│                                                                              │────────
-   4  PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
+      PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
           │   have in progress.                                                          │
           │                                                                              │
           │   I'll walk you through it for real. Do what my speech bubble says, down     │
@@ -4421,18 +4421,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4467,18 +4467,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4513,18 +4513,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4559,18 +4559,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   2  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   1  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   2  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -4605,18 +4605,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5111,18 +5111,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5157,18 +5157,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────╭──────────────────────────────────────────────────────╮────────────────────
-   4  PLA-6     ▯▯▯  S│  PLA-4  move to                                 esc  │              3d ago
+      PLA-6     ▯▯▯  S│  PLA-4  move to                                 esc  │              3d ago
                       │  / filter                                            │
                       │                                                      │
                       │  Triage                                              │
@@ -5203,18 +5203,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────╭──────────────────────────────────────────────────────╮────────────────────
-   4  PLA-6     ▯▯▯  S│  PLA-4  move to                                 esc  │              3d ago
+      PLA-6     ▯▯▯  S│  PLA-4  move to                                 esc  │              3d ago
                       │  / filter                                            │
                       │                                                      │
                       │  Triage                                              │
@@ -5249,18 +5249,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────╭──────────────────────────────────────────────────────╮────────────────────
-   4  PLA-6     ▯▯▯  S│  PLA-4  move to                                 esc  │              3d ago
+      PLA-6     ▯▯▯  S│  PLA-4  move to                                 esc  │              3d ago
                       │  / filter                                            │
                       │                                                      │
                       │  Triage                                              │
@@ -5295,18 +5295,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5341,18 +5341,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
+      PLA-6     ▯▯▯  S╭──────────────────────────────────────────────────────╮              3d ago
                       │  PLA-4  priority                                esc  │
                       │  / filter                                            │
                       │                                                      │
@@ -5387,18 +5387,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5433,18 +5433,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-╭──────────────────────────────────────────────────────────────────────────────╮  3d ago
+      PLA-╭──────────────────────────────────────────────────────────────────────────────╮  3d ago
           │  PLA-4  assign to                                                       esc  │
           │  / filter                                                                    │
           │  Who should own it. ● is the current assignee.                               │
@@ -5479,18 +5479,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5663,18 +5663,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
  ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   3  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   4  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5709,18 +5709,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   2  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   1  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
  ▎    PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   2  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   3  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5755,18 +5755,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   3  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   2  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   1  PLA-1     !!!  First issue about login                                                1h ago
+      PLA-1     !!!  First issue about login                                                1h ago
  ▎  ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   2  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5801,18 +5801,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   1  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -5847,12 +5847,12 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎╭──────────────────────────────────────────────────────────────────────────────────────────────╮
@@ -5893,18 +5893,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
  ▎    PLA-│                                                                              │  3w ago
           │   starting work, and the green markers                                       │
   ◈ Triage│                                                                              │────────
-   1  PLA-│   When you start an issue with  l  /  enter , four things happen: it is      │  3d ago
+      PLA-│   When you start an issue with  l  /  enter , four things happen: it is      │  3d ago
           │   assigned to you and moved to In Progress, it gets a git worktree on its    │
           │   own branch, a herdr workspace named after it, and Claude Code opens        │
           │   there with the issue already read.                                         │
@@ -5939,18 +5939,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
  ▎    PLA-│                                                                              │  3w ago
           │   starting work, and the green markers                                       │
   ◈ Triage│                                                                              │────────
-   1  PLA-│   When you start an issue with  l  /  enter , four things happen: it is      │  3d ago
+      PLA-│   When you start an issue with  l  /  enter , four things happen: it is      │  3d ago
           │   assigned to you and moved to In Progress, it gets a git worktree on its    │
           │   own branch, a herdr workspace named after it, and Claude Code opens        │
           │   there with the issue already read.                                         │
@@ -5985,18 +5985,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
  ▎    PLA-│                                                                              │  3w ago
           │   starting work, and the green markers                                       │
   ◈ Triage│                                                                              │────────
-   1  PLA-│   When you start an issue with  l  /  enter , four things happen: it is      │  3d ago
+      PLA-│   When you start an issue with  l  /  enter , four things happen: it is      │  3d ago
           │   assigned to you and moved to In Progress, it gets a git worktree on its    │
           │   own branch, a herdr workspace named after it, and Claude Code opens        │
           │   there with the issue already read.                                         │
@@ -6031,18 +6031,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   1  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -6077,18 +6077,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
  ▎    PLA-│                                                                              │  3w ago
           │   welcome, Erik                                                              │
   ◈ Triage│                                                                              │────────
-   1  PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
+      PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
           │   have in progress.                                                          │
           │                                                                              │
           │   I'll walk you through it for real. Do what my speech bubble says, down     │
@@ -6123,18 +6123,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   1  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -6169,18 +6169,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   1  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -6215,18 +6215,18 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   4  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   3  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   2  PLA-1     !!!  First issue about login                                                1h ago
-   1▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
-   1  PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
+      PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
 
 
 
@@ -6261,15 +6261,15 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   5  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   4  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   3  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
@@ -6307,15 +6307,15 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   5  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   4  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   3  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
           ╭──────────────────────────────────────────────────────────────────────────────╮
   ◌ Backlo│  Col  a quick tour                                                      esc  │────────
-   1  PLA-│                                                                              │  3w ago
+      PLA-│                                                                              │  3w ago
           │   welcome, Erik                                                              │
   ◈ Triage│                                                                              │────────
  ▎    PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
@@ -6353,15 +6353,15 @@
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
-   5  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
-   4  PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+      PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+      PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
 
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
-   3  PLA-1     !!!  First issue about login                                                1h ago
-   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+      PLA-1     !!!  First issue about login                                                1h ago
+    ▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
 
   ◌ Backlog 1  ───────────────────────────────────────────────────────────────────────────────────
-   1  PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
+      PLA-5     ▯▯▯  Fifth in the backlog                                                   3w ago
 
   ◈ Triage 1  ────────────────────────────────────────────────────────────────────────────────────
  ▎    PLA-6     ▯▯▯  Sixth needs triage                                                     3d ago
