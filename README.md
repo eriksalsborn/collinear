@@ -17,7 +17,7 @@ python3 ~/collinear/install.py
 ```
 
 Then press `prefix + alt + i` in herdr. The first time, Col shows a checklist and fixes most of it with you right
-there (Linear key, repositories folder, and so on). Then he gives you a one-minute tour.
+there (Linear key, repositories folder, and so on). Then he walks you through the app in a short hands-on tour.
 
 If that key is already yours: `python3 ~/collinear/install.py --issues-key prefix+alt+l`.
 To update: `git -C ~/collinear pull && python3 ~/collinear/install.py`.

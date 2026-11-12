@@ -4393,7 +4393,7 @@
           │   in the corner, and watch what happens.                                     │
           │                                                                              │
           │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-          │   esc / h goes back.  q closes the popup.                                    │
+          │   esc / h goes back (only esc while you are typing).  q closes the popup.    │
           │                                                                              │
           │                                                                              │
           │                                                                              │
@@ -4456,7 +4456,7 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-     “1/10  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
+     “1/16  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
@@ -4502,7 +4502,7 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                                                      “2/10  and k to move back up” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                      “2/16  and k to move back up” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
@@ -4548,12 +4548,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                                  “3/10  space previews the issue under the cursor” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                  “3/16  space previews the issue under the cursor” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 100 before 27
+########## 100 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4594,12 +4594,288 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                          “4/10  esc or h goes back. that works everywhere. try it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                              “4/16  l opens the comments on the issue, next to it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   enter start   l comments   a ask Col   c Col drafts a comment                      │   ╰─ω─╯~   │
   C write a comment   L open in Linear   j/k scroll   d/u half page                  ╰──╴ Col ╶───╯
 
-########## 101 before 'b'
+########## 101 before 'C'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
+   │  ◕ In Review   ▮▯▯ low   @ Erik Tester          │ comments  2                              │o
+ ▎ │  ────────────────────────────────────────────── │ ───────────────────────────────────────  │o
+   │  no description yet                             │ Sam  ·  2026-11-10                       │
+  ◔│                                                 │ first comment                            │─
+   │                                                 │                                          │o
+   │                                                 │ ?  ·  2026-11-11                         │o
+   │                                                 │ second comment                           │
+  ◌│                                                 │                                          │─
+   │                                                 │ • with a list                            │o
+   │                                                 │                                          │
+  ◈│                                                 │                                          │─
+   │                                                 │                                          │o
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                      “5/16  C writes a comment yourself. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
+  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+
+########## 102 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
+   │  ◕ In Review   ▮▯▯ low   @ Erik Tester          │ comments  2                              │o
+ ▎ │  ────────────────────────────────────────────── │ ───────────────────────────────────────  │o
+   │  no description yet                             │ Sam  ·  2026-11-10                       │
+  ◔│                                                 │ first comment                            │─
+   │                                                 │                                          │o
+   │                                                 │ ?  ·  2026-11-11                         │o
+   │                                                 │ second comment                           │
+  ◌│                                                 │                                          │─
+   │                                                 │ • with a list                            │o
+   │                                                 │                                          │
+  ◈│                                                 │                                          │─
+   │                                                 │                                          │o
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │ ╭─────────────────────────────────────╮  │
+   │                                                 │ │ ›  write a comment…                 │  │
+   │                                                 │ ╰─────────── enter post · esc cancel ─╯  │
+   │                                                 │                                          │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+       “6/16  you'd type it here, and enter posts it for real. esc cancels for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
+  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+
+########## 103 before 'c'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
+   │  ◕ In Review   ▮▯▯ low   @ Erik Tester          │ comments  2                              │o
+ ▎ │  ────────────────────────────────────────────── │ ───────────────────────────────────────  │o
+   │  no description yet                             │ Sam  ·  2026-11-10                       │
+  ◔│                                                 │ first comment                            │─
+   │                                                 │                                          │o
+   │                                                 │ ?  ·  2026-11-11                         │o
+   │                                                 │ second comment                           │
+  ◌│                                                 │                                          │─
+   │                                                 │ • with a list                            │o
+   │                                                 │                                          │
+  ◈│                                                 │                                          │─
+   │                                                 │                                          │o
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+             “7/16  c lets me draft the comment for you. nothing is posted unasked” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
+  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+
+########## 104 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  comment · Col drafts                                                          esc  │─
+   │  Fourth sits in todo                        │    ✦ Col drafts a comment on PLA-4           │o
+ ▎ │  ◕ In Review   ▮▯▯ low   @ Erik Tester      │    ────────────────────────────────────────  │o
+   │  ────────────────────────────────────────   │                                              │
+  ◔│                                             │     Say what the comment should get          │─
+   │   COMMENTS  2                               │     across. Col drafts it in your voice      │o
+   │                                             │     from the issue; send feedback until      │o
+   │  Sam  ·  2026-11-10                         │     it's right, then post it. Nothing is     │
+  ◌│  first comment                              │     posted until you confirm.                │─
+   │                                             │                                              │o
+   │  ?  ·  2026-11-11                           │                                              │
+  ◈│  second comment                             │                                              │─
+   │                                             │                                              │o
+   │  • with a list                              │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │   ╭────────────────────────────────────────╮ │
+   │                                             │   │ › ▏write a brief…                      │ │
+   │                                             │   ╰────────────────────────────────────────╯ │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+               “8/16  you say what it should get across, I write it. esc goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  enter send feedback   empty-enter post it   ↑/↓ scroll the thread                  │   ╰─ω─╯~   │
+  pgup/pgdn faster   ctrl-d/u scroll the side   esc close                            ╰──╴ Col ╶───╯
+
+########## 105 before 'a'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
+   │  ◕ In Review   ▮▯▯ low   @ Erik Tester          │ comments  2                              │o
+ ▎ │  ────────────────────────────────────────────── │ ───────────────────────────────────────  │o
+   │  no description yet                             │ Sam  ·  2026-11-10                       │
+  ◔│                                                 │ first comment                            │─
+   │                                                 │                                          │o
+   │                                                 │ ?  ·  2026-11-11                         │o
+   │                                                 │ second comment                           │
+  ◌│                                                 │                                          │─
+   │                                                 │ • with a list                            │o
+   │                                                 │                                          │
+  ◈│                                                 │                                          │─
+   │                                                 │                                          │o
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                 │                                          │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                   “9/16  a asks me anything about the issue: I look it up for you” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  j/k next/previous comment   d/u half page   C write a comment                      │   ╰─ω─╯~   │
+  c Col drafts one   a ask Col   h back   esc close                                  ╰──╴ Col ╶───╯
+
+########## 106 before 27
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
+  ◕│  PLA-4  ask Col                                                                       esc  │─
+   │  Fourth sits in todo                        │    ✦ ask Col about PLA-4                     │o
+ ▎ │  ◕ In Review   ▮▯▯ low   @ Erik Tester      │    ────────────────────────────────────────  │o
+   │  ────────────────────────────────────────   │                                              │
+  ◔│  no description yet                         │     Ask anything about the issue. Col        │─
+   │                                             │     reads it, its comments and linked        │o
+   │   COMMENTS  2                               │     PRs, and can look things up in           │o
+   │                                             │     Linear, Slack, GitHub, git and the       │
+  ◌│  Sam  ·  2026-11-10                         │     web. It can also post to Slack when      │─
+   │  first comment                              │     you ask it to. Linear and code stay      │o
+   │                                             │     read-only. The thread is kept with       │
+  ◈│  ?  ·  2026-11-11                           │     the issue.                               │─
+   │  second comment                             │                                              │o
+   │                                             │                                              │
+   │  • with a list                              │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │                                              │
+   │                                             │   ╭────────────────────────────────────────╮ │
+   │                                             │   │ › ▏ask a question…                     │ │
+   │                                             │   ╰────────────────────────────────────────╯ │
+   │                                                                                            │
+   ╰────────────────────────────────────────────────────────────────────────────────────────────╯
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+             “10/16  you'd type a question and enter. esc goes back to your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+  enter send   ↑/↓ scroll the thread   pgup/pgdn faster                              │   ╰─ω─╯~   │
+  ctrl-d/u scroll the side   esc close                                               ╰──╴ Col ╶───╯
+
+########## 107 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4640,12 +4916,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                     “5/10  b opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                    “11/16  b opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 102 before 'l'
+########## 108 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4686,12 +4962,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-               “6/10  j / k pick a topic. l or enter shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+              “12/16  j / k pick a topic. l or enter shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c clean slate on it   a ask Col about it              │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
-########## 103 before 27
+########## 109 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4732,12 +5008,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                   “7/10  go to its issue, start it, or ask me. esc or h backs out” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                  “13/16  go to its issue, start it, or ask me. esc or h backs out” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back           ╰──╴ Col ╶───╯
 
-########## 104 before 27
+########## 110 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4778,12 +5054,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                         “8/10  esc or h once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                        “14/16  esc or h once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c clean slate on it   a ask Col about it              │   ╰─ω─╯~   │
   j/k topics   d/u page   r write it again   esc/h close                             ╰──╴ Col ╶───╯
 
-########## 105 before 10
+########## 111 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4824,12 +5100,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-               “9/10  l or enter starts work on an issue. press it and have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
+              “15/16  l or enter starts work on an issue. press it and have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 106 before 27
+########## 112 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4870,12 +5146,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                     “10/10  this is where work begins. esc or h backs out for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                     “16/16  this is where work begins. esc or h backs out for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                              ╰──╴ Col ╶───╯
 
-########## 107 before 10
+########## 113 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4916,12 +5192,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                                                                        “good pick” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                    “asking around” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
   l/enter done                                                                       ╰──╴ Col ╶───╯
 
-########## 108 before 'O'
+########## 114 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4967,7 +5243,7 @@
   l/enter start   space preview   a ask Col   C comment   c clean slate              │   ╰─ω─╯~   │
   S status   P priority   A assign   X cancel   U undo   ? all keys                  ╰──╴ Col ╶───╯
 
-########## 109 before 27
+########## 115 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4991,7 +5267,7 @@
           │   in the corner, and watch what happens.                                     │
           │                                                                              │
           │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-          │   esc / h goes back.  q closes the popup.                                    │
+          │   esc / h goes back (only esc while you are typing).  q closes the popup.    │
           │                                                                              │
           │                                                                              │
           │                                                                              │
@@ -5013,7 +5289,7 @@
                                                                                      │   ╰─ω─╯~   │
   l/enter start the tour   esc/h not now                                             ╰──╴ Col ╶───╯
 
-########## 110 before 'q'
+########## 116 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today

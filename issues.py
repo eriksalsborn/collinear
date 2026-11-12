@@ -643,19 +643,29 @@ class TourStep(NamedTuple):
 
 
 GUIDED_TOUR_STEPS = [
+    # the list
     TourStep("these are your issues, the furthest along on top. press j to move down", "moved down", True),
     TourStep("and k to move back up", "moved up", True),
+    # one issue: read it, its comments, comment on it, ask about it
     TourStep("space previews the issue under the cursor", "preview", True),
-    TourStep("esc or h goes back. that works everywhere. try it", "list", True),
+    TourStep("l opens the comments on the issue, next to it", "comments pane", True),
+    TourStep("C writes a comment yourself. press it", "composer", True),
+    TourStep("you'd type it here, and enter posts it for real. esc cancels for now", "composer closed", True),
+    TourStep("c lets me draft the comment for you. nothing is posted unasked", "draft chat", True),
+    TourStep("you say what it should get across, I write it. esc goes back", "preview", True),
+    TourStep("a asks me anything about the issue: I look it up for you", "ask chat", True),
+    TourStep("you'd type a question and enter. esc goes back to your issues", "list", True),
+    # the daily report
     TourStep("b opens The Daily Bark: my recap of your last two days", "report", False),
     TourStep("j / k pick a topic. l or enter shows what you can do with it", "topic menu", False),
     TourStep("go to its issue, start it, or ask me. esc or h backs out", "report", False),
     TourStep("esc or h once more, and you're back at your issues", "list", False),
+    # starting work
     TourStep("l or enter starts work on an issue. press it and have a look", "start dialog", True),
     TourStep("this is where work begins. esc or h backs out for now", "list", True),
 ]
-STEP_THAT_ASKS_FOR_A_TOPIC = 5  # and the step after it closes the topic's menu: both are skipped when there is no topic
-STEP_BACK_AT_THE_LIST_AFTER_THE_REPORT = 7
+STEP_THAT_ASKS_FOR_A_TOPIC = next(number for number, step in enumerate(GUIDED_TOUR_STEPS) if step.done_when == "topic menu")
+STEP_BACK_AT_THE_LIST_AFTER_THE_REPORT = STEP_THAT_ASKS_FOR_A_TOPIC + 2  # both steps in between are skipped when there is no topic
 
 
 def next_tour_step_from(step_number):
@@ -701,8 +711,8 @@ TOUR_WELCOME_CARD = ("welcome", [
     "",
     "I'll walk you through it for real. **Do what my speech bubble says**, down in the corner, and watch what happens.",
     "",
-    "Two pairs of keys work everywhere:  `l` / `enter` goes forward or picks,  `esc` / `h` goes back.  `q` closes "
-    "the popup."])
+    "Two pairs of keys work everywhere:  `l` / `enter` goes forward or picks,  `esc` / `h` goes back (only `esc` "
+    "while you are typing).  `q` closes the popup."])
 TOUR_CLOSING_CARD = ("starting work, and the green markers", [
     "When you start an issue with `l` / `enter`, four things happen: it is **assigned to you and moved to In "
     "Progress**, it gets a **git worktree** on its own branch, a **herdr workspace** named after it, and **Claude "
@@ -1816,6 +1826,7 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
     scroll, esc stops a running answer or closes. draft: Claude writes a comment from the brief, feedback makes
     a new draft, enter on an empty input posts the latest draft (after a confirm).
     report: a thread with Col about the daily report instead (issue is None), shown beside it, kept per day."""
+    tour_sees("report chat" if report else "draft chat" if draft else "ask chat")
     if report:
         topic_number, CHAT_SIDE_PANE["topic"] = (topic[0], topic[1]) if topic else (None, None)
         title = "Col  ·  daily report" + (f" · topic {topic_number + 1}" if topic else "")
@@ -2139,6 +2150,7 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
             finally:
                 screen.timeout(250)
             if typed_character == "\x1b":
+                tour_sees("composer closed")
                 comment_being_written = None
             elif typed_character in ("\n", "\r", curses.KEY_ENTER):
                 if comment_being_written.strip():
@@ -2163,6 +2175,7 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
         if key in (27, ord(" "), ord("q")):
             return None
         if key == ord("C"):  # write a comment here, with the thread in view
+            tour_sees("composer")
             if comments is None:
                 comments = "loading"
                 threading.Thread(target=load, daemon=True).start()
@@ -2181,6 +2194,7 @@ def show_issue_preview(screen, issue, open_workspace_summary=False):
                 return None
             focused_pane = 0
         elif key == ord("l"):
+            tour_sees("comments pane")
             if comments is None:  # expand now, fetch in the background
                 comments = "loading"
                 threading.Thread(target=load, daemon=True).start()
