@@ -737,7 +737,7 @@
 
 ########## 017 before 'U'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                                ✦  ✓ PLA-1 → high  ✦ ▰▱▱▱▱ 1 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -783,7 +783,7 @@
 
 ########## 018 before 'A'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -829,7 +829,7 @@
 
 ########## 019 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -875,7 +875,7 @@
 
 ########## 020 before '/'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -921,7 +921,7 @@
 
 ########## 021 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -967,7 +967,7 @@
 
 ########## 022 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1013,7 +1013,7 @@
 
 ########## 023 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1059,7 +1059,7 @@
 
 ########## 024 before '-'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1105,7 +1105,7 @@
 
 ########## 025 before '2'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1151,7 +1151,7 @@
 
 ########## 026 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              1 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◔ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -1197,7 +1197,7 @@
 
 ########## 027 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              1 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◔ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -1243,7 +1243,7 @@
 
 ########## 028 before 't'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1289,7 +1289,7 @@
 
 ########## 029 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1335,7 +1335,7 @@
 
 ########## 030 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
  h ‹ my issues  ›   APP · App   everyone's open issues in the team                        4 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1381,7 +1381,7 @@
 
 ########## 031 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1427,7 +1427,7 @@
 
 ########## 032 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -1473,7 +1473,7 @@
 
 ########## 033 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -1519,7 +1519,7 @@
 
 ########## 034 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -1565,7 +1565,7 @@
 
 ########## 035 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -1611,7 +1611,7 @@
 
 ########## 036 before 'K'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1657,7 +1657,7 @@
 
 ########## 037 before 'K'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1703,7 +1703,7 @@
 
 ########## 038 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1749,7 +1749,7 @@
 
 ########## 039 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1795,7 +1795,7 @@
 
 ########## 040 before 'y'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1841,7 +1841,7 @@
 
 ########## 041 before 'g'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1887,7 +1887,7 @@
 
 ########## 042 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1933,7 +1933,7 @@
 
 ########## 043 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -1979,7 +1979,7 @@
 
 ########## 044 before 'n'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2025,7 +2025,7 @@
 
 ########## 045 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2071,7 +2071,7 @@
 
 ########## 046 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2117,7 +2117,7 @@
 
 ########## 047 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
@@ -2163,7 +2163,7 @@
 
 ########## 048 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
@@ -2209,7 +2209,7 @@
 
 ########## 049 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  ask Col                                                                       esc  │─
@@ -2255,7 +2255,7 @@
 
 ########## 050 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2301,7 +2301,7 @@
 
 ########## 051 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2347,7 +2347,7 @@
 
 ########## 052 before 'D'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2393,7 +2393,7 @@
 
 ########## 053 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2439,7 +2439,7 @@
 
 ########## 054 before 'R'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2485,7 +2485,7 @@
 
 ########## 055 before 'T'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2531,7 +2531,7 @@
 
 ########## 056 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2577,7 +2577,7 @@
 
 ########## 057 before 'X'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2623,7 +2623,7 @@
 
 ########## 058 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2669,7 +2669,7 @@
 
 ########## 059 before 'G'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2715,7 +2715,7 @@
 
 ########## 060 before '5'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2761,7 +2761,7 @@
 
 ########## 061 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2807,7 +2807,7 @@
 
 ########## 062 before 't'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2853,7 +2853,7 @@
 
 ########## 063 before '/'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2899,7 +2899,7 @@
 
 ########## 064 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2945,7 +2945,7 @@
 
 ########## 065 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -2991,7 +2991,7 @@
 
 ########## 066 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3037,7 +3037,7 @@
 
 ########## 067 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3083,7 +3083,7 @@
 
 ########## 068 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3129,7 +3129,7 @@
 
 ########## 069 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3175,7 +3175,7 @@
 
 ########## 070 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-1 → high  ✦ ▰▰▱▱▱ 2 today
   my issues   W active workspaces · p to-do · t team · T project · R reviews              6 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3221,7 +3221,7 @@
 
 ########## 071 before 'U'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                                ✦  ✓ PLA-3 → Done  ✦ ▰▰▰▱▱ 3 today
   my issues   W active workspaces · p to-do · t team · T project · R re5 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◐ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
@@ -3267,7 +3267,7 @@
 
 ########## 072 before ' '
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3313,7 +3313,7 @@
 
 ########## 073 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3359,7 +3359,7 @@
 
 ########## 074 before 'o'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3405,7 +3405,7 @@
 
 ########## 075 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3451,7 +3451,7 @@
 
 ########## 076 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3497,7 +3497,7 @@
 
 ########## 077 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-3  Third one in review                                                           esc  │─
@@ -3543,7 +3543,7 @@
 
 ########## 078 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3589,7 +3589,7 @@
 
 ########## 079 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3635,7 +3635,7 @@
 
 ########## 080 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3681,7 +3681,7 @@
 
 ########## 081 before 'B'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3727,7 +3727,7 @@
 
 ########## 082 before 'Z'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3773,7 +3773,7 @@
 
 ########## 083 before 'm'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3819,7 +3819,7 @@
 
 ########## 084 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re0 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -3865,7 +3865,7 @@
 
 ########## 085 before ('click row with', 'PLA-4')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3911,7 +3911,7 @@
 
 ########## 086 before ('click row with', 'PLA-4')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -3957,7 +3957,7 @@
 
 ########## 087 before ('click hint', 27)
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4003,7 +4003,7 @@
 
 ########## 088 before ('wheel', 'down')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4049,7 +4049,7 @@
 
 ########## 089 before ('wheel', 'up')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4095,7 +4095,7 @@
 
 ########## 090 before ('click hint', '?')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4141,7 +4141,7 @@
 
 ########## 091 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4187,7 +4187,7 @@
 
 ########## 092 before ('click hint', 'S')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4233,7 +4233,7 @@
 
 ########## 093 before ('click row with', 'In Review')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4279,7 +4279,7 @@
 
 ########## 094 before ('click row with', 'In Review')
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                            ✦  ✓ undid: PLA-3 → Done  ✦ ▰▰▰▰▱ 4 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────
@@ -4325,7 +4325,7 @@
 
 ########## 095 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4371,7 +4371,7 @@
 
 ########## 096 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4417,7 +4417,7 @@
 
 ########## 097 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4463,7 +4463,7 @@
 
 ########## 098 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4509,7 +4509,7 @@
 
 ########## 099 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4555,7 +4555,7 @@
 
 ########## 100 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4601,7 +4601,7 @@
 
 ########## 101 before ' '
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -4647,7 +4647,7 @@
 
 ########## 102 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4693,7 +4693,7 @@
 
 ########## 103 before 'C'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4739,7 +4739,7 @@
 
 ########## 104 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4785,7 +4785,7 @@
 
 ########## 105 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4831,7 +4831,7 @@
 
 ########## 106 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4877,7 +4877,7 @@
 
 ########## 107 before 'c'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -4923,7 +4923,7 @@
 
 ########## 108 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  comment · Col drafts                                                          esc  │─
@@ -4969,7 +4969,7 @@
 
 ########## 109 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  comment · Col drafts                                                          esc  │─
@@ -5015,7 +5015,7 @@
 
 ########## 110 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  Fourth sits in todo                                                           esc  │─
@@ -5061,7 +5061,7 @@
 
 ########## 111 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  PLA-4  ask Col                                                                       esc  │─
@@ -5107,7 +5107,7 @@
 
 ########## 112 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5153,7 +5153,7 @@
 
 ########## 113 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5199,7 +5199,7 @@
 
 ########## 114 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5245,7 +5245,7 @@
 
 ########## 115 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5291,7 +5291,7 @@
 
 ########## 116 before 'P'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5337,7 +5337,7 @@
 
 ########## 117 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5383,7 +5383,7 @@
 
 ########## 118 before 'A'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5429,7 +5429,7 @@
 
 ########## 119 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5475,7 +5475,7 @@
 
 ########## 120 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5521,7 +5521,7 @@
 
 ########## 121 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -5567,7 +5567,7 @@
 
 ########## 122 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -5613,7 +5613,7 @@
 
 ########## 123 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -5659,7 +5659,7 @@
 
 ########## 124 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5705,7 +5705,7 @@
 
 ########## 125 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5751,7 +5751,7 @@
 
 ########## 126 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5797,7 +5797,7 @@
 
 ########## 127 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5843,7 +5843,7 @@
 
 ########## 128 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5889,7 +5889,7 @@
 
 ########## 129 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5935,7 +5935,7 @@
 
 ########## 130 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -5981,7 +5981,7 @@
 
 ########## 131 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6027,7 +6027,7 @@
 
 ########## 132 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6073,7 +6073,7 @@
 
 ########## 133 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6119,7 +6119,7 @@
 
 ########## 134 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6165,7 +6165,7 @@
 
 ########## 135 before 'Q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6211,7 +6211,7 @@
 
 ########## 136 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6257,7 +6257,7 @@
 
 ########## 137 before 'O'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6303,7 +6303,7 @@
 
 ########## 138 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6349,7 +6349,7 @@
 
 ########## 139 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -6395,7 +6395,7 @@
 
 ########## 140 before 's'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                             ✦  ✓ PLA-4 → In Review  ✦ ▰▰▰▰▰ 5 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6441,7 +6441,7 @@
 
 ########## 141 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▱▱▱▱ 6 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6487,7 +6487,7 @@
 
 ########## 142 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▱▱▱▱ 6 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6533,7 +6533,7 @@
 
 ########## 143 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▱▱▱▱ 6 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6579,7 +6579,7 @@
 
 ########## 144 before 'a'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▱▱▱▱ 6 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6625,7 +6625,7 @@
 
 ########## 145 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭────────────────────────────────────────────────────────────────────────────────────────────╮──
   ◕│  Col  daily report · topic 4                                                          esc  │─
@@ -6671,7 +6671,7 @@
 
 ########## 146 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6717,7 +6717,7 @@
 
 ########## 147 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6763,7 +6763,7 @@
 
 ########## 148 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6809,7 +6809,7 @@
 
 ########## 149 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6855,7 +6855,7 @@
 
 ########## 150 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                          ✦  ✓ moved to your to-do list  ✦ ▰▰▱▱▱ 7 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6901,7 +6901,7 @@
 
 ########## 151 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▱▱ 8 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -6947,7 +6947,7 @@
 
 ########## 152 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▱▱ 8 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -6993,7 +6993,7 @@
 
 ########## 153 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▱▱ 8 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7039,7 +7039,7 @@
 
 ########## 154 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▱▱ 8 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7085,7 +7085,7 @@
 
 ########## 155 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7131,7 +7131,7 @@
 
 ########## 156 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7177,7 +7177,7 @@
 
 ########## 157 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7223,7 +7223,7 @@
 
 ########## 158 before 'm'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7269,7 +7269,7 @@
 
 ########## 159 before 'e'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7315,7 +7315,7 @@
 
 ########## 160 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                       ✦  ✓ discarded from your to-do list  ✦ ▰▰▰▰▱ 9 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7361,7 +7361,7 @@
 
 ########## 161 before 'i'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7407,7 +7407,7 @@
 
 ########## 162 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7453,7 +7453,7 @@
 
 ########## 163 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7499,7 +7499,7 @@
 
 ########## 164 before 'm'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7545,7 +7545,7 @@
 
 ########## 165 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7591,7 +7591,7 @@
 
 ########## 166 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7637,7 +7637,7 @@
 
 ########## 167 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ added to your to-do list  ✦ ▰▰▰▰▰ 10 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7683,7 +7683,7 @@
 
 ########## 168 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7729,7 +7729,7 @@
 
 ########## 169 before 'p'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7775,7 +7775,7 @@
 
 ########## 170 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7821,7 +7821,7 @@
 
 ########## 171 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────────  ^ ▐▌ ^  T O - D O   L I S T  ───────────────────────────────╮──
   ◕│  Col  to-do list                                                                      esc  │─
@@ -7867,7 +7867,7 @@
 
 ########## 172 before 'b'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -7913,7 +7913,7 @@
 
 ########## 173 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                      ✦  ✓ discarded from your to-do list  ✦ ▰▱▱▱▱ 11 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -7959,7 +7959,7 @@
 
 ########## 174 before 'r'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -8005,7 +8005,7 @@
 
 ########## 175 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -8051,7 +8051,7 @@
 
 ########## 176 before 27
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──╭──────────────────────────  ^ ▐▌ ^  T H E   D A I L Y   B A R K  ───────────────────────────╮──
   ◕│  Col  daily report                                                                    esc  │─
@@ -8097,7 +8097,7 @@
 
 ########## 177 before 'W'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
@@ -8143,7 +8143,7 @@
 
 ########## 178 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -8189,7 +8189,7 @@
 
 ########## 179 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -8235,7 +8235,7 @@
 
 ########## 180 before 'S'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -8281,7 +8281,7 @@
 
 ########## 181 before 'W'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
  h ‹ my issues  ›   active workspaces   everything you have a workspace3 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Progress 1  ───────────────────────────────────────────────────────────────────────────────
@@ -8327,7 +8327,7 @@
 
 ########## 182 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
-
+                         ✦  ✓ discarded from the report  ✦ ▰▰▱▱▱ 12 today
   my issues   W active workspaces · p to-do · t team · T project · R re6 issues  ·  ✓ 1 done today
  ──────────────────────────────────────────────────────────────────────────────────────────────────
   ◕ In Review 1  ─────────────────────────────────────────────────────────────────────────────────

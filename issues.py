@@ -221,6 +221,43 @@ def col_reacts_to(kind, mood="cheer"):
         col_says(lines[int(time.time()) % len(lines)], mood)
 
 
+CHANGE_RECEIPT = {"text": "", "count": 0, "shown_at": 0}  # the last change the user made, shown for a few seconds
+COL_LINES_FOR_EVERY_FIFTH_CHANGE = ["{n} changes today. you're on a roll", "that's {n} today. who's a good dev?", "{n}! the herd is moving",
+                                    "{n} today. I can barely keep up"]
+
+
+def celebrate_change(what_happened):
+    """The receipt every change gets, so you know it took: what happened, in a green chip under the title that
+    arrives with a few sparkles, and how many changes that makes today, as pips filling up to the next five.
+    Every fifth one Col has something to say."""
+    today = f"{datetime.now():%Y-%m-%d}"
+    changes_today = read_stored_value("changes") or {}
+    count = changes_today.get("n", 0) + 1 if changes_today.get("date") == today else 1
+    write_stored_value("changes", {"date": today, "n": count})
+    CHANGE_RECEIPT.update(text=what_happened, count=count, shown_at=time.time())
+    if count % 5 == 0:
+        col_says(COL_LINES_FOR_EVERY_FIFTH_CHANGE[count // 5 % len(COL_LINES_FOR_EVERY_FIFTH_CHANGE)].format(n=count), "woof", 6)
+
+
+def draw_change_receipt(screen):
+    """The receipt of the last change, centred on the row under the title, for four seconds. It is drawn with the
+    list, and the list is behind every dialog, so it shows wherever the change was made."""
+    age = time.time() - CHANGE_RECEIPT["shown_at"]
+    if not CHANGE_RECEIPT["text"] or not 0 <= age < 4:
+        return
+    screen_width = screen.getmaxyx()[1]
+    chip = f" ✓ {CHANGE_RECEIPT['text']} "[:max(screen_width - 30, 10)]
+    pips_filled = CHANGE_RECEIPT["count"] % 5 or 5
+    tally = f"{'▰' * pips_filled}{'▱' * (5 - pips_filled)} {CHANGE_RECEIPT['count']} today"
+    sparkles_left, sparkles_right = (("✦ ", " ✦"), ("✦ · ", " · ✦"), ("·   ", "   ·"))[int(age / 0.2)] if age < 0.6 else ("", "")
+    x = max((screen_width - len(chip) - len(tally) - 3) // 2, 1)
+    green = curses.color_pair(GREEN) | curses.A_BOLD
+    screen.addnstr(1, max(x - len(sparkles_left), 0), sparkles_left, len(sparkles_left), curses.color_pair(YELLOW) | curses.A_BOLD)
+    screen.addnstr(1, x, chip, len(chip), green | curses.A_REVERSE)
+    screen.addnstr(1, x + len(chip), sparkles_right, len(sparkles_right), curses.color_pair(YELLOW) | curses.A_BOLD)
+    screen.addnstr(1, x + len(chip) + 3, tally, max(screen_width - x - len(chip) - 4, 0), green if pips_filled == 5 else curses.color_pair(MUTED))
+
+
 def read_stored_value(name, default=None):
     try:
         return json.loads((CACHE_DIR / f"herdr-issues-{name}.json").read_text())
@@ -241,6 +278,7 @@ def change_issue_optimistically(issue, input, fields_to_set_locally, label, undo
             {"assigneeId": (issue.get("assignee") or {}).get("id")} if "assignee" in fields_to_set_locally else {"priority": issue["priority"] or 0}
         UNDO_STACK.append((issue, input_that_puts_it_back, {field: issue[field] for field in fields_to_set_locally}, label))
     issue.update(fields_to_set_locally)
+    celebrate_change(label if undo else f"undid: {label}")
 
     def work():
         try:
@@ -1855,6 +1893,7 @@ def add_topic_to_todo_list(screen):
         text = ask_for_one_line(screen, "to-do  ·  add one", "enter add · esc cancel", ("one line, Markdown works",))
     if text:
         save_todo_topics(saved_todo_topics() + ["- " + text])
+        celebrate_change("added to your to-do list")
         col_says("on the list", "cheer", 4)
 
 
@@ -2001,6 +2040,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
         if topic and showing_todo_list and key == ord("x"):
             save_todo_topics([saved_topic for position, saved_topic in enumerate(saved_todo_topics()) if position != topic.number])
             TODO_LIST["text"] = todo_list_as_report_text()
+            celebrate_change("discarded from your to-do list")
             col_says("off the list", "cheer", 4)
             continue
         if topic and not showing_todo_list and UiState.guided_tour_step is None and (key == ord("x") or does_something_with_the_topic):
@@ -2010,6 +2050,7 @@ def show_daily_report(screen, issues, today, showing_todo_list=False):
                 save_todo_topics(todo_topics_with_one_more(saved_todo_topics(), markdown_of_each_topic(report_text)[topic.number]))
             DAILY_REPORT["text"] = report_text_without_topic(report_text, topic.number)
             write_stored_value("brief", {k: DAILY_REPORT[k] for k in ("date", "text", "steps", "cur")})
+            celebrate_change("discarded from the report" if key == ord("x") else "moved to your to-do list")
             if key in (ord("s"), ord("x")):
                 col_says("moved to your to-do list. `p` opens it" if key == ord("s") else "dropped it", "cheer", 6)
                 continue
@@ -2194,6 +2235,7 @@ def post_comment_to_linear(issue, body):
         raise RuntimeError("nothing is posted during the tour")
     linear_graphql("mutation($id: String!, $b: String!) { commentCreate(input: {issueId: $id, body: $b}) { success } }",
         {"id": issue["id"], "b": body})
+    celebrate_change(f"comment posted on {issue['identifier']}")
 
 
 def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None, topic_markdown=None, is_todo=False):
@@ -2753,6 +2795,7 @@ def create_issue_and_write_it(screen, title="", body=""):
         screen, "creating the issue…", "mutation($t: String!, $d: String, $team: String!, $me: String!) { issueCreate(input: "
         "{title: $t, description: $d, teamId: $team, assigneeId: $me}) { issue { %s } } }" % ISSUE_FIELDS,
         {"t": title, "d": body or None, "team": team["id"], "me": my_user_id})["issueCreate"]["issue"]
+    celebrate_change(f"created {issue['identifier']}")
     return start_work_on_issue(screen, issue, "issue") or f"created {issue['identifier']}"
 
 
@@ -2904,7 +2947,7 @@ class IssueListScreen:
                 col_says("off you go. `?` if you forget a key, `O` for the tour", "cheer", 8)
             self.draw()
             col_is_animating = (COL_SPEECH["mood"] == "woof" and time.time() < COL_SPEECH["until"]) or time.time() % 37 < 2.5 \
-                or UiState.col_is_working
+                or UiState.col_is_working or time.time() - CHANGE_RECEIPT["shown_at"] < 1  # the receipt's sparkles
             self.screen.timeout(120 if col_is_animating else 250)
             key = self.screen.getch()
             if DEMO_SETUP_MODE and self.issue_row_numbers:  # --demo-setup: open the onboarding screen over the loaded list, once
@@ -3099,6 +3142,7 @@ class IssueListScreen:
         self.draw_rows()
         self.draw_col_in_his_corner()
         self.draw_footer()
+        draw_change_receipt(self.screen)
 
     def draw_title_and_view_line(self):
         screen, colour = self.screen, self.colour
