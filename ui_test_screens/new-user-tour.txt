@@ -22,11 +22,11 @@
                     │   I'll walk you through it for real. Do what my speech bubble says, down     │
                     │   in the corner, and watch what happens.                                     │
                     │                                                                              │
-                    │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-                    │   esc / h goes back (only esc where you could type).                         │
+                    │   Two pairs of keys work everywhere:   l  /  enter  goes forward or          │
+                    │   picks,   esc  /  h  goes back (only  esc  where you could type).           │
                     │                                                                              │
                     │   During the tour only the key I ask for works, so you can't get lost or     │
-                    │   post anything.  q leaves the tour.                                         │
+                    │   post anything.   q  leaves the tour.                                       │
                     │                                                                              │
                     │                                                                              │
                     │                                                                              │
@@ -86,7 +86,7 @@
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
-                                          “1/4  b opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                        “1/4   b  opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                          │  ▜▖ ▼  ▗▛  │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
   h close                                                                                                ╰──╴ Col ╶───╯
@@ -132,7 +132,7 @@
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
-                              “2/4  nothing to report yet, it fills up as you work. esc or h goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                          “2/4  nothing to report yet, it fills up as you work.  esc  or  h  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                          │  ▜▖ ▼  ▗▛  │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
   h close                                                                                                ╰──╴ Col ╶───╯
@@ -154,7 +154,7 @@
                     │                                                                              │
                     │   starting work, and the green markers                                       │
                     │                                                                              │
-                    │   When you start an issue with l / enter, four things happen: it is          │
+                    │   When you start an issue with  l  /  enter , four things happen: it is      │
                     │   assigned to you and moved to In Progress, it gets a git worktree on its    │
                     │   own branch, a herdr workspace named after it, and Claude Code opens        │
                     │   there with the issue already read.                                         │
@@ -165,11 +165,11 @@
                     │   workspace (its number in herdr's sidebar) and the repository.              │
                     │                                                                              │
                     │   So the green rows answer what am I in the middle of? Put the cursor on     │
-                    │   one and press w to jump straight into it: the fastest way to move          │
+                    │   one and press  w  to jump straight into it: the fastest way to move        │
                     │   between the things you have going.                                         │
                     │                                                                              │
-                    │   The loop:  open, look for green, w.   l / enter to start something new.    │
-                    │   b in the morning.   O for this tour again.                                 │
+                    │   The loop:  open, look for green,  w .    l  /  enter  to start             │
+                    │   something new.    b  in the morning.    O  for this tour again.            │
                     ╰──────────────────────────────────────────────────────────────────────────────╯
 
 
@@ -224,7 +224,7 @@
 
                                                                                                          ╭────────────╮
                                                                                                          │  ◢▀▄▁▁▁▄▀◣ │
-                                                    “off you go. ? if you forget a key, O for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                “off you go.  ?  if you forget a key,  O  for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                          │  ▜▖ ▼  ▗▛  │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   / filter   ? all keys      │   ╰─ω─╯~   │
   h close                                                                                                ╰──╴ Col ╶───╯

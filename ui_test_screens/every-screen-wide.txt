@@ -4392,11 +4392,11 @@
                                    │   I'll walk you through it for real. Do what my speech bubble says, down     │
                                    │   in the corner, and watch what happens.                                     │
                                    │                                                                              │
-                                   │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-                                   │   esc / h goes back (only esc where you could type).                         │
+                                   │   Two pairs of keys work everywhere:   l  /  enter  goes forward or          │
+                                   │   picks,   esc  /  h  goes back (only  esc  where you could type).           │
                                    │                                                                              │
                                    │   During the tour only the key I ask for works, so you can't get lost or     │
-                                   │   post anything.  q leaves the tour.                                         │
+                                   │   post anything.   q  leaves the tour.                                       │
                                    │                                                                              │
                                    │                                                                              │
                                    │                                                                              │
@@ -4456,7 +4456,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                       “1/16  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                     “1/16  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -4502,7 +4502,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                       “1/16  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                     “1/16  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -4548,7 +4548,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                       “1/16  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                     “1/16  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -4594,7 +4594,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                                        “2/16  and k to move back up” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                      “2/16  and  k  to move back up” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -4640,7 +4640,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                    “3/16  space previews the issue under the cursor” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                  “3/16   space  previews the issue under the cursor” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -4686,7 +4686,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                “4/16  l opens the comments on the issue, next to it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                              “4/16   l  opens the comments on the issue, next to it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   enter start   l comments   a ask Col   c Col drafts a comment   C write a comment   L open in Linear   j/k scroll                    │   ╰─ω─╯~   │
   d/u half page   esc/h close                                                                                                          ╰──╴ Col ╶───╯
@@ -4732,7 +4732,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                        “5/16  C writes a comment yourself. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                      “5/16   C  writes a comment yourself. press it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   C write a comment   c Col drafts one   a ask Col   h back   esc close                    ╰──╴ Col ╶───╯
@@ -4778,7 +4778,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                            “6/16  you'd type it here and enter would post it. esc closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                        “6/16  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   C write a comment   c Col drafts one   a ask Col   h back   esc close                    ╰──╴ Col ╶───╯
@@ -4824,7 +4824,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                            “6/16  you'd type it here and enter would post it. esc closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                        “6/16  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   C write a comment   c Col drafts one   a ask Col   h back   esc close                    ╰──╴ Col ╶───╯
@@ -4870,7 +4870,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                            “6/16  you'd type it here and enter would post it. esc closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                        “6/16  you'd type it here and  enter  would post it.  esc  closes it for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   C write a comment   c Col drafts one   a ask Col   h back   esc close                    ╰──╴ Col ╶───╯
@@ -4916,7 +4916,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                               “7/16  c lets me draft the comment for you. nothing is posted unasked” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                             “7/16   c  lets me draft the comment for you. nothing is posted unasked” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   C write a comment   c Col drafts one   a ask Col   h back   esc close                    ╰──╴ Col ╶───╯
@@ -4962,7 +4962,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                 “8/16  you say what it should get across, I write it. esc goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                               “8/16  you say what it should get across, I write it.  esc  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter send feedback   empty-enter post it   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close          ╰──╴ Col ╶───╯
@@ -5008,7 +5008,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                 “8/16  you say what it should get across, I write it. esc goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                               “8/16  you say what it should get across, I write it.  esc  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter send feedback   empty-enter post it   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close          ╰──╴ Col ╶───╯
@@ -5054,7 +5054,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                     “9/16  a asks me anything about the issue: I look it up for you” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                   “9/16   a  asks me anything about the issue: I look it up for you” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   j/k next/previous comment   d/u half page   C write a comment   c Col drafts one   a ask Col   h back   esc close                    ╰──╴ Col ╶───╯
@@ -5100,7 +5100,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                               “10/16  you'd type a question and enter. esc goes back to your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                           “10/16  you'd type a question and  enter .  esc  goes back to your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter send   ↑/↓ scroll the thread   pgup/pgdn faster   ctrl-d/u scroll the side   esc close                                         ╰──╴ Col ╶───╯
@@ -5146,7 +5146,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                      “11/16  b opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                    “11/16   b  opens The Daily Bark: my recap of your last two days” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -5192,7 +5192,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                “12/16  j / k pick a topic. l or enter shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                        “12/16   j  /  k  pick a topic.  l  or  enter  shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter actions for PLA-99   c clean slate on it   a ask Col about it   j/k topics   d/u page   r write it again   esc/h close       ╰──╴ Col ╶───╯
@@ -5238,7 +5238,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                    “13/16  go to its issue, start it, or ask me. esc or h backs out” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                “13/16  go to its issue, start it, or ask me.  esc  or  h  backs out” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
@@ -5284,7 +5284,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                          “14/16  esc or h once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                      “14/16   esc  or  h  once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter actions for PLA-99   c clean slate on it   a ask Col about it   j/k topics   d/u page   r write it again   esc/h close       ╰──╴ Col ╶───╯
@@ -5330,7 +5330,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                “15/16  l or enter starts work on an issue. press it and have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                            “15/16   l  or  enter  starts work on an issue. press it and have a look” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -5376,7 +5376,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                       “16/16  this is where work begins. esc or h backs out for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                   “16/16  this is where work begins.  esc  or  h  backs out for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
@@ -5398,7 +5398,7 @@
    3  PLA-5     ▯▯▯         Fifth i│                                                                              │                           3w ago
                                    │   starting work, and the green markers                                       │
   ◈ Triage 1  ─────────────────────│                                                                              │─────────────────────────────────
-   4  PLA-6     ▯▯▯         Sixth n│   When you start an issue with l / enter, four things happen: it is          │                           3d ago
+   4  PLA-6     ▯▯▯         Sixth n│   When you start an issue with  l  /  enter , four things happen: it is      │                           3d ago
                                    │   assigned to you and moved to In Progress, it gets a git worktree on its    │
                                    │   own branch, a herdr workspace named after it, and Claude Code opens        │
                                    │   there with the issue already read.                                         │
@@ -5409,11 +5409,11 @@
                                    │   workspace (its number in herdr's sidebar) and the repository.              │
                                    │                                                                              │
                                    │   So the green rows answer what am I in the middle of? Put the cursor on     │
-                                   │   one and press w to jump straight into it: the fastest way to move          │
+                                   │   one and press  w  to jump straight into it: the fastest way to move        │
                                    │   between the things you have going.                                         │
                                    │                                                                              │
-                                   │   The loop:  open, look for green, w.   l / enter to start something new.    │
-                                   │   b in the morning.   O for this tour again.                                 │
+                                   │   The loop:  open, look for green,  w .    l  /  enter  to start             │
+                                   │   something new.    b  in the morning.    O  for this tour again.            │
                                    ╰──────────────────────────────────────────────────────────────────────────────╯
 
 
@@ -5468,7 +5468,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                                  “off you go. ? if you forget a key, O for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                              “off you go.  ?  if you forget a key,  O  for the tour” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -5496,11 +5496,11 @@
                                    │   I'll walk you through it for real. Do what my speech bubble says, down     │
                                    │   in the corner, and watch what happens.                                     │
                                    │                                                                              │
-                                   │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-                                   │   esc / h goes back (only esc where you could type).                         │
+                                   │   Two pairs of keys work everywhere:   l  /  enter  goes forward or          │
+                                   │   picks,   esc  /  h  goes back (only  esc  where you could type).           │
                                    │                                                                              │
                                    │   During the tour only the key I ask for works, so you can't get lost or     │
-                                   │   post anything.  q leaves the tour.                                         │
+                                   │   post anything.   q  leaves the tour.                                       │
                                    │                                                                              │
                                    │                                                                              │
                                    │                                                                              │
@@ -5560,7 +5560,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                       “1/16  these are your issues, the furthest along on top. press j to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                     “1/16  these are your issues, the furthest along on top. press  j  to move down” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -5606,7 +5606,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                             “tour's off, every key is yours again. O starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                           “tour's off, every key is yours again.  O  starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -5652,7 +5652,7 @@
 
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
-                                                                             “tour's off, every key is yours again. O starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                           “tour's off, every key is yours again.  O  starts it over” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                                                                        │  ▜▖ ▼  ▗▛  │
   l/enter start   space preview   a ask Col   C comment   c clean slate   S status   P priority   A assign   X cancel   U undo         │   ╰─ω─╯~   │
   n new issue   b daily report   t/T team / project   R reviews   r refresh   g PR   L Linear   y copy link   ? all keys               ╰──╴ Col ╶───╯
@@ -5680,11 +5680,11 @@
                                    │   I'll walk you through it for real. Do what my speech bubble says, down     │
                                    │   in the corner, and watch what happens.                                     │
                                    │                                                                              │
-                                   │   Two pairs of keys work everywhere:  l / enter goes forward or picks,       │
-                                   │   esc / h goes back (only esc where you could type).                         │
+                                   │   Two pairs of keys work everywhere:   l  /  enter  goes forward or          │
+                                   │   picks,   esc  /  h  goes back (only  esc  where you could type).           │
                                    │                                                                              │
                                    │   During the tour only the key I ask for works, so you can't get lost or     │
-                                   │   post anything.  q leaves the tour.                                         │
+                                   │   post anything.   q  leaves the tour.                                       │
                                    │                                                                              │
                                    │                                                                              │
                                    │                                                                              │

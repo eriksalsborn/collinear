@@ -646,26 +646,26 @@ class TourStep(NamedTuple):
 DOWN_KEYCODES, UP_KEYCODES = (ord("j"), curses.KEY_DOWN), (ord("k"), curses.KEY_UP)
 GUIDED_TOUR_STEPS = [
     # the list
-    TourStep("these are your issues, the furthest along on top. press j to move down", DOWN_KEYCODES, "moved down", True),
-    TourStep("and k to move back up", UP_KEYCODES, "moved up", True),
+    TourStep("these are your issues, the furthest along on top. press `j` to move down", DOWN_KEYCODES, "moved down", True),
+    TourStep("and `k` to move back up", UP_KEYCODES, "moved up", True),
     # one issue: read it, its comments, comment on it, ask about it
-    TourStep("space previews the issue under the cursor", (ord(" "),), "preview", True),
-    TourStep("l opens the comments on the issue, next to it", (ord("l"),), "comments pane", True),
-    TourStep("C writes a comment yourself. press it", (ord("C"),), "composer", True),
-    TourStep("you'd type it here and enter would post it. esc closes it for now", (27,), "composer closed", True),
-    TourStep("c lets me draft the comment for you. nothing is posted unasked", (ord("c"),), "draft chat", True),
-    TourStep("you say what it should get across, I write it. esc goes back", (27,), "preview", True),
-    TourStep("a asks me anything about the issue: I look it up for you", (ord("a"),), "ask chat", True),
-    TourStep("you'd type a question and enter. esc goes back to your issues", (27,), "list", True),
+    TourStep("`space` previews the issue under the cursor", (ord(" "),), "preview", True),
+    TourStep("`l` opens the comments on the issue, next to it", (ord("l"),), "comments pane", True),
+    TourStep("`C` writes a comment yourself. press it", (ord("C"),), "composer", True),
+    TourStep("you'd type it here and `enter` would post it. `esc` closes it for now", (27,), "composer closed", True),
+    TourStep("`c` lets me draft the comment for you. nothing is posted unasked", (ord("c"),), "draft chat", True),
+    TourStep("you say what it should get across, I write it. `esc` goes back", (27,), "preview", True),
+    TourStep("`a` asks me anything about the issue: I look it up for you", (ord("a"),), "ask chat", True),
+    TourStep("you'd type a question and `enter`. `esc` goes back to your issues", (27,), "list", True),
     # the daily report
-    TourStep("b opens The Daily Bark: my recap of your last two days", (ord("b"),), "report", False),
-    TourStep("j / k pick a topic. l or enter shows what you can do with it",
+    TourStep("`b` opens The Daily Bark: my recap of your last two days", (ord("b"),), "report", False),
+    TourStep("`j` / `k` pick a topic. `l` or `enter` shows what you can do with it",
              DOWN_KEYCODES + UP_KEYCODES + FORWARD_KEYCODES + BACK_KEYCODES, "topic menu", False),  # back too: there may be no topic to pick
-    TourStep("go to its issue, start it, or ask me. esc or h backs out", BACK_KEYCODES, "report", False),
-    TourStep("esc or h once more, and you're back at your issues", BACK_KEYCODES, "list", False),
+    TourStep("go to its issue, start it, or ask me. `esc` or `h` backs out", BACK_KEYCODES, "report", False),
+    TourStep("`esc` or `h` once more, and you're back at your issues", BACK_KEYCODES, "list", False),
     # starting work
-    TourStep("l or enter starts work on an issue. press it and have a look", FORWARD_KEYCODES, "start dialog", True),
-    TourStep("this is where work begins. esc or h backs out for now", BACK_KEYCODES, "list", True),
+    TourStep("`l` or `enter` starts work on an issue. press it and have a look", FORWARD_KEYCODES, "start dialog", True),
+    TourStep("this is where work begins. `esc` or `h` backs out for now", BACK_KEYCODES, "list", True),
 ]
 STEP_THAT_ASKS_FOR_A_TOPIC = next(number for number, step in enumerate(GUIDED_TOUR_STEPS) if step.done_when == "topic menu")
 STEP_BACK_AT_THE_LIST_AFTER_THE_REPORT = STEP_THAT_ASKS_FOR_A_TOPIC + 2  # both steps in between are skipped when there is no topic
@@ -711,7 +711,7 @@ def key_the_tour_lets_through(key):
         return key
     if keycode == ord("q"):
         UiState.guided_tour_step = None
-        col_says("tour's off, every key is yours again. O starts it over", "cheer", 12)
+        col_says("tour's off, every key is yours again. `O` starts it over", "cheer", 12)
     return -1
 
 
@@ -719,8 +719,8 @@ def words_of_guided_tour_step():
     step_number = UiState.guided_tour_step
     words = GUIDED_TOUR_STEPS[step_number].words
     if step_number == STEP_THAT_ASKS_FOR_A_TOPIC and daily_report_has_no_topic_yet():
-        words = ("I'm still writing today's report, it takes a minute. esc or h goes back" if not DAILY_REPORT.get("text") else
-                 "nothing to report yet, it fills up as you work. esc or h goes back")
+        words = ("I'm still writing today's report, it takes a minute. `esc` or `h` goes back" if not DAILY_REPORT.get("text") else
+                 "nothing to report yet, it fills up as you work. `esc` or `h` goes back")
     steps_that_apply = [number for number, step in enumerate(GUIDED_TOUR_STEPS) if UiState.list_has_issues or not step.needs_an_issue]
     return f"{steps_that_apply.index(step_number) + 1}/{len(steps_that_apply)}  {words}"
 
@@ -750,6 +750,20 @@ TOUR_CLOSING_CARD = ("starting work, and the green markers", [
     "`O` for this tour again."])
 
 
+KEYCAP_PADDING = "⠀"  # a blank that is not a space (braille blank): keeps a keycap's padding through the word wrap
+
+
+def keycap_attribute():
+    """A key drawn as a key: a light block with dark, bold text."""
+    return curses.color_pair(DEFAULT_TEXT) | curses.A_REVERSE | curses.A_BOLD
+
+
+def text_and_keycaps(text):
+    """[(text, is a key)] for a line where keys are written in backticks: "press `j` to move" ->
+    [("press ", False), (" j ", True), (" to move", False)]. The key comes back padded, ready to draw as a keycap."""
+    return [(f" {part} " if number % 2 else part, bool(number % 2)) for number, part in enumerate(text.split("`")) if part]
+
+
 def show_tour_card(screen, card, footer_text):
     """One card of the tour over the list; returns the key that was pressed on it. A line is Markdown, or
     "@green …" to show the green marker as it looks on a row."""
@@ -766,10 +780,11 @@ def show_tour_card(screen, card, footer_text):
             line(row, f" {text_line[len('@green '):]} ", curses.color_pair(GREEN) | curses.A_REVERSE | curses.A_BOLD, 5)
             row += 1
             continue
-        for segments in (markdown_to_styled_lines(text_line, box_width - 9) or [[]])[:last_row_inside_the_box - row + 1]:  # "" is a blank row
+        padded_keys = re.sub(r"`([^`]+)`", rf"`{KEYCAP_PADDING}\1{KEYCAP_PADDING}`", text_line)  # a key in backticks becomes a keycap
+        for segments in (markdown_to_styled_lines(padded_keys, box_width - 9) or [[]])[:last_row_inside_the_box - row + 1]:  # "" is a blank row
             column = 4
             for text, style in segments:
-                line(row, text, attribute_by_style[style], column)
+                line(row, text.replace(KEYCAP_PADDING, " "), keycap_attribute() if style == "code" else attribute_by_style[style], column)
                 column += len(text)
             row += 1
     draw_footer_from_text(screen, footer_text)
@@ -2544,7 +2559,7 @@ class IssueListScreen:
             if UiState.tour_closing_card_is_due:
                 UiState.tour_closing_card_is_due = False
                 show_tour_card(self.screen, TOUR_CLOSING_CARD, "l/enter done")
-                col_says("off you go. ? if you forget a key, O for the tour", "cheer", 8)
+                col_says("off you go. `?` if you forget a key, `O` for the tour", "cheer", 8)
             self.draw()
             col_is_animating = (COL_SPEECH["mood"] == "woof" and time.time() < COL_SPEECH["until"]) or time.time() % 37 < 2.5 \
                 or UiState.col_is_working
@@ -2914,8 +2929,13 @@ class IssueListScreen:
         name_tag_x = face_x - 1 + (outline_width - 7) // 2
         screen.addnstr(screen_height - 1, name_tag_x, f"{tag_left} Col {tag_right}", 7, colour(COL_ACCENT))  # his collar tag
         screen.addnstr(screen_height - 1, name_tag_x + 2, "Col", 3, colour(COL_ACCENT) | curses.A_BOLD)
-        bubble = f"“{words}” ‹" if words else ""  # everything he says is in quotes
-        screen.addnstr(screen_height - 4, max(face_x - len(bubble) - 1, 0), bubble, max(face_x - 1, 0), colour(COL_ACCENT) | curses.A_BOLD)
+        bubble_parts = text_and_keycaps(f"“{words}” ‹") if words else []  # everything he says is in quotes; `keys` are keycaps
+        column = max(face_x - sum(len(text) for text, _ in bubble_parts) - 1, 0)
+        for text, is_key in bubble_parts:
+            if column < face_x - 1:
+                screen.addnstr(screen_height - 4, column, text, face_x - 1 - column,
+                               keycap_attribute() if is_key and not UiState.grey_out_behind_dialog else colour(COL_ACCENT) | curses.A_BOLD)
+            column += len(text)
 
     def footer_hints(self, only_those_that_work_on_an_empty_list=False):
         """[(keys, text)] for the footer, from KEY_BINDINGS. Jumping to an open workspace goes first when there is
@@ -3313,6 +3333,8 @@ def _test():
     prs.LOCAL_SETTINGS.clear()
     prs.LOCAL_SETTINGS.update(real_settings)
     assert shortened_folder(Path.home() / "code", 18) == "~/code" and shortened_folder(Path("/a/very/long/path/to/the/repositories"), 18) == "…/the/repositories"
+    assert text_and_keycaps("press `j` to move") == [("press ", False), (" j ", True), (" to move", False)]
+    assert text_and_keycaps("`esc` or `h`") == [(" esc ", True), (" or ", False), (" h ", True)] and text_and_keycaps("woof") == [("woof", False)]
     assert herdr_version_from("herdr 0.9.5") == (0, 9, 5) and herdr_version_from("herdr 0.10.0-preview") == (0, 10, 0) and herdr_version_from("?") is None
     pr = lambda **m: {"url": "https://github.com/o/r/pull/1", "metadata": m}
     assert pull_request_badge_key({"status": "inReview", "hasConflicts": True}) == "conflict"
