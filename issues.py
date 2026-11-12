@@ -623,21 +623,29 @@ def show_key_reference(screen):
     screen.timeout(250)
 
 
-# The tour for someone new: five cards, a minute to read. (title, what Col says meanwhile, lines.) A line is Markdown,
-# or "@green …" to show the green marker as it looks on a row.
+# The tour for someone new: five cards, a minute or two. (title, what Col says meanwhile, lines, keys to try.)
+# A line is Markdown, or "@green …" to show the green marker as it looks on a row. A key to try is (how it is
+# written, the keycodes that count); the card ticks each one off as it is pressed and moves on after the last.
+# It is a dry run: nothing is started or opened by the keys pressed here.
+ENTER_KEYCODES = (10, 13, curses.KEY_ENTER)
 ONBOARDING_TOUR = [
     ("my issues", "this is the whole flock",
      ["This list is **every Linear issue assigned to you**, grouped by status, the furthest along on top.",
       "",
-      "`j` `k` move  ·  just type to filter  ·  `space` previews an issue with its comments",
+      "`j` and `k` move the cursor  ·  just type to filter  ·  `space` previews an issue",
       "",
-      "Open it from anywhere in herdr, glance, close with `q`. It is your to-do list, one key away."]),
+      "`h` goes back one step and `q` closes the popup, from anywhere. Open, glance, close: your to-do list is "
+      "one key away."],
+     [("j", (ord("j"), curses.KEY_DOWN)), ("k", (ord("k"), curses.KEY_UP))]),
     ("start working", "one key and I fetch everything",
-     ["`enter` on an issue sets the whole thing up: a git worktree on the issue's branch, a herdr workspace named "
-      "after the issue, and Claude Code in it with the issue already read.",
+     ["`l` or `enter` on an issue sets the whole thing up: a git worktree on the issue's branch, a herdr workspace "
+      "named after the issue, and Claude Code in it with the issue already read.",
       "",
       "Work goes in phases, **write → plan → build → review**. Each leaves notes, so you can stop today and pick "
-      "it up next week exactly where you were."]),
+      "it up next week exactly where you were.",
+      "",
+      "`l` / `enter` also picks the highlighted row in every menu, and `h` backs out of one."],
+     [("l or enter", (ord("l"),) + ENTER_KEYCODES)]),
     ("the green markers", "green means you're already on it",
      ["@green ▶ ws 3 · my-repo",
       "",
@@ -645,33 +653,41 @@ ONBOARDING_TOUR = [
       "on this machine. It names the workspace (the number in herdr's sidebar) and the repository.",
       "",
       "So the green rows are your answer to *what am I in the middle of?*  Put the cursor on one and press `w` to "
-      "jump straight into it. That is the fastest way to move between the things you have going."]),
+      "jump straight into it. That is the fastest way to move between the things you have going."],
+     [("w", (ord("w"),))]),
     ("the daily bark", "I write it while you get coffee",
      ["`b` opens **The Daily Bark**: my recap of your last two days, from Linear, Slack and GitHub. What is on your "
       "plate, the loose ends, and where to start today.",
       "",
-      "`j` `k` move between topics  ·  `enter` on one: go to its issue, start it, or ask me about it",
+      "`j` `k` move between topics  ·  `l` / `enter` on one: go to its issue, start it, or ask me about it  ·  "
+      "`h` / `q` close it",
       "",
-      "Use it in the morning, or after a few days away, instead of scrolling back through everything."]),
+      "Use it in the morning, or after a few days away, instead of scrolling back through everything."],
+     [("b", (ord("b"),))]),
     ("that's it", "you've got this",
      ["The bottom rows always show what you can do right here, and every hint is clickable.",
       "",
       "`?` every key  ·  `a` ask me about an issue  ·  `O` this tour again  ·  `B` a bone for me",
       "",
-      "The loop: **open, look for green,** `w` to get back into your work.  `enter` to start something new."]),
+      "The loop: **open, look for green,** `w` to get back into your work.  `l` / `enter` to start something new.  "
+      "`h` / `q` to leave."],
+     []),
 ]
 
 
 def show_onboarding_tour(screen):
-    """The five cards of ONBOARDING_TOUR, over the list. enter goes on, h goes back, esc skips the rest.
+    """The five cards of ONBOARDING_TOUR, over the list. Each card waits for the keys it teaches and ticks them off;
+    after the last one it moves on by itself. l/enter also goes on without trying, h goes back, q or esc leaves.
     Shown by itself the first time the list opens; O shows it again."""
     attribute_by_style = daily_report_text_attributes()
-    card_number = 0
+    card_number, keys_tried_on_this_card = 0, 0
     while card_number < len(ONBOARDING_TOUR):
-        title, col_line, text_lines = ONBOARDING_TOUR[card_number]
+        title, col_line, text_lines, keys_to_try = ONBOARDING_TOUR[card_number]
         is_last_card = card_number == len(ONBOARDING_TOUR) - 1
-        col_says(col_line, "cheer", 60)
-        line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 19, 80)
+        all_keys_tried = keys_tried_on_this_card == len(keys_to_try)
+        if not keys_tried_on_this_card:
+            col_says(col_line, "cheer", 60)
+        line, box_width = draw_dialog_box(screen, "Col  ·  a quick tour", 21, 80)
         line(3, f"{card_number + 1} of {len(ONBOARDING_TOUR)}", curses.color_pair(DIM), 4)
         line(3, title, curses.color_pair(ACCENT) | curses.A_BOLD, 12)
         row = 5
@@ -686,18 +702,35 @@ def show_onboarding_tour(screen):
                     line(row, text, attribute_by_style[style], column)
                     column += len(text)
                 row += 1
+        if keys_to_try:  # "try it now:  ✓ j   ○ k": ticked as they are pressed
+            line(17, "try it now:", curses.color_pair(ACCENT) | curses.A_BOLD, 4)
+            column = 17
+            for key_number, (written_as, _) in enumerate(keys_to_try):
+                was_tried = key_number < keys_tried_on_this_card
+                text = f"{'✓' if was_tried else '○'} {written_as}"
+                line(17, text, curses.color_pair(GREEN if was_tried else DEFAULT_TEXT) | curses.A_BOLD, column)
+                column += len(text) + 4
+            if all_keys_tried:
+                line(17, "nice.", curses.color_pair(GREEN) | curses.A_BOLD, column)
         progress_dots = " ".join("●" if number == card_number else "○" for number in range(len(ONBOARDING_TOUR)))
-        line(17, progress_dots, curses.color_pair(ACCENT), (box_width - len(progress_dots)) // 2)
+        line(19, progress_dots, curses.color_pair(ACCENT), (box_width - len(progress_dots)) // 2)
         draw_footer_from_text(screen, ("l/enter done" if is_last_card else "l/enter next") + (" · h back" if card_number else "")
-                              + ("" if is_last_card else " · esc skip the tour"))
+                              + " · q/esc leave the tour")
         screen.refresh()
+        if keys_to_try and all_keys_tried:  # a beat to see the tick, then on to the next card
+            curses.napms(700)
+            card_number, keys_tried_on_this_card = card_number + 1, 0
+            continue
         key = screen.getch()
-        if key in (27, ord("q")):
+        if keys_to_try and key in keys_to_try[keys_tried_on_this_card][1]:
+            keys_tried_on_this_card += 1
+            col_says(("that's the one", "good. again like that", "yes! exactly", "see? easy")[(card_number + keys_tried_on_this_card) % 4], "cheer", 60)
+        elif key in (27, ord("q")):
             break
-        if key in (10, 13, curses.KEY_ENTER, ord("l"), ord("j"), curses.KEY_DOWN, curses.KEY_RIGHT):
-            card_number += 1
-        elif key in (ord("h"), ord("k"), curses.KEY_UP, curses.KEY_LEFT):
-            card_number = max(card_number - 1, 0)
+        elif key in (ord("l"),) + ENTER_KEYCODES:
+            card_number, keys_tried_on_this_card = card_number + 1, 0
+        elif key == ord("h") and card_number:
+            card_number, keys_tried_on_this_card = card_number - 1, 0
     col_says("off you go. ? if you forget a key, O for the tour", "cheer", 8)
 
 

@@ -4369,7 +4369,7 @@
                                                                                      │   ╰─ω─╯~   │
   ✓ PLA-4 → In Review  ·  U undo                                                     ╰──╴ Col ╶───╯
 
-########## 096 before 10
+########## 096 before 'j'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4381,27 +4381,27 @@
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
    1  PLA-1     !!!  First issue about login                                                1h ago
    2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
-
-  ◌ Backlo╭──────────────────────────────────────────────────────────────────────────────╮────────
-   3  PLA-│  Col  a quick tour                                                      esc  │  3w ago
-          │                                                                              │
-  ◈ Triage│   1 of 5  my issues                                                          │────────
-   4  PLA-│                                                                              │  3d ago
-          │   This list is every Linear issue assigned to you, grouped by status, the    │
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   1 of 5  my issues                                                          │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│   This list is every Linear issue assigned to you, grouped by status, the    │  3d ago
           │   furthest along on top.                                                     │
           │                                                                              │
-          │   j k move  ·  just type to filter  ·  space previews an issue with its      │
-          │   comments                                                                   │
+          │   j and k move the cursor  ·  just type to filter  ·  space previews an      │
+          │   issue                                                                      │
           │                                                                              │
-          │   Open it from anywhere in herdr, glance, close with q. It is your to-do     │
-          │   list, one key away.                                                        │
+          │   h goes back one step and q closes the popup, from anywhere. Open,          │
+          │   glance, close: your to-do list is one key away.                            │
           │                                                                              │
           │                                                                              │
           │                                                                              │
+          │                                                                              │
+          │   try it now:  ○ j    ○ k                                                    │
           │                                                                              │
           │                                  ● ○ ○ ○ ○                                   │
           ╰──────────────────────────────────────────────────────────────────────────────╯
-
 
 
 
@@ -4413,9 +4413,9 @@
                                                           “this is the whole flock” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  l/enter next   esc skip the tour                                                   ╰──╴ Col ╶───╯
+  l/enter next   q/esc leave the tour                                                ╰──╴ Col ╶───╯
 
-########## 097 before 10
+########## 097 before 'x'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4427,27 +4427,27 @@
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
    1  PLA-1     !!!  First issue about login                                                1h ago
    2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
-
-  ◌ Backlo╭──────────────────────────────────────────────────────────────────────────────╮────────
-   3  PLA-│  Col  a quick tour                                                      esc  │  3w ago
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   1 of 5  my issues                                                          │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│   This list is every Linear issue assigned to you, grouped by status, the    │  3d ago
+          │   furthest along on top.                                                     │
           │                                                                              │
-  ◈ Triage│   2 of 5  start working                                                      │────────
-   4  PLA-│                                                                              │  3d ago
-          │   enter on an issue sets the whole thing up: a git worktree on the           │
-          │   issue's branch, a herdr workspace named after the issue, and Claude        │
-          │   Code in it with the issue already read.                                    │
+          │   j and k move the cursor  ·  just type to filter  ·  space previews an      │
+          │   issue                                                                      │
           │                                                                              │
-          │   Work goes in phases, write → plan → build → review. Each leaves notes,     │
-          │   so you can stop today and pick it up next week exactly where you were.     │
-          │                                                                              │
-          │                                                                              │
-          │                                                                              │
+          │   h goes back one step and q closes the popup, from anywhere. Open,          │
+          │   glance, close: your to-do list is one key away.                            │
           │                                                                              │
           │                                                                              │
           │                                                                              │
-          │                                  ○ ● ○ ○ ○                                   │
+          │                                                                              │
+          │   try it now:  ✓ j    ○ k                                                    │
+          │                                                                              │
+          │                                  ● ○ ○ ○ ○                                   │
           ╰──────────────────────────────────────────────────────────────────────────────╯
-
 
 
 
@@ -4456,12 +4456,12 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                                                   “one key and I fetch everything” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                            “good. again like that” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  l/enter next   h back   esc skip the tour                                          ╰──╴ Col ╶───╯
+  l/enter next   q/esc leave the tour                                                ╰──╴ Col ╶───╯
 
-########## 098 before 'h'
+########## 098 before 'k'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4473,27 +4473,27 @@
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
    1  PLA-1     !!!  First issue about login                                                1h ago
    2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
-
-  ◌ Backlo╭──────────────────────────────────────────────────────────────────────────────╮────────
-   3  PLA-│  Col  a quick tour                                                      esc  │  3w ago
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   1 of 5  my issues                                                          │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│   This list is every Linear issue assigned to you, grouped by status, the    │  3d ago
+          │   furthest along on top.                                                     │
           │                                                                              │
-  ◈ Triage│   3 of 5  the green markers                                                  │────────
-   4  PLA-│                                                                              │  3d ago
-          │     ▶ ws 3 · my-repo                                                         │
+          │   j and k move the cursor  ·  just type to filter  ·  space previews an      │
+          │   issue                                                                      │
           │                                                                              │
-          │   A green marker on a row means a herdr workspace is open for that issue:    │
-          │   it is work in progress, right now, on this machine. It names the           │
-          │   workspace (the number in herdr's sidebar) and the repository.              │
-          │                                                                              │
-          │   So the green rows are your answer to what am I in the middle of? Put       │
-          │   the cursor on one and press w to jump straight into it. That is the        │
-          │   fastest way to move between the things you have going.                     │
+          │   h goes back one step and q closes the popup, from anywhere. Open,          │
+          │   glance, close: your to-do list is one key away.                            │
           │                                                                              │
           │                                                                              │
           │                                                                              │
-          │                                  ○ ○ ● ○ ○                                   │
+          │                                                                              │
+          │   try it now:  ✓ j    ○ k                                                    │
+          │                                                                              │
+          │                                  ● ○ ○ ○ ○                                   │
           ╰──────────────────────────────────────────────────────────────────────────────╯
-
 
 
 
@@ -4502,10 +4502,10 @@
 
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
-                                                 “green means you're already on it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                            “good. again like that” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  l/enter next   h back   esc skip the tour                                          ╰──╴ Col ╶───╯
+  l/enter next   q/esc leave the tour                                                ╰──╴ Col ╶───╯
 
 ########## 099 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
@@ -4519,27 +4519,27 @@
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
    1  PLA-1     !!!  First issue about login                                                1h ago
    2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
-
-  ◌ Backlo╭──────────────────────────────────────────────────────────────────────────────╮────────
-   3  PLA-│  Col  a quick tour                                                      esc  │  3w ago
-          │                                                                              │
-  ◈ Triage│   2 of 5  start working                                                      │────────
-   4  PLA-│                                                                              │  3d ago
-          │   enter on an issue sets the whole thing up: a git worktree on the           │
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   2 of 5  start working                                                      │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│   l or enter on an issue sets the whole thing up: a git worktree on the      │  3d ago
           │   issue's branch, a herdr workspace named after the issue, and Claude        │
           │   Code in it with the issue already read.                                    │
           │                                                                              │
           │   Work goes in phases, write → plan → build → review. Each leaves notes,     │
           │   so you can stop today and pick it up next week exactly where you were.     │
           │                                                                              │
+          │   l / enter also picks the highlighted row in every menu, and h backs out    │
+          │   of one.                                                                    │
           │                                                                              │
           │                                                                              │
           │                                                                              │
-          │                                                                              │
+          │   try it now:  ○ l or enter                                                  │
           │                                                                              │
           │                                  ○ ● ○ ○ ○                                   │
           ╰──────────────────────────────────────────────────────────────────────────────╯
-
 
 
 
@@ -4551,9 +4551,9 @@
                                                    “one key and I fetch everything” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  l/enter next   h back   esc skip the tour                                          ╰──╴ Col ╶───╯
+  l/enter next   h back   q/esc leave the tour                                       ╰──╴ Col ╶───╯
 
-########## 100 before 10
+########## 100 before 'h'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4565,13 +4565,12 @@
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
    1  PLA-1     !!!  First issue about login                                                1h ago
    2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
-
-  ◌ Backlo╭──────────────────────────────────────────────────────────────────────────────╮────────
-   3  PLA-│  Col  a quick tour                                                      esc  │  3w ago
-          │                                                                              │
-  ◈ Triage│   3 of 5  the green markers                                                  │────────
-   4  PLA-│                                                                              │  3d ago
-          │     ▶ ws 3 · my-repo                                                         │
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   3 of 5  the green markers                                                  │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│     ▶ ws 3 · my-repo                                                         │  3d ago
           │                                                                              │
           │   A green marker on a row means a herdr workspace is open for that issue:    │
           │   it is work in progress, right now, on this machine. It names the           │
@@ -4583,9 +4582,10 @@
           │                                                                              │
           │                                                                              │
           │                                                                              │
+          │   try it now:  ○ w                                                           │
+          │                                                                              │
           │                                  ○ ○ ● ○ ○                                   │
           ╰──────────────────────────────────────────────────────────────────────────────╯
-
 
 
 
@@ -4597,9 +4597,9 @@
                                                  “green means you're already on it” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  l/enter next   h back   esc skip the tour                                          ╰──╴ Col ╶───╯
+  l/enter next   h back   q/esc leave the tour                                       ╰──╴ Col ╶───╯
 
-########## 101 before 10
+########## 101 before 'l'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4611,27 +4611,119 @@
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
    1  PLA-1     !!!  First issue about login                                                1h ago
    2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
-
-  ◌ Backlo╭──────────────────────────────────────────────────────────────────────────────╮────────
-   3  PLA-│  Col  a quick tour                                                      esc  │  3w ago
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   2 of 5  start working                                                      │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│   l or enter on an issue sets the whole thing up: a git worktree on the      │  3d ago
+          │   issue's branch, a herdr workspace named after the issue, and Claude        │
+          │   Code in it with the issue already read.                                    │
           │                                                                              │
-  ◈ Triage│   4 of 5  the daily bark                                                     │────────
-   4  PLA-│                                                                              │  3d ago
-          │   b opens The Daily Bark: my recap of your last two days, from Linear,       │
+          │   Work goes in phases, write → plan → build → review. Each leaves notes,     │
+          │   so you can stop today and pick it up next week exactly where you were.     │
+          │                                                                              │
+          │   l / enter also picks the highlighted row in every menu, and h backs out    │
+          │   of one.                                                                    │
+          │                                                                              │
+          │                                                                              │
+          │                                                                              │
+          │   try it now:  ○ l or enter                                                  │
+          │                                                                              │
+          │                                  ○ ● ○ ○ ○                                   │
+          ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                   “one key and I fetch everything” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l/enter next   h back   q/esc leave the tour                                       ╰──╴ Col ╶───╯
+
+########## 102 before 'w'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+ ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!!  First issue about login                                                1h ago
+   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   3 of 5  the green markers                                                  │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│     ▶ ws 3 · my-repo                                                         │  3d ago
+          │                                                                              │
+          │   A green marker on a row means a herdr workspace is open for that issue:    │
+          │   it is work in progress, right now, on this machine. It names the           │
+          │   workspace (the number in herdr's sidebar) and the repository.              │
+          │                                                                              │
+          │   So the green rows are your answer to what am I in the middle of? Put       │
+          │   the cursor on one and press w to jump straight into it. That is the        │
+          │   fastest way to move between the things you have going.                     │
+          │                                                                              │
+          │                                                                              │
+          │                                                                              │
+          │   try it now:  ○ w                                                           │
+          │                                                                              │
+          │                                  ○ ○ ● ○ ○                                   │
+          ╰──────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+                                                                                     ╭────────────╮
+                                                                                     │  ◢▀▄▁▁▁▄▀◣ │
+                                                 “green means you're already on it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                     │   ╰─ω─╯~   │
+  l/enter next   h back   q/esc leave the tour                                       ╰──╴ Col ╶───╯
+
+########## 103 before 'b'
+                                ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
+ ──────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Review 2  ─────────────────────────────────────────────────────────────────────────────────
+   1  PLA-3     ▮▮▯  Third one in review                                    ◌ draft         1d ago
+ ▎    PLA-4     ▮▯▯  Fourth sits in todo                                                    1w ago
+
+  ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
+   1  PLA-1     !!!  First issue about login                                                1h ago
+   2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   4 of 5  the daily bark                                                     │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│   b opens The Daily Bark: my recap of your last two days, from Linear,       │  3d ago
           │   Slack and GitHub. What is on your plate, the loose ends, and where to      │
           │   start today.                                                               │
           │                                                                              │
-          │   j k move between topics  ·  enter on one: go to its issue, start it, or    │
-          │   ask me about it                                                            │
+          │   j k move between topics  ·  l / enter on one: go to its issue, start       │
+          │   it, or ask me about it  ·  h / q close it                                  │
           │                                                                              │
           │   Use it in the morning, or after a few days away, instead of scrolling      │
           │   back through everything.                                                   │
           │                                                                              │
           │                                                                              │
           │                                                                              │
+          │   try it now:  ○ b                                                           │
+          │                                                                              │
           │                                  ○ ○ ○ ● ○                                   │
           ╰──────────────────────────────────────────────────────────────────────────────╯
-
 
 
 
@@ -4643,9 +4735,9 @@
                                                   “I write it while you get coffee” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  l/enter next   h back   esc skip the tour                                          ╰──╴ Col ╶───╯
+  l/enter next   h back   q/esc leave the tour                                       ╰──╴ Col ╶───╯
 
-########## 102 before 10
+########## 104 before 10
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
@@ -4657,20 +4749,21 @@
   ◔ In Progress 2  ───────────────────────────────────────────────────────────────────────────────
    1  PLA-1     !!!  First issue about login                                                1h ago
    2▶ PLA-2     ▮▮▮  Second issue with a workspace                 ▶ ws 3   ● review        2d ago
-
-  ◌ Backlo╭──────────────────────────────────────────────────────────────────────────────╮────────
-   3  PLA-│  Col  a quick tour                                                      esc  │  3w ago
-          │                                                                              │
-  ◈ Triage│   5 of 5  that's it                                                          │────────
-   4  PLA-│                                                                              │  3d ago
-          │   The bottom rows always show what you can do right here, and every hint     │
+          ╭──────────────────────────────────────────────────────────────────────────────╮
+  ◌ Backlo│  Col  a quick tour                                                      esc  │────────
+   3  PLA-│                                                                              │  3w ago
+          │   5 of 5  that's it                                                          │
+  ◈ Triage│                                                                              │────────
+   4  PLA-│   The bottom rows always show what you can do right here, and every hint     │  3d ago
           │   is clickable.                                                              │
           │                                                                              │
           │   ? every key  ·  a ask me about an issue  ·  O this tour again  ·  B a      │
           │   bone for me                                                                │
           │                                                                              │
-          │   The loop: open, look for green, w to get back into your work.  enter to    │
-          │   start something new.                                                       │
+          │   The loop: open, look for green, w to get back into your work.  l /         │
+          │   enter to start something new.  h / q to leave.                             │
+          │                                                                              │
+          │                                                                              │
           │                                                                              │
           │                                                                              │
           │                                                                              │
@@ -4683,15 +4776,14 @@
 
 
 
-
                                                                                      ╭────────────╮
                                                                                      │  ◢▀▄▁▁▁▄▀◣ │
                                                                   “you've got this” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                      │   ╰─ω─╯~   │
-  l/enter done   h back                                                              ╰──╴ Col ╶───╯
+  l/enter done   h back   q/esc leave the tour                                       ╰──╴ Col ╶───╯
 
-########## 103 before 'q'
+########## 105 before 'q'
                                 ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
   my issues   t team · T project · R reviews                           6 issues  ·  ✓ 1 done today
