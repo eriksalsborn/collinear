@@ -382,11 +382,12 @@
   ○ Todo 1  ────────────────╭────────────────────────────────────╴ mode: start work ╶────────────────────────────────────╮──────────────────────────
       PLA-4     ▮▯▯ low     │  PLA-2  Second issue with a workspac                                                  esc  │                    1w ago
                             │  / filter                                                                                  │
-  ◌ Backlog 1  ─────────────│  enter sets this up, so you don't have to:                                                 │──────────────────────────
-      PLA-5     ▯▯▯         │  ✓ a new tab in the herdr workspace that is already open for it                            │                    3w ago
-                            │  ✓ a worktree in the repo you pick next, on  erik/pla-2-second                             │
-  ◈ Triage 1  ──────────────│  ✓ Claude Code opened there, pointed at the issue, comments and your notes                 │──────────────────────────
-      PLA-6     ▯▯▯         │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started                    │                    3d ago
+  ◌ Backlog 1  ─────────────│  Second issue with a workspace                                                             │──────────────────────────
+      PLA-5     ▯▯▯         │  enter sets this up, so you don't have to:                                                 │                    3w ago
+                            │  ✓ a new tab in the herdr workspace that is already open for it                            │
+  ◈ Triage 1  ──────────────│  ✓ a worktree in the repo you pick next, on  erik/pla-2-second                             │──────────────────────────
+      PLA-6     ▯▯▯         │  ✓ Claude Code opened there, pointed at the issue, comments and your notes                 │                    3d ago
+                            │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started                    │
                             │                                                                                            │
                             │                                                                                            │
                             │ ▎▶  jump to one of its 4 open sessions  ·  you're already working on it                    │
@@ -400,7 +401,6 @@
                             │  +  add a repo to the issue                                                                │
                             │                                                                                            │
                             ╰────────────────────────────────────────────────────────────────────────────────────────────╯
-
 
 
 

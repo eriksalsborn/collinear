@@ -136,7 +136,7 @@ EVERY_SCREEN = [
     "S", "j", ESC, "P", "j", ENTER, "U", "A", ESC,               # status, priority and its undo, assignee
     "/", "p", "l", "a", "-", "2", ENTER, ESC,                    # filter
     "t", ENTER, "h",                                             # a team's issues, and back
-    "b", "j", "l", ESC, ESC,                                     # daily report, a topic's actions
+    "b", "j", "l", ESC, "h", "h",                                # daily report, a topic's actions; h, twice, back to my issues
     ";", ";", ";", "h", "h", "h",                                # the tabs: ; moves right through all four, h moves back to my issues
     "K", "S", ESC, "K", "Z", "Z", "y", "g",                      # hints off (a dialog then has none either) and on, Col off/on, copy link, no PR linked
     ENTER, ENTER, ESC, "n", ESC, "a", "h", "i", ENTER, "\t", "k", "\t", ESC, "C", ESC,          # start dialog, new issue, chat with Col, comment
@@ -158,11 +158,12 @@ EVERY_SCREEN = [
     ENTER, ESC, "l",                                             # the closing card: only l (its button) finishes
     "O", ENTER, "q", "Q", "j",                                   # q does nothing in the tour; Q quits it, and every key works again
     "O", ESC,                                                    # the welcome card can be declined
-    "b", "s", "j", "j", "l", "a", ESC, "p", "j", "l", ESC, "x", "b", "p", ESC,   # save a topic to the to-do list, by s and by acting on one; open it, remove one; b and p switch between the two
-    "p", "x", "x", "i", ENTER, "m", "e", ENTER, "i", "j", ENTER, "m", ENTER, "n", ENTER, "\t", curses.KEY_LEFT, "z", ENTER, "x", ESC,   # the to-do list from the issue list; emptied; one typed, one by Col (not kept)
-    "p", "x", ESC,                                          # the to-do list from the issue list; emptied
-    "b", "x", "r", ESC, ESC,                                     # discard a topic of the report; writing it again asks first
+    "b", "s", "j", "j", "l", "a", ESC, "p", "j", "l", ESC, "x", "b", "p", "h", "h", "h",   # save a topic to the to-do list, by s and by acting on one; open it, remove one; b and p switch between the two
+    "p", "x", "x", "i", ENTER, "m", "e", ENTER, "i", "j", ENTER, "m", ENTER, "n", ENTER, "\t", curses.KEY_LEFT, "z", ENTER, "x", "h", "h", "h",   # the to-do list from the issue list; emptied; one typed, one by Col (not kept)
+    "p", "x", "h", "h", "h",                                # the to-do list from the issue list; emptied
+    "b", "x", "r", ESC, "h", "h",                                # discard a topic of the report; writing it again asks first
     "W", "j", "j", "S", "W",                                     # active workspaces: mine, someone else's, a topic (S can't change that one)
+    "t", ENTER, ESC, "b", ESC,                                   # esc steps back from a team to my issues; on a tab (here the daily bark) it closes Collinear
 ]
 SOMEONE_BRAND_NEW = "someone brand new"  # in place of the workspaces: setup is done, nothing else exists yet
 SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, the steps)
@@ -171,6 +172,9 @@ SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, th
     # one issue with four sessions: three tabs in the workspace named after it, one in a workspace found by its folder.
     # w lists the sessions; picking one focuses that workspace and that tab.
     "two-workspaces": (150, TWO_WORKSPACES_FOR_ONE_ISSUE, ["h", "j", "j", "w", ESC, " ", ESC, ENTER, ESC, "w", "j", "j", ENTER]),
+    # an issue with a workspace open is moved to Done: it stays among the active workspaces, under Done (its row all
+    # grey, its workspace renamed "DONE: ..."), and undo puts it back.
+    "done-with-a-workspace": (150, ONE_WORKSPACE, ["S", ("click row with", "Done"), ("click row with", "Done"), "j", "U", "j"]),
     # first open after setup: no issues assigned, no report yet. The tour starts by itself, leaves out the steps
     # about issues, says there is nothing to report yet, shows the to-do list, and still ends on the closing card.
     "new-user-tour": (120, SOMEONE_BRAND_NEW, [ENTER, "b", ESC, "p", "i", ESC, ESC, ENTER, "l"]),

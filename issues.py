@@ -325,8 +325,27 @@ def attachments_of(issue):
     return (issue.get("attachments") or {}).get("nodes", [])
 
 
+DONE_WORKSPACE_PREFIX = "DONE: "  # in front of the name of a workspace whose issue is done in Linear
+
+
+def workspace_name_without_done(workspace):
+    return workspace["label"].removeprefix(DONE_WORKSPACE_PREFIX)
+
+
 def workspace_is_named_after(workspace, issue):
-    return workspace["label"].startswith(issue["identifier"] + " ")
+    return workspace_name_without_done(workspace).startswith(issue["identifier"] + " ")
+
+
+def show_in_workspace_names_whether_issue_is_done(issue, its_workspaces):
+    """An issue that is done in Linear with a workspace still open: herdr shows that workspace as "DONE: <the name it
+    had>", so it is plain in the sidebar what can be closed. Not done (any more): the name it had."""
+    if not issue.get("id"):  # a row that stands in for an issue Linear did not give us: nothing is known about its state
+        return
+    for workspace in its_workspaces:
+        name = workspace_name_without_done(workspace)
+        wanted_name = DONE_WORKSPACE_PREFIX + name if issue["state"]["type"] == "completed" else name
+        if wanted_name != workspace["label"] and not run_command("herdr", "workspace", "rename", workspace["workspace_id"], wanted_name).returncode:
+            workspace["label"] = wanted_name
 
 
 def workspaces_of_issue_among(workspaces, issue, folders_of_its_branch):
@@ -1874,7 +1893,7 @@ def todo_topics_with_one_more(topics, topic_markdown):
 
 
 def todo_list_as_report_text():
-    return "## to do\n" + ("\n".join(saved_todo_topics()) or "nothing here yet. Press `i` to add a to-do: type it, or draft it with Col. In The "
+    return ("\n".join(saved_todo_topics()) or "nothing here yet. Press `i` to add a to-do: type it, or draft it with Col. In The "
                                                              "Daily Bark, `s` moves a topic here. It stays until you discard it.")
 
 
@@ -1900,7 +1919,7 @@ def issues_with_an_open_workspace(my_issues, open_workspaces, worktree_folders_b
             identifiers_listed.add(issue["identifier"])
             workspace_ids_accounted_for |= {workspace["workspace_id"] for workspace in its_workspaces}
     for workspace in open_workspaces:
-        identifier, _, title = workspace["label"].partition(" ")
+        identifier, _, title = workspace_name_without_done(workspace).partition(" ")
         is_named_after_an_issue = bool(ISSUE_IDENTIFIER_PATTERN.fullmatch(identifier))
         if workspace["workspace_id"] in workspace_ids_accounted_for or identifier in identifiers_listed \
                 or not (is_named_after_an_issue or identifier.startswith("topic-")):
@@ -1914,8 +1933,9 @@ def issues_with_an_open_workspace(my_issues, open_workspaces, worktree_folders_b
         # ponytail: a row without "id" is not in Linear (or not fetched yet): only w, the jump, works on it
         listed_issues.append(issue or {"identifier": identifier, "title": title, "url": "", "branchName": "", "priority": 0,
                                        "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
-                                       "state": {"name": "Linear issue" if is_named_after_an_issue else "Topic, not in Linear",
-                                                 "type": "started", "position": -1}})
+                                       # a workspace called "DONE: ..." says its issue is done before Linear has answered: grey from the first frame
+                                       "state": {"name": "Done", "type": "completed", "position": -1} if workspace["label"].startswith(DONE_WORKSPACE_PREFIX) else
+                                                {"name": "Linear issue" if is_named_after_an_issue else "Topic, not in Linear", "type": "started", "position": -1}})
         identifiers_listed.add(identifier)
     return listed_issues
 
@@ -2079,6 +2099,7 @@ def add_topic_to_todo_list(screen):
 
 
 TABS = ("my issues", "active workspaces", "daily bark", "to-do")  # the top bar, left to right: ; moves right, h moves back
+CLOSE_COLLINEAR = "close collinear"  # show_daily_report() returns it for esc or q on the daily bark or the to-do list: tabs close the popup, like the lists do
 MOVED_BACK_FROM_THE_DAILY_BARK = "moved back from the daily bark"  # show_daily_report() returns it for h on the daily bark: the tab to its left is a list
 SWITCH_BETWEEN_DAILY_BARK_AND_TODO = "switch between the daily bark and the to-do list"
 
@@ -2139,9 +2160,9 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
                 spinner_or_tick = SPINNER_FRAMES[frame_count % len(SPINNER_FRAMES)] if is_last_step else "✓"
                 line(2 + row_offset, spinner_or_tick + "  " + step,
                      curses.color_pair(PURPLE if is_last_step else DIM) | (curses.A_BOLD if is_last_step else 0), 4)
-            draw_footer_from_text(screen, "r start over · ; to-do · h active workspaces · esc back to the issues, b brings it back when it's done")
+            draw_footer_from_text(screen, "r start over · ; to-do · h active workspaces · esc close, b brings it back when it's done")
         else:
-            keys_between_the_tabs = " · h/b daily bark · esc back to the issues" if showing_todo_list else " · ;/p to-do · h active workspaces · esc back to the issues"
+            keys_between_the_tabs = " · h/b daily bark · esc close" if showing_todo_list else " · ;/p to-do · h active workspaces · esc close"
             if COL_SPEECH["mood"] in ("left", "right") or not COL_SPEECH["say"]:
                 COL_SPEECH.update(mood="cheer", say="what you saved to do" if showing_todo_list else "here's your daily report", until=time.time() + 8)
             if showing_todo_list:
@@ -2202,8 +2223,8 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
             continue
         if key == ord("h") and UiState.guided_tour_step is not None:  # the tour only ever says "esc or h goes back to your issues"
             key = 27
-        if key in (27, ord("q")):  # back to the issues you came from
-            return None
+        if key in (27, ord("q")):  # a tab: esc closes Collinear. In the tour it goes back to the issues, as Col says there
+            return None if UiState.guided_tour_step is not None else CLOSE_COLLINEAR
         if key == ord("h") and not showing_todo_list:  # the tab left of the daily bark
             return MOVED_BACK_FROM_THE_DAILY_BARK
         if key in ((ord("h"), ord("b")) if showing_todo_list else (ord(";"), ord("p"))):  # the other one of the two: the next tab, or its own key
@@ -2899,6 +2920,7 @@ def start_work_on_issue(screen, issue, phase=None):
         n = choose_from_list(
             screen, "start work  ▸  " + issue_as_dialog_title(issue), jump_rows + prompt_rows + [f"○  {'no prompt':<22}just the issue, you steer  ·  in a repo or without one"]
             + pull_request_rows + [add_repository_row], cursor, help=(
+                issue["title"],  # in full, wrapped: the title row above only has room for its start
                 "enter sets this up, so you don't have to:",
                 "✓ a new tab in the herdr workspace that is already open for it" if workspace else f"✓ a herdr workspace named  {identifier} {issue['title']}"[:74],
                 f"✓ a worktree in the repo you pick next, on  {issue['branchName']}"[:74],
@@ -3091,7 +3113,8 @@ KEY_BINDINGS = [
     KeyBinding("/",     "start_typing_a_filter",             False,  MOVE_AROUND,       "type, or /",        "filter · esc clears",   "/", "filter"),
     KeyBinding("",      "",                                  False,  MOVE_AROUND,       "click / wheel",     "rows, hints · scroll"),
     KeyBinding("?",     "show_every_key",                    False,  "",                "",                  "",                      "?", "all keys"),
-    KeyBinding("h\x1b", "go_back_or_close",                  False,  VIEWS,             "h  or  esc",        "back, then close",      "h", "close"),
+    KeyBinding("h",     "go_back_or_close",                  False,  VIEWS,             "h",                 "the tab to the left, then close", "h", "close"),
+    KeyBinding("\x1b",  "close_popup_or_leave_team_or_project", False, VIEWS,           "esc",               "close  (a team or project: back)"),
     KeyBinding("q",     "close_popup",                       False,  VIEWS,             "q",                 "close"),
     KeyBinding("Z",     "toggle_col",                        False,  VIEWS,             "Z",                 "Col on / off"),
     KeyBinding("K",     "toggle_footer_hints",               False,  VIEWS,             "K",                 "footer hints on / off"),
@@ -3277,7 +3300,10 @@ class IssueListScreen:
         self.open_workspaces = open_herdr_workspaces()
         if not self.worktree_folders_by_branch:  # the view the popup opens on: the start-up scan may not be in yet
             self.worktree_folders_by_branch = scan_worktrees_of_all_repositories()
-        return issues_with_an_open_workspace(fetch_issues(None), self.open_workspaces, self.worktree_folders_by_branch, fetch_issue_by_identifier)
+        issues = issues_with_an_open_workspace(fetch_issues(None), self.open_workspaces, self.worktree_folders_by_branch, fetch_issue_by_identifier)
+        for issue in issues:  # this is where an issue that was finished elsewhere (a merged PR, someone in Linear) is first seen as done
+            show_in_workspace_names_whether_issue_is_done(issue, self.open_workspaces_of(issue))
+        return issues
 
     def rows_for(self, issues):
         if issues is None:
@@ -3495,8 +3521,13 @@ class IssueListScreen:
             register_clickable_row(y, 0, screen_width, rows_from_cursor, [ord(" ")] * is_under_cursor)
         cursor_row_attribute = colour(SELECTED_ROW) if is_under_cursor else 0
 
+        is_done = issue["state"]["type"] == "completed"  # only seen among the active workspaces: finished, its workspace still open
+        if is_done:  # all of its row is grey: you see what you moved to done, without it asking for attention
+            all_colours = colour
+            colour = lambda colour_pair: all_colours(SELECTED_ROW_MARKER if colour_pair == SELECTED_ROW_MARKER else DIM)
+
         def styled(colour_pair, bold=False):  # on the cursor's row everything keeps its colour, on the row's background
-            return (on_cursor_row(colour(colour_pair)) if is_under_cursor else colour(colour_pair)) | (curses.A_BOLD if bold else 0)
+            return (on_cursor_row(colour(colour_pair)) if is_under_cursor else colour(colour_pair)) | (curses.A_BOLD if bold and not is_done else 0)
 
         is_narrow_popup = screen_width < 110  # bars only for priority and no assignee, so the title keeps its room
         priority_bars, priority_word, priority_colour = PRIORITY_DISPLAY.get(issue["priority"], ("▯▯▯", "", DIM))
@@ -3537,7 +3568,7 @@ class IssueListScreen:
         title_x = 16 + priority_width + 1
         title_width = max(screen_width - 4 - right_columns_width - title_x, 0)
         title = issue["title"] if len(issue["title"]) <= title_width else issue["title"][:max(title_width - 1, 0)] + "…"
-        screen.addnstr(y, title_x, title, title_width, cursor_row_attribute | (curses.A_BOLD if is_under_cursor else 0))
+        screen.addnstr(y, title_x, title, title_width, styled(DIM) if is_done else cursor_row_attribute | (curses.A_BOLD if is_under_cursor else 0))
         x = max(screen_width - 2 - right_columns_width, title_x)
         for text, colour_pair, is_chip in right_columns:
             attribute = (colour(colour_pair) | curses.A_REVERSE | curses.A_BOLD) if is_chip else styled(colour_pair, colour_pair in (RED, GREEN))
@@ -3768,6 +3799,7 @@ class IssueListScreen:
             self.col_cheers_for_new_state_of(issue)
             if issue["state"]["type"] == "completed":
                 footer_message = self.count_one_more_done_today(issue)
+            show_in_workspace_names_whether_issue_is_done(issue, self.open_workspaces_of(issue))
             self.rebuild_rows_keeping_cursor_on(issue)
         return footer_message
 
@@ -3815,6 +3847,7 @@ class IssueListScreen:
             return "nothing to undo"
         issue, input_that_puts_it_back, fields_to_put_back, label = UNDO_STACK.pop()
         change_issue_optimistically(issue, input_that_puts_it_back, fields_to_put_back, label, undo=False)
+        show_in_workspace_names_whether_issue_is_done(issue, self.open_workspaces_of(issue))
         self.rebuild_rows_keeping_cursor_on(issue)
         col_says("undone, no harm done")
         return f"undid {label}"
@@ -3859,7 +3892,9 @@ class IssueListScreen:
         """The daily bark tab (or the to-do list tab), until you leave them: back on the list you came from, on the
         issue a topic sent you to, or on the active workspaces when h moved back past the daily bark."""
         picked = show_daily_report(self.screen, self.issues or [] if issues is None else issues, self.today, showing_todo_list)
-        if picked == MOVED_BACK_FROM_THE_DAILY_BARK:
+        if picked == CLOSE_COLLINEAR:
+            self.popup_should_close = True
+        elif picked == MOVED_BACK_FROM_THE_DAILY_BARK:
             if self.view != ACTIVE_WORKSPACES_VIEW:
                 self.switch_to_view(ACTIVE_WORKSPACES_VIEW)
         elif picked:
@@ -3917,6 +3952,14 @@ class IssueListScreen:
 
     def close_popup(self):
         self.popup_should_close = True
+
+    def close_popup_or_leave_team_or_project(self):
+        """esc on a tab (my issues, the active workspaces) closes Collinear, as it does on the daily bark and the to-do
+        list. It only steps back from what is not a tab: a filter is cleared, a team or a project goes back to my issues."""
+        if self.filter_text or (self.view and self.view != ACTIVE_WORKSPACES_VIEW):
+            self.go_back_or_close()
+        else:
+            self.popup_should_close = True
 
     def toggle_col(self):
         UiState.col_is_visible = not UiState.col_is_visible
@@ -3980,6 +4023,23 @@ def _test():
     assert flat(rows_matching_filter(rows, "")) == ["In Review", "A-3", "", "In Progress", "A-4", "A-2", "", "Todo", "A-1"]
     assert build_issue_rows([])[0][0] == "note" and rows_matching_filter([("note", "loading")], "x") == [("note", "loading")]
     assert flat(build_issue_rows(issues + [mk("Z-1", "Done", "completed", 9)])) == flat(rows), "closed issues drop out of the list"
+    # a done issue's workspace is renamed "DONE: <its name>", is still found as the issue's, and gets its name back when reopened
+    global run_command
+    real_run_command, renames = run_command, []
+    run_command = lambda *command: renames.append(command[-2:]) or subprocess.CompletedProcess(command, 0)
+    try:
+        done_issue, its_workspace = dict(mk("Z-1", "Done", "completed", 9), id="z1"), {"workspace_id": "w9", "label": "Z-1 Some title"}
+        show_in_workspace_names_whether_issue_is_done(done_issue, [its_workspace])
+        show_in_workspace_names_whether_issue_is_done(done_issue, [its_workspace])  # already says so: nothing to rename
+        assert its_workspace["label"] == "DONE: Z-1 Some title" and renames == [("w9", "DONE: Z-1 Some title")] and workspace_is_named_after(its_workspace, done_issue)
+        show_in_workspace_names_whether_issue_is_done(dict(done_issue, state={"name": "Todo", "type": "unstarted"}), [its_workspace])
+        assert its_workspace["label"] == "Z-1 Some title"
+        show_in_workspace_names_whether_issue_is_done({"identifier": "Z-1", "state": {"type": "completed"}}, [its_workspace])  # a stand-in row, not from Linear
+        assert its_workspace["label"] == "Z-1 Some title" and len(renames) == 2
+        waiting_for_linear = issues_with_an_open_workspace([], [{"workspace_id": "w9", "label": "DONE: PLA-7 Some title"}], {})
+        assert [(row["identifier"], row["title"], row["state"]["type"]) for row in waiting_for_linear] == [("PLA-7", "Some title", "completed")], "done before Linear answers"
+    finally:
+        run_command = real_run_command
     assert initials_and_chip_colour("sam.river")[0] == "SR" and initials_and_chip_colour("Robin")[0] == "R" and initials_and_chip_colour("")[0] == "?"
     assert initials_and_chip_colour("sam.river")[1] == initials_and_chip_colour("sam.river")[1]
     now = datetime.now(timezone.utc)

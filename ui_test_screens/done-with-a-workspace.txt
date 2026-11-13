@@ -1,0 +1,324 @@
+
+########## 001 before 'S'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do                                                                                        3 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                       ET   Erik Tester  Gateway c4        ▶ alpha   ● review        2d ago
+
+  ◔ Linear issue 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯         someone else's                                       ?   —                              ▶ open                  just now
+
+  ◔ Topic, not in Linear 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯         a loose topic                                        ?   —                              ▶ open                  just now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
+  A assign   X cancel   n new issue   ; next tab   b daily bark   p to-do   W active ws   t/T team / project   ? all keys              ╰──╴ Col ╶───╯
+
+########## 002 before ('click row with', 'Done')
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do                                                                                        3 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                       ET   Erik Tester  Gateway c4        ▶ alpha   ● review        2d ago
+
+  ◔ Linear issue 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯         someone else's                                       ?   —                              ▶ open                  just now
+
+  ◔ Topic, not in Linear 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯         a loose topic                                        ?   —                              ▶ open                  just now
+
+
+
+                                               ╭───────────────╴ mode: change status ╶────────────────╮
+                                               │  PLA-2  Second issue with a workspac            esc  │
+                                               │  / filter                                            │
+                                               │                                                      │
+                                               │  Triage                                              │
+                                               │  Backlog                                             │
+                                               │  Todo                                                │
+                                               │ ▎In Progress                                         │
+                                               │  In Review                                           │
+                                               │  Done                                                │
+                                               │  Canceled                                            │
+                                               │                                                      │
+                                               ╰──────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+########## 003 before ('click row with', 'Done')
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do                                                                                        3 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                       ET   Erik Tester  Gateway c4        ▶ alpha   ● review        2d ago
+
+  ◔ Linear issue 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯         someone else's                                       ?   —                              ▶ open                  just now
+
+  ◔ Topic, not in Linear 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯         a loose topic                                        ?   —                              ▶ open                  just now
+
+
+
+                                               ╭───────────────╴ mode: change status ╶────────────────╮
+                                               │  PLA-2  Second issue with a workspac            esc  │
+                                               │  / filter                                            │
+                                               │                                                      │
+                                               │  Triage                                              │
+                                               │  Backlog                                             │
+                                               │  Todo                                                │
+                                               │  In Progress                                         │
+                                               │  In Review                                           │
+                                               │ ▎Done                                                │
+                                               │  Canceled                                            │
+                                               │                                                      │
+                                               ╰──────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+########## 004 before 'j'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do                                                                     3 issues  ·  ✓ 1 done today
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◐ Linear issue 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯         someone else's                                       ?   —                              ▶ open                  just now
+
+  ◐ Topic, not in Linear 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯         a loose topic                                        ?   —                              ▶ open                  just now
+
+  ● Done 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                       ET   Erik Tester  Gateway c4        ▶ alpha   ● review        2d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                   “that's 1 today, you're on a roll” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ PLA-2 → Done   ✦                                                                                                                  │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  ✓ PLA-2 → Done  ·  1 done today  ·  U undo                                                                                           ╰──╴ Col ╶───╯
+
+########## 005 before 'U'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do                                                                     3 issues  ·  ✓ 1 done today
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◐ Linear issue 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯         someone else's                                       ?   —                              ▶ open                  just now
+
+  ◐ Topic, not in Linear 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯         a loose topic                                        ?   —                              ▶ open                  just now
+
+  ● Done 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                       ET   Erik Tester  Gateway c4        ▶ alpha   ● review        2d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                   “that's 1 today, you're on a roll” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ PLA-2 → Done   ✦                                                                                                                  │  ▜▖ ▼  ▗▛  │
+  w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
+  A assign   X cancel   U undo   n new issue   ; next tab   b daily bark   p to-do   W active ws   ? all keys                          ╰──╴ Col ╶───╯
+
+########## 006 before 'j'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do                                                                     3 issues  ·  ✓ 1 done today
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                       ET   Erik Tester  Gateway c4        ▶ alpha   ● review        2d ago
+
+  ◔ Linear issue 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯         someone else's                                       ?   —                              ▶ open                  just now
+
+  ◔ Topic, not in Linear 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯         a loose topic                                        ?   —                              ▶ open                  just now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                               “undone, no harm done” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ undid: PLA-2 → Done   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  ✓ undid PLA-2 → Done                                                                                                                 ╰──╴ Col ╶───╯
+
+########## 007 before 'q'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do                                                                     3 issues  ·  ✓ 1 done today
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                       ET   Erik Tester  Gateway c4        ▶ alpha   ● review        2d ago
+
+  ◔ Linear issue 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-99    ▯▯▯         someone else's                                       ?   —                              ▶ open                  just now
+
+  ◔ Topic, not in Linear 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯         a loose topic                                        ?   —                              ▶ open                  just now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                               “undone, no harm done” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ undid: PLA-2 → Done   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
+  w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
+  A assign   X cancel   n new issue   ; next tab   b daily bark   p to-do   W active ws   t/T team / project   ? all keys              ╰──╴ Col ╶───╯
+
+finished cleanly
