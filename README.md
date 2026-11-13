@@ -43,7 +43,8 @@ of you.
   - a herdr workspace named after the issue (or a new tab in the one already open for it),
   - a git worktree on the issue's branch, in the repo you pick, with your main checkout left alone,
   - Claude Code opened there, pointed at the issue, its comments and your notes from earlier sessions,
-  - a starting prompt: write it, plan it, build it or review it. Or no prompt, and you steer.
+  - a starting prompt: write it, plan it, build it (from the plan, or straight from the issue, ending in a draft PR)
+    or review it. Or no prompt, and you steer.
 
   Topics in the daily report and the to-do list start a session the same way, with the topic as the context.
 - **It knows where your work is.** Issues with a workspace open are marked, with repository and branch, and `w`

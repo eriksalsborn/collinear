@@ -19,10 +19,10 @@ MY_ISSUES_CACHE_FILE = CACHE_DIR / "herdr-issues.json"
 NOTES_DIR = Path.home() / ".claude" / "work"  # outside the worktree, so removing the worktree keeps the notes
 PROMPTS_DIR = Path(__file__).parent / "prompts"
 NO_REPOSITORY_CHOICE = "∅  no repo · just the issue, no code"
-STARTING_PROMPT_LABELS = {"issue": "write it", "plan": "plan it", "build": "build it", "review": "review it"}  # what the dialog calls each of PHASES
+STARTING_PROMPT_LABELS = {"issue": "write it", "plan": "plan it", "build": "build it", "build-from-issue": "build from the issue", "review": "review it"}  # what the dialog calls each of PHASES
 PHASES = [("issue", "write the issue: what, why, acceptance criteria"),
           ("plan", "think (Col grills you) → discover → spec"),
-          ("build", "build it from the spec"), ("review", "fresh eyes on the diff vs the spec")]
+          ("build", "build it from the spec in the plan"), ("build-from-issue", "skip the plan: the issue is the spec, a draft PR at the end"), ("review", "fresh eyes on the diff vs the spec")]
 ACCENT, MUTED, SELECTED_ROW, RED, BORDER, CODE, GREEN, YELLOW, ORANGE, PURPLE, SELECTED_ROW_MARKER, TITLE_TAG, DIM, DEFAULT_TEXT, DONE_FLASH, COL_FACE, COL_ACCENT, COL_BADGE, COL_BADGE_QUIET_TEXT = range(1, 20)
 # Linear-style priority bars + word + colour: the bars still read on the selected row, where everything is one colour.
 # Only single-width symbols: "‼" renders 2 columns wide in some terminals and shifts the rest of the row.
@@ -566,7 +566,7 @@ def choose_new_assignee(screen, issue):
 
 
 COL_SEND_OFF_LINES = {"issue": "go write it so anyone could pick it up", "plan": "think first, code later. go",
-            "build": "fetch! bring back green tests", "review": "fresh eyes. be picky. sniff every line", "free": "off you go, have a look around",
+            "build": "fetch! bring back green tests", "build-from-issue": "straight from the issue. fetch!", "review": "fresh eyes. be picky. sniff every line", "free": "off you go, have a look around",
             "pr": "onto the PR's branch. make it mergeable"}
 
 
@@ -2187,6 +2187,7 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
                 draw_footer_from_text(screen, footer_text + keys_between_the_tabs)
             else:
                 draw_footer_from_text(screen, ("i add a to-do" if showing_todo_list else "r write it again") + keys_between_the_tabs)
+        draw_change_receipt(screen)  # the page is in the list's place, and the list is what draws the receipt: discarding or moving a topic gets its green notice here
 
     UiState.draw_screen_behind_dialog = paint  # the page stays up, in grey, behind every dialog opened from it
     while True:
@@ -2885,17 +2886,18 @@ def start_work_on_issue(screen, issue, phase=None):
         jump_rows = [] if not workspace else ["▶  jump to its open workspace  ·  you're already working on it" if open_session_count < 2 else
                                               f"▶  jump to one of its {open_session_count} open sessions  ·  you're already working on it"]
         # an issue someone already wrote a description for counts as written
-        prompt_is_done = [(notes_folder / f"{prompt_name}.md").exists() or (prompt_name == "issue" and bool((issue.get("description") or "").strip()))
+        # (building from the issue leaves build.md, like building from the plan: either one done is the build done)
+        prompt_is_done = [(notes_folder / f"{prompt_name.partition('-')[0]}.md").exists() or (prompt_name == "issue" and bool((issue.get("description") or "").strip()))
                           for prompt_name, _ in PHASES]
         # ✓ notes written, ◐ started (launching writes prompt-<name>.md), · not started
         prompt_marks = ["✓" if is_done else "◐" if (notes_folder / f"prompt-{prompt_name}.md").exists() else "·" for (prompt_name, _), is_done in zip(PHASES, prompt_is_done)]
-        prompt_rows = [f"{mark}  {STARTING_PROMPT_LABELS[prompt_name]:<11}{description}" for (prompt_name, description), mark in zip(PHASES, prompt_marks)]
+        prompt_rows = [f"{mark}  {STARTING_PROMPT_LABELS[prompt_name]:<22}{description}" for (prompt_name, description), mark in zip(PHASES, prompt_marks)]
         pull_request_rows = [f"⎇  no prompt, on PR #{number}  ·  {repo}  {branch}" for repo, branch, number in pull_request_branches]
         cursor = 0 if workspace else next((prompt_number for prompt_number, is_done in enumerate(prompt_is_done) if not is_done), len(PHASES) - 1)
     while phase is None:
         add_repository_row = "+  add a repo" + (f"    (now: {', '.join(worktree_by_repository)})" if worktree_by_repository else " to the issue")
         n = choose_from_list(
-            screen, "start work  ▸  " + issue_as_dialog_title(issue), jump_rows + prompt_rows + ["○  no prompt  just the issue, you steer  ·  in a repo or without one"]
+            screen, "start work  ▸  " + issue_as_dialog_title(issue), jump_rows + prompt_rows + [f"○  {'no prompt':<22}just the issue, you steer  ·  in a repo or without one"]
             + pull_request_rows + [add_repository_row], cursor, help=(
                 "enter sets this up, so you don't have to:",
                 "✓ a new tab in the herdr workspace that is already open for it" if workspace else f"✓ a herdr workspace named  {identifier} {issue['title']}"[:74],
@@ -2940,7 +2942,7 @@ def start_work_on_issue(screen, issue, phase=None):
     prompt_file.write_text(render_phase_prompt(phase, issue, worktree_folders, notes_folder))
     show_status_message(screen, f"starting {phase}…")
     # --add-dir: the notes live outside the worktree, let claude read and write them without asking
-    if error := open_claude_in_workspace(issue, workspace, first_folder, phase, prompt_file, [notes_folder] + worktree_folders[1:]):
+    if error := open_claude_in_workspace(issue, workspace, first_folder, phase.partition("-")[0], prompt_file, [notes_folder] + worktree_folders[1:]):  # the tab is named "build" either way
         return error
     def tell_linear_the_work_has_started():
         assign_to_me_if_unassigned(issue)

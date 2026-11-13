@@ -379,27 +379,27 @@
       PLA-1     !!! urgent  First issue about login                                                                                           1h ago
  ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                  ▶ 2 open · alpha   ● review        2d ago
 
-  ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-      PLA-4     ▮▯▯ low     Fourth ╭─────────────────────────────╴ mode: start work ╶─────────────────────────────╮                           1w ago
-                                   │  PLA-2  Second issue with a workspac                                    esc  │
-  ◌ Backlog 1  ────────────────────│  / filter                                                                    │─────────────────────────────────
-      PLA-5     ▯▯▯         Fifth i│  enter sets this up, so you don't have to:                                   │                           3w ago
-                                   │  ✓ a new tab in the herdr workspace that is already open for it              │
-  ◈ Triage 1  ─────────────────────│  ✓ a worktree in the repo you pick next, on  erik/pla-2-second               │─────────────────────────────────
-      PLA-6     ▯▯▯         Sixth n│  ✓ Claude Code opened there, pointed at the issue, comments and your notes   │                           3d ago
-                                   │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started      │
-                                   │                                                                              │
-                                   │                                                                              │
-                                   │ ▎▶  jump to one of its 4 open sessions  ·  you're already working on it      │
-                                   │  ·  write it   write the issue: what, why, acceptance criteria               │
-                                   │  ·  plan it    think (Col grills you) → discover → spec                      │
-                                   │  ·  build it   build it from the spec                                        │
-                                   │  ·  review it  fresh eyes on the diff vs the spec                            │
-                                   │  ○  no prompt  just the issue, you steer  ·  in a repo or without one        │
-                                   │  ⎇  no prompt, on PR #7  ·  alpha  erik/pla-2-second                         │
-                                   │  +  add a repo to the issue                                                  │
-                                   │                                                                              │
-                                   ╰──────────────────────────────────────────────────────────────────────────────╯
+  ○ Todo 1  ────────────────╭────────────────────────────────────╴ mode: start work ╶────────────────────────────────────╮──────────────────────────
+      PLA-4     ▮▯▯ low     │  PLA-2  Second issue with a workspac                                                  esc  │                    1w ago
+                            │  / filter                                                                                  │
+  ◌ Backlog 1  ─────────────│  enter sets this up, so you don't have to:                                                 │──────────────────────────
+      PLA-5     ▯▯▯         │  ✓ a new tab in the herdr workspace that is already open for it                            │                    3w ago
+                            │  ✓ a worktree in the repo you pick next, on  erik/pla-2-second                             │
+  ◈ Triage 1  ──────────────│  ✓ Claude Code opened there, pointed at the issue, comments and your notes                 │──────────────────────────
+      PLA-6     ▯▯▯         │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started                    │                    3d ago
+                            │                                                                                            │
+                            │                                                                                            │
+                            │ ▎▶  jump to one of its 4 open sessions  ·  you're already working on it                    │
+                            │  ·  write it              write the issue: what, why, acceptance criteria                  │
+                            │  ·  plan it               think (Col grills you) → discover → spec                         │
+                            │  ·  build it              build it from the spec in the plan                               │
+                            │  ·  build from the issue  skip the plan: the issue is the spec, a draft PR at the end      │
+                            │  ·  review it             fresh eyes on the diff vs the spec                               │
+                            │  ○  no prompt             just the issue, you steer  ·  in a repo or without one           │
+                            │  ⎇  no prompt, on PR #7  ·  alpha  erik/pla-2-second                                       │
+                            │  +  add a repo to the issue                                                                │
+                            │                                                                                            │
+                            ╰────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
 

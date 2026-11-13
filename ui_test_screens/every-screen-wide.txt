@@ -1513,7 +1513,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-1   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page       │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -1559,7 +1559,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page      │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -1605,7 +1605,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
 
@@ -1651,7 +1651,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page      │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -1789,7 +1789,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page      │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -1835,7 +1835,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   h/b daily bark   esc back to the issues                                                                              ╰──╴ Col ╶───╯
 
@@ -1881,7 +1881,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                                “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ undid: PLA-1 → high   ✦                                                                                                           │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page      │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -2358,25 +2358,25 @@
     ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                           ▶ alpha   ● review        2d ago
 
   ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-      PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
-                                   ╭─────────────────────────────╴ mode: start work ╶─────────────────────────────╮
-  ◌ Backlog 1  ────────────────────│  PLA-3  Third one in review                                             esc  │─────────────────────────────────
-      PLA-5     ▯▯▯         Fifth i│  / filter                                                                    │                           3w ago
-                                   │  enter sets this up, so you don't have to:                                   │
-  ◈ Triage 1  ─────────────────────│  ✓ a herdr workspace named  PLA-3 Third one in review                        │─────────────────────────────────
-      PLA-6     ▯▯▯         Sixth n│  ✓ a worktree in the repo you pick next, on  erik/pla-3-third                │                           3d ago
-                                   │  ✓ Claude Code opened there, pointed at the issue, comments and your notes   │
-                                   │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started      │
-                                   │                                                                              │
-                                   │                                                                              │
-                                   │ ▎·  write it   write the issue: what, why, acceptance criteria               │
-                                   │  ·  plan it    think (Col grills you) → discover → spec                      │
-                                   │  ·  build it   build it from the spec                                        │
-                                   │  ·  review it  fresh eyes on the diff vs the spec                            │
-                                   │  ○  no prompt  just the issue, you steer  ·  in a repo or without one        │
-                                   │  +  add a repo to the issue                                                  │
-                                   │                                                                              │
-                                   ╰──────────────────────────────────────────────────────────────────────────────╯
+      PLA-4     ▮▯▯ low     ╭────────────────────────────────────╴ mode: start work ╶────────────────────────────────────╮                    1w ago
+                            │  PLA-3  Third one in review                                                           esc  │
+  ◌ Backlog 1  ─────────────│  / filter                                                                                  │──────────────────────────
+      PLA-5     ▯▯▯         │  enter sets this up, so you don't have to:                                                 │                    3w ago
+                            │  ✓ a herdr workspace named  PLA-3 Third one in review                                      │
+  ◈ Triage 1  ──────────────│  ✓ a worktree in the repo you pick next, on  erik/pla-3-third                              │──────────────────────────
+      PLA-6     ▯▯▯         │  ✓ Claude Code opened there, pointed at the issue, comments and your notes                 │                    3d ago
+                            │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started                    │
+                            │                                                                                            │
+                            │                                                                                            │
+                            │ ▎·  write it              write the issue: what, why, acceptance criteria                  │
+                            │  ·  plan it               think (Col grills you) → discover → spec                         │
+                            │  ·  build it              build it from the spec in the plan                               │
+                            │  ·  build from the issue  skip the plan: the issue is the spec, a draft PR at the end      │
+                            │  ·  review it             fresh eyes on the diff vs the spec                               │
+                            │  ○  no prompt             just the issue, you steer  ·  in a repo or without one           │
+                            │  +  add a repo to the issue                                                                │
+                            │                                                                                            │
+                            ╰────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
 
@@ -6205,7 +6205,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                         “18/34   j  /  k  pick a topic.  l  or  enter  shows what you can do with it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                    Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ✦                                                                                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page      │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -6251,7 +6251,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                         “19/34  start it, ask me, or  s  keeps it as a to-do.  esc  or  h  backs out” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                    Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ✦                                                                                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
 
@@ -6297,7 +6297,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                       “20/34   esc  or  h  once more, and you're back at your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                    Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ✦                                                                                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page      │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -6389,7 +6389,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                    “22/34   i  adds one: you type it, or I write it from a few words” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                    Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ✦                                                                                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   h/b daily bark   esc back to the issues                                                                              ╰──╴ Col ╶───╯
 
@@ -6435,7 +6435,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                               “23/34  you'd pick how.  esc  or  h  backs out for now” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                    Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ✦                                                                                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
@@ -6481,7 +6481,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                             “24/34  it stays until you  x  it.  esc  or  h  goes back to your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                    Q  quits the tour  │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ✦                                                                                          Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   h/b daily bark   esc back to the issues                                                                              ╰──╴ Col ╶───╯
 
@@ -6912,25 +6912,25 @@
     ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                                                           ▶ alpha   ● review        2d ago
 
   ○ Todo 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-      PLA-4     ▮▯▯ low     Fourth sits in todo                                                                                               1w ago
-                                   ╭─────────────────────────────╴ mode: start work ╶─────────────────────────────╮
-  ◌ Backlog 1  ────────────────────│  PLA-5  Fifth in the backlog                                            esc  │─────────────────────────────────
- ▎    PLA-5     ▯▯▯         Fifth i│  / filter                                                                    │                           3w ago
-                                   │  enter sets this up, so you don't have to:                                   │
-  ◈ Triage 1  ─────────────────────│  ✓ a herdr workspace named  PLA-5 Fifth in the backlog                       │─────────────────────────────────
-      PLA-6     ▯▯▯         Sixth n│  ✓ a worktree in the repo you pick next, on  erik/pla-5-fifth                │                           3d ago
-                                   │  ✓ Claude Code opened there, pointed at the issue, comments and your notes   │
-                                   │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started      │
-                                   │                                                                              │
-                                   │                                                                              │
-                                   │ ▎·  write it   write the issue: what, why, acceptance criteria               │
-                                   │  ·  plan it    think (Col grills you) → discover → spec                      │
-                                   │  ·  build it   build it from the spec                                        │
-                                   │  ·  review it  fresh eyes on the diff vs the spec                            │
-                                   │  ○  no prompt  just the issue, you steer  ·  in a repo or without one        │
-                                   │  +  add a repo to the issue                                                  │
-                                   │                                                                              │
-                                   ╰──────────────────────────────────────────────────────────────────────────────╯
+      PLA-4     ▮▯▯ low     ╭────────────────────────────────────╴ mode: start work ╶────────────────────────────────────╮                    1w ago
+                            │  PLA-5  Fifth in the backlog                                                          esc  │
+  ◌ Backlog 1  ─────────────│  / filter                                                                                  │──────────────────────────
+ ▎    PLA-5     ▯▯▯         │  enter sets this up, so you don't have to:                                                 │                    3w ago
+                            │  ✓ a herdr workspace named  PLA-5 Fifth in the backlog                                     │
+  ◈ Triage 1  ──────────────│  ✓ a worktree in the repo you pick next, on  erik/pla-5-fifth                              │──────────────────────────
+      PLA-6     ▯▯▯         │  ✓ Claude Code opened there, pointed at the issue, comments and your notes                 │                    3d ago
+                            │  ✓ a starting prompt, picked here.   ✓ done   ◐ started   · not started                    │
+                            │                                                                                            │
+                            │                                                                                            │
+                            │ ▎·  write it              write the issue: what, why, acceptance criteria                  │
+                            │  ·  plan it               think (Col grills you) → discover → spec                         │
+                            │  ·  build it              build it from the spec in the plan                               │
+                            │  ·  build from the issue  skip the plan: the issue is the spec, a draft PR at the end      │
+                            │  ·  review it             fresh eyes on the diff vs the spec                               │
+                            │  ○  no prompt             just the issue, you steer  ·  in a repo or without one           │
+                            │  +  add a repo to the issue                                                                │
+                            │                                                                                            │
+                            ╰────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
 
@@ -7493,7 +7493,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                “a tour? I love tours” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ PLA-4 → In Review   ✦                                                                                                             │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page      │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -7539,7 +7539,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   r write it again   ;/p to-do   h active workspaces   esc back to the issues                   ╰──╴ Col ╶───╯
 
@@ -7585,7 +7585,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   r write it again   ;/p to-do   h active workspaces   esc back to the issues                   ╰──╴ Col ╶───╯
 
@@ -7631,7 +7631,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions for PLA-1   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page       │   ╰─ω─╯~   │
   r write it again   ;/p to-do   h active workspaces   esc back to the issues                                                          ╰──╴ Col ╶───╯
 
@@ -7677,7 +7677,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
 
@@ -7723,7 +7723,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter send   tab read with j/k   ↑/↓ scroll the thread   ctrl-d/u scroll the side   esc close                                        ╰──╴ Col ╶───╯
 
@@ -7769,7 +7769,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   r write it again   ;/p to-do   h active workspaces   esc back to the issues                   ╰──╴ Col ╶───╯
 
@@ -7815,7 +7815,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page        │   ╰─ω─╯~   │
   h/b daily bark   esc back to the issues                                                                                              ╰──╴ Col ╶───╯
 
@@ -7861,7 +7861,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page         │   ╰─ω─╯~   │
   h/b daily bark   esc back to the issues                                                                                              ╰──╴ Col ╶───╯
 
@@ -7907,7 +7907,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   or press its key   j/k move   type to filter   esc/h back                                                             ╰──╴ Col ╶───╯
 
@@ -7953,7 +7953,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                              “moved to your to-do list.  p  opens it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ moved to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-1   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page         │   ╰─ω─╯~   │
   h/b daily bark   esc back to the issues                                                                                              ╰──╴ Col ╶───╯
 
@@ -7999,7 +7999,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page        │   ╰─ω─╯~   │
   h/b daily bark   esc back to the issues                                                                                              ╰──╴ Col ╶───╯
 
@@ -8045,7 +8045,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   r write it again   ;/p to-do   h active workspaces   esc back to the issues                   ╰──╴ Col ╶───╯
 
@@ -8091,7 +8091,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page        │   ╰─ω─╯~   │
   h/b daily bark   esc back to the issues                                                                                              ╰──╴ Col ╶───╯
 
@@ -8183,7 +8183,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions for PLA-99   c free session on it   a ask Col about it   x discard it   j/k topics   d/u page        │   ╰─ω─╯~   │
   h/b daily bark   esc back to the issues                                                                                              ╰──╴ Col ╶───╯
 
@@ -8229,7 +8229,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   h/b daily bark   esc back to the issues                                                                              ╰──╴ Col ╶───╯
 
@@ -8275,7 +8275,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   h/b daily bark   esc back to the issues                                                                              ╰──╴ Col ╶───╯
 
@@ -8321,7 +8321,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
@@ -8367,7 +8367,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
@@ -8413,7 +8413,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
@@ -8459,7 +8459,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   esc cancel                                                                                                               ╰──╴ Col ╶───╯
 
@@ -8505,7 +8505,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   h/b daily bark   esc back to the issues                                                       ╰──╴ Col ╶───╯
 
@@ -8551,7 +8551,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
@@ -8597,7 +8597,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
@@ -8643,7 +8643,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter Col writes it   esc cancel                                                                                                     ╰──╴ Col ╶───╯
 
@@ -8689,7 +8689,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter Col writes it   esc cancel                                                                                                     ╰──╴ Col ╶───╯
 
@@ -8735,7 +8735,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add it   type + enter Col writes it again   tab edit it yourself   esc cancel                                                  ╰──╴ Col ╶───╯
 
@@ -8781,7 +8781,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add it   type + enter Col writes it again   tab edit it yourself   esc cancel                                                  ╰──╴ Col ╶───╯
 
@@ -8827,7 +8827,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add it   type + enter Col writes it again   tab edit it yourself   esc cancel                                                  ╰──╴ Col ╶───╯
 
@@ -8873,7 +8873,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   ←/→ move   esc back to Col                                                                                               ╰──╴ Col ╶───╯
 
@@ -8919,7 +8919,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   ←/→ move   esc back to Col                                                                                               ╰──╴ Col ╶───╯
 
@@ -8965,7 +8965,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   enter add   ←/→ move   esc back to Col                                                                                               ╰──╴ Col ╶───╯
 
@@ -9011,7 +9011,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                         “on the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ added to your to-do list   ✦                                                                                                      │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   h/b daily bark   esc back to the issues                                                       ╰──╴ Col ╶───╯
 
@@ -9057,7 +9057,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   h/b daily bark   esc back to the issues                                                       ╰──╴ Col ╶───╯
 
@@ -9149,7 +9149,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
   i add a to-do   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it                │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   h/b daily bark   esc back to the issues                                                       ╰──╴ Col ╶───╯
 
@@ -9195,7 +9195,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   i add a to-do   h/b daily bark   esc back to the issues                                                                              ╰──╴ Col ╶───╯
 
@@ -9287,7 +9287,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                        “off the list” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from your to-do list   ✦                                                                                                │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   r write it again   ;/p to-do   h active workspaces   esc back to the issues                   ╰──╴ Col ╶───╯
 
@@ -9333,7 +9333,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                          “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ✦                                                                                                     │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   r write it again   ;/p to-do   h active workspaces   esc back to the issues                   ╰──╴ Col ╶───╯
 
@@ -9379,7 +9379,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                          “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ✦                                                                                                     │  ▜▖ ▼  ▗▛  │
                                                                                                                                        │   ╰─ω─╯~   │
   l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
 
@@ -9425,7 +9425,7 @@
                                                                                                                                        ╭────────────╮
                                                                                                                                        │  ◢▀▄▁▁▁▄▀◣ │
                                                                                                                          “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
-                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+   ✓ discarded from the report   ✦                                                                                                     │  ▜▖ ▼  ▗▛  │
   l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
   x discard it   j/k topics   d/u page   r write it again   ;/p to-do   h active workspaces   esc back to the issues                   ╰──╴ Col ╶───╯
 
