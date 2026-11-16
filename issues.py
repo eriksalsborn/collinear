@@ -6,6 +6,7 @@ import curses, json, locale, re, shlex, subprocess, sys, textwrap, threading, ti
 from pathlib import Path
 from datetime import datetime, timedelta, timezone
 from typing import NamedTuple
+import prs
 from prs import run_command, worktree_path_for_branch, open_herdr_workspaces, time_since_text, REPOSITORIES_FOLDER  # same folder, python puts it on sys.path
 
 OPEN_STATE_TYPES = ["started", "unstarted", "backlog", "triage"]  # shown, in this order
@@ -128,7 +129,7 @@ COL_TIPS = ["type a few letters to filter, no / needed", "3j jumps three rows do
         "start with plan it: Col grills you before he touches code", "start with review it: the diff, read with fresh eyes against the spec",
         "the team or project you used last is prefetched, so switching is instant", "PR badges come from Linear's GitHub link: conflict, draft, review, merged",
         "d and u in a preview scroll half a page", "in the chat, ↑↓ scroll and you can keep typing while Col thinks",
-        "a comment drafted by Col is never posted until you say yes", "h in a team view goes home; h at home closes",
+        "a comment drafted by Col is never posted until you say yes", "h in a team view goes home; only esc closes Collinear",
         "the count in the corner is how many you finished today", "edit Col's lines at the top of issues.py if you want a different voice", "Z sends Col off duty if you need the quiet",
         "B gives me a bone. just saying", "O walks you through the tour again"]
 COL_CHEERS_FOR_DONE = ["nice one. {n} done today", "that's {n} today, you're on a roll", "✓ shipped. {n} down", "{n} done. keep going",
@@ -140,6 +141,22 @@ KEYCODE_BY_HINT_NAME = {"enter": 10, "empty-enter": 10, "any": 10, "esc": 27, "s
             "pgup": curses.KEY_PPAGE, "pgdn": curses.KEY_NPAGE}
 # this ncurses (6.0, mouse v1) has no button 5: wheel down arrives as the "position" bit (probed)
 WHEEL_DOWN = getattr(curses, "BUTTON5_PRESSED", curses.REPORT_MOUSE_POSITION)
+
+
+BACKGROUND_JOBS = []  # the threads that are fetching, scanning or asking Claude right now
+
+
+def start_background_job(function, *arguments):
+    """Run function(*arguments) in a daemon thread. Every fetch and every question to Claude that must not freeze the
+    popup starts here, so that Col is purple for exactly as long as any of them runs (col_is_busy)."""
+    job = threading.Thread(target=function, args=arguments, daemon=True)
+    BACKGROUND_JOBS[:] = [running_job for running_job in BACKGROUND_JOBS if running_job.is_alive()] + [job]
+    job.start()
+
+
+def col_is_busy():
+    """Something is being fetched, set up or written by Claude: Col's eyes, his frame and what he says are purple."""
+    return bool(UiState.col_is_working or UiState.what_col_is_loading or any(job.is_alive() for job in BACKGROUND_JOBS))
 
 
 def keycodes_named_in_hint(keys_text):
@@ -277,7 +294,7 @@ def change_issue_optimistically(issue, input, fields_to_set_locally, label, undo
                 {"id": issue["id"], "in": input})
         except Exception as error:
             FAILED_CHANGE_MESSAGES.append(f"{label} failed: {error}"[:160])
-    threading.Thread(target=work, daemon=True).start()
+    start_background_job(work)
 
 
 LINEAR_KEYCHAIN_ITEM = "linear-api-key"  # the name the Linear API key is stored under in the macOS keychain
@@ -626,7 +643,7 @@ def run_with_spinner(screen, text, function_to_run):
             outcome["ok"] = function_to_run()
         except Exception as error:
             outcome["err"] = error
-    threading.Thread(target=work, daemon=True).start()
+    start_background_job(work)
     while not outcome:
         if UiState.draw_col and UiState.col_is_visible:
             UiState.col_is_working, UiState.what_col_is_loading = True, text.rstrip("…")
@@ -1453,7 +1470,7 @@ def run_setup_checklist(screen, force=False):
 
     def look():
         connector_checks.clear()
-        threading.Thread(target=lambda: connector_checks.__setitem__("rows", connector_setup_checks()), daemon=True).start()
+        start_background_job(lambda: connector_checks.__setitem__("rows", connector_setup_checks()))
     look()
     while True:
         frame_count += 1
@@ -1634,6 +1651,14 @@ ASK_ABOUT_ISSUE_TASK = ("Answer questions about one Linear issue. Its text is be
             "asks you to send a message, and then show what you sent.\n"
             "Answer briefly and concretely: a few sentences or bullets, Markdown is fine. Say where a fact came from "
             "when it isn't the issue. If you can't find out, say so.", "Question", "Answer")
+ASK_ABOUT_PULL_REQUEST_TASK = ("Answer questions about one GitHub pull request the developer opened. What GitHub says about it is below. "
+            "When that isn't enough, look things up: gh (read-only) for its diff, review comments, checks and commits "
+            "(gh pr view <url> --comments, gh pr diff <url>, gh pr checks <url>: pass the URL, the cwd may not be its "
+            "repository); Linear for the issue it belongs to; Slack for what was said about it; the web for docs and "
+            "linked pages. Look up only what the question needs. You can't change the pull request or the code. You may "
+            "post to Slack, but only when the question explicitly asks you to send a message, and then show what you sent.\n"
+            "Answer briefly and concretely: a few sentences or bullets, Markdown is fine. Say where a fact came from "
+            "when it isn't in the text below. If you can't find out, say so.", "Question", "Answer")
 ASK_ABOUT_REPORT_TASK = ("You are Col, a border collie who wrote the developer's daily report below. Answer their questions about it: "
                "what a line means, what happened in a thread, what to do first. The report's sources are the issues "
                "listed under it; look things up when the report isn't enough: Linear (comments, issues), the linked PRs "
@@ -1706,6 +1731,9 @@ WRITE_DAILY_REPORT_TASK = (
     "hunting for: a question put to them that has no answer, something they said they would do or look into, a bug "
     "or idea someone raised that went nowhere, a decision that was asked for and never made, a request that has no "
     "Linear issue. Leave out anything that was answered, done or already has an issue that covers it.\n"
+    "The facts end with what is already on their to-do list and what they discarded from earlier reports. A loose "
+    "thread about the same matter as one of those is a duplicate, however you would word it: leave it out. A "
+    "discarded one may come back only when something new happened on it after the day it was discarded.\n"
     "Format, Markdown. Two sections, each a heading line then bullets, no sub-bullets, no nested emphasis.\n"
     "## yesterday  — the update, at most 4 bullets of at most 20 words: issues finished, pull requests merged or "
     "opened, what the commits were about, decisions taken. The most important first; if nothing moved, one bullet "
@@ -1791,6 +1819,7 @@ def daily_report_context(issues):
     lines += ["", f"pull requests waiting on their review ({len(waiting_on_review)}), the most recent:"] \
         + ([f"- {waiting}" for waiting in waiting_on_review[:6]] or ["- none"])
     lines += ["", "herdr workspaces open on this machine:"] + ([f"- {workspace['label']}" for workspace in workspaces] or ["- none"])
+    lines += topics_not_to_write_again_as_context_lines(saved_todo_topics(), saved_discarded_topics())
     return "\n".join(lines)
 
 
@@ -1808,7 +1837,7 @@ def start_writing_daily_report(issues, today):
             text = f"Col couldn't write it: {e}"
         DAILY_REPORT["text"] = text
         write_stored_value("brief", {"date": today, "text": text, "steps": DAILY_REPORT["steps"]})
-    threading.Thread(target=work, daemon=True).start()
+    start_background_job(work)
 
 
 daily_report_text_attributes = lambda: dict(TEXT_ATTRIBUTE_BY_STYLE, code=curses.color_pair(CODE), head=curses.color_pair(ACCENT) | curses.A_BOLD,
@@ -1853,6 +1882,35 @@ def save_todo_topics(topics):
     (NOTES_DIR / "todo.json").write_text(json.dumps(topics, indent=1))
 
 
+DISCARDED_TOPICS_KEPT = 60  # the newest ones: enough to cover the week or so a report looks back on, many times over
+
+
+def saved_discarded_topics():
+    """[{"date", "topic"}], oldest first: the topics discarded from the daily bark or the to-do list, each as the
+    markdown Col wrote it, with the day it was discarded. Kept with the notes, so a new report does not bring them back."""
+    try:
+        return json.loads((NOTES_DIR / "discarded-topics.json").read_text())
+    except (OSError, ValueError):
+        return []
+
+
+def remember_discarded_topic(topic_markdown):
+    NOTES_DIR.mkdir(parents=True, exist_ok=True)
+    discarded_topics = saved_discarded_topics() + [{"date": f"{datetime.now():%Y-%m-%d}", "topic": topic_markdown}]
+    (NOTES_DIR / "discarded-topics.json").write_text(json.dumps(discarded_topics[-DISCARDED_TOPICS_KEPT:], indent=1))
+
+
+def topics_not_to_write_again_as_context_lines(todo_topics, discarded_topics):
+    """What Col is told before he writes a report, so it holds no duplicate: the topics on the to-do list and the
+    discarded ones, one line each.
+    ponytail: it is Col who judges "the same matter"; nothing checks his report against these afterwards."""
+    on_one_line = lambda topic_markdown: re.sub(r"^[-*+]\s+", "", " ".join(topic_markdown.split()))
+    return (["", "already on their to-do list (never write a loose thread about the same matter):"]
+            + ([f"- {on_one_line(topic_markdown)}" for topic_markdown in todo_topics] or ["- nothing"])
+            + ["", "discarded by them (leave the same matter out, unless something new happened on it after that day):"]
+            + ([f"- discarded {discarded['date']}: {on_one_line(discarded['topic'])}" for discarded in discarded_topics] or ["- nothing"]))
+
+
 def lines_of_each_topic(report_text):
     """[(first line, line after)] of each topic in the report's markdown: a top-level bullet with the lines under it (↳ who's on it)."""
     topics, is_inside_topic = [], False
@@ -1893,8 +1951,14 @@ def todo_topics_with_one_more(topics, topic_markdown):
 
 
 def todo_list_as_report_text():
-    return ("\n".join(saved_todo_topics()) or "nothing here yet. Press `i` to add a to-do: type it, or draft it with Col. In The "
-                                                             "Daily Bark, `s` moves a topic here. It stays until you discard it.")
+    """The saved to-dos as one text, shown like a report. "" when there are none: the page then says so (EMPTY_TODO_LIST_LINES)."""
+    return "\n".join(saved_todo_topics())
+
+
+# a page with nothing on it says so in grey, in the middle, with the key that fills it
+EMPTY_DAILY_BARK_LINES = ("the bowl is licked clean: not a topic left in today's bark", "press r and I'll go sniff out a fresh report")
+EMPTY_TODO_LIST_LINES = ("nothing to chew on: your to-do list is empty",
+                         "press i to add a to-do  ·  or press s on a topic in The Daily Bark to move it here")
 
 
 def stand_in_issue_for_topic(topic_text):
@@ -1909,7 +1973,8 @@ ACTIVE_WORKSPACES_VIEW = {"kind": "active workspaces", "id": "active-workspaces"
 
 def issues_with_an_open_workspace(my_issues, open_workspaces, worktree_folders_by_branch, fetch_issue=None):
     """Everything being worked on: my issues that have a herdr workspace open, then what the other workspaces named
-    after an issue or a topic are about (someone else's issue, one that is finished, a topic from The Daily Bark).
+    after an issue, a topic or a pull request are about (someone else's issue, one that is finished, a topic from The
+    Daily Bark, one of my PRs that names no Linear issue).
     fetch_issue(identifier) gets those issues from Linear; without it, or when it fails, the workspace's name stands in."""
     listed_issues, workspace_ids_accounted_for, identifiers_listed = [], set(), set()
     for issue in my_issues:
@@ -1922,7 +1987,7 @@ def issues_with_an_open_workspace(my_issues, open_workspaces, worktree_folders_b
         identifier, _, title = workspace_name_without_done(workspace).partition(" ")
         is_named_after_an_issue = bool(ISSUE_IDENTIFIER_PATTERN.fullmatch(identifier))
         if workspace["workspace_id"] in workspace_ids_accounted_for or identifier in identifiers_listed \
-                or not (is_named_after_an_issue or identifier.startswith("topic-")):
+                or not (is_named_after_an_issue or identifier.startswith(("topic-", "pr-"))):
             continue
         issue = None
         if fetch_issue and is_named_after_an_issue:
@@ -1935,7 +2000,8 @@ def issues_with_an_open_workspace(my_issues, open_workspaces, worktree_folders_b
                                        "updatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z"),
                                        # a workspace called "DONE: ..." says its issue is done before Linear has answered: grey from the first frame
                                        "state": {"name": "Done", "type": "completed", "position": -1} if workspace["label"].startswith(DONE_WORKSPACE_PREFIX) else
-                                                {"name": "Linear issue" if is_named_after_an_issue else "Topic, not in Linear", "type": "started", "position": -1}})
+                                                {"name": "Linear issue" if is_named_after_an_issue else "Pull request, not in Linear" if identifier.startswith("pr-") else "Topic, not in Linear",
+                                                 "type": "started", "position": -1}})
         identifiers_listed.add(identifier)
     return listed_issues
 
@@ -2050,7 +2116,7 @@ def draft_todo_with_col(screen):
                                                          answer_so_far=lambda text_so_far: written_so_far.update(text=text_so_far))
             except Exception as failure:
                 outcome["error"] = f"Col couldn't write it: {failure}"
-        threading.Thread(target=work, daemon=True).start()
+        start_background_job(work)
         spinner_frame, UiState.col_is_working, UiState.lookups_col_is_working_on = 0, True, lookup_steps
         screen.timeout(25)
         length_shown = 0
@@ -2098,31 +2164,35 @@ def add_topic_to_todo_list(screen):
         col_says("on the list", "cheer", 4)
 
 
-TABS = ("my issues", "active workspaces", "daily bark", "to-do")  # the top bar, left to right: ; moves right, h moves back
-CLOSE_COLLINEAR = "close collinear"  # show_daily_report() returns it for esc or q on the daily bark or the to-do list: tabs close the popup, like the lists do
-MOVED_BACK_FROM_THE_DAILY_BARK = "moved back from the daily bark"  # show_daily_report() returns it for h on the daily bark: the tab to its left is a list
-SWITCH_BETWEEN_DAILY_BARK_AND_TODO = "switch between the daily bark and the to-do list"
+TABS = ("my issues", "active workspaces", "daily bark", "to-do", "my PRs")  # the top bar, left to right: ; moves right, h moves back
+PAGE_TABS = TABS[2:]  # the tabs that are a page of their own, not a list of issues; a page returns one of these names to move there
+CLOSE_COLLINEAR = "close collinear"  # show_page_tabs_until_left() returns it for esc or q on the daily bark or the to-do list: tabs close the popup, like the lists do
+MOVED_BACK_FROM_THE_DAILY_BARK = "moved back from the daily bark"  # show_page_tabs_until_left() returns it for h on the daily bark: the tab to its left is a list
 
 
-def show_daily_report(screen, issues, today, showing_todo_list=False):
-    """The daily bark and the to-do list: the two tabs that are a page of topics, not a list of issues. Shows one
-    until you leave both. Returns the identifier of the issue a topic sent you to, MOVED_BACK_FROM_THE_DAILY_BARK
-    when h went to the tab left of the daily bark, or None (esc: back to the issues you came from)."""
+def show_page_tabs_until_left(screen, issues, today, page, list_screen):
+    """The tabs that are a page, not a list of issues: the daily bark, the to-do list and my PRs. Shows `page`, then
+    whichever of them you move to from it, until you leave them all. Returns the identifier of the issue a topic sent
+    you to, MOVED_BACK_FROM_THE_DAILY_BARK when h went to the tab left of the daily bark, CLOSE_COLLINEAR for esc,
+    or None (esc in the tour: back to the issues you came from)."""
     draw_top_bar_and_col = UiState.draw_screen_behind_dialog  # the list screen's draw(): with a page open it draws just those two
     try:
         while True:
-            result = show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_top_bar_and_col)
-            if result != SWITCH_BETWEEN_DAILY_BARK_AND_TODO:
+            result = (show_my_pull_requests_page(screen, list_screen, draw_top_bar_and_col) if page == "my PRs" else
+                      show_daily_bark_or_todo_page(screen, issues, today, page == "to-do", draw_top_bar_and_col))
+            if result not in PAGE_TABS:
                 return result
-            showing_todo_list = not showing_todo_list
+            page = result
     finally:
-        UiState.draw_screen_behind_dialog, UiState.page_in_place_of_the_list, UiState.col_is_working = draw_top_bar_and_col, None, False
+        UiState.draw_screen_behind_dialog, UiState.page_in_place_of_the_list = draw_top_bar_and_col, None
+        UiState.col_is_working, UiState.what_col_is_loading = False, ""
 
 
 def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_top_bar_and_col):
     """Col's recap of the last working day, as a page under the top bar. Shows the lookups while it's being written;
     j/k move between topics, l goes to the topic's issue (returns its identifier). The topic is remembered.
-    ; and h move to the next and the previous tab, b and p go straight to the daily bark and the to-do list.
+    ; and h move to the next and the previous tab; b, p and M go straight to the daily bark, the to-do list and my PRs
+    (the page returns the name of the tab to show next).
     showing_todo_list: the same page over the topics saved to the to-do list; there x removes one."""
     document = TODO_LIST if showing_todo_list else DAILY_REPORT  # what is on screen: "text", "steps" and "cur", the topic under the cursor
     if showing_todo_list:
@@ -2162,7 +2232,7 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
                      curses.color_pair(PURPLE if is_last_step else DIM) | (curses.A_BOLD if is_last_step else 0), 4)
             draw_footer_from_text(screen, "r start over · ; to-do · h active workspaces · esc close, b brings it back when it's done")
         else:
-            keys_between_the_tabs = " · h/b daily bark · esc close" if showing_todo_list else " · ;/p to-do · h active workspaces · esc close"
+            keys_between_the_tabs = " · h/b daily bark · ;/M my PRs · esc close" if showing_todo_list else " · ;/p to-do · M my PRs · h active workspaces · esc close"
             if COL_SPEECH["mood"] in ("left", "right") or not COL_SPEECH["say"]:
                 COL_SPEECH.update(mood="cheer", say="what you saved to do" if showing_todo_list else "here's your daily report", until=time.time() + 8)
             if showing_todo_list:
@@ -2207,6 +2277,9 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
                         + ("" if showing_todo_list else " · r write it again"))
                 draw_footer_from_text(screen, footer_text + keys_between_the_tabs)
             else:
+                if not report_text.strip():
+                    for row_offset, empty_page_line in enumerate(EMPTY_TODO_LIST_LINES if showing_todo_list else EMPTY_DAILY_BARK_LINES):
+                        line(box_height // 2 - 1 + row_offset, empty_page_line, curses.color_pair(DIM), max((box_width - len(empty_page_line)) // 2, 0))
                 draw_footer_from_text(screen, ("i add a to-do" if showing_todo_list else "r write it again") + keys_between_the_tabs)
         draw_change_receipt(screen)  # the page is in the list's place, and the list is what draws the receipt: discarding or moving a topic gets its green notice here
 
@@ -2228,7 +2301,9 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
         if key == ord("h") and not showing_todo_list:  # the tab left of the daily bark
             return MOVED_BACK_FROM_THE_DAILY_BARK
         if key in ((ord("h"), ord("b")) if showing_todo_list else (ord(";"), ord("p"))):  # the other one of the two: the next tab, or its own key
-            return SWITCH_BETWEEN_DAILY_BARK_AND_TODO
+            return "daily bark" if showing_todo_list else "to-do"
+        if UiState.guided_tour_step is None and (key == ord("M") or (key == ord(";") and showing_todo_list)):  # my PRs: its own key, and the tab right of the to-do list
+            return "my PRs"
         if key == ord("i") and showing_todo_list:  # a to-do of your own, typed or written up by Col
             add_topic_to_todo_list(screen)
             TODO_LIST["text"], TODO_LIST["cur"] = todo_list_as_report_text(), len(saved_todo_topics()) - 1
@@ -2254,6 +2329,9 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
             key = ord(choices[picked][0])  # from here on it is as if that short key was pressed
         does_something_with_the_topic = topic and (key in (ord("s"), ord("c"), ord("a")) or key == ord("l" if topic.issue_identifier else "n"))
         if topic and showing_todo_list and key == ord("x"):
+            for position, saved_topic in enumerate(saved_todo_topics()):
+                if position == topic.number:
+                    remember_discarded_topic(saved_topic)  # done or dropped: either way the next report leaves it out
             save_todo_topics([saved_topic for position, saved_topic in enumerate(saved_todo_topics()) if position != topic.number])
             TODO_LIST["text"] = todo_list_as_report_text()
             celebrate_change("discarded from your to-do list")
@@ -2264,6 +2342,8 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
             # where it outlives the next report. x just drops it. (report_text, a line up, still has it for the action.)
             if key != ord("x"):
                 save_todo_topics(todo_topics_with_one_more(saved_todo_topics(), markdown_of_each_topic(report_text)[topic.number]))
+            else:
+                remember_discarded_topic(markdown_of_each_topic(report_text)[topic.number])  # the next report leaves it out
             DAILY_REPORT["text"] = report_text_without_topic(report_text, topic.number)
             write_stored_value("brief", {k: DAILY_REPORT[k] for k in ("date", "text", "steps", "cur")})
             celebrate_change("discarded from the report" if key == ord("x") else "moved to your to-do list")
@@ -2289,7 +2369,8 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
         if key == ord("r") and not showing_todo_list and report_text and UiState.guided_tour_step is None and choose_from_list(
                 screen, "new report  ▸  Col  ·  write it again?", ["yes, write a new report", "no, keep this one"], cursor=1, help=(
                     "A new report replaces this one: every topic here is gone, also the ones still worth doing.",
-                    "To keep a topic, move it to the to-do list first (s). What is on the to-do list stays.")) != 0:
+                    "To keep a topic, move it to the to-do list first (s). What is on the to-do list stays.",
+                    "Col leaves out what is on your to-do list and what you discarded, so those don't come back.")) != 0:
             continue
         if key == ord("r") and not showing_todo_list:  # start over: stop a running one, forget today's
             for process in DAILY_REPORT["procs"]:
@@ -2316,7 +2397,7 @@ def show_daily_bark_or_todo_page(screen, issues, today, showing_todo_list, draw_
                     show_message_for_a_moment(screen, f"couldn't fetch {topic.issue_identifier}: {error}"[:120])
             elif not topic.issue_identifier and key == ord("n"):  # a topic with no issue yet: make one, the topic as its first description
                 headline = topic.text.split(" — ")[0].strip("* ")[:70]
-                create_issue_and_write_it(screen, title=headline, body=f"From Col's daily report, {datetime.now():%Y-%m-%d}:\n\n{topic.text}")
+                create_issue_and_write_it(screen, description=headline, body=f"From Col's daily report, {datetime.now():%Y-%m-%d}:\n\n{topic.text}")
         first_line_shown += {ord("d"): 10, ord("u"): -10}.get(key, 0)
 
 
@@ -2422,6 +2503,9 @@ def draw_chat(screen, title, issue, history, thinking, text, top, draft=False, r
                   "Ask Col anything about the report: what a line means, what happened in a thread, what to do first. "
                   "Col has the report, your issues, and can look things up in Linear, Slack and GitHub. The thread is "
                   "kept for the day.") if report else
+                 "Ask anything about the pull request. Col has its description and state, reads its diff, review comments "
+                 "and checks with gh, and can look things up in Linear, Slack and the web. The pull request and the code "
+                 "stay read-only. The thread is kept with its notes." if issue.get("is_pull_request") else
                  "Ask anything about the issue. Col reads it, its comments and linked PRs, and can look things up in "
                  "Linear, Slack, GitHub, git and the web. It can also post to Slack when you ask it to. Linear and code "
                  "stay read-only. The thread is kept with the issue." if not draft else
@@ -2471,13 +2555,14 @@ def post_comment_to_linear(issue, body):
     celebrate_change(f"comment posted on {issue['identifier']}")
 
 
-def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None, topic_markdown=None, is_todo=False):
+def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None, topic_markdown=None, is_todo=False, pull_request=None):
     """Thread with Claude about the issue, typed straight into the pinned input: enter sends, ↑↓/PgUp/PgDn
     scroll, esc stops a running answer or closes. draft: Claude writes a comment from the brief, feedback makes
     a new draft, enter on an empty input posts the latest draft (after a confirm).
     report: a thread with Col about the daily report instead (issue is None), shown beside it, kept per day.
     topic_markdown: the one topic being asked about; it alone is shown beside the thread (Col still gets the report).
-    is_todo: the topic is on the to-do list, so its thread is kept by its words, not by the day."""
+    is_todo: the topic is on the to-do list, so its thread is kept by its words, not by the day.
+    pull_request: a thread about one of my pull requests; issue is then what stands in for it (issue_standing_in_for_pull_request)."""
     tour_sees("report chat" if report else "draft chat" if draft else "ask chat")
     if report:
         topic_number, CHAT_SIDE_PANE["topic"] = (topic[0], topic[1]) if topic else (None, None)
@@ -2487,7 +2572,7 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
         CHAT_SIDE_PANE["top"] = None  # the side pane opens at the topic
     else:
         title = ("drafting comment" if draft else "asking Col") + "  ▸  " + issue_as_dialog_title(issue)
-        thread_file = NOTES_DIR / issue["identifier"] / ("draft.json" if draft else "ask.json")  # the thread, kept with the issue's notes
+        thread_file = NOTES_DIR / issue["identifier"] / ("draft.json" if draft else f"ask-pr-{pull_request['number']}.json" if pull_request else "ask.json")  # the thread, kept with the issue's notes
     try:
         history = [message for message in json.loads(thread_file.read_text()) if message.get("a")]
     except (OSError, ValueError):
@@ -2548,17 +2633,18 @@ def chat_with_col(screen, issue, draft=False, report=None, issues=(), topic=None
                                    + (f"\n\nThe topic they're asking about (answer about this one):\n{topic[1]}" if topic else ""))
                     prompt_context["cwd"] = Path.home()
                 elif "text" not in prompt_context:
-                    prompt_context["text"] = issue_as_prompt_text(issue)
+                    prompt_context["text"] = pull_request_as_prompt_text(pull_request) if pull_request else issue_as_prompt_text(issue)
                     # the issue's worktree, so git/gh see the right repo and branch
                     prompt_context["cwd"] = next(iter(worktrees_on_branch(issue["branchName"]).values()), Path.home())
                 questions_and_answers_so_far = [(earlier_message["q"], earlier_message["a"]) for earlier_message in history]
                 outcome["a"] = ask_headless_claude(prompt_context["text"], questions_and_answers_so_far, prompt_context["cwd"],
                                                    message["steps"].append, running_processes,
-                                                   ASK_ABOUT_REPORT_TASK if report else DRAFT_COMMENT_TASK if draft else ASK_ABOUT_ISSUE_TASK,
+                                                   ASK_ABOUT_REPORT_TASK if report else DRAFT_COMMENT_TASK if draft else
+                                                   ASK_ABOUT_PULL_REQUEST_TASK if pull_request else ASK_ABOUT_ISSUE_TASK,
                                                    answer_so_far=lambda text_so_far: received.update(text=text_so_far))
             except Exception as e:
                 outcome["a"] = f"failed: {e}"
-        threading.Thread(target=work, daemon=True).start()
+        start_background_job(work)
         spinner_frame, UiState.col_is_working, UiState.lookups_col_is_working_on = 0, True, message["steps"]
         screen.timeout(25)  # his words are typed out as he writes them
         while True:
@@ -2744,7 +2830,7 @@ def show_issue_preview_until_closed(screen, issue, open_workspace_summary):
         except Exception as error:
             fetched["done"] = [("couldn't load comments", str(error))]
     refreshed_comments_waiting = []  # a refreshed thread arriving after a post
-    threading.Thread(target=load, daemon=True).start()  # the comments are always beside the description
+    start_background_job(load)  # the comments are always beside the description
     while True:
         tour_sees("preview")
         if comments == "loading" and "done" in fetched:
@@ -2846,7 +2932,7 @@ def show_issue_preview_until_closed(screen, issue, open_workspace_summary):
                         load()
                         if "done" in fetched and isinstance(fetched["done"], list):
                             refreshed_comments_waiting.append(fetched["done"])
-                    threading.Thread(target=refresh_notes, daemon=True).start()
+                    start_background_job(refresh_notes)
             elif (typed := text_after_typing(comment_being_written, typed_character)) is not None:
                 comment_being_written = typed
             continue
@@ -2866,7 +2952,7 @@ def show_issue_preview_until_closed(screen, issue, open_workspace_summary):
                 COL_SPEECH.update(mood="cheer", say=COL_REACTIONS["comment"][int(time.time()) % len(COL_REACTIONS["comment"])], until=time.time() + 10)
                 comments, focused_pane, first_line_shown_by_pane[1] = "loading", 1, 10 ** 6
                 fetched.pop("done", None)
-                threading.Thread(target=load, daemon=True).start()
+                start_background_job(load)
             continue
         if key == ord("h"):
             if not focused_pane:
@@ -3047,21 +3133,285 @@ def start_free_session(screen, issue, topic=None, cwd=None, extra=()):
     sys.exit()
 
 
-def create_issue_and_write_it(screen, title="", body=""):
-    """Team -> title -> issue assigned to me, then straight into the "issue" phase, where claude helps write it.
-    title / body: a starting title and description (a topic from the daily report, say)."""
+def temporary_title_from_description(description, longest=60):
+    """The start of the description, cut at a word: the title a new issue has until the writing session gives it a real one."""
+    return description if len(description) <= longest else description[:longest].rsplit(" ", 1)[0] + "…"
+
+
+def create_issue_and_write_it(screen, description="", body=""):
+    """Team -> description -> issue assigned to me under a temporary title cut from the description, then straight
+    into the "issue" phase, where claude helps write it and gives it its real title.
+    description / body: a starting description and more text to keep under it (a topic from the daily report, say)."""
     my_user_id, team = choose_team(screen, "new issue  ▸  new issue  ·  team")
     if not team:
         return ""
-    title = ask_for_one_line(screen, f"new issue  ▸  new {team['key']} issue  ·  title", text=title)
-    if not title:
+    description = ask_for_one_line(screen, f"new issue  ▸  new {team['key']} issue  ·  describe it", text=description, examples=(
+        "what's wrong or what you want, in your own words. as long as you like",
+        "it gets a temporary title from this; the session gives it the real one"))
+    if not description:
         return ""
+    title, body = temporary_title_from_description(description), "\n\n".join(filter(None, [description, body]))
     issue = linear_graphql_with_spinner(
         screen, "creating the issue…", "mutation($t: String!, $d: String, $team: String!, $me: String!) { issueCreate(input: "
         "{title: $t, description: $d, teamId: $team, assigneeId: $me}) { issue { %s } } }" % ISSUE_FIELDS,
         {"t": title, "d": body or None, "team": team["id"], "me": my_user_id})["issueCreate"]["issue"]
     celebrate_change(f"created {issue['identifier']}")
     return start_work_on_issue(screen, issue, "issue") or f"created {issue['identifier']}"
+
+
+# ── my PRs: the pull requests I opened that are still open ─────────────────────────────────────────────────────────────
+
+MY_PULL_REQUESTS = {"nodes": None, "is_fetching": False, "error": "", "cursor": 0}  # as GitHub gave them; None until the first answer (or the cache)
+
+
+def repository_and_number_of(pull_request):
+    """ "my-repo #12": what a pull request is called on screen."""
+    return f"{pull_request['repository']['nameWithOwner'].split('/')[-1]} #{pull_request['number']}"
+
+
+def issue_standing_in_for_pull_request(pull_request):
+    """One of my pull requests, dressed as an issue so that a session, a jump and a chat can work on it. It goes by
+    the Linear issue its branch, title or body names (PLA-12), so it shares that issue's workspace and green marker;
+    a pull request that names none goes by "pr-<number>".
+    ponytail: two repositories with the same PR number and no Linear issue would share a workspace name and notes
+    folder; put the repository in the id if that ever happens."""
+    linear_issue_url = prs.linear_url(pull_request)
+    return {"identifier": linear_issue_url.rpartition("/")[2] if linear_issue_url else f"pr-{pull_request['number']}",
+            "title": f"{pull_request['repository']['nameWithOwner'].split('/')[-1]}: {pull_request['title']}",
+            "description": pull_request.get("body") or "", "url": pull_request["url"], "branchName": pull_request.get("headRefName") or "",
+            "priority": 0, "updatedAt": pull_request["updatedAt"], "assignee": {"displayName": saved_user_name() or "you"},
+            "state": {"name": "Draft" if pull_request.get("isDraft") else "Open for review", "type": "started", "position": -1},
+            "is_pull_request": True}
+
+
+def my_pull_request_rows(pull_requests):
+    """("head", section name) / ("pull request", pull request) rows: the ones open for review first, then the drafts,
+    each section in GitHub's order (latest update first). A section without pull requests is left out."""
+    rows = []
+    for section_name, is_draft_section in (("Open for review", False), ("Draft", True)):
+        in_section = [pull_request for pull_request in pull_requests if bool(pull_request.get("isDraft")) == is_draft_section]
+        if in_section:
+            rows += [("head", section_name)] + [("pull request", pull_request) for pull_request in in_section]
+    return rows
+
+
+def pull_request_state_colour_and_label(pull_request):
+    """(colour, words) for the state column of my PRs: what the PR popup says (review, checks, conflict); a draft
+    with nothing wrong says it is a draft."""
+    colour, label = prs.state(pull_request)
+    if pull_request.get("isDraft") and label == "needs review":
+        return MUTED, "◌ draft"
+    return {prs.GREEN: GREEN, prs.YELLOW: YELLOW, prs.RED: RED}[colour], label
+
+
+def pull_request_as_prompt_text(pull_request):
+    """The pull request as plain text for a question prompt: what the list already knows. Col reads the rest with gh."""
+    return "\n".join([f"Pull request {repository_and_number_of(pull_request)}: {pull_request['title']}", f"URL: {pull_request['url']}",
+                      f"Branch: {pull_request.get('headRefName') or '?'}",
+                      f"State: {'draft' if pull_request.get('isDraft') else 'open for review'} · {prs.state(pull_request)[1]}",
+                      "", "Description:", pull_request.get("body") or "(empty)"])
+
+
+def confirm_and_close_pull_request(screen, pull_request, delete_branch):
+    """Are-you-sure dialog -> gh closes the pull request, and deletes its branch too when asked.
+    Returns (whether it was closed, a footer message)."""
+    name = repository_and_number_of(pull_request)
+    what_happens = "close it and delete its branch" if delete_branch else "close it"
+    if choose_from_list(screen, f"close pull request  ▸  {name}  ·  {what_happens}?", ["no, keep it open", f"yes, {what_happens}"], help=(
+            pull_request["title"],
+            "It is closed without being merged." + (" Its branch is deleted on GitHub, so it cannot simply be reopened." if delete_branch
+                                                    else " Its branch stays, so it can be reopened."))) != 1:
+        return False, ""
+    closing = run_with_spinner(screen, f"closing {name}…", lambda: run_command(
+        "gh", "pr", "close", pull_request["url"], *(["--delete-branch"] if delete_branch else [])))
+    if closing.returncode:
+        return False, f"closing {name} failed: {((closing.stderr or closing.stdout).strip().splitlines() or ['gh said nothing'])[-1]}"[:160]
+    return True, f"closed {name}" + (" and deleted its branch" if delete_branch else "")
+
+
+def start_session_on_my_pull_request(screen, pull_request):
+    """A session on one of my pull requests, in a worktree of its branch. A pull request that names a Linear issue
+    gets that issue's workspace and the issue as context; any other gets a workspace named after the pull request
+    ("pr-12 my-repo: its title"), which the active workspaces list too. Exits the popup, or returns an error."""
+    repository, branch, number = pull_request["repository"]["nameWithOwner"].split("/")[-1], pull_request.get("headRefName"), pull_request["number"]
+    if not (REPOSITORIES_FOLDER / repository).is_dir() or not branch:
+        return f"{repository} is not cloned in {REPOSITORIES_FOLDER}: no session without its code"
+    issue = issue_standing_in_for_pull_request(pull_request)
+    if not issue["identifier"].startswith("pr-"):
+        try:
+            issue = run_with_spinner(screen, f"fetching {issue['identifier']}…", lambda: fetch_issue_by_identifier(issue["identifier"])) or issue
+        except Exception:  # Linear can't be asked: the session starts on the pull request alone, in a workspace still named after the issue
+            pass
+    if issue.get("id"):
+        return start_free_session_on_pull_request(screen, issue, repository, branch, number)
+    worktree_folder = run_with_spinner(screen, f"setting up {repository} on {branch}", lambda: ensure_worktree_for_branch(REPOSITORIES_FOLDER / repository, branch))
+    notes_folder = NOTES_DIR / issue["identifier"]
+    notes_folder.mkdir(parents=True, exist_ok=True)
+    prompt_file = notes_folder / f"prompt-pr-{number}.md"
+    prompt_file.write_text(f"You're in {worktree_folder}, a worktree of {repository} on {branch}, the branch of my pull request #{number}: "
+                           f"{pull_request['title']} ({pull_request['url']}).\n\n"
+                           f"Read it with its review comments and checks (gh pr view {number} --comments, gh pr checks {number}) and tell me in "
+                           f"a few lines where it stands and what it still needs, then wait for me. If you want to keep notes, put them in {notes_folder}/.\n")
+    show_status_message(screen, f"starting #{number}…")
+    workspace = workspace_open_for_issue(issue)
+    if error := open_claude_in_workspace(issue, workspace, worktree_folder, f"#{number}", prompt_file, [notes_folder]):
+        return error
+    show_col_send_off(screen, "pr", [
+        "a new tab in its open workspace" if workspace else f"workspace  {issue['identifier']} {issue['title']}"[:70],
+        f"worktree  {repository}  on  {branch}"[:70], f"Claude Code, pointed at PR #{number}", "it says where the PR stands, then you steer"])
+    sys.exit()
+
+
+def show_my_pull_requests_page(screen, list_screen, draw_top_bar_and_col):
+    """The my PRs tab, as a page under the top bar: the pull requests I opened that are still open, the ones up for
+    review first, then the drafts. j/k move. l/enter starts a session on the pull request's branch, or jumps to the
+    session that is already open on it (w only jumps); a asks Col about it; g opens it on GitHub; x closes it,
+    X closes it and deletes its branch; r asks GitHub again. A pull request with a session open has the green marker.
+    h and p go to the to-do list, b to the daily bark. Returns the tab to show next, or CLOSE_COLLINEAR for esc."""
+    state, footer_message, rows, pull_requests = MY_PULL_REQUESTS, "", [], []
+
+    def fetch_in_background():
+        if state["is_fetching"]:
+            return
+        state["is_fetching"] = True
+
+        def fetch_and_hand_over():
+            try:
+                state["nodes"] = [pull_request for pull_request in prs.fetch()["mine"]["nodes"] if pull_request.get("number")]
+            except Exception as error:  # gh missing, offline, not logged in…
+                state["error"] = f"couldn't ask GitHub: {str(getattr(error, 'stderr', '') or error).strip()[:120]}"
+            state["is_fetching"] = False
+        start_background_job(fetch_and_hand_over)
+
+    def has_open_session(pull_request):
+        return bool(list_screen.open_workspaces_of(issue_standing_in_for_pull_request(pull_request)))
+
+    def paint():
+        """The page, without refresh; also what is behind every dialog opened from it."""
+        UiState.page_in_place_of_the_list = "my PRs"
+        UiState.what_col_is_loading = "fetching your pull requests" if state["is_fetching"] else ""
+        draw_top_bar_and_col()
+        screen_height, screen_width = screen.getmaxyx()
+        first_row_of_page = IssueListScreen.FIRST_LIST_ROW
+        rows_that_fit = max(screen_height - first_row_of_page - 6, 0)  # down to Col's corner and the footer
+        if not rows:  # nothing to list: say so in grey, in the middle, like the other pages
+            empty_page_lines = ("fetching your pull requests…",) if state["nodes"] is None else \
+                ("no pull request of yours is open: nothing to herd here", "press r and I'll ask GitHub again")
+            for row_offset, empty_page_line in enumerate(empty_page_lines):
+                screen.addnstr(first_row_of_page + rows_that_fit // 2 - 1 + row_offset, max((screen_width - len(empty_page_line)) // 2, 0),
+                               empty_page_line, max(screen_width - 2, 0), curses.color_pair(DIM))
+        row_under_cursor = next((row_number for row_number, (kind, value) in enumerate(rows)
+                                 if kind == "pull request" and value is pull_requests[state["cursor"]]), 0)
+        first_row_shown = max(0, row_under_cursor - rows_that_fit + 1)
+        now = datetime.now(timezone.utc)
+        for y, (kind, value) in enumerate(rows[first_row_shown:first_row_shown + rows_that_fit], start=first_row_of_page):
+            if kind == "head":  # "● Open for review 3 ──────", like a state on the issue list
+                count = str(sum(bool(pull_request.get("isDraft")) == (value == "Draft") for pull_request in pull_requests))
+                icon, icon_colour = ("◌", MUTED) if value == "Draft" else ("●", YELLOW)
+                screen.addnstr(y, 2, icon, 2, curses.color_pair(icon_colour) | curses.A_BOLD)
+                screen.addnstr(y, 4, value, max(screen_width - 5, 0), curses.color_pair(ACCENT) | curses.A_BOLD)
+                screen.addnstr(y, 5 + len(value), count, max(screen_width - 6 - len(value), 0), curses.color_pair(DIM))
+                rule_x = 7 + len(value) + len(count)
+                screen.addnstr(y, rule_x, "─" * max(screen_width - 2 - rule_x, 0), max(screen_width - 2 - rule_x, 0), curses.color_pair(BORDER))
+                continue
+            pull_request = value
+            rows_from_cursor = pull_requests.index(pull_request) - state["cursor"]
+            is_under_cursor = rows_from_cursor == 0
+            register_clickable_row(y, 0, screen_width, rows_from_cursor, [10] * is_under_cursor)  # click a row: the cursor goes there; click it again: its session
+
+            def styled(colour_pair, bold=False):  # on the cursor's row everything keeps its colour, on the row's background
+                return (on_cursor_row(curses.color_pair(colour_pair)) if is_under_cursor else curses.color_pair(colour_pair)) | (curses.A_BOLD if bold else 0)
+
+            session_is_open = has_open_session(pull_request)
+            state_colour, state_label = pull_request_state_colour_and_label(pull_request)
+            right_columns = [(" ▶ open ", GREEN, True)] * session_is_open + [  # (text, colour, drawn as a filled chip)
+                (f"{state_label:<15}", state_colour, False),
+                (f"{time_since_text(pull_request['updatedAt'], now):>7}", colour_for_issue_age(pull_request["updatedAt"], now), False)]
+            right_columns_width = sum(len(text) for text, _, _ in right_columns) + 2 * (len(right_columns) - 1)
+            if is_under_cursor:
+                screen.addnstr(y, 1, " " * (screen_width - 2), screen_width - 2, curses.color_pair(SELECTED_ROW))
+                screen.addnstr(y, 1, "▎", 1, curses.color_pair(SELECTED_ROW_MARKER))
+            if session_is_open:
+                screen.addnstr(y, 4, "▶", 1, styled(GREEN, True))
+            screen.addnstr(y, 6, f"{repository_and_number_of(pull_request):<26.26}", max(screen_width - 7, 0), styled(ACCENT, is_under_cursor))
+            title_x = 33
+            title_width = max(screen_width - 4 - right_columns_width - title_x, 0)
+            title = pull_request["title"] if len(pull_request["title"]) <= title_width else pull_request["title"][:max(title_width - 1, 0)] + "…"
+            screen.addnstr(y, title_x, title, title_width, (curses.color_pair(SELECTED_ROW) | curses.A_BOLD) if is_under_cursor else 0)
+            x = max(screen_width - 2 - right_columns_width, title_x)
+            for text, colour_pair, is_chip in right_columns:
+                attribute = (curses.color_pair(colour_pair) | curses.A_REVERSE | curses.A_BOLD) if is_chip else styled(colour_pair, colour_pair in (RED, GREEN))
+                screen.addnstr(y, x, text, max(screen_width - 2 - x, 0), attribute)
+                x += len(text) + 2
+        if footer_message:
+            is_bad_news = re.search(r"fail|couldn't|not cloned|no session|Error", footer_message)
+            screen.addnstr(screen_height - 1, 2, ("✗ " if is_bad_news else "✓ ") + footer_message, max(screen_width - 3 - COL_CORNER_WIDTH, 0),
+                           curses.color_pair(RED if is_bad_news else GREEN) | curses.A_BOLD)
+        elif pull_requests:
+            draw_footer_from_text(screen, ("l/enter jump to its session" if has_open_session(pull_requests[state["cursor"]]) else "l/enter start a session on it")
+                                  + " · a ask Col about it · g open on GitHub · x close it · X close it and delete its branch"
+                                  + " · r refresh · j/k move · h/p to-do · b daily bark · esc close")
+        else:
+            draw_footer_from_text(screen, "r refresh · h/p to-do · b daily bark · esc close")
+
+    if state["nodes"] is None:  # what the last fetch left behind, shown at once; GitHub's answer replaces it
+        try:
+            state["nodes"] = [pull_request for pull_request in json.loads(prs.CACHE.read_text())["mine"]["nodes"] if pull_request.get("number")]
+        except (OSError, ValueError, KeyError):
+            pass
+    fetch_in_background()
+    UiState.draw_screen_behind_dialog = paint  # the page stays up behind every dialog opened from it
+    while True:
+        UiState.title_of_open_dialog = None  # back on the page: the next dialog pops open again
+        if state["error"]:
+            footer_message, state["error"] = state["error"], ""
+        rows = my_pull_request_rows(state["nodes"] or [])
+        pull_requests = [value for kind, value in rows if kind == "pull request"]
+        state["cursor"] = max(0, min(state["cursor"], len(pull_requests) - 1))
+        paint()
+        screen.refresh()
+        try:
+            key = screen.getch()
+        except curses.error:
+            continue
+        if key == -1:
+            continue
+        footer_message = ""
+        if key in (27, ord("q")):  # a tab: esc closes Collinear
+            return CLOSE_COLLINEAR
+        if key in (ord("h"), ord("p")):  # the tab to the left
+            return "to-do"
+        if key == ord("b"):
+            return "daily bark"
+        if key == ord("r"):
+            fetch_in_background()
+        elif key in (ord("j"), curses.KEY_DOWN, ord("k"), curses.KEY_UP):
+            state["cursor"] += 1 if key in (ord("j"), curses.KEY_DOWN) else -1
+        elif key == ord("G"):
+            state["cursor"] = len(pull_requests) - 1
+        elif pull_requests:
+            pull_request = pull_requests[state["cursor"]]
+            issue, name = issue_standing_in_for_pull_request(pull_request), repository_and_number_of(pull_request)
+            try:
+                if key in (ord("l"), ord("w"), 10, 13, curses.KEY_ENTER):
+                    if has_open_session(pull_request):  # already working on it: go there
+                        footer_message = jump_to_a_session_of_issue(screen, issue, list_screen.folders_of_branch_of(issue)) or ""
+                    elif key == ord("w"):
+                        footer_message = f"no session open on {name} yet · enter starts one"
+                    else:
+                        footer_message = start_session_on_my_pull_request(screen, pull_request) or ""
+                elif key == ord("a"):
+                    chat_with_col(screen, issue, pull_request=pull_request)
+                elif key == ord("g"):
+                    subprocess.run(["open", pull_request["url"]])
+                    footer_message = f"opened {name} on GitHub"
+                elif key in (ord("x"), ord("X")):
+                    was_closed, footer_message = confirm_and_close_pull_request(screen, pull_request, delete_branch=key == ord("X"))
+                    if was_closed:  # off the list at once; GitHub's answer confirms it
+                        state["nodes"] = [listed for listed in state["nodes"] if listed["url"] != pull_request["url"]]
+                        fetch_in_background()
+            except Exception as error:  # an error becomes the message, instead of the popup silently closing
+                footer_message = f"{type(error).__name__}: {error}"[:160]
 
 
 class KeyBinding(NamedTuple):
@@ -3098,6 +3448,7 @@ KEY_BINDINGS = [
     KeyBinding(";",     "move_to_next_tab",                  False,  VIEWS,             ";  /  h",           "next / previous tab",   ";", "next tab"),
     KeyBinding("b",     "open_daily_report",                 False,  VIEWS,             "b",                 "daily bark",            "b", "daily bark"),
     KeyBinding("p",     "open_todo_list",                    False,  VIEWS,             "p",                 "to-do list",            "p", "to-do"),
+    KeyBinding("M",     "open_my_pull_requests",             False,  VIEWS,             "M",                 "my PRs",                "M", "my PRs"),
     KeyBinding("W",     "show_active_workspaces",            False,  VIEWS,             "W",                 "active workspaces",     "W", "active ws"),
     KeyBinding("t",     "browse_a_team",                     False,  VIEWS,             "t",                 "team",                  "t/T", "team / project"),
     KeyBinding("T",     "browse_a_project",                  False,  VIEWS,             "T",                 "project"),
@@ -3113,8 +3464,8 @@ KEY_BINDINGS = [
     KeyBinding("/",     "start_typing_a_filter",             False,  MOVE_AROUND,       "type, or /",        "filter · esc clears",   "/", "filter"),
     KeyBinding("",      "",                                  False,  MOVE_AROUND,       "click / wheel",     "rows, hints · scroll"),
     KeyBinding("?",     "show_every_key",                    False,  "",                "",                  "",                      "?", "all keys"),
-    KeyBinding("h",     "go_back_or_close",                  False,  VIEWS,             "h",                 "the tab to the left, then close", "h", "close"),
-    KeyBinding("\x1b",  "close_popup_or_leave_team_or_project", False, VIEWS,           "esc",               "close  (a team or project: back)"),
+    KeyBinding("h",     "go_back",                           False,  VIEWS,             "h",                 "the tab to the left"),
+    KeyBinding("\x1b",  "close_popup_or_leave_team_or_project", False, VIEWS,           "esc",               "close  (a team or project: back)", "esc", "close"),
     KeyBinding("q",     "close_popup",                       False,  VIEWS,             "q",                 "close"),
     KeyBinding("Z",     "toggle_col",                        False,  VIEWS,             "Z",                 "Col on / off"),
     KeyBinding("K",     "toggle_footer_hints",               False,  VIEWS,             "K",                 "footer hints on / off"),
@@ -3242,7 +3593,7 @@ class IssueListScreen:
             self.all_rows = self.rows_for(self.issues)
             self.refresh_issues_in_background()
         if last_view := read_stored_value("last-view"):  # the team/project you used last: warm its cache so switching is instant
-            threading.Thread(target=lambda: fetch_issues(last_view), daemon=True).start()
+            start_background_job(lambda: fetch_issues(last_view))
         self.identifier_to_put_cursor_on = (read_stored_value("last") or {}).get("sel")  # resume on the issue you last touched
         UiState.col_is_visible = (read_stored_value("col") or {}).get("on", True)
         UiState.footer_hints_visible = (read_stored_value("hints") or {}).get("on")
@@ -3253,7 +3604,7 @@ class IssueListScreen:
         done = read_stored_value("done") or {}
         self.done_today_count = done.get("n", 0) if done.get("date") == self.today else 0
         UiState.draw_screen_behind_dialog = self.draw
-        threading.Thread(target=self.scan_workspaces_and_worktrees, args=(self.issues or [],), daemon=True).start()
+        start_background_job(self.scan_workspaces_and_worktrees, self.issues or [])
 
     def issues_from_cache(self, view):
         try:
@@ -3273,7 +3624,7 @@ class IssueListScreen:
             except Exception as error:  # no key, offline…
                 self.refresh_error = f"refresh failed: {error}"[:160]
             self.refresh_is_running = False
-        threading.Thread(target=fetch_and_hand_over, daemon=True).start()
+        start_background_job(fetch_and_hand_over)
 
     def scan_workspaces_and_worktrees(self, my_issues):
         """Background: which issues have a herdr workspace open, what is checked out where, and for my started
@@ -3335,7 +3686,7 @@ class IssueListScreen:
                 self.issues, self.all_rows = issues, self.rows_for(issues)
                 if fetched_for_view in (None, ACTIVE_WORKSPACES_VIEW):  # both fetched my issues: the scan and the greeting go by those
                     my_issues = issues if fetched_for_view is None else self.issues_from_cache(None) or []
-                    threading.Thread(target=self.scan_workspaces_and_worktrees, args=(my_issues,), daemon=True).start()
+                    start_background_job(self.scan_workspaces_and_worktrees, my_issues)
                     self.greet_on_first_open_of_the_day(my_issues)
         if self.refresh_error:
             self.footer_message, self.refresh_error = self.refresh_error, ""
@@ -3611,7 +3962,7 @@ class IssueListScreen:
         screen, colour = self.screen, curses.color_pair  # not self.colour: Col is never greyed, whatever is in front of the list
         screen_height, screen_width = screen.getmaxyx()
         mood, words = self.col_mood_and_words()
-        is_busy = UiState.col_is_working or self.refresh_is_running  # loading, fetching or writing an answer: his eyes, his frame and what he says are purple
+        is_busy = col_is_busy()  # loading, fetching or writing an answer, on this screen or behind it: his eyes, his frame and what he says are purple
         frame_colour, face_colour = PURPLE if is_busy else COL_ACCENT, COL_FACE
         face = COL_FACES[mood]
         face_x = screen_width - len(face[2]) - 2
@@ -3647,7 +3998,7 @@ class IssueListScreen:
 
     def footer_hints(self, only_those_that_work_on_an_empty_list=False):
         """[(keys, text)] for the footer, from KEY_BINDINGS. Jumping to an open workspace goes first when there is
-        one, undo shows only when there is something to undo, and h says where it leads."""
+        one, undo shows only when there is something to undo, and h shows only where it leads somewhere."""
         hints, jump_hint = [], []
         for binding in KEY_BINDINGS:
             if not binding.footer_keys or (only_those_that_work_on_an_empty_list and binding.needs_issue_under_cursor):
@@ -3659,8 +4010,8 @@ class IssueListScreen:
                     jump_hint = [(binding.footer_keys, binding.footer_text if sessions < 2 else f"pick one of its {sessions} sessions")]
             elif binding.action == "undo_last_change" and not UNDO_STACK:
                 continue
-            elif binding.action == "go_back_or_close" and self.view:
-                hints.append((binding.footer_keys, "back to my issues"))
+            elif binding.action == "close_popup_or_leave_team_or_project" and self.view:  # h has somewhere to go: it comes first, then esc
+                hints += [("h", "back to my issues"), (binding.footer_keys, binding.footer_text if self.view == ACTIVE_WORKSPACES_VIEW else "back")]
             else:
                 hints.append((binding.footer_keys, binding.footer_text))
         return jump_hint + hints
@@ -3888,10 +4239,10 @@ class IssueListScreen:
 
     # -- views --
 
-    def open_daily_report(self, showing_todo_list=False, issues=None):
-        """The daily bark tab (or the to-do list tab), until you leave them: back on the list you came from, on the
-        issue a topic sent you to, or on the active workspaces when h moved back past the daily bark."""
-        picked = show_daily_report(self.screen, self.issues or [] if issues is None else issues, self.today, showing_todo_list)
+    def open_daily_report(self, page="daily bark", issues=None):
+        """The daily bark tab (or another of the page tabs: the to-do list, my PRs), until you leave them: back on the
+        list you came from, on the issue a topic sent you to, or on the active workspaces when h moved back past the daily bark."""
+        picked = show_page_tabs_until_left(self.screen, self.issues or [] if issues is None else issues, self.today, page, self)
         if picked == CLOSE_COLLINEAR:
             self.popup_should_close = True
         elif picked == MOVED_BACK_FROM_THE_DAILY_BARK:
@@ -3902,10 +4253,13 @@ class IssueListScreen:
             col_reacts_to("pick")  # the list lands on that issue
 
     def open_todo_list(self):
-        self.open_daily_report(showing_todo_list=True)
+        self.open_daily_report("to-do")
+
+    def open_my_pull_requests(self):
+        self.open_daily_report("my PRs")
 
     def move_to_next_tab(self):
-        """; moves one tab to the right: my issues, active workspaces, daily bark, to-do. h moves back (go_back_or_close)."""
+        """; moves one tab to the right: my issues, active workspaces, daily bark, to-do, my PRs. h moves back (go_back)."""
         if not self.view:
             self.switch_to_view(ACTIVE_WORKSPACES_VIEW)
         elif self.view == ACTIVE_WORKSPACES_VIEW:
@@ -3938,9 +4292,9 @@ class IssueListScreen:
         show_key_reference(self.screen)
         col_says("that's all of them. you've got this", "cheer")
 
-    def go_back_or_close(self):
-        """Back one step at a time: clear the filter, then to my issues (the tab to the left of the active workspaces,
-        and where a team or a project was opened from), then close."""
+    def go_back(self):
+        """h: back one step at a time: clear the filter, then to my issues (the tab to the left of the active
+        workspaces, and where a team or a project was opened from). It never closes Collinear: esc does."""
         if self.filter_text:
             self.filter_text = ""
             col_reacts_to("unfilter")
@@ -3948,7 +4302,7 @@ class IssueListScreen:
             self.switch_to_view(None)
             col_reacts_to("back")
         else:
-            self.popup_should_close = True
+            return "my issues is the first tab  ·  esc closes Collinear"
 
     def close_popup(self):
         self.popup_should_close = True
@@ -3957,7 +4311,7 @@ class IssueListScreen:
         """esc on a tab (my issues, the active workspaces) closes Collinear, as it does on the daily bark and the to-do
         list. It only steps back from what is not a tab: a filter is cleared, a team or a project goes back to my issues."""
         if self.filter_text or (self.view and self.view != ACTIVE_WORKSPACES_VIEW):
-            self.go_back_or_close()
+            self.go_back()
         else:
             self.popup_should_close = True
 
@@ -4055,6 +4409,30 @@ def _test():
         assert "- /wt/a\n- /wt/b" in text
         assert "PLA-9" in text and "erik/pla-9" in text and "{" not in text, phase
     assert "- none:" in render_phase_prompt("issue", issue, [], "/notes/PLA-9")
+    assert temporary_title_from_description("short one") == "short one"
+    job_may_finish = threading.Event()
+    assert not col_is_busy()
+    start_background_job(job_may_finish.wait)  # any background job, a fetch or a question to Claude: Col is purple until it is done
+    assert col_is_busy()
+    job_may_finish.set()
+    BACKGROUND_JOBS[-1].join()
+    assert not col_is_busy()
+    context_lines = topics_not_to_write_again_as_context_lines(["- **PLA-1 login** — reply to Sam\n  ↳ Sam in #dev"], [{"date": "2026-11-10", "topic": "* **old idea** — file it"}])
+    assert "- **PLA-1 login** — reply to Sam ↳ Sam in #dev" in context_lines and "- discarded 2026-11-10: **old idea** — file it" in context_lines
+    assert topics_not_to_write_again_as_context_lines([], []).count("- nothing") == 2
+    fake_pull_request = lambda number, is_draft, branch="fix": {
+        "number": number, "isDraft": is_draft, "title": f"t{number}", "url": f"u{number}", "headRefName": branch, "updatedAt": "2026-11-10T00:00:00Z",
+        "repository": {"nameWithOwner": "o/alpha"}, "reviewDecision": None, "mergeable": "MERGEABLE", "commits": {"nodes": []}}
+    assert [value if kind == "head" else value["number"] for kind, value in my_pull_request_rows([fake_pull_request(1, True), fake_pull_request(2, False)])] \
+        == ["Open for review", 2, "Draft", 1]
+    assert my_pull_request_rows([]) == [] and my_pull_request_rows([fake_pull_request(1, True)])[0] == ("head", "Draft")
+    assert issue_standing_in_for_pull_request(fake_pull_request(7, True))["identifier"] == "pr-7"
+    assert pull_request_state_colour_and_label(fake_pull_request(1, True)) == (MUTED, "◌ draft")
+    assert pull_request_state_colour_and_label(fake_pull_request(1, False)) == (YELLOW, "needs review")
+    workspace_of_pull_request = {"label": "pr-7 alpha: t7", "workspace_id": "w9"}
+    assert [listed["state"]["name"] for listed in issues_with_an_open_workspace([], [workspace_of_pull_request], {})] == ["Pull request, not in Linear"]
+    assert temporary_title_from_description("the export button does nothing when the list is filtered by team and I have to reload") == "the export button does nothing when the list is filtered by…"
+    assert len(temporary_title_from_description("x" * 200)) == 61  # no space to cut at: the first 60 characters
     free_session_prompt = render_phase_prompt("free", issue, [], "/notes/PLA-9")
     assert "PLA-9" in free_session_prompt and "/notes/PLA-9" in free_session_prompt and "worktree" not in free_session_prompt and "{" not in free_session_prompt
     att = {"attachments": {"nodes": [{"url": "https://github.com/o/r/pull/7", "title": "x"},

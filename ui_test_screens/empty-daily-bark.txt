@@ -1,0 +1,324 @@
+
+########## 001 before 'b'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs                                                                               3 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◕ In Progress 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace                       ET   Erik Tester  Gateway c4        ▶ alpha   ● review        2d ago
+
+  ◔ Linear issue 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ PLA-99    ▯▯▯         someone else's                                       ?   —                              ▶ open                  just now
+
+  ◔ Topic, not in Linear 1  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+    ▶ topic-0a1 ▯▯▯         a loose topic                                        ?   —                              ▶ open                  just now
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  w jump to its workspace   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority             │   ╰─ω─╯~   │
+  A assign   X cancel   n new issue   ; next tab   b daily bark   p to-do   M my PRs   W active ws   ? all keys                        ╰──╴ Col ╶───╯
+
+########## 002 before 'x'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 lookups in Linear, Slack and GitHub
+
+     WEDNESDAY
+    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  █ ▶ PLA-1 login thing — PR #7 is in review since Tuesday.
+
+    ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+    • PLA-99 someone else's — waiting on Sam.
+      ↳ you and Sam
+
+    ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+    • a loose topic — nobody filed it yet.
+
+
+     LOOSE THREADS
+    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    • reply to Robin about herdr links.
+      ↳ Robin in #dev, Tuesday · no Linear issue yet
+
+    ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+    • start with PLA-1, it is closest to done.
+
+
+
+
+
+
+
+                                                                                                                                               1/5
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  l/enter actions for PLA-1   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page       │   ╰─ω─╯~   │
+  r write it again   ;/p to-do   M my PRs   h active workspaces   esc close                                                            ╰──╴ Col ╶───╯
+
+########## 003 before 'x'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 lookups in Linear, Slack and GitHub
+
+     WEDNESDAY
+    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  █ ▶ PLA-99 someone else's — waiting on Sam.
+  █   ↳ you and Sam
+
+    ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+    • a loose topic — nobody filed it yet.
+
+
+     LOOSE THREADS
+    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    • reply to Robin about herdr links.
+      ↳ Robin in #dev, Tuesday · no Linear issue yet
+
+    ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+    • start with PLA-1, it is closest to done.
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                               1/4
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ discarded from the report   ✦                                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions for PLA-99   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page      │   ╰─ω─╯~   │
+  r write it again   ;/p to-do   M my PRs   h active workspaces   esc close                                                            ╰──╴ Col ╶───╯
+
+########## 004 before 'x'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 lookups in Linear, Slack and GitHub
+
+     WEDNESDAY
+    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  █ ▶ a loose topic — nobody filed it yet.
+
+
+     LOOSE THREADS
+    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+    • reply to Robin about herdr links.
+      ↳ Robin in #dev, Tuesday · no Linear issue yet
+
+    ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+    • start with PLA-1, it is closest to done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                               1/3
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ discarded from the report   ✦                                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   j/k topics   d/u page   r write it again   ;/p to-do   M my PRs   h active workspaces   esc close                     ╰──╴ Col ╶───╯
+
+########## 005 before 'x'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 lookups in Linear, Slack and GitHub
+
+     LOOSE THREADS
+    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  █ ▶ reply to Robin about herdr links.
+  █   ↳ Robin in #dev, Tuesday · no Linear issue yet
+
+    ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
+
+    • start with PLA-1, it is closest to done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                               1/2
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ discarded from the report   ✦                                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions   n create a Linear issue from this topic   c free session on it   a ask Col about it   s move to to-do              │   ╰─ω─╯~   │
+  x discard it   j/k topics   d/u page   r write it again   ;/p to-do   M my PRs   h active workspaces   esc close                     ╰──╴ Col ╶───╯
+
+########## 006 before 'x'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 lookups in Linear, Slack and GitHub
+
+     LOOSE THREADS
+    ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+  █ ▶ start with PLA-1, it is closest to done.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                               1/1
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ discarded from the report   ✦                                                                                                     │  ▜▖ ▼  ▗▛  │
+  l/enter actions for PLA-1   c free session on it   a ask Col about it   s move to to-do   x discard it   j/k topics   d/u page       │   ╰─ω─╯~   │
+  r write it again   ;/p to-do   M my PRs   h active workspaces   esc close                                                            ╰──╴ Col ╶───╯
+
+########## 007 before 'q'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 lookups in Linear, Slack and GitHub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                             the bowl is licked clean: not a topic left in today's bark
+                                                    press r and I'll go sniff out a fresh report
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                         “dropped it” ‹│ ▐ ^ ▐▌ ^ ▌ │
+   ✓ discarded from the report   ✦                                                                                                     │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  r write it again   ;/p to-do   M my PRs   h active workspaces   esc close                                                            ╰──╴ Col ╶───╯
+
+finished cleanly

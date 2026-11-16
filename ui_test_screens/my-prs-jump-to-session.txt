@@ -1,0 +1,187 @@
+
+########## 001 before 'M'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs                                                                               1 issues
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ◐ In Progress 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ PLA-2     ▮▮▮ high    Second issue with a workspace              ET   Erik Tester  Gateway c4        ▶ 2 open · alpha   ● review        2d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  w pick one of its 4 sessions   l/enter start   space preview   a ask Col   C comment   c free session   S status   P priority        │   ╰─ω─╯~   │
+  A assign   X cancel   n new issue   ; next tab   b daily bark   p to-do   M my PRs   W active ws   ? all keys                        ╰──╴ Col ╶───╯
+
+########## 002 before 10
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ● Open for review 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ alpha #7                   Second issue: the fix                                                             ▶ open   ✓ APPROVED        2d ago
+  ◌ Draft 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      beta #12                   Tidy the readme                                                                            ◌ draft           2d ago
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+  l/enter jump to its session   a ask Col about it   g open on GitHub   x close it   X close it and delete its branch   r refresh      │   ╰─ω─╯~   │
+  j/k move   h/p to-do   b daily bark   esc close                                                                                      ╰──╴ Col ╶───╯
+
+########## 003 before 'j'
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ● Open for review 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ alpha #7                   Second issue: the fix                                                             ▶ open   ✓ APPROVED        2d ago
+  ◌ Draft 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      beta #12                   Tidy the readme                                                                            ◌ draft           2d ago
+
+
+
+
+
+
+
+                                 ╭─────────────────────────────╴ mode: open sessions ╶─────────────────────────────╮
+                                 │  PLA-2  4 sessions open, jump to which?                                    esc  │
+                                 │  / filter                                                                       │
+                                 │  Every session you started on this issue is a tab in its herdr workspace. Each  │
+                                 │  row: the tab's name and what its agent is doing, and the workspace it is in.   │
+                                 │                                                                                 │
+                                 │                                                                                 │
+                                 │ ▎issue                       idle      PLA-2 Second issue with a workspace      │
+                                 │  plan                        idle      PLA-2 Second issue with a workspace      │
+                                 │  build                       working   PLA-2 Second issue with a workspace      │
+                                 │  review                      idle      Review: second issue                     │
+                                 │                                                                                 │
+                                 ╰─────────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+########## 004 before 10
+                                                         ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
+
+  my issues   active workspaces   daily bark   to-do   my PRs
+ ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  ● Open for review 1  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ ▎  ▶ alpha #7                   Second issue: the fix                                                             ▶ open   ✓ APPROVED        2d ago
+  ◌ Draft 1  ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+      beta #12                   Tidy the readme                                                                            ◌ draft           2d ago
+
+
+
+
+
+
+
+                                 ╭─────────────────────────────╴ mode: open sessions ╶─────────────────────────────╮
+                                 │  PLA-2  4 sessions open, jump to which?                                    esc  │
+                                 │  / filter                                                                       │
+                                 │  Every session you started on this issue is a tab in its herdr workspace. Each  │
+                                 │  row: the tab's name and what its agent is doing, and the workspace it is in.   │
+                                 │                                                                                 │
+                                 │                                                                                 │
+                                 │  issue                       idle      PLA-2 Second issue with a workspace      │
+                                 │ ▎plan                        idle      PLA-2 Second issue with a workspace      │
+                                 │  build                       working   PLA-2 Second issue with a workspace      │
+                                 │  review                      idle      Review: second issue                     │
+                                 │                                                                                 │
+                                 ╰─────────────────────────────────────────────────────────────────────────────────╯
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                       ╭────────────╮
+                                                                                                                                       │  ◢▀▄▁▁▁▄▀◣ │
+                                                                                                                               “woof” ‹│ ▐ ^ ▐▌ ^ ▌ │
+                                                                                                                                       │  ▜▖ ▼  ▗▛  │
+                                                                                                                                       │   ╰─ω─╯~   │
+  l/enter pick   j/k move   type to filter   esc/h back                                                                                ╰──╴ Col ╶───╯
+
+herdr was told to: workspace focus w1 · tab focus w1:t2
+finished cleanly

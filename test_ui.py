@@ -56,6 +56,15 @@ FAKE_DAILY_REPORT = ("## wednesday\n- **PLA-1 login thing** — PR #7 is in revi
                      "- **PLA-99 someone else's** — waiting on Sam.\n↳ you and Sam\n- **a loose topic** — nobody filed it yet.\n"
                      "## loose threads\n- reply to Robin about herdr links.\n↳ Robin in #dev, Tuesday · no Linear issue yet\n"
                      "- start with PLA-1, it is closest to done.")
+def fake_pull_request(repository, number, title, branch, is_draft, review_decision=None):
+    return {"number": number, "title": title, "url": f"https://github.com/o/{repository}/pull/{number}", "headRefName": branch, "body": "What it does.",
+            "updatedAt": "2026-11-10T09:00:00Z", "isDraft": is_draft, "reviewDecision": review_decision, "mergeable": "MERGEABLE",
+            "repository": {"nameWithOwner": f"o/{repository}"}, "commits": {"nodes": [{"commit": {"statusCheckRollup": {"state": "SUCCESS"}}}]}}
+
+
+# my open pull requests: one on the branch of PLA-2 (which has a workspace open, so it has the green marker), one draft that names no issue
+FAKE_MY_PULL_REQUESTS = [fake_pull_request("alpha", 7, "Second issue: the fix", "erik/pla-2-second", False, "APPROVED"),
+                         fake_pull_request("beta", 12, "Tidy the readme", "tidy-readme", True)]
 ONE_WORKSPACE = [{"label": "PLA-2 Second issue with a workspace", "number": 3, "workspace_id": "w1", "agent_status": "working"},
                  # started from The Daily Bark: a topic with no issue, and an issue that is not mine. Both show under W
                  {"label": "topic-0a1 a loose topic", "number": 5, "workspace_id": "w5", "agent_status": "idle"},
@@ -163,6 +172,10 @@ EVERY_SCREEN = [
     "p", "x", "h", "h", "h",                                # the to-do list from the issue list; emptied
     "b", "x", "r", ESC, "h", "h",                                # discard a topic of the report; writing it again asks first
     "W", "j", "j", "S", "W",                                     # active workspaces: mine, someone else's, a topic (S can't change that one)
+    # my PRs: the draft has no session (w says so), ask Col about it, close it (asked first, declined), close it and delete
+    # its branch; open the other on GitHub; h and ; move between the tabs, b goes to the daily bark, h twice back to my issues
+    "M", "j", "w", "a", ESC, "x", ESC, "X", "j", ENTER, "g", "h", ";", "b", "h", "h",
+    "h",                                                         # h on my issues, the first tab: it says esc closes, and closes nothing
     "t", ENTER, ESC, "b", ESC,                                   # esc steps back from a team to my issues; on a tab (here the daily bark) it closes Collinear
 ]
 SOMEONE_BRAND_NEW = "someone brand new"  # in place of the workspaces: setup is done, nothing else exists yet
@@ -178,6 +191,10 @@ SCENARIOS = {  # name: (terminal columns, the herdr workspaces that are open, th
     # first open after setup: no issues assigned, no report yet. The tour starts by itself, leaves out the steps
     # about issues, says there is nothing to report yet, shows the to-do list, and still ends on the closing card.
     "new-user-tour": (120, SOMEONE_BRAND_NEW, [ENTER, "b", ESC, "p", "i", ESC, ESC, ENTER, "l"]),
+    # enter on a pull request whose issue already has sessions open: it lists them, and picking one jumps there
+    "my-prs-jump-to-session": (150, TWO_WORKSPACES_FOR_ONE_ISSUE, ["M", ENTER, "j", ENTER]),
+    # every topic of the report discarded: the page says it is empty, in the middle, and which key writes a new one
+    "empty-daily-bark": (150, ONE_WORKSPACE, ["b", "x", "x", "x", "x", "x"]),
 }
 
 
@@ -233,7 +250,10 @@ def replace_the_outside_world(issues, prs, open_workspaces, temporary_home):
         raise RuntimeError("the UI test starts no processes")
     issues.subprocess = types.SimpleNamespace(run=lambda *arguments, **options: types.SimpleNamespace(returncode=0, stdout="", stderr=""),
                                               Popen=no_processes, PIPE=-1, DEVNULL=-3)
-    prs.fetch = lambda: {"mine": {"nodes": []}, "review": {"nodes": []}}
+    prs.CACHE = cache_dir / "herdr-prs.json"  # never the real one
+    prs.LINEAR_WORKSPACE, prs.LINEAR_ID = "x", prs.linear_id_pattern(["PLA"])  # the fake Linear's team, not the keys in the real local settings
+    still_open = lambda pull_request: not any(command[:4] == ("gh", "pr", "close", pull_request["url"]) for command in COMMANDS_THE_APP_RAN)
+    prs.fetch = lambda: {"mine": {"nodes": [] if is_brand_new else list(filter(still_open, FAKE_MY_PULL_REQUESTS))}, "review": {"nodes": []}}
     curses.napms = lambda milliseconds: None
 
 

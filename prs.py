@@ -5,7 +5,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 QUERY = """
-fragment F on PullRequest { number title url headRefName body updatedAt reviewDecision mergeable repository { nameWithOwner }
+fragment F on PullRequest { number title url headRefName body updatedAt isDraft reviewDecision mergeable repository { nameWithOwner }
   commits(last:1){nodes{commit{statusCheckRollup{state}}}} }
 { mine: search(query:"is:pr is:open author:@me sort:updated-desc", type:ISSUE, first:50){nodes{...F}}
   review: search(query:"is:pr is:open review-requested:@me sort:updated-desc", type:ISSUE, first:50){nodes{...F}} }"""

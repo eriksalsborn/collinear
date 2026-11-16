@@ -2,7 +2,7 @@
 ########## 001 before 10
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do                                                          0 issues
+  my issues   active workspaces   daily bark   to-do   my PRs                                                 0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -48,7 +48,7 @@
 ########## 002 before 'b'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do                                                          0 issues
+  my issues   active workspaces   daily bark   to-do   my PRs                                                 0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -94,7 +94,7 @@
 ########## 003 before 27
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do
+  my issues   active workspaces   daily bark   to-do   my PRs
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
    from memory
 
@@ -135,12 +135,12 @@
                           “2/8  nothing to report yet, it fills up as you work.  esc  or  h  goes back” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                          │   ╰─ω─╯~   │
-  r write it again   ;/p to-do   h active workspaces   esc close                                         ╰──╴ Col ╶───╯
+  r write it again   ;/p to-do   M my PRs   h active workspaces   esc close                              ╰──╴ Col ╶───╯
 
 ########## 004 before 'p'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do                                                          0 issues
+  my issues   active workspaces   daily bark   to-do   my PRs                                                 0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -186,12 +186,10 @@
 ########## 005 before 'i'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do
+  my issues   active workspaces   daily bark   to-do   my PRs
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
    these stay when the report is written again
 
-    nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily Bark, s moves a topic
-    here. It stays until you discard it.
 
 
 
@@ -206,6 +204,8 @@
 
 
 
+                                     nothing to chew on: your to-do list is empty
+                  press i to add a to-do  ·  or press s on a topic in The Daily Bark to move it here
 
 
 
@@ -227,17 +227,17 @@
                                        “6/8   i  adds one: you type it, or I write it from a few words” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                          │   ╰─ω─╯~   │
-  i add a to-do   h/b daily bark   esc close                                                             ╰──╴ Col ╶───╯
+  i add a to-do   h/b daily bark   ;/M my PRs   esc close                                                ╰──╴ Col ╶───╯
 
 ########## 006 before 27
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do
+  my issues   active workspaces   daily bark   to-do   my PRs
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
    these stay when the report is written again
 
-    nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily Bark, s moves a topic
-    here. It stays until you discard it.
+
+
 
 
 
@@ -251,7 +251,7 @@
                     │  / filter                                                                    │
                     │  Col looks up what is behind your words (an issue, a PR, a thread) and       │
                     │  writes one line. You can change it before it is added.                      │
-                    │                                                                              │
+                  pr│                                                                              │
                     │                                                                              │
                     │ ▎✎  write it myself                                                          │
                     │  ✦  draft it with Col, from a few words                                      │
@@ -278,12 +278,10 @@
 ########## 007 before 27
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do
+  my issues   active workspaces   daily bark   to-do   my PRs
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
    these stay when the report is written again
 
-    nothing here yet. Press i to add a to-do: type it, or draft it with Col. In The Daily Bark, s moves a topic
-    here. It stays until you discard it.
 
 
 
@@ -298,6 +296,8 @@
 
 
 
+                                     nothing to chew on: your to-do list is empty
+                  press i to add a to-do  ·  or press s on a topic in The Daily Bark to move it here
 
 
 
@@ -319,12 +319,12 @@
                                 “8/8  it stays until you  x  it.  esc  or  h  goes back to your issues” ‹│ ▐ ^ ▐▌ ^ ▌ │
                                                                                       Q  quits the tour  │  ▜▖ ▼  ▗▛  │
                                                                                                          │   ╰─ω─╯~   │
-  i add a to-do   h/b daily bark   esc close                                                             ╰──╴ Col ╶───╯
+  i add a to-do   h/b daily bark   ;/M my PRs   esc close                                                ╰──╴ Col ╶───╯
 
 ########## 008 before 10
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do                                                          0 issues
+  my issues   active workspaces   daily bark   to-do   my PRs                                                 0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -370,7 +370,7 @@
 ########## 009 before 'l'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do                                                          0 issues
+  my issues   active workspaces   daily bark   to-do   my PRs                                                 0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -416,7 +416,7 @@
 ########## 010 before 'q'
                                           ✦    ^ ▐▌ ^  C O L L I N E A R    ✦
 
-  my issues   active workspaces   daily bark   to-do                                                          0 issues
+  my issues   active workspaces   daily bark   to-do   my PRs                                                 0 issues
  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
