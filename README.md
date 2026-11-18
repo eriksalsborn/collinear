@@ -2,9 +2,16 @@
   <img src="assets/banner.svg" alt="COLLINEAR — Linear issues inside herdr, herded by Col the border collie" width="100%">
 </p>
 
-Collinear is a popup for [herdr](https://herdr.dev) that shows your Linear issues and turns one into a running
-coding session in a single key press, so you never lose track of what you are working on, where its code is checked
-out, or which workspace it lives in.
+Collinear is a popup for [herdr](https://herdr.dev) that runs your working day from one key press, herded by Col
+the border collie.
+
+- **Col reads everything so you don't.** Each morning he goes through Slack, your Linear comments and your pull
+  request reviews, and writes The Daily Bark: what you got done, and the loose threads nobody followed up on.
+- **Every thread is one key from handled.** Start a coding session on it, turn it into a Linear issue, park it on
+  your to-do list, or discard it. Col won't bring a parked or discarded one up again.
+- **One key from issue to working session.** `enter` gives an issue its herdr workspace, a git worktree on its
+  branch, and Claude Code already briefed on it.
+- **Nothing gets lost.** Your issues, pull requests and to-dos show where their work is running, and `w` jumps there.
 
 ## Install
 
