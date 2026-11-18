@@ -16,8 +16,8 @@
                     │                                                                              │
                     │   welcome, Erik                                                              │
                     │                                                                              │
-                    │   This is Collinear: your Linear issues one key away, and everything you     │
-                    │   have in progress.                                                          │
+                    │   This is Collinear: your issues, pull requests and loose threads one key    │
+                    │   away, and everything you have in progress.                                 │
                     │                                                                              │
                     │   I'll walk you through it for real. Do what my speech bubble says, down     │
                     │   in the corner, and watch what happens.                                     │

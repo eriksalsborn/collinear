@@ -3,7 +3,7 @@ COLLINEAR in big block letters in the app's blue, and Col in his outline exactly
 from pathlib import Path
 
 BLUE, BLUE_SHADOW, WHITE, MUTED, BACKGROUND = "#5fafff", "#2a5f9e", "#ffffff", "#8a8fa3", "#16161e"  # 256-colour 75 is #5fafff
-COL_INK, LINEAR_INK = "#11131a", "#4a5166"  # on the blue badge: COL near black, LINEAR slightly greyer, so COL is read first
+TITLE_INK = "#11131a"  # on the blue badge: near black, the whole name in one ink
 LETTERS = {
     "C": [".###.", "#...#", "#....", "#....", "#....", "#...#", ".###."],
     "O": [".###.", "#...#", "#...#", "#...#", "#...#", "#...#", ".###."],
@@ -32,14 +32,12 @@ def stroke(path, colour, width=2.4):
 
 def draw_title(text, left, top, pixel):
     x = left
-    for letter_number, letter in enumerate(text):
+    for letter in text:
         rows = LETTERS[letter]
-        letter_colour = COL_INK if letter_number < len("COL") else LINEAR_INK
-        for colour, offset in ((letter_colour, 0),):
-            for row_number, row in enumerate(rows):
-                for column_number, cell in enumerate(row):
-                    if cell == "#":
-                        rect(x + column_number * pixel + offset, top + row_number * pixel + offset, pixel - 1.5, pixel - 1.5, colour, 2)
+        for row_number, row in enumerate(rows):
+            for column_number, cell in enumerate(row):
+                if cell == "#":
+                    rect(x + column_number * pixel, top + row_number * pixel, pixel - 1.5, pixel - 1.5, TITLE_INK, 2)
         x += (len(rows[0]) + 1.4) * pixel
     return x
 

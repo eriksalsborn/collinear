@@ -5076,8 +5076,8 @@
       PLA-│                                                                              │  3w ago
           │   welcome, Erik                                                              │
   ◈ Triage│                                                                              │────────
-      PLA-│   This is Collinear: your Linear issues one key away, and everything you     │  3d ago
-          │   have in progress.                                                          │
+      PLA-│   This is Collinear: your issues, pull requests and loose threads one key    │  3d ago
+          │   away, and everything you have in progress.                                 │
           │                                                                              │
           │   I'll walk you through it for real. Do what my speech bubble says, down     │
           │   in the corner, and watch what happens.                                     │
@@ -7192,8 +7192,8 @@
           │                                                                              │
   ◌ Backlo│   welcome, Erik                                                              │────────
  ▎    PLA-│                                                                              │  3w ago
-          │   This is Collinear: your Linear issues one key away, and everything you     │
-  ◈ Triage│   have in progress.                                                          │────────
+          │   This is Collinear: your issues, pull requests and loose threads one key    │
+  ◈ Triage│   away, and everything you have in progress.                                 │────────
       PLA-│                                                                              │  3d ago
           │   I'll walk you through it for real. Do what my speech bubble says, down     │
           │   in the corner, and watch what happens.                                     │
@@ -7422,8 +7422,8 @@
           │                                                                              │
   ◌ Backlo│   welcome, Erik                                                              │────────
       PLA-│                                                                              │  3w ago
-          │   This is Collinear: your Linear issues one key away, and everything you     │
-  ◈ Triage│   have in progress.                                                          │────────
+          │   This is Collinear: your issues, pull requests and loose threads one key    │
+  ◈ Triage│   away, and everything you have in progress.                                 │────────
  ▎    PLA-│                                                                              │  3d ago
           │   I'll walk you through it for real. Do what my speech bubble says, down     │
           │   in the corner, and watch what happens.                                     │

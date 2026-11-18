@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""My open Linear issues for a herdr popup, opencode-styled.
+"""Collinear: your working day in a herdr popup (Linear issues, pull requests, Col's daily report, a to-do list), opencode-styled.
 enter: repo -> the starting prompt -> worktree on Linear's branch -> claude in a fresh tab of the issue's workspace. ? lists every key.
 Phases hand off through notes files in ~/.claude/work/<ID>/; prompts live in prompts/*.md."""
 import curses, json, locale, re, shlex, subprocess, sys, textwrap, threading, time, urllib.request, zlib
@@ -901,7 +901,7 @@ def words_of_guided_tour_step():
 
 
 TOUR_WELCOME_CARD = ("welcome", [
-    "This is **Collinear**: your Linear issues one key away, and everything you have in progress.",
+    "This is **Collinear**: your issues, pull requests and loose threads one key away, and everything you have in progress.",
     "",
     "I'll walk you through it for real. **Do what my speech bubble says**, down in the corner, and watch what happens.",
     "",
@@ -1828,6 +1828,12 @@ def daily_report_context(issues):
     lines += ["", "herdr workspaces open on this machine:"] + ([f"- {workspace['label']}" for workspace in workspaces] or ["- none"])
     lines += topics_not_to_write_again_as_context_lines(saved_todo_topics(), saved_discarded_topics())
     return "\n".join(lines)
+
+
+def daily_bark_opens_first(date_of_saved_report, today, is_new_here):
+    """Collinear opens on The Daily Bark the first time each day, when there is no report for today yet (opening the
+    page writes it). Not for someone in setup or the tour: they are shown around first."""
+    return date_of_saved_report != today and not is_new_here
 
 
 def start_writing_daily_report(issues, today):
@@ -3568,6 +3574,10 @@ class IssueListScreen:
                 self.onboarding_tour_is_due = False
                 write_stored_value("tour-seen", True)
                 start_guided_tour(self.screen)
+            if self.daily_bark_is_due and self.issues is not None:  # the report is written from the issues: not before they are in
+                self.daily_bark_is_due = False
+                self.open_daily_report()
+                continue
             if UiState.tour_closing_card_is_due:
                 UiState.tour_closing_card_is_due = False
                 show_tour_card(self.screen, TOUR_CLOSING_CARD, "l OK, got it!", button_text="OK, got it!")
@@ -3606,6 +3616,7 @@ class IssueListScreen:
         UiState.footer_hints_visible = (read_stored_value("hints") or {}).get("on")
         if (saved_report := read_stored_value("brief") or {}).get("date") == self.today:
             DAILY_REPORT.update(saved_report)
+        self.daily_bark_is_due = daily_bark_opens_first(saved_report.get("date"), self.today, self.onboarding_tour_is_due or setup_was_just_completed)
         if setup_was_just_completed:
             col_says("all set. let's find you an issue", "cheer", 6)
         done = read_stored_value("done") or {}
@@ -4418,6 +4429,8 @@ def _test():
         assert "PLA-9" in text and "erik/pla-9" in text and "{" not in text, phase
     assert "- none:" in render_phase_prompt("issue", issue, [], "/notes/PLA-9")
     assert temporary_title_from_description("short one") == "short one"
+    assert daily_bark_opens_first("2026-11-17", "2026-11-18", False) and daily_bark_opens_first(None, "2026-11-18", False)
+    assert not daily_bark_opens_first("2026-11-18", "2026-11-18", False) and not daily_bark_opens_first(None, "2026-11-18", True)
     job_may_finish = threading.Event()
     assert not col_is_busy()
     start_background_job(job_may_finish.wait)  # any background job, a fetch or a question to Claude: Col is purple until it is done

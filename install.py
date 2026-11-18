@@ -20,7 +20,7 @@ CONFIG_FILE = HERDR_FOLDER / "config.toml"
 HELPER_FILES = ["prs.py"]  # copied along: issues.py imports it
 OLD_PR_POPUP_KEY = re.compile(r'\[\[keys\.command\]\]\n(?:(?!\[).*\n)*?command\s*=\s*".*prs\.py"\n(?:(?!\[).*\n?)*')
 POPUPS = [  # (script, preferred key, what the key does, popup height)
-    ("issues.py", "prefix+alt+i", "start work on a Linear issue", "80%"),
+    ("issues.py", "prefix+alt+i", "Collinear: your working day", "80%"),
 ]
 
 
@@ -57,7 +57,7 @@ def choose_key(config_text, script, preferred_key, key_from_command_line):
 
 def main():
     parser = argparse.ArgumentParser(description="Install Collinear into your herdr.")
-    parser.add_argument("--issues-key", help="key that opens the issue popup (default: prefix+alt+i when it is free)")
+    parser.add_argument("--issues-key", help="key that opens Collinear (default: prefix+alt+i when it is free)")
     arguments = parser.parse_args()
     keys_from_command_line = {"issues.py": arguments.issues_key}
 
@@ -106,7 +106,7 @@ def main():
         except (OSError, subprocess.TimeoutExpired):
             print(f"! could not run herdr for the {what_it_is}: is herdr installed and running? Start it and run this again.")
 
-    issues_key = keys_chosen.get("issues.py", "the key you gave the issue popup")
+    issues_key = keys_chosen.get("issues.py", "the key you gave Collinear")
     print(f"\nOpen herdr and press {issues_key}. The first time, Col shows a short checklist and says how to fix each line.")
 
 

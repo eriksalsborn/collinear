@@ -5076,8 +5076,8 @@
       PLA-5     ▯▯▯         Fifth i│                                                                              │                           3w ago
                                    │   welcome, Erik                                                              │
   ◈ Triage 1  ─────────────────────│                                                                              │─────────────────────────────────
-      PLA-6     ▯▯▯         Sixth n│   This is Collinear: your Linear issues one key away, and everything you     │                           3d ago
-                                   │   have in progress.                                                          │
+      PLA-6     ▯▯▯         Sixth n│   This is Collinear: your issues, pull requests and loose threads one key    │                           3d ago
+                                   │   away, and everything you have in progress.                                 │
                                    │                                                                              │
                                    │   I'll walk you through it for real. Do what my speech bubble says, down     │
                                    │   in the corner, and watch what happens.                                     │
@@ -7192,8 +7192,8 @@
                                    │                                                                              │
   ◌ Backlog 1  ────────────────────│   welcome, Erik                                                              │─────────────────────────────────
  ▎    PLA-5     ▯▯▯         Fifth i│                                                                              │                           3w ago
-                                   │   This is Collinear: your Linear issues one key away, and everything you     │
-  ◈ Triage 1  ─────────────────────│   have in progress.                                                          │─────────────────────────────────
+                                   │   This is Collinear: your issues, pull requests and loose threads one key    │
+  ◈ Triage 1  ─────────────────────│   away, and everything you have in progress.                                 │─────────────────────────────────
       PLA-6     ▯▯▯         Sixth n│                                                                              │                           3d ago
                                    │   I'll walk you through it for real. Do what my speech bubble says, down     │
                                    │   in the corner, and watch what happens.                                     │
@@ -7422,8 +7422,8 @@
                                    │                                                                              │
   ◌ Backlog 1  ────────────────────│   welcome, Erik                                                              │─────────────────────────────────
       PLA-5     ▯▯▯         Fifth i│                                                                              │                           3w ago
-                                   │   This is Collinear: your Linear issues one key away, and everything you     │
-  ◈ Triage 1  ─────────────────────│   have in progress.                                                          │─────────────────────────────────
+                                   │   This is Collinear: your issues, pull requests and loose threads one key    │
+  ◈ Triage 1  ─────────────────────│   away, and everything you have in progress.                                 │─────────────────────────────────
  ▎    PLA-6     ▯▯▯         Sixth n│                                                                              │                           3d ago
                                    │   I'll walk you through it for real. Do what my speech bubble says, down     │
                                    │   in the corner, and watch what happens.                                     │
