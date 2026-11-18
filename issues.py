@@ -13,8 +13,13 @@ OPEN_STATE_TYPES = ["started", "unstarted", "backlog", "triage"]  # shown, in th
 ISSUE_FIELDS = """id identifier title description url branchName priority updatedAt state { id name type position }
   attachments { nodes { url title metadata } } assignee { id displayName } team { id }
   project { name } cycle { number }"""
-MY_ISSUES_QUERY = ("{ viewer { assignedIssues(first: 100, filter: {state: {type: {in: %s}}}) { nodes { %s } } } }"
-         % (json.dumps(OPEN_STATE_TYPES), ISSUE_FIELDS))
+MY_ISSUES_QUERY = ("{ viewer { assignedIssues(first: 100, filter: {or: [{state: {type: {in: %s}}}, {completedAt: {gte: %%s}}]}) { nodes { %s } } } }"
+         % (json.dumps(OPEN_STATE_TYPES), ISSUE_FIELDS))  # my open issues, and the ones I finished today
+
+
+def start_of_today_for_linear():
+    """Local midnight as the UTC timestamp Linear filters on."""
+    return datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.000Z")
 CACHE_DIR = Path.home() / ".cache"
 MY_ISSUES_CACHE_FILE = CACHE_DIR / "herdr-issues.json"
 NOTES_DIR = Path.home() / ".claude" / "work"  # outside the worktree, so removing the worktree keeps the notes
@@ -487,7 +492,7 @@ def fetch_issues(view=None):
                      "{in: %s}}}) { nodes { %s } } } }" % (view["kind"], json.dumps(OPEN_STATE_TYPES), ISSUE_FIELDS),
                      {"id": view["id"]})[view["kind"]]["issues"]["nodes"]
     else:
-        issues = linear_graphql(MY_ISSUES_QUERY)["viewer"]["assignedIssues"]["nodes"]
+        issues = linear_graphql(MY_ISSUES_QUERY % json.dumps(start_of_today_for_linear()))["viewer"]["assignedIssues"]["nodes"]
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
     cache_file_for_view(view).write_text(json.dumps(issues))
     return issues
@@ -1020,8 +1025,10 @@ def show_morning_digest(screen, changes):
 
 def build_issue_rows(issues, include_closed_issues=False):
     """("head", (state name, state type)) / ("issue", issue) rows: started -> todo -> backlog -> triage, furthest
-    along on top, urgent first within a state. Closed issues drop out, unless include_closed_issues (they go last)."""
-    state_types_in_order = OPEN_STATE_TYPES + ["completed", "canceled"] if include_closed_issues else OPEN_STATE_TYPES
+    along on top, urgent first within a state, done last (my issues only holds the ones done today). Cancelled issues
+    drop out, unless include_closed_issues."""
+    # ponytail: an issue done yesterday can show from the cache until the fetch answers; filter on completedAt if that bothers
+    state_types_in_order = OPEN_STATE_TYPES + ["completed"] + ["canceled"] * include_closed_issues
     sort_order = lambda issue_to_sort: (state_types_in_order.index(issue_to_sort["state"]["type"]), -issue_to_sort["state"]["position"], issue_to_sort["priority"] or 9, issue_to_sort["identifier"])
     STATE_POSITION_BY_NAME.update((issue_to_sort["state"]["name"], issue_to_sort["state"]["position"]) for issue_to_sort in issues)
     STARTED_STATE_POSITIONS[:] = sorted({issue_to_sort["state"]["position"] for issue_to_sort in issues if issue_to_sort["state"]["type"] == "started"})
@@ -3872,7 +3879,7 @@ class IssueListScreen:
             register_clickable_row(y, 0, screen_width, rows_from_cursor, [ord(" ")] * is_under_cursor)
         cursor_row_attribute = colour(SELECTED_ROW) if is_under_cursor else 0
 
-        is_done = issue["state"]["type"] == "completed"  # only seen among the active workspaces: finished, its workspace still open
+        is_done = issue["state"]["type"] == "completed"  # done today, or finished with its workspace still open
         if is_done:  # all of its row is grey: you see what you moved to done, without it asking for attention
             all_colours = colour
             colour = lambda colour_pair: all_colours(SELECTED_ROW_MARKER if colour_pair == SELECTED_ROW_MARKER else DIM)
@@ -4376,7 +4383,8 @@ def _test():
     assert flat(rows_matching_filter(rows, "a-2")) == ["In Progress", "A-2"]
     assert flat(rows_matching_filter(rows, "")) == ["In Review", "A-3", "", "In Progress", "A-4", "A-2", "", "Todo", "A-1"]
     assert build_issue_rows([])[0][0] == "note" and rows_matching_filter([("note", "loading")], "x") == [("note", "loading")]
-    assert flat(build_issue_rows(issues + [mk("Z-1", "Done", "completed", 9)])) == flat(rows), "closed issues drop out of the list"
+    assert flat(build_issue_rows(issues + [mk("Z-1", "Done", "completed", 9), mk("Z-2", "Canceled", "canceled", 9)])) == flat(rows) + ["Done", "Z-1"], "done goes last, cancelled drops out"
+    assert re.fullmatch(r'"\d{4}-\d\d-\d\dT\d\d:\d\d:00\.000Z"', json.dumps(start_of_today_for_linear())) and "completedAt" in MY_ISSUES_QUERY % "x"
     # a done issue's workspace is renamed "DONE: <its name>", is still found as the issue's, and gets its name back when reopened
     global run_command
     real_run_command, renames = run_command, []
