@@ -72,7 +72,7 @@ ONE_WORKSPACE = [{"label": "PLA-2 Second issue with a workspace", "number": 3, "
 TWO_WORKSPACES_FOR_ONE_ISSUE = [
     {"label": "PLA-2 Second issue with a workspace", "number": 3, "workspace_id": "w1", "agent_status": "working", "tab_count": 3,
      "worktree": {"repo_name": "alpha"}},
-    # not named after the issue, but sitting in the folder where its branch is checked out: opened from the PR popup, say
+    # not named after the issue, but sitting in the folder where its branch is checked out: opened by hand, say
     {"label": "Review: second issue", "number": 6, "workspace_id": "w2", "agent_status": "idle", "tab_count": 1,
      "worktree": {"repo_name": "alpha", "checkout_path": "/x/alpha-wt/b"}}]
 

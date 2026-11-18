@@ -372,7 +372,7 @@ def show_in_workspace_names_whether_issue_is_done(issue, its_workspaces):
 
 def workspaces_of_issue_among(workspaces, issue, folders_of_its_branch):
     """The workspaces that belong to the issue: named after it (the name starts with its id), or sitting in a folder
-    where its branch is checked out, whatever they are called (one opened from the PR popup, or by hand).
+    where its branch is checked out, whatever they are called (one opened by hand, say).
     The ones named after it come first."""
     folders = set(folders_of_its_branch)
     belonging = [workspace for workspace in workspaces
@@ -1078,7 +1078,7 @@ def local_repository_names():
 
 
 def ensure_worktree_for_branch(repo, branch):
-    """Folder with branch checked out, making <repo>-wt/<branch> (same layout as prs.py) if needed."""
+    """Folder with branch checked out, making <repo>-wt/<branch> if needed."""
     run_command("git", "-C", str(repo), "fetch", "origin")  # ponytail: offline is fine, worktree add falls back to local refs
     if path := worktree_path_for_branch(repo, branch):
         return path
@@ -1336,7 +1336,7 @@ def shortened_folder(folder, room):
 
 
 def set_repositories_folder(folder_text):
-    """Point both popups at another folder of git repositories, now and from the next start on (local_settings.json).
+    """Point Collinear at another folder of git repositories, now and from the next start on (local_settings.json).
     Returns a footer message; nothing changes if the folder doesn't exist."""
     global REPOSITORIES_FOLDER
     folder = Path(folder_text).expanduser()
@@ -3203,7 +3203,7 @@ def my_pull_request_rows(pull_requests):
 
 
 def pull_request_state_colour_and_label(pull_request):
-    """(colour, words) for the state column of my PRs: what the PR popup says (review, checks, conflict); a draft
+    """(colour, words) for the state column of my PRs: review, checks, conflict; a draft
     with nothing wrong says it is a draft."""
     colour, label = prs.state(pull_request)
     if pull_request.get("isDraft") and label == "needs review":

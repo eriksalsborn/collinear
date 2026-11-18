@@ -96,8 +96,6 @@ flowchart TD
     col -- "headless Claude, read-only" --> sources["Linear · Slack · GitHub · web"]
     col --> notes
 
-    you -- "prefix + alt + p" --> prs["PR popup · prs.py"]
-    prs <--> github
 ```
 
 ## License

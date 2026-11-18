@@ -2,14 +2,13 @@
 """Install Collinear into your herdr.
 
     python3 install.py                               ask before anything it cannot decide itself
-    python3 install.py --issues-key prefix+alt+l     choose the keys yourself
-                       --prs-key prefix+alt+g
+    python3 install.py --issues-key prefix+alt+l     choose the key yourself
 
 What it does, and nothing else:
   1. copies issues.py, prs.py and prompts/ next to your herdr config (~/.config/herdr)
   2. creates local_settings.json there from the example, unless you already have one
-  3. adds one key for each popup to your config.toml (a copy of it is kept as config.toml.before-collinear),
-     on keys you are not already using
+  3. adds the key that opens Collinear to your config.toml (a copy of it is kept as config.toml.before-collinear),
+     on a key you are not already using; and removes the key of the old PR popup, which my PRs in Collinear replaced
   4. asks herdr to check the config and reload it
 Running it again updates the code and leaves your settings and keys alone."""
 import argparse, json, re, shutil, subprocess, sys
@@ -18,9 +17,10 @@ from pathlib import Path
 SOURCE_FOLDER = Path(__file__).resolve().parent
 HERDR_FOLDER = Path.home() / ".config" / "herdr"
 CONFIG_FILE = HERDR_FOLDER / "config.toml"
+HELPER_FILES = ["prs.py"]  # copied along: issues.py imports it
+OLD_PR_POPUP_KEY = re.compile(r'\[\[keys\.command\]\]\n(?:(?!\[).*\n)*?command\s*=\s*".*prs\.py"\n(?:(?!\[).*\n?)*')
 POPUPS = [  # (script, preferred key, what the key does, popup height)
     ("issues.py", "prefix+alt+i", "start work on a Linear issue", "80%"),
-    ("prs.py", "prefix+alt+p", "open PRs", "80%"),
 ]
 
 
@@ -47,7 +47,7 @@ def choose_key(config_text, script, preferred_key, key_from_command_line):
         return preferred_key
     if not sys.stdin.isatty():
         sys.exit(f"{preferred_key} is already used in your config.toml. Run again with a free key, for example:\n"
-                 f"  python3 install.py --{'issues' if script == 'issues.py' else 'prs'}-key prefix+alt+l")
+                 "  python3 install.py --issues-key prefix+alt+l")
     while True:
         key = input(f"{preferred_key} is already used in your config.toml. Which key should open {script}? (for example prefix+alt+l) ").strip()
         if key and not key_is_used(config_text, key):
@@ -58,13 +58,12 @@ def choose_key(config_text, script, preferred_key, key_from_command_line):
 def main():
     parser = argparse.ArgumentParser(description="Install Collinear into your herdr.")
     parser.add_argument("--issues-key", help="key that opens the issue popup (default: prefix+alt+i when it is free)")
-    parser.add_argument("--prs-key", help="key that opens the PR popup (default: prefix+alt+p when it is free)")
     arguments = parser.parse_args()
-    keys_from_command_line = {"issues.py": arguments.issues_key, "prs.py": arguments.prs_key}
+    keys_from_command_line = {"issues.py": arguments.issues_key}
 
     HERDR_FOLDER.mkdir(parents=True, exist_ok=True)
     if SOURCE_FOLDER != HERDR_FOLDER.resolve():
-        for script, *_ in POPUPS:
+        for script in [script for script, *_ in POPUPS] + HELPER_FILES:
             shutil.copy(SOURCE_FOLDER / script, HERDR_FOLDER / script)
         shutil.copytree(SOURCE_FOLDER / "prompts", HERDR_FOLDER / "prompts", dirs_exist_ok=True)
         print(f"✓ copied issues.py, prs.py and prompts/ to {HERDR_FOLDER}")
@@ -76,6 +75,10 @@ def main():
         print("✓ created local_settings.json (the setup screen can change the repositories folder: F)")
 
     config_text = CONFIG_FILE.read_text() if CONFIG_FILE.exists() else ""
+    if OLD_PR_POPUP_KEY.search(config_text):
+        config_text = OLD_PR_POPUP_KEY.sub("", config_text)
+        CONFIG_FILE.write_text(config_text)
+        print("✓ removed the key of the old PR popup: M in Collinear shows your PRs now")
     blocks_to_add, keys_chosen = "", {}
     for script, preferred_key, description, height in POPUPS:
         if popup_is_installed(config_text, script):
