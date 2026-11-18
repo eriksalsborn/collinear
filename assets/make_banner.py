@@ -101,7 +101,7 @@ title_right = draw_title("COLLINEAR", TITLE_LEFT, TITLE_TOP, pixel)
 box_left, box_top, box_width, box_height = draw_col(title_right + 176, 84, 14, 28)
 mono = 'font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"'
 parts.append(f'<text x="{box_left - 14:.1f}" y="{box_top + box_height * 0.45:.1f}" text-anchor="end" {mono} font-size="19" font-weight="700" fill="{BLUE}">“woof” ‹</text>')
-parts.append(f'<text x="{TITLE_LEFT - 24}" y="{TITLE_TOP + 7 * pixel + 62}" {mono} font-size="20" fill="{MUTED}">Linear issues inside herdr · herded by Col the border collie</text>')
+parts.append(f'<text x="{TITLE_LEFT - 24}" y="{TITLE_TOP + 7 * pixel + 62}" {mono} font-size="20" fill="{MUTED}">your working day inside herdr · herded by Col the border collie</text>')
 for spark_x, spark_y, size in ((TITLE_LEFT - 50, 60, 9), (title_right + 34, 60, 9)):  # the two sparks either side of the title, as in the app
     polygon([(spark_x, spark_y - size), (spark_x + size * 0.28, spark_y - size * 0.28), (spark_x + size, spark_y), (spark_x + size * 0.28, spark_y + size * 0.28),
              (spark_x, spark_y + size), (spark_x - size * 0.28, spark_y + size * 0.28), (spark_x - size, spark_y), (spark_x - size * 0.28, spark_y - size * 0.28)], WHITE)
